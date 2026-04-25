@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green: #0D2D24;
+  --green-2: #143A2E;
+  --green-deep: #051811;
+  --ink: #18181B;
+  --ink-soft: #3A3A3D;
+  --cream: #FCFCFA;
+  --cream-warm: #F4F4F1;
+  --muted: #74746E;
+  --tangerine: #FF6B3D;
+  --magenta: #E84B7A;
+  --sapphire: #2D4ED1;
+  --lemon: #FBB731;
+  --hairline: rgba(13, 45, 36, 0.08);
+}
+
+html, body {
+  background: #FFFFFF;
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+
+.font-display { font-family: 'Fraunces', Georgia, serif; font-variation-settings: 'opsz' 144, 'SOFT' 50; letter-spacing: -0.024em; }
+.font-script  { font-family: 'Caveat', cursive; }
+
+/* Brand button */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-weight: 600; font-size: 14px;
+  border: 1px solid transparent;
+  transition: transform .25s, background .35s, color .35s;
+  cursor: pointer;
+}
+.btn-primary { background: var(--tangerine); color: #fff; box-shadow: 0 8px 22px -10px rgba(255,107,61,0.55); }
+.btn-primary:hover { background: #FF5723; transform: translateY(-1px); }
+.btn-secondary { background: #fff; color: var(--green); border: 1px solid rgba(13,45,36,0.18); }
+.btn-secondary:hover { background: var(--green); color: #fff; border-color: var(--green); }
+.btn-dark { background: var(--green); color: #fff; }
+.btn-dark:hover { background: var(--green-2); }

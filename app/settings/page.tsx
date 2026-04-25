@@ -1,0 +1,182 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { listLenses } from '@/lib/lens';
+import { clearProfile, getProfile, setProfile, type Profile } from '@/lib/profile';
+
+export default function SettingsPage() {
+  const router = useRouter();
+  const [mounted, setMounted] = useState(false);
+  const [profile, setLocalProfile] = useState<Profile>({ lens: 'gossip-girl' });
+  const [name, setName] = useState('');
+  const lenses = listLenses();
+
+  useEffect(() => {
+    setMounted(true);
+    const p = getProfile();
+    setLocalProfile(p);
+    setName(p.displayName ?? '');
+  }, []);
+
+  function update<K extends keyof Profile>(key: K, value: Profile[K]) {
+    const next = { ...profile, [key]: value };
+    setLocalProfile(next);
+    setProfile({ [key]: value });
+  }
+
+  function reset() {
+    if (!confirm('Clear your profile and start over? Your chat history is not affected.')) return;
+    clearProfile();
+    router.push('/onboarding');
+  }
+
+  if (!mounted) {
+    // Avoid hydration mismatch — render a minimal shell until localStorage is read.
+    return (
+      <main className="min-h-screen bg-white">
+        <header className="px-6 md:px-8 py-3 border-b border-[var(--hairline)] flex items-center justify-between bg-white">
+          <Link href="/" className="font-display text-xl font-extrabold text-green tracking-wide uppercase">
+            SPORTS<span className="text-tangerine">★</span>BFF
+          </Link>
+        </header>
+      </main>
+    );
+  }
+
+  return (
+    <main className="min-h-screen flex flex-col bg-white">
+      <header className="px-6 md:px-8 py-3 border-b border-[var(--hairline)] flex items-center justify-between bg-white sticky top-0 z-10">
+        <Link href="/" className="font-display text-xl font-extrabold text-green tracking-wide uppercase">
+          SPORTS<span className="text-tangerine">★</span>BFF
+        </Link>
+        <Link href="/chat" className="text-sm text-ink-soft hover:text-ink">← Back to chat</Link>
+      </header>
+
+      <section className="flex-1 px-6 py-12">
+        <div className="max-w-2xl mx-auto">
+          <h1 className="font-display text-5xl font-bold text-green leading-tight tracking-tight">
+            Settings.
+          </h1>
+          <p className="mt-3 text-lg text-ink-soft">
+            All saved locally for now — Supabase auth wires in beta.
+          </p>
+
+          {/* Display name */}
+          <section className="mt-10">
+            <label className="text-xs font-bold tracking-widest uppercase text-tangerine">
+              Display name
+            </label>
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              onBlur={() => update('displayName', name.trim() || undefined)}
+              placeholder="What should we call you?"
+              className="mt-2 w-full bg-white border border-[var(--hairline)] rounded-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+            />
+          </section>
+
+          {/* League */}
+          <section className="mt-10">
+            <label className="text-xs font-bold tracking-widest uppercase text-tangerine">
+              Sport
+            </label>
+            <div className="mt-3 grid grid-cols-3 gap-2">
+              {(['nfl', 'nba', 'both'] as const).map((l) => (
+                <button
+                  key={l}
+                  type="button"
+                  onClick={() => update('league', l)}
+                  className={`text-left rounded-xl border p-4 transition ${
+                    profile.league === l
+                      ? 'border-tangerine bg-tangerine/5 shadow-soft'
+                      : 'border-[var(--hairline)] bg-white hover:border-ink-soft'
+                  }`}
+                >
+                  <div className="font-display font-bold text-base text-green uppercase">
+                    {l === 'both' ? 'Both' : l.toUpperCase()}
+                  </div>
+                </button>
+              ))}
+            </div>
+          </section>
+
+          {/* Lens */}
+          <section className="mt-10">
+            <label className="text-xs font-bold tracking-widest uppercase text-tangerine">
+              Show lens
+            </label>
+            <p className="mt-2 text-sm text-ink-soft">
+              Your chat answers and lesson examples speak this show's language.
+            </p>
+            <div className="mt-4 grid grid-cols-3 md:grid-cols-4 gap-3">
+              {lenses.map((l) => {
+                const isActive = profile.lens === l.id;
+                const initials = l.name
+                  .split(' ')
+                  .map((w) => w[0])
+                  .join('')
+                  .slice(0, 2)
+                  .toUpperCase();
+                return (
+                  <button
+                    key={l.id}
+                    type="button"
+                    onClick={() => update('lens', l.id)}
+                    className={`group relative rounded-xl overflow-hidden bg-white text-left transition-all duration-200 ${
+                      isActive
+                        ? 'shadow-lift -translate-y-0.5'
+                        : 'shadow-soft hover:shadow-lift hover:-translate-y-0.5 border border-[var(--hairline)]'
+                    }`}
+                    style={isActive ? { boxShadow: `0 0 0 2.5px ${l.accent_color}, 0 14px 32px -10px rgba(13,45,36,0.18)` } : {}}
+                  >
+                    <div
+                      className="relative aspect-[3/4] flex items-center justify-center overflow-hidden"
+                      style={{ background: `linear-gradient(135deg, ${l.card_color} 0%, ${l.accent_color} 200%)` }}
+                    >
+                      <span
+                        className="font-display font-bold text-4xl tracking-tight"
+                        style={{ color: l.accent_color, textShadow: '0 2px 8px rgba(0,0,0,0.08)' }}
+                      >
+                        {initials}
+                      </span>
+                    </div>
+                    <div className="p-2.5">
+                      <div className="font-display font-bold text-[13px] leading-tight text-green truncate">
+                        {l.name}
+                      </div>
+                      <div className="text-[9px] font-bold tracking-widest uppercase mt-0.5 text-muted">
+                        {l.league_bias ?? 'Both'}
+                      </div>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+
+          {/* Danger zone */}
+          <section className="mt-12 pt-8 border-t border-[var(--hairline)]">
+            <label className="text-xs font-bold tracking-widest uppercase text-burgundy">
+              Reset
+            </label>
+            <p className="mt-2 text-sm text-ink-soft">
+              Clears your saved profile (lens, league, name) and sends you back through onboarding.
+            </p>
+            <button
+              onClick={reset}
+              className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold text-burgundy border border-burgundy/30 hover:bg-burgundy hover:text-white transition"
+            >
+              Clear profile
+            </button>
+          </section>
+
+          <div className="mt-12 text-center">
+            <Link href="/chat" className="btn btn-primary">Back to chat →</Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

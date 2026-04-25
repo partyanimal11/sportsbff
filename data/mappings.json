@@ -1,0 +1,65 @@
+[
+  {
+    "id": "kd-as-dan-humphrey",
+    "show": "gossip-girl",
+    "show_character": "Dan Humphrey",
+    "league": "nba",
+    "player_id": "kevin-durant",
+    "summary": "Both are the gifted outsider who used anonymity to control the narrative about people more powerful than them — except they ARE the most powerful person, which is the tragedy.",
+    "evidence": ["@gethigher77 burner accounts", "9 years of denials", "Lonely Boy / always-on-the-roster-looking-out"]
+  },
+  {
+    "id": "okc-as-blair",
+    "show": "gossip-girl",
+    "show_character": "Blair Waldorf",
+    "league": "nba",
+    "player_id": "okc",
+    "summary": "The queen KD left. The one who never forgave him. The one thriving with a 22-year-old MVP while he spirals through burner accounts in Houston at 2 AM.",
+    "evidence": ["KD's 2016 departure", "OKC's 2025-26 #1 seed", "SGA as the new face"]
+  },
+  {
+    "id": "sga-as-chuck-bass",
+    "show": "gossip-girl",
+    "show_character": "Chuck Bass",
+    "league": "nba",
+    "player_id": "shai-gilgeous-alexander",
+    "summary": "Quiet menace. Immaculately dressed. Never explains himself. Says everything with his chest. 'I'm Chuck Bass' = 'I'm the MVP' — same sentence, same energy.",
+    "evidence": ["Postgame cardigans", "Two-word answers", "Reigning MVP"]
+  },
+  {
+    "id": "jerry-jones-as-logan",
+    "show": "succession",
+    "show_character": "Logan Roy",
+    "league": "nfl",
+    "player_id": "dal",
+    "summary": "He's not Logan Roy because they're both old Texans. He's Logan Roy because he refuses to die. 36 years of ownership. 30 years without a Super Bowl. Multiple kids waiting in the wings. 'Fuck off' speeches at the podium.",
+    "evidence": ["Three Stephens", "Mike McCarthy as Tom Wambsgans", "Jerry as his own GM"]
+  },
+  {
+    "id": "kelce-and-taylor-as-tsitp",
+    "show": "the-summer-i-turned-pretty",
+    "show_character": "Belly choosing between Conrad and Jeremiah",
+    "league": "nfl",
+    "player_id": "travis-kelce",
+    "summary": "Travis is choosing between January playoff football and Eras Tour stops every February. Taylor in the suite. The cameras between two universes. Some loves are bigger than the cousin.",
+    "evidence": ["Eras Tour cameos", "Suite shots during prime games", "The cultural moment of the decade"]
+  },
+  {
+    "id": "celtics-as-plastics",
+    "show": "mean-girls",
+    "show_character": "The Plastics",
+    "league": "nba",
+    "player_id": "bos",
+    "summary": "Tatum is Regina (the alpha). Brown is Gretchen (loyal, paranoid). Jrue is Karen (sweet, shocking when activated). Porzingis is the one Cady didn't see coming. Four-line lineup. Burn Book = NBA Twitter.",
+    "evidence": ["2024 championship", "Defending the throne", "On Wednesdays we wear pink"]
+  },
+  {
+    "id": "wemby-as-wednesday",
+    "show": "wednesday",
+    "show_character": "Wednesday Addams",
+    "league": "nba",
+    "player_id": "victor-wembanyama",
+    "summary": "She doesn't want to be at the dance. She is going to win the dance. Wemby in San Antonio is Wednesday at Nevermore — alone in a normal world, slowly winning it anyway.",
+    "evidence": ["7'4 height = Wednesday's vibe", "Quiet, otherworldly", "The outcast genius MVP arc"]
+  }
+]

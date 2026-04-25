@@ -1,0 +1,33 @@
+{
+  "id": "gossip-girl",
+  "title": "Gossip Girl",
+  "years": "2007-2012",
+  "creators": ["Josh Schwartz", "Stephanie Savage"],
+  "themes": ["power dynamics", "anonymity", "outsider control of the narrative", "Upper East Side hierarchy", "betrayal between best friends"],
+  "characters": [
+    { "name": "Dan Humphrey", "archetype": "The gifted outsider who used anonymity to control the powerful. Lonely Boy. The narrator. The traitor in plain sight.", "actor": "Penn Badgley" },
+    { "name": "Blair Waldorf", "archetype": "The queen. Strategic. Cruel. Loyal to the wrong people. The one who never forgave Serena.", "actor": "Leighton Meester" },
+    { "name": "Serena van der Woodsen", "archetype": "The It Girl. Magnetic. The one everyone wants. Slightly self-destructive.", "actor": "Blake Lively" },
+    { "name": "Chuck Bass", "archetype": "I'm Chuck Bass. Quiet menace. Inheritor of empire. Drips confidence. Loves Blair.", "actor": "Ed Westwick" },
+    { "name": "Nate Archibald", "archetype": "The pretty, mostly clueless one. Always caught between his parents and his friends.", "actor": "Chace Crawford" },
+    { "name": "Jenny Humphrey", "archetype": "Dan's little sister. Got chewed up by the UES. Tragic collateral damage.", "actor": "Taylor Momsen" },
+    { "name": "Vanessa Abrams", "archetype": "The Brooklyn loyal one. Dan exposed her on the blog anyway.", "actor": "Jessica Szohr" }
+  ],
+  "signature_quotes": [
+    "Spotted: [character] doing [scandalous thing]. You know you love me. XOXO, Gossip Girl.",
+    "I'm Chuck Bass.",
+    "I'm not a stop along the way. I'm a destination.",
+    "Lonely Boy."
+  ],
+  "scenes": [
+    "Dan revealed as Gossip Girl in the finale — everyone in the audience suspected for years.",
+    "Chuck and Blair: 'I love you. I always have.'",
+    "Serena and Dan's first meeting at the Palace.",
+    "The Met Steps cafeteria politics."
+  ],
+  "off_screen_drama": [
+    "Penn Badgley reportedly hated his role.",
+    "Ed Westwick controversies.",
+    "Reboot in 2021 was widely panned."
+  ]
+}
