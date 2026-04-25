@@ -1,13 +1,24 @@
 import OpenAI from 'openai';
 
-if (!process.env.OPENAI_API_KEY) {
-  // Don't throw at import time during build; throw at first use.
-  console.warn('[sportsBFF] OPENAI_API_KEY is not set. Chat endpoint will fail until you set it in .env.local.');
-}
+/**
+ * Lazy OpenAI client — only instantiated on first use.
+ *
+ * The OpenAI SDK throws at construction time if no API key is set, which
+ * crashes the build on Vercel even when we're in demo mode (no key).
+ * This getter defers instantiation until an actual call is made.
+ */
 
-export const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+let _client: OpenAI | null = null;
+
+export function getOpenAI(): OpenAI {
+  if (!_client) {
+    if (!process.env.OPENAI_API_KEY) {
+      throw new Error('[sportsBFF] OPENAI_API_KEY is not set');
+    }
+    _client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  }
+  return _client;
+}
 
 export const MODELS = {
   /** Primary chat model — best quality voice. */

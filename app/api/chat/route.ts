@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import { z } from 'zod';
-import { openai, MODELS } from '@/lib/openai';
+import { getOpenAI, MODELS } from '@/lib/openai';
 import { buildSystemPrompt } from '@/lib/context';
 import { isValidLens, DEFAULT_LENS_ID } from '@/lib/lens';
 import { findDemoAnswer, demoFallback, streamDemoAnswer } from '@/lib/demo-responses';
@@ -92,7 +92,7 @@ export async function POST(req: NextRequest) {
   // ─────────────────────────────────────────────────────────
   const systemPrompt = buildSystemPrompt({ lensId, userMessage: last.content });
 
-  const completion = await openai.chat.completions.create({
+  const completion = await getOpenAI().chat.completions.create({
     model: MODELS.CHAT,
     stream: true,
     temperature: 0.7,
