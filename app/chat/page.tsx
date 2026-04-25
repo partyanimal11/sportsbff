@@ -5,8 +5,10 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { listLenses, DEFAULT_LENS_ID, getLens } from '@/lib/lens';
 import { getProfile, setProfile } from '@/lib/profile';
-import { renderMarkdown } from '@/lib/markdown';
+import { Markdown } from '@/lib/markdown';
 import { PROMPT_LIBRARY, STARTER_PROMPTS } from '@/lib/prompts';
+import { PlayerOverlayContext } from '@/lib/player-overlay-context';
+import { PlayerOverlay } from '@/components/PlayerOverlay';
 
 type Msg = { role: 'user' | 'assistant'; content: string };
 
@@ -26,6 +28,7 @@ function ChatPage() {
   const [messages, setMessages] = useState<Msg[]>([]);
   const [streaming, setStreaming] = useState(false);
   const [browseOpen, setBrowseOpen] = useState(false);
+  const [overlayPlayer, setOverlayPlayer] = useState<string | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const lenses = listLenses();
   const lensInfo = getLens(lens);
@@ -126,6 +129,7 @@ function ChatPage() {
   }
 
   return (
+    <PlayerOverlayContext.Provider value={setOverlayPlayer}>
     <main className="min-h-screen flex flex-col">
       <header className="px-6 md:px-8 py-3 border-b border-[var(--hairline)] flex items-center justify-between bg-white sticky top-0 z-10 backdrop-blur">
         <div className="flex items-center gap-4">
@@ -218,7 +222,13 @@ function ChatPage() {
       {browseOpen && (
         <BrowsePrompts onPick={pickPrompt} onClose={() => setBrowseOpen(false)} />
       )}
+
+      {/* Player profile overlay — opens when a player name in chat is clicked */}
+      {overlayPlayer && (
+        <PlayerOverlay slug={overlayPlayer} onClose={() => setOverlayPlayer(null)} />
+      )}
     </main>
+    </PlayerOverlayContext.Provider>
   );
 }
 
@@ -428,7 +438,7 @@ function Bubble({ m, streamingNow }: { m: Msg; streamingNow: boolean }) {
       >
         {m.role === 'assistant'
           ? m.content
-            ? renderMarkdown(m.content)
+            ? <Markdown text={m.content} />
             : streamingNow
               ? '…'
               : ''

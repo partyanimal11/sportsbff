@@ -1,6 +1,9 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { listAllPlayers } from './players';
+import { usePlayerOverlay } from './player-overlay-context';
 
 /**
  * Tiny markdown renderer for chat messages.
@@ -19,7 +22,24 @@ const PLAYER_INDEX = listAllPlayers()
   }))
   .sort((a, b) => b.name.length - a.name.length);
 
+/**
+ * Public API: a React component that renders markdown.
+ * Has to be a component (not a plain function) so we can read overlay context.
+ */
+export function Markdown({ text }: { text: string }) {
+  const openOverlay = usePlayerOverlay();
+  return <>{renderMarkdownInternal(text, openOverlay)}</>;
+}
+
+/**
+ * Backwards-compat: function form. Always uses Link navigation (no overlay).
+ * Used by surfaces outside the chat that don't provide overlay context.
+ */
 export function renderMarkdown(text: string): React.ReactNode {
+  return renderMarkdownInternal(text, null);
+}
+
+function renderMarkdownInternal(text: string, openOverlay: ((slug: string) => void) | null): React.ReactNode {
   // Split into paragraphs by double-newline
   const blocks = text.split(/\n\n+/);
   return blocks.map((block, bi) => {
@@ -32,7 +52,7 @@ export function renderMarkdown(text: string): React.ReactNode {
       return (
         <ul key={bi} className="list-disc list-outside pl-5 my-2 space-y-1">
           {items.map((item, i) => (
-            <li key={i}>{renderInline(item)}</li>
+            <li key={i}>{renderInline(item, openOverlay)}</li>
           ))}
         </ul>
       );
@@ -43,7 +63,7 @@ export function renderMarkdown(text: string): React.ReactNode {
       <p key={bi} className={bi > 0 ? 'mt-2' : ''}>
         {lines.map((line, li) => (
           <React.Fragment key={li}>
-            {renderInline(line)}
+            {renderInline(line, openOverlay)}
             {li < lines.length - 1 && <br />}
           </React.Fragment>
         ))}
@@ -52,7 +72,7 @@ export function renderMarkdown(text: string): React.ReactNode {
   });
 }
 
-function renderInline(text: string): React.ReactNode {
+function renderInline(text: string, openOverlay: ((slug: string) => void) | null): React.ReactNode {
   // First pass: tokenize markdown (**bold**, *italic*, `code`)
   const mdTokens: { kind: 'text' | 'bold' | 'italic' | 'code'; value: string }[] = [];
   const mdRegex = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
@@ -76,17 +96,17 @@ function renderInline(text: string): React.ReactNode {
   let key = 0;
   return mdTokens.map((tok) => {
     if (tok.kind === 'text') {
-      return <React.Fragment key={key++}>{linkifyPlayers(tok.value, () => key++)}</React.Fragment>;
+      return <React.Fragment key={key++}>{linkifyPlayers(tok.value, () => key++, openOverlay)}</React.Fragment>;
     }
     if (tok.kind === 'bold') {
       return (
         <strong key={key++} className="font-semibold text-ink">
-          {linkifyPlayers(tok.value, () => key++)}
+          {linkifyPlayers(tok.value, () => key++, openOverlay)}
         </strong>
       );
     }
     if (tok.kind === 'italic') {
-      return <em key={key++}>{linkifyPlayers(tok.value, () => key++)}</em>;
+      return <em key={key++}>{linkifyPlayers(tok.value, () => key++, openOverlay)}</em>;
     }
     return (
       <code key={key++} className="bg-cream-warm border border-[var(--hairline)] rounded px-1.5 py-0.5 text-[13px]">
@@ -97,10 +117,11 @@ function renderInline(text: string): React.ReactNode {
 }
 
 /**
- * Walks a string and turns any known player name into a Link to their profile.
- * First-match wins (longest names tested first via the sorted index).
+ * Walks a string and turns any known player name into either:
+ *  - a button that opens the player overlay (when overlay context is set, e.g. inside chat)
+ *  - a Link to /player/[slug] (everywhere else)
  */
-function linkifyPlayers(text: string, nextKey: () => number): React.ReactNode {
+function linkifyPlayers(text: string, nextKey: () => number, openOverlay: ((slug: string) => void) | null): React.ReactNode {
   const out: React.ReactNode[] = [];
   let cursor = 0;
   while (cursor < text.length) {
@@ -118,15 +139,32 @@ function linkifyPlayers(text: string, nextKey: () => number): React.ReactNode {
     if (bestMatch.start > cursor) {
       out.push(text.slice(cursor, bestMatch.start));
     }
-    out.push(
-      <Link
-        key={`pl-${nextKey()}-${bestMatch.id}`}
-        href={`/player/${bestMatch.id}`}
-        className="text-tangerine hover:text-tangerine-dark underline decoration-tangerine/40 underline-offset-2 hover:decoration-tangerine/80 transition"
-      >
-        {bestMatch.name}
-      </Link>
-    );
+
+    const k = `pl-${nextKey()}-${bestMatch.id}`;
+    const className =
+      'text-tangerine hover:text-tangerine-dark underline decoration-tangerine/40 underline-offset-2 hover:decoration-tangerine/80 transition cursor-pointer';
+
+    if (openOverlay) {
+      const slug = bestMatch.id;
+      out.push(
+        <button
+          key={k}
+          type="button"
+          onClick={() => openOverlay(slug)}
+          className={className + ' bg-transparent border-0 p-0 m-0 inline font-inherit'}
+          style={{ font: 'inherit' }}
+        >
+          {bestMatch.name}
+        </button>
+      );
+    } else {
+      out.push(
+        <Link key={k} href={`/player/${bestMatch.id}`} className={className}>
+          {bestMatch.name}
+        </Link>
+      );
+    }
+
     cursor = bestMatch.end;
   }
   return out;
