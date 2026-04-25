@@ -16,12 +16,6 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen flex flex-col bg-white">
-      {/* Demo banner */}
-      <div className="bg-green text-white text-xs text-center py-2 px-4">
-        <strong className="font-semibold">Running in demo mode.</strong>{' '}
-        <span className="opacity-80">Add an OPENAI_API_KEY to .env.local for the real chat.</span>
-      </div>
-
       {/* Nav */}
       <header className="px-6 md:px-8 py-3 border-b border-[var(--hairline)] flex items-center justify-between bg-white sticky top-0 z-20 backdrop-blur">
         <Link href="/" className="font-display text-xl font-extrabold text-green tracking-wide uppercase">
