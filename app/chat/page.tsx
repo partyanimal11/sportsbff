@@ -24,6 +24,7 @@ function ChatPage() {
   const [lens, setLens] = useState<string>(DEFAULT_LENS_ID);
   const [displayName, setDisplayName] = useState<string>('');
   const [demoMode, setDemoMode] = useState<boolean>(false);
+  const [dramaMode, setDramaMode] = useState<boolean>(false);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<Msg[]>([]);
   const [streaming, setStreaming] = useState(false);
@@ -38,6 +39,7 @@ function ChatPage() {
   useEffect(() => {
     const p = getProfile();
     setLens(p.lens);
+    setDramaMode(!!p.dramaMode);
     if (p.displayName) setDisplayName(p.displayName);
 
     const seed = searchParams.get('seed');
@@ -46,6 +48,12 @@ function ChatPage() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  function toggleDrama() {
+    const next = !dramaMode;
+    setDramaMode(next);
+    setProfile({ dramaMode: next });
+  }
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
@@ -82,7 +90,7 @@ function ChatPage() {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: next, lens }),
+        body: JSON.stringify({ messages: next, lens, dramaMode }),
       });
       if (!res.ok || !res.body) {
         setMessages([
@@ -130,8 +138,15 @@ function ChatPage() {
 
   return (
     <PlayerOverlayContext.Provider value={setOverlayPlayer}>
-    <main className="min-h-screen flex flex-col">
-      <header className="px-6 md:px-8 py-3 border-b border-[var(--hairline)] flex items-center justify-between bg-white sticky top-0 z-10 backdrop-blur">
+    <main
+      className="min-h-screen flex flex-col transition-colors duration-500"
+      style={
+        dramaMode
+          ? { background: 'radial-gradient(ellipse at top, rgba(232,75,122,0.06), transparent 50%), radial-gradient(ellipse at bottom, rgba(255,107,61,0.05), transparent 50%), #FFFFFF' }
+          : undefined
+      }
+    >
+      <header className="px-6 md:px-8 py-3 border-b border-[var(--hairline)] flex items-center justify-between bg-white/80 sticky top-0 z-10 backdrop-blur">
         <div className="flex items-center gap-4">
           <Link
             href="/"
@@ -145,10 +160,35 @@ function ChatPage() {
             </span>
           )}
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           {displayName && (
-            <span className="hidden md:block text-sm text-ink-soft">Hi, {displayName}</span>
+            <span className="hidden md:block text-sm text-ink-soft mr-1">Hi, {displayName}</span>
           )}
+          <button
+            type="button"
+            onClick={toggleDrama}
+            disabled={streaming}
+            className={`group inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[13px] font-semibold transition-all duration-200 ${
+              dramaMode
+                ? 'text-white shadow-md'
+                : 'text-ink-soft bg-white border border-[var(--hairline)] hover:border-magenta hover:text-magenta'
+            }`}
+            style={
+              dramaMode
+                ? {
+                    background: 'linear-gradient(135deg, #E84B7A 0%, #FF6B3D 100%)',
+                    boxShadow: '0 6px 16px -6px rgba(232,75,122,0.5)',
+                  }
+                : undefined
+            }
+            title={dramaMode ? 'Drama Mode is ON — every answer leads with the spicy version' : 'Turn on Drama Mode'}
+          >
+            <span className={dramaMode ? 'animate-pulse' : ''}>🔥</span>
+            <span>Drama</span>
+            <span className={`ml-1 text-[10px] font-bold tracking-widest uppercase ${dramaMode ? 'opacity-90' : 'opacity-50'}`}>
+              {dramaMode ? 'ON' : 'OFF'}
+            </span>
+          </button>
           <select
             className="text-sm bg-white border border-[var(--hairline)] rounded-full px-3 py-1.5 text-ink-soft cursor-pointer"
             value={lens}

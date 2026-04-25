@@ -3,16 +3,23 @@
   "title": "Succession",
   "years": "2018-2023",
   "creators": ["Jesse Armstrong"],
-  "themes": ["family business", "generational succession", "fathers and sons", "ownership vs. operation", "wealth as identity", "siblings as rivals", "media empires", "performance of competence"],
+  "themes": ["family business", "generational succession", "fathers and sons", "ownership vs. operation", "wealth as identity", "siblings as rivals", "media empires", "performance of competence", "the rich are not okay"],
   "characters": [
-    { "name": "Logan Roy", "archetype": "The patriarch. Founder. Refuses to die. The whole show orbits him.", "actor": "Brian Cox" },
-    { "name": "Kendall Roy", "archetype": "The chosen heir who was never quite chosen. Wants it desperately. Falls apart in public.", "actor": "Jeremy Strong" },
-    { "name": "Shiv Roy", "archetype": "The only daughter. Smartest. Quietly the most ruthless. Keeps getting passed over.", "actor": "Sarah Snook" },
-    { "name": "Roman Roy", "archetype": "The youngest, the funniest, the most damaged. Says the cruelest things while crying.", "actor": "Kieran Culkin" },
-    { "name": "Connor Roy", "archetype": "The eldest. Half-brother. Thinks he's running for President. Mostly forgotten.", "actor": "Alan Ruck" },
+    { "name": "Logan Roy", "archetype": "The patriarch. Founder. Refuses to die. The whole show orbits him. Says 'fuck off' more than any human in TV history.", "actor": "Brian Cox" },
+    { "name": "Kendall Roy", "archetype": "The chosen heir who was never quite chosen. Wants it desperately. Falls apart in public. The L to the OG rap.", "actor": "Jeremy Strong" },
+    { "name": "Shiv Roy", "archetype": "The only daughter. Smartest. Quietly the most ruthless. Keeps getting passed over. Eventually betrayed by Tom AND her brothers.", "actor": "Sarah Snook" },
+    { "name": "Roman Roy", "archetype": "The youngest, the funniest, the most damaged. Says the cruelest things while crying. Failed eulogy at Logan's funeral.", "actor": "Kieran Culkin" },
+    { "name": "Connor Roy", "archetype": "The eldest. Half-brother. Thinks he's running for President. Mostly forgotten. Marries Willa.", "actor": "Alan Ruck" },
     { "name": "Tom Wambsgans", "archetype": "Shiv's husband. Operator. Survivor. Boar on the floor. Eventually wins everything.", "actor": "Matthew Macfadyen" },
-    { "name": "Greg Hirsch", "archetype": "The cousin nobody wanted. Falls upward through pure incompetence and proximity.", "actor": "Nicholas Braun" },
-    { "name": "Gerri Kellman", "archetype": "Waystar's general counsel. Roman's complicated almost-something. The actual adult in the room.", "actor": "J. Smith-Cameron" }
+    { "name": "Greg Hirsch", "archetype": "The cousin nobody wanted. Falls upward through pure incompetence and proximity. Married 'Tom-and-Greg' to him forever.", "actor": "Nicholas Braun" },
+    { "name": "Gerri Kellman", "archetype": "Waystar's general counsel. Roman's complicated almost-something. The actual adult in the room.", "actor": "J. Smith-Cameron" },
+    { "name": "Stewy Hosseini", "archetype": "Kendall's college bestie turned hostile activist investor. The 'Bear Hug' enabler.", "actor": "Arian Moayed" },
+    { "name": "Frank Vernon", "archetype": "The old guard. Logan's sometime confidante. Always one of the oldest people in any room.", "actor": "Peter Friedman" },
+    { "name": "Karl Muller", "archetype": "Smug CFO. The 'real money' alpha. Plays both sides every season.", "actor": "David Rasche" },
+    { "name": "Marcia Roy", "archetype": "Logan's third wife. Quiet menace. Disappears mid-show, returns for the funeral.", "actor": "Hiam Abbass" },
+    { "name": "Lukas Matsson", "archetype": "Swedish tech bro. The buyer of Waystar. Tom's eventual boss.", "actor": "Alexander Skarsgård" },
+    { "name": "Willa Ferreyra", "archetype": "Connor's escort-turned-wife. Reluctant playwright. The 'is this all there is' face.", "actor": "Justine Lupe" },
+    { "name": "Naomi Pierce", "archetype": "Old-money Pierce family heir. Kendall's on-and-off girlfriend.", "actor": "Annabelle Dexter-Jones" }
   ],
   "signature_quotes": [
     "Fuck off.",
@@ -24,20 +31,52 @@
     "L to the OG.",
     "We here. We together.",
     "I don't even want to be CEO of Pierce, I want to be CEO of Sweden!",
-    "The poison drips through."
+    "The poison drips through.",
+    "What is a person but their context?",
+    "I might bury you, but I love you.",
+    "She loves me. We were meant to be together.",
+    "If it is to be said, so it be, so it is."
   ],
-  "scenes": [
-    "Logan dying on the plane in S4E3.",
+  "viral_moments": [
+    "Logan dying on the plane in S4E3 — quietest TV moment of the year.",
     "Kendall's '90s rap performance for Logan's birthday.",
     "Boar on the floor — the dinner of psychological torture.",
-    "Roman crying at Logan's funeral.",
+    "Roman's failed eulogy crying at Logan's funeral.",
     "The election night episode — the kids decide an election.",
     "Tom and Shiv's car proposal.",
-    "Logan firing Greg via thumb-wrestle."
+    "Logan firing Greg via thumb-wrestle.",
+    "The 'Tom and Greg do crimes' season finale.",
+    "Shiv at the boardroom vote, waving as Tom becomes CEO.",
+    "Connor's wedding to Willa (the saddest party in TV history)."
+  ],
+  "memes": [
+    "'Tomlette' as universal shorthand for any business cover-up.",
+    "Boar on the floor (the corporate humiliation ritual) used in every workplace meme.",
+    "'L to the OG' performed at hundreds of weddings since.",
+    "'I love you but you are not serious people' as the universal Twitter dunk.",
+    "Greg getting taller / falling upward — the cousin Greg energy.",
+    "'I'd be incredibly good at being CEO' as the white-male overconfidence meme.",
+    "Roman's lap-dance scene with Gerri (don't look it up).",
+    "Pre-grilled cheese.",
+    "'We here. We together.' as the awkward-emotional-support phrase.",
+    "Naomi's 'tea hands' meme."
   ],
   "off_screen_drama": [
-    "Jeremy Strong's method acting is its own subplot — the New Yorker profile.",
-    "Brian Cox is famously not impressed with method acting.",
-    "Cousin Greg's tower of comedy bits."
+    "Jeremy Strong's method acting documented in a New Yorker profile became its own scandal — co-stars defended/rolled their eyes.",
+    "Brian Cox is famously not impressed with method acting; called it 'pretentious'.",
+    "Kieran Culkin won the Emmy for S4 — the speech where he asked Jesse Eisenberg for kids was iconic.",
+    "Sarah Snook gave birth between S3 and S4; her pregnancy was hidden in S4.",
+    "Jesse Armstrong ended the show after S4 to avoid 'overstaying its welcome'.",
+    "The cast did press together post-finale wearing matching pins — fans loved it.",
+    "Multiple cast members (Snook, Macfadyen, Strong) won major awards within 6 months of finale."
+  ],
+  "running_jokes": [
+    "Greg gets taller every season (he's 6'7).",
+    "Roman dictates corporate strategy from a lap of his couch.",
+    "Connor's presidential 'campaign' that polls at 1%.",
+    "Tom's collection of grievances about being treated badly by Shiv.",
+    "Logan's kids never doing the actual work but inheriting the rewards.",
+    "Karl always being two steps ahead of everyone.",
+    "Shiv's fashion getting sharper as her professional life falls apart."
   ]
 }

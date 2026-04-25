@@ -3,12 +3,14 @@
   "title": "Love Island",
   "years": "2015-present (UK); 2019-present (US)",
   "creators": ["Richard Cowles (UK)"],
-  "themes": ["villa life", "couples and recouplings", "Casa Amor", "the public vote", "the producers' invisible hand", "reality-TV editing as narrative"],
+  "themes": ["villa life", "couples and recouplings", "Casa Amor", "the public vote", "the producers' invisible hand", "reality-TV editing as narrative", "British vs. American versions as their own debate"],
   "characters": [
-    { "name": "Iain Stirling", "archetype": "The narrator. Scottish wit over every dramatic moment. The best part of the UK version.", "actor": "Iain Stirling" },
+    { "name": "Iain Stirling", "archetype": "The narrator (UK version). Scottish wit over every dramatic moment. The best part of the UK version.", "actor": "Iain Stirling" },
     { "name": "The Islanders", "archetype": "The contestants — typically 10-12 to start, paired in couples. Couples shift over the season.", "actor": "Various" },
     { "name": "Casa Amor cohort", "archetype": "The 'bombshells' brought in mid-season to test couples. Often ends marriages.", "actor": "Various" },
-    { "name": "The Producers", "archetype": "Never seen, always felt. Engineer drama via challenges, recouplings, and well-timed bombshells.", "actor": "—" }
+    { "name": "Maya Jama", "archetype": "Current UK host. Replaced Laura Whitmore. Beloved.", "actor": "Maya Jama" },
+    { "name": "Caroline Flack", "archetype": "Original UK host (2015-2020). Tragically died by suicide in 2020 — show added mental health protocols after.", "actor": "Caroline Flack (RIP)" },
+    { "name": "Sarah Hyland", "archetype": "Current US host. Replaced Arielle Vandenberg.", "actor": "Sarah Hyland" }
   ],
   "signature_quotes": [
     "I got a text!",
@@ -18,18 +20,47 @@
     "And just like that...",
     "Pied off.",
     "Mugged off.",
-    "Get a grafting."
+    "Get a grafting.",
+    "My head's been turned.",
+    "I'm gonna do me.",
+    "It's giving 'I have something to say.'"
   ],
-  "scenes": [
+  "viral_moments": [
     "Casa Amor recouplings — when most relationships shatter.",
     "The first 'I got a text!' moment of the season.",
     "Public-vote eliminations.",
     "The fire pit recoupling ceremonies.",
-    "The 'meet the parents' challenge."
+    "The 'meet the parents' challenge.",
+    "Movie night challenges — when villa drama gets edited together.",
+    "The Heart Rate challenge dance moments.",
+    "'Tommy from Bury' Tommy Fury winning S5 with Molly-Mae and becoming a real-world Manchester power couple."
+  ],
+  "memes": [
+    "'I got a text!' as the universal 'wait, important news!' meme.",
+    "'My head's been turned' for any minor reconsideration of anything.",
+    "'It's a recoupling' applied to NFL trade deadlines, NBA free agency, fantasy drafts.",
+    "Iain Stirling's narration applied to every mundane situation on the internet.",
+    "The 'pied' meme — being rejected publicly.",
+    "The 'graft' meme — actively pursuing someone.",
+    "Casa Amor reveals as the most-anticipated TV moment of the year for British audiences.",
+    "'Loyalty' as a meme — characters who prove they had none."
   ],
   "off_screen_drama": [
-    "Multiple Islander deaths post-show triggered industry-wide mental health reforms.",
-    "Caroline Flack's tragic death (former host).",
-    "The US version (Peacock) has its own fanbase but the UK is the gold standard."
+    "Multiple Islander deaths post-show triggered industry-wide mental health reforms (UK).",
+    "Caroline Flack's tragic death (former host) led to industry-wide changes around press coverage.",
+    "Mike Thalassitis (S3) and Sophie Gradon (S2) both died after appearing on the show.",
+    "The US version (Peacock) has its own fanbase but the UK is the gold standard.",
+    "Tommy Fury and Molly-Mae Hague became the show's first real-life couple to have a child (Bambi, 2023). Then split in 2024.",
+    "'Maura, Curtis, Amy' love triangle in S5 became foundational reality TV viewing.",
+    "Ekin-Su (S8 winner) became one of the UK's biggest reality TV stars."
+  ],
+  "running_jokes": [
+    "Every season has the 'no one is here for the right reasons' meme.",
+    "The 'unbothered' Islander who gets the most camera time.",
+    "Movie nights edited to expose every contradiction — pure chaos TV.",
+    "The 'they're best friends now' postscript that lasts 6 weeks.",
+    "Producers timing bombshells perfectly for max drama.",
+    "Iain Stirling making the smallest moment hilarious.",
+    "The 'this couple is genuine' couples breaking up by Christmas."
   ]
 }

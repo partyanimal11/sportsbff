@@ -13,9 +13,10 @@ export type Profile = {
   league?: 'nfl' | 'nba' | 'both';
   lens: string;
   onboardedAt?: string;
+  dramaMode?: boolean;
 };
 
-const DEFAULT: Profile = { lens: 'plain' };
+const DEFAULT: Profile = { lens: 'plain', dramaMode: false };
 
 export function getProfile(): Profile {
   if (typeof window === 'undefined') return DEFAULT;

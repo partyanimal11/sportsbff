@@ -3,36 +3,67 @@
   "title": "Euphoria",
   "years": "2019-present",
   "creators": ["Sam Levinson"],
-  "themes": ["addiction", "mental health", "high school as battlefield", "makeup as armor", "fashion as identity", "trauma cycles", "queerness", "the performance of self"],
+  "themes": ["addiction", "mental health", "high school as battlefield", "makeup as armor", "fashion as identity", "trauma cycles", "queerness", "the performance of self", "Gen Z chronicled"],
   "characters": [
-    { "name": "Rue Bennett", "archetype": "The narrator. Recovering addict. Brilliant, broken, beloved. Zendaya.", "actor": "Zendaya" },
+    { "name": "Rue Bennett", "archetype": "The narrator. Recovering addict. Brilliant, broken, beloved. Zendaya — won Emmy at 24.", "actor": "Zendaya" },
     { "name": "Maddy Perez", "archetype": "The alpha. Glitter eye makeup. Walks into every room like she owns it.", "actor": "Alexa Demie" },
     { "name": "Cassie Howard", "archetype": "The pretty one who unraveled. The bathtub scene. The bathroom monologue.", "actor": "Sydney Sweeney" },
     { "name": "Lexi Howard", "archetype": "Cassie's sister. Quiet observer. Wrote a play that exposed everyone in S2.", "actor": "Maude Apatow" },
     { "name": "Jules Vaughn", "archetype": "Trans, free, devastating. Rue's love interest. The opposite of stable.", "actor": "Hunter Schafer" },
     { "name": "Nate Jacobs", "archetype": "The football star villain. Generational rage. His father is worse.", "actor": "Jacob Elordi" },
-    { "name": "Fezco", "archetype": "The dealer with a soft heart. The Lexi storyline broke everyone.", "actor": "Angus Cloud (RIP)" },
-    { "name": "Kat Hernandez", "archetype": "The body-positive plot Sam Levinson reportedly cut. Barbie Ferreira left after S2.", "actor": "Barbie Ferreira" }
+    { "name": "Fezco", "archetype": "The dealer with a soft heart. The Lexi storyline broke everyone. Angus Cloud died in 2023.", "actor": "Angus Cloud (RIP)" },
+    { "name": "Kat Hernandez", "archetype": "The body-positive plot Sam Levinson reportedly cut. Barbie Ferreira left after S2.", "actor": "Barbie Ferreira" },
+    { "name": "Ashtray", "archetype": "Fez's tiny, terrifying brother. Killed cops with kitchen knives by age 12.", "actor": "Javon 'Wanna' Walton" },
+    { "name": "Ali Muhammad", "archetype": "Rue's NA sponsor. The diner monologue is the show's emotional peak.", "actor": "Colman Domingo" },
+    { "name": "Cal Jacobs", "archetype": "Nate's father. Closeted. Predatory. The show's true villain.", "actor": "Eric Dane" }
   ],
   "signature_quotes": [
     "I get older, but my heart stays the same.",
     "We're all just looking for someone to love us.",
     "I just want my mom to be proud of me.",
     "She doesn't even go here.",
-    "It's just makeup, but it's also armor."
+    "It's just makeup, but it's also armor.",
+    "I'm literally so much happier when I'm not myself.",
+    "Bitch you better be joking.",
+    "There's nothing more powerful than a fat girl who doesn't give a fuck."
   ],
-  "scenes": [
+  "viral_moments": [
     "Maddy's New Year's Eve glitter eye makeup entrance.",
     "Rue and Jules in the train station.",
-    "Cassie's bathtub crying scene.",
-    "Lexi's play — exposing everyone.",
+    "Cassie's bathtub crying scene with the 'I have never, ever, EVER, been happier' monologue.",
+    "Lexi's play 'Our Life' — exposing everyone in real-time.",
     "Rue's relapse monologue with Ali in the diner.",
-    "Fezco missing the play."
+    "Fezco missing the play.",
+    "Cassie at the carousel scene.",
+    "Maddy beating Cassie at her own party — 'this isn't the end of anything, this is just the beginning'.",
+    "The drug-deal-gone-wrong shootout (Fez and Ash)."
+  ],
+  "memes": [
+    "'She doesn't even go here' applied to every interloper meme.",
+    "Maddy's eye makeup tutorials — the most-recreated look on TikTok.",
+    "Cassie crying in the bathtub stitched into every breakup video.",
+    "'I have never been happier' reaction memes.",
+    "Sydney Sweeney's bathroom scenes spawned a thousand TikToks.",
+    "Hunter Schafer fashion looks at every Met Gala.",
+    "Nate Jacobs as the textbook 'red flag' meme.",
+    "The Lexi play scene becoming the 'when you finally tell the truth' template."
   ],
   "off_screen_drama": [
-    "Sam Levinson controversies — every season has a backstage story.",
-    "Angus Cloud's death in 2023 was devastating.",
-    "Barbie Ferreira left amidst rumors of edited-out scenes.",
-    "Season 3 has been delayed and re-cast multiple times."
+    "Sam Levinson controversies — every season has a backstage story (working conditions, intimacy coordinator drama).",
+    "Angus Cloud's death in 2023 was devastating — entire show paused.",
+    "Barbie Ferreira left amidst rumors of edited-out scenes — Sam Levinson reportedly cut Kat's storyline.",
+    "Season 3 has been delayed and re-cast multiple times — original 2024 release pushed to 2025+.",
+    "Zendaya took home Emmys for both seasons — first Black woman to win Best Drama Actress twice.",
+    "Sydney Sweeney's career exploded between S1 and S3 (Anyone But You, Madame Web).",
+    "Jacob Elordi (Nate) became the leading man of his generation in 2024 (Saltburn, Priscilla)."
+  ],
+  "running_jokes": [
+    "Maddy is somehow always at the right party at the right time.",
+    "The lighting in every Euphoria scene is its own character.",
+    "Rue's voiceover narration that ages 100 years between S1 and S2.",
+    "Cassie's downward spiral being the show's most-screencapped storyline.",
+    "Lexi's 'I see everything' angle that keeps getting darker.",
+    "Nate Jacobs' jaw doing more acting than the lines.",
+    "The fact that East Highland HS has produced more drama than 4 seasons of high-school TV combined."
   ]
 }

@@ -1,33 +1,67 @@
 {
   "id": "gossip-girl",
   "title": "Gossip Girl",
-  "years": "2007-2012",
+  "years": "2007-2012 (original); 2021-2023 (HBO Max reboot)",
   "creators": ["Josh Schwartz", "Stephanie Savage"],
-  "themes": ["power dynamics", "anonymity", "outsider control of the narrative", "Upper East Side hierarchy", "betrayal between best friends"],
+  "themes": ["power dynamics", "anonymity", "outsider control of the narrative", "Upper East Side hierarchy", "betrayal between best friends", "Brooklyn vs. UES class warfare"],
   "characters": [
-    { "name": "Dan Humphrey", "archetype": "The gifted outsider who used anonymity to control the powerful. Lonely Boy. The narrator. The traitor in plain sight.", "actor": "Penn Badgley" },
-    { "name": "Blair Waldorf", "archetype": "The queen. Strategic. Cruel. Loyal to the wrong people. The one who never forgave Serena.", "actor": "Leighton Meester" },
-    { "name": "Serena van der Woodsen", "archetype": "The It Girl. Magnetic. The one everyone wants. Slightly self-destructive.", "actor": "Blake Lively" },
-    { "name": "Chuck Bass", "archetype": "I'm Chuck Bass. Quiet menace. Inheritor of empire. Drips confidence. Loves Blair.", "actor": "Ed Westwick" },
-    { "name": "Nate Archibald", "archetype": "The pretty, mostly clueless one. Always caught between his parents and his friends.", "actor": "Chace Crawford" },
-    { "name": "Jenny Humphrey", "archetype": "Dan's little sister. Got chewed up by the UES. Tragic collateral damage.", "actor": "Taylor Momsen" },
-    { "name": "Vanessa Abrams", "archetype": "The Brooklyn loyal one. Dan exposed her on the blog anyway.", "actor": "Jessica Szohr" }
+    { "name": "Dan Humphrey", "archetype": "Lonely Boy. The narrator. The Brooklyn outsider with a Manhattan obsession. Eventually revealed as Gossip Girl herself.", "actor": "Penn Badgley" },
+    { "name": "Blair Waldorf", "archetype": "The queen. Strategic. Cruel. Loyal to the wrong people. The one who never forgave Serena. Eventually marries Chuck.", "actor": "Leighton Meester" },
+    { "name": "Serena van der Woodsen", "archetype": "The It Girl. Magnetic. Slightly self-destructive. Always returning to NYC after one of her exits.", "actor": "Blake Lively" },
+    { "name": "Chuck Bass", "archetype": "I'm Chuck Bass. Quiet menace. Inheritor of empire. Drips confidence. Loves Blair from S1 to the finale.", "actor": "Ed Westwick" },
+    { "name": "Nate Archibald", "archetype": "The pretty, mostly clueless one. Always caught between his parents and his friends. Eventually a decent newspaper guy.", "actor": "Chace Crawford" },
+    { "name": "Jenny Humphrey", "archetype": "Dan's little sister. Got chewed up by the UES. Eventually disappeared from the show entirely (Taylor Momsen left).", "actor": "Taylor Momsen" },
+    { "name": "Vanessa Abrams", "archetype": "The Brooklyn loyal one. Dan exposed her on the blog. Vanished by S5.", "actor": "Jessica Szohr" },
+    { "name": "Eric van der Woodsen", "archetype": "Serena's gay brother. The genuinely sweet one. The 'why is no one writing about Eric' Twitter genre.", "actor": "Connor Paolo" },
+    { "name": "Lily van der Woodsen", "archetype": "The mom married to Rufus eventually. Vodka by 11 AM.", "actor": "Kelly Rutherford" },
+    { "name": "Rufus Humphrey", "archetype": "Dan's dad. The aging rocker (Lincoln Hawk). Still in love with Lily across decades.", "actor": "Matthew Settle" },
+    { "name": "Bart Bass", "archetype": "Chuck's terrifying father. Faked his death. Fell off a building.", "actor": "Robert John Burke" },
+    { "name": "Georgina Sparks", "archetype": "The wildcard chaos agent. Returns once a season to ruin everything.", "actor": "Michelle Trachtenberg (RIP 2025)" },
+    { "name": "Dorota", "archetype": "Blair's housekeeper. Truth-teller. Cinderella-coded.", "actor": "Zuzanna Szadkowski" }
   ],
   "signature_quotes": [
-    "Spotted: [character] doing [scandalous thing]. You know you love me. XOXO, Gossip Girl.",
+    "Spotted: [Character] doing [scandalous thing]. You know you love me. XOXO, Gossip Girl.",
     "I'm Chuck Bass.",
     "I'm not a stop along the way. I'm a destination.",
-    "Lonely Boy."
+    "Lonely Boy.",
+    "Three words, eight letters. Say it and I'm yours.",
+    "I'll always know you, Blair Waldorf.",
+    "We're inevitable, Bass."
   ],
-  "scenes": [
-    "Dan revealed as Gossip Girl in the finale — everyone in the audience suspected for years.",
-    "Chuck and Blair: 'I love you. I always have.'",
-    "Serena and Dan's first meeting at the Palace.",
-    "The Met Steps cafeteria politics."
+  "viral_moments": [
+    "Dan's reveal as Gossip Girl in the finale (everyone knew, no one wanted to admit it).",
+    "Blair pushing Chuck for marriage at the dragon-painted tavern in Paris.",
+    "Chuck riding into the wedding with Blair on a white horse.",
+    "Serena's first appearance at Grand Central Station with the violin music.",
+    "Jenny's emo phase with the racoon eye makeup.",
+    "Nate sleeping with the headmistress.",
+    "The Met Steps cafeteria diagram from the pilot."
+  ],
+  "memes": [
+    "'Spotted' as a meme intro for any drama anywhere on the internet.",
+    "The 'I'm Chuck Bass' meme — applied to every confident villain on TV.",
+    "'XOXO' as a sign-off in every Gen Z text message.",
+    "The 'You know you love me' tagline for every group chat shenanigan.",
+    "Dan as Gossip Girl reveal getting roasted forever — 'no, the man cannot have written it'.",
+    "The 'how does Lonely Boy afford a brownstone in Brooklyn' running joke.",
+    "Blair's headbands becoming a tweet genre."
   ],
   "off_screen_drama": [
-    "Penn Badgley reportedly hated his role.",
-    "Ed Westwick controversies.",
-    "Reboot in 2021 was widely panned."
+    "Penn Badgley reportedly hated his role — has said so in multiple interviews.",
+    "Ed Westwick (Chuck) had multiple sexual misconduct allegations in 2018; cases were eventually dropped.",
+    "Blake Lively and Penn Badgley reportedly didn't get along during filming.",
+    "Taylor Momsen (Jenny) left the show to be a rock star in The Pretty Reckless — has stayed there.",
+    "Michelle Trachtenberg (Georgina) tragically passed away in 2025 — the cast reunited for tributes.",
+    "The 2021 reboot was widely considered a disaster — got canceled after 2 seasons.",
+    "Leighton Meester quietly married Adam Brody (Seth Cohen from The OC) — Schwartz-verse marriage."
+  ],
+  "running_jokes": [
+    "Dan = Gossip Girl was 'foreshadowed' so heavily that the writers basically invented a third version of him in S6.",
+    "Nate is in every season but has 4 plot lines total.",
+    "The 'why does the Humphrey loft have the best view of Manhattan in Brooklyn' debate.",
+    "Blair scheming for 6 seasons to do things that took 2 episodes.",
+    "Chuck's 'business empire' that we never see him work for.",
+    "Eric (the literal good child) being unceremoniously written off.",
+    "Serena's hair somehow getting blonder every season."
   ]
 }

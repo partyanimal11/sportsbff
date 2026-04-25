@@ -20,6 +20,7 @@ const Schema = z.object({
     .min(1)
     .max(40),
   lens: z.string().optional(),
+  dramaMode: z.boolean().optional(),
 });
 
 /**
@@ -42,6 +43,7 @@ export async function POST(req: NextRequest) {
   }
 
   const lensId = body.lens && isValidLens(body.lens) ? body.lens : DEFAULT_LENS_ID;
+  const dramaMode = !!body.dramaMode;
   const last = body.messages[body.messages.length - 1];
 
   const apiKey = process.env.OPENAI_API_KEY ?? '';
@@ -90,7 +92,7 @@ export async function POST(req: NextRequest) {
   // ─────────────────────────────────────────────────────────
   // LIVE MODE — call OpenAI
   // ─────────────────────────────────────────────────────────
-  const systemPrompt = buildSystemPrompt({ lensId, userMessage: last.content });
+  const systemPrompt = buildSystemPrompt({ lensId, userMessage: last.content, dramaMode });
 
   const completion = await getOpenAI().chat.completions.create({
     model: MODELS.CHAT,

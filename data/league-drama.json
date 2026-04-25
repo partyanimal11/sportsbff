@@ -1,0 +1,112 @@
+{
+  "nfl": {
+    "rivalries": [
+      { "id": "kc-buf", "name": "Chiefs vs. Bills", "summary": "The defining AFC rivalry of the Mahomes era. Mahomes is 4-1 vs. Allen in the playoffs. The 13-second collapse, the OT classic, the constant January heartbreak for Buffalo." },
+      { "id": "phi-dal", "name": "Eagles vs. Cowboys", "summary": "The most-hated NFC East rivalry. Eagles fans throw batteries; Cowboys fans claim America's Team status. The Hurts vs. Dak comparison runs deep." },
+      { "id": "gb-chi", "name": "Packers vs. Bears", "summary": "The oldest rivalry in football (1921). Bears have lost 23 of the last 26. The 'Bears still suck' Packers fan culture is permanent." },
+      { "id": "sf-sea", "name": "49ers vs. Seahawks", "summary": "Harbaugh-vs-Carroll era set the modern tone. The Sherman tip in the 2014 NFC Championship is the defining moment." },
+      { "id": "pit-bal", "name": "Steelers vs. Ravens", "summary": "The most physically violent rivalry in football. Defensive wars. Ben vs. Joe Flacco vs. Lamar." },
+      { "id": "ne-nyj", "name": "Patriots vs. Jets", "summary": "Belichick's 25-year domination of the Jets is the longest-running comedy in football. Jets fans have suffered." }
+    ],
+    "owner_drama": [
+      "Jerry Jones — 36 years owning the Cowboys, no Super Bowl since 1995. Acts as his own GM. Famously bad at letting go.",
+      "Dan Snyder finally sold the Commanders in 2023 after years of investigations. The franchise immediately got watchable.",
+      "David Tepper (Panthers) has burned through coaches and has the worst owner reputation in the NFL.",
+      "Robert Kraft + Bill Belichick split was the messiest divorce in modern NFL — coach and owner stopped speaking, eventually parted in 2024.",
+      "The Walton-Penner group bought the Broncos for $4.65B in 2022 — record sale price."
+    ],
+    "scandals": [
+      { "id": "spygate", "name": "Spygate (2007)", "summary": "Patriots caught filming Jets defensive signals. NFL fined Belichick $500K and stripped a 1st-rd pick. Set off two decades of Patriots-cheating accusations." },
+      { "id": "deflategate", "name": "Deflategate (2014-15)", "summary": "Brady accused of using under-inflated footballs. Suspended 4 games. The investigation cost millions. Brady won 3 more rings after." },
+      { "id": "bountygate", "name": "Bountygate (2012)", "summary": "Saints' DC Gregg Williams ran a bounty system rewarding hits that injured opponents. Sean Payton suspended for a full year." },
+      { "id": "watson-allegations", "name": "Deshaun Watson allegations (2021-22)", "summary": "20+ massage therapists filed civil suits alleging sexual misconduct. Watson settled most cases. Browns traded for him + gave him $230M guaranteed." },
+      { "id": "tagovailoa-protocol", "name": "Tua Tagovailoa concussion protocol (2022)", "summary": "Tua's multiple concussions in 2022 led to the league overhauling its protocols. Critics said the changes came too late." }
+    ],
+    "viral_moments": [
+      "The Helmet Catch — David Tyree, Super Bowl XLII (2008), beat the undefeated Patriots.",
+      "The Music City Miracle — Titans wild card vs. Bills (2000), home-run throwback.",
+      "The 28-3 collapse — Falcons vs. Patriots, Super Bowl LI (2017). Permanent meme.",
+      "The Philly Special — Eagles vs. Patriots, Super Bowl LII (2018). Foles to Foles.",
+      "Mahomes' first ring — Super Bowl LIV comeback vs. 49ers (2020).",
+      "The Tush Push controversy — Eagles' QB sneak that the league has tried to ban for 3 years.",
+      "Travis Kelce / Andy Reid sideline argument — Super Bowl LVIII.",
+      "Tom Brady's last game (Buccaneers, 2022 wild card loss) — visible tears."
+    ],
+    "memes": [
+      "'Same Old Browns' — the franchise's identity for decades.",
+      "'Bills Mafia' table-jumping — turned a fanbase into a brand.",
+      "'Trust the Process' Sixers/Cleveland Browns crossover.",
+      "Andy Reid Time Management memes — every late-game clock decision gets dissected.",
+      "Sean McVay 'Smart Coach' memes vs. Mike McCarthy 'Run It Twice' memes.",
+      "Mr. Irrelevant (Brock Purdy) becoming the actual Mr. Relevant.",
+      "Kyler Murray's contract clause about studying film for 4 hours.",
+      "The Rams 'F them picks' winning Super Bowl LVI."
+    ],
+    "ongoing_storylines": [
+      "Will the Mahomes Chiefs win 4 in 5? They're already at 3.",
+      "Can Caleb Williams + Ben Johnson save the Bears?",
+      "How much longer does Aaron Rodgers play?",
+      "Will the league finally ban the Tush Push?",
+      "Can Joe Burrow stay healthy for a full season?",
+      "Has Brian Callahan (Titans) figured it out yet?",
+      "Will the Jets ever escape the Jets curse?",
+      "Is Jordan Love a top-5 QB or just a Packer?"
+    ]
+  },
+  "nba": {
+    "rivalries": [
+      { "id": "lal-bos", "name": "Lakers vs. Celtics", "summary": "The original NBA rivalry. 12 Finals matchups. Magic vs. Bird. Kobe vs. KG. Now LeBron-era vs. Tatum-era. Always personal." },
+      { "id": "okc-den", "name": "Thunder vs. Nuggets", "summary": "Modern Western Conference battle. Jokic vs. SGA. The 2024 conference semis went 7 games. 2025 rematch likely." },
+      { "id": "phi-bos", "name": "76ers vs. Celtics", "summary": "Eastern Conference enemies. Embiid vs. Tatum. Tobias Harris's contract jokes. The Process vs. The Patriots-equivalent." },
+      { "id": "gsw-lac", "name": "Warriors vs. Clippers", "summary": "Same building (Crypto.com / Chase). Both LA-area, but Clippers will never beat Lakers in heart. Curry vs. Harden modern era." },
+      { "id": "mil-bos", "name": "Bucks vs. Celtics", "summary": "Giannis vs. Tatum. Two of the East's top talents. The 'who's the East alpha' debate runs through them." }
+    ],
+    "owner_drama": [
+      "Donald Sterling's 2014 racism scandal — recordings leaked, league forced a sale to Steve Ballmer.",
+      "Robert Sarver (Suns) sold in 2023 after racism/sexism investigation revealed a toxic workplace.",
+      "James Dolan (Knicks) has banned multiple journalists, fired employees over Reddit comments, and refuses to attend most games. NYC tabloid catnip.",
+      "Mark Cuban sold majority of the Mavericks to the Adelson family in 2024 — speculation about gambling/casino angle.",
+      "Joe Lacob (Warriors) is famously the most-hated owner in the league. Constantly says provocative things in pressers."
+    ],
+    "scandals": [
+      { "id": "kd-burner", "name": "KD's Burner Account Saga (2017-present)", "summary": "Kevin Durant has run multiple anonymous Twitter accounts (most recently @gethigher77) targeting his own teammates. He defended himself in third person from his real account in 2017. Has never fully admitted it." },
+      { "id": "morant-suspensions", "name": "Ja Morant Suspensions (2023)", "summary": "Ja was suspended twice in 18 months for showing guns on Instagram Live. The second suspension was 25 games." },
+      { "id": "porter-jr-betting", "name": "Jontay Porter NBA Gambling Ban (2024)", "summary": "Jontay Porter (Raptors) was permanently banned from the NBA for betting on his own games. Sent ripples through the league about gambling oversight." },
+      { "id": "tampering-fines", "name": "Constant Tampering Fines", "summary": "Every star free agent move involves accusations of pre-arranged deals. The league fines teams (and rarely individuals) for it. Pat Riley is the king of subtle tampering." },
+      { "id": "load-management", "name": "Load Management Crackdown (2023)", "summary": "League introduced rules requiring stars to play in nationally-televised games and All-Star considerations. Kawhi Leonard and Joel Embiid are the patron saints of load management." }
+    ],
+    "viral_moments": [
+      "The Decision — LeBron's 2010 ESPN special leaving Cleveland for Miami.",
+      "Kobe's 81-point game (2006) and his last game (60 points, 2016).",
+      "Steph's unanimous MVP season (73 wins, 2016) — and the Finals collapse.",
+      "Klay Thompson's 14 threes in a half (2018).",
+      "Jokic winning the 2023 Finals MVP — 'this is the best basketball player in the world'.",
+      "Wemby's 5x5 game as a rookie.",
+      "The Luka trade — February 2025, broke the league.",
+      "'Heart Attack' Allen Iverson stepover on Tyronn Lue (2001 Finals).",
+      "Dillon Brooks talking trash to LeBron and getting eliminated by him."
+    ],
+    "memes": [
+      "'Trust the Process' — the longest-running NBA meme (Sixers since 2014).",
+      "'Cookin' — Michael Malone yelling at Jokic to call timeouts.",
+      "'They saying he's a B-tier center' — Embiid quote about himself.",
+      "'I would've shot it' — every NBA player Twitter pundit's catchphrase.",
+      "'This is a good basketball move' — euphemism for ridiculous flop.",
+      "'Dame Time' — every clutch shot Lillard hits.",
+      "'Night night' — Steph's celebration meme.",
+      "Jokic's blank stares at his coach.",
+      "Wemby blocking shots and looking apologetic.",
+      "'Daddy chill' — TJ Warren's brother yelling at refs."
+    ],
+    "ongoing_storylines": [
+      "Can OKC win it all? They're the youngest team to be the favorite ever.",
+      "Will LeBron + Bronny + Luka + AD pull off a Lakers championship?",
+      "Is Wemby the future face of the league?",
+      "Can Steph win another ring?",
+      "Will Jokic get a 4th MVP — and how do voters not vote for him?",
+      "What does the Heat do post-Jimmy Butler?",
+      "Is Cade Cunningham the new face of small-market hope?",
+      "Will Anthony Edwards be the next Jordan-tier marketing star?"
+    ]
+  }
+}
