@@ -103,38 +103,29 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             <FeatureCard
               href="/scan"
-              accent="tangerine"
-              icon={<ScanIcon />}
+              visual={<ScanVisual />}
               title="Scan"
-              tagline="Point your camera."
-              desc="Know who's playing in 0.5 seconds."
-              num="01"
+              desc="Point your camera at any game. Get the player, the team, the storylines — instantly."
+              ctaLabel="Try Scan"
             />
             <FeatureCard
               href="/chat"
-              accent="magenta"
-              icon={<ChatIcon />}
+              visual={<ChatVisual />}
               title="Chat"
-              tagline="Ask anything."
-              desc="No question is too dumb. Ever."
-              num="02"
+              desc="Ask anything about the NFL or NBA. The dumb question was the right one."
+              ctaLabel="Open Chat"
             />
             <FeatureCard
               href="/lessons"
-              accent="sapphire"
-              icon={<LessonsIcon />}
+              visual={<LessonsVisual />}
               title="Lessons"
-              tagline="Five-minute lessons."
-              desc="Made for absolute beginners."
-              num="03"
+              desc="Five-minute lessons that take you from zero to fluent. Rules, players, fantasy."
+              ctaLabel="Start a lesson"
             />
             <FeatureCard
-              accent="sage"
-              icon={<VideosIcon />}
+              visual={<VideosVisual />}
               title="Videos"
-              tagline="Coming next sprint."
-              desc="Watchable, shareable, finally explained."
-              num="04"
+              desc="Short explainers in your show's voice. A library you'll actually watch."
               soon
             />
           </div>
@@ -428,137 +419,47 @@ function BubbleYou({ children, delay = 0 }: { children: React.ReactNode; delay?:
    FEATURE CARDS
    ============================================================= */
 
-const ACCENT_HEX: Record<string, { color: string; cardTint: string; iconBg: string; glow: string }> = {
-  tangerine: { color: '#FF6B3D', cardTint: 'rgba(255,107,61,0.05)', iconBg: 'rgba(255,107,61,0.13)', glow: 'rgba(255,107,61,0.35)' },
-  magenta:   { color: '#E84B7A', cardTint: 'rgba(232,75,122,0.05)', iconBg: 'rgba(232,75,122,0.13)', glow: 'rgba(232,75,122,0.35)' },
-  sapphire:  { color: '#2D4ED1', cardTint: 'rgba(45,78,209,0.05)',  iconBg: 'rgba(45,78,209,0.13)',  glow: 'rgba(45,78,209,0.30)'  },
-  sage:      { color: '#5BA084', cardTint: 'rgba(91,160,132,0.05)', iconBg: 'rgba(91,160,132,0.15)', glow: 'rgba(91,160,132,0.30)' },
-};
-
 function FeatureCard({
   href,
-  accent,
-  icon,
+  visual,
   title,
-  tagline,
   desc,
-  num,
+  ctaLabel = 'Open',
   soon,
 }: {
   href?: string;
-  accent: keyof typeof ACCENT_HEX;
-  icon: React.ReactNode;
+  visual: React.ReactNode;
   title: string;
-  tagline: string;
-  desc?: string;
-  num: string;
+  desc: string;
+  ctaLabel?: string;
   soon?: boolean;
 }) {
-  const a = ACCENT_HEX[accent];
-
   const inner = (
     <div
-      className="relative group rounded-3xl overflow-hidden h-full transition-all duration-300 hover:-translate-y-1.5"
+      className="group h-full bg-white rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1"
       style={{
-        background: 'linear-gradient(180deg, #FFFFFF 0%, #FCFCFA 100%)',
-        boxShadow:
-          '0 1px 0 rgba(255,255,255,0.9) inset, ' +
-          '0 0 0 1px rgba(13,45,36,0.06), ' +
-          '0 2px 4px rgba(13,45,36,0.04), ' +
-          '0 12px 28px -10px rgba(13,45,36,0.10)',
+        border: '1px solid rgba(13,45,36,0.08)',
+        boxShadow: '0 1px 2px rgba(13,45,36,0.04), 0 8px 20px -10px rgba(13,45,36,0.10)',
       }}
     >
-      {/* Hover-only accent gradient backdrop */}
-      <div
-        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-        style={{
-          background: `linear-gradient(160deg, ${a.cardTint} 0%, transparent 60%)`,
-        }}
-      />
+      {/* Visual — actual product preview */}
+      <div className="relative aspect-[5/3] overflow-hidden">{visual}</div>
 
-      {/* Top accent bar — gradient */}
-      <div
-        className="absolute inset-x-0 top-0 h-1 transition-all duration-300 group-hover:h-1.5"
-        style={{
-          background: `linear-gradient(90deg, ${a.color} 0%, ${a.color}cc 100%)`,
-        }}
-      />
-
-      {/* Massive italic number — top-right */}
-      <div
-        className="absolute top-6 right-6 font-display italic font-semibold text-[44px] leading-none tracking-tight transition-all duration-300 group-hover:scale-110 group-hover:rotate-[-3deg]"
-        style={{ color: a.color, opacity: 0.85 }}
-      >
-        {num}
-      </div>
-
-      <div className="relative p-7 pt-9 flex flex-col h-full">
-        {/* Icon orb with soft glow */}
-        <div className="relative mb-7">
-          <div
-            className="absolute -inset-3 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-            style={{ background: a.glow }}
-          />
-          <div
-            className="relative w-14 h-14 rounded-2xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105"
-            style={{
-              background: a.iconBg,
-              color: a.color,
-              boxShadow: `0 1px 0 rgba(255,255,255,0.6) inset, 0 6px 14px -4px ${a.glow}`,
-            }}
-          >
-            {icon}
-          </div>
-        </div>
-
-        {/* Title */}
-        <h3 className="font-display font-bold text-[28px] text-green leading-[1.05] tracking-tight">
+      {/* Content */}
+      <div className="p-6 flex flex-col flex-1">
+        <h3 className="font-display font-bold text-[24px] text-green leading-tight tracking-tight">
           {title}
         </h3>
-
-        {/* Tagline (italic, accent-colored) */}
-        <p
-          className="font-display italic font-medium text-[15px] mt-1.5 leading-snug"
-          style={{ color: a.color }}
-        >
-          {tagline}
+        <p className="mt-1.5 text-[14.5px] text-ink-soft leading-relaxed flex-1">
+          {desc}
         </p>
-
-        {/* Description */}
-        {desc && (
-          <p className="text-[14px] text-ink-soft mt-2 leading-relaxed flex-1">
-            {desc}
-          </p>
-        )}
-
-        {/* Footer link */}
-        <div
-          className="mt-6 pt-4 border-t flex items-center justify-between"
-          style={{ borderColor: 'rgba(13,45,36,0.08)' }}
-        >
+        <div className="mt-5 flex items-center justify-between text-[13px]">
           {soon ? (
-            <span
-              className="text-[10px] font-bold tracking-[0.18em] uppercase inline-flex items-center gap-1.5"
-              style={{ color: a.color }}
-            >
-              <span
-                className="w-1.5 h-1.5 rounded-full animate-pulse"
-                style={{ background: a.color }}
-              />
-              Coming soon
-            </span>
+            <span className="font-medium text-muted">Coming soon</span>
           ) : (
             <>
-              <span
-                className="text-[10px] font-bold tracking-[0.18em] uppercase"
-                style={{ color: a.color }}
-              >
-                Try it
-              </span>
-              <span
-                className="font-display italic text-lg transition-transform duration-300 group-hover:translate-x-1"
-                style={{ color: a.color }}
-              >
+              <span className="font-medium text-green">{ctaLabel}</span>
+              <span className="font-display italic text-base text-tangerine transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>
             </>
@@ -572,37 +473,163 @@ function FeatureCard({
   return <div>{inner}</div>;
 }
 
-function ScanIcon() {
+/* ======================
+   Per-card mini visuals
+   ====================== */
+
+function ScanVisual() {
   return (
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M4 8V5a1 1 0 0 1 1-1h3" />
-      <path d="M16 4h3a1 1 0 0 1 1 1v3" />
-      <path d="M20 16v3a1 1 0 0 1-1 1h-3" />
-      <path d="M8 20H5a1 1 0 0 1-1-1v-3" />
-      <circle cx="12" cy="12" r="3" />
-    </svg>
+    <div
+      className="absolute inset-0"
+      style={{
+        background: 'radial-gradient(ellipse at center, #2F7A4D 0%, #1F5535 55%, #143C26 100%)',
+      }}
+    >
+      {/* yard lines */}
+      <div
+        className="absolute inset-0 opacity-20"
+        style={{
+          background:
+            'repeating-linear-gradient(90deg, transparent 0 24px, rgba(255,255,255,0.4) 24px 25px)',
+        }}
+      />
+      {/* jersey */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div
+          className="relative w-14 h-14 rounded-full flex items-center justify-center text-white font-display font-extrabold text-lg"
+          style={{
+            background: 'linear-gradient(180deg, #C8202A 0%, #861420 100%)',
+            boxShadow:
+              '0 1px 0 rgba(255,255,255,0.3) inset, 0 0 0 2px rgba(255,255,255,0.85), 0 6px 14px -4px rgba(0,0,0,0.5)',
+          }}
+        >
+          87
+        </div>
+      </div>
+      {/* corner brackets */}
+      <div className="absolute top-3 left-3 w-3 h-3 border-t-2 border-l-2 border-tangerine" />
+      <div className="absolute top-3 right-3 w-3 h-3 border-t-2 border-r-2 border-tangerine" />
+      <div className="absolute bottom-3 left-3 w-3 h-3 border-b-2 border-l-2 border-tangerine" />
+      <div className="absolute bottom-3 right-3 w-3 h-3 border-b-2 border-r-2 border-tangerine" />
+      {/* live chip */}
+      <div
+        className="absolute top-2.5 left-2.5 px-1.5 py-0.5 rounded text-white text-[9px] font-bold tracking-wider flex items-center gap-1"
+        style={{ background: 'rgba(0,0,0,0.55)', backdropFilter: 'blur(8px)' }}
+      >
+        <span className="w-1 h-1 rounded-full bg-red-500" />
+        KC 24 · DAL 17
+      </div>
+    </div>
   );
 }
-function ChatIcon() {
+
+function ChatVisual() {
   return (
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M21 15a4 4 0 0 1-4 4H8l-5 3 1.5-5A4 4 0 0 1 3 14V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z" />
-    </svg>
+    <div
+      className="absolute inset-0 p-5 flex flex-col justify-end gap-2"
+      style={{
+        background:
+          'linear-gradient(180deg, #FFE5D6 0%, #FCDCE6 100%)',
+      }}
+    >
+      {/* SB bubble */}
+      <div
+        className="self-start max-w-[80%] rounded-[14px] rounded-tl-md px-3 py-2 text-[12.5px] leading-snug text-ink"
+        style={{
+          background: '#FFFFFF',
+          boxShadow: '0 0 0 1px rgba(13,45,36,0.06), 0 4px 10px -4px rgba(13,45,36,0.08)',
+        }}
+      >
+        spotted travis kelce 👀 he's the one dating taylor
+      </div>
+      {/* You bubble */}
+      <div
+        className="self-end max-w-[78%] rounded-[14px] rounded-tr-md px-3 py-2 text-[12.5px] leading-snug text-white"
+        style={{
+          background: 'linear-gradient(135deg, #FF7A52 0%, #FF5723 100%)',
+          boxShadow: '0 4px 10px -4px rgba(255,107,61,0.4)',
+        }}
+      >
+        omg ya what just happened
+      </div>
+    </div>
   );
 }
-function LessonsIcon() {
+
+function LessonsVisual() {
   return (
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M4 5a2 2 0 0 1 2-2h11l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z" />
-      <path d="M8 9h8M8 13h8M8 17h5" />
-    </svg>
+    <div
+      className="absolute inset-0 flex items-end justify-center gap-2 pb-3 px-5"
+      style={{
+        background: 'linear-gradient(180deg, #DDE7F1 0%, #EEF3F8 100%)',
+      }}
+    >
+      {/* Stack of "lesson spines" */}
+      {[
+        { tag: 'NFL', tagColor: '#E84B7A', tagBg: 'rgba(232,75,122,0.13)', title: 'The rules', h: '78%' },
+        { tag: 'NBA', tagColor: '#2D4ED1', tagBg: 'rgba(45,78,209,0.13)', title: 'Pick & roll', h: '92%' },
+        { tag: 'NFL', tagColor: '#E84B7A', tagBg: 'rgba(232,75,122,0.13)', title: 'Fantasy 101', h: '70%' },
+      ].map((l, i) => (
+        <div
+          key={i}
+          className="flex-1 rounded-t-xl bg-white p-3 flex flex-col gap-1.5 transition-transform duration-300 hover:-translate-y-1"
+          style={{
+            height: l.h,
+            boxShadow: '0 0 0 1px rgba(13,45,36,0.08), 0 -4px 12px -4px rgba(13,45,36,0.08)',
+          }}
+        >
+          <span
+            className="text-[8px] font-bold tracking-widest uppercase px-1.5 py-0.5 rounded self-start"
+            style={{ color: l.tagColor, background: l.tagBg }}
+          >
+            {l.tag}
+          </span>
+          <div className="font-display font-bold text-[12px] text-green leading-tight mt-auto">
+            {l.title}
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
-function VideosIcon() {
+
+function VideosVisual() {
   return (
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="6" width="18" height="13" rx="2" />
-      <path d="M10 10l5 3-5 3Z" fill="currentColor" />
-    </svg>
+    <div
+      className="absolute inset-0 flex items-center justify-center"
+      style={{
+        background: 'linear-gradient(135deg, #DCD0F4 0%, #C9DCEC 100%)',
+      }}
+    >
+      {/* Video frame with play button */}
+      <div
+        className="relative w-[60%] aspect-[16/9] rounded-lg overflow-hidden"
+        style={{
+          background: 'linear-gradient(135deg, #143C26 0%, #0D2D24 100%)',
+          boxShadow: '0 0 0 1px rgba(255,255,255,0.4), 0 12px 28px -8px rgba(13,45,36,0.3)',
+        }}
+      >
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div
+            className="w-10 h-10 rounded-full bg-white/95 flex items-center justify-center"
+            style={{ boxShadow: '0 4px 12px rgba(0,0,0,0.2)' }}
+          >
+            <div
+              className="w-0 h-0 ml-0.5"
+              style={{
+                borderLeft: '10px solid #0D2D24',
+                borderTop: '6px solid transparent',
+                borderBottom: '6px solid transparent',
+              }}
+            />
+          </div>
+        </div>
+        {/* duration chip */}
+        <div className="absolute bottom-1.5 right-1.5 px-1.5 py-0.5 rounded bg-black/60 text-white text-[8px] font-bold tracking-wider">
+          0:42
+        </div>
+      </div>
+    </div>
   );
 }
+
