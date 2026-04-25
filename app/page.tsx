@@ -41,7 +41,7 @@ export default function HomePage() {
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-14 items-center">
           {/* Copy */}
-          <div className="md:order-1 order-2">
+          <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--hairline)] text-xs text-ink-soft mb-6 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-tangerine animate-pulse" />
               Closed beta · iOS + web · Spring 2026
@@ -70,7 +70,7 @@ export default function HomePage() {
           </div>
 
           {/* BFF chat preview — scan + chat in one visual */}
-          <div className="md:order-2 order-1 relative">
+          <div className="relative">
             <BFFThread />
           </div>
         </div>
