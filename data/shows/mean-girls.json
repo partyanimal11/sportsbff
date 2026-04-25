@@ -1,0 +1,40 @@
+{
+  "id": "mean-girls",
+  "title": "Mean Girls",
+  "years": "2004 (film); 2018 (musical); 2024 (musical film)",
+  "creators": ["Tina Fey"],
+  "themes": ["high school cafeteria politics", "cliques", "social warfare disguised as friendship", "the Burn Book", "the queen bee dynamic", "cult-of-personality"],
+  "characters": [
+    { "name": "Cady Heron", "archetype": "The new girl from Africa. Joins the Plastics as a project. Becomes one. Lindsay Lohan.", "actor": "Lindsay Lohan / Angourie Rice" },
+    { "name": "Regina George", "archetype": "Queen of the Plastics. Apex predator. 'I love your skirt — where did you get it?'", "actor": "Rachel McAdams / Reneé Rapp" },
+    { "name": "Karen Smith", "archetype": "The dim Plastic. 'I have ESPN or something.' Used as a weapon by Regina.", "actor": "Amanda Seyfried / Avantika" },
+    { "name": "Gretchen Wieners", "archetype": "Father invented Toaster Strudel. Fetch. Loyal but increasingly paranoid.", "actor": "Lacey Chabert / Bebe Wood" },
+    { "name": "Janis", "archetype": "Cady's first friend. Architect of the Regina takedown.", "actor": "Lizzy Caplan / Auli'i Cravalho" },
+    { "name": "Damian", "archetype": "'He's almost too gay to function.' Janis's bestie. Comedy gold.", "actor": "Daniel Franzese / Jaquel Spivey" },
+    { "name": "Aaron Samuels", "archetype": "Regina's ex. Cady's crush. Hair like cool insulation.", "actor": "Jonathan Bennett / Christopher Briney" },
+    { "name": "Ms. Norbury", "archetype": "The Tina Fey character. Calc teacher. The voice of reason.", "actor": "Tina Fey" }
+  ],
+  "signature_quotes": [
+    "On Wednesdays we wear pink.",
+    "She doesn't even go here.",
+    "Get in loser, we're going shopping.",
+    "I want my pink shirt back.",
+    "Stop trying to make fetch happen!",
+    "You go Glen Coco.",
+    "That is so fetch.",
+    "Boo, you whore."
+  ],
+  "scenes": [
+    "The cafeteria 'where everyone sits' map.",
+    "Regina's party invitations.",
+    "The Burn Book reveal in the gym.",
+    "Aaron Samuels turning around.",
+    "Jingle Bell Rock talent show.",
+    "Cady's mathletes win."
+  ],
+  "off_screen_drama": [
+    "Lindsay Lohan's career trajectory after.",
+    "The 2024 musical film reception was mixed.",
+    "Tina Fey's role as Ms. Norbury becoming meta over time."
+  ]
+}

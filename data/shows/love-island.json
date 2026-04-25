@@ -1,0 +1,35 @@
+{
+  "id": "love-island",
+  "title": "Love Island",
+  "years": "2015-present (UK); 2019-present (US)",
+  "creators": ["Richard Cowles (UK)"],
+  "themes": ["villa life", "couples and recouplings", "Casa Amor", "the public vote", "the producers' invisible hand", "reality-TV editing as narrative"],
+  "characters": [
+    { "name": "Iain Stirling", "archetype": "The narrator. Scottish wit over every dramatic moment. The best part of the UK version.", "actor": "Iain Stirling" },
+    { "name": "The Islanders", "archetype": "The contestants — typically 10-12 to start, paired in couples. Couples shift over the season.", "actor": "Various" },
+    { "name": "Casa Amor cohort", "archetype": "The 'bombshells' brought in mid-season to test couples. Often ends marriages.", "actor": "Various" },
+    { "name": "The Producers", "archetype": "Never seen, always felt. Engineer drama via challenges, recouplings, and well-timed bombshells.", "actor": "—" }
+  ],
+  "signature_quotes": [
+    "I got a text!",
+    "Tonight, in this villa...",
+    "It's a recoupling.",
+    "Fancy a chat?",
+    "And just like that...",
+    "Pied off.",
+    "Mugged off.",
+    "Get a grafting."
+  ],
+  "scenes": [
+    "Casa Amor recouplings — when most relationships shatter.",
+    "The first 'I got a text!' moment of the season.",
+    "Public-vote eliminations.",
+    "The fire pit recoupling ceremonies.",
+    "The 'meet the parents' challenge."
+  ],
+  "off_screen_drama": [
+    "Multiple Islander deaths post-show triggered industry-wide mental health reforms.",
+    "Caroline Flack's tragic death (former host).",
+    "The US version (Peacock) has its own fanbase but the UK is the gold standard."
+  ]
+}

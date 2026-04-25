@@ -1,0 +1,37 @@
+{
+  "id": "bridgerton",
+  "title": "Bridgerton",
+  "years": "2020-present",
+  "creators": ["Chris Van Dusen", "Shonda Rhimes"],
+  "themes": ["Regency-era courtship", "marriage market", "social hierarchy", "anonymous narrators (Lady Whistledown)", "duty vs. desire", "siblings as power dynamics"],
+  "characters": [
+    { "name": "Daphne Bridgerton", "archetype": "The Diamond of the Season. The eldest daughter who must marry well. Marries the Duke of Hastings.", "actor": "Phoebe Dynevor" },
+    { "name": "Anthony Bridgerton", "archetype": "The eldest brother. Viscount. Approaches every decision with a list. Falls anyway in season 2.", "actor": "Jonathan Bailey" },
+    { "name": "Eloise Bridgerton", "archetype": "The independent sister. Refuses the marriage market. Wants something more than to be a wife.", "actor": "Claudia Jessie" },
+    { "name": "Penelope Featherington", "archetype": "Wallflower turned Lady Whistledown — the anonymous society writer everyone fears.", "actor": "Nicola Coughlan" },
+    { "name": "Colin Bridgerton", "archetype": "The wandering middle Bridgerton. Eventually realizes Penelope was always the one.", "actor": "Luke Newton" },
+    { "name": "Lady Danbury", "archetype": "The Queen's confidante. Keeps everyone in line. Knows everything.", "actor": "Adjoa Andoh" },
+    { "name": "Queen Charlotte", "archetype": "The Queen of England. Declares the Diamond. Holds the social order in her hand.", "actor": "Golda Rosheuvel" },
+    { "name": "Simon Basset (Duke of Hastings)", "archetype": "The Duke who refuses to marry. Eventually marries Daphne.", "actor": "Regé-Jean Page" },
+    { "name": "Kate Sharma", "archetype": "Anthony's match in season 2. Strong-willed, intelligent, the first to call him out.", "actor": "Simone Ashley" }
+  ],
+  "signature_quotes": [
+    "Dear reader, sources tell this author...",
+    "I burn for you.",
+    "The Diamond of the Season has chosen.",
+    "Yours truly, Lady Whistledown.",
+    "He is most eligible."
+  ],
+  "scenes": [
+    "Daphne and the Duke at the Trowbridge Ball — 'I burn for you.'",
+    "Anthony and Kate's confrontation in the rain.",
+    "The reveal of Penelope as Lady Whistledown.",
+    "The Queen at the diamond ceremony.",
+    "Eloise's first society debut — refusing it."
+  ],
+  "off_screen_drama": [
+    "Regé-Jean Page left after season 1 — the show survived.",
+    "Nicola Coughlan's casting as the romantic lead in season 3 was a moment.",
+    "Shondaland production rumors swirl every season."
+  ]
+}

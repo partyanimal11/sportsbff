@@ -14,7 +14,7 @@
     "show_character": "Blair Waldorf",
     "league": "nba",
     "player_id": "okc",
-    "summary": "The queen KD left. The one who never forgave him. The one thriving with a 22-year-old MVP while he spirals through burner accounts in Houston at 2 AM.",
+    "summary": "The queen KD left. The one who never forgave him. The one thriving with a 22-year-old MVP while he spirals through burner accounts at 2 AM.",
     "evidence": ["KD's 2016 departure", "OKC's 2025-26 #1 seed", "SGA as the new face"]
   },
   {
@@ -41,7 +41,7 @@
     "show_character": "Belly choosing between Conrad and Jeremiah",
     "league": "nfl",
     "player_id": "travis-kelce",
-    "summary": "Travis is choosing between January playoff football and Eras Tour stops every February. Taylor in the suite. The cameras between two universes. Some loves are bigger than the cousin.",
+    "summary": "Travis is choosing between January playoff football and Eras Tour stops every February. Taylor in the suite. Some loves are bigger than the cousin.",
     "evidence": ["Eras Tour cameos", "Suite shots during prime games", "The cultural moment of the decade"]
   },
   {
@@ -50,7 +50,7 @@
     "show_character": "The Plastics",
     "league": "nba",
     "player_id": "bos",
-    "summary": "Tatum is Regina (the alpha). Brown is Gretchen (loyal, paranoid). Jrue is Karen (sweet, shocking when activated). Porzingis is the one Cady didn't see coming. Four-line lineup. Burn Book = NBA Twitter.",
+    "summary": "Tatum is Regina (the alpha). Brown is Gretchen (loyal, paranoid). Jrue is Karen (sweet, shocking when activated). Porzingis is the one Cady didn't see coming. Burn Book = NBA Twitter.",
     "evidence": ["2024 championship", "Defending the throne", "On Wednesdays we wear pink"]
   },
   {
@@ -61,5 +61,230 @@
     "player_id": "victor-wembanyama",
     "summary": "She doesn't want to be at the dance. She is going to win the dance. Wemby in San Antonio is Wednesday at Nevermore — alone in a normal world, slowly winning it anyway.",
     "evidence": ["7'4 height = Wednesday's vibe", "Quiet, otherworldly", "The outcast genius MVP arc"]
+  },
+  {
+    "id": "jokic-as-detective-pikachu",
+    "show": "(meta)",
+    "show_character": "The Reluctant Genius",
+    "league": "nba",
+    "player_id": "nikola-jokic",
+    "summary": "Loves horses more than basketball. Wins championships and goes home. The most calm superstar in any sport. Never wanted any of this.",
+    "evidence": ["Three MVPs", "Loves horse racing more than the game", "Constant low-key affect"]
+  },
+  {
+    "id": "tom-wambsgans-as-mahomes",
+    "show": "succession",
+    "show_character": "Tom Wambsgans (the survivor)",
+    "league": "nfl",
+    "player_id": "patrick-mahomes",
+    "summary": "Hear me out: Mahomes also wins by being the last man standing. Took the throne from Brady. Survives every offensive line collapse. Has Andy Reid as his Logan.",
+    "evidence": ["3 Super Bowls in 5 years", "Outlasts the dynasty around him", "Always finds the open man"]
+  },
+  {
+    "id": "eloise-as-eloise-bridgerton",
+    "show": "bridgerton",
+    "show_character": "Eloise Bridgerton",
+    "league": "nba",
+    "player_id": "victor-wembanyama",
+    "summary": "Refuses to play the game everyone else is playing. Eloise refused the Marriage Mart. Wemby refuses to be a normal 7-footer. Both are too smart for the room.",
+    "evidence": ["Eloise's 'I want more'", "Wemby's unprecedented skillset", "Outsider energy"]
+  },
+  {
+    "id": "anthony-bridgerton-as-knicks",
+    "show": "bridgerton",
+    "show_character": "Anthony Bridgerton",
+    "league": "nba",
+    "player_id": "nyk",
+    "summary": "Approaches every move with a list. Has standards. Falls anyway. The Knicks are Anthony Bridgerton — they think they're operating with discipline, but every offseason they fall in love.",
+    "evidence": ["KAT trade was the falling-in-love moment", "The list is always growing", "Brunson is the Kate Sharma — the one they didn't see coming"]
+  },
+  {
+    "id": "lady-whistledown-as-shams",
+    "show": "bridgerton",
+    "show_character": "Lady Whistledown",
+    "league": "nba",
+    "player_id": "shams-charania",
+    "summary": "Anonymous-ish narrator with the power to make or break a season. Trade reports as society pages. The Queen has feelings. So does Adam Silver.",
+    "evidence": ["Sources tell this author...", "Sources tell ESPN...", "Both are the source"]
+  },
+  {
+    "id": "diamond-of-the-season-as-mvp",
+    "show": "bridgerton",
+    "show_character": "The Diamond of the Season",
+    "league": "nba",
+    "player_id": "shai-gilgeous-alexander",
+    "summary": "The Queen declares the Diamond. Adam Silver and the writers declare the MVP. SGA was the Diamond of 2024. He'll likely be it again.",
+    "evidence": ["Reigning MVP", "Fashion-conscious", "Quietly the most desirable"]
+  },
+  {
+    "id": "maddy-as-tunnel-fit",
+    "show": "euphoria",
+    "show_character": "Maddy Perez",
+    "league": "nfl",
+    "player_id": "patrick-mahomes",
+    "summary": "Tunnel fits are armor. Mahomes (and every other star QB) walks the tunnel like Maddy walks into East Highland — already winning, before anyone has scored.",
+    "evidence": ["Pregame fashion content", "The walk before the game", "Performance of self"]
+  },
+  {
+    "id": "rue-as-cade",
+    "show": "euphoria",
+    "show_character": "Rue Bennett (the recovering one)",
+    "league": "nba",
+    "player_id": "cade-cunningham",
+    "summary": "Cade is the Pistons' redemption arc. Was Cal Weaver in the Gap suit. Now he's the team's Rue — the one we're all rooting for to make it.",
+    "evidence": ["Pistons 2024 turnaround", "Cade as franchise face", "The rebuild as recovery"]
+  },
+  {
+    "id": "nate-as-nate-bosa",
+    "show": "euphoria",
+    "show_character": "Nate Jacobs",
+    "league": "nfl",
+    "player_id": "nick-bosa",
+    "summary": "The defensive end as the Nate of every play — uninvited, devastating, and the QB never sees him coming.",
+    "evidence": ["Best edge rusher since Lawrence Taylor", "Walks up uninvited", "Costs you yards every play"]
+  },
+  {
+    "id": "lexi-as-laporta",
+    "show": "euphoria",
+    "show_character": "Lexi Howard (the underestimated one who delivers)",
+    "league": "nfl",
+    "player_id": "sam-laporta",
+    "summary": "Lexi was the wallflower who wrote a play that exposed everyone. LaPorta was the rookie nobody talked about who broke the Lions wide open.",
+    "evidence": ["Best rookie TE season ever", "Quiet player", "Detroit became dangerous because of him"]
+  },
+  {
+    "id": "regina-as-celtics",
+    "show": "mean-girls",
+    "show_character": "Regina George",
+    "league": "nba",
+    "player_id": "bos",
+    "summary": "The conference alpha. Defending the throne. Has the cafeteria mapped out (the East), and everyone else sits where she lets them.",
+    "evidence": ["2024 NBA Champions", "East favorite again", "Tatum as Regina"]
+  },
+  {
+    "id": "karen-as-jrue",
+    "show": "mean-girls",
+    "show_character": "Karen Smith",
+    "league": "nba",
+    "player_id": "jrue-holiday",
+    "summary": "Sweet, soft-spoken, completely devastating when activated. Karen is Jrue — you forget he's there until he locks up your best player.",
+    "evidence": ["Defensive Player of the Year-caliber", "Quietest superstar in the room", "Wins two championships in two years on two different teams"]
+  },
+  {
+    "id": "burn-book-as-nba-twitter",
+    "show": "mean-girls",
+    "show_character": "The Burn Book",
+    "league": "nba",
+    "player_id": "(media)",
+    "summary": "Anonymous, devastating, eventually exposed. NBA Twitter (now X) is the Burn Book — a curated archive of every petty take that gets reposted forever.",
+    "evidence": ["Quote-dunk culture", "The infinite screenshot loop", "Eventually leaks"]
+  },
+  {
+    "id": "casa-amor-as-trade-deadline",
+    "show": "love-island",
+    "show_character": "Casa Amor",
+    "league": "nba",
+    "player_id": "(meta)",
+    "summary": "The trade deadline is Casa Amor. Producers (front offices) bring in bombshells (deals). Couples shatter. Some come back together. Some never do.",
+    "evidence": ["Once a year, mid-season", "Roster chemistry tested", "Iain Stirling = NBA Twitter"]
+  },
+  {
+    "id": "i-got-a-text-as-shams",
+    "show": "love-island",
+    "show_character": "'I got a text!'",
+    "league": "nba",
+    "player_id": "shams-charania",
+    "summary": "When a Shams tweet drops, every NBA group chat reacts the way the villa reacts to a text alert. Same dopamine rush.",
+    "evidence": ["Shams Charania alerts", "Group chat eruptions", "The dramatic pause"]
+  },
+  {
+    "id": "iain-stirling-as-narrator-voice",
+    "show": "love-island",
+    "show_character": "Iain Stirling (narrator)",
+    "league": "nfl",
+    "player_id": "(meta)",
+    "summary": "The Iain Stirling voice over a Sunday afternoon football fail would be the funniest content in the world.",
+    "evidence": ["Wry British narration", "Perfectly-timed asides", "Underrated comedy art form"]
+  },
+  {
+    "id": "kendall-as-kendall-pistons",
+    "show": "succession",
+    "show_character": "Kendall Roy (the heir who keeps imploding)",
+    "league": "nba",
+    "player_id": "(franchise)",
+    "summary": "Every franchise that thinks 'we're the chosen one' and then loses in the play-in is Kendall Roy. The Wizards. The Hawks. Always almost there.",
+    "evidence": ["The 'L to the OG' rap", "Public meltdowns", "Almost-but-not-quite"]
+  },
+  {
+    "id": "shiv-as-shiv-spurs",
+    "show": "succession",
+    "show_character": "Shiv Roy (the underestimated one)",
+    "league": "nba",
+    "player_id": "sas",
+    "summary": "Smartest in the room. Quietly building. Will inherit the throne while everyone else is fighting. Spurs with Wemby + Pop is Shiv playing the long game.",
+    "evidence": ["Wemby as the future", "Pop as the operator", "The patient build"]
+  },
+  {
+    "id": "roman-as-roman-suns",
+    "show": "succession",
+    "show_character": "Roman Roy (the funniest, most damaged)",
+    "league": "nba",
+    "player_id": "phx",
+    "summary": "Says the funniest things. Makes the most outrageous trades. Cries at the funeral. The Suns have Roman energy — 'we're going to trade three firsts for KD!' kind of decisions.",
+    "evidence": ["The KD trade", "Booker + Beal drama", "The Frank Vogel firing"]
+  },
+  {
+    "id": "tom-as-mike-mccarthy",
+    "show": "succession",
+    "show_character": "Tom Wambsgans",
+    "league": "nfl",
+    "player_id": "dal",
+    "summary": "The Tom Wambsgans of the NFL is Mike McCarthy. Operator. Survivor. Boar on the floor at every press conference. Eventually gets fired or gets the keys.",
+    "evidence": ["Constant near-firing", "Keeps surviving", "Loyal to Jerry"]
+  },
+  {
+    "id": "greg-as-bronny",
+    "show": "succession",
+    "show_character": "Cousin Greg",
+    "league": "nba",
+    "player_id": "bronny-james",
+    "summary": "Hear me out — falls upward through proximity to power. Greg got the Waystar gig because of Logan. Bronny got the Lakers gig because of LeBron. Both have proven to be more competent than expected.",
+    "evidence": ["LeBron's son", "Made the team on talent", "Family business proximity"]
+  },
+  {
+    "id": "logan-roy-as-pat-riley",
+    "show": "succession",
+    "show_character": "Logan Roy",
+    "league": "nba",
+    "player_id": "mia",
+    "summary": "Pat Riley IS Logan Roy. The Heat's silent emperor. 80 years old, still terrifying. Builds dynasties out of nothing.",
+    "evidence": ["The Heat Culture quote book", "Has outlasted every coach", "Terrifies the league"]
+  },
+  {
+    "id": "blair-as-knicks",
+    "show": "gossip-girl",
+    "show_character": "Blair Waldorf",
+    "league": "nba",
+    "player_id": "nyk",
+    "summary": "Knicks are Blair — the queen of the East who got dethroned for a long time but is now thriving with a calmer, smarter co-pilot. Madison Square Garden is her empire.",
+    "evidence": ["Brunson era", "MSG is back", "The crown returns"]
+  },
+  {
+    "id": "vanessa-as-sengun",
+    "show": "gossip-girl",
+    "show_character": "Vanessa Abrams",
+    "league": "nba",
+    "player_id": "alperen-sengun",
+    "summary": "The loyal one who got talked about behind her back. Dan exposed Vanessa on the blog. KD called Sengun a liability on a burner. Same betrayal.",
+    "evidence": ["KD's burner targeting Sengun", "The teammate who didn't deserve it", "Quiet, productive, undermined"]
+  },
+  {
+    "id": "jenny-humphrey-as-jalen-green",
+    "show": "gossip-girl",
+    "show_character": "Jenny Humphrey",
+    "league": "nba",
+    "player_id": "jalen-green",
+    "summary": "The young one who got chewed up. Jenny was Dan's little sister sacrificed to the UES. Jalen was the young Rockets star who got the locker-room treatment.",
+    "evidence": ["Burner-account collateral damage", "Untapped potential", "The franchise direction has been chaotic"]
   }
 ]

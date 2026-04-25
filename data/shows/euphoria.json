@@ -1,0 +1,38 @@
+{
+  "id": "euphoria",
+  "title": "Euphoria",
+  "years": "2019-present",
+  "creators": ["Sam Levinson"],
+  "themes": ["addiction", "mental health", "high school as battlefield", "makeup as armor", "fashion as identity", "trauma cycles", "queerness", "the performance of self"],
+  "characters": [
+    { "name": "Rue Bennett", "archetype": "The narrator. Recovering addict. Brilliant, broken, beloved. Zendaya.", "actor": "Zendaya" },
+    { "name": "Maddy Perez", "archetype": "The alpha. Glitter eye makeup. Walks into every room like she owns it.", "actor": "Alexa Demie" },
+    { "name": "Cassie Howard", "archetype": "The pretty one who unraveled. The bathtub scene. The bathroom monologue.", "actor": "Sydney Sweeney" },
+    { "name": "Lexi Howard", "archetype": "Cassie's sister. Quiet observer. Wrote a play that exposed everyone in S2.", "actor": "Maude Apatow" },
+    { "name": "Jules Vaughn", "archetype": "Trans, free, devastating. Rue's love interest. The opposite of stable.", "actor": "Hunter Schafer" },
+    { "name": "Nate Jacobs", "archetype": "The football star villain. Generational rage. His father is worse.", "actor": "Jacob Elordi" },
+    { "name": "Fezco", "archetype": "The dealer with a soft heart. The Lexi storyline broke everyone.", "actor": "Angus Cloud (RIP)" },
+    { "name": "Kat Hernandez", "archetype": "The body-positive plot Sam Levinson reportedly cut. Barbie Ferreira left after S2.", "actor": "Barbie Ferreira" }
+  ],
+  "signature_quotes": [
+    "I get older, but my heart stays the same.",
+    "We're all just looking for someone to love us.",
+    "I just want my mom to be proud of me.",
+    "She doesn't even go here.",
+    "It's just makeup, but it's also armor."
+  ],
+  "scenes": [
+    "Maddy's New Year's Eve glitter eye makeup entrance.",
+    "Rue and Jules in the train station.",
+    "Cassie's bathtub crying scene.",
+    "Lexi's play — exposing everyone.",
+    "Rue's relapse monologue with Ali in the diner.",
+    "Fezco missing the play."
+  ],
+  "off_screen_drama": [
+    "Sam Levinson controversies — every season has a backstage story.",
+    "Angus Cloud's death in 2023 was devastating.",
+    "Barbie Ferreira left amidst rumors of edited-out scenes.",
+    "Season 3 has been delayed and re-cast multiple times."
+  ]
+}

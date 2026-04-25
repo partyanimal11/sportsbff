@@ -1,18 +1,24 @@
 import nfl from '@/data/teams/nfl.json';
 import nba from '@/data/teams/nba.json';
 import players from '@/data/players-sample.json';
-import shows from '@/data/shows/gossip-girl.json';
+import gossipGirl from '@/data/shows/gossip-girl.json';
+import bridgerton from '@/data/shows/bridgerton.json';
+import succession from '@/data/shows/succession.json';
+import euphoria from '@/data/shows/euphoria.json';
+import meanGirls from '@/data/shows/mean-girls.json';
+import loveIsland from '@/data/shows/love-island.json';
 import mappings from '@/data/mappings.json';
 import { getLens, type Lens } from './lens';
 
 type Team = { id: string; name: string; city: string; league: 'nfl' | 'nba'; conference?: string; head_coach?: string; signature?: string };
 type Player = { id: string; name: string; team: string; league: 'nfl' | 'nba'; position: string; number?: number; bio?: string; drama?: string };
-type Show = { id: string; title: string; characters?: { name: string; archetype?: string }[]; signature_quotes?: string[] };
+type Show = { id: string; title: string; characters?: { name: string; archetype?: string }[]; signature_quotes?: string[]; themes?: string[]; scenes?: string[] };
 type Mapping = { id: string; show: string; show_character: string; league: string; player_id: string; summary: string };
 
 const TEAMS: Team[] = [...(nfl as Team[]), ...(nba as Team[])];
 const PLAYERS: Player[] = players as Player[];
-const SHOWS: Show[] = [shows as Show];
+const SHOWS: Show[] = [gossipGirl, bridgerton, succession, euphoria, meanGirls, loveIsland] as Show[];
+const SHOWS_BY_ID = new Map(SHOWS.map((s) => [s.id, s]));
 const MAPPINGS: Mapping[] = mappings as Mapping[];
 
 /**
@@ -54,11 +60,23 @@ export function retrieveContextChunks(query: string, lensId: string, limit = 8):
     }
   }
 
-  // Match shows (the user's lens always pulls in their show, plus any explicit show name in query)
+  // Always include the user's selected lens show (rich context — characters + themes + signature quotes).
+  const lensShow = SHOWS_BY_ID.get(lensId);
+  if (lensShow) {
+    const chars = lensShow.characters?.slice(0, 8).map((c) => `${c.name} (${c.archetype ?? ''})`).join('; ') ?? '';
+    const quotes = lensShow.signature_quotes?.slice(0, 4).map((q2) => `"${q2}"`).join('; ') ?? '';
+    chunks.push(
+      `[ACTIVE LENS · ${lensShow.title}] Characters: ${chars}. ` +
+        (quotes ? `Signature quotes you can echo (don't quote verbatim): ${quotes}.` : '') +
+        (lensShow.themes ? ` Themes: ${lensShow.themes.slice(0, 5).join(', ')}.` : '')
+    );
+  }
+
+  // Also pull any other show the user explicitly mentioned by name.
   for (const s of SHOWS) {
-    if (q.includes(s.title.toLowerCase()) || s.id === lensId) {
+    if (s.id !== lensId && q.includes(s.title.toLowerCase())) {
       const chars = s.characters?.slice(0, 6).map((c) => c.name).join(', ') ?? '';
-      chunks.push(`[SHOW] ${s.title} — characters: ${chars}`);
+      chunks.push(`[SHOW MENTIONED] ${s.title} — characters: ${chars}`);
     }
   }
 

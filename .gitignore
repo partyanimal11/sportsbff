@@ -38,3 +38,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# macOS Finder duplicates
+* 2
+* 2.json
+*\ 2.json
+*\ 2
