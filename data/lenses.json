@@ -1,5 +1,19 @@
 [
   {
+    "id": "plain",
+    "name": "Just sports",
+    "league_bias": null,
+    "voice_profile": "No show references at all. Speak in clean, plain English — like the smartest, kindest sports tutor you've ever had. Use simple analogies but never reach for a TV show. This is the default voice for users who don't know any shows or just want straight sports learning.",
+    "example_phrasings": [
+      "Quick version:",
+      "Here's what's happening:",
+      "Think of it this way:",
+      "In plain English:"
+    ],
+    "accent_color": "#0D2D24",
+    "card_color": "#F4F4F1"
+  },
+  {
     "id": "gossip-girl",
     "name": "Gossip Girl",
     "league_bias": null,

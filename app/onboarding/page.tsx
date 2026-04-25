@@ -27,21 +27,40 @@ export default function OnboardingPage() {
     router.push('/chat');
   }
 
+  function skip() {
+    // Use defaults — plain English lens, both leagues, no name.
+    setProfile({
+      league: 'both',
+      lens: 'plain',
+      onboardedAt: new Date().toISOString(),
+    });
+    router.push('/chat');
+  }
+
   return (
     <main className="min-h-screen flex flex-col">
       <header className="px-8 py-4 border-b border-[var(--hairline)] flex items-center justify-between bg-white">
         <Link href="/" className="font-display text-xl font-extrabold text-green tracking-wide uppercase">
           SPORTS<span className="text-tangerine">★</span>BFF
         </Link>
-        <div className="flex gap-1.5">
-          {[1, 2, 3].map((i) => (
-            <span
-              key={i}
-              className={`w-8 h-1 rounded-full transition ${
-                i <= step ? 'bg-tangerine' : 'bg-[var(--hairline)]'
-              }`}
-            />
-          ))}
+        <div className="flex items-center gap-5">
+          <div className="flex gap-1.5">
+            {[1, 2, 3].map((i) => (
+              <span
+                key={i}
+                className={`w-8 h-1 rounded-full transition ${
+                  i <= step ? 'bg-tangerine' : 'bg-[var(--hairline)]'
+                }`}
+              />
+            ))}
+          </div>
+          <button
+            type="button"
+            onClick={skip}
+            className="text-sm text-ink-soft hover:text-ink underline-offset-2 hover:underline"
+          >
+            Skip — use defaults →
+          </button>
         </div>
       </header>
 
@@ -91,10 +110,10 @@ export default function OnboardingPage() {
             <div>
               <p className="text-xs font-bold tracking-widest uppercase text-tangerine mb-3">Step 2 of 3</p>
               <h1 className="font-display text-5xl font-bold text-green leading-tight tracking-tight">
-                Pick a show <span className="italic font-medium text-tangerine">you already love.</span>
+                Pick what you know. <span className="italic font-medium text-tangerine">Or don't.</span>
               </h1>
               <p className="mt-3 text-lg text-ink-soft">
-                Your chat answers and lesson examples will start speaking that show's language. Change it anytime.
+                Choose a show you've watched twice — every answer starts speaking that show's language. Don't know any of these? Pick <strong className="text-ink">Just sports</strong>. We'll explain it straight up.
               </p>
 
               <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">

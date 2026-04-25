@@ -13,7 +13,7 @@ export type Lens = {
 const LENSES: Lens[] = lenses as Lens[];
 const LENS_BY_ID = new Map(LENSES.map((l) => [l.id, l]));
 
-export const DEFAULT_LENS_ID = 'gossip-girl';
+export const DEFAULT_LENS_ID = 'plain';
 
 export function listLenses(): Lens[] {
   return LENSES;

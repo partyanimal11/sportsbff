@@ -11,7 +11,7 @@ type LensDemo = {
   id: string;
   name: string;
   initials: string;
-  league: 'NFL' | 'NBA';
+  league: string;
   cardColor: string;
   accent: string;
   answer: string;
@@ -77,6 +77,16 @@ const LENS_DEMOS: LensDemo[] = [
     accent: '#A86B00',
     answer:
       "A **sack** is a recoupling gone wrong. The QB chose his pass. The defender chose to go to him instead. The QB is now on the grass. *And just like that, the play ends in shame.*",
+  },
+  {
+    id: 'plain',
+    name: 'Just sports',
+    initials: '—',
+    league: 'No show',
+    cardColor: '#F4F4F1',
+    accent: '#0D2D24',
+    answer:
+      "A **sack** is when a defender catches the QB before he can throw the ball — and it costs the offense yards. The play ends right there, behind the line of scrimmage. Think of it as the QB being interrupted mid-sentence, except the sentence was a touchdown pass.",
   },
 ];
 
@@ -152,9 +162,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Lens demo — pick what you know */}
-      <PickWhatYouKnow />
-
       {/* Feature cards */}
       <section
         className="border-t border-[var(--hairline)] px-6 py-24 md:py-32 relative overflow-hidden"
@@ -210,6 +217,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Lens demo — pick what you know */}
+      <PickWhatYouKnow />
 
       <footer className="bg-green-dark text-white px-6 py-8">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
@@ -520,16 +530,16 @@ function PickWhatYouKnow() {
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-magenta font-semibold tracking-[0.18em] uppercase mb-6 shadow-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-magenta animate-pulse" />
-            Make it yours
+            Your shortcut
           </div>
           <h2 className="font-display text-5xl md:text-6xl font-bold text-green leading-[0.96] tracking-tight max-w-3xl mx-auto">
-            Pick what you've watched.<br/>
+            You already know this.<br/>
             <span className="italic font-medium" style={{ color: lens.accent }}>
-              We'll do the rest.
+              Just in another language.
             </span>
           </h2>
           <p className="mt-5 text-lg text-ink-soft max-w-xl mx-auto">
-            Every answer reframes in the language of the show you choose. The same question, six different ways to finally get it.
+            Pick a show you've watched twice. We translate the league through its voice — the fastest path to fluency is the one you've already walked.
           </p>
         </div>
 
@@ -588,6 +598,51 @@ function PickWhatYouKnow() {
                 );
               })}
             </div>
+
+            {/* "Don't know any of these?" — full-width Just-Sports option */}
+            <button
+              type="button"
+              onClick={() => setSelected('plain')}
+              className={`mt-3 w-full group relative rounded-2xl overflow-hidden bg-white text-left transition-all duration-200 ${
+                selected === 'plain' ? '-translate-y-0.5' : 'hover:-translate-y-0.5'
+              }`}
+              style={{
+                boxShadow:
+                  selected === 'plain'
+                    ? '0 0 0 2.5px #0D2D24, 0 18px 32px -16px rgba(13,45,36,0.18)'
+                    : '0 0 0 1px rgba(13,45,36,0.08), 0 4px 12px -6px rgba(13,45,36,0.08)',
+              }}
+            >
+              <div className="flex items-center gap-4 p-4">
+                <div
+                  className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center"
+                  style={{
+                    background: 'linear-gradient(135deg, #F4F4F1 0%, #DDDDD8 100%)',
+                    boxShadow: '0 1px 0 rgba(255,255,255,0.6) inset',
+                  }}
+                >
+                  <span className="font-display font-bold text-2xl text-green">—</span>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="font-display font-bold text-[15px] leading-tight text-green">
+                    Don't know any of these?
+                  </div>
+                  <div className="text-[12.5px] text-ink-soft mt-0.5">
+                    Pick <strong className="text-green">Just sports</strong> — clean, plain English. No show needed.
+                  </div>
+                </div>
+                {selected === 'plain' && (
+                  <div className="shrink-0 w-6 h-6 rounded-full bg-green flex items-center justify-center">
+                    <svg viewBox="0 0 12 12" width="9" height="9" fill="none">
+                      <path d="M2 6.2 L4.8 9 L10 3.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                )}
+              </div>
+            </button>
+
+            {/* Just-sports answer for the demo */}
+            {/* (Demo data covers it via the LENS_DEMOS array — needs the entry back) */}
           </div>
 
           {/* Sample chat */}

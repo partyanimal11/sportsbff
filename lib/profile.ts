@@ -15,7 +15,7 @@ export type Profile = {
   onboardedAt?: string;
 };
 
-const DEFAULT: Profile = { lens: 'gossip-girl' };
+const DEFAULT: Profile = { lens: 'plain' };
 
 export function getProfile(): Profile {
   if (typeof window === 'undefined') return DEFAULT;
