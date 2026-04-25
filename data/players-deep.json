@@ -1,1055 +1,418 @@
 {
   "patrick-mahomes": {
-    "drama_notes": [
-      "Brittany Mahomes is the most-discussed NFL wife — every social media post becomes a news cycle.",
-      "Brother Jackson Mahomes is a TikToker who has had legal issues; quietly stays away from most games.",
-      "Andy Reid is the father figure — Patrick has talked openly about how much Reid shaped him.",
-      "After the 2024 Super Bowl parade shooting, Patrick was vocal about gun reform — a notable political moment for an NFL star."
-    ],
-    "headlines": [
-      "Signed the largest contract in pro sports history in 2020 — 10 years, $450M. Now considered underpaid relative to peers.",
-      "Won 3 Super Bowls in 5 years. Tied with Brady's pace.",
-      "Faced his first 'down year' in 2024 — sparked early 'is the dynasty over' takes that aged terribly."
-    ],
-    "memes": [
-      "The side-arm submarine pass through traffic is its own meme genre.",
-      "His high-pitched voice — fans call out 'WORLD CHAMPIONS!' impressions.",
-      "Every State Farm commercial spawns a new meme.",
-      "The 'I think the Chiefs are going to lose' jinx never works."
-    ],
-    "on_field_moments": [
-      "Super Bowl LIV comeback against the 49ers (2020) — first ring.",
-      "OT Super Bowl LVIII win against the 49ers (2024).",
-      "The no-look pass that landed on the Madden cover."
-    ],
-    "off_field": [
-      "Married to Brittany Matthews, his high-school sweetheart from Whitehouse, TX.",
-      "Two kids: Sterling Skye and Bronze.",
-      "Owns a stake in the Kansas City Royals (MLB) and Sporting KC (MLS).",
-      "Founded the 15 and the Mahomies Foundation for childhood literacy."
-    ],
-    "running_jokes": [
-      "Andy Reid is his actual dad in everything but DNA.",
-      "The 'sliding into the playoffs at 6-5' is now a Chiefs tradition.",
-      "He's somehow a 30-year-old veteran QB who looks 22."
-    ]
+    "drama_notes": ["Brittany Mahomes is the most-discussed NFL wife — every social media post becomes a news cycle.", "Brother Jackson Mahomes is a TikToker who has had legal issues; quietly stays away from most games.", "Andy Reid is the father figure — Patrick has talked openly about how much Reid shaped him.", "After the 2024 Super Bowl parade shooting, Patrick was vocal about gun reform — a notable political moment for an NFL star."],
+    "headlines": ["Signed the largest contract in pro sports history in 2020 — 10 years, $450M. Now considered underpaid relative to peers.", "Won 3 Super Bowls in 5 years. Tied with Brady's pace.", "Faced his first 'down year' in 2024 — sparked early 'is the dynasty over' takes that aged terribly."],
+    "memes": ["The side-arm submarine pass through traffic is its own meme genre.", "His high-pitched voice — fans call out 'WORLD CHAMPIONS!' impressions.", "Every State Farm commercial spawns a new meme.", "The 'I think the Chiefs are going to lose' jinx never works."],
+    "on_field_moments": ["Super Bowl LIV comeback against the 49ers (2020) — first ring.", "OT Super Bowl LVIII win against the 49ers (2024).", "The no-look pass that landed on the Madden cover."],
+    "off_field": ["Married to Brittany Matthews, his high-school sweetheart from Whitehouse, TX.", "Two kids: Sterling Skye and Bronze.", "Owns a stake in the Kansas City Royals (MLB) and Sporting KC (MLS).", "Founded the 15 and the Mahomies Foundation for childhood literacy."],
+    "running_jokes": ["Andy Reid is his actual dad in everything but DNA.", "The 'sliding into the playoffs at 6-5' is now a Chiefs tradition.", "He's somehow a 30-year-old veteran QB who looks 22."]
   },
   "travis-kelce": {
-    "drama_notes": [
-      "Dating Taylor Swift since summer 2023. Her presence at games drives 30%+ of NFL TV viewership.",
-      "Older brother Jason Kelce retired in 2024; their New Heights podcast is the most-listened-to NFL pod.",
-      "Got into a viral sideline screaming match with Andy Reid in Super Bowl LVIII; walked it back after.",
-      "His ex-girlfriend Kayla Nicole has tried to insert herself into the Taylor news cycle multiple times.",
-      "Hosted SNL in 2023, did a Pfizer commercial — full crossover star."
-    ],
-    "headlines": [
-      "Eras Tour cameos became the cultural moment of the decade.",
-      "Won his third Super Bowl in 2024.",
-      "Launched a movie production company in 2024."
-    ],
-    "memes": [
-      "'You belong with me' — Travis tossing his hat at the Eras Tour.",
-      "The 'I wanna look pretty' high-school photo of Travis.",
-      "Andy Reid hugging Travis in a Super Bowl moment.",
-      "The 'New Heights' brothers podcast clips that go viral every week."
-    ],
-    "on_field_moments": [
-      "Super Bowl LVII game-winning catch.",
-      "The 11-catch divisional round game vs. Buffalo.",
-      "Career receptions leader for tight ends — broke Tony Gonzalez's record."
-    ],
-    "off_field": [
-      "From Cleveland Heights, OH — same family as Jason (Eagles legend).",
-      "Hosts New Heights podcast with Jason — top NFL podcast in America.",
-      "Owns a piece of multiple businesses including a wellness brand.",
-      "Lives in Kansas City — bought a $6M mansion that became Travis-and-Taylor headquarters."
-    ],
-    "running_jokes": [
-      "His mustache. Everyone has takes on the mustache.",
-      "He's somehow always at every Met Gala / Super Bowl / Grammys now.",
-      "Jason crying at his retirement is now used in every meme about emotion."
-    ]
+    "drama_notes": ["Dating Taylor Swift since summer 2023. Her presence at games drives 30%+ of NFL TV viewership.", "Older brother Jason Kelce retired in 2024; their New Heights podcast is the most-listened-to NFL pod.", "Got into a viral sideline screaming match with Andy Reid in Super Bowl LVIII; walked it back after.", "Hosted SNL in 2023, did a Pfizer commercial — full crossover star."],
+    "headlines": ["Eras Tour cameos became the cultural moment of the decade.", "Won his third Super Bowl in 2024.", "Launched a movie production company in 2024."],
+    "memes": ["'You belong with me' — Travis tossing his hat at the Eras Tour.", "Andy Reid hugging Travis in a Super Bowl moment.", "The 'New Heights' brothers podcast clips that go viral every week."],
+    "on_field_moments": ["Super Bowl LVII game-winning catch.", "The 11-catch divisional round game vs. Buffalo.", "Career receptions leader for tight ends — broke Tony Gonzalez's record."],
+    "off_field": ["From Cleveland Heights, OH — same family as Jason (Eagles legend).", "Hosts New Heights podcast with Jason — top NFL podcast in America.", "Lives in Kansas City — bought a $6M mansion that became Travis-and-Taylor headquarters."],
+    "running_jokes": ["His mustache. Everyone has takes on the mustache.", "He's somehow always at every Met Gala / Super Bowl / Grammys now.", "Jason crying at his retirement is now used in every meme about emotion."]
   },
   "josh-allen": {
-    "drama_notes": [
-      "Engaged to actress Hailee Steinfeld since 2024 — the wedding is one of the year's most-anticipated.",
-      "Old college tweets resurfaced in 2018; he addressed them publicly and apologized.",
-      "Famous cliff-jumping video from a vacation went viral; he loves the outdoors content.",
-      "Has lost to Mahomes 4 times in the playoffs — the heartbreak runs deep."
-    ],
-    "headlines": [
-      "MVP of the 2024 season.",
-      "The 13-second collapse in the 2022 divisional round vs. KC will follow him forever.",
-      "Bills extended him through 2030 — generational money."
-    ],
-    "memes": [
-      "Pretzel-throwing Bills fans for Josh after his cliff-jumping vacation pic.",
-      "The 'Bills Mafia' table-jumping for every big play.",
-      "Josh hurdling defenders is its own highlight genre.",
-      "His arm strength videos (throwing 80-yard passes flat-footed)."
-    ],
-    "on_field_moments": [
-      "The 2022 divisional round vs. KC where the Bills lost in OT after never getting the ball.",
-      "The hurdle over the Saints defender in 2021.",
-      "His 4-TD playoff games are now an annual event."
-    ],
-    "off_field": [
-      "From Firebaugh, CA — small town, his family runs a farm.",
-      "Has a dog named Reign.",
-      "Got Tom Brady's old Cabo trainer.",
-      "Started dating Hailee Steinfeld in 2023; engaged 2024."
-    ],
-    "running_jokes": [
-      "He throws fastballs at receivers' chests on routine 5-yard slants.",
-      "The 'we're so back' / 'it's so over' Bills fan cycle each Sunday.",
-      "Josh runs more than most RBs — and the Bills don't always like that."
-    ]
+    "drama_notes": ["Engaged to actress Hailee Steinfeld since 2024 — the wedding is one of the year's most-anticipated.", "Old college tweets resurfaced in 2018; he addressed them publicly and apologized.", "Famous cliff-jumping video from a vacation went viral; he loves the outdoors content.", "Has lost to Mahomes 4 times in the playoffs — the heartbreak runs deep."],
+    "headlines": ["MVP of the 2024 season.", "The 13-second collapse in the 2022 divisional round vs. KC will follow him forever.", "Bills extended him through 2030 — generational money."],
+    "memes": ["Pretzel-throwing Bills fans for Josh after his cliff-jumping vacation pic.", "The 'Bills Mafia' table-jumping for every big play.", "Josh hurdling defenders is its own highlight genre."],
+    "on_field_moments": ["The 2022 divisional round vs. KC where the Bills lost in OT after never getting the ball.", "The hurdle over the Saints defender in 2021.", "His 4-TD playoff games are now an annual event."],
+    "off_field": ["From Firebaugh, CA — small town, his family runs a farm.", "Has a dog named Reign.", "Started dating Hailee Steinfeld in 2023; engaged 2024."],
+    "running_jokes": ["He throws fastballs at receivers' chests on routine 5-yard slants.", "The 'we're so back' / 'it's so over' Bills fan cycle each Sunday.", "Josh runs more than most RBs — and the Bills don't always like that."]
   },
   "jalen-hurts": {
-    "drama_notes": [
-      "Famously private. Has dated Bryonna 'Bry' Burrows — same school sweethearts.",
-      "Took the Eagles QB1 job from Carson Wentz in 2020; never looked back.",
-      "Quiet, methodical, refuses to do drama press conferences."
-    ],
-    "headlines": [
-      "Won the Super Bowl in 2025 (LIX) over the Chiefs.",
-      "The Saquon Barkley signing made him untouchable.",
-      "Threw for 300+ yards in his first 5 starts of 2024."
-    ],
-    "memes": [
-      "The Tush Push. 'Brotherly Shove.' Every short-yardage play, the Eagles run it.",
-      "His pre-game outfit drops are A.P. Brown-tier.",
-      "The 'Jalen reads books' photo (he reads on the team plane)."
-    ],
-    "on_field_moments": [
-      "Super Bowl LIX — outdueled Mahomes for his first ring.",
-      "The 4-TD performance in Super Bowl LVII (the loss).",
-      "The MNF dagger to A.J. Brown vs. the Cowboys."
-    ],
-    "off_field": [
-      "From Houston, TX — went to Channelview HS.",
-      "Played at Alabama, transferred to Oklahoma, lost the Heisman to Joe Burrow.",
-      "Fitness routine is famously intense — extra stretches, extra reps after practice.",
-      "Quiet philanthropic work in Philly youth programs."
-    ],
-    "running_jokes": [
-      "He plays like he's been here before — even when he hasn't.",
-      "The 'is Jalen even in the locker room?' jokes — he leaves before reporters get there.",
-      "The Tush Push is technically not banned. Yet."
-    ]
+    "drama_notes": ["Famously private. Has dated Bryonna 'Bry' Burrows — same school sweethearts.", "Took the Eagles QB1 job from Carson Wentz in 2020; never looked back.", "Quiet, methodical, refuses to do drama press conferences."],
+    "headlines": ["Won the Super Bowl in 2025 (LIX) over the Chiefs.", "The Saquon Barkley signing made him untouchable.", "Threw for 300+ yards in his first 5 starts of 2024."],
+    "memes": ["The Tush Push. 'Brotherly Shove.' Every short-yardage play, the Eagles run it.", "His pre-game outfit drops are A.J. Brown-tier.", "The 'Jalen reads books' photo (he reads on the team plane)."],
+    "on_field_moments": ["Super Bowl LIX — outdueled Mahomes for his first ring.", "The 4-TD performance in Super Bowl LVII (the loss).", "The MNF dagger to A.J. Brown vs. the Cowboys."],
+    "off_field": ["From Houston, TX — went to Channelview HS.", "Played at Alabama, transferred to Oklahoma, lost the Heisman to Joe Burrow.", "Fitness routine is famously intense — extra stretches, extra reps after practice."],
+    "running_jokes": ["He plays like he's been here before — even when he hasn't.", "The 'is Jalen even in the locker room?' jokes — he leaves before reporters get there.", "The Tush Push is technically not banned. Yet."]
   },
   "joe-burrow": {
-    "drama_notes": [
-      "Long-term partner Olivia Holzmacher has been with him since LSU days; very private.",
-      "Mint Cartiers walk at the 2022 AFC Championship became the most-discussed pregame fit ever.",
-      "Has been injured in 3 of his 5 NFL seasons — wrist, calf, appendix.",
-      "Went viral for saying he liked Drake — Bengals immediately Googled which Drake."
-    ],
-    "headlines": [
-      "Came back from his 2023 wrist injury to put up huge 2024 numbers.",
-      "Threw for 5,200 yards in a season — most ever for a Bengal.",
-      "Lost Super Bowl LVI to the Rams in his second year."
-    ],
-    "memes": [
-      "The 'You Like That!' / Joe Burrow walks vs. Joe Burrow gameplay split-screen.",
-      "His pregame fits — the Fendi sunglasses, the black turtlenecks.",
-      "The 'I'm built for this shit' quote after the LSU national championship.",
-      "His house being burglarized while he was on the road in 2024."
-    ],
-    "on_field_moments": [
-      "The 4th-and-20 pass to Tee Higgins in the 2021 playoffs vs. KC.",
-      "The 525-yard playoff game.",
-      "Coming back from an ACL tear in college to win the Heisman in his 5th year."
-    ],
-    "off_field": [
-      "From The Plains, OH — football town through and through.",
-      "Father (Jim Burrow) was a college football coach.",
-      "Made it through Ohio State, transferred to LSU, won everything.",
-      "Drives a Tesla — surprised everyone."
-    ],
-    "running_jokes": [
-      "He's permanently in 'main character' mode.",
-      "The 'Joe Cool' nickname is doing all the work.",
-      "Cincinnati became the most fashionable city in football because of him."
-    ]
+    "drama_notes": ["Long-term partner Olivia Holzmacher has been with him since LSU days; very private.", "Mint Cartiers walk at the 2022 AFC Championship became the most-discussed pregame fit ever.", "Has been injured in 3 of his 5 NFL seasons — wrist, calf, appendix.", "Went viral for saying he liked Drake — Bengals immediately Googled which Drake."],
+    "headlines": ["Came back from his 2023 wrist injury to put up huge 2024 numbers.", "Threw for 5,200 yards in a season — most ever for a Bengal.", "Lost Super Bowl LVI to the Rams in his second year."],
+    "memes": ["His pregame fits — the Fendi sunglasses, the black turtlenecks.", "The 'I'm built for this shit' quote after the LSU national championship.", "His house being burglarized while he was on the road in 2024."],
+    "on_field_moments": ["The 4th-and-20 pass to Tee Higgins in the 2021 playoffs vs. KC.", "The 525-yard playoff game.", "Coming back from an ACL tear in college to win the Heisman in his 5th year."],
+    "off_field": ["From The Plains, OH — football town through and through.", "Father (Jim Burrow) was a college football coach.", "Made it through Ohio State, transferred to LSU, won everything."],
+    "running_jokes": ["He's permanently in 'main character' mode.", "The 'Joe Cool' nickname is doing all the work.", "Cincinnati became the most fashionable city in football because of him."]
   },
   "lamar-jackson": {
-    "drama_notes": [
-      "Negotiated his own contract — no agent. Ravens signed him to a 5-year, $260M deal in 2023.",
-      "Mom Felicia Jones is his manager — central to all his decisions.",
-      "Has had three different OCs in three years; constantly tweaking the offense around him.",
-      "The 'will he run too much?' debate is now in its 8th year."
-    ],
-    "headlines": [
-      "Two-time MVP (2019, 2023) — youngest unanimous MVP ever.",
-      "Has thrown for 4,000+ yards in a season — proved he's not 'just' a runner.",
-      "Lost the 2024 AFC Championship to KC at home."
-    ],
-    "memes": [
-      "The 'man cannot be guarded' clips on every Sunday.",
-      "His draft slide (32nd overall) is now a permanent NFL embarrassment.",
-      "The 'bad weather game' meme — his stats in cold/wet weather are scrutinized every January."
-    ],
-    "on_field_moments": [
-      "The 2019 MVP season where he threw for 36 TDs and ran for 1,200 yards.",
-      "The 71-yard run vs. the Bengals in 2019 where he juked 4 defenders.",
-      "Throwing 5 TDs vs. the Lions in 2023."
-    ],
-    "off_field": [
-      "From Pompano Beach, FL — raised by mom Felicia after father died young.",
-      "Famously private — Instagram deactivated multiple times.",
-      "Has a son.",
-      "Owns a youth football camp in Florida."
-    ],
-    "running_jokes": [
-      "Every January, Twitter rediscovers that he hasn't won a Super Bowl yet.",
-      "Felicia Jones doing color commentary on his contract talks would be must-watch TV.",
-      "He runs faster than RBs and throws like a QB — the cheat code."
-    ]
+    "drama_notes": ["Negotiated his own contract — no agent. Ravens signed him to a 5-year, $260M deal in 2023.", "Mom Felicia Jones is his manager — central to all his decisions.", "Has had three different OCs in three years; constantly tweaking the offense around him.", "The 'will he run too much?' debate is now in its 8th year."],
+    "headlines": ["Two-time MVP (2019, 2023) — youngest unanimous MVP ever.", "Has thrown for 4,000+ yards in a season — proved he's not 'just' a runner.", "Lost the 2024 AFC Championship to KC at home."],
+    "memes": ["The 'man cannot be guarded' clips on every Sunday.", "His draft slide (32nd overall) is now a permanent NFL embarrassment.", "The 'bad weather game' meme — his stats in cold/wet weather are scrutinized every January."],
+    "on_field_moments": ["The 2019 MVP season where he threw for 36 TDs and ran for 1,200 yards.", "The 71-yard run vs. the Bengals in 2019 where he juked 4 defenders.", "Throwing 5 TDs vs. the Lions in 2023."],
+    "off_field": ["From Pompano Beach, FL — raised by mom Felicia after father died young.", "Famously private — Instagram deactivated multiple times.", "Has a son.", "Owns a youth football camp in Florida."],
+    "running_jokes": ["Every January, Twitter rediscovers that he hasn't won a Super Bowl yet.", "Felicia Jones doing color commentary on his contract talks would be must-watch TV.", "He runs faster than RBs and throws like a QB — the cheat code."]
   },
   "tyreek-hill": {
-    "drama_notes": [
-      "Off-field history is well-documented; he has addressed it publicly multiple times.",
-      "The Miami arrest video before the 2024 season opener became a national story.",
-      "Threatened to retire mid-season 2024 over team direction; stayed.",
-      "Multiple off-field civil cases — he has been candid about them in interviews."
-    ],
-    "headlines": [
-      "Caught for 1,799 yards in 2023 — most in a season.",
-      "Forced his way out of KC in 2022; the trade reshaped both teams.",
-      "Engaged in public back-and-forth with Travis Kelce and Mahomes after the trade — all eventually friendly."
-    ],
-    "memes": [
-      "The Cheetah hand sign after every big catch.",
-      "His race vs. an Olympic sprinter (he beat him in 60 meters).",
-      "Hurdling defenders at full speed — 4.29 forty.",
-      "The 'I'm a mama's boy' quote that always gets pulled out."
-    ],
-    "on_field_moments": [
-      "The 75-yard TD vs. the Patriots in 2023.",
-      "The Olympic-level kickoff returns from his early KC days.",
-      "Catching everything Tua throws him for two straight seasons."
-    ],
-    "off_field": [
-      "From Pearson, GA — small town, played multiple sports.",
-      "Had Olympic-level track times in college.",
-      "Has launched multiple businesses, including a sneaker collab.",
-      "Lives in Miami year-round."
-    ],
-    "running_jokes": [
-      "He's listed at 5'10 but is generously 5'8 — and runs past 6'2 corners anyway.",
-      "Tua deep ball to Tyreek = guaranteed touchdown.",
-      "The 'We don't run the 40, we run the 60' line — track guys get it."
-    ]
+    "drama_notes": ["Off-field history is well-documented; he has addressed it publicly multiple times.", "The Miami arrest video before the 2024 season opener became a national story.", "Threatened to retire mid-season 2024 over team direction; stayed."],
+    "headlines": ["Caught for 1,799 yards in 2023 — most in a season.", "Forced his way out of KC in 2022; the trade reshaped both teams.", "Engaged in public back-and-forth with Travis Kelce and Mahomes after the trade — all eventually friendly."],
+    "memes": ["The Cheetah hand sign after every big catch.", "His race vs. an Olympic sprinter (he beat him in 60 meters).", "Hurdling defenders at full speed — 4.29 forty.", "The 'I'm a mama's boy' quote that always gets pulled out."],
+    "on_field_moments": ["The 75-yard TD vs. the Patriots in 2023.", "The Olympic-level kickoff returns from his early KC days.", "Catching everything Tua throws him for two straight seasons."],
+    "off_field": ["From Pearson, GA — small town, played multiple sports.", "Had Olympic-level track times in college.", "Has launched multiple businesses, including a sneaker collab.", "Lives in Miami year-round."],
+    "running_jokes": ["Tua deep ball to Tyreek = guaranteed touchdown.", "The 'We don't run the 40, we run the 60' line — track guys get it."]
   },
   "justin-jefferson": {
-    "drama_notes": [
-      "Highest-paid non-QB in NFL history (signed in 2024 — 4yr/$140M).",
-      "Held out of OTAs in 2023 over the contract — Vikings paid up.",
-      "Had to learn 4 different QBs throw him the ball in 5 years.",
-      "Had a hamstring injury in 2023 that limited him for half the season."
-    ],
-    "headlines": [
-      "1,800+ receiving yard seasons — most by a WR in a 4-year span.",
-      "Won Offensive Player of the Year in 2022.",
-      "Vikings have never won a playoff game with him — the Daunte Culpepper era references write themselves."
-    ],
-    "memes": [
-      "The Griddy. He owns the Griddy. Period.",
-      "His one-handed catch vs. the Bills in 2022 — replays it on Twitter every week.",
-      "JJ + Sam Darnold (his 2024 QB) became unexpectedly fun."
-    ],
-    "on_field_moments": [
-      "The one-handed catch vs. Buffalo in 2022 (4th and 18, season-saver).",
-      "The 4-TD game vs. Detroit in 2023.",
-      "His 1,800-yard season."
-    ],
-    "off_field": [
-      "From St. Rose, LA — older brother Jordan also played in the NFL.",
-      "Cousin to JJ Watt and Derek Watt (NFL family).",
-      "LSU national championship team alongside Burrow and Chase.",
-      "Loves video games — streamed Madden."
-    ],
-    "running_jokes": [
-      "The 'Vikings are about to ruin Justin Jefferson' is an annual offseason take.",
-      "He invented the Griddy. Carolina Panthers RB Chuba Hubbard wishes he had.",
-      "When Sam Darnold of all people had a great year throwing to him, the universe made sense."
-    ]
+    "drama_notes": ["Highest-paid non-QB in NFL history (signed in 2024 — 4yr/$140M).", "Held out of OTAs in 2023 over the contract — Vikings paid up.", "Had to learn 4 different QBs throw him the ball in 5 years.", "Had a hamstring injury in 2023 that limited him for half the season."],
+    "headlines": ["1,800+ receiving yard seasons — most by a WR in a 4-year span.", "Won Offensive Player of the Year in 2022.", "Vikings have never won a playoff game with him — the Daunte Culpepper era references write themselves."],
+    "memes": ["The Griddy. He owns the Griddy. Period.", "His one-handed catch vs. the Bills in 2022 — replays it on Twitter every week.", "JJ + Sam Darnold (his 2024 QB) became unexpectedly fun."],
+    "on_field_moments": ["The one-handed catch vs. Buffalo in 2022 (4th and 18, season-saver).", "The 4-TD game vs. Detroit in 2023.", "His 1,800-yard season."],
+    "off_field": ["From St. Rose, LA — older brother Jordan also played in the NFL.", "LSU national championship team alongside Burrow and Chase.", "Loves video games — streamed Madden."],
+    "running_jokes": ["The 'Vikings are about to ruin Justin Jefferson' is an annual offseason take.", "He invented the Griddy. Carolina Panthers RB Chuba Hubbard wishes he had.", "When Sam Darnold of all people had a great year throwing to him, the universe made sense."]
   },
   "saquon-barkley": {
-    "drama_notes": [
-      "Giants offered him 'less than the league minimum' to sign in 2024 (per his own quotes); he walked.",
-      "Eagles signed him; he immediately ran for 2,000 yards and won a Super Bowl.",
-      "His Twitter clap-back at Giants ownership after every Eagles win is its own genre.",
-      "Became the face of 'pay your stars' in CBA conversations."
-    ],
-    "headlines": [
-      "Ran for 2,005 yards in 2024 — second most ever.",
-      "Won Super Bowl LIX in his first Eagles season.",
-      "Penn State legend turned NFL legend — finally healthy."
-    ],
-    "memes": [
-      "The hurdle vs. the Jaguars in 2024 — vertical leap that defied physics.",
-      "Every time the Giants lose, Eagles fans tweet 'Saquon Hurdle' GIFs at them.",
-      "Daniel Jones eating a burger while Saquon hurdled — never recovers."
-    ],
-    "on_field_moments": [
-      "The reverse hurdle vs. Jacksonville in 2024.",
-      "2,005-yard regular season.",
-      "The Super Bowl LIX clinch run."
-    ],
-    "off_field": [
-      "From the Bronx, NY — raised in Pennsylvania.",
-      "Father Alibay Barkley was a champion boxer.",
-      "Has a daughter, Jada.",
-      "Notable Penn State alum — was the Heisman runner-up in 2017."
-    ],
-    "running_jokes": [
-      "Every Eagles fan owes him a beer for life.",
-      "The Giants front office holds a moment of silence every Sunday.",
-      "His hurdles need their own Pro Bowl skills competition."
-    ]
+    "drama_notes": ["Giants offered him 'less than the league minimum' to sign in 2024 (per his own quotes); he walked.", "Eagles signed him; he immediately ran for 2,000 yards and won a Super Bowl.", "His Twitter clap-back at Giants ownership after every Eagles win is its own genre.", "Became the face of 'pay your stars' in CBA conversations."],
+    "headlines": ["Ran for 2,005 yards in 2024 — second most ever.", "Won Super Bowl LIX in his first Eagles season.", "Penn State legend turned NFL legend — finally healthy."],
+    "memes": ["The hurdle vs. the Jaguars in 2024 — vertical leap that defied physics.", "Every time the Giants lose, Eagles fans tweet 'Saquon Hurdle' GIFs at them.", "Daniel Jones eating a burger while Saquon hurdled — never recovers."],
+    "on_field_moments": ["The reverse hurdle vs. Jacksonville in 2024.", "2,005-yard regular season.", "The Super Bowl LIX clinch run."],
+    "off_field": ["From the Bronx, NY — raised in Pennsylvania.", "Father Alibay Barkley was a champion boxer.", "Has a daughter, Jada.", "Notable Penn State alum — was the Heisman runner-up in 2017."],
+    "running_jokes": ["Every Eagles fan owes him a beer for life.", "The Giants front office holds a moment of silence every Sunday.", "His hurdles need their own Pro Bowl skills competition."]
   },
   "caleb-williams": {
-    "drama_notes": [
-      "Painted nails became national news — 'is the Bears QB too pretty?' became a stupid take in 2024.",
-      "Cried with his dad on draft night — emotional Manning-style moment.",
-      "Father Carl is heavily involved in his career; before the draft, threatened the Bears wouldn't get him.",
-      "Threw for record-low TDs as a rookie behind a terrible OL — Bears fired the OC.",
-      "Hired Ben Johnson as new HC for 2025; the messianic optimism returns."
-    ],
-    "headlines": [
-      "USC Heisman winner. #1 overall pick of the 2024 NFL Draft.",
-      "Rookie year was rough — Bears went 5-12.",
-      "Ben Johnson hire (former Lions OC) is the most-anticipated coach-QB pairing in football."
-    ],
-    "memes": [
-      "The painted nails — Carlos Mendoza commercial era.",
-      "Bears QB graveyard — 'Mr. Williams, here's your headstone' joke per Bears Twitter.",
-      "His 'mom tweets' from his actual mom going viral.",
-      "The 'I'm a Lakers fan' quote that made Chicago fans nervous."
-    ],
-    "on_field_moments": [
-      "The Hail Mary vs. Washington as a rookie.",
-      "The 4-TD game vs. the Vikings.",
-      "His behind-the-back pass at USC (still plays on highlight reels)."
-    ],
-    "off_field": [
-      "From Washington, D.C. — went to Gonzaga College HS.",
-      "Father Carl is a real estate guy who managed his NIL deals.",
-      "Has appeared in commercials for Dr. Pepper, Wendy's.",
-      "Followed cousin in the family — football runs deep."
-    ],
-    "running_jokes": [
-      "The Chicago Bears are now a brand-management agency for him.",
-      "Every Bears fan is in their 'this time it's different' arc.",
-      "The painted nails will outlive the Caleb hate."
-    ]
+    "drama_notes": ["Painted nails became national news — 'is the Bears QB too pretty?' became a stupid take in 2024.", "Cried with his dad on draft night — emotional Manning-style moment.", "Father Carl is heavily involved in his career; before the draft, threatened the Bears wouldn't get him.", "Threw for record-low TDs as a rookie behind a terrible OL — Bears fired the OC.", "Hired Ben Johnson as new HC for 2025; the messianic optimism returns."],
+    "headlines": ["USC Heisman winner. #1 overall pick of the 2024 NFL Draft.", "Rookie year was rough — Bears went 5-12.", "Ben Johnson hire (former Lions OC) is the most-anticipated coach-QB pairing in football."],
+    "memes": ["The painted nails — Carlos Mendoza commercial era.", "Bears QB graveyard — 'Mr. Williams, here's your headstone' joke per Bears Twitter.", "His 'mom tweets' from his actual mom going viral."],
+    "on_field_moments": ["The Hail Mary vs. Washington as a rookie.", "The 4-TD game vs. the Vikings.", "His behind-the-back pass at USC (still plays on highlight reels)."],
+    "off_field": ["From Washington, D.C. — went to Gonzaga College HS.", "Father Carl is a real estate guy who managed his NIL deals.", "Has appeared in commercials for Dr. Pepper, Wendy's."],
+    "running_jokes": ["The Chicago Bears are now a brand-management agency for him.", "Every Bears fan is in their 'this time it's different' arc.", "The painted nails will outlive the Caleb hate."]
   },
   "dak-prescott": {
-    "drama_notes": [
-      "Got the biggest contract in NFL history (briefly) in 2024 — 4 years, $240M.",
-      "Hasn't won a playoff game since 2018.",
-      "Mom Peggy died of colon cancer in 2013; he speaks about her constantly.",
-      "Brother Jace died by suicide in 2020; Dak became a mental-health advocate.",
-      "Faced a defamation suit in 2024 from a woman alleging extortion; case dismissed."
-    ],
-    "headlines": [
-      "Threw for 4,500+ yards in 2023.",
-      "Has been the Cowboys' QB since 2016 — Tony Romo's heir.",
-      "Coach Mike McCarthy fired in 2024; new HC era begins."
-    ],
-    "memes": [
-      "Jerry Jones publicly toying with replacing him every offseason.",
-      "The 12-5 / one-and-done playoff loop.",
-      "His 'Faith Through It All' tattoo references his family losses."
-    ],
-    "on_field_moments": [
-      "The 2016 rookie year (13-3, lost to Aaron Rodgers in playoffs).",
-      "Threw 6 TDs in a single game vs. the Eagles in 2017.",
-      "Came back from a fractured ankle in 2020."
-    ],
-    "off_field": [
-      "From Sulphur, LA. Mississippi State alum.",
-      "Brothers Tad and Jace shaped his life.",
-      "Mental-health advocacy work after his brother's death.",
-      "Single — has talked openly about being a private person."
-    ],
-    "running_jokes": [
-      "January Dak vs. November Dak is a different person.",
-      "Jerry's annual Dak press conference is must-watch comedy.",
-      "Cowboys fans go through 5 stages of grief every December."
-    ]
+    "drama_notes": ["Got the biggest contract in NFL history (briefly) in 2024 — 4 years, $240M.", "Hasn't won a playoff game since 2018.", "Mom Peggy died of colon cancer in 2013; he speaks about her constantly.", "Brother Jace died by suicide in 2020; Dak became a mental-health advocate."],
+    "headlines": ["Threw for 4,500+ yards in 2023.", "Has been the Cowboys' QB since 2016 — Tony Romo's heir.", "Coach Mike McCarthy fired in 2024; new HC era begins."],
+    "memes": ["Jerry Jones publicly toying with replacing him every offseason.", "The 12-5 / one-and-done playoff loop.", "His 'Faith Through It All' tattoo references his family losses."],
+    "on_field_moments": ["The 2016 rookie year (13-3, lost to Aaron Rodgers in playoffs).", "Threw 6 TDs in a single game vs. the Eagles in 2017.", "Came back from a fractured ankle in 2020."],
+    "off_field": ["From Sulphur, LA. Mississippi State alum.", "Brothers Tad and Jace shaped his life.", "Mental-health advocacy work after his brother's death."],
+    "running_jokes": ["January Dak vs. November Dak is a different person.", "Jerry's annual Dak press conference is must-watch comedy.", "Cowboys fans go through 5 stages of grief every December."]
   },
   "shai-gilgeous-alexander": {
-    "drama_notes": [
-      "Cousin of Nickeil Alexander-Walker (Wolves) — they grew up together.",
-      "Quietly became the most-respected player in the league among players themselves.",
-      "Has refused to do typical media — postgame outfits do the talking.",
-      "Engaged to Hailey Summers; very private."
-    ],
-    "headlines": [
-      "Reigning NBA MVP (2024).",
-      "Led the Thunder to the #1 seed in the West with the youngest roster in the league.",
-      "First All-NBA team in 2023; never looked back."
-    ],
-    "memes": [
-      "The cardigans and tailored fits postgame.",
-      "His two-word answers in postgame interviews.",
-      "The 'mid-range king' clips in the analytics era.",
-      "OKC fans calling him 'SGA' like a rapper name."
-    ],
-    "on_court_moments": [
-      "The 50-point game vs. Charlotte in 2023.",
-      "The 38-point Game 7 win over Denver in 2024.",
-      "His step-back into the mid-range (a literal trademark)."
-    ],
-    "off_field": [
-      "From Hamilton, Ontario, Canada.",
-      "Father played pro basketball in Antigua.",
-      "Has a fashion brand and is a guest at fashion week regularly.",
-      "Moved from the Clippers (drafted) to OKC in 2019 — lottery for the Thunder."
-    ],
-    "running_jokes": [
-      "The 'foul' celebration where he just stares at the ref.",
-      "He's the youngest 30-year-old in the league.",
-      "Says nothing in postgame, says everything in his fits."
-    ]
+    "drama_notes": ["Cousin of Nickeil Alexander-Walker (Wolves) — they grew up together.", "Quietly became the most-respected player in the league among players themselves.", "Has refused to do typical media — postgame outfits do the talking.", "Engaged to Hailey Summers; very private."],
+    "headlines": ["Reigning NBA MVP (2024).", "Led the Thunder to the #1 seed in the West with the youngest roster in the league.", "First All-NBA team in 2023; never looked back."],
+    "memes": ["The cardigans and tailored fits postgame.", "His two-word answers in postgame interviews.", "OKC fans calling him 'SGA' like a rapper name."],
+    "on_court_moments": ["The 50-point game vs. Charlotte in 2023.", "The 38-point Game 7 win over Denver in 2024.", "His step-back into the mid-range (a literal trademark)."],
+    "off_field": ["From Hamilton, Ontario, Canada.", "Father played pro basketball in Antigua.", "Has a fashion brand and is a guest at fashion week regularly.", "Moved from the Clippers (drafted) to OKC in 2019 — lottery for the Thunder."],
+    "running_jokes": ["The 'foul' celebration where he just stares at the ref.", "He's the youngest 30-year-old in the league.", "Says nothing in postgame, says everything in his fits."]
   },
   "nikola-jokic": {
-    "drama_notes": [
-      "Loves his horses more than basketball — has said this on record multiple times.",
-      "Won 2023 NBA Championship and went home to Sombor — didn't even go to the parade for long.",
-      "Three MVPs (2021, 2022, 2024) — most for a center in modern era.",
-      "Brothers Strahinja and Nemanja are constantly courtside; family is very close."
-    ],
-    "headlines": [
-      "Three-time NBA MVP.",
-      "Won the 2023 NBA Finals MVP.",
-      "Has a perfectly average athletic profile and is the best player in the world."
-    ],
-    "memes": [
-      "Jokic 'meh face' — the most expressive shrugs in basketball.",
-      "His passes that throw the ball through three defenders.",
-      "The 'Big Honey' nickname.",
-      "Standing perfectly still and getting 30-15-10."
-    ],
-    "on_court_moments": [
-      "The 2023 Game 5 Finals clinch over Miami.",
-      "His 41-15-10 in Game 4 of the 2024 conference semis.",
-      "The wrap-around pass to Aaron Gordon for a poster dunk."
-    ],
-    "off_field": [
-      "From Sombor, Serbia.",
-      "Owns multiple racehorses — talks about them in interviews.",
-      "Wife Natalija — high-school sweetheart.",
-      "Has a daughter named Ognjena."
-    ],
-    "running_jokes": [
-      "Looks like he plays bocce ball for fun; is the best player alive.",
-      "He'd retire tomorrow and go to the racetrack and we'd all understand.",
-      "Coach Malone losing his mind on the sideline while Jokic shrugs."
-    ]
+    "drama_notes": ["Loves his horses more than basketball — has said this on record multiple times.", "Won 2023 NBA Championship and went home to Sombor — didn't even go to the parade for long.", "Three MVPs (2021, 2022, 2024) — most for a center in modern era.", "Brothers Strahinja and Nemanja are constantly courtside; family is very close."],
+    "headlines": ["Three-time NBA MVP.", "Won the 2023 NBA Finals MVP.", "Has a perfectly average athletic profile and is the best player in the world."],
+    "memes": ["Jokic 'meh face' — the most expressive shrugs in basketball.", "His passes that throw the ball through three defenders.", "The 'Big Honey' nickname.", "Standing perfectly still and getting 30-15-10."],
+    "on_court_moments": ["The 2023 Game 5 Finals clinch over Miami.", "His 41-15-10 in Game 4 of the 2024 conference semis.", "The wrap-around pass to Aaron Gordon for a poster dunk."],
+    "off_field": ["From Sombor, Serbia.", "Owns multiple racehorses — talks about them in interviews.", "Wife Natalija — high-school sweetheart.", "Has a daughter named Ognjena."],
+    "running_jokes": ["He'd retire tomorrow and go to the racetrack and we'd all understand.", "Coach Malone losing his mind on the sideline while Jokic shrugs."]
   },
   "kevin-durant": {
-    "drama_notes": [
-      "@gethigher77 burner accounts — 9 years of secret Twitter activity targeting his own teammates.",
-      "Famously thin-skinned online; replies to randoms in his DMs.",
-      "Beefed publicly with Devin Booker, Frank Vogel, Jabari Smith Jr — all teammates.",
-      "Once tweeted defending himself in the third person from his own account.",
-      "Traded from Phoenix to Houston in 2025 — one of the biggest trades in modern history."
-    ],
-    "headlines": [
-      "Two-time NBA Champion (2017, 2018) and Finals MVP both years.",
-      "Most skilled scorer in NBA history.",
-      "First star to publicly use a 'mental health day' (2018)."
-    ],
-    "memes": [
-      "The burner account saga — 'KD wrote that' is now an evergreen meme.",
-      "His 'I'm not here to get into Twitter nonsense' quote when asked about the burner.",
-      "The 'I never even told you to come to Brooklyn' Kyrie texts that leaked.",
-      "Comparing his teammates to dictators in burner messages."
-    ],
-    "on_court_moments": [
-      "The 2017 Finals game-winning 3 over LeBron.",
-      "Game 5, 2019 Finals — Achilles tear in Toronto.",
-      "The 50-point closeout vs. the Bucks in 2021 (with Kyrie hurt)."
-    ],
-    "off_field": [
-      "From Suitland, MD; raised by mom Wanda — 'The Real MVP' speech is legendary.",
-      "Investments in Boardroom (his media company), Coinbase, Postmates.",
-      "Founded Thirty Five Ventures — his media + investment firm.",
-      "Is famously single in public; has dated celebrities quietly."
-    ],
-    "running_jokes": [
-      "He has a burner. Always. We've moved past asking.",
-      "The greatest scorer ever, with the thinnest skin online.",
-      "Lonely Boy energy in a 6'11 body."
-    ]
+    "drama_notes": ["@gethigher77 burner accounts — 9 years of secret Twitter activity targeting his own teammates.", "Famously thin-skinned online; replies to randoms in his DMs.", "Beefed publicly with Devin Booker, Frank Vogel, Jabari Smith Jr — all teammates.", "Once tweeted defending himself in the third person from his own account.", "Traded from Phoenix to Houston in 2025 — one of the biggest trades in modern history."],
+    "headlines": ["Two-time NBA Champion (2017, 2018) and Finals MVP both years.", "Most skilled scorer in NBA history.", "First star to publicly use a 'mental health day' (2018)."],
+    "memes": ["The burner account saga — 'KD wrote that' is now an evergreen meme.", "His 'I'm not here to get into Twitter nonsense' quote when asked about the burner.", "Comparing his teammates to dictators in burner messages."],
+    "on_court_moments": ["The 2017 Finals game-winning 3 over LeBron.", "Game 5, 2019 Finals — Achilles tear in Toronto.", "The 50-point closeout vs. the Bucks in 2021 (with Kyrie hurt)."],
+    "off_field": ["From Suitland, MD; raised by mom Wanda — 'The Real MVP' speech is legendary.", "Investments in Boardroom (his media company), Coinbase, Postmates.", "Founded Thirty Five Ventures — his media + investment firm."],
+    "running_jokes": ["He has a burner. Always. We've moved past asking.", "Lonely Boy energy in a 6'11 body."]
   },
   "lebron-james": {
-    "drama_notes": [
-      "Plays alongside his son Bronny — first father-son NBA duo to share the court.",
-      "His agency Klutch Sports (run by Rich Paul) basically runs the Lakers.",
-      "Calls his shots months in advance — saying he wants to play with Bronny was a years-long campaign.",
-      "Has feuded with everyone from Skip Bayless to Stephen A. Smith on social.",
-      "Famously can-cancel anyone — Carmelo, Anthony Davis, Russ — through Klutch's leverage."
-    ],
-    "headlines": [
-      "All-time NBA scoring leader (passed Kareem in 2023).",
-      "Four-time NBA Champion.",
-      "Plays his son Bronny on the same NBA team — historic moment."
-    ],
-    "memes": [
-      "The Decision (2010) — still a meme 15 years later.",
-      "Crying LeBron (the 2018 Finals collapse).",
-      "Crowning himself in his Cleveland tunnel.",
-      "Every 'this is his last year' annual prediction since 2018."
-    ],
-    "on_court_moments": [
-      "The 2016 chase-down block on Andre Iguodala (Game 7 Finals).",
-      "The 2020 NBA Championship in the bubble.",
-      "Passing Kareem in 2023 — emotional family moment."
-    ],
-    "off_field": [
-      "From Akron, OH — single-mom upbringing famously chronicled.",
-      "Wife Savannah, three kids: Bronny, Bryce, Zhuri.",
-      "Founded I PROMISE School in Akron — accredited public school for at-risk kids.",
-      "Owns a piece of Liverpool FC, Pittsburgh Penguins, Boston Red Sox."
-    ],
-    "running_jokes": [
-      "The 'last dance' announcement happens every year for 8 years now.",
-      "He's been in the Finals 10 times — he counts the appearances differently than the wins.",
-      "The Klutch Lakers running joke — 'you mean Klutch Sports?'"
-    ]
+    "drama_notes": ["Plays alongside his son Bronny — first father-son NBA duo to share the court.", "His agency Klutch Sports (run by Rich Paul) basically runs the Lakers.", "Calls his shots months in advance — saying he wants to play with Bronny was a years-long campaign.", "Has feuded with everyone from Skip Bayless to Stephen A. Smith on social.", "Famously can-cancel anyone — Carmelo, Anthony Davis, Russ — through Klutch's leverage."],
+    "headlines": ["All-time NBA scoring leader (passed Kareem in 2023).", "Four-time NBA Champion.", "Plays his son Bronny on the same NBA team — historic moment."],
+    "memes": ["The Decision (2010) — still a meme 15 years later.", "Crying LeBron (the 2018 Finals collapse).", "Crowning himself in his Cleveland tunnel.", "Every 'this is his last year' annual prediction since 2018."],
+    "on_court_moments": ["The 2016 chase-down block on Andre Iguodala (Game 7 Finals).", "The 2020 NBA Championship in the bubble.", "Passing Kareem in 2023 — emotional family moment."],
+    "off_field": ["From Akron, OH — single-mom upbringing famously chronicled.", "Wife Savannah, three kids: Bronny, Bryce, Zhuri.", "Founded I PROMISE School in Akron — accredited public school for at-risk kids.", "Owns a piece of Liverpool FC, Pittsburgh Penguins, Boston Red Sox."],
+    "running_jokes": ["The 'last dance' announcement happens every year for 8 years now.", "He's been in the Finals 10 times — he counts the appearances differently than the wins.", "The Klutch Lakers running joke — 'you mean Klutch Sports?'"]
   },
   "victor-wembanyama": {
-    "drama_notes": [
-      "7'4 with the wingspan of an albatross. The body is a national French project — they monitored him from age 14.",
-      "Famously shy and curious — collects books, plays chess.",
-      "France's basketball federation made huge mistakes with him as a teenager (overplaying him); the Spurs are protecting him at all costs.",
-      "Pop is 76 and is essentially babysitting him until he becomes the face of the league."
-    ],
-    "headlines": [
-      "Defensive Player of the Year favorite, every year.",
-      "Most-hyped rookie since LeBron.",
-      "Took the Spurs from worst to play-in contention in two seasons."
-    ],
-    "memes": [
-      "Wemby standing next to other 7-footers and looking 7'10 by comparison.",
-      "His face when he blocks shots — the 'oh' moment.",
-      "Sad Wemby on the bench (Spurs losing) becoming a meme.",
-      "His French interviews where he just says profound stuff in his second language."
-    ],
-    "on_court_moments": [
-      "The 5x5 game vs. Phoenix in his rookie year — points/rebounds/assists/steals/blocks.",
-      "The buzzer-beater 3 vs. the Lakers.",
-      "The 2024 Olympic gold medal game vs. Team USA where he hung 26 on Embiid."
-    ],
-    "off_field": [
-      "From Le Chesnay, France — outside Paris.",
-      "Mother Elodie was a basketball coach.",
-      "Reads philosophy in his free time — referenced Zarathustra in an interview.",
-      "Lives in San Antonio with his family who relocated."
-    ],
-    "running_jokes": [
-      "He's gentle. He's terrifying. He's 7'4. He's our future.",
-      "The 'bro just figured out the rules of basketball' jokes about his explosive growth.",
-      "Pop wraps him in bubble wrap nightly."
-    ]
+    "drama_notes": ["7'4 with the wingspan of an albatross. The body is a national French project — they monitored him from age 14.", "Famously shy and curious — collects books, plays chess.", "France's basketball federation made huge mistakes with him as a teenager (overplaying him); the Spurs are protecting him at all costs.", "Pop is 76 and is essentially babysitting him until he becomes the face of the league."],
+    "headlines": ["Defensive Player of the Year favorite, every year.", "Most-hyped rookie since LeBron.", "Took the Spurs from worst to play-in contention in two seasons."],
+    "memes": ["His face when he blocks shots — the 'oh' moment.", "Sad Wemby on the bench (Spurs losing) becoming a meme.", "His French interviews where he just says profound stuff in his second language."],
+    "on_court_moments": ["The 5x5 game vs. Phoenix in his rookie year — points/rebounds/assists/steals/blocks.", "The buzzer-beater 3 vs. the Lakers.", "The 2024 Olympic gold medal game vs. Team USA where he hung 26 on Embiid."],
+    "off_field": ["From Le Chesnay, France — outside Paris.", "Mother Elodie was a basketball coach.", "Reads philosophy in his free time — referenced Zarathustra in an interview.", "Lives in San Antonio with his family who relocated."],
+    "running_jokes": ["He's gentle. He's terrifying. He's the future.", "Pop wraps him in bubble wrap nightly."]
   },
   "anthony-edwards": {
-    "drama_notes": [
-      "Ant Man. The marketing future of the league.",
-      "Mom and grandma both died when he was 14 — raised by his sister Antoinette since.",
-      "The 'I'm the best player in the world' interview at age 23 was bold and earned.",
-      "Reportedly has multiple kids with multiple women; a paternity story broke in 2024.",
-      "Mike Conley is his locker-room dad."
-    ],
-    "headlines": [
-      "Made first All-NBA team in 2024.",
-      "Took the Wolves to the Western Conference Finals in 2024.",
-      "Olympic gold medalist (Paris 2024)."
-    ],
-    "memes": [
-      "The 'It's me. It's just me.' interview.",
-      "Air-walk dunks on every poster in the league.",
-      "His 'Bring it Sportscenter!' celebration.",
-      "His high-pitched laugh that everyone has imitated."
-    ],
-    "on_court_moments": [
-      "The 40-point Game 7 closeout vs. Denver in 2024.",
-      "The poster on John Collins (a literal poster).",
-      "The Olympic gold-medal-game 3 to crush France."
-    ],
-    "off_field": [
-      "From Atlanta, GA — Holy Spirit Prep then Georgia.",
-      "Sister Antoinette is his guardian-mother figure.",
-      "Has a son named Anthony Jr.",
-      "Recently got into golf — surprisingly good."
-    ],
-    "running_jokes": [
-      "He says everything Mike Conley wishes he could.",
-      "He laughs at his own jokes for a full 45 seconds postgame.",
-      "He thinks he could've been an NFL safety. Honestly, maybe."
-    ]
+    "drama_notes": ["Ant Man. The marketing future of the league.", "Mom and grandma both died when he was 14 — raised by his sister Antoinette since.", "The 'I'm the best player in the world' interview at age 23 was bold and earned.", "Reportedly has multiple kids with multiple women; a paternity story broke in 2024.", "Mike Conley is his locker-room dad."],
+    "headlines": ["Made first All-NBA team in 2024.", "Took the Wolves to the Western Conference Finals in 2024.", "Olympic gold medalist (Paris 2024)."],
+    "memes": ["The 'It's me. It's just me.' interview.", "Air-walk dunks on every poster in the league.", "His 'Bring it Sportscenter!' celebration.", "His high-pitched laugh that everyone has imitated."],
+    "on_court_moments": ["The 40-point Game 7 closeout vs. Denver in 2024.", "The poster on John Collins (a literal poster).", "The Olympic gold-medal-game 3 to crush France."],
+    "off_field": ["From Atlanta, GA — Holy Spirit Prep then Georgia.", "Sister Antoinette is his guardian-mother figure.", "Recently got into golf — surprisingly good."],
+    "running_jokes": ["He says everything Mike Conley wishes he could.", "He laughs at his own jokes for a full 45 seconds postgame.", "He thinks he could've been an NFL safety. Honestly, maybe."]
   },
   "jayson-tatum": {
-    "drama_notes": [
-      "Has a son with ex Toriah Lachell — co-parent with him courtside often.",
-      "Quietly the most-targeted star by NBA Twitter — relentless 'is he a #1 option?' takes.",
-      "Famously close with Kobe Bryant before Kobe's death; talks about him often.",
-      "The 'too fashion show' takes when his pregame fits get attention."
-    ],
-    "headlines": [
-      "NBA Champion in 2024 — first All-NBA #3 pick to win one.",
-      "The 6th-most playoff points by age 25 in history.",
-      "Made the Finals in 2022, lost to Steph Curry."
-    ],
-    "memes": [
-      "Deuce Tatum (his son) being held up after every championship moment.",
-      "The 'it's a 3' celebration mid-shot.",
-      "Pregame fits that draw more comments than his stats.",
-      "His 'Kobe taught me' answers in every interview."
-    ],
-    "on_court_moments": [
-      "The 51-point Game 7 vs. the 76ers in 2023.",
-      "The 31-point title clincher in 2024.",
-      "His rookie poster on LeBron in the 2018 ECF."
-    ],
-    "off_field": [
-      "From St. Louis, MO — Chaminade Prep.",
-      "Played one year at Duke under Coach K.",
-      "Has a son Deuce (born 2017) with Toriah.",
-      "Endorsement portfolio is among the largest in the NBA."
-    ],
-    "running_jokes": [
-      "He's somehow always 'underrated' despite being a top-3 player.",
-      "Deuce is the actual MVP at every Celtics championship event.",
-      "The 'why is JT so calm?' clips after big shots."
-    ]
+    "drama_notes": ["Has a son with ex Toriah Lachell — co-parent with him courtside often.", "Quietly the most-targeted star by NBA Twitter — relentless 'is he a #1 option?' takes.", "Famously close with Kobe Bryant before Kobe's death; talks about him often."],
+    "headlines": ["NBA Champion in 2024 — first All-NBA #3 pick to win one.", "The 6th-most playoff points by age 25 in history.", "Made the Finals in 2022, lost to Steph Curry."],
+    "memes": ["Deuce Tatum (his son) being held up after every championship moment.", "The 'it's a 3' celebration mid-shot.", "His 'Kobe taught me' answers in every interview."],
+    "on_court_moments": ["The 51-point Game 7 vs. the 76ers in 2023.", "The 31-point title clincher in 2024.", "His rookie poster on LeBron in the 2018 ECF."],
+    "off_field": ["From St. Louis, MO — Chaminade Prep.", "Played one year at Duke under Coach K.", "Has a son Deuce (born 2017) with Toriah."],
+    "running_jokes": ["He's somehow always 'underrated' despite being a top-3 player.", "Deuce is the actual MVP at every Celtics championship event.", "The 'why is JT so calm?' clips after big shots."]
   },
   "luka-doncic": {
-    "drama_notes": [
-      "TRADED to the Lakers in 2025 in the most shocking deal in NBA history. Mavericks fans organized a march.",
-      "Famously unfit by NBA standards — has been called out by media for conditioning.",
-      "Beefs with refs every game — yells in Slovenian.",
-      "Engaged to Anamaria Goltes; they have a daughter Gabriela."
-    ],
-    "headlines": [
-      "Took the Mavericks to the 2024 NBA Finals (lost to Boston).",
-      "Traded to the Lakers in February 2025 in a deal that changed both franchises forever.",
-      "EuroLeague championship and EuroBasket gold medal — both at age 19."
-    ],
-    "memes": [
-      "His step-back 3 — the most-replicated move at YMCAs everywhere.",
-      "The 'Luka complains to the ref every play' compilation.",
-      "His face when he scores — the 'this is too easy' look.",
-      "The 'Jason Kidd watched the trade announcement on a flight' meme."
-    ],
-    "on_court_moments": [
-      "The 73-point game vs. the Hawks in 2024.",
-      "The Game 7 stepback dagger over Phoenix in 2022.",
-      "The 41-point game in Game 1 of the 2024 NBA Finals."
-    ],
-    "off_field": [
-      "From Ljubljana, Slovenia. Played pro at age 16.",
-      "Father played pro basketball; mother was a model.",
-      "Engaged to Anamaria Goltes since 2023; daughter Gabriela born 2023.",
-      "Lives in Dallas (then LA after the trade) with the family."
-    ],
-    "running_jokes": [
-      "He plays at his own pace. The pace of someone who knows he's the smartest guy on the court.",
-      "His conditioning is fine. Stop.",
-      "The 'Luka magic' is just basketball IQ played in slow motion."
-    ]
+    "drama_notes": ["TRADED to the Lakers in 2025 in the most shocking deal in NBA history. Mavericks fans organized a march.", "Has been called out by media for conditioning multiple times.", "Beefs with refs every game — yells in Slovenian.", "Engaged to Anamaria Goltes; they have a daughter Gabriela."],
+    "headlines": ["Took the Mavericks to the 2024 NBA Finals (lost to Boston).", "Traded to the Lakers in February 2025 in a deal that changed both franchises forever.", "EuroLeague championship and EuroBasket gold medal — both at age 19."],
+    "memes": ["His step-back 3 — the most-replicated move at YMCAs everywhere.", "The 'Luka complains to the ref every play' compilation.", "His face when he scores — the 'this is too easy' look."],
+    "on_court_moments": ["The 73-point game vs. the Hawks in 2024.", "The Game 7 stepback dagger over Phoenix in 2022.", "The 41-point game in Game 1 of the 2024 NBA Finals."],
+    "off_field": ["From Ljubljana, Slovenia. Played pro at age 16.", "Engaged to Anamaria Goltes since 2023; daughter Gabriela born 2023."],
+    "running_jokes": ["He plays at his own pace. The pace of someone who knows he's the smartest guy on the court.", "The 'Luka magic' is just basketball IQ played in slow motion."]
   },
   "stephen-curry": {
-    "drama_notes": [
-      "Wife Ayesha is a media mogul — restaurants, cookbooks, kids' brands. Ayesha + Steph as a brand is bigger than the Currys themselves.",
-      "Father Dell played in the NBA; mother Sonya is a former volleyball player. Both are in the news constantly.",
-      "Brother Seth plays for the Hornets; family games are wholesome content.",
-      "Tagged as 'the nicest guy in the league' — maintained that for 16 years."
-    ],
-    "headlines": [
-      "Four-time NBA Champion (2015, 2017, 2018, 2022).",
-      "First unanimous MVP in NBA history (2016).",
-      "All-time NBA 3-point leader by a country mile."
-    ],
-    "memes": [
-      "The 'night-night' celebration after dagger 3s.",
-      "Mouthpiece chewing while he runs back on D.",
-      "Steph dancing on the bench during garbage time.",
-      "His pregame tunnel routine — every dribble is choreographed."
-    ],
-    "on_court_moments": [
-      "The 2022 NBA Finals MVP (his first).",
-      "The 60-point game vs. the Hawks in 2021.",
-      "The unanimous MVP season in 2015-16 (73 wins)."
-    ],
-    "off_field": [
-      "From Charlotte, NC — Davidson College alum.",
-      "Wife Ayesha, three kids: Riley, Ryan, Canon.",
-      "Founded Eat. Learn. Play. — Bay Area youth nonprofit.",
-      "Owns a piece of multiple businesses — golf wear (Curry Brand under Under Armour), Sonys."
-    ],
-    "running_jokes": [
-      "He invented the 3 and we owe him an honorary degree.",
-      "Ayesha is the most-discussed NBA spouse on the internet.",
-      "Klay being his brother in everything but DNA."
-    ]
+    "drama_notes": ["Wife Ayesha is a media mogul — restaurants, cookbooks, kids' brands. Ayesha + Steph as a brand is bigger than the Currys themselves.", "Father Dell played in the NBA; mother Sonya is a former volleyball player. Both are in the news constantly.", "Brother Seth plays for the Hornets; family games are wholesome content.", "Tagged as 'the nicest guy in the league' — maintained that for 16 years."],
+    "headlines": ["Four-time NBA Champion (2015, 2017, 2018, 2022).", "First unanimous MVP in NBA history (2016).", "All-time NBA 3-point leader by a country mile."],
+    "memes": ["The 'night-night' celebration after dagger 3s.", "Mouthpiece chewing while he runs back on D.", "Steph dancing on the bench during garbage time.", "His pregame tunnel routine — every dribble is choreographed."],
+    "on_court_moments": ["The 2022 NBA Finals MVP (his first).", "The 60-point game vs. the Hawks in 2021.", "The unanimous MVP season in 2015-16 (73 wins)."],
+    "off_field": ["From Charlotte, NC — Davidson College alum.", "Wife Ayesha, three kids: Riley, Ryan, Canon.", "Founded Eat. Learn. Play. — Bay Area youth nonprofit."],
+    "running_jokes": ["He invented the 3 and we owe him an honorary degree.", "Ayesha is the most-discussed NBA spouse on the internet.", "Klay being his brother in everything but DNA."]
   },
   "joel-embiid": {
-    "drama_notes": [
-      "Bell's palsy diagnosis affected him in 2024-25 — talked openly about it.",
-      "Brother died in 2014; Joel still references the loss in interviews.",
-      "Switched eligibility from Cameroon to USA basketball — French fans booed him at the 2024 Olympics.",
-      "The 'made fun of Karl Malone' Twitter saga in 2018 (Malone had made an inappropriate comment years before)."
-    ],
-    "headlines": [
-      "MVP, 2023 — first big-man MVP in 23 years.",
-      "Played 39 games in 2024-25 due to Bell's palsy and knee surgery.",
-      "Olympic silver medalist (Paris 2024) with Team USA."
-    ],
-    "memes": [
-      "'Trust the Process' chants from Sixers fans, dating back to 2014.",
-      "The 'I am the bus driver' postgame quote.",
-      "Embiid celebrating with the bench during garbage time.",
-      "His 'shimmy' celebration after big buckets."
-    ],
-    "on_court_moments": [
-      "The 70-point game vs. the Spurs in 2024 (76ers franchise record).",
-      "The 50-point game vs. the Kings with one eye swollen shut.",
-      "The 2023 ECF buzzer-beater dagger over Tatum."
-    ],
-    "off_field": [
-      "From Yaoundé, Cameroon — moved to the US at 16, started playing basketball at 15.",
-      "Wife Anne de Paula is a Brazilian model; son Arthur born in 2020.",
-      "Speaks 4 languages: French, English, Cameroonian Pidgin, some Spanish.",
-      "Owns multiple Philly investments and a piece of Crystal Palace FC."
-    ],
-    "running_jokes": [
-      "The 'Trust the Process' chant has outlived three Sixers GMs.",
-      "His foul-baiting is legendary; the league literally changed rules because of him.",
-      "He's a 7-footer who has the comedic timing of a stand-up."
-    ]
+    "drama_notes": ["Bell's palsy diagnosis affected him in 2024-25 — talked openly about it.", "Brother died in 2014; Joel still references the loss in interviews.", "Switched eligibility from Cameroon to USA basketball — French fans booed him at the 2024 Olympics."],
+    "headlines": ["MVP, 2023 — first big-man MVP in 23 years.", "Played 39 games in 2024-25 due to Bell's palsy and knee surgery.", "Olympic silver medalist (Paris 2024) with Team USA."],
+    "memes": ["'Trust the Process' chants from Sixers fans, dating back to 2014.", "The 'I am the bus driver' postgame quote.", "His 'shimmy' celebration after big buckets."],
+    "on_court_moments": ["The 70-point game vs. the Spurs in 2024 (76ers franchise record).", "The 50-point game vs. the Kings with one eye swollen shut.", "The 2023 ECF buzzer-beater dagger over Tatum."],
+    "off_field": ["From Yaoundé, Cameroon — moved to the US at 16, started playing basketball at 15.", "Wife Anne de Paula is a Brazilian model; son Arthur born in 2020.", "Speaks 4 languages: French, English, Cameroonian Pidgin, some Spanish."],
+    "running_jokes": ["The 'Trust the Process' chant has outlived three Sixers GMs.", "He's a 7-footer who has the comedic timing of a stand-up."]
   },
   "giannis-antetokounmpo": {
-    "drama_notes": [
-      "His three brothers also played pro basketball — Thanasis is on the Bucks with him.",
-      "Stayed loyal to Milwaukee with a supermax extension when LA + NYC were calling.",
-      "Damian Lillard pairing has not produced playoff success — public 'is the window closed?' takes.",
-      "Faced down a reporter who suggested 'failure' after a playoff loss — the 'no failure, only steps' speech is iconic."
-    ],
-    "headlines": [
-      "Two-time NBA MVP (2019, 2020).",
-      "NBA Champion (2021) and Finals MVP — the 50-point closeout is canon.",
-      "Olympic medalist with Greece in Paris 2024."
-    ],
-    "memes": [
-      "The 'no failure, only steps' speech becomes a motivational meme every season.",
-      "His footwork dribbling — every Eurostep clip.",
-      "The Greek Freak / 'this man is a freak of nature' announcer reactions.",
-      "His charity work where he buys his entire team smoothies."
-    ],
-    "on_court_moments": [
-      "The 50-point Game 6 close-out of the 2021 NBA Finals.",
-      "The Eastern Conference Finals comeback vs. Hawks (2021).",
-      "The 64-point game vs. the Pacers in 2023."
-    ],
-    "off_field": [
-      "From Athens, Greece — parents Nigerian immigrants.",
-      "Partner Mariah Riddlesprigger, three kids: Liam, Maverick, Eva.",
-      "Founded the AntetokounBros Academy in Greece for youth basketball.",
-      "His older brother Thanasis is also on the Bucks roster."
-    ],
-    "running_jokes": [
-      "He'll one-handed dunk over you and then ask if you're okay.",
-      "The 'no failure, only steps' speech gets quoted at every losing team's locker room.",
-      "He gets paid $50M to be the most positive person in any room."
-    ]
+    "drama_notes": ["His three brothers also played pro basketball — Thanasis is on the Bucks with him.", "Stayed loyal to Milwaukee with a supermax extension when LA + NYC were calling.", "Damian Lillard pairing has not produced playoff success — public 'is the window closed?' takes.", "Faced down a reporter who suggested 'failure' after a playoff loss — the 'no failure, only steps' speech is iconic."],
+    "headlines": ["Two-time NBA MVP (2019, 2020).", "NBA Champion (2021) and Finals MVP — the 50-point closeout is canon.", "Olympic medalist with Greece in Paris 2024."],
+    "memes": ["The 'no failure, only steps' speech becomes a motivational meme every season.", "His footwork dribbling — every Eurostep clip.", "The Greek Freak / 'this man is a freak of nature' announcer reactions."],
+    "on_court_moments": ["The 50-point Game 6 close-out of the 2021 NBA Finals.", "The Eastern Conference Finals comeback vs. Hawks (2021).", "The 64-point game vs. the Pacers in 2023."],
+    "off_field": ["From Athens, Greece — parents Nigerian immigrants.", "Partner Mariah Riddlesprigger, three kids: Liam, Maverick, Eva.", "Founded the AntetokounBros Academy in Greece for youth basketball."],
+    "running_jokes": ["He'll one-handed dunk over you and then ask if you're okay.", "He gets paid $50M to be the most positive person in any room."]
   },
   "ja-morant": {
-    "drama_notes": [
-      "Two suspensions in 18 months for gun-related Instagram videos. The second nearly cost him a season.",
-      "Was at the center of multiple lawsuits and incidents — a teenager was punched at his house in 2022.",
-      "Came back from each suspension in dominant fashion — the 'comeback kid' narrative is real.",
-      "Father Tee Morant is courtside every game — a fan favorite.",
-      "Two-time All-Star who has played fewer than 60 games in his last 3 seasons due to injury or suspension."
-    ],
-    "headlines": [
-      "Most Improved Player, 2022.",
-      "Took the Grizzlies to the #2 seed in 2022.",
-      "Suspended 25 games at start of 2023-24 season."
-    ],
-    "memes": [
-      "'JA TIME!' celebrations after every poster.",
-      "His pregame 'I'm him' attitude — and the postgame backlash when he loses.",
-      "Father Tee Morant courtside trash-talking is its own content stream.",
-      "The 'Ja flying through the air' clips — he averages 3 highlight dunks a game."
-    ],
-    "on_court_moments": [
-      "The 47-point Game 5 vs. the Warriors in 2022.",
-      "The Mike Conley alley-oop close-out vs. the Lakers (2024).",
-      "His rookie-year poster on Aron Baynes."
-    ],
-    "off_field": [
-      "From Dalzell, SC.",
-      "Father Tee was a college basketball player.",
-      "Has a daughter, Kaari.",
-      "Best friends with Tyus Jones and Desmond Bane."
-    ],
-    "running_jokes": [
-      "Pre-game Ja and post-suspension Ja are different people.",
-      "The Memphis fan base is loyal to a fault — they ride for him.",
-      "He plays with the gravity-defiance of a small forward in a guard's body."
-    ]
+    "drama_notes": ["Two suspensions in 18 months for gun-related Instagram videos. The second nearly cost him a season.", "Was at the center of multiple lawsuits and incidents — a teenager was punched at his house in 2022.", "Came back from each suspension in dominant fashion — the 'comeback kid' narrative is real.", "Father Tee Morant is courtside every game — a fan favorite."],
+    "headlines": ["Most Improved Player, 2022.", "Took the Grizzlies to the #2 seed in 2022.", "Suspended 25 games at start of 2023-24 season."],
+    "memes": ["'JA TIME!' celebrations after every poster.", "His pregame 'I'm him' attitude — and the postgame backlash when he loses.", "Father Tee Morant courtside trash-talking is its own content stream."],
+    "on_court_moments": ["The 47-point Game 5 vs. the Warriors in 2022.", "The Mike Conley alley-oop close-out vs. the Lakers (2024).", "His rookie-year poster on Aron Baynes."],
+    "off_field": ["From Dalzell, SC.", "Father Tee was a college basketball player.", "Best friends with Tyus Jones and Desmond Bane."],
+    "running_jokes": ["Pre-game Ja and post-suspension Ja are different people.", "The Memphis fan base is loyal to a fault — they ride for him.", "He plays with the gravity-defiance of a small forward in a guard's body."]
   },
   "jimmy-butler": {
-    "drama_notes": [
-      "Demanded out of Miami in early 2025; was traded to Golden State.",
-      "Burned bridges in Chicago, Minnesota, Philly — all on his way to Miami.",
-      "Big Face Coffee — runs a coffee company. Charged Heat teammates $20 a cup.",
-      "Plays harder in the playoffs than the regular season; the 'Playoff Jimmy' meme is empirically true.",
-      "His relationship with Erik Spoelstra in Miami was the league's best — and ended over a public spat."
-    ],
-    "headlines": [
-      "Six-time All-Star, two-time Finals appearances.",
-      "Took the Heat to the Finals in 2020 and 2023.",
-      "Traded to Golden State at 2025 deadline."
-    ],
-    "memes": [
-      "'Big Face Coffee' — actually a real brand.",
-      "The Disney bubble photo where he's reading a newspaper.",
-      "His emo phase (face piercings, painted nails) in 2023.",
-      "The 'Play-In Jimmy beats you in the regular season' meme."
-    ],
-    "on_court_moments": [
-      "The 56-point Game 4 vs. the Bucks in 2023.",
-      "The Finals run with the Heat in 2023 (lost to Denver).",
-      "The 47-point Game 7 vs. the Bucks in 2022."
-    ],
-    "off_field": [
-      "From Houston, TX — adopted by a family at 13 after being kicked out of his mother's home at 13.",
-      "Daughter Rylee with model Kaitlin Nowak.",
-      "Big Face Coffee is a real, successful business.",
-      "Famously drinks coffee like it's Gatorade."
-    ],
-    "running_jokes": [
-      "Playoff Jimmy is a different player than Regular-Season Jimmy.",
-      "Whoever he's mad at this week, you'll know within 24 hours.",
-      "The Big Face Coffee logo is on more shirts than Heat jerseys in Miami."
-    ]
+    "drama_notes": ["Demanded out of Miami in early 2025; was traded to Golden State.", "Burned bridges in Chicago, Minnesota, Philly — all on his way to Miami.", "Big Face Coffee — runs a coffee company. Charged Heat teammates $20 a cup.", "Plays harder in the playoffs than the regular season; the 'Playoff Jimmy' meme is empirically true.", "His relationship with Erik Spoelstra in Miami was the league's best — and ended over a public spat."],
+    "headlines": ["Six-time All-Star, two-time Finals appearances.", "Took the Heat to the Finals in 2020 and 2023.", "Traded to Golden State at 2025 deadline."],
+    "memes": ["'Big Face Coffee' — actually a real brand.", "The Disney bubble photo where he's reading a newspaper.", "His emo phase (face piercings, painted nails) in 2023.", "The 'Play-In Jimmy beats you in the regular season' meme."],
+    "on_court_moments": ["The 56-point Game 4 vs. the Bucks in 2023.", "The Finals run with the Heat in 2023 (lost to Denver).", "The 47-point Game 7 vs. the Bucks in 2022."],
+    "off_field": ["From Houston, TX — adopted by a family at 13 after being kicked out of his mother's home at 13.", "Big Face Coffee is a real, successful business.", "Famously drinks coffee like it's Gatorade."],
+    "running_jokes": ["Playoff Jimmy is a different player than Regular-Season Jimmy.", "Whoever he's mad at this week, you'll know within 24 hours.", "The Big Face Coffee logo is on more shirts than Heat jerseys in Miami."]
   },
   "damian-lillard": {
-    "drama_notes": [
-      "Forced his way out of Portland in 2023 — 'Dame Time' in Milwaukee.",
-      "Marriage to Kay'la Hanson ended in a public, ugly divorce in 2023; Dame talked about it openly.",
-      "Engaged in 2025 to Bria Bartholomew.",
-      "Suffered Achilles tear in 2024 playoffs; recovery is a major storyline.",
-      "Damian + Giannis pairing has not produced playoff success — both have voiced frustration."
-    ],
-    "headlines": [
-      "8-time All-Star.",
-      "Forced trade to Milwaukee in 2023 in a 3-team deal.",
-      "Achilles tear in 2024 ended his playoffs."
-    ],
-    "memes": [
-      "The wave goodbye after a series-clinching shot.",
-      "'Dame Time' as a permanent NBA meme.",
-      "His 71-point game vs. the Rockets where he kept passing on the record.",
-      "The Lillard for Holiday trade memes."
-    ],
-    "on_court_moments": [
-      "The 0.9-second buzzer beater over the Rockets (2014).",
-      "The 37-foot dagger over OKC in 2019 — the wave goodbye.",
-      "The 71-point game in 2023."
-    ],
-    "off_field": [
-      "From Oakland, CA — Weber State undergrad.",
-      "Three kids: Damian Jr, twins Kalii and Kali.",
-      "Released multiple rap albums (under Dame D.O.L.L.A.).",
-      "Faith is central to him — talks about it openly."
-    ],
-    "running_jokes": [
-      "If the game is on the line, give it to Dame.",
-      "He's 6'2 and shoots from the parking lot.",
-      "The wave goodbye should be the league's logo."
-    ]
+    "drama_notes": ["Forced his way out of Portland in 2023 — 'Dame Time' in Milwaukee.", "Marriage to Kay'la Hanson ended in a public, ugly divorce in 2023; Dame talked about it openly.", "Engaged in 2025 to Bria Bartholomew.", "Suffered Achilles tear in 2024 playoffs; recovery is a major storyline.", "Damian + Giannis pairing has not produced playoff success — both have voiced frustration."],
+    "headlines": ["8-time All-Star.", "Forced trade to Milwaukee in 2023 in a 3-team deal.", "Achilles tear in 2024 ended his playoffs."],
+    "memes": ["The wave goodbye after a series-clinching shot.", "'Dame Time' as a permanent NBA meme.", "His 71-point game vs. the Rockets where he kept passing on the record."],
+    "on_court_moments": ["The 0.9-second buzzer beater over the Rockets (2014).", "The 37-foot dagger over OKC in 2019 — the wave goodbye.", "The 71-point game in 2023."],
+    "off_field": ["From Oakland, CA — Weber State undergrad.", "Released multiple rap albums (under Dame D.O.L.L.A.).", "Faith is central to him — talks about it openly."],
+    "running_jokes": ["If the game is on the line, give it to Dame.", "He's 6'2 and shoots from the parking lot.", "The wave goodbye should be the league's logo."]
   },
   "cade-cunningham": {
-    "drama_notes": [
-      "The face of the Pistons rebuild — went 14-68 his rookie year, came back to be an All-Star.",
-      "Cade is not the loudest superstar — quiet leadership has won over the locker room.",
-      "Brother Cannen played college basketball; the family is tight.",
-      "Has not had any off-court drama — almost suspiciously clean."
-    ],
-    "headlines": [
-      "All-Star, 2025 — first Pistons All-Star in years.",
-      "Pistons made the playoffs in 2025 — ended a 6-year drought.",
-      "Posted a triple-double in his rookie year — the youngest player ever to do so multiple times."
-    ],
-    "memes": [
-      "His behind-the-back passes that look like Magic Johnson highlights.",
-      "The 'is Cade good?' debate finally answered with a thunderous YES in 2025.",
-      "Pistons fans crying when they made the playoffs again — 'we can finally watch basketball'."
-    ],
-    "on_court_moments": [
-      "The triple-double vs. Sacramento as a rookie.",
-      "The 36-point game vs. the Celtics in 2025.",
-      "The Game 1 playoff dagger vs. Cleveland."
-    ],
-    "off_field": [
-      "From Arlington, TX — Bowie HS, then Oklahoma State.",
-      "Brother Cannen also played college basketball.",
-      "Daughter Riley.",
-      "Engaged to Daria Bertrand."
-    ],
-    "running_jokes": [
-      "He plays the game in a different gear than everyone else.",
-      "Detroit fans went from 'maybe we shouldn't have drafted him' to 'never trade him' in 36 months.",
-      "The 'silent assassin' nickname actually fits."
-    ]
+    "drama_notes": ["The face of the Pistons rebuild — went 14-68 his rookie year, came back to be an All-Star.", "Cade is not the loudest superstar — quiet leadership has won over the locker room.", "Brother Cannen played college basketball; the family is tight."],
+    "headlines": ["All-Star, 2025 — first Pistons All-Star in years.", "Pistons made the playoffs in 2025 — ended a 6-year drought.", "Posted a triple-double in his rookie year — the youngest player ever to do so multiple times."],
+    "memes": ["His behind-the-back passes that look like Magic Johnson highlights.", "The 'is Cade good?' debate finally answered with a thunderous YES in 2025.", "Pistons fans crying when they made the playoffs again."],
+    "on_court_moments": ["The triple-double vs. Sacramento as a rookie.", "The 36-point game vs. the Celtics in 2025.", "The Game 1 playoff dagger vs. Cleveland."],
+    "off_field": ["From Arlington, TX — Bowie HS, then Oklahoma State.", "Brother Cannen also played college basketball.", "Engaged to Daria Bertrand."],
+    "running_jokes": ["He plays the game in a different gear than everyone else.", "Detroit fans went from 'maybe we shouldn't have drafted him' to 'never trade him' in 36 months.", "The 'silent assassin' nickname actually fits."]
   },
   "justin-herbert": {
-    "drama_notes": [
-      "Famously private — has dated the same person, Madison Beckford, since college.",
-      "Quiet locker-room leader — not a press conference guy.",
-      "Has been on 4 different OCs in 5 years; constant turmoil around him.",
-      "The 'Chargers find new ways to break his heart' meme is permanently in the zeitgeist."
-    ],
-    "headlines": [
-      "Offensive Rookie of the Year, 2020.",
-      "First Chargers playoff win in 5 years (2024).",
-      "Jim Harbaugh hire as HC unlocked the offense in 2024."
-    ],
-    "memes": [
-      "His high-school throwing motion videos that look like a college senior already.",
-      "The 'Justin Herbert sad face' after every Chargers loss.",
-      "His haircut.",
-      "The 'Chargers fans = pain' Twitter community."
-    ],
-    "on_field_moments": [
-      "The 66-yard dagger to Mike Williams in 2021.",
-      "The 4-TD playoff game vs. Houston in 2024.",
-      "His rookie season throwing for 4,300+ yards as a 22-year-old."
-    ],
-    "off_field": [
-      "From Eugene, OR — Sheldon HS, then Oregon.",
-      "Father played college football; brother Patrick was an Oregon QB too.",
-      "Has dated Madison Beckford since college.",
-      "Loves fishing — talks about it constantly in interviews."
-    ],
-    "running_jokes": [
-      "He's the most-talented QB nobody talks about because he's on the Chargers.",
-      "His arm strength videos make Twitter believe he's an alien every September.",
-      "Jim Harbaugh adopted him in February 2024."
-    ]
+    "drama_notes": ["Famously private — has dated the same person, Madison Beckford, since college.", "Quiet locker-room leader — not a press conference guy.", "Has been on 4 different OCs in 5 years; constant turmoil around him.", "The 'Chargers find new ways to break his heart' meme is permanently in the zeitgeist."],
+    "headlines": ["Offensive Rookie of the Year, 2020.", "First Chargers playoff win in 5 years (2024).", "Jim Harbaugh hire as HC unlocked the offense in 2024."],
+    "memes": ["His high-school throwing motion videos that look like a college senior already.", "The 'Justin Herbert sad face' after every Chargers loss.", "The 'Chargers fans = pain' Twitter community."],
+    "on_field_moments": ["The 66-yard dagger to Mike Williams in 2021.", "The 4-TD playoff game vs. Houston in 2024.", "His rookie season throwing for 4,300+ yards as a 22-year-old."],
+    "off_field": ["From Eugene, OR — Sheldon HS, then Oregon.", "Father played college football; brother Patrick was an Oregon QB too.", "Loves fishing — talks about it constantly in interviews."],
+    "running_jokes": ["He's the most-talented QB nobody talks about because he's on the Chargers.", "His arm strength videos make Twitter believe he's an alien every September.", "Jim Harbaugh adopted him in February 2024."]
   },
   "trevor-lawrence": {
-    "drama_notes": [
-      "Generational golden-boy QB. Has not yet generationalized — Jaguars haven't won a playoff game since 2023.",
-      "Married to Marissa Mowry; their wedding was on every NFL highlight.",
-      "Hair is its own character.",
-      "Got injured in 2024 playoffs — Jaguars collapsed."
-    ],
-    "headlines": [
-      "First overall pick of the 2021 NFL Draft.",
-      "Took the Jaguars to the playoffs in 2022.",
-      "Signed a 5-year, $275M extension in 2024."
-    ],
-    "memes": [
-      "His hair flowing during scrambles.",
-      "The 'we have a Trevor Lawrence at home' meme — every other team's shorter blonde QB.",
-      "Marissa Mowry's social media presence (very wholesome).",
-      "The Doug Pederson hot-tub photo — became a national news story."
-    ],
-    "on_field_moments": [
-      "The 27-point comeback vs. the Chargers in 2022 wild card (4 INT first half, won the game).",
-      "His Clemson national championship as a freshman.",
-      "The 4-TD playoff game in 2022."
-    ],
-    "off_field": [
-      "From Cartersville, GA — Cartersville HS.",
-      "Married Marissa Mowry, his college girlfriend.",
-      "Christian faith is publicly important to him.",
-      "Endorses a youth football camp in Florida."
-    ],
-    "running_jokes": [
-      "He has the hair, the wife, the rings (national champ), the rookie contract, and yet... waiting.",
-      "Doug Pederson hot-tubbing while everyone yelled is a Jaguars metaphor.",
-      "His resume looks like 2018 when he was the consensus #1 pick."
-    ]
+    "drama_notes": ["Generational golden-boy QB. Has not yet generationalized — Jaguars haven't won a playoff game since 2023.", "Married to Marissa Mowry; their wedding was on every NFL highlight.", "Hair is its own character.", "Got injured in 2024 playoffs — Jaguars collapsed."],
+    "headlines": ["First overall pick of the 2021 NFL Draft.", "Took the Jaguars to the playoffs in 2022.", "Signed a 5-year, $275M extension in 2024."],
+    "memes": ["His hair flowing during scrambles.", "The 'we have a Trevor Lawrence at home' meme — every other team's shorter blonde QB.", "The Doug Pederson hot-tub photo — became a national news story."],
+    "on_field_moments": ["The 27-point comeback vs. the Chargers in 2022 wild card (4 INT first half, won the game).", "His Clemson national championship as a freshman.", "The 4-TD playoff game in 2022."],
+    "off_field": ["From Cartersville, GA — Cartersville HS.", "Married Marissa Mowry, his college girlfriend.", "Christian faith is publicly important to him."],
+    "running_jokes": ["He has the hair, the wife, the rings (national champ), the rookie contract, and yet... waiting.", "Doug Pederson hot-tubbing while everyone yelled is a Jaguars metaphor."]
   },
   "tua-tagovailoa": {
-    "drama_notes": [
-      "Concussion saga — three documented concussions, league protocol changes named after him.",
-      "Family is deeply involved — father Galu and mother Diane are public figures in the Tua story.",
-      "Public conversion to Christianity has shaped his interviews.",
-      "Took down Mac Jones in college (2019 Iron Bowl) and they've been compared since.",
-      "Signed a 4-year, $212M extension in 2024 — largest in Dolphins history."
-    ],
-    "headlines": [
-      "Pro Bowl QB.",
-      "Suffered another concussion in September 2024 — missed multiple weeks.",
-      "Threw for 4,600 yards in 2023."
-    ],
-    "memes": [
-      "The 'Tua deep ball to Tyreek = TD' clips.",
-      "His pregame humor with the Dolphins line.",
-      "The 'Tua reads the Bible on the team plane' photo.",
-      "The 'Tua Tagovailoa is short' takes from announcers (he's 6'1)."
-    ],
-    "on_field_moments": [
-      "The 2018 Alabama national championship — second-half comeback over Georgia (5 TDs in relief).",
-      "The 6-TD game vs. the Broncos in 2022.",
-      "The Dolphins' 2023 wild card win."
-    ],
-    "off_field": [
-      "From Ewa Beach, HI — Saint Louis School.",
-      "Wife Annah; two kids.",
-      "Christian faith publicly important.",
-      "Owns a piece of multiple Hawaii businesses."
-    ],
-    "running_jokes": [
-      "Every snap, the entire Dolphins coaching staff holds its breath.",
-      "He throws the prettiest deep ball in the game.",
-      "The 'is Tua good?' debate is now a stale Twitter argument."
-    ]
+    "drama_notes": ["Concussion saga — three documented concussions, league protocol changes named after him.", "Family is deeply involved — father Galu and mother Diane are public figures in the Tua story.", "Public conversion to Christianity has shaped his interviews.", "Took down Mac Jones in college (2019 Iron Bowl) and they've been compared since.", "Signed a 4-year, $212M extension in 2024 — largest in Dolphins history."],
+    "headlines": ["Pro Bowl QB.", "Suffered another concussion in September 2024 — missed multiple weeks.", "Threw for 4,600 yards in 2023."],
+    "memes": ["The 'Tua deep ball to Tyreek = TD' clips.", "His pregame humor with the Dolphins line.", "The 'Tua reads the Bible on the team plane' photo."],
+    "on_field_moments": ["The 2018 Alabama national championship — second-half comeback over Georgia (5 TDs in relief).", "The 6-TD game vs. the Broncos in 2022.", "The Dolphins' 2023 wild card win."],
+    "off_field": ["From Ewa Beach, HI — Saint Louis School.", "Wife Annah; two kids.", "Christian faith publicly important."],
+    "running_jokes": ["Every snap, the entire Dolphins coaching staff holds its breath.", "He throws the prettiest deep ball in the game."]
   },
   "micah-parsons": {
-    "drama_notes": [
-      "Has a podcast (The Edge) that creates news cycles weekly — has called out coaches publicly.",
-      "Father went to prison; raised by mom and grandmother in Harrisburg, PA.",
-      "Engaged in public spats with multiple players via the podcast.",
-      "The 'I'd be a Hall of Fame Eagle if drafted by Philly' quote in 2024 went viral."
-    ],
-    "headlines": [
-      "Defensive Rookie of the Year, 2021.",
-      "Three-time All-Pro by age 25.",
-      "Cowboys highest-paid defensive player; extension talks ongoing."
-    ],
-    "memes": [
-      "The Edge podcast clips — 'Micah said WHAT?' weekly.",
-      "His warmup outfits (he wears suits to games).",
-      "Sacking Mahomes / Allen and screaming at the camera.",
-      "The 'Micah is the best defender in football' debate."
-    ],
-    "on_field_moments": [
-      "The 14-sack rookie season.",
-      "The 2-sack game vs. the Eagles in 2023.",
-      "The blocked-FG return TD vs. the 49ers in 2022."
-    ],
-    "off_field": [
-      "From Harrisburg, PA — Central Dauphin HS.",
-      "Penn State football alum.",
-      "Has a son.",
-      "Hosts The Edge podcast on the Bleacher Report network."
-    ],
-    "running_jokes": [
-      "His podcast generates more drama than the Cowboys' actual locker room.",
-      "Suits to games is now a Micah-only thing.",
-      "Jerry Jones probably wakes up every day terrified of the Edge dropping new content."
-    ]
+    "drama_notes": ["Has a podcast (The Edge) that creates news cycles weekly — has called out coaches publicly.", "Father went to prison; raised by mom and grandmother in Harrisburg, PA.", "Engaged in public spats with multiple players via the podcast.", "The 'I'd be a Hall of Fame Eagle if drafted by Philly' quote in 2024 went viral."],
+    "headlines": ["Defensive Rookie of the Year, 2021.", "Three-time All-Pro by age 25.", "Cowboys highest-paid defensive player; extension talks ongoing."],
+    "memes": ["The Edge podcast clips — 'Micah said WHAT?' weekly.", "His warmup outfits (he wears suits to games).", "Sacking Mahomes / Allen and screaming at the camera."],
+    "on_field_moments": ["The 14-sack rookie season.", "The 2-sack game vs. the Eagles in 2023.", "The blocked-FG return TD vs. the 49ers in 2022."],
+    "off_field": ["From Harrisburg, PA — Central Dauphin HS.", "Penn State football alum.", "Hosts The Edge podcast on the Bleacher Report network."],
+    "running_jokes": ["His podcast generates more drama than the Cowboys' actual locker room.", "Suits to games is now a Micah-only thing.", "Jerry Jones probably wakes up every day terrified of the Edge dropping new content."]
+  },
+  "christian-mccaffrey": {
+    "drama_notes": ["Married to model Olivia Culpo — 2024 wedding was the wedding of the year.", "Father Ed McCaffrey was a Pro Bowl WR; brothers all played football.", "Missed most of 2024 with calf + Achilles issues.", "Forced his way out of Carolina to the 49ers in 2022 — instantly elite."],
+    "headlines": ["Offensive Player of the Year, 2023.", "First player to ever lead the league in rushing AND receiving for a position group.", "Made it to Super Bowl LVIII (lost to Chiefs)."],
+    "memes": ["The McCaffrey Hurdle — he hurdles defenders like a high jumper.", "His 'most complete RB ever' debate is annual.", "The Olivia Culpo wedding photoshoots that took over Vogue."],
+    "on_field_moments": ["The 4-TD playoff game vs. the Cowboys in 2022.", "The 1,000 rushing + 1,000 receiving year (only player to do both consistently).", "The Super Bowl LVIII opening drive run."],
+    "off_field": ["From Castle Rock, CO — Stanford alum.", "Three brothers all played college football.", "Husband to Olivia Culpo (Miss USA / Miss Universe)."],
+    "running_jokes": ["His warmup routine is its own ESPN content.", "Olivia's dress drops outshine any halftime show.", "Catches the ball better than most WRs."]
+  },
+  "bijan-robinson": {
+    "drama_notes": ["Rookie year was wasted by then-coach Arthur Smith — he ran the ball 3 times in some games.", "Quiet, professional, refused to publicly complain about usage.", "Falcons fired Arthur Smith partly because of the Bijan situation."],
+    "headlines": ["8th overall pick in 2023.", "Generational running back talent.", "Finally got 1,400+ yards in 2024 with a real OC."],
+    "memes": ["The 'free Bijan' Twitter campaign throughout his rookie year.", "Atlanta fans crying after he scored only to find out the play was called back.", "Arthur Smith leaving Atlanta = relief."],
+    "on_field_moments": ["The 89-yard TD vs. the Saints in 2024.", "The 3-TD games as a rookie when actually fed.", "Texas Longhorns career — Doak Walker Award winner."],
+    "off_field": ["From Tucson, AZ — Salpointe Catholic.", "Texas Longhorns alum.", "Christian faith is central — speaks about it often."],
+    "running_jokes": ["The 'Bijan-Truth' nickname his agent created became its own meme.", "The most-misused rookie year of any RB in the modern era."]
+  },
+  "derrick-henry": {
+    "drama_notes": ["6'3, 247 lbs of running back — looks like a defensive end carrying the ball.", "Left the Titans after 8 years when they wouldn't pay him; signed with the Ravens.", "Almost broke 2,000 yards twice in his career.", "Famously private — does not do social media drama."],
+    "headlines": ["Offensive Player of the Year, 2020.", "First RB ever to lead the league in rushing while playing for two different teams.", "Signed with the Ravens, paired with Lamar — a nightmare backfield."],
+    "memes": ["Stiff-arming defenders into orbit (the Josh Norman stiff-arm is a permanent meme).", "His pregame meal: a single steak, no carbs.", "The 'King Henry' chants every Ravens home game."],
+    "on_field_moments": ["The 99-yard TD run vs. the Jaguars (2018).", "The 2,027-yard season in 2020.", "The Josh Norman stiff-arm vs. the Bills."],
+    "off_field": ["From Yulee, FL — small town hero.", "Alabama national championship.", "Christian faith publicly important.", "Famously says very little — let his game talk."],
+    "running_jokes": ["He's listed at 247 lbs; we suspect he's 270.", "Defenders bouncing off him like cars off concrete.", "He's 31 and somehow only getting better."]
+  },
+  "jonathan-taylor": {
+    "drama_notes": ["Held out of OTAs in 2023 over contract — Colts paid him.", "Has been hampered by injury and turnover at the Colts.", "Quiet personality — doesn't generate locker-room drama."],
+    "headlines": ["League rushing leader in 2021.", "Pro Bowl RB.", "Wisconsin Heisman finalist."],
+    "memes": ["The 'JT5' brand he tried to launch.", "The 'Colts will fix it next year' fan-base loop.", "His underrated speed — track-star fast for an RB."],
+    "on_field_moments": ["The 2,000-yard 2021 season.", "The 9-TD game vs. the Bills.", "His Wisconsin Heisman runner-up year."],
+    "off_field": ["From Salem, NJ — small town.", "Wisconsin Badgers alum.", "Has stayed mostly out of public spotlight."],
+    "running_jokes": ["The Colts can never find him a competent QB.", "He's quietly a top-3 RB but only Colts fans know it."]
+  },
+  "jahmyr-gibbs": {
+    "drama_notes": ["Drafted high (12th overall, 2023) and many thought it was a reach — proved them wrong.", "Pairing with David Montgomery is the best 1-2 punch in the NFL.", "Quiet, hard-working — the polar opposite of his Lions teammate Aidan Hutchinson's saxophone-playing energy."],
+    "headlines": ["1,400+ yards in 2024.", "Lions made the NFC Championship in 2024.", "Pro Bowl in his second year."],
+    "memes": ["The 'Gibbs is the actual #1 RB' debate every Sunday.", "His hurdle vs. the Vikings.", "The Lions backfield being the most fun in football."],
+    "on_field_moments": ["The 4-TD game vs. the Vikings in 2024.", "The Hail Mary throwback to David Montgomery.", "The Alabama-to-Lions pipeline pick."],
+    "off_field": ["From Dalton, GA — small town.", "Played at Georgia Tech, transferred to Alabama.", "Quiet personality — doesn't do TV interviews unless required."],
+    "running_jokes": ["The Lions made him AND Montgomery elite — Dan Campbell magic.", "He runs like a guy who knows the QB is going to throw him an open pass."]
+  },
+  "amon-ra-st-brown": {
+    "drama_notes": ["Brother of Equanimeous (also NFL).", "Father John St. Brown is a famous bodybuilder — Mr. Universe titles in the 1990s.", "Grew up trilingual (English, German, French).", "The St. Brown family is a content factory of its own."],
+    "headlines": ["Pro Bowl WR.", "1,500+ yards in 2023.", "Lions' WR1 alongside the Goff offense."],
+    "memes": ["His pre-game stretching routine — looks like a Cirque du Soleil warmup.", "The 'St. Brown family workout' videos with his bodybuilder dad.", "The 'I'm a winner' postgame quote."],
+    "on_field_moments": ["The walk-off TD catch vs. the Vikings.", "The 11-catch playoff game vs. the 49ers.", "The 4-TD game in 2024."],
+    "off_field": ["From Anaheim Hills, CA.", "USC Trojans alum.", "Grew up in a multilingual household; still speaks German at home."],
+    "running_jokes": ["His name pronunciation tutorials are their own genre.", "His stretching routine deserves its own Olympics."]
+  },
+  "ja'marr-chase": {
+    "drama_notes": ["Held out for new contract in 2024 — got it.", "LSU + Burrow national championship — the friendship has fueled both careers.", "Off-field cousin allegations in 2023 — declined to comment publicly."],
+    "headlines": ["Offensive Player of the Year contender every season.", "Highest-paid non-QB at signing.", "All-Pro WR."],
+    "memes": ["The 'JaMarr is open ALWAYS' clips on every Bengals possession.", "His one-handed catches.", "The Burrow-to-Chase relationship being the league's most-replicated chemistry."],
+    "on_field_moments": ["The Super Bowl LVI run.", "The 200-yard playoff game vs. the Titans.", "His LSU undefeated season."],
+    "off_field": ["From Harvey, LA.", "LSU national champion alongside Burrow.", "Quiet, focused — let's the play do the talking."],
+    "running_jokes": ["He's open. Always.", "Burrow-Chase is the Mahomes-Kelce of the AFC North.", "Every Bengals fan has a 'JaMarr is the best' top-line take."]
+  },
+  "jaylen-brown": {
+    "drama_notes": ["Berkeley grad — has been openly intellectual about NBA-Nike politics.", "His Boston experience (race in Boston) has been documented in interviews.", "Was reportedly snubbed from the 2024 Olympic roster — handled it publicly with grace."],
+    "headlines": ["NBA Finals MVP, 2024.", "Two-time All-Star.", "All-NBA in 2023."],
+    "memes": ["His handle being a constant talking point — every step-back gets analyzed.", "His 'they don't want me to win' tweet after the Olympic snub.", "The Brown-Tatum 'JD twins' nickname."],
+    "on_court_moments": ["Finals MVP closeout vs. Dallas in 2024.", "The 31-point Game 7 vs. the 76ers.", "The dunk on Vucevic in 2023."],
+    "off_field": ["From Marietta, GA.", "Cal-Berkeley undergrad — economics + sociology.", "Has talked openly about Boston race issues he's faced."],
+    "running_jokes": ["He's the smartest guy in the locker room and you can tell.", "His Berkeley arc never gets old.", "The 'JD twins' (Tatum and Brown both wore JD Sports endorsement) is the most boring nickname imaginable."]
+  },
+  "jrue-holiday": {
+    "drama_notes": ["Wife Lauren Holiday was an Olympic gold medalist soccer player.", "Quiet locker-room dad to every team he plays for.", "Two-time NBA Champion (Bucks 2021, Celtics 2024)."],
+    "headlines": ["Two-time NBA Champion.", "Six-time All-Defensive team.", "All-Star in 2023."],
+    "memes": ["His 'professional defender' label that doesn't quite capture his offense.", "Quietest superstar in the league.", "The trade that brought him to Boston (from Milwaukee via Portland) — front-office magic."],
+    "on_court_moments": ["The Game 6 closeout vs. Suns in 2021 (the steal off Booker).", "The defensive close-out vs. Doncic in 2024.", "His 30+ Pelicans games early in his career."],
+    "off_field": ["From Chatsworth, CA.", "Wife Lauren was an Olympic soccer player.", "UCLA Bruins.", "Brothers Justin and Aaron also played in the NBA."],
+    "running_jokes": ["He's the player every star quietly wants on their team.", "He's been in the league 16 years and never had a single off-court issue."]
+  },
+  "chet-holmgren": {
+    "drama_notes": ["Skipped his rookie year to a Lisfranc injury — came back stronger.", "7'1 with the wingspan of a building.", "Has the most internet 'Chet vs. Wemby' debate energy."],
+    "headlines": ["All-Rookie 2024.", "Thunder's defensive anchor.", "All-NBA buzz in 2025."],
+    "memes": ["His skinny frame becoming a meme — 'he's gonna get bullied' takes that aged badly.", "Blocking shots while looking apologetic.", "The Wemby-Chet debate."],
+    "on_court_moments": ["The 7-block game as a rookie.", "Game 7 close-out vs. Denver in 2024.", "His preseason summer-league dominance."],
+    "off_field": ["From Minneapolis, MN.", "Gonzaga alum (one season).", "Famously private."],
+    "running_jokes": ["He's 7'1 and 195 lbs — physics shouldn't allow it.", "The Thunder's foundation is two skinny guys (SGA, Chet) somehow dominating."]
+  },
+  "jalen-williams": {
+    "drama_notes": ["Drafted #12 in 2022 — most picks ahead of him are bench players now.", "JDub.", "All-Star in 2025 — quietly the league's most underrated rising star."],
+    "headlines": ["All-Star, 2025.", "Pro Bowl-level two-way player.", "Thunder's third pillar with SGA + Chet."],
+    "memes": ["The 'JDub is actually elite' takes that finally became consensus in 2025.", "His handle for a 6'6 wing.", "Thunder's 'we drafted everyone perfectly' meme."],
+    "on_court_moments": ["The 38-point Game 6 vs. Denver.", "The dagger 3 vs. the Lakers in 2024.", "His Game 7 closeout 32-pointer."],
+    "off_field": ["From Phoenix, AZ.", "Santa Clara alum (small school).", "Quiet personality — let his game talk."],
+    "running_jokes": ["The 'Santa Clara to All-Star' arc nobody saw coming.", "JDub is the boring nickname that stuck."]
+  },
+  "paolo-banchero": {
+    "drama_notes": ["Italian dual citizenship — plays for the Italian national team at Olympics.", "Mom Rhonda was a basketball player at Washington.", "Magic franchise face."],
+    "headlines": ["Rookie of the Year, 2023.", "Pro Bowl-level scoring.", "All-Star."],
+    "memes": ["His Italian Olympics jerseys becoming a fashion item.", "The 'Magic are good now' Twitter takes.", "His face when Banchero hits a stepback."],
+    "on_court_moments": ["The 50-point game vs. the Pacers.", "The Game 7 win vs. the Cavs in 2024.", "His Duke freshman year."],
+    "off_field": ["From Seattle, WA.", "Duke Blue Devils.", "Italian heritage — plays for Italy at the Olympics."],
+    "running_jokes": ["The 'Magic are watchable' is a 2024-2025 phenomenon.", "His Italian fans showing up to Magic games in Italy gear."]
+  },
+  "evan-mobley": {
+    "drama_notes": ["Brother Isaiah is also on the Cavs.", "Quiet, intellectual, the locker-room professor.", "Defensive Player of the Year contender."],
+    "headlines": ["All-Defensive team.", "Pro Bowl center.", "Cavs' future face."],
+    "memes": ["His blocks while looking confused.", "The Mobley brothers content (Isaiah is also a player).", "The 'Mobley is actually a guard' takes."],
+    "on_court_moments": ["The Game 7 close-out vs. the Magic in 2024.", "His rookie poster on Bam Adebayo.", "The 25-block game (kidding — but it felt like that)."],
+    "off_field": ["From Murrieta, CA.", "USC Trojans.", "Brother Isaiah is also on the Cavs."],
+    "running_jokes": ["The Cavs have the league's tallest brothers.", "He plays like a 7-footer with a guard's brain."]
+  },
+  "donovan-mitchell": {
+    "drama_notes": ["Demanded out of Utah in 2022 — got Cleveland.", "Could demand out of Cleveland someday — the rumor mill never stops.", "Spider-Man jersey #45 — Tom Holland is a friend."],
+    "headlines": ["6-time All-Star.", "Cavs' star.", "Utah Jazz franchise leader before the trade."],
+    "memes": ["The Spider-Man celebrations.", "'Where will Donovan demand to go next?' Twitter takes.", "His 71-point game in 2023."],
+    "on_court_moments": ["The 71-point game vs. the Bulls in 2023.", "The Game 7 vs. the Celtics in 2024.", "His Utah playoff runs."],
+    "off_field": ["From Greenwich, CT.", "Louisville Cardinals.", "Spider-Man fan — has the Spider-Man jerseys."],
+    "running_jokes": ["He's loyal to the Cavs until Twitter says he isn't.", "The Spider-Man brand might outlive his career."]
+  },
+  "jalen-brunson": {
+    "drama_notes": ["Father Rick Brunson coaches him on the Knicks staff.", "Wife is a content creator — wholesome family content.", "Knicks captain — the soul of NYC sports right now."],
+    "headlines": ["All-NBA in 2024.", "Knicks captain.", "First All-Star in years for the Knicks."],
+    "memes": ["The 'shorter James Harden' jokes (he's listed 6'2, generously).", "Madison Square Garden chants of 'Brun-son! Brun-son!'", "His step-back going viral every game."],
+    "on_court_moments": ["The 47-point Game 5 vs. the 76ers in 2024.", "The 39-point ECF game vs. Indiana.", "His Villanova national championship."],
+    "off_field": ["From Cherry Hill, NJ.", "Villanova Wildcats — two-time national champion.", "Father Rick Brunson is on the Knicks coaching staff."],
+    "running_jokes": ["Brunson + KAT + Mikal Bridges + OG Anunoby = the New York Knicks reunion.", "MSG turning into the loudest building in basketball."]
+  },
+  "karl-anthony-towns": {
+    "drama_notes": ["Mother Jacqueline died of COVID in 2020 — has been open about grief.", "Engaged to Jordyn Woods (yes, from the Kardashian world).", "Was traded from Minnesota to NYK in October 2024 — shocking deal."],
+    "headlines": ["Three-time All-Star.", "Now a Knick after the 2024 trade.", "All-NBA in 2024."],
+    "memes": ["The 'KAT cries on the bench' photos.", "His shooting form for a 7-footer.", "The Jordyn Woods relationship being a tabloid topic."],
+    "on_court_moments": ["His 60-point game in 2022.", "The 3-point shootout title.", "Game 7 close-out vs. Denver in 2024 (with Wolves)."],
+    "off_field": ["From Edison, NJ.", "Kentucky Wildcats alum.", "Engaged to Jordyn Woods.", "Catholic faith publicly important."],
+    "running_jokes": ["He's a 7'0 sniper — physics-defying skill.", "The Wolves trading him to NYC was the cosmic balance for trading Garnett a generation earlier."]
+  },
+  "tyrese-haliburton": {
+    "drama_notes": ["Achilles injury in 2024 NBA Finals — devastating, but his recovery is the storyline.", "Engaged to Jade Jones.", "The 'point guard of the future' chants are real."],
+    "headlines": ["All-NBA in 2024.", "Took the Pacers to the 2024 NBA Finals.", "Achilles tear in Game 7 of the Finals."],
+    "memes": ["The 'we are not a chocolate ice cream flavor' postgame interview.", "His 'I told you' face after Pacers wins.", "His celebrations being too big for a regular-season game."],
+    "on_court_moments": ["The 35-point ECF game vs. Boston.", "The Game 7 win over the Knicks in 2024.", "His Iowa State years."],
+    "off_field": ["From Oshkosh, WI.", "Iowa State Cyclones.", "Engaged to Jade Jones."],
+    "running_jokes": ["He's the league's most relatable star — fans love him.", "Indiana basketball is back because of him."]
+  },
+  "bam-adebayo": {
+    "drama_notes": ["Heat lifer.", "Three-time All-Star.", "Quietly the best defender in the East."],
+    "headlines": ["All-Defensive team.", "Heat franchise face after Jimmy Butler trade.", "Olympic gold medalist."],
+    "memes": ["His 'Heat Culture' personification.", "The 'Bam blocks YOUR shot' clips.", "Quietly stayed loyal while everyone demanded trades."],
+    "on_court_moments": ["The block on Jayson Tatum in the 2020 ECF.", "The Game 7 win vs. the Celtics in 2023.", "His Kentucky days."],
+    "off_field": ["From Newark, NJ.", "Kentucky Wildcats.", "Famously private."],
+    "running_jokes": ["Bam's defense is more underrated every year.", "The Heat are now Bam's team — a new chapter."]
+  },
+  "alperen-sengun": {
+    "drama_notes": ["KD called him a liability on a burner account — Sengun has not forgotten.", "Plays like a smaller Jokic.", "Crowd favorite in Houston."],
+    "headlines": ["All-Star in 2024.", "Most-improved player buzz.", "Rockets' offensive engine."],
+    "memes": ["The 'baby Jokic' nickname.", "His Eurostep finishes that look like ballet.", "The Turkish national team highlights."],
+    "on_court_moments": ["The 45-point game vs. the Mavericks.", "His 30-15-10 triple-doubles.", "Turkey's EuroBasket runs."],
+    "off_field": ["From Giresun, Turkey.", "Plays for Turkey at international tournaments.", "Quiet personality — let's the game talk."],
+    "running_jokes": ["He's basically Jokic if Jokic was 3 inches shorter.", "KD's burner targeting him backfired hilariously."]
+  },
+  "devin-booker": {
+    "drama_notes": ["Was famously dating Kendall Jenner.", "Played alongside KD and Bradley Beal — the Suns' chemistry has been the off-court story.", "Did not work out."],
+    "headlines": ["3-time All-Star.", "Suns' star.", "Reached the 2021 NBA Finals."],
+    "memes": ["The Kendall Jenner relationship era.", "His 70-point game in 2017 (at age 20).", "The 'Booker is underrated' takes that finally became 'Booker is overrated' takes."],
+    "on_court_moments": ["The 70-point game vs. the Celtics in 2017.", "The Game 7 vs. the Lakers in 2020 bubble.", "Reaching the 2021 Finals."],
+    "off_field": ["From Grand Rapids, MI.", "Kentucky Wildcats.", "Has a podcast — Out the Mud."],
+    "running_jokes": ["KD's Suns experiment ended in mutual disappointment.", "He's a top scorer who's never been the headline."]
+  },
+  "anthony-davis": {
+    "drama_notes": ["Always one game away from being out for a month.", "AD's body is a national pastime.", "Laker since 2019 — won the 2020 title."],
+    "headlines": ["NBA Champion 2020.", "Eight-time All-Star.", "All-Defensive team."],
+    "memes": ["The unibrow.", "'AD is hurt again' Twitter content.", "His face when blocking shots."],
+    "on_court_moments": ["The 2020 NBA Championship.", "The Game 4 dagger vs. the Nuggets in the bubble.", "His Kentucky one-and-done dominance."],
+    "off_field": ["From Chicago, IL.", "Kentucky Wildcats — went pro after one year.", "Wife Marlen, two kids."],
+    "running_jokes": ["AD's body is the universe's most expensive insurance policy.", "Lakers fans pray for his health more than they breathe."]
+  },
+  "austin-reaves": {
+    "drama_notes": ["Walked on at Oklahoma.", "AR-15 nickname (which he's distanced from since).", "Lakers fans LOVE him with their souls."],
+    "headlines": ["Lakers' rotation core.", "Career-high seasons in 2024 and 2025.", "Chosen for Team USA's reserve list."],
+    "memes": ["The 'Hillbilly Kobe' nickname.", "Postgame interviews where he just charms the audience.", "The 'Austin can't be guarded' clips."],
+    "on_court_moments": ["The 31-point playoff game vs. the Warriors.", "The dagger 3s vs. the Nuggets.", "His Memphis dominance."],
+    "off_field": ["From Newark, AR.", "Wichita State, then Oklahoma.", "Wife Jenna."],
+    "running_jokes": ["The Lakers built around LeBron, AD, and the white guy from Arkansas.", "His charm-offensive postgame interviews are SNL-tier."]
   }
 }

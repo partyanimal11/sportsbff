@@ -44,3 +44,7 @@ next-env.d.ts
 * 2.json
 *\ 2.json
 *\ 2
+
+# local QA scratch (not for prod)
+qa-runner.mjs
+probe.mjs

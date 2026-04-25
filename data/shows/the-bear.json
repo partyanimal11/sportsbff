@@ -1,0 +1,58 @@
+{
+  "id": "the-bear",
+  "title": "The Bear",
+  "years": "2022-present",
+  "creators": ["Christopher Storer"],
+  "themes": ["restaurant kitchen as battlefield", "trauma + family business", "art vs commerce", "Chicago", "perfectionism as identity", "the cost of greatness"],
+  "characters": [
+    { "name": "Carmen 'Carmy' Berzatto", "archetype": "The fine-dining-trained chef who inherited his brother's beef shop. Trauma in apron form.", "actor": "Jeremy Allen White" },
+    { "name": "Sydney Adamu", "archetype": "The fine-dining sous chef Carmy hires. The show's quiet center.", "actor": "Ayo Edebiri" },
+    { "name": "Richie Jerimovich", "archetype": "The brother-in-law who runs the front of house. Got a personality transplant in S2 ('I'm here for the right reasons').", "actor": "Ebon Moss-Bachrach" },
+    { "name": "Tina Marrero", "archetype": "The line cook turned sous chef. Quiet powerhouse.", "actor": "Liza Colón-Zayas" },
+    { "name": "Marcus", "archetype": "The pastry chef who went to Copenhagen.", "actor": "Lionel Boyce" },
+    { "name": "Natalie 'Sugar' Berzatto", "archetype": "Carmy's sister, doing the books and managing the family chaos.", "actor": "Abby Elliott" },
+    { "name": "Donna 'DD' Berzatto", "archetype": "The mother. The fish episode. Jamie Lee Curtis won an Emmy. The most chaotic Christmas dinner ever filmed.", "actor": "Jamie Lee Curtis" },
+    { "name": "Mikey Berzatto", "archetype": "The dead brother. Jon Bernthal in flashbacks. Tragic, magnetic.", "actor": "Jon Bernthal" },
+    { "name": "Claire", "archetype": "Carmy's old flame turned love interest in S2. Walked away when he chose the restaurant.", "actor": "Molly Gordon" },
+    { "name": "Fak (Neil & Theodore)", "archetype": "The handyman brothers — comedy relief, surprisingly wise.", "actor": "Matty Matheson + Ricky Staffieri" }
+  ],
+  "signature_quotes": [
+    "Yes, Chef.",
+    "Cousin.",
+    "I'm here for the right reasons.",
+    "I love you, dude. Let it rip.",
+    "Every second counts.",
+    "Family meal."
+  ],
+  "viral_moments": [
+    "S2 Episode 6 'Fishes' — the 60-minute Christmas dinner episode with Jamie Lee Curtis losing it.",
+    "S1 Episode 7 'Review' — the one-take chaos in the kitchen.",
+    "Sydney falling asleep on the bus in the city.",
+    "Richie in his suit, polishing forks at Ever for his stage.",
+    "Carmy locked in the walk-in cooler with Claire in S2.",
+    "The opening bear-roar credit sequence."
+  ],
+  "memes": [
+    "'Yes Chef!' as the universal acknowledge-an-order-from-anyone meme.",
+    "The 'Fishes' episode as the most stressful Christmas content ever made.",
+    "Jeremy Allen White's white tank top photo shoot — the internet collectively combusted.",
+    "Ayo Edebiri's emergence as everyone's favorite — including her SNL hosting bit.",
+    "The 'cousin' as a term of endearment in friend group chats.",
+    "Claire deserved better."
+  ],
+  "off_screen_drama": [
+    "Jeremy Allen White / Calvin Klein campaign was a 2024 cultural moment.",
+    "Ayo Edebiri's Emmy speech for S2 was widely beloved.",
+    "Storer is famously private; doesn't do press tours.",
+    "Each season is shot in fewer than 30 days.",
+    "Real Chicago chefs (Matty Matheson) act in the show — adds authenticity.",
+    "Show was originally pitched as a half-hour comedy; became a prestige half-hour drama."
+  ],
+  "running_jokes": [
+    "Every season teaches you a new word in restaurant Italian.",
+    "Richie's character arc is the show's secret heart.",
+    "Carmy yelling 'CHEF' five times in 30 seconds.",
+    "Jeremy Allen White looking exhausted in every scene by design.",
+    "The Faks always being a few minutes late."
+  ]
+}

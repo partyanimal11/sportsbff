@@ -1,0 +1,237 @@
+{
+  "salary-cap": {
+    "term": "Salary Cap",
+    "league": "both",
+    "plain_definition": "The maximum amount each team can spend on player salaries in a season. The NFL cap (2025) is around $255M. The NBA cap is around $141M with a luxury tax kicking in over $171M.",
+    "lens_flavors": {
+      "succession": "Annual operating budget. Spending over the cap (luxury tax) is like Logan greenlighting an over-budget acquisition — you do it because you must, but the board is taking notes.",
+      "bridgerton": "The dowry. Every suitor (player) costs a portion of your annual fortune. Spend over and the ton (the league) will gossip.",
+      "corporate-girlie": "Annual headcount budget. Your CFO (the GM) approves it. Going over = quarterly review with finance.",
+      "mean-girls": "How many cool girls you can put at the table.",
+      "the-bear": "The total food cost the kitchen (front office) is allowed to run before management starts cutting menu items."
+    }
+  },
+  "free-agency": {
+    "term": "Free Agency",
+    "league": "both",
+    "plain_definition": "When a player's contract ends, they can sign with any team that wants them. NFL free agency starts in mid-March. NBA free agency starts June 30.",
+    "lens_flavors": {
+      "love-island": "It's a recoupling. The whole villa is shaking. Some couples don't survive Casa Amor.",
+      "bachelor": "Free agent meetings are private one-on-ones. The contract signing is the final rose.",
+      "bridgerton": "The Marriage Mart, but with luxury-tax math.",
+      "gossip-girl": "Spotted: every superstar suddenly has a 'meeting' in the Hamptons. Their reps are leaking everything to Lady Whistledown (Shams).",
+      "succession": "M&A season. Every suitor brings a different deck. The CEO (player) decides which one survives diligence."
+    }
+  },
+  "trade-deadline": {
+    "term": "Trade Deadline",
+    "league": "both",
+    "plain_definition": "The last day teams can trade players that season. NFL: early November. NBA: early February. After the deadline, rosters are mostly locked for the playoff run.",
+    "lens_flavors": {
+      "love-island": "The Casa Amor recoupling — chaos engineered by producers (front offices).",
+      "succession": "The hostile takeover window. After the bell rings, no more board moves.",
+      "white-lotus": "Week 6 of the resort stay. Everyone's getting weird. Someone WILL leave changed.",
+      "the-bear": "Family meal. Everyone shows up at 5pm — by 6 the menu is rewritten."
+    }
+  },
+  "draft": {
+    "term": "Draft",
+    "league": "both",
+    "plain_definition": "The annual event where teams pick new players from college (NBA) or college + sometimes other levels (NFL). Worst teams pick first (with a lottery in the NBA to discourage tanking).",
+    "lens_flavors": {
+      "bridgerton": "The Marriage Mart's debut season. Each prospect is presented before the ton. The Diamond of the Season is the #1 pick.",
+      "mean-girls": "The fall semester sorting. Who's in the Plastics? Who's a math athlete?",
+      "gossip-girl": "Spotted: this year's freshman class. Some will rule the Upper East Side. Some will be eaten alive.",
+      "house-of-the-dragon": "A new dragon (player) is bonded to a house (team). Some grow into Vhagar. Some throw their rider mid-flight."
+    }
+  },
+  "luxury-tax": {
+    "term": "Luxury Tax",
+    "league": "nba",
+    "plain_definition": "If your NBA team payroll goes over the cap by enough, you pay a tax to the league (which gets redistributed to teams that didn't go over). The new 'second apron' (2024 CBA) makes going way over very painful.",
+    "lens_flavors": {
+      "succession": "The fine the SEC slaps on you for missing a filing — except it's voluntary and your competitors get the money.",
+      "corporate-girlie": "Q4 overage that legal makes you eat. The CFO's least favorite line item.",
+      "bridgerton": "A scandal tax. Spend too lavishly and society will charge you for it.",
+      "white-lotus": "The 'we'll just leave a tip' moment that becomes a $4M check."
+    }
+  },
+  "buyout": {
+    "term": "Buyout",
+    "league": "nba",
+    "plain_definition": "When a player and a team mutually agree to end the contract early. The team eats some money, the player becomes a free agent and usually signs with a contender.",
+    "lens_flavors": {
+      "succession": "A negotiated exit package. Both sides agree it didn't work, both sides save face.",
+      "bachelor": "The 'I came here for the wrong reasons' confessional, then production drives them to the airport.",
+      "love-island": "The dumping ceremony where they walk out hand in hand."
+    }
+  },
+  "max-contract": {
+    "term": "Max Contract",
+    "league": "nba",
+    "plain_definition": "The biggest contract a team can offer a player. Tiered by years of NBA experience: ~25%/30%/35% of the cap depending on tenure. The 'supermax' is the biggest deal possible (5 years, 35%) — only available to a player's current team if they hit certain awards.",
+    "lens_flavors": {
+      "bridgerton": "The diamond ring offer. The biggest dowry in the realm. He cannot promise more.",
+      "bachelor": "The final rose, but with $300M on the back.",
+      "corporate-girlie": "Your VP-level offer with a 5-year vesting cliff."
+    }
+  },
+  "franchise-tag": {
+    "term": "Franchise Tag",
+    "league": "nfl",
+    "plain_definition": "A 1-year contract teams can force on a player to keep them for one more season instead of letting them hit free agency. Pays the average of the top-5 salaries at that position. Players hate it (no long-term security), teams use it as leverage.",
+    "lens_flavors": {
+      "bridgerton": "The forced engagement of the Regency. You will not be courted by another house this season.",
+      "succession": "A non-compete with a one-year carve-out.",
+      "gossip-girl": "The 'you can leave but only if you sit through one more season at Constance' rule."
+    }
+  },
+  "rookie-scale": {
+    "term": "Rookie Scale Contract",
+    "league": "nba",
+    "plain_definition": "First-round NBA picks sign 4-year contracts at predetermined amounts based on draft slot. Cheap labor for 4 years before they can negotiate a real deal. The reason teams love top picks.",
+    "lens_flavors": {
+      "bridgerton": "The introduction season — promising but unproven, and the dowry is fixed.",
+      "the-bear": "First-year line cook. You work under the chef and you don't get a bonus until year 5."
+    }
+  },
+  "no-trade-clause": {
+    "term": "No-Trade Clause",
+    "league": "nba",
+    "plain_definition": "A contract clause where a player has to approve any trade involving them. Very rare in the NBA — only LeBron James has a true no-trade clause currently (only players with 8+ years NBA experience and 4+ with their current team can get one).",
+    "lens_flavors": {
+      "succession": "The veto right Logan never gave anyone. Power.",
+      "house-of-the-dragon": "A king's exemption. The realm bends; you do not."
+    }
+  },
+  "supermax": {
+    "term": "Supermax (Designated Veteran Extension)",
+    "league": "nba",
+    "plain_definition": "The biggest contract in the NBA — 5 years, 35% of the cap. Only available to your current team and only if you've made All-NBA, MVP, or DPOY recently. Examples: Jokic, SGA, Tatum.",
+    "lens_flavors": {
+      "bridgerton": "The royal marriage proposal. No house can outbid this dowry.",
+      "succession": "Equity on top of the salary. The 'we own you for the decade' deal.",
+      "bachelor": "Final rose AND the family ring."
+    }
+  },
+  "two-way-contract": {
+    "term": "Two-Way Contract",
+    "league": "nba",
+    "plain_definition": "A contract for fringe NBA players — they split time between the NBA team and its G League affiliate. Limited NBA games allowed per season. Teams get 3 two-way slots.",
+    "lens_flavors": {
+      "the-bear": "You're prep cook on the line at The Bear and you also work at The Beef when there's no shift here.",
+      "love-island": "You're in the villa AND the casa. You don't get a key to either."
+    }
+  },
+  "tampering": {
+    "term": "Tampering",
+    "league": "both",
+    "plain_definition": "Talking to a player (or his agent) while he's still under contract with another team. League rule. Everyone does it. Almost nobody gets caught.",
+    "lens_flavors": {
+      "gossip-girl": "Texting the opposing alpha's boyfriend at 2am. Everyone knows. No one will say.",
+      "bachelor": "Meeting another contestant's brother for coffee 'just to talk.'",
+      "love-island": "Pulling someone for a chat behind the firepit."
+    }
+  },
+  "first-round-pick": {
+    "term": "First Round Pick",
+    "league": "both",
+    "plain_definition": "The most-valuable trade asset that isn't a player. Teams package + protect + delay them. NFL has 7 rounds, NBA has 2. First-round picks usually become starters.",
+    "lens_flavors": {
+      "succession": "Equity in the next acquisition cycle. You don't spend it lightly.",
+      "bridgerton": "A future heir. Promised to one house for years to come."
+    }
+  },
+  "g-league": {
+    "term": "G League",
+    "league": "nba",
+    "plain_definition": "The NBA's developmental league. Where two-way players, fringe NBA guys, and prospects play. Each NBA team has an affiliate.",
+    "lens_flavors": {
+      "the-bear": "It's The Beef. The casual sister concept where you train before you get to The Bear.",
+      "white-lotus": "The shoulder-season stay. Smaller resort, same brand, different prices."
+    }
+  },
+  "practice-squad": {
+    "term": "Practice Squad",
+    "league": "nfl",
+    "plain_definition": "A 16-player squad that practices with the NFL team but isn't on the active roster on game day. Usually young guys, projects, or veterans waiting for an injury opening.",
+    "lens_flavors": {
+      "the-bear": "The prep cooks — they make everything ready but they don't expedite on Friday night.",
+      "house-of-the-dragon": "Squires. They will earn their armor in time. Or not."
+    }
+  },
+  "rebuild": {
+    "term": "Rebuild",
+    "league": "both",
+    "plain_definition": "When a team trades away veterans for young players + draft picks because they're not winning anyway. Usually takes 2-4 years. The OKC Thunder (post-Westbrook) is the gold standard.",
+    "lens_flavors": {
+      "swiftie": "Folklore-coded. They went into the woods. They'll come back as Speak Now.",
+      "bridgerton": "Between seasons of the ton — the old order falls, new diamonds prepare to debut.",
+      "house-of-the-dragon": "The interregnum. House X is in mourning. House Y rises in the South."
+    }
+  },
+  "tank": {
+    "term": "Tank / Tanking",
+    "league": "both",
+    "plain_definition": "Losing on purpose (or making it really easy to lose) to get a higher draft pick. The NBA's draft lottery exists to discourage it. Doesn't always work — see the 76ers' 'Process' era.",
+    "lens_flavors": {
+      "gossip-girl": "Pretending to be sad to get the sympathy vote at the gala.",
+      "succession": "Manufacturing a bad quarter to lower the buyout valuation."
+    }
+  },
+  "playoff-bracket": {
+    "term": "Playoff Bracket",
+    "league": "both",
+    "plain_definition": "The tournament chart that decides who plays who in the postseason. Top seeds get easier first-round matchups. Win 4 series in NBA, win 3 in NFL, you're in the championship.",
+    "lens_flavors": {
+      "bridgerton": "The dance card for the ball — you know who you're dancing with, you just don't know who'll lead.",
+      "succession": "The org chart of who's still alive after Q1."
+    }
+  },
+  "mvp": {
+    "term": "MVP (Most Valuable Player)",
+    "league": "both",
+    "plain_definition": "Regular-season award given to the player voted most valuable by sportswriters/broadcasters. NBA's recent winners: Jokic (3x), Embiid, Giannis (2x). NFL's recent: Mahomes (3x), Allen, Lamar (2x).",
+    "lens_flavors": {
+      "bridgerton": "Diamond of the Season — declared by the Queen.",
+      "mean-girls": "Spring fling queen. The plastic crown goes on the chosen one.",
+      "swiftie": "Album of the year energy."
+    }
+  },
+  "all-pro-vs-pro-bowl": {
+    "term": "All-Pro vs. Pro Bowl",
+    "league": "nfl",
+    "plain_definition": "Pro Bowl is a popularity contest (fan votes count) — making it is nice but devalued. All-Pro (1st-team / 2nd-team) is voted by 50 sportswriters and is the real best-at-position award. All-Pro = elite.",
+    "lens_flavors": {
+      "bridgerton": "Pro Bowl is the season's gossip column. All-Pro is the queen's official endorsement.",
+      "gossip-girl": "Pro Bowl = invited to the party. All-Pro = on the host committee."
+    }
+  },
+  "all-nba": {
+    "term": "All-NBA Teams",
+    "league": "nba",
+    "plain_definition": "Three teams (1st, 2nd, 3rd) of 15 total players voted as the league's best. Making All-NBA unlocks supermax eligibility — so it's both an honor and a contract trigger.",
+    "lens_flavors": {
+      "bridgerton": "The royal favor list. Make it and your dowry triples.",
+      "corporate-girlie": "Performance bonus tier — All-NBA is the unlock for stock."
+    }
+  },
+  "play-in-tournament": {
+    "term": "Play-In Tournament",
+    "league": "nba",
+    "plain_definition": "Mini-tournament for seeds 7-10 in each conference to determine the final two playoff spots. Created in 2020. Reduces tanking incentive at the bottom.",
+    "lens_flavors": {
+      "love-island": "It's a recoupling at the back end of the season. Two couples leave the villa.",
+      "bachelor": "Two-on-one date for a rose."
+    }
+  },
+  "wild-card": {
+    "term": "Wild Card",
+    "league": "nfl",
+    "plain_definition": "Playoff spots given to non-division-winners with the best records. Each NFL conference has 3 wild cards. The opening playoff weekend is called Wild Card Weekend.",
+    "lens_flavors": {
+      "love-island": "The bombshells coming in late.",
+      "succession": "The minority-shareholder vote that can swing the board."
+    }
+  }
+}

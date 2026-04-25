@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { listLenses } from '@/lib/lens';
+import { listLenses, DEFAULT_LENS_ID } from '@/lib/lens';
 import { setProfile } from '@/lib/profile';
 
 type Step = 1 | 2 | 3;
@@ -12,7 +12,7 @@ export default function OnboardingPage() {
   const router = useRouter();
   const [step, setStep] = useState<Step>(1);
   const [league, setLeague] = useState<'nfl' | 'nba' | 'both'>('both');
-  const [lens, setLens] = useState<string>('gossip-girl');
+  const [lens, setLens] = useState<string>(DEFAULT_LENS_ID);
   const [name, setName] = useState<string>('');
 
   const lenses = listLenses();

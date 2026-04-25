@@ -1,0 +1,70 @@
+{
+  "id": "white-lotus",
+  "title": "The White Lotus",
+  "years": "2021-present",
+  "creators": ["Mike White"],
+  "themes": ["wealth as identity", "the resort as social experiment", "class warfare disguised as vacation", "everyone is the worst", "death lurks", "satire of the American rich"],
+  "characters_general": [
+    "Each season: new resort, new cast. The hotel staff are usually the smartest people in the show.",
+    "Always opens with someone discovering a body — then rewinds.",
+    "The casts are always one mismatched group of 1%-ers being terrible to each other on a luxury vacation."
+  ],
+  "characters_s1": [
+    { "name": "Tanya McQuoid", "archetype": "The lonely heiress carrying her mother's ashes. Jennifer Coolidge made her iconic. Returned for S2.", "actor": "Jennifer Coolidge (RIP for the role)" },
+    { "name": "Belinda Lindsey", "archetype": "The spa manager Tanya promised to fund. Got broken-hearted in business and life.", "actor": "Natasha Rothwell" },
+    { "name": "Armond", "archetype": "The hotel manager who unraveled. The pineapple-suite drama.", "actor": "Murray Bartlett" },
+    { "name": "Shane Patton", "archetype": "The entitled honeymooner with a permanent grievance. Killed Armond.", "actor": "Jake Lacy" },
+    { "name": "Rachel Patton", "archetype": "Shane's wife, an aspiring journalist who realized too late.", "actor": "Alexandra Daddario" }
+  ],
+  "characters_s2": [
+    { "name": "Daphne Sullivan", "archetype": "The smiling Connecticut wife. Saying 'we don't need to talk about anything ever' was peak.", "actor": "Meghann Fahy" },
+    { "name": "Cameron Sullivan", "archetype": "Daphne's golden-boy hedge-funder husband. Infuriating in the best way.", "actor": "Theo James" },
+    { "name": "Harper Spiller", "archetype": "The skeptical wife. The one we all related to.", "actor": "Aubrey Plaza" },
+    { "name": "Ethan Spiller", "archetype": "Harper's best-friend-of-Cameron husband. The 'is he or isn't he' guilt arc.", "actor": "Will Sharpe" },
+    { "name": "Portia", "archetype": "Tanya's chaotic Gen Z assistant who became a meme.", "actor": "Haley Lu Richardson" },
+    { "name": "Mia & Lucia", "archetype": "Two locals navigating the rich tourists. Stole the season.", "actor": "Beatrice Grannò & Simona Tabasco" }
+  ],
+  "characters_s3": [
+    { "name": "Carrie Coon's character", "archetype": "Single mom with two daughters. Watch out.", "actor": "Carrie Coon" },
+    { "name": "Walton Goggins's character", "archetype": "A guy with a past. Always.", "actor": "Walton Goggins" },
+    { "name": "Parker Posey's character", "archetype": "Iconic energy, S3 chaos engine.", "actor": "Parker Posey" }
+  ],
+  "signature_quotes": [
+    "These gays, they're trying to murder me.",
+    "We don't need to talk about anything, ever.",
+    "I'm here for the right reasons.",
+    "It's just gonna be a fun trip.",
+    "I'm not a wealthy person."
+  ],
+  "viral_moments": [
+    "Tanya's death — falling off the boat trying to escape the gays.",
+    "Armond rage-pooping in Shane's suitcase.",
+    "Daphne 'we don't need to talk about anything ever' speech.",
+    "Mia singing at the lounge in S2.",
+    "Quentin's villa party reveal of his backstory.",
+    "Portia's Tahiti pearl necklace storyline."
+  ],
+  "memes": [
+    "'These gays, they're trying to murder me' — universal Twitter scream.",
+    "Theme song mix played at every party from 2022-2024.",
+    "Tanya gestures and exclamations as reaction GIFs.",
+    "Daphne's 'we don't need to talk about anything ever' — relationship advice meme.",
+    "Jennifer Coolidge winning Emmys for the role launched the Coolidge renaissance.",
+    "The 'White Lotus opening' as shorthand for any expensive trip going wrong."
+  ],
+  "off_screen_drama": [
+    "Mike White writes and directs every episode himself — auteur model.",
+    "Jennifer Coolidge's Emmy speech became its own viral moment.",
+    "Sicily filming for S2 turned into a tourism boom for Taormina.",
+    "Aubrey Plaza's Emmys campaign for S2 was one of the funnier in recent memory.",
+    "S3 cast announcements were treated like Marvel reveals.",
+    "Walton Goggins joined for S3 after years of being internet's favorite character actor."
+  ],
+  "running_jokes": [
+    "The show always opens with a body — guess who.",
+    "The wealthy guests always reveal themselves to be slightly worse than expected.",
+    "The locals/staff are always smarter than the rich guests.",
+    "Mike White writing himself into being TV's most-prestige showrunner of the decade.",
+    "Each season's final twist becoming a Twitter event."
+  ]
+}

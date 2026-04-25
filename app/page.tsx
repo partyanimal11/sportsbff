@@ -79,6 +79,46 @@ const LENS_DEMOS: LensDemo[] = [
       "A **sack** is a recoupling gone wrong. The QB chose his pass. The defender chose to go to him instead. The QB is now on the grass. *And just like that, the play ends in shame.*",
   },
   {
+    id: 'thebear',
+    name: 'The Bear',
+    initials: 'TB',
+    league: 'NFL',
+    cardColor: '#F4D2D6',
+    accent: '#A41E2A',
+    answer:
+      "A **sack** is when an order goes out wrong. The QB had the ticket up. The defender came through the door yelling **CORNER**. The play crumples behind the line. *Yes, chef.*",
+  },
+  {
+    id: 'whitelotus',
+    name: 'White Lotus',
+    initials: 'WL',
+    league: 'NFL',
+    cardColor: '#D8E4DA',
+    accent: '#3B5249',
+    answer:
+      "A **sack** is the moment the resort's calm cracks. The QB was sipping rosé. A defender slipped past the staff and tackled him by the pool. *These linemen — they're trying to murder him.*",
+  },
+  {
+    id: 'hotd',
+    name: 'House of the Dragon',
+    initials: 'HD',
+    league: 'NFL',
+    cardColor: '#E8C9C7',
+    accent: '#4A0A07',
+    answer:
+      "A **sack** is when a dragon catches the king mid-flight. The QB rode out hoping to find an heir. A defender on a larger dragon (Vhagar energy) got there first. The realm bleeds yards.",
+  },
+  {
+    id: 'wednesday',
+    name: 'Wednesday',
+    initials: 'W',
+    league: 'NBA',
+    cardColor: '#DCD0F4',
+    accent: '#311D4F',
+    answer:
+      "A **sack** is the predictable disappointment. The QB tried to throw. A defender (much more interesting than the QB) ended the play. *I would not say I enjoy it. Just that I understand it.*",
+  },
+  {
     id: 'plain',
     name: 'Just sports',
     initials: '—',

@@ -3,13 +3,13 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { listLenses } from '@/lib/lens';
+import { listLenses, DEFAULT_LENS_ID } from '@/lib/lens';
 import { clearProfile, getProfile, setProfile, type Profile } from '@/lib/profile';
 
 export default function SettingsPage() {
   const router = useRouter();
   const [mounted, setMounted] = useState(false);
-  const [profile, setLocalProfile] = useState<Profile>({ lens: 'gossip-girl' });
+  const [profile, setLocalProfile] = useState<Profile>({ lens: DEFAULT_LENS_ID });
   const [name, setName] = useState('');
   const lenses = listLenses();
 
