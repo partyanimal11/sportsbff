@@ -4,6 +4,82 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { isOnboarded } from '@/lib/profile';
 
+/* =============================================================
+   Lens demo data — same question, six different show voices.
+   ============================================================= */
+type LensDemo = {
+  id: string;
+  name: string;
+  initials: string;
+  league: 'NFL' | 'NBA';
+  cardColor: string;
+  accent: string;
+  answer: string;
+};
+
+const LENS_DEMOS: LensDemo[] = [
+  {
+    id: 'gg',
+    name: 'Gossip Girl',
+    initials: 'GG',
+    league: 'NBA',
+    cardColor: '#FFD7E5',
+    accent: '#9C2454',
+    answer:
+      "A **sack** is when a defender catches the QB before he can throw — like Dan getting caught with the laptop in the finale. Play ends behind the line. *Spotted: a quarterback in the dirt.*",
+  },
+  {
+    id: 'bridgerton',
+    name: 'Bridgerton',
+    initials: 'B',
+    league: 'NBA',
+    cardColor: '#C9DCEC',
+    accent: '#1B3990',
+    answer:
+      "A **sack** is when an uninvited suitor arrives mid-proposal. The QB was nearly engaged. A defender — Anthony Bridgerton energy — entered the room and ended the courtship.",
+  },
+  {
+    id: 'succession',
+    name: 'Succession',
+    initials: 'S',
+    league: 'NFL',
+    cardColor: '#2C1320',
+    accent: '#FBB731',
+    answer:
+      "A **sack** is the moment Logan walks in unannounced. The QB had a plan. The defender had a better one. The QB ends up on the floor losing yards. Tom would call it a Tomlette.",
+  },
+  {
+    id: 'euphoria',
+    name: 'Euphoria',
+    initials: 'E',
+    league: 'NFL',
+    cardColor: '#DCD0F4',
+    accent: '#4A2380',
+    answer:
+      "A **sack** is Nate walking up uninvited to whatever Cassie was about to do. The QB was about to throw something beautiful. The defender (the Nate) got there first. Slow zoom on the helmet.",
+  },
+  {
+    id: 'meangirls',
+    name: 'Mean Girls',
+    initials: 'MG',
+    league: 'NBA',
+    cardColor: '#FFD3BC',
+    accent: '#9B3D17',
+    answer:
+      "A **sack** is Regina finding out you've been sitting at a different lunch table. The QB had a plan. Regina had better intel. He goes down behind the line. The Plastics dance.",
+  },
+  {
+    id: 'loveisland',
+    name: 'Love Island',
+    initials: 'LI',
+    league: 'NFL',
+    cardColor: '#FFE9B0',
+    accent: '#A86B00',
+    answer:
+      "A **sack** is a recoupling gone wrong. The QB chose his pass. The defender chose to go to him instead. The QB is now on the grass. *And just like that, the play ends in shame.*",
+  },
+];
+
 export default function HomePage() {
   const [onboarded, setOnboarded] = useState(false);
 
@@ -76,6 +152,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Lens demo — pick what you know */}
+      <PickWhatYouKnow />
+
       {/* Feature cards */}
       <section
         className="border-t border-[var(--hairline)] px-6 py-24 md:py-32 relative overflow-hidden"
@@ -96,7 +175,7 @@ export default function HomePage() {
               How your <span className="italic font-medium text-tangerine">BFF</span> shows up.
             </h2>
             <p className="mt-5 text-lg text-ink-soft max-w-xl mx-auto">
-              Two ways to learn. Two ways to make every game make sense.
+              Four ways in. Whichever one your brain prefers.
             </p>
           </div>
 
@@ -418,6 +497,175 @@ function BubbleYou({ children, delay = 0 }: { children: React.ReactNode; delay?:
 /* =============================================================
    FEATURE CARDS
    ============================================================= */
+
+/* =============================================================
+   PickWhatYouKnow — interactive lens demo on the home page.
+   ============================================================= */
+
+function PickWhatYouKnow() {
+  const [selected, setSelected] = useState<string>('gg');
+  const lens = LENS_DEMOS.find((l) => l.id === selected) ?? LENS_DEMOS[0];
+
+  return (
+    <section
+      className="px-6 py-24 md:py-32 border-t border-[var(--hairline)] relative overflow-hidden"
+      style={{
+        background:
+          'radial-gradient(ellipse at top right, rgba(232,75,122,0.06), transparent 45%), ' +
+          'radial-gradient(ellipse at bottom left, rgba(123,91,196,0.05), transparent 45%), ' +
+          '#FFFFFF',
+      }}
+    >
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-14">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-magenta font-semibold tracking-[0.18em] uppercase mb-6 shadow-sm">
+            <span className="w-1.5 h-1.5 rounded-full bg-magenta animate-pulse" />
+            Make it yours
+          </div>
+          <h2 className="font-display text-5xl md:text-6xl font-bold text-green leading-[0.96] tracking-tight max-w-3xl mx-auto">
+            Pick what you've watched.<br/>
+            <span className="italic font-medium" style={{ color: lens.accent }}>
+              We'll do the rest.
+            </span>
+          </h2>
+          <p className="mt-5 text-lg text-ink-soft max-w-xl mx-auto">
+            Every answer reframes in the language of the show you choose. The same question, six different ways to finally get it.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-[0.95fr_1.05fr] gap-8 md:gap-12 items-start">
+          {/* Picker */}
+          <div>
+            <div className="text-[11px] font-bold tracking-[0.18em] uppercase text-muted mb-4">
+              Your reference
+            </div>
+            <div className="grid grid-cols-3 gap-3">
+              {LENS_DEMOS.map((l) => {
+                const isActive = l.id === selected;
+                return (
+                  <button
+                    key={l.id}
+                    type="button"
+                    onClick={() => setSelected(l.id)}
+                    className={`group relative rounded-2xl overflow-hidden bg-white text-left transition-all duration-200 ${
+                      isActive ? '-translate-y-1' : 'hover:-translate-y-0.5'
+                    }`}
+                    style={{
+                      boxShadow: isActive
+                        ? `0 0 0 2.5px ${l.accent}, 0 18px 32px -16px rgba(13,45,36,0.18)`
+                        : '0 0 0 1px rgba(13,45,36,0.08), 0 4px 12px -6px rgba(13,45,36,0.08)',
+                    }}
+                  >
+                    <div
+                      className="aspect-[3/4] flex items-center justify-center relative overflow-hidden"
+                      style={{
+                        background: `linear-gradient(135deg, ${l.cardColor} 0%, ${l.accent} 220%)`,
+                      }}
+                    >
+                      <span
+                        className="font-display font-bold text-4xl tracking-tight"
+                        style={{ color: l.accent, textShadow: '0 2px 8px rgba(0,0,0,0.08)' }}
+                      >
+                        {l.initials}
+                      </span>
+                      {isActive && (
+                        <div className="absolute top-1.5 right-1.5 w-5 h-5 rounded-full bg-white flex items-center justify-center shadow-sm">
+                          <svg viewBox="0 0 12 12" width="9" height="9" fill="none">
+                            <path d="M2 6.2 L4.8 9 L10 3.5" stroke={l.accent} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                        </div>
+                      )}
+                    </div>
+                    <div className="p-2.5">
+                      <div className="font-display font-bold text-[12.5px] leading-tight text-green truncate">
+                        {l.name}
+                      </div>
+                      <div className="text-[9px] font-bold tracking-widest uppercase mt-0.5 text-muted">
+                        {l.league}
+                      </div>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Sample chat */}
+          <div>
+            <div className="text-[11px] font-bold tracking-[0.18em] uppercase text-muted mb-4 flex items-center justify-between">
+              <span>Sample · "What's a sack?"</span>
+              <span className="font-display italic font-medium normal-case tracking-normal text-[14px]" style={{ color: lens.accent }}>
+                — through {lens.name}
+              </span>
+            </div>
+            <div
+              className="rounded-3xl bg-white p-6 relative overflow-hidden"
+              style={{
+                boxShadow:
+                  '0 1px 0 rgba(255,255,255,0.9) inset, ' +
+                  '0 0 0 1px rgba(13,45,36,0.06), ' +
+                  '0 24px 48px -20px rgba(13,45,36,0.18)',
+              }}
+            >
+              {/* You bubble */}
+              <div className="flex justify-end mb-3">
+                <div
+                  className="max-w-[80%] rounded-[16px] rounded-tr-md text-white text-[14.5px] leading-relaxed px-4 py-2.5"
+                  style={{
+                    background: 'linear-gradient(135deg, #FF7A52 0%, #FF5723 100%)',
+                    boxShadow: '0 4px 12px -4px rgba(255,107,61,0.4)',
+                  }}
+                >
+                  what's a sack?
+                </div>
+              </div>
+
+              {/* Sportsball reply — keyed to lens.id so React re-mounts on change for fade-in */}
+              <div className="flex gap-2 items-start" key={lens.id}>
+                <div
+                  className="shrink-0 w-8 h-8 rounded-full font-display font-extrabold text-white text-[11px] flex items-center justify-center mt-0.5"
+                  style={{
+                    background: 'linear-gradient(135deg, #FF6B3D 0%, #E84B7A 100%)',
+                    boxShadow: '0 4px 10px -4px rgba(232,75,122,0.4)',
+                  }}
+                >
+                  SB
+                </div>
+                <div
+                  className="max-w-[88%] rounded-[16px] rounded-tl-md text-[14.5px] leading-relaxed text-ink px-4 py-2.5"
+                  style={{
+                    background: 'linear-gradient(180deg, #FFFFFF 0%, #FBFAF6 100%)',
+                    boxShadow:
+                      '0 0 0 1px rgba(13,45,36,0.06), 0 6px 16px -8px rgba(13,45,36,0.12)',
+                    animation: 'fadeUpLens .55s cubic-bezier(.2,.7,.2,1.05) both',
+                  }}
+                  dangerouslySetInnerHTML={{
+                    __html: lens.answer
+                      .replace(/\*\*(.+?)\*\*/g, `<strong style="color:${lens.accent}">$1</strong>`)
+                      .replace(/\*(.+?)\*/g, '<em>$1</em>'),
+                  }}
+                />
+              </div>
+
+              {/* Footer hint */}
+              <div className="mt-5 pt-4 border-t border-[var(--hairline)] text-[12px] text-muted flex items-center justify-between">
+                <span>Click another show — same question, new voice.</span>
+                <span style={{ color: lens.accent }} className="font-display italic">↑</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes fadeUpLens {
+          from { opacity: 0; transform: translateY(8px); }
+          to { opacity: 1; transform: none; }
+        }
+      `}</style>
+    </section>
+  );
+}
 
 function FeatureCard({
   href,
