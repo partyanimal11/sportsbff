@@ -1,10 +1,24 @@
 import React from 'react';
+import Link from 'next/link';
+import { listAllPlayers } from './players';
 
 /**
  * Tiny markdown renderer for chat messages.
- * Handles: **bold**, *italic*, line breaks, simple bullet lists, and inline code `...`.
- * No HTML injection — everything is JSX, so it's safe.
+ * Handles: **bold**, *italic*, line breaks, bullet lists, inline code.
+ * Bonus: detects known player names and links them to /player/[slug].
  */
+
+// Pre-compute the player name lookup table (longest names first so multi-word
+// names like "Patrick Mahomes" win over "Mahomes" alone).
+const PLAYER_INDEX = listAllPlayers()
+  .map((p) => ({
+    id: p.id,
+    name: p.name,
+    re: new RegExp(`\\b(${p.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})\\b`, 'g'),
+    last: p.name.split(' ').slice(-1)[0],
+  }))
+  .sort((a, b) => b.name.length - a.name.length);
+
 export function renderMarkdown(text: string): React.ReactNode {
   // Split into paragraphs by double-newline
   const blocks = text.split(/\n\n+/);
@@ -39,32 +53,81 @@ export function renderMarkdown(text: string): React.ReactNode {
 }
 
 function renderInline(text: string): React.ReactNode {
-  // Tokenize: split on **bold**, *italic*, `code`
-  const tokens: React.ReactNode[] = [];
-  const regex = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
+  // First pass: tokenize markdown (**bold**, *italic*, `code`)
+  const mdTokens: { kind: 'text' | 'bold' | 'italic' | 'code'; value: string }[] = [];
+  const mdRegex = /(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g;
   let lastIndex = 0;
   let match: RegExpExecArray | null;
-  let key = 0;
-  while ((match = regex.exec(text)) !== null) {
+  while ((match = mdRegex.exec(text)) !== null) {
     if (match.index > lastIndex) {
-      tokens.push(text.slice(lastIndex, match.index));
+      mdTokens.push({ kind: 'text', value: text.slice(lastIndex, match.index) });
     }
     const m = match[0];
-    if (m.startsWith('**')) {
-      tokens.push(<strong key={key++} className="font-semibold text-ink">{m.slice(2, -2)}</strong>);
-    } else if (m.startsWith('*')) {
-      tokens.push(<em key={key++}>{m.slice(1, -1)}</em>);
-    } else if (m.startsWith('`')) {
-      tokens.push(
-        <code key={key++} className="bg-cream-warm border border-[var(--hairline)] rounded px-1.5 py-0.5 text-[13px]">
-          {m.slice(1, -1)}
-        </code>
-      );
-    }
+    if (m.startsWith('**')) mdTokens.push({ kind: 'bold', value: m.slice(2, -2) });
+    else if (m.startsWith('*')) mdTokens.push({ kind: 'italic', value: m.slice(1, -1) });
+    else if (m.startsWith('`')) mdTokens.push({ kind: 'code', value: m.slice(1, -1) });
     lastIndex = match.index + m.length;
   }
   if (lastIndex < text.length) {
-    tokens.push(text.slice(lastIndex));
+    mdTokens.push({ kind: 'text', value: text.slice(lastIndex) });
   }
-  return tokens;
+
+  // Second pass: linkify player names inside each token
+  let key = 0;
+  return mdTokens.map((tok) => {
+    if (tok.kind === 'text') {
+      return <React.Fragment key={key++}>{linkifyPlayers(tok.value, () => key++)}</React.Fragment>;
+    }
+    if (tok.kind === 'bold') {
+      return (
+        <strong key={key++} className="font-semibold text-ink">
+          {linkifyPlayers(tok.value, () => key++)}
+        </strong>
+      );
+    }
+    if (tok.kind === 'italic') {
+      return <em key={key++}>{linkifyPlayers(tok.value, () => key++)}</em>;
+    }
+    return (
+      <code key={key++} className="bg-cream-warm border border-[var(--hairline)] rounded px-1.5 py-0.5 text-[13px]">
+        {tok.value}
+      </code>
+    );
+  });
+}
+
+/**
+ * Walks a string and turns any known player name into a Link to their profile.
+ * First-match wins (longest names tested first via the sorted index).
+ */
+function linkifyPlayers(text: string, nextKey: () => number): React.ReactNode {
+  const out: React.ReactNode[] = [];
+  let cursor = 0;
+  while (cursor < text.length) {
+    let bestMatch: { start: number; end: number; id: string; name: string } | null = null;
+    for (const p of PLAYER_INDEX) {
+      const i = text.indexOf(p.name, cursor);
+      if (i >= 0 && (!bestMatch || i < bestMatch.start)) {
+        bestMatch = { start: i, end: i + p.name.length, id: p.id, name: p.name };
+      }
+    }
+    if (!bestMatch) {
+      out.push(text.slice(cursor));
+      break;
+    }
+    if (bestMatch.start > cursor) {
+      out.push(text.slice(cursor, bestMatch.start));
+    }
+    out.push(
+      <Link
+        key={`pl-${nextKey()}-${bestMatch.id}`}
+        href={`/player/${bestMatch.id}`}
+        className="text-tangerine hover:text-tangerine-dark underline decoration-tangerine/40 underline-offset-2 hover:decoration-tangerine/80 transition"
+      >
+        {bestMatch.name}
+      </Link>
+    );
+    cursor = bestMatch.end;
+  }
+  return out;
 }
