@@ -77,25 +77,37 @@ export default function HomePage() {
       </section>
 
       {/* Feature cards */}
-      <section className="bg-cream-warm border-t border-[var(--hairline)] px-6 py-20">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--hairline)] text-xs text-tangerine font-semibold tracking-widest uppercase mb-5">
-              <span className="w-1.5 h-1.5 rounded-full bg-tangerine" />
+      <section
+        className="border-t border-[var(--hairline)] px-6 py-24 md:py-32 relative overflow-hidden"
+        style={{
+          background:
+            'radial-gradient(ellipse at top left, rgba(255,107,61,0.06), transparent 40%), ' +
+            'radial-gradient(ellipse at bottom right, rgba(45,78,209,0.05), transparent 40%), ' +
+            '#F4F4F1',
+        }}
+      >
+        <div className="max-w-6xl mx-auto relative">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-tangerine font-semibold tracking-[0.18em] uppercase mb-6 shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
               Four things she does
             </div>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-green leading-tight tracking-tight">
+            <h2 className="font-display text-5xl md:text-6xl font-bold text-green leading-[0.96] tracking-tight max-w-3xl mx-auto">
               How your <span className="italic font-medium text-tangerine">BFF</span> shows up.
             </h2>
+            <p className="mt-5 text-lg text-ink-soft max-w-xl mx-auto">
+              Two ways to learn. Two ways to make every game make sense.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             <FeatureCard
               href="/scan"
               accent="tangerine"
               icon={<ScanIcon />}
               title="Scan"
-              tagline="Point your camera. Know who's playing."
+              tagline="Point your camera."
+              desc="Know who's playing in 0.5 seconds."
               num="01"
             />
             <FeatureCard
@@ -103,7 +115,8 @@ export default function HomePage() {
               accent="magenta"
               icon={<ChatIcon />}
               title="Chat"
-              tagline="Ask anything. No question is dumb."
+              tagline="Ask anything."
+              desc="No question is too dumb. Ever."
               num="02"
             />
             <FeatureCard
@@ -111,7 +124,8 @@ export default function HomePage() {
               accent="sapphire"
               icon={<LessonsIcon />}
               title="Lessons"
-              tagline="Five-minute lessons. Made for beginners."
+              tagline="Five-minute lessons."
+              desc="Made for absolute beginners."
               num="03"
             />
             <FeatureCard
@@ -119,6 +133,7 @@ export default function HomePage() {
               icon={<VideosIcon />}
               title="Videos"
               tagline="Coming next sprint."
+              desc="Watchable, shareable, finally explained."
               num="04"
               soon
             />
@@ -146,89 +161,214 @@ export default function HomePage() {
 function BFFThread() {
   return (
     <div className="relative max-w-md mx-auto">
-      {/* Soft floating shadow */}
-      <div className="absolute -inset-4 bg-gradient-to-br from-tangerine/10 via-magenta/10 to-lemon/10 blur-2xl rounded-[40px]" />
+      {/* Multi-layer ambient glow — gives the card a real "floating" feel */}
+      <div className="absolute -inset-12 bg-gradient-to-br from-tangerine/15 via-magenta/12 to-lemon/15 blur-3xl rounded-[60px] -z-10" />
+      <div className="absolute -inset-2 bg-gradient-to-br from-white/40 to-white/0 blur-xl rounded-[44px] -z-10" />
 
-      <div className="relative bg-white rounded-[32px] border border-[var(--hairline)] shadow-lift overflow-hidden">
+      {/* Outer device — subtle gradient, refined shadow stack, soft top edge highlight */}
+      <div
+        className="relative rounded-[36px] overflow-hidden"
+        style={{
+          background: 'linear-gradient(180deg, #FFFFFF 0%, #FCFCFA 100%)',
+          boxShadow:
+            '0 1px 0 rgba(255,255,255,0.9) inset, ' +
+            '0 0 0 1px rgba(13,45,36,0.06), ' +
+            '0 2px 4px rgba(13,45,36,0.04), ' +
+            '0 24px 40px -16px rgba(13,45,36,0.16), ' +
+            '0 56px 80px -32px rgba(13,45,36,0.22)',
+        }}
+      >
         {/* Header */}
-        <div className="px-5 py-4 border-b border-[var(--hairline)] flex items-center gap-3">
-          <div className="relative">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-tangerine to-magenta flex items-center justify-center font-display font-bold text-white text-sm">
+        <div className="px-5 pt-5 pb-4 border-b border-[var(--hairline)] flex items-center gap-3 relative">
+          {/* Avatar with multi-layer treatment */}
+          <div className="relative shrink-0">
+            <div
+              className="absolute -inset-1 rounded-full opacity-60 blur-md"
+              style={{ background: 'linear-gradient(135deg, #FF6B3D, #E84B7A)' }}
+            />
+            <div
+              className="relative w-11 h-11 rounded-full flex items-center justify-center font-display font-extrabold text-white text-sm tracking-wide"
+              style={{
+                background: 'linear-gradient(135deg, #FF6B3D 0%, #E84B7A 100%)',
+                boxShadow: '0 1px 0 rgba(255,255,255,0.4) inset, 0 6px 14px -4px rgba(232,75,122,0.5)',
+              }}
+            >
               SB
             </div>
-            <div className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-sage rounded-full border-2 border-white" />
+            <div className="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-sage border-[2.5px] border-white shadow-[0_0_0_2px_rgba(91,160,132,0.18)]" />
           </div>
-          <div className="flex-1">
-            <div className="font-display font-bold text-green text-[15px] leading-none">
+
+          <div className="flex-1 min-w-0">
+            <div className="font-display font-bold text-green text-[15px] leading-none flex items-center gap-1.5">
               sportsBFF
+              <svg viewBox="0 0 14 14" width="11" height="11" className="text-sapphire">
+                <path d="M7 1 L13 4 L13 8 C13 11 7 13 7 13 C7 13 1 11 1 8 L1 4 Z" fill="currentColor" />
+                <path d="M4.5 7 L6.2 8.5 L9.5 5.2" stroke="white" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </div>
-            <div className="text-[11px] text-muted mt-1">Active now · your sports bff</div>
+            <div className="text-[11px] text-muted mt-1.5 flex items-center gap-1.5">
+              <span className="inline-block w-1 h-1 rounded-full bg-sage" />
+              Active now <span className="opacity-50">·</span> your sports bff
+            </div>
           </div>
-          <div className="text-[11px] text-muted">8:14 PM</div>
+          <div className="text-[10px] font-bold tracking-widest uppercase text-muted-soft">8:14&thinsp;PM</div>
         </div>
 
         {/* Messages */}
-        <div className="px-4 py-5 flex flex-col gap-3 bg-cream">
-          {/* SB intro message */}
+        <div
+          className="px-4 py-6 flex flex-col gap-3 relative"
+          style={{
+            background:
+              'radial-gradient(ellipse at top, rgba(252,220,230,0.20), transparent 50%), ' +
+              'radial-gradient(ellipse at bottom right, rgba(252,237,209,0.25), transparent 50%), ' +
+              '#FCFCFA',
+          }}
+        >
+          <DateChip>Today · 8:13 PM</DateChip>
+
           <BubbleSB delay={0}>
             spotted travis kelce on screen 👀 want me to break him down?
           </BubbleSB>
 
-          {/* SB scan card */}
           <BubbleSB delay={0.15} pad="p-2">
-            <div className="rounded-xl overflow-hidden border border-[var(--hairline)] bg-white">
-              <div className="h-20 relative" style={{ background: 'linear-gradient(135deg, #2A6E47 0%, #1F5535 50%, #163C25 100%)' }}>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full shadow-2xl flex items-center justify-center text-white font-display font-extrabold text-base"
-                    style={{ background: 'linear-gradient(180deg, #C8202A 0%, #921620 100%)' }}>
-                    87
-                  </div>
-                </div>
-                <div className="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-black/55 text-white text-[9px] font-bold tracking-wider flex items-center gap-1">
-                  <span className="w-1 h-1 rounded-full bg-red-500" />
-                  KC 24 · DAL 17
-                </div>
-              </div>
-              <div className="p-3">
-                <div className="font-display font-bold text-green text-[15px] leading-tight">Travis Kelce</div>
-                <div className="text-[11px] text-muted mt-0.5">Tight End · Kansas City Chiefs · 11 yrs in</div>
-              </div>
-            </div>
+            <ScanCard />
           </BubbleSB>
 
-          {/* You */}
-          <BubbleYou delay={0.4}>omg ya is he the one dating taylor</BubbleYou>
+          <BubbleYou delay={0.45}>omg ya is he the one dating taylor</BubbleYou>
+          <ReadReceipt />
 
-          {/* SB reply with gossip */}
-          <BubbleSB delay={0.55}>
-            yes 💁‍♀️ that one. future hall of famer, 3 rings. <em>also btw</em> his brother jason just retired, the kelce family runs the most-listened-to NFL podcast.
+          <BubbleSB delay={0.6}>
+            yes 💁‍♀️ that one. future hall of famer, 3 rings. <em className="text-ink-soft">also btw</em> his brother jason just retired, the kelce family runs the most-listened-to NFL podcast.
           </BubbleSB>
 
-          {/* You */}
-          <BubbleYou delay={0.8}>and what just happened?? he caught it & they all ran</BubbleYou>
+          <BubbleYou delay={0.85}>and what just happened?? he caught it & they all ran</BubbleYou>
 
-          {/* SB reply */}
-          <BubbleSB delay={0.95}>
+          <BubbleSB delay={1.0}>
             <strong className="text-magenta font-semibold">touchdown 🏈</strong> 6 points. KC pulling away. taylor in the suite is going to be on every camera in 3… 2… 1…
           </BubbleSB>
         </div>
 
-        {/* Footer composer */}
+        {/* Composer */}
         <div className="px-3 py-3 border-t border-[var(--hairline)] bg-white flex items-center gap-2">
-          <div className="w-7 h-7 rounded-full bg-cream-warm border border-[var(--hairline)] flex items-center justify-center text-tangerine">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M3 9a2 2 0 0 1 2-2h2l1-2h8l1 2h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/>
-              <circle cx="12" cy="13" r="4"/>
+          <button className="w-9 h-9 rounded-full bg-cream-warm border border-[var(--hairline)] flex items-center justify-center text-tangerine hover:bg-tangerine hover:text-white hover:border-tangerine transition-all duration-200 shrink-0">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 9a2 2 0 0 1 2-2h2l1-2h8l1 2h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z" />
+              <circle cx="12" cy="13" r="4" />
             </svg>
-          </div>
-          <div className="flex-1 bg-cream-warm rounded-full px-4 py-2 text-[13px] text-muted border border-[var(--hairline)]">
+          </button>
+          <div
+            className="flex-1 rounded-full px-4 py-2.5 text-[13px] text-muted border"
+            style={{
+              background: 'linear-gradient(180deg, #FFFFFF 0%, #FCFCFA 100%)',
+              borderColor: 'rgba(13,45,36,0.10)',
+              boxShadow: 'inset 0 1px 2px rgba(13,45,36,0.04)',
+            }}
+          >
             ask anything…
           </div>
-          <div className="w-7 h-7 rounded-full bg-tangerine flex items-center justify-center text-white">
-            <svg viewBox="0 0 14 14" width="11" height="11" fill="none">
-              <path d="M2 7H12 M7 2 L12 7 L7 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <button
+            className="w-9 h-9 rounded-full flex items-center justify-center text-white shrink-0 hover:scale-105 transition-transform"
+            style={{
+              background: 'linear-gradient(135deg, #FF6B3D 0%, #FF5723 100%)',
+              boxShadow: '0 4px 10px -2px rgba(255,107,61,0.45), 0 1px 0 rgba(255,255,255,0.3) inset',
+            }}
+          >
+            <svg viewBox="0 0 14 14" width="13" height="13" fill="none">
+              <path d="M2 7H12 M7 2 L12 7 L7 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DateChip({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="text-center my-1">
+      <span className="inline-block px-2.5 py-1 rounded-full text-[10px] font-semibold tracking-wider uppercase text-muted-soft bg-white/60 backdrop-blur-sm">
+        {children}
+      </span>
+    </div>
+  );
+}
+
+function ReadReceipt() {
+  return (
+    <div className="flex justify-end -mt-2 -mb-1 pr-1">
+      <span className="text-[10px] text-muted-soft">Read · 8:14 PM</span>
+    </div>
+  );
+}
+
+function ScanCard() {
+  return (
+    <div
+      className="rounded-2xl overflow-hidden border bg-white"
+      style={{
+        borderColor: 'rgba(13,45,36,0.08)',
+        boxShadow: '0 4px 12px -4px rgba(13,45,36,0.08), 0 1px 0 rgba(255,255,255,0.8) inset',
+      }}
+    >
+      {/* Faux TV/field — refined gradient with vignette + scan brackets */}
+      <div
+        className="h-24 relative"
+        style={{
+          background:
+            'radial-gradient(ellipse at center, #2F7A4D 0%, #1F5535 55%, #143C26 100%)',
+        }}
+      >
+        {/* Subtle yard lines */}
+        <div
+          className="absolute inset-0 opacity-25"
+          style={{
+            background:
+              'repeating-linear-gradient(90deg, transparent 0 28px, rgba(255,255,255,0.3) 28px 29px)',
+          }}
+        />
+        {/* Player jersey */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div
+            className="relative w-14 h-14 rounded-full flex items-center justify-center text-white font-display font-extrabold text-lg"
+            style={{
+              background: 'linear-gradient(180deg, #C8202A 0%, #861420 100%)',
+              boxShadow:
+                '0 1px 0 rgba(255,255,255,0.3) inset, ' +
+                '0 0 0 2px rgba(255,255,255,0.85), ' +
+                '0 6px 14px -4px rgba(0,0,0,0.5)',
+            }}
+          >
+            87
           </div>
+        </div>
+        {/* Scan corner brackets */}
+        <div className="absolute top-3 left-3 w-3 h-3 border-t-2 border-l-2 border-tangerine/80" />
+        <div className="absolute top-3 right-3 w-3 h-3 border-t-2 border-r-2 border-tangerine/80" />
+        <div className="absolute bottom-3 left-3 w-3 h-3 border-b-2 border-l-2 border-tangerine/80" />
+        <div className="absolute bottom-3 right-3 w-3 h-3 border-b-2 border-r-2 border-tangerine/80" />
+        {/* Live scoreboard chip */}
+        <div
+          className="absolute top-2 left-2 px-2 py-1 rounded-md text-white text-[9px] font-bold tracking-wider flex items-center gap-1.5"
+          style={{ background: 'rgba(0,0,0,0.55)', backdropFilter: 'blur(8px)' }}
+        >
+          <span className="relative flex w-1.5 h-1.5">
+            <span className="absolute inset-0 rounded-full bg-red-500 opacity-50 animate-ping" />
+            <span className="relative w-1.5 h-1.5 rounded-full bg-red-500" />
+          </span>
+          KC <span className="text-lemon">24</span> · DAL 17
+        </div>
+      </div>
+
+      {/* Player info */}
+      <div className="p-3 flex items-center justify-between gap-2">
+        <div className="min-w-0">
+          <div className="font-display font-bold text-green text-[15px] leading-tight tracking-tight truncate">Travis Kelce</div>
+          <div className="text-[11px] text-muted mt-0.5">Tight End · Chiefs · #87</div>
+        </div>
+        <div
+          className="text-[10px] font-bold tracking-widest uppercase text-tangerine px-2 py-1 rounded-full bg-tangerine/10 shrink-0"
+        >
+          ID'd
         </div>
       </div>
     </div>
@@ -238,15 +378,21 @@ function BFFThread() {
 function BubbleSB({ children, delay = 0, pad = 'px-3.5 py-2.5' }: { children: React.ReactNode; delay?: number; pad?: string }) {
   return (
     <div
-      className={`max-w-[88%] bg-white rounded-2xl rounded-tl-md border border-[var(--hairline)] text-[14px] leading-relaxed text-ink ${pad} shadow-[0_1px_0_rgba(13,45,36,0.04)]`}
+      className={`max-w-[88%] rounded-[18px] rounded-tl-md text-[14px] leading-relaxed text-ink ${pad}`}
       style={{
-        animation: `fadeUp .55s ease ${delay}s both`,
+        background: 'linear-gradient(180deg, #FFFFFF 0%, #FBFAF6 100%)',
+        boxShadow:
+          '0 1px 0 rgba(255,255,255,0.9) inset, ' +
+          '0 0 0 1px rgba(13,45,36,0.06), ' +
+          '0 1px 2px rgba(13,45,36,0.05), ' +
+          '0 6px 16px -8px rgba(13,45,36,0.10)',
+        animation: `fadeUp .55s cubic-bezier(.2,.7,.2,1.05) ${delay}s both`,
       }}
     >
       {children}
       <style jsx>{`
         @keyframes fadeUp {
-          from { opacity: 0; transform: translateY(6px); }
+          from { opacity: 0; transform: translateY(8px) scale(0.98); }
           to { opacity: 1; transform: none; }
         }
       `}</style>
@@ -257,15 +403,20 @@ function BubbleSB({ children, delay = 0, pad = 'px-3.5 py-2.5' }: { children: Re
 function BubbleYou({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   return (
     <div
-      className="max-w-[80%] ml-auto bg-tangerine text-white rounded-2xl rounded-tr-md text-[14px] leading-relaxed px-3.5 py-2.5"
+      className="max-w-[80%] ml-auto rounded-[18px] rounded-tr-md text-white text-[14px] leading-relaxed px-3.5 py-2.5"
       style={{
-        animation: `fadeUpYou .55s ease ${delay}s both`,
+        background: 'linear-gradient(135deg, #FF7A52 0%, #FF5723 100%)',
+        boxShadow:
+          '0 1px 0 rgba(255,255,255,0.25) inset, ' +
+          '0 4px 12px -4px rgba(255,107,61,0.4), ' +
+          '0 1px 2px rgba(13,45,36,0.06)',
+        animation: `fadeUpYou .55s cubic-bezier(.2,.7,.2,1.05) ${delay}s both`,
       }}
     >
       {children}
       <style jsx>{`
         @keyframes fadeUpYou {
-          from { opacity: 0; transform: translateY(6px); }
+          from { opacity: 0; transform: translateY(8px) scale(0.98); }
           to { opacity: 1; transform: none; }
         }
       `}</style>
@@ -277,12 +428,12 @@ function BubbleYou({ children, delay = 0 }: { children: React.ReactNode; delay?:
    FEATURE CARDS
    ============================================================= */
 
-const ACCENT_MAP = {
-  tangerine: { bg: 'bg-tangerine/15', text: 'text-tangerine', bar: 'bg-tangerine' },
-  magenta: { bg: 'bg-magenta/15', text: 'text-magenta', bar: 'bg-magenta' },
-  sapphire: { bg: 'bg-sapphire/15', text: 'text-sapphire', bar: 'bg-sapphire' },
-  sage: { bg: 'bg-sage/15', text: 'text-sage', bar: 'bg-sage' },
-} as const;
+const ACCENT_HEX: Record<string, { color: string; cardTint: string; iconBg: string; glow: string }> = {
+  tangerine: { color: '#FF6B3D', cardTint: 'rgba(255,107,61,0.05)', iconBg: 'rgba(255,107,61,0.13)', glow: 'rgba(255,107,61,0.35)' },
+  magenta:   { color: '#E84B7A', cardTint: 'rgba(232,75,122,0.05)', iconBg: 'rgba(232,75,122,0.13)', glow: 'rgba(232,75,122,0.35)' },
+  sapphire:  { color: '#2D4ED1', cardTint: 'rgba(45,78,209,0.05)',  iconBg: 'rgba(45,78,209,0.13)',  glow: 'rgba(45,78,209,0.30)'  },
+  sage:      { color: '#5BA084', cardTint: 'rgba(91,160,132,0.05)', iconBg: 'rgba(91,160,132,0.15)', glow: 'rgba(91,160,132,0.30)' },
+};
 
 function FeatureCard({
   href,
@@ -290,38 +441,133 @@ function FeatureCard({
   icon,
   title,
   tagline,
+  desc,
   num,
   soon,
 }: {
   href?: string;
-  accent: keyof typeof ACCENT_MAP;
+  accent: keyof typeof ACCENT_HEX;
   icon: React.ReactNode;
   title: string;
   tagline: string;
+  desc?: string;
   num: string;
   soon?: boolean;
 }) {
-  const a = ACCENT_MAP[accent];
+  const a = ACCENT_HEX[accent];
+
   const inner = (
-    <div className="relative group bg-white rounded-2xl border border-[var(--hairline)] shadow-soft hover:shadow-lift hover:-translate-y-0.5 transition-all duration-200 overflow-hidden h-full">
-      <div className={`absolute inset-x-0 top-0 h-1 ${a.bar}`} />
-      <div className="p-6">
-        <div className="flex items-start justify-between mb-5">
-          <div className={`w-11 h-11 rounded-xl ${a.bg} ${a.text} flex items-center justify-center`}>
+    <div
+      className="relative group rounded-3xl overflow-hidden h-full transition-all duration-300 hover:-translate-y-1.5"
+      style={{
+        background: 'linear-gradient(180deg, #FFFFFF 0%, #FCFCFA 100%)',
+        boxShadow:
+          '0 1px 0 rgba(255,255,255,0.9) inset, ' +
+          '0 0 0 1px rgba(13,45,36,0.06), ' +
+          '0 2px 4px rgba(13,45,36,0.04), ' +
+          '0 12px 28px -10px rgba(13,45,36,0.10)',
+      }}
+    >
+      {/* Hover-only accent gradient backdrop */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+        style={{
+          background: `linear-gradient(160deg, ${a.cardTint} 0%, transparent 60%)`,
+        }}
+      />
+
+      {/* Top accent bar — gradient */}
+      <div
+        className="absolute inset-x-0 top-0 h-1 transition-all duration-300 group-hover:h-1.5"
+        style={{
+          background: `linear-gradient(90deg, ${a.color} 0%, ${a.color}cc 100%)`,
+        }}
+      />
+
+      {/* Massive italic number — top-right */}
+      <div
+        className="absolute top-6 right-6 font-display italic font-semibold text-[44px] leading-none tracking-tight transition-all duration-300 group-hover:scale-110 group-hover:rotate-[-3deg]"
+        style={{ color: a.color, opacity: 0.85 }}
+      >
+        {num}
+      </div>
+
+      <div className="relative p-7 pt-9 flex flex-col h-full">
+        {/* Icon orb with soft glow */}
+        <div className="relative mb-7">
+          <div
+            className="absolute -inset-3 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+            style={{ background: a.glow }}
+          />
+          <div
+            className="relative w-14 h-14 rounded-2xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105"
+            style={{
+              background: a.iconBg,
+              color: a.color,
+              boxShadow: `0 1px 0 rgba(255,255,255,0.6) inset, 0 6px 14px -4px ${a.glow}`,
+            }}
+          >
             {icon}
           </div>
-          <div className={`font-display italic font-semibold text-xl ${a.text}`}>{num}</div>
         </div>
-        <div className="font-display font-bold text-xl text-green leading-tight">{title}</div>
-        <p className="text-sm text-ink-soft mt-1.5 leading-relaxed">{tagline}</p>
-        {soon && (
-          <div className="mt-3 inline-block text-[10px] font-bold tracking-widest uppercase text-sage">
-            ◯ Coming soon
-          </div>
+
+        {/* Title */}
+        <h3 className="font-display font-bold text-[28px] text-green leading-[1.05] tracking-tight">
+          {title}
+        </h3>
+
+        {/* Tagline (italic, accent-colored) */}
+        <p
+          className="font-display italic font-medium text-[15px] mt-1.5 leading-snug"
+          style={{ color: a.color }}
+        >
+          {tagline}
+        </p>
+
+        {/* Description */}
+        {desc && (
+          <p className="text-[14px] text-ink-soft mt-2 leading-relaxed flex-1">
+            {desc}
+          </p>
         )}
+
+        {/* Footer link */}
+        <div
+          className="mt-6 pt-4 border-t flex items-center justify-between"
+          style={{ borderColor: 'rgba(13,45,36,0.08)' }}
+        >
+          {soon ? (
+            <span
+              className="text-[10px] font-bold tracking-[0.18em] uppercase inline-flex items-center gap-1.5"
+              style={{ color: a.color }}
+            >
+              <span
+                className="w-1.5 h-1.5 rounded-full animate-pulse"
+                style={{ background: a.color }}
+              />
+              Coming soon
+            </span>
+          ) : (
+            <>
+              <span
+                className="text-[10px] font-bold tracking-[0.18em] uppercase"
+                style={{ color: a.color }}
+              >
+                Try it
+              </span>
+              <span
+                className="font-display italic text-lg transition-transform duration-300 group-hover:translate-x-1"
+                style={{ color: a.color }}
+              >
+                →
+              </span>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
+
   if (href && !soon) return <Link href={href}>{inner}</Link>;
   return <div>{inner}</div>;
 }
