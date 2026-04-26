@@ -47,25 +47,25 @@ export default function SettingsPage() {
 
   return (
     <main className="min-h-screen flex flex-col bg-white">
-      <header className="px-6 md:px-8 py-3 border-b border-[var(--hairline)] flex items-center justify-between bg-white sticky top-0 z-10">
-        <Link href="/" className="font-display text-xl font-extrabold text-green tracking-wide uppercase">
+      <header className="px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 border-b border-[var(--hairline)] flex items-center justify-between gap-2 bg-white sticky top-0 z-10">
+        <Link href="/" className="font-display text-base sm:text-xl font-extrabold text-green tracking-wide uppercase shrink-0">
           SPORTS<span className="text-tangerine">★</span>BFF
         </Link>
-        <Link href="/chat" className="text-sm text-ink-soft hover:text-ink">← Back to chat</Link>
+        <Link href="/chat" className="text-[13px] sm:text-sm text-ink-soft hover:text-ink shrink-0">← Back to chat</Link>
       </header>
 
-      <section className="flex-1 px-6 py-12">
+      <section className="flex-1 px-4 sm:px-6 py-8 sm:py-12">
         <div className="max-w-2xl mx-auto">
-          <h1 className="font-display text-5xl font-bold text-green leading-tight tracking-tight">
+          <h1 className="font-display text-[36px] sm:text-5xl font-bold text-green leading-tight tracking-tight">
             Settings.
           </h1>
-          <p className="mt-3 text-lg text-ink-soft">
+          <p className="mt-2 sm:mt-3 text-[15px] sm:text-lg text-ink-soft">
             All saved locally for now — Supabase auth wires in beta.
           </p>
 
           {/* Display name */}
-          <section className="mt-10">
-            <label className="text-xs font-bold tracking-widest uppercase text-tangerine">
+          <section className="mt-8 sm:mt-10">
+            <label className="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-tangerine">
               Display name
             </label>
             <input
@@ -73,13 +73,14 @@ export default function SettingsPage() {
               onChange={(e) => setName(e.target.value)}
               onBlur={() => update('displayName', name.trim() || undefined)}
               placeholder="What should we call you?"
-              className="mt-2 w-full bg-white border border-[var(--hairline)] rounded-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+              className="mt-2 w-full bg-white border border-[var(--hairline)] rounded-full px-4 sm:px-5 py-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+              autoComplete="given-name"
             />
           </section>
 
           {/* League */}
-          <section className="mt-10">
-            <label className="text-xs font-bold tracking-widest uppercase text-tangerine">
+          <section className="mt-8 sm:mt-10">
+            <label className="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-tangerine">
               Sport
             </label>
             <div className="mt-3 grid grid-cols-3 gap-2">
@@ -88,13 +89,13 @@ export default function SettingsPage() {
                   key={l}
                   type="button"
                   onClick={() => update('league', l)}
-                  className={`text-left rounded-xl border p-4 transition ${
+                  className={`text-center rounded-xl border p-3 sm:p-4 transition ${
                     profile.league === l
                       ? 'border-tangerine bg-tangerine/5 shadow-soft'
                       : 'border-[var(--hairline)] bg-white hover:border-ink-soft'
                   }`}
                 >
-                  <div className="font-display font-bold text-base text-green uppercase">
+                  <div className="font-display font-bold text-[15px] sm:text-base text-green uppercase">
                     {l === 'both' ? 'Both' : l.toUpperCase()}
                   </div>
                 </button>
@@ -103,14 +104,14 @@ export default function SettingsPage() {
           </section>
 
           {/* Lens */}
-          <section className="mt-10">
-            <label className="text-xs font-bold tracking-widest uppercase text-tangerine">
+          <section className="mt-8 sm:mt-10">
+            <label className="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-tangerine">
               Show lens
             </label>
-            <p className="mt-2 text-sm text-ink-soft">
+            <p className="mt-2 text-[13px] sm:text-sm text-ink-soft">
               Your chat answers and lesson examples speak this show's language.
             </p>
-            <div className="mt-4 grid grid-cols-3 md:grid-cols-4 gap-3">
+            <div className="mt-3 sm:mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 sm:gap-3">
               {lenses.map((l) => {
                 const isActive = profile.lens === l.id;
                 const initials = l.name

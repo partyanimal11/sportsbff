@@ -126,9 +126,9 @@ export function PlayerProfile({ slug }: { slug: string }) {
             background: 'repeating-linear-gradient(90deg, transparent 0 60px, rgba(255,255,255,0.4) 60px 61px)',
           }}
         />
-        <div className="relative max-w-5xl mx-auto px-6 py-12 md:py-16 grid md:grid-cols-[1fr_auto] gap-8 items-end">
+        <div className="relative max-w-5xl mx-auto px-5 sm:px-6 py-8 sm:py-12 md:py-16 grid md:grid-cols-[1fr_auto] gap-6 md:gap-8 items-end">
           <div>
-            <div className="text-[11px] font-bold tracking-[0.22em] uppercase mb-3" style={{ color: colors.ink, opacity: 0.78 }}>
+            <div className="text-[10px] sm:text-[11px] font-bold tracking-[0.18em] sm:tracking-[0.22em] uppercase mb-2 sm:mb-3" style={{ color: colors.ink, opacity: 0.78 }}>
               {team?.city} {team?.name} · {player.position}
               {player.number && ` · #${player.number}`}
             </div>
@@ -136,13 +136,13 @@ export function PlayerProfile({ slug }: { slug: string }) {
               className="font-display font-bold leading-[0.92] tracking-tight"
               style={{
                 color: colors.ink,
-                fontSize: 'clamp(40px, 5.5vw, 72px)',
+                fontSize: 'clamp(34px, 7vw, 72px)',
               }}
             >
               {player.name}
             </h1>
             {player.hometown && (
-              <div className="mt-4 text-[14px]" style={{ color: colors.ink, opacity: 0.78 }}>
+              <div className="mt-3 sm:mt-4 text-[13px] sm:text-[14px]" style={{ color: colors.ink, opacity: 0.78 }}>
                 <span className="font-display italic">From</span> {player.hometown}
                 {player.age && ` · ${player.age} years old`}
               </div>
@@ -168,7 +168,7 @@ export function PlayerProfile({ slug }: { slug: string }) {
       </section>
 
       {/* Body */}
-      <section className="max-w-5xl mx-auto px-6 py-10 md:py-14 grid md:grid-cols-[1.4fr_1fr] gap-8 md:gap-12">
+      <section className="max-w-5xl mx-auto px-5 sm:px-6 py-8 sm:py-10 md:py-14 grid md:grid-cols-[1.4fr_1fr] gap-6 sm:gap-8 md:gap-12">
         {/* Left column */}
         <div>
           {player.bio && (

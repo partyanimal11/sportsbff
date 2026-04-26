@@ -140,17 +140,20 @@ function ChatPage() {
     <PlayerOverlayContext.Provider value={setOverlayPlayer}>
     <main
       className="min-h-screen flex flex-col transition-colors duration-500"
-      style={
-        dramaMode
+      style={{
+        // Use dynamic viewport height on iOS so the input isn't hidden by the URL bar.
+        // dvh falls back to vh on older browsers via the className above.
+        minHeight: '100dvh',
+        ...(dramaMode
           ? { background: 'radial-gradient(ellipse at top, rgba(232,75,122,0.06), transparent 50%), radial-gradient(ellipse at bottom, rgba(255,107,61,0.05), transparent 50%), #FFFFFF' }
-          : undefined
-      }
+          : {}),
+      }}
     >
-      <header className="px-6 md:px-8 py-3 border-b border-[var(--hairline)] flex items-center justify-between bg-white/80 sticky top-0 z-10 backdrop-blur">
-        <div className="flex items-center gap-4">
+      <header className="px-3 md:px-8 py-2.5 md:py-3 border-b border-[var(--hairline)] flex items-center justify-between gap-2 bg-white/80 sticky top-0 z-10 backdrop-blur">
+        <div className="flex items-center gap-2 md:gap-4 min-w-0">
           <Link
             href="/"
-            className="font-display text-xl font-extrabold text-green tracking-wide uppercase"
+            className="font-display text-base md:text-xl font-extrabold text-green tracking-wide uppercase shrink-0"
           >
             SPORTS<span className="text-tangerine">★</span>BFF
           </Link>
@@ -160,15 +163,17 @@ function ChatPage() {
             </span>
           )}
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 md:gap-2 shrink-0">
           {displayName && (
-            <span className="hidden md:block text-sm text-ink-soft mr-1">Hi, {displayName}</span>
+            <span className="hidden lg:block text-sm text-ink-soft mr-1">Hi, {displayName}</span>
           )}
+          {/* Drama: icon-only on mobile, full pill on md+ */}
           <button
             type="button"
             onClick={toggleDrama}
             disabled={streaming}
-            className={`group inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[13px] font-semibold transition-all duration-200 ${
+            aria-label={dramaMode ? 'Turn Drama Mode off' : 'Turn Drama Mode on'}
+            className={`group inline-flex items-center gap-1 md:gap-1.5 px-2.5 md:px-3 h-9 rounded-full text-[12px] md:text-[13px] font-semibold transition-all duration-200 ${
               dramaMode
                 ? 'text-white shadow-md'
                 : 'text-ink-soft bg-white border border-[var(--hairline)] hover:border-magenta hover:text-magenta'
@@ -184,32 +189,53 @@ function ChatPage() {
             title={dramaMode ? 'Drama Mode is ON — every answer leads with the spicy version' : 'Turn on Drama Mode'}
           >
             <span className={dramaMode ? 'animate-pulse' : ''}>🔥</span>
-            <span>Drama</span>
-            <span className={`ml-1 text-[10px] font-bold tracking-widest uppercase ${dramaMode ? 'opacity-90' : 'opacity-50'}`}>
+            <span className="hidden sm:inline">Drama</span>
+            <span className={`text-[9px] md:text-[10px] font-bold tracking-widest uppercase ${dramaMode ? 'opacity-90' : 'opacity-60'}`}>
               {dramaMode ? 'ON' : 'OFF'}
             </span>
           </button>
+          {/* Lens dropdown — compact on mobile (no "Lens:" prefix) */}
           <select
-            className="text-sm bg-white border border-[var(--hairline)] rounded-full px-3 py-1.5 text-ink-soft cursor-pointer"
+            className="text-[12px] md:text-sm bg-white border border-[var(--hairline)] rounded-full pl-3 pr-7 h-9 text-ink-soft cursor-pointer max-w-[120px] md:max-w-none truncate appearance-none bg-no-repeat bg-[right_8px_center]"
+            style={{
+              backgroundImage:
+                'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'8\' viewBox=\'0 0 12 8\' fill=\'none\'><path d=\'M1 1.5L6 6.5L11 1.5\' stroke=\'%23556B66\' stroke-width=\'1.6\' stroke-linecap=\'round\' stroke-linejoin=\'round\'/></svg>")',
+            }}
             value={lens}
             onChange={(e) => changeLens(e.target.value)}
             disabled={streaming}
             title={`Lens: ${lensInfo.name}`}
+            aria-label="Choose lens"
           >
             {lenses.map((l) => (
               <option key={l.id} value={l.id}>
-                Lens: {l.name}
+                {l.name}
               </option>
             ))}
           </select>
-          <Link href="/settings" className="text-sm text-ink-soft hover:text-ink" title="Settings">
-            ⚙
+          {/* Settings — proper 36x36 touch target */}
+          <Link
+            href="/settings"
+            className="w-9 h-9 rounded-full flex items-center justify-center text-ink-soft hover:text-ink hover:bg-cream-warm transition"
+            title="Settings"
+            aria-label="Settings"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+            </svg>
           </Link>
         </div>
       </header>
+      {/* Demo banner on mobile only — moved out of overstuffed header */}
+      {demoMode && (
+        <div className="md:hidden text-center text-[10px] font-bold tracking-widest uppercase py-1.5 bg-lemon/15 text-yellow-700 border-b border-lemon/30">
+          ● Demo mode
+        </div>
+      )}
 
-      <div ref={scrollRef} className="flex-1 overflow-y-auto px-4">
-        <div className="max-w-2xl mx-auto py-10 flex flex-col gap-4">
+      <div ref={scrollRef} className="flex-1 overflow-y-auto px-3 sm:px-4 overscroll-contain">
+        <div className="max-w-2xl mx-auto py-6 md:py-10 flex flex-col gap-3 md:gap-4">
           {messages.length === 0 && (
             <EmptyState onPick={(p) => send(p)} onBrowse={() => setBrowseOpen(true)} />
           )}
@@ -220,11 +246,15 @@ function ChatPage() {
         </div>
       </div>
 
-      <div className="border-t border-[var(--hairline)] bg-white">
-        <div className="max-w-2xl mx-auto p-4 flex gap-2 items-center">
+      <div
+        className="border-t border-[var(--hairline)] bg-white"
+        style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
+      >
+        <div className="max-w-2xl mx-auto px-3 md:px-4 py-3 md:py-4 flex gap-2 items-center">
           <button
             onClick={() => setBrowseOpen(true)}
             disabled={streaming}
+            aria-label="Browse prompts"
             className="shrink-0 w-11 h-11 rounded-full bg-cream-warm border border-[var(--hairline)] flex items-center justify-center text-tangerine hover:bg-tangerine hover:text-white hover:border-tangerine transition-all duration-200 disabled:opacity-50"
             title="Browse prompts"
           >
@@ -244,16 +274,27 @@ function ChatPage() {
               }
             }}
             placeholder="Ask anything about the NFL or NBA…"
-            className="flex-1 bg-cream-warm border border-[var(--hairline)] rounded-full px-5 py-3 text-[15px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+            className="flex-1 min-w-0 bg-cream-warm border border-[var(--hairline)] rounded-full px-4 md:px-5 py-3 text-[16px] md:text-[15px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
             disabled={streaming}
-            autoFocus
+            enterKeyHint="send"
+            inputMode="text"
+            autoComplete="off"
+            autoCorrect="off"
           />
           <button
             onClick={() => send()}
             disabled={streaming || !input.trim()}
-            className="btn btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+            aria-label="Send"
+            className="shrink-0 h-11 px-4 md:px-5 rounded-full bg-green text-white font-semibold text-[14px] md:text-[15px] hover:bg-green-dark transition disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {streaming ? '…' : 'Send'}
+            {streaming ? '…' : (
+              <>
+                <span className="hidden sm:inline">Send</span>
+                <svg className="sm:hidden" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <path d="M3 11.5L21 3l-8.5 18-2.5-7.5L3 11.5z" />
+                </svg>
+              </>
+            )}
           </button>
         </div>
       </div>
@@ -278,19 +319,19 @@ function ChatPage() {
 
 function EmptyState({ onPick, onBrowse }: { onPick: (p: string) => void; onBrowse: () => void }) {
   return (
-    <div className="text-center mt-8">
-      <h1 className="font-display text-4xl md:text-5xl font-bold text-green leading-[0.95] tracking-tight">
+    <div className="text-center mt-2 sm:mt-8 px-1">
+      <h1 className="font-display text-[34px] sm:text-4xl md:text-5xl font-bold text-green leading-[0.95] tracking-tight">
         Ask anything.
         <br />
         <span className="italic font-medium text-tangerine">No question is dumb.</span>
       </h1>
-      <p className="mt-4 text-ink-soft">Try one to start:</p>
-      <div className="mt-5 flex flex-wrap gap-2 justify-center">
+      <p className="mt-3 sm:mt-4 text-ink-soft text-[14px] md:text-base">Try one to start:</p>
+      <div className="mt-4 sm:mt-5 flex flex-wrap gap-1.5 sm:gap-2 justify-center">
         {STARTER_PROMPTS.map((q) => (
           <button
             key={q}
             onClick={() => onPick(q)}
-            className="text-sm bg-cream-warm border border-[var(--hairline)] rounded-full px-4 py-2 text-ink-soft hover:bg-green hover:text-white hover:border-green transition"
+            className="text-[12px] sm:text-sm bg-cream-warm border border-[var(--hairline)] rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-ink-soft hover:bg-green hover:text-white hover:border-green transition"
           >
             {q}
           </button>
@@ -298,7 +339,7 @@ function EmptyState({ onPick, onBrowse }: { onPick: (p: string) => void; onBrows
       </div>
       <button
         onClick={onBrowse}
-        className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-tangerine hover:text-tangerine-dark"
+        className="mt-5 sm:mt-6 inline-flex items-center gap-2 text-sm font-semibold text-tangerine hover:text-tangerine-dark"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d="M9 18h6" />

@@ -13,16 +13,16 @@ export default function LessonPage({ params }: { params: { slug: string[] } }) {
 
   return (
     <main className="min-h-screen flex flex-col">
-      <header className="px-6 md:px-8 py-3 border-b border-[var(--hairline)] flex items-center justify-between bg-white sticky top-0 z-10">
-        <Link href="/" className="font-display text-xl font-extrabold text-green tracking-wide uppercase">
+      <header className="px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 border-b border-[var(--hairline)] flex items-center justify-between gap-3 bg-white sticky top-0 z-10">
+        <Link href="/" className="font-display text-base sm:text-xl font-extrabold text-green tracking-wide uppercase shrink-0">
           SPORTS<span className="text-tangerine">★</span>BFF
         </Link>
-        <Link href="/lessons" className="text-sm text-ink-soft hover:text-ink">← All lessons</Link>
+        <Link href="/lessons" className="text-[13px] sm:text-sm text-ink-soft hover:text-ink shrink-0">← All lessons</Link>
       </header>
 
-      <article className="flex-1 px-6 py-16">
+      <article className="flex-1 px-4 sm:px-6 py-10 sm:py-16">
         <div className="max-w-2xl mx-auto">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-3 mb-5 sm:mb-6">
             <span
               className={`text-[10px] font-bold tracking-widest uppercase px-2 py-1 rounded-md ${
                 lesson.league === 'nfl' ? 'bg-magenta/10 text-magenta' : 'bg-sapphire/10 text-sapphire'
@@ -33,12 +33,12 @@ export default function LessonPage({ params }: { params: { slug: string[] } }) {
             <span className="text-xs text-muted">{lesson.minutes} min · {lesson.difficulty}</span>
           </div>
 
-          <h1 className="font-display text-5xl font-bold text-green leading-[0.95] tracking-tight">
+          <h1 className="font-display text-[34px] sm:text-5xl font-bold text-green leading-[0.95] tracking-tight">
             {lesson.title}
           </h1>
-          <p className="mt-3 text-xl text-ink-soft font-display italic">{lesson.subtitle}</p>
+          <p className="mt-2 sm:mt-3 text-[17px] sm:text-xl text-ink-soft font-display italic">{lesson.subtitle}</p>
 
-          <p className="mt-8 text-lg leading-relaxed text-ink">{lesson.intro}</p>
+          <p className="mt-6 sm:mt-8 text-[16px] sm:text-lg leading-relaxed text-ink">{lesson.intro}</p>
 
           <div className="mt-8 flex flex-col gap-5">
             {lesson.sections.map((section, i) => (

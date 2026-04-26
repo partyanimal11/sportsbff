@@ -27,7 +27,7 @@ export function PlayerOverlay({ slug, onClose }: { slug: string; onClose: () => 
   }, [onClose]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-stretch md:items-center md:justify-center" role="dialog" aria-modal>
+    <div className="fixed inset-0 z-50 flex items-end md:items-center md:justify-center" role="dialog" aria-modal>
       {/* Backdrop */}
       <div
         className="absolute inset-0 bg-ink/50 backdrop-blur-sm"
@@ -35,16 +35,29 @@ export function PlayerOverlay({ slug, onClose }: { slug: string; onClose: () => 
         style={{ animation: 'fadeBg .25s ease both' }}
       />
 
-      {/* Sheet */}
+      {/* Sheet — bottom-sheet on mobile (rounded top, capped at 92vh, slides up from bottom),
+          modal on desktop. Includes safe-area padding for iPhone home indicator. */}
       <div
-        className="relative w-full md:max-w-4xl bg-white md:rounded-[28px] shadow-2xl overflow-hidden flex flex-col max-h-[100vh] md:max-h-[88vh]"
-        style={{ animation: 'slideUp .35s cubic-bezier(.2,.7,.2,1.05) both' }}
+        className="relative w-full md:max-w-4xl bg-white rounded-t-[24px] md:rounded-[28px] shadow-2xl overflow-hidden flex flex-col max-h-[92vh] md:max-h-[88vh]"
+        style={{
+          animation: 'slideUp .35s cubic-bezier(.2,.7,.2,1.05) both',
+          paddingBottom: 'env(safe-area-inset-bottom)',
+        }}
       >
+        {/* Drag handle — visual cue this is a sheet you can dismiss (mobile only) */}
+        <div className="md:hidden pt-2 pb-1 flex justify-center shrink-0">
+          <button
+            onClick={onClose}
+            aria-label="Close"
+            className="w-10 h-1.5 rounded-full bg-[var(--hairline)] hover:bg-ink-soft transition"
+          />
+        </div>
+
         {/* Floating close button */}
         <button
           onClick={onClose}
           aria-label="Close player profile"
-          className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/90 backdrop-blur hover:bg-white shadow-md flex items-center justify-center text-ink"
+          className="absolute top-3 md:top-4 right-3 md:right-4 z-10 w-10 h-10 rounded-full bg-white/90 backdrop-blur hover:bg-white shadow-md flex items-center justify-center text-ink"
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
             <path d="M3 3 L13 13 M13 3 L3 13" />
@@ -52,14 +65,14 @@ export function PlayerOverlay({ slug, onClose }: { slug: string; onClose: () => 
         </button>
 
         {/* Scrollable profile content */}
-        <div className="overflow-y-auto">
+        <div className="overflow-y-auto overscroll-contain">
           <PlayerProfile slug={slug} />
         </div>
       </div>
 
       <style jsx>{`
         @keyframes fadeBg { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes slideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: none; } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(60px); } to { opacity: 1; transform: none; } }
       `}</style>
     </div>
   );

@@ -39,16 +39,16 @@ export default function OnboardingPage() {
 
   return (
     <main className="min-h-screen flex flex-col">
-      <header className="px-8 py-4 border-b border-[var(--hairline)] flex items-center justify-between bg-white">
-        <Link href="/" className="font-display text-xl font-extrabold text-green tracking-wide uppercase">
+      <header className="px-4 sm:px-8 py-3 sm:py-4 border-b border-[var(--hairline)] flex items-center justify-between gap-2 bg-white">
+        <Link href="/" className="font-display text-base sm:text-xl font-extrabold text-green tracking-wide uppercase shrink-0">
           SPORTS<span className="text-tangerine">★</span>BFF
         </Link>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-2.5 sm:gap-5 shrink-0">
           <div className="flex gap-1.5">
             {[1, 2, 3].map((i) => (
               <span
                 key={i}
-                className={`w-8 h-1 rounded-full transition ${
+                className={`w-6 sm:w-8 h-1 rounded-full transition ${
                   i <= step ? 'bg-tangerine' : 'bg-[var(--hairline)]'
                 }`}
               />
@@ -57,25 +57,25 @@ export default function OnboardingPage() {
           <button
             type="button"
             onClick={skip}
-            className="text-sm text-ink-soft hover:text-ink underline-offset-2 hover:underline"
+            className="text-[12px] sm:text-sm text-ink-soft hover:text-ink underline-offset-2 hover:underline"
           >
-            Skip — use defaults →
+            Skip <span className="hidden sm:inline">— use defaults</span> →
           </button>
         </div>
       </header>
 
-      <section className="flex-1 px-6 py-12 flex items-center justify-center">
+      <section className="flex-1 px-4 sm:px-6 py-8 sm:py-12 flex items-start sm:items-center justify-center">
         <div className="w-full max-w-2xl">
           {/* Step 1 — League */}
           {step === 1 && (
             <div>
-              <p className="text-xs font-bold tracking-widest uppercase text-tangerine mb-3">Step 1 of 3</p>
-              <h1 className="font-display text-5xl font-bold text-green leading-tight tracking-tight">
+              <p className="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-tangerine mb-2 sm:mb-3">Step 1 of 3</p>
+              <h1 className="font-display text-[36px] sm:text-5xl font-bold text-green leading-tight tracking-tight">
                 Which sport?
               </h1>
-              <p className="mt-3 text-lg text-ink-soft">Pick one. We can add the other anytime.</p>
+              <p className="mt-2 sm:mt-3 text-[15px] sm:text-lg text-ink-soft">Pick one. We can add the other anytime.</p>
 
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-3">
+              <div className="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-3 gap-2.5 sm:gap-3">
                 {[
                   { id: 'nfl', label: 'NFL only', desc: '32 teams · Sunday is the day' },
                   { id: 'nba', label: 'NBA only', desc: '30 teams · 82 games a season' },
@@ -108,15 +108,15 @@ export default function OnboardingPage() {
           {/* Step 2 — Lens */}
           {step === 2 && (
             <div>
-              <p className="text-xs font-bold tracking-widest uppercase text-tangerine mb-3">Step 2 of 3</p>
-              <h1 className="font-display text-5xl font-bold text-green leading-tight tracking-tight">
+              <p className="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-tangerine mb-2 sm:mb-3">Step 2 of 3</p>
+              <h1 className="font-display text-[36px] sm:text-5xl font-bold text-green leading-tight tracking-tight">
                 Pick what you know. <span className="italic font-medium text-tangerine">Or don't.</span>
               </h1>
-              <p className="mt-3 text-lg text-ink-soft">
-                Choose a show you've watched twice — every answer starts speaking that show's language. Don't know any of these? Pick <strong className="text-ink">Just sports</strong>. We'll explain it straight up.
+              <p className="mt-2 sm:mt-3 text-[15px] sm:text-lg text-ink-soft">
+                Choose a show you've watched twice — every answer starts speaking that show's language. Don't know any of these? Pick <strong className="text-ink">Just sports</strong>.
               </p>
 
-              <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
+              <div className="mt-6 sm:mt-8 grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3">
                 {lenses.map((l) => {
                   const isActive = lens === l.id;
                   const initials = l.name
@@ -200,23 +200,25 @@ export default function OnboardingPage() {
           {/* Step 3 — Name */}
           {step === 3 && (
             <div>
-              <p className="text-xs font-bold tracking-widest uppercase text-tangerine mb-3">Step 3 of 3</p>
-              <h1 className="font-display text-5xl font-bold text-green leading-tight tracking-tight">
+              <p className="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-tangerine mb-2 sm:mb-3">Step 3 of 3</p>
+              <h1 className="font-display text-[36px] sm:text-5xl font-bold text-green leading-tight tracking-tight">
                 What should we <span className="italic font-medium text-tangerine">call you?</span>
               </h1>
-              <p className="mt-3 text-lg text-ink-soft">Optional. We'll just use it in the chat header.</p>
+              <p className="mt-2 sm:mt-3 text-[15px] sm:text-lg text-ink-soft">Optional. We'll just use it in the chat header.</p>
 
               <input
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Your name (optional)"
-                className="mt-8 w-full bg-white border border-[var(--hairline)] rounded-full px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+                className="mt-6 sm:mt-8 w-full bg-white border border-[var(--hairline)] rounded-full px-5 sm:px-6 py-3.5 sm:py-4 text-[16px] sm:text-lg focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+                enterKeyHint="done"
+                autoComplete="given-name"
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') finish();
                 }}
               />
 
-              <div className="mt-10 flex justify-between items-center">
+              <div className="mt-8 sm:mt-10 flex justify-between items-center">
                 <button className="text-sm text-ink-soft" onClick={() => setStep(2)}>
                   ← Back
                 </button>

@@ -1,10 +1,26 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'sportsBFF — Meet your sports BFF.',
   description:
     'sportsBFF is the friend who actually knows the league — every player, every piece of gossip, every rule. Point your camera at any game. Ask anything. Learn the NFL and NBA without the gatekeeping. Closed beta on iOS + web.',
+  themeColor: '#0D2D24',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: 'sportsBFF',
+  },
+};
+
+// CRITICAL: viewport meta tag. Without this, mobile renders at ~980px and shrinks
+// (every iOS Safari user was seeing the desktop layout zoomed out).
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#FFFFFF',
+  viewportFit: 'cover', // respect iPhone notch/home-indicator safe areas
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

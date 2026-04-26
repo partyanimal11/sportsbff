@@ -25,7 +25,23 @@ html, body {
   font-size: 17px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
+  /* Prevents rogue absolute-positioned hero blobs (negative left/right) from
+     causing horizontal scroll on small viewports. */
+  overflow-x: hidden;
+  /* Don't auto-zoom inputs on iOS Safari (we set 16px on inputs explicitly,
+     this is a belt-and-suspenders fallback). */
+  -webkit-text-size-adjust: 100%;
 }
+
+@media (max-width: 640px) {
+  html, body {
+    /* Slightly tighter base on mobile so paragraphs don't feel chunky. */
+    font-size: 16px;
+  }
+}
+
+/* iOS Safari: kill the blue tap-highlight color so buttons feel native. */
+button, a { -webkit-tap-highlight-color: transparent; }
 
 * { box-sizing: border-box; }
 

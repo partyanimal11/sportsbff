@@ -143,8 +143,8 @@ export default function HomePage() {
   return (
     <main className="min-h-screen flex flex-col bg-white">
       {/* Nav */}
-      <header className="px-6 md:px-8 py-3 border-b border-[var(--hairline)] flex items-center justify-between bg-white sticky top-0 z-20 backdrop-blur">
-        <Link href="/" className="font-display text-xl font-extrabold text-green tracking-wide uppercase">
+      <header className="px-4 md:px-8 py-2.5 md:py-3 border-b border-[var(--hairline)] flex items-center justify-between gap-2 bg-white sticky top-0 z-20 backdrop-blur">
+        <Link href="/" className="font-display text-base md:text-xl font-extrabold text-green tracking-wide uppercase shrink-0">
           SPORTS<span className="text-tangerine">★</span>BFF
         </Link>
         <nav className="hidden md:flex gap-7 text-sm text-ink-soft">
@@ -152,45 +152,48 @@ export default function HomePage() {
           <Link href="/chat" className="hover:text-ink">Chat</Link>
           <Link href="/lessons" className="hover:text-ink">Lessons</Link>
         </nav>
-        <Link className="btn btn-primary" href={ctaHref}>
-          {onboarded ? 'Open the app →' : 'Get started →'}
+        <Link
+          className="btn btn-primary text-[12px] md:text-[14px] px-3 md:px-5 py-2 md:py-2.5 shrink-0"
+          href={ctaHref}
+        >
+          {onboarded ? 'Open →' : 'Get started →'}
         </Link>
       </header>
 
       {/* HERO — "Your Sports BFF" */}
-      <section className="relative flex-1 px-6 py-16 md:py-24 overflow-hidden">
+      <section className="relative flex-1 px-4 sm:px-6 py-10 sm:py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 -z-10 pointer-events-none">
-          <div className="absolute -top-32 -left-32 w-[480px] h-[480px] rounded-full bg-tangerine/30 blur-[80px]" />
-          <div className="absolute top-40 -right-40 w-[540px] h-[540px] rounded-full bg-magenta/25 blur-[80px]" />
-          <div className="absolute -bottom-32 left-1/3 w-[380px] h-[380px] rounded-full bg-lemon/30 blur-[80px]" />
+          <div className="absolute -top-32 -left-32 w-[320px] sm:w-[480px] h-[320px] sm:h-[480px] rounded-full bg-tangerine/30 blur-[80px]" />
+          <div className="absolute top-40 -right-40 w-[360px] sm:w-[540px] h-[360px] sm:h-[540px] rounded-full bg-magenta/25 blur-[80px]" />
+          <div className="absolute -bottom-32 left-1/3 w-[280px] sm:w-[380px] h-[280px] sm:h-[380px] rounded-full bg-lemon/30 blur-[80px]" />
         </div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-14 items-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-[1.05fr_0.95fr] gap-8 md:gap-14 items-center">
           {/* Copy */}
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--hairline)] text-xs text-ink-soft mb-6 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--hairline)] text-[11px] sm:text-xs text-ink-soft mb-5 sm:mb-6 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-tangerine animate-pulse" />
               Closed beta · iOS + web · Spring 2026
             </div>
-            <h1 className="font-display text-[44px] sm:text-6xl md:text-[72px] font-bold text-green leading-[0.94] tracking-tight">
+            <h1 className="font-display text-[40px] sm:text-6xl md:text-[72px] font-bold text-green leading-[0.95] tracking-tight">
               Meet your<br/>
               <span className="italic font-medium text-tangerine">Sports&nbsp;BFF.</span>
             </h1>
-            <p className="mt-5 text-lg text-ink-soft max-w-lg leading-relaxed">
+            <p className="mt-4 sm:mt-5 text-[15px] sm:text-lg text-ink-soft max-w-lg leading-relaxed">
               sportsBFF knows <strong className="text-ink">every player</strong> and <strong className="text-ink">every piece of gossip</strong>. Who's dating who. Who's beefing on Twitter. Who got traded at 2 AM. Plus the actual rules — explained without the gatekeeping.
             </p>
-            <div className="mt-7 flex flex-wrap gap-3 items-center">
+            <div className="mt-6 sm:mt-7 flex flex-wrap gap-2.5 sm:gap-3 items-center">
               <Link className="btn btn-primary" href={ctaHref}>{ctaLabel}</Link>
               <Link className="btn btn-secondary" href="/chat">Text her now →</Link>
             </div>
-            <div className="mt-5 flex flex-wrap items-center gap-3 text-xs text-muted">
+            <div className="mt-4 sm:mt-5 flex flex-wrap items-center gap-2 sm:gap-3 text-[11px] sm:text-xs text-muted">
               <span>Free during beta</span>
               <span className="w-1 h-1 rounded-full bg-current opacity-50" />
               <span>iOS + web</span>
               <span className="w-1 h-1 rounded-full bg-current opacity-50" />
               <span>Built for new fans</span>
             </div>
-            <div className="mt-6 font-script text-magenta text-xl rotate-[-1.5deg] inline-block">
+            <div className="mt-5 sm:mt-6 font-script text-magenta text-[16px] sm:text-xl rotate-[-1.5deg] inline-block max-w-full">
               — knows every player. knows all the tea. zero gatekeeping.
             </div>
           </div>
@@ -204,7 +207,7 @@ export default function HomePage() {
 
       {/* Feature cards */}
       <section
-        className="border-t border-[var(--hairline)] px-6 py-24 md:py-32 relative overflow-hidden"
+        className="border-t border-[var(--hairline)] px-4 sm:px-6 py-16 sm:py-24 md:py-32 relative overflow-hidden"
         style={{
           background:
             'radial-gradient(ellipse at top left, rgba(255,107,61,0.06), transparent 40%), ' +
@@ -213,15 +216,15 @@ export default function HomePage() {
         }}
       >
         <div className="max-w-6xl mx-auto relative">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-tangerine font-semibold tracking-[0.18em] uppercase mb-6 shadow-sm">
+          <div className="text-center mb-10 sm:mb-16">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[10px] sm:text-[11px] text-tangerine font-semibold tracking-[0.18em] uppercase mb-5 sm:mb-6 shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
               Four things she does
             </div>
-            <h2 className="font-display text-5xl md:text-6xl font-bold text-green leading-[0.96] tracking-tight max-w-3xl mx-auto">
+            <h2 className="font-display text-[34px] sm:text-5xl md:text-6xl font-bold text-green leading-[0.96] tracking-tight max-w-3xl mx-auto">
               How your <span className="italic font-medium text-tangerine">BFF</span> shows up.
             </h2>
-            <p className="mt-5 text-lg text-ink-soft max-w-xl mx-auto">
+            <p className="mt-4 sm:mt-5 text-[15px] sm:text-lg text-ink-soft max-w-xl mx-auto">
               Four ways in. Whichever one your brain prefers.
             </p>
           </div>
@@ -261,12 +264,12 @@ export default function HomePage() {
       {/* Lens demo — pick what you know */}
       <PickWhatYouKnow />
 
-      <footer className="bg-green-dark text-white px-6 py-8">
-        <div className="max-w-5xl mx-auto flex items-center justify-between">
+      <footer className="bg-green-dark text-white px-4 sm:px-6 py-6 sm:py-8" style={{ paddingBottom: 'max(env(safe-area-inset-bottom), 1.5rem)' }}>
+        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-center sm:text-left">
           <div className="font-display text-sm font-extrabold uppercase tracking-wide">
             SPORTS<span className="text-tangerine">★</span>BFF
           </div>
-          <div className="font-script text-lemon text-xl">XOXO, sportsBFF.</div>
+          <div className="font-script text-lemon text-lg sm:text-xl">XOXO, sportsBFF.</div>
         </div>
       </footer>
     </main>
@@ -558,7 +561,7 @@ function PickWhatYouKnow() {
 
   return (
     <section
-      className="px-6 py-24 md:py-32 border-t border-[var(--hairline)] relative overflow-hidden"
+      className="px-4 sm:px-6 py-16 sm:py-24 md:py-32 border-t border-[var(--hairline)] relative overflow-hidden"
       style={{
         background:
           'radial-gradient(ellipse at top right, rgba(232,75,122,0.06), transparent 45%), ' +
@@ -567,29 +570,29 @@ function PickWhatYouKnow() {
       }}
     >
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-magenta font-semibold tracking-[0.18em] uppercase mb-6 shadow-sm">
+        <div className="text-center mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[10px] sm:text-[11px] text-magenta font-semibold tracking-[0.18em] uppercase mb-5 sm:mb-6 shadow-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-magenta animate-pulse" />
             Your shortcut
           </div>
-          <h2 className="font-display text-5xl md:text-6xl font-bold text-green leading-[0.96] tracking-tight max-w-3xl mx-auto">
+          <h2 className="font-display text-[32px] sm:text-5xl md:text-6xl font-bold text-green leading-[0.96] tracking-tight max-w-3xl mx-auto">
             You already know this.<br/>
             <span className="italic font-medium" style={{ color: lens.accent }}>
               Just in another language.
             </span>
           </h2>
-          <p className="mt-5 text-lg text-ink-soft max-w-xl mx-auto">
+          <p className="mt-4 sm:mt-5 text-[15px] sm:text-lg text-ink-soft max-w-xl mx-auto">
             Pick a show you've watched twice. We translate the league through its voice — the fastest path to fluency is the one you've already walked.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-[0.95fr_1.05fr] gap-8 md:gap-12 items-start">
+        <div className="grid md:grid-cols-[0.95fr_1.05fr] gap-6 sm:gap-8 md:gap-12 items-start">
           {/* Picker */}
           <div>
-            <div className="text-[11px] font-bold tracking-[0.18em] uppercase text-muted mb-4">
+            <div className="text-[10px] sm:text-[11px] font-bold tracking-[0.18em] uppercase text-muted mb-3 sm:mb-4">
               Your reference
             </div>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3">
               {LENS_DEMOS.map((l) => {
                 const isActive = l.id === selected;
                 return (

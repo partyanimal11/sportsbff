@@ -114,29 +114,29 @@ export default function ScanPage() {
 
   return (
     <main className="min-h-screen flex flex-col">
-      <header className="px-6 md:px-8 py-3 border-b border-[var(--hairline)] flex items-center justify-between bg-white sticky top-0 z-10">
-        <Link href="/" className="font-display text-xl font-extrabold text-green tracking-wide uppercase">
+      <header className="px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 border-b border-[var(--hairline)] flex items-center justify-between gap-3 bg-white sticky top-0 z-10">
+        <Link href="/" className="font-display text-base sm:text-xl font-extrabold text-green tracking-wide uppercase shrink-0">
           SPORTS<span className="text-tangerine">★</span>BFF
         </Link>
-        <nav className="flex gap-7 text-sm text-ink-soft">
+        <nav className="flex gap-4 sm:gap-7 text-[13px] sm:text-sm text-ink-soft">
           <Link href="/scan" className="text-green font-semibold">Scan</Link>
-          <Link href="/chat">Chat</Link>
-          <Link href="/lessons">Lessons</Link>
+          <Link href="/chat" className="hover:text-ink">Chat</Link>
+          <Link href="/lessons" className="hover:text-ink">Lessons</Link>
         </nav>
       </header>
 
-      <section className="flex-1 px-6 py-12">
+      <section className="flex-1 px-4 sm:px-6 py-8 sm:py-12">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cream-warm text-xs text-ink-soft mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cream-warm text-[11px] sm:text-xs text-ink-soft mb-5 sm:mb-6">
             <span className="w-2 h-2 rounded-full bg-tangerine animate-pulse" />
             Demo mode · vision API not wired yet
           </div>
-          <h1 className="font-display text-5xl md:text-6xl font-bold text-green leading-[0.95] tracking-tight">
+          <h1 className="font-display text-[36px] sm:text-5xl md:text-6xl font-bold text-green leading-[0.95] tracking-tight">
             Scan a game.
             <br />
             <span className="italic font-medium text-tangerine">Know who's playing.</span>
           </h1>
-          <p className="mt-5 text-lg text-ink-soft max-w-xl mx-auto">
+          <p className="mt-4 sm:mt-5 text-[15px] sm:text-lg text-ink-soft max-w-xl mx-auto">
             Point your camera at any NFL or NBA broadcast — sportsBFF reads the scoreboard, identifies the players in frame, and gives you the bio, the stats, the drama.
           </p>
 
