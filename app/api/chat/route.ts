@@ -9,6 +9,21 @@ import { findDemoAnswer, demoFallback, streamDemoAnswer } from '@/lib/demo-respo
 // without an OpenAI key. Edge runtime works once the key is set.
 export const runtime = 'nodejs';
 
+// CORS headers — required for the iOS app (Rork build) to call this from
+// a different origin. Lock down later if needed.
+const CORS_HEADERS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+  'Access-Control-Max-Age': '86400',
+};
+
+// Preflight handler — Safari/iOS sends OPTIONS before POST when the body type
+// is JSON or when custom headers are present.
+export async function OPTIONS() {
+  return new Response(null, { status: 204, headers: CORS_HEADERS });
+}
+
 const Schema = z.object({
   messages: z
     .array(
@@ -38,7 +53,7 @@ export async function POST(req: NextRequest) {
   } catch {
     return new Response(JSON.stringify({ error: 'Invalid request body' }), {
       status: 400,
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', ...CORS_HEADERS },
     });
   }
 
@@ -85,6 +100,7 @@ export async function POST(req: NextRequest) {
         'Content-Type': 'text/event-stream',
         'Cache-Control': 'no-cache, no-transform',
         Connection: 'keep-alive',
+        ...CORS_HEADERS,
       },
     });
   }

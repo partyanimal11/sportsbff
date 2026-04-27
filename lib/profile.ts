@@ -14,9 +14,13 @@ export type Profile = {
   lens: string;
   onboardedAt?: string;
   dramaMode?: boolean;
+  /** When ON, every BFF response auto-plays via TTS after streaming finishes. */
+  autoPlayVoice?: boolean;
+  /** Override for the lens-default voice. If unset, uses getVoiceForLens(lens). */
+  voiceOverride?: string;
 };
 
-const DEFAULT: Profile = { lens: 'plain', dramaMode: false };
+const DEFAULT: Profile = { lens: 'plain', dramaMode: false, autoPlayVoice: false };
 
 export function getProfile(): Profile {
   if (typeof window === 'undefined') return DEFAULT;

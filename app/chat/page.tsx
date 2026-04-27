@@ -9,6 +9,7 @@ import { Markdown } from '@/lib/markdown';
 import { PROMPT_LIBRARY, STARTER_PROMPTS } from '@/lib/prompts';
 import { PlayerOverlayContext } from '@/lib/player-overlay-context';
 import { PlayerOverlay } from '@/components/PlayerOverlay';
+import { useVoicePlayer } from '@/lib/use-voice-player';
 
 type Msg = { role: 'user' | 'assistant'; content: string };
 
@@ -25,6 +26,8 @@ function ChatPage() {
   const [displayName, setDisplayName] = useState<string>('');
   const [demoMode, setDemoMode] = useState<boolean>(false);
   const [dramaMode, setDramaMode] = useState<boolean>(false);
+  const [autoPlay, setAutoPlay] = useState<boolean>(false);
+  const [voiceOverride, setVoiceOverride] = useState<string | undefined>();
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<Msg[]>([]);
   const [streaming, setStreaming] = useState(false);
@@ -34,12 +37,15 @@ function ChatPage() {
   const lenses = listLenses();
   const lensInfo = getLens(lens);
   const searchParams = useSearchParams();
+  const voicePlayer = useVoicePlayer();
 
   // Hydrate from localStorage on mount + auto-send any ?seed= prompt
   useEffect(() => {
     const p = getProfile();
     setLens(p.lens);
     setDramaMode(!!p.dramaMode);
+    setAutoPlay(!!p.autoPlayVoice);
+    setVoiceOverride(p.voiceOverride);
     if (p.displayName) setDisplayName(p.displayName);
 
     const seed = searchParams.get('seed');
@@ -48,6 +54,30 @@ function ChatPage() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  function toggleAutoPlay() {
+    const next = !autoPlay;
+    setAutoPlay(next);
+    setProfile({ autoPlayVoice: next });
+  }
+
+  // Auto-play the latest assistant message when streaming finishes (if autoPlay is on)
+  const autoPlayedKeyRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (!autoPlay || streaming) return;
+    if (messages.length === 0) return;
+    const last = messages[messages.length - 1];
+    if (last.role !== 'assistant' || !last.content) return;
+
+    const key = `${messages.length - 1}|${last.content.slice(0, 60)}`;
+    if (autoPlayedKeyRef.current === key) return;
+    autoPlayedKeyRef.current = key;
+
+    voicePlayer.play(`auto-${messages.length - 1}`, last.content, {
+      lens,
+      voice: voiceOverride,
+    });
+  }, [streaming, messages, autoPlay, lens, voiceOverride, voicePlayer]);
 
   function toggleDrama() {
     const next = !dramaMode;
@@ -213,6 +243,33 @@ function ChatPage() {
               </option>
             ))}
           </select>
+          {/* Voice auto-play toggle */}
+          <button
+            type="button"
+            onClick={toggleAutoPlay}
+            disabled={streaming}
+            aria-label={autoPlay ? 'Turn voice auto-play off' : 'Turn voice auto-play on'}
+            title={autoPlay ? 'Voice auto-play is ON — every BFF response reads aloud' : 'Turn on voice auto-play'}
+            className={`w-9 h-9 rounded-full flex items-center justify-center transition ${
+              autoPlay
+                ? 'bg-tangerine text-white shadow-sm'
+                : 'text-ink-soft hover:text-ink hover:bg-cream-warm'
+            }`}
+          >
+            {autoPlay ? (
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                <path d="M11 5L6 9H2v6h4l5 4V5z" />
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+              </svg>
+            ) : (
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                <path d="M11 5L6 9H2v6h4l5 4V5z" />
+                <line x1="22" y1="9" x2="16" y2="15" />
+                <line x1="16" y1="9" x2="22" y2="15" />
+              </svg>
+            )}
+          </button>
           {/* Settings — proper 36x36 touch target */}
           <Link
             href="/settings"
@@ -241,7 +298,15 @@ function ChatPage() {
           )}
 
           {messages.map((m, i) => (
-            <Bubble key={i} m={m} streamingNow={streaming && i === messages.length - 1} />
+            <Bubble
+              key={i}
+              m={m}
+              streamingNow={streaming && i === messages.length - 1}
+              messageId={`msg-${i}`}
+              lens={lens}
+              voiceOverride={voiceOverride}
+              voicePlayer={voicePlayer}
+            />
           ))}
         </div>
       </div>
@@ -500,7 +565,31 @@ function BrowsePrompts({ onPick, onClose }: { onPick: (p: string) => void; onClo
   );
 }
 
-function Bubble({ m, streamingNow }: { m: Msg; streamingNow: boolean }) {
+function Bubble({
+  m,
+  streamingNow,
+  messageId,
+  lens,
+  voiceOverride,
+  voicePlayer,
+}: {
+  m: Msg;
+  streamingNow: boolean;
+  messageId?: string;
+  lens?: string;
+  voiceOverride?: string;
+  voicePlayer?: ReturnType<typeof useVoicePlayer>;
+}) {
+  const isAssistant = m.role === 'assistant';
+  const canPlay = isAssistant && !!m.content && !streamingNow && !!voicePlayer && !!messageId;
+  const isPlaying = voicePlayer?.playingId === messageId;
+  const isLoading = voicePlayer?.loading && voicePlayer?.playingId === null;
+
+  function handlePlay() {
+    if (!voicePlayer || !messageId) return;
+    voicePlayer.play(messageId, m.content, { lens, voice: voiceOverride });
+  }
+
   return (
     <div className={`flex gap-3 ${m.role === 'user' ? 'flex-row-reverse' : ''}`}>
       <div
@@ -510,20 +599,50 @@ function Bubble({ m, streamingNow }: { m: Msg; streamingNow: boolean }) {
       >
         {m.role === 'user' ? 'YOU' : 'SB'}
       </div>
-      <div
-        className={`max-w-[85%] rounded-2xl px-4 py-3 text-[15px] leading-relaxed ${
-          m.role === 'user'
-            ? 'bg-green text-white whitespace-pre-wrap'
-            : 'bg-cream-warm border border-[var(--hairline)] text-ink'
-        }`}
-      >
-        {m.role === 'assistant'
-          ? m.content
-            ? <Markdown text={m.content} />
-            : streamingNow
-              ? '…'
-              : ''
-          : m.content}
+      <div className={`max-w-[85%] flex flex-col gap-1.5 ${m.role === 'user' ? 'items-end' : 'items-start'}`}>
+        <div
+          className={`rounded-2xl px-4 py-3 text-[15px] leading-relaxed ${
+            m.role === 'user'
+              ? 'bg-green text-white whitespace-pre-wrap'
+              : 'bg-cream-warm border border-[var(--hairline)] text-ink'
+          }`}
+        >
+          {isAssistant
+            ? m.content
+              ? <Markdown text={m.content} />
+              : streamingNow
+                ? '…'
+                : ''
+            : m.content}
+        </div>
+        {canPlay && (
+          <button
+            type="button"
+            onClick={handlePlay}
+            disabled={isLoading}
+            aria-label={isPlaying ? 'Stop voice playback' : 'Play voice'}
+            className={`shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold transition-all duration-200 ${
+              isPlaying
+                ? 'bg-tangerine text-white shadow-sm'
+                : 'text-ink-soft bg-white border border-[var(--hairline)] hover:border-tangerine hover:text-tangerine'
+            }`}
+            title={isPlaying ? 'Stop' : 'Play voice'}
+          >
+            {isLoading ? (
+              <span className="inline-block w-3 h-3 rounded-full border-[1.5px] border-current border-t-transparent animate-spin" />
+            ) : isPlaying ? (
+              <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor" aria-hidden>
+                <rect x="2" y="2" width="3" height="8" rx="0.5" />
+                <rect x="7" y="2" width="3" height="8" rx="0.5" />
+              </svg>
+            ) : (
+              <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor" aria-hidden>
+                <path d="M3 2 L10 6 L3 10 Z" />
+              </svg>
+            )}
+            <span>{isLoading ? 'Loading' : isPlaying ? 'Stop' : 'Play'}</span>
+          </button>
+        )}
       </div>
     </div>
   );

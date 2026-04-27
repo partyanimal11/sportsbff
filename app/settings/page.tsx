@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { listLenses, DEFAULT_LENS_ID } from '@/lib/lens';
+import { listLenses, DEFAULT_LENS_ID, ALL_VOICES, VOICE_DESCRIPTIONS, getVoiceForLens, type OpenAIVoice } from '@/lib/lens';
 import { clearProfile, getProfile, setProfile, type Profile } from '@/lib/profile';
 
 export default function SettingsPage() {
@@ -154,6 +154,62 @@ export default function SettingsPage() {
                   </button>
                 );
               })}
+            </div>
+          </section>
+
+          {/* Voice */}
+          <section className="mt-8 sm:mt-10">
+            <label className="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-tangerine">
+              Voice
+            </label>
+            <p className="mt-2 text-[13px] sm:text-sm text-ink-soft">
+              Have your sportsBFF read answers aloud. Voice mode requires an OpenAI key on the server.
+            </p>
+
+            {/* Auto-play toggle */}
+            <div className="mt-4 flex items-center justify-between gap-4 bg-cream-warm border border-[var(--hairline)] rounded-2xl p-4">
+              <div className="flex-1 min-w-0">
+                <div className="font-display font-bold text-[15px] text-green">Auto-play</div>
+                <div className="text-[12.5px] text-ink-soft mt-0.5">
+                  Every BFF response reads aloud after streaming finishes.
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => update('autoPlayVoice', !profile.autoPlayVoice)}
+                aria-label={profile.autoPlayVoice ? 'Turn auto-play off' : 'Turn auto-play on'}
+                className={`shrink-0 relative w-12 h-7 rounded-full transition-colors ${
+                  profile.autoPlayVoice ? 'bg-tangerine' : 'bg-[var(--hairline)]'
+                }`}
+              >
+                <span
+                  className={`absolute top-0.5 w-6 h-6 rounded-full bg-white shadow transition-transform ${
+                    profile.autoPlayVoice ? 'translate-x-5' : 'translate-x-0.5'
+                  }`}
+                />
+              </button>
+            </div>
+
+            {/* Voice picker */}
+            <div className="mt-4">
+              <label className="text-[11px] sm:text-xs font-semibold uppercase tracking-wide text-ink-soft">
+                Voice
+              </label>
+              <select
+                className="mt-2 w-full bg-white border border-[var(--hairline)] rounded-full px-4 py-3 text-[15px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+                value={profile.voiceOverride ?? ''}
+                onChange={(e) => update('voiceOverride', (e.target.value || undefined) as Profile['voiceOverride'])}
+              >
+                <option value="">Use lens default ({getVoiceForLens(profile.lens ?? 'plain')})</option>
+                {ALL_VOICES.map((v) => (
+                  <option key={v} value={v}>
+                    {v} — {VOICE_DESCRIPTIONS[v as OpenAIVoice]}
+                  </option>
+                ))}
+              </select>
+              <p className="mt-2 text-[12.5px] text-ink-soft">
+                Each show lens has a default voice that fits its persona. Override here if you want a different one for every answer.
+              </p>
             </div>
           </section>
 

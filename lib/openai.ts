@@ -23,8 +23,21 @@ export function getOpenAI(): OpenAI {
 export const MODELS = {
   /** Primary chat model — best quality voice. */
   CHAT: 'gpt-4o',
-  /** Cheap mini for low-stakes content gen. */
+  /** Cheap mini for low-stakes content gen + Today's Tea. */
   MINI: 'gpt-4o-mini',
   /** Vision model for /scan. */
   VISION: 'gpt-4o',
+  /** Text-to-speech model for /voice. */
+  TTS: 'tts-1',
+  /** Higher-quality TTS (more expensive) — use for premium voice mode. */
+  TTS_HD: 'tts-1-hd',
 } as const;
+
+/**
+ * True if a usable OpenAI key is set. Use to short-circuit endpoints into
+ * demo mode without throwing.
+ */
+export function hasOpenAIKey(): boolean {
+  const k = process.env.OPENAI_API_KEY ?? '';
+  return k.length >= 20 && k !== 'sk-...';
+}
