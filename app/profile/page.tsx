@@ -45,11 +45,11 @@ export default function ProfilePage() {
   }
 
   if (!mounted) {
-    return <main className="min-h-screen bg-cream-warm" />;
+    return <main className="min-h-screen bg-white" />;
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-cream-warm" style={{ minHeight: '100dvh' }}>
+    <main className="min-h-screen flex flex-col bg-white" style={{ minHeight: '100dvh' }}>
       <header className="px-4 sm:px-6 py-4 sm:py-5">
         <div className="max-w-md mx-auto">
           <h1 className="font-display text-[36px] font-bold text-green leading-tight tracking-tight">Profile</h1>
@@ -131,7 +131,7 @@ export default function ProfilePage() {
             </div>
             <label className="text-[10px] font-semibold uppercase tracking-wide text-ink-soft">Voice</label>
             <select
-              className="mt-1.5 w-full bg-cream-warm border border-[var(--hairline)] rounded-full px-3 py-2 text-[14px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+              className="mt-1.5 w-full bg-white border border-[var(--hairline)] rounded-full px-3 py-2 text-[14px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
               value={profile.voiceOverride ?? ''}
               onChange={(e) => update('voiceOverride', (e.target.value || undefined) as Profile['voiceOverride'])}
             >

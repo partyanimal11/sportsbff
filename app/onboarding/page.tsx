@@ -28,7 +28,7 @@ export default function OnboardingPage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-cream-warm" style={{ minHeight: '100dvh' }}>
+    <main className="min-h-screen flex flex-col bg-white" style={{ minHeight: '100dvh' }}>
       <header className="px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
         <Link href="/" className="font-display text-base sm:text-lg font-extrabold text-green tracking-wide shrink-0">
           Tea'd Up
@@ -81,7 +81,7 @@ export default function OnboardingPage() {
                     }`}
                   >
                     <div className={`shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-xl ${
-                      league === l.id ? 'bg-tangerine text-white' : 'bg-cream-warm text-ink'
+                      league === l.id ? 'bg-tangerine text-white' : 'bg-white text-ink'
                     }`}>
                       {l.emoji}
                     </div>
