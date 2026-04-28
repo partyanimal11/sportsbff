@@ -45,7 +45,7 @@ function RootInner() {
       <Nav />
       <Hero />
       <TrustStrip />
-      <PullQuote text="Sports media is finally for the rest of us." attribution="— Goldie, the GOAT" />
+      <PullQuote text="Finally a sports app that's actually for me." attribution="— @maddie · beta tester" />
       <ScanScene />
       <BFFScene />
       <TodayScene />
@@ -132,12 +132,12 @@ function Hero() {
         <span className="text-periwinkle text-2xl rotate-[-12deg] inline-block opacity-70" aria-hidden>✿</span>
       </div>
 
-      {/* Mobile order: badge → headline → subhead → body → CTAs → phone mockup → script
+      {/* Mobile order: phone mockup FIRST (above the fold) → copy below
           Desktop: copy on left, mockup on right (side-by-side) */}
       <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-8 pb-16 sm:pt-14 sm:pb-24">
-        <div className="grid md:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-14 items-center">
-          {/* COPY — first everywhere */}
-          <div className="text-left">
+        <div className="grid md:grid-cols-[1.05fr_0.95fr] gap-8 md:gap-14 items-center">
+          {/* COPY — second on mobile, first on desktop */}
+          <div className="text-left order-2 md:order-1">
             <div className="inline-flex items-center gap-2 pl-1 pr-3.5 py-1 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-ink-soft mb-5 shadow-sm">
               <span
                 className="inline-flex items-center justify-center w-6 h-6 rounded-full overflow-hidden"
@@ -154,16 +154,31 @@ function Hero() {
               <span><strong className="text-green font-semibold">Hi, I'm Goldie</strong> · closed beta · iOS + web</span>
             </div>
 
-            <h1 className="font-display text-[52px] sm:text-[68px] md:text-[80px] font-bold text-green leading-[0.92] tracking-tight">
-              <span
-                className="float-left mr-2 text-[88px] sm:text-[112px] md:text-[136px] leading-[0.85] font-bold text-tangerine"
-                style={{ fontFeatureSettings: '"swsh"' }}
-              >
-                L
-              </span>
-              earn the players.
+            <h1 className="font-display text-[48px] sm:text-[64px] md:text-[76px] font-bold text-green leading-[0.95] tracking-tight">
+              Learn the players.
               <br />
-              <span className="italic font-medium text-tangerine">Get the tea.</span>
+              <span className="italic font-medium text-tangerine relative inline-block">
+                Get the tea.
+                {/* Stylized teacup sticker — tilted, with a subtle steam swirl */}
+                <span
+                  className="inline-block ml-2 align-middle relative"
+                  style={{ transform: 'rotate(-8deg) translateY(-4px)' }}
+                  aria-hidden
+                >
+                  <svg width="48" height="56" viewBox="0 0 48 56" fill="none" className="sm:w-[60px] sm:h-[68px]">
+                    {/* Steam wisps */}
+                    <path d="M16 4 Q 20 8, 16 14 Q 12 18, 16 22" stroke="#D4407A" strokeWidth="1.6" strokeLinecap="round" fill="none" opacity="0.6" />
+                    <path d="M24 2 Q 28 6, 24 12 Q 20 16, 24 20" stroke="#D4407A" strokeWidth="1.6" strokeLinecap="round" fill="none" opacity="0.7" />
+                    <path d="M32 4 Q 36 8, 32 14 Q 28 18, 32 22" stroke="#D4407A" strokeWidth="1.6" strokeLinecap="round" fill="none" opacity="0.6" />
+                    {/* Cup */}
+                    <path d="M8 26 L 40 26 L 36 50 Q 32 54, 24 54 Q 16 54, 12 50 Z" fill="#FF6B3D" stroke="#0D2D24" strokeWidth="1.5" strokeLinejoin="round" />
+                    {/* Handle */}
+                    <path d="M40 30 Q 46 32, 46 38 Q 46 44, 40 46" fill="none" stroke="#0D2D24" strokeWidth="1.5" strokeLinecap="round" />
+                    {/* Saucer line */}
+                    <ellipse cx="24" cy="26" rx="16" ry="2" fill="#0D2D24" opacity="0.85" />
+                  </svg>
+                </span>
+              </span>
             </h1>
 
             <p className="mt-5 font-display italic text-[24px] sm:text-[28px] font-medium text-green leading-tight">
@@ -194,36 +209,38 @@ function Hero() {
             </div>
           </div>
 
-          {/* PHONE + MASCOT MOCKUP — polaroid-tilted, scrapbook-coded */}
-          <div className="relative mt-4 md:mt-0 md:pb-12">
+          {/* PHONE + MASCOT MOCKUP — appears FIRST on mobile (above the fold), right column on desktop */}
+          <div className="relative md:mt-0 md:pb-12 order-1 md:order-2">
             {/* Toggle demo — sits ABOVE the mockup on mobile, top-right on desktop */}
-            <div className="flex md:absolute md:-top-2 md:right-0 md:z-20 items-center md:items-end justify-center md:flex-col gap-2 md:gap-1.5 mb-4 md:mb-0">
+            <div className="flex md:absolute md:-top-2 md:right-0 md:z-20 items-center md:items-end justify-center md:flex-col gap-2 md:gap-1.5 mb-3 md:mb-0">
               <span className="text-[10px] font-mono tracking-wider uppercase text-muted">
                 tap to flip the vibe <span className="hidden md:inline">↓</span><span className="md:hidden">→</span>
               </span>
               <TeaUpToggle enabled={demoTeaUp} onToggle={() => setDemoTeaUp((v) => !v)} />
             </div>
 
-            {/* Polaroid-tilted phone — slight rotation + thicker white "frame" shadow */}
+            {/* Polaroid-tilted phone */}
             <div
-              className="relative mx-auto max-w-[300px] sm:max-w-[360px]"
+              className="relative mx-auto max-w-[280px] sm:max-w-[340px] md:max-w-[360px]"
               style={{
                 transform: 'rotate(2deg)',
-                filter: 'drop-shadow(0 18px 36px rgba(13,45,36,0.18)) drop-shadow(0 8px 16px rgba(13,45,36,0.10))',
+                filter: 'drop-shadow(0 16px 28px rgba(13,45,36,0.14))',
               }}
             >
               <ScanResultMockup teadUp={demoTeaUp} />
             </div>
 
-            {/* Goldie — bigger, full-body, breaking the grid */}
+            {/* Goldie peeks from the bottom-left of the phone (both mobile + desktop) */}
             <img
               src="/brand/goldie.png"
               alt="Goldie, your sports BFF"
-              className="absolute -bottom-2 sm:-bottom-4 -left-8 sm:-left-12 md:-left-16 w-40 sm:w-52 md:w-60 h-auto z-10 pointer-events-none drop-shadow-[0_12px_24px_rgba(13,45,36,0.18)]"
+              loading="eager"
+              decoding="async"
+              className="absolute -bottom-2 sm:-bottom-4 -left-6 sm:-left-12 md:-left-16 w-32 sm:w-48 md:w-56 h-auto z-10 pointer-events-none drop-shadow-[0_8px_16px_rgba(13,45,36,0.18)]"
               style={{ animation: 'goldieFloat 4s ease-in-out infinite' }}
             />
 
-            {/* Scrapbook callout — Caveat hand-written arrow pointing at Goldie */}
+            {/* Desktop scrapbook callout — Caveat hand-written arrow pointing at Goldie */}
             <div
               className="hidden md:flex absolute -bottom-2 left-[42%] z-20 items-center gap-1 pointer-events-none"
               style={{ transform: 'rotate(-4deg)' }}
@@ -281,21 +298,21 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
         <div
           className="relative"
           style={{
-            background: 'linear-gradient(135deg, #006BB6 0%, #006BB6 50%, #ED174C 200%)',
+            background: 'linear-gradient(135deg, #1D1160 0%, #1D1160 50%, #E56020 200%)',
           }}
         >
           <div className="absolute inset-0 opacity-15" style={{ background: 'repeating-linear-gradient(90deg, transparent 0 60px, rgba(255,255,255,0.4) 60px 61px)' }} />
           <div className="relative p-5 pt-4 flex items-end justify-between gap-3 min-h-[124px]">
             <div className="flex-1 min-w-0">
               <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-white/85 mb-1.5">
-                Center · Philadelphia · #21
+                Guard · Phoenix · #1
               </div>
               <div className="font-display font-bold text-white leading-[0.92] tracking-tight" style={{ fontSize: 'clamp(26px, 5.5vw, 34px)' }}>
-                Joel Embiid
+                Devin Booker
               </div>
               <div className="mt-2.5 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[9px] font-bold tracking-wider text-white" style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)' }}>
                 <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
-                PHI 102 · MIA 98 · 4Q 2:14
+                PHX 108 · MEM 104 · 4Q 1:42
               </div>
             </div>
             <div
@@ -303,11 +320,11 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
               style={{
                 width: 56,
                 height: 56,
-                background: '#ED174C',
+                background: '#E56020',
                 boxShadow: '0 0 0 3px rgba(255,255,255,0.18) inset, 0 8px 22px -6px rgba(0,0,0,0.4)',
               }}
             >
-              21
+              1
             </div>
           </div>
         </div>
@@ -315,18 +332,18 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
         <div className="px-5 py-4">
           {teadUp ? (
             <>
-              <div className="flex items-center gap-2 text-[10px] font-bold tracking-[0.18em] uppercase text-magenta mb-3">
-                <span aria-hidden>🔥</span> Drama
+              <div className="flex items-center gap-2 text-[10px] font-bold tracking-[0.18em] uppercase text-magenta-dusty mb-3">
+                <span aria-hidden>👀</span> The tea
               </div>
               <div className="bg-white rounded-2xl p-4 border border-[var(--hairline)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_4px_12px_-6px_rgba(13,45,36,0.08)]">
-                <span className="inline-block px-2 py-0.5 rounded-full text-[9px] font-semibold uppercase tracking-wider mb-2" style={{ background: '#FAEEDA', color: '#854F0B' }}>
-                  Speculation
+                <span className="inline-block px-2 py-0.5 rounded-full text-[9px] font-semibold uppercase tracking-wider mb-2" style={{ background: '#E6F1FB', color: '#185FA5' }}>
+                  Reported
                 </span>
-                <h3 className="font-display font-bold text-[16px] text-green leading-tight">Did he ask out?</h3>
+                <h3 className="font-display font-bold text-[16px] text-green leading-tight">A new courtside era?</h3>
                 <p className="mt-1 text-[13px] text-ink leading-relaxed">
-                  Locker-room sources hint Embiid considered a trade in March. Sixers brass denied on the record.
+                  Spotted at a postgame dinner with a Sports Illustrated model — first public outing post-Kendall. Page Six was tagged.
                 </p>
-                <div className="mt-2 text-[11px] text-tangerine font-semibold">▾ See sources (1)</div>
+                <div className="mt-2 text-[11px] text-magenta-dusty font-semibold">▾ See sources (2)</div>
               </div>
             </>
           ) : (
@@ -335,9 +352,9 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
                 <span aria-hidden>🏀</span> The story
               </div>
               <div className="bg-white rounded-2xl p-4 border border-[var(--hairline)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_4px_12px_-6px_rgba(13,45,36,0.08)]">
-                <h3 className="font-display font-bold text-[16px] text-green leading-tight">"Best center alive" debate</h3>
+                <h3 className="font-display font-bold text-[16px] text-green leading-tight">Phoenix's franchise face</h3>
                 <p className="mt-1 text-[13px] text-ink leading-relaxed">
-                  2023 MVP. 7'0, 280, post-up game from another era. The injury history is the asterisk on every conversation.
+                  2024 All-Star. 70-point game in 2017. The smoothest scorer in the league when he's healthy. Suns rebuild's centerpiece.
                 </p>
                 <div className="mt-2 text-[11px] text-tangerine font-semibold">▾ Why it matters</div>
               </div>
@@ -386,6 +403,8 @@ function TrustStrip() {
             <img
               src="/brand/goldie.png"
               alt="Goldie, the sportsBFF mascot"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover object-top"
             />
           </div>
@@ -400,29 +419,57 @@ function TrustStrip() {
           </div>
         </div>
 
+        {/* User-facing promise cards — what you actually get */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
           {[
-            { num: '200+', label: 'Players', bg: '#EFEAF5', text: '#4A2D6B' },          // lavender
-            { num: '85', label: 'Storylines', bg: '#E1ECDD', text: '#274D2C' },         // sage
-            { num: '4', label: 'Tier system', bg: '#FBF1D5', text: '#7B5B0F' },          // butter
-            { num: '0', label: 'Invented gossip', bg: '#FFEEE3', text: '#8C3D17' },      // peach
+            {
+              emoji: '📱',
+              title: 'Built for the group chat',
+              sub: 'Forwardable, screenshot-able',
+              bg: '#EFEAF5',
+              text: '#4A2D6B',
+            },
+            {
+              emoji: '☕',
+              title: 'No bro talk, ever',
+              sub: 'Just the stuff you care about',
+              bg: '#E1ECDD',
+              text: '#274D2C',
+            },
+            {
+              emoji: '✨',
+              title: 'No question is dumb',
+              sub: 'Ask anything, no judgment',
+              bg: '#FBF1D5',
+              text: '#7B5B0F',
+            },
+            {
+              emoji: '🎀',
+              title: 'Free during beta',
+              sub: 'NFL + NBA on day one',
+              bg: '#FFEEE3',
+              text: '#8C3D17',
+            },
           ].map((s) => (
             <div
-              key={s.label}
+              key={s.title}
               className="rounded-2xl p-4 sm:p-5 text-center"
               style={{ background: s.bg }}
             >
-              <div
-                className="font-display text-[34px] sm:text-[44px] font-bold leading-none tracking-tight"
-                style={{ color: s.text }}
-              >
-                {s.num}
+              <div className="text-2xl sm:text-3xl mb-2" aria-hidden>
+                {s.emoji}
               </div>
               <div
-                className="text-[9px] sm:text-[10px] font-mono uppercase tracking-[0.18em] mt-2 opacity-75"
+                className="font-display font-bold text-[14px] sm:text-[16px] leading-tight tracking-tight"
                 style={{ color: s.text }}
               >
-                {s.label}
+                {s.title}
+              </div>
+              <div
+                className="text-[10px] sm:text-[11px] italic mt-1 opacity-75"
+                style={{ color: s.text }}
+              >
+                {s.sub}
               </div>
             </div>
           ))}
@@ -596,6 +643,8 @@ function ScanResultThumbnail() {
             src="/brand/goldie.png"
             alt=""
             aria-hidden
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover object-top"
           />
         </div>
@@ -629,12 +678,12 @@ function ScanResultThumbnail() {
           </div>
         </div>
         <div className="p-4">
-          <div className="text-[9px] font-bold tracking-[0.18em] uppercase text-tangerine mb-2">🏀 The story</div>
+          <div className="text-[9px] font-bold tracking-[0.18em] uppercase text-magenta-dusty mb-2">👀 The tea</div>
           <div className="bg-cream-warm/50 rounded-xl p-3 border border-[var(--hairline)]">
             <span className="inline-block px-1.5 py-0.5 rounded-full text-[8px] font-semibold uppercase tracking-wider mb-1" style={{ background: '#E6F1FB', color: '#185FA5' }}>Reported</span>
-            <h3 className="font-display font-bold text-[13px] text-green leading-tight">Back-to-back MVP track</h3>
+            <h3 className="font-display font-bold text-[13px] text-green leading-tight">First-time dad on an MVP run</h3>
             <p className="mt-0.5 text-[11px] text-ink leading-relaxed">
-              Reigning MVP. ESPN straw poll has him #1 again.
+              Welcomed his first kid mid-season. Postgame fits going harder than ever. Soft-launching everything.
             </p>
           </div>
         </div>
@@ -769,6 +818,8 @@ function BFFLiveChatMockup() {
               <img
                 src="/brand/goldie.png"
                 alt=""
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover object-top"
                 aria-hidden
               />
@@ -993,7 +1044,7 @@ function TodayScene() {
               className="shrink-0 w-14 h-14 rounded-full overflow-hidden border-2 border-magenta-dusty/30"
               style={{ background: '#FDEEF1' }}
             >
-              <img src="/brand/goldie.png" alt="" aria-hidden className="w-full h-full object-cover object-top" />
+              <img src="/brand/goldie.png" alt="" aria-hidden loading="lazy" decoding="async" className="w-full h-full object-cover object-top" />
             </div>
             <div className="font-script text-magenta-dusty text-[18px] rotate-[-1deg] leading-tight">
               Goldie pours it. ☕
@@ -1100,7 +1151,7 @@ function LearnScene() {
               className="shrink-0 w-14 h-14 rounded-full overflow-hidden border-2 border-lavender/60"
               style={{ background: '#FDEEF1' }}
             >
-              <img src="/brand/goldie.png" alt="" aria-hidden className="w-full h-full object-cover object-top" />
+              <img src="/brand/goldie.png" alt="" aria-hidden loading="lazy" decoding="async" className="w-full h-full object-cover object-top" />
             </div>
             <div className="font-script text-sapphire text-[18px] rotate-[-1deg] leading-tight">
               Goldie the GOAT picks the lessons.
@@ -1201,7 +1252,9 @@ function FinalCTA() {
           src="/brand/goldie.png"
           alt=""
           aria-hidden
-          className="hidden md:block absolute right-0 -top-12 w-56 h-auto pointer-events-none drop-shadow-[0_16px_32px_rgba(13,45,36,0.22)]"
+          loading="lazy"
+          decoding="async"
+          className="hidden md:block absolute right-0 -top-12 w-56 h-auto pointer-events-none drop-shadow-[0_12px_24px_rgba(13,45,36,0.18)]"
           style={{ animation: 'goldieWave 3.5s ease-in-out infinite' }}
         />
 
@@ -1210,7 +1263,9 @@ function FinalCTA() {
           src="/brand/goldie.png"
           alt=""
           aria-hidden
-          className="md:hidden block mx-auto w-32 h-auto -mb-2 drop-shadow-[0_12px_24px_rgba(13,45,36,0.18)]"
+          loading="lazy"
+          decoding="async"
+          className="md:hidden block mx-auto w-32 h-auto -mb-2 drop-shadow-[0_8px_16px_rgba(13,45,36,0.18)]"
           style={{ animation: 'goldieWave 3.5s ease-in-out infinite' }}
         />
 
@@ -1225,6 +1280,8 @@ function FinalCTA() {
               src="/brand/goldie.png"
               alt=""
               aria-hidden
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover object-top"
             />
           </div>
