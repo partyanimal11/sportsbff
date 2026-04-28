@@ -8,8 +8,9 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { BottomTabs, BottomTabsSpacer } from '@/components/BottomTabs';
-import { ModeToggle, type Mode } from '@/components/ModeToggle';
+import { TeaUpToggle } from '@/components/TeaUpToggle';
 import { ALL_VOICES, VOICE_DESCRIPTIONS, type OpenAIVoice } from '@/lib/lens';
 import { clearProfile, getProfile, setProfile, type Profile } from '@/lib/profile';
 
@@ -18,9 +19,8 @@ export default function ProfilePage() {
   const [mounted, setMounted] = useState(false);
   const [profile, setLocalProfile] = useState<Profile>({
     lens: 'plain',
-    dramaMode: false,
+    teadUpEnabled: false,
     autoPlayVoice: false,
-    defaultModes: ['drama'],
     euphoriaLensEnabled: false,
   });
   const [name, setName] = useState('');
@@ -50,8 +50,11 @@ export default function ProfilePage() {
 
   return (
     <main className="min-h-screen flex flex-col bg-white" style={{ minHeight: '100dvh' }}>
-      <header className="px-4 sm:px-6 py-4 sm:py-5">
+      <header className="px-4 sm:px-6 pt-3 pb-4">
         <div className="max-w-md mx-auto">
+          <Link href="/" className="inline-block font-display text-base sm:text-lg font-extrabold text-green tracking-wide uppercase mb-3">
+            SPORTS<span className="text-tangerine">★</span>BFF
+          </Link>
           <h1 className="font-display text-[36px] font-bold text-green leading-tight tracking-tight">Profile</h1>
           <p className="mt-1.5 text-[14px] text-ink-soft italic">All saved on your device. Nothing leaves.</p>
         </div>
@@ -95,15 +98,20 @@ export default function ProfilePage() {
             </div>
           </div>
 
-          {/* Default modes */}
-          <div>
-            <label className="text-[11px] font-bold tracking-widest uppercase text-tangerine">Default modes</label>
-            <p className="mt-1 text-[12.5px] text-ink-soft">Which modes pre-on when scan/chat opens.</p>
-            <div className="mt-3 flex justify-start">
-              <ModeToggle
-                active={(profile.defaultModes as Mode[]) ?? ['drama']}
-                onChange={(next) => update('defaultModes', next)}
-                size="md"
+          {/* Tea'd Up master toggle */}
+          <div className="bg-white rounded-2xl border border-[var(--hairline)] p-4 shadow-[0_4px_16px_-10px_rgba(13,45,36,0.08)]">
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex-1 min-w-0">
+                <div className="font-display font-bold text-[15px] text-green flex items-center gap-1.5">
+                  ☕ Tea'd Up
+                </div>
+                <div className="text-[12.5px] text-ink-soft mt-0.5">
+                  When ON, every scan + chat reply has the tea (drama, beefs, gossip with confirmation tiers). When OFF, clean sports info only.
+                </div>
+              </div>
+              <TeaUpToggle
+                enabled={!!profile.teadUpEnabled}
+                onToggle={() => update('teadUpEnabled', !profile.teadUpEnabled)}
               />
             </div>
           </div>

@@ -2,13 +2,13 @@ import type { Metadata, Viewport } from 'next';
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
-  title: "Tea'd Up — Your AI Sports BFF.",
+  title: "sportsBFF — Your sports BFF.",
   description:
-    "Tea'd Up is the friend who has the sports tea. Scan any player, get the gossip — confirmed, reported, speculated, or rumored. Plus the rules in plain English. NFL + NBA, no gatekeeping.",
+    "sportsBFF is the friend who knows every player. Scan a player, get the rules + the storylines. Flip Tea'd Up on for the gossip — confirmed, reported, never guessed. NFL + NBA, no gatekeeping.",
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: "Tea'd Up",
+    title: 'sportsBFF',
   },
 };
 

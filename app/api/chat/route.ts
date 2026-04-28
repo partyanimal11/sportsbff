@@ -34,14 +34,17 @@ const Schema = z.object({
     )
     .min(1)
     .max(40),
-  // Legacy (sportsBFF) — kept for backward compat
-  lens: z.string().optional(),
-  dramaMode: z.boolean().optional(),
-  // Tea'd Up — new modes-based payload (preferred going forward)
-  modes: z.array(z.enum(['drama', 'on_field', 'learn'])).optional(),
+  // Master toggle: Tea'd Up. When true, responses get drama + tier pills.
+  // When false, clean sports info only. Default: false.
+  teadUp: z.boolean().optional(),
+  // Context for personalization
   league: z.enum(['nfl', 'nba', 'both']).optional(),
   displayName: z.string().max(60).optional(),
   euphoriaLensEnabled: z.boolean().optional(),
+  // Legacy fields — accepted for back-compat, but teadUp is the new master
+  lens: z.string().optional(),
+  dramaMode: z.boolean().optional(),
+  modes: z.array(z.enum(['drama', 'on_field', 'learn'])).optional(),
 });
 
 /**
@@ -114,18 +117,26 @@ export async function POST(req: NextRequest) {
   // ─────────────────────────────────────────────────────────
   // LIVE MODE — call OpenAI
   // ─────────────────────────────────────────────────────────
-  // Tea'd Up modes payload takes precedence if present.
-  // Otherwise fall back to the legacy sportsBFF lens-based prompt.
-  const useModesPath = Array.isArray(body.modes) && body.modes.length > 0;
-  const systemPrompt = useModesPath
-    ? buildModesSystemPrompt({
-        modes: body.modes as Mode[],
-        userMessage: last.content,
-        league: body.league ?? 'both',
-        displayName: body.displayName,
-        euphoriaLensEnabled: !!body.euphoriaLensEnabled,
-      })
-    : buildSystemPrompt({ lensId, userMessage: last.content, dramaMode });
+  // Resolve the Tea'd Up master state. Priority:
+  //   1. Explicit body.teadUp (new system)
+  //   2. body.modes including 'drama' (legacy modes payload)
+  //   3. body.dramaMode (oldest sportsBFF flag)
+  const teadUp = body.teadUp ?? (body.modes?.includes('drama') ?? body.dramaMode ?? false);
+
+  // For the sportsBFF voice, we always use the modes-based prompt now.
+  // teadUp=true → ['drama', 'on_field', 'learn'] gets the full spicy treatment.
+  // teadUp=false → ['on_field', 'learn'] only — clean sports, no gossip.
+  const activeModes: Mode[] = teadUp
+    ? ['drama', 'on_field', 'learn']
+    : ['on_field', 'learn'];
+
+  const systemPrompt = buildModesSystemPrompt({
+    modes: activeModes,
+    userMessage: last.content,
+    league: body.league ?? 'both',
+    displayName: body.displayName,
+    euphoriaLensEnabled: !!body.euphoriaLensEnabled,
+  });
 
   const completion = await getOpenAI().chat.completions.create({
     model: MODELS.CHAT,

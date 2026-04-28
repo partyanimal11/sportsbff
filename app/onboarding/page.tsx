@@ -31,7 +31,7 @@ export default function OnboardingPage() {
     <main className="min-h-screen flex flex-col bg-white" style={{ minHeight: '100dvh' }}>
       <header className="px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
         <Link href="/" className="font-display text-base sm:text-lg font-extrabold text-green tracking-wide shrink-0">
-          Tea'd Up
+          SPORTS<span className="text-tangerine">★</span>BFF
         </Link>
         <div className="flex gap-1.5">
           {[1, 2].map((i) => (

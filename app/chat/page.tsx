@@ -15,7 +15,7 @@ import { Markdown } from '@/lib/markdown';
 import { getProfile, setProfile } from '@/lib/profile';
 import { useVoicePlayer } from '@/lib/use-voice-player';
 import { BottomTabs, BottomTabsSpacer } from '@/components/BottomTabs';
-import { ModeToggle, type Mode } from '@/components/ModeToggle';
+import { TeaUpToggle } from '@/components/TeaUpToggle';
 import { TierPill, parseTierPills } from '@/components/TierPill';
 import { PROMPT_LIBRARY, STARTER_PROMPTS } from '@/lib/prompts';
 
@@ -31,7 +31,7 @@ export default function ChatPageWrapper() {
 
 function ChatPage() {
   const [mounted, setMounted] = useState(false);
-  const [modes, setModes] = useState<Mode[]>(['drama']);
+  const [teadUp, setTeadUp] = useState<boolean>(false);
   const [displayName, setDisplayName] = useState<string>('');
   const [league, setLeague] = useState<'nfl' | 'nba' | 'both'>('both');
   const [autoPlay, setAutoPlay] = useState(false);
@@ -48,17 +48,15 @@ function ChatPage() {
   useEffect(() => {
     setMounted(true);
     const p = getProfile();
-    if (p.defaultModes?.length) setModes(p.defaultModes as Mode[]);
+    setTeadUp(!!p.teadUpEnabled);
     if (p.displayName) setDisplayName(p.displayName);
     if (p.league) setLeague(p.league);
     if (p.autoPlayVoice) setAutoPlay(true);
 
     const seed = searchParams.get('seed');
-    const seedModes = searchParams.get('modes');
-    if (seedModes) {
-      const parsed = seedModes.split(',').filter((m): m is Mode => ['drama', 'on_field', 'learn'].includes(m));
-      if (parsed.length) setModes(parsed);
-    }
+    const seedTea = searchParams.get('teadUp');
+    if (seedTea === 'true') setTeadUp(true);
+    if (seedTea === 'false') setTeadUp(false);
     if (seed && messages.length === 0) {
       setTimeout(() => send(seed), 80);
     }
@@ -69,9 +67,10 @@ function ChatPage() {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
   }, [messages, streaming]);
 
-  function persistModes(next: Mode[]) {
-    setModes(next);
-    setProfile({ defaultModes: next });
+  function toggleTeadUp() {
+    const next = !teadUp;
+    setTeadUp(next);
+    setProfile({ teadUpEnabled: next });
   }
 
   function toggleAutoPlay() {
@@ -113,7 +112,7 @@ function ChatPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           messages: next,
-          modes,
+          teadUp,
           league,
           displayName: displayName || undefined,
           euphoriaLensEnabled: getProfile().euphoriaLensEnabled,
@@ -180,15 +179,15 @@ function ChatPage() {
               </svg>
             </button>
           )}
-          <Link href="/scan" className="font-display text-base sm:text-lg font-extrabold text-green tracking-wide shrink-0">
-            Tea'd Up
+          <Link href="/" className="font-display text-base sm:text-lg font-extrabold text-green tracking-wide uppercase shrink-0">
+            SPORTS<span className="text-tangerine">★</span>BFF
           </Link>
         </div>
         <div className="flex items-center gap-1.5 shrink-0">
           {mounted && (
-            <ModeToggle
-              active={modes}
-              onChange={persistModes}
+            <TeaUpToggle
+              enabled={teadUp}
+              onToggle={toggleTeadUp}
               disabled={streaming}
             />
           )}
@@ -227,7 +226,7 @@ function ChatPage() {
       <div ref={scrollRef} className="flex-1 overflow-y-auto px-3 sm:px-4 overscroll-contain">
         <div className="max-w-2xl mx-auto py-5 md:py-8 flex flex-col gap-3.5">
           {messages.length === 0 ? (
-            <EmptyState modes={modes} onAsk={focusInput} onPick={(p) => send(p)} onBrowse={() => setBrowseOpen(true)} league={league} onPickLeague={(l) => { setLeague(l); setProfile({ league: l }); }} />
+            <EmptyState teadUp={teadUp} onAsk={focusInput} onPick={(p) => send(p)} onBrowse={() => setBrowseOpen(true)} league={league} onPickLeague={(l) => { setLeague(l); setProfile({ league: l }); }} />
           ) : (
             messages.map((m, i) => (
               <Bubble
@@ -306,14 +305,14 @@ function ChatPage() {
    ================================================================= */
 
 function EmptyState({
-  modes,
+  teadUp,
   onAsk,
   onPick,
   onBrowse,
   league,
   onPickLeague,
 }: {
-  modes: Mode[];
+  teadUp: boolean;
   onAsk: () => void;
   onPick: (p: string) => void;
   onBrowse: () => void;
@@ -323,11 +322,17 @@ function EmptyState({
   return (
     <div className="text-center mt-2 sm:mt-4 px-1">
       <h1 className="font-display text-[28px] sm:text-[32px] font-bold text-green leading-[1.05] tracking-tight">
-        What do you want
-        <br />
-        the tea on?
+        {teadUp ? (
+          <>What's the tea<br /><span className="italic text-magenta">on?</span></>
+        ) : (
+          <>Ask anything.<br /><span className="italic text-tangerine">No question is dumb.</span></>
+        )}
       </h1>
-      <p className="mt-3 text-[14px] sm:text-[15px] text-ink-soft">Ask anything — I'll spill what I know.</p>
+      <p className="mt-3 text-[14px] sm:text-[15px] text-ink-soft">
+        {teadUp
+          ? "I'll spill what I know — confirmed, reported, or rumor."
+          : "Rules, players, storylines — the league, decoded."}
+      </p>
 
       <button
         onClick={onAsk}

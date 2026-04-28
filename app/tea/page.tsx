@@ -13,7 +13,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { BottomTabs, BottomTabsSpacer } from '@/components/BottomTabs';
-import { ModeToggle, type Mode } from '@/components/ModeToggle';
+import { TeaUpToggle } from '@/components/TeaUpToggle';
 import { TierPill, type Tier } from '@/components/TierPill';
 import { getProfile, setProfile } from '@/lib/profile';
 
@@ -43,7 +43,7 @@ export default function TeaPage() {
   const [data, setData] = useState<TodayResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [modes, setModes] = useState<Mode[]>(['drama', 'on_field', 'learn']);
+  const [teadUp, setTeadUp] = useState<boolean>(false);
   const [displayName, setDisplayName] = useState('');
   const [refreshing, setRefreshing] = useState(false);
 
@@ -51,8 +51,15 @@ export default function TeaPage() {
     setMounted(true);
     const p = getProfile();
     if (p.displayName) setDisplayName(p.displayName);
+    setTeadUp(!!p.teadUpEnabled);
     fetchTea(p);
   }, []);
+
+  function toggleTeadUp() {
+    const next = !teadUp;
+    setTeadUp(next);
+    setProfile({ teadUpEnabled: next });
+  }
 
   async function fetchTea(profile = getProfile()) {
     setLoading(true);
@@ -82,8 +89,11 @@ export default function TeaPage() {
     setRefreshing(false);
   }
 
-  // Build the feed items from /api/today response + a few evergreen sample drops
-  const feed: FeedItem[] = buildFeed(data, modes);
+  // When Tea'd Up is ON, show drama-heavy feed. When OFF, just on-field + learn.
+  const activeCategories: ('drama' | 'on_field' | 'learn')[] = teadUp
+    ? ['drama', 'on_field', 'learn']
+    : ['on_field', 'learn'];
+  const feed: FeedItem[] = buildFeed(data, activeCategories);
 
   const today = new Date();
   const dayName = today.toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase();
@@ -92,12 +102,17 @@ export default function TeaPage() {
   return (
     <main className="min-h-screen flex flex-col bg-white" style={{ minHeight: '100dvh' }}>
       {/* Header */}
-      <header className="px-4 sm:px-6 py-4 border-b border-[var(--hairline)] sticky top-0 z-20 bg-white/95 backdrop-blur">
+      <header className="px-4 sm:px-6 py-3 border-b border-[var(--hairline)] sticky top-0 z-20 bg-white/95 backdrop-blur">
         <div className="max-w-md mx-auto">
+          <div className="flex items-center justify-between gap-3 mb-3">
+            <Link href="/" className="font-display text-base sm:text-lg font-extrabold text-green tracking-wide uppercase shrink-0">
+              SPORTS<span className="text-tangerine">★</span>BFF
+            </Link>
+          </div>
           <div className="flex items-start justify-between gap-3 mb-3">
             <div className="flex-1 min-w-0">
               <h1 className="font-display italic text-[26px] font-bold text-green leading-[1.1]">
-                today's tea{displayName ? `, ${displayName.toLowerCase()}.` : '.'}
+                today{displayName ? `, ${displayName.toLowerCase()}.` : '.'}
               </h1>
               <div className="mt-1 text-[10px] font-mono tracking-wider uppercase text-tangerine flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
@@ -120,7 +135,7 @@ export default function TeaPage() {
 
           {mounted && (
             <div className="flex justify-center">
-              <ModeToggle active={modes} onChange={setModes} size="sm" />
+              <TeaUpToggle enabled={teadUp} onToggle={toggleTeadUp} size="sm" />
             </div>
           )}
         </div>
@@ -166,7 +181,7 @@ export default function TeaPage() {
    Build the feed from /api/today data + bundled evergreen items
    ================================================================= */
 
-function buildFeed(data: TodayResponse | null, activeModes: Mode[]): FeedItem[] {
+function buildFeed(data: TodayResponse | null, activeModes: ('drama' | 'on_field' | 'learn')[]): FeedItem[] {
   const items: FeedItem[] = [];
 
   // Evergreen items — always present (give the feed real depth even on first load)

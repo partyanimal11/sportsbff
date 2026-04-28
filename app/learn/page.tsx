@@ -39,8 +39,11 @@ export default function LearnPage() {
   return (
     <main className="min-h-screen flex flex-col" style={{ minHeight: '100dvh', background: '#ECEAE3' }}>
       {/* Header */}
-      <header className="px-4 sm:px-6 py-4 sm:py-5">
+      <header className="px-4 sm:px-6 pt-3 pb-4">
         <div className="max-w-md mx-auto">
+          <Link href="/" className="inline-block font-display text-base sm:text-lg font-extrabold text-green tracking-wide uppercase mb-3">
+            SPORTS<span className="text-tangerine">★</span>BFF
+          </Link>
           <h1 className="font-display text-[36px] font-bold text-green leading-tight tracking-tight">Learn</h1>
           <p className="mt-1.5 text-[14px] text-ink-soft italic">5 minutes a day. From clueless to confident.</p>
         </div>

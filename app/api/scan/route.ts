@@ -140,14 +140,23 @@ function nextSample(): ScanResult {
 }
 
 export async function POST(req: NextRequest) {
-  // Parse query string for modes flag (Tea'd Up clients send `?modes=drama,on_field,learn`)
+  // Parse query string. New: ?teadUp=true (single master toggle).
+  // Legacy: ?modes=drama,on_field,learn (still supported).
   const url = new URL(req.url);
+  const teadUpParam = url.searchParams.get('teadUp');
   const modesParam = url.searchParams.get('modes');
-  const modes = modesParam
-    ? modesParam.split(',').filter((m): m is 'drama' | 'on_field' | 'learn' =>
-        ['drama', 'on_field', 'learn'].includes(m)
-      )
-    : [];
+
+  let modes: ('drama' | 'on_field' | 'learn')[] = [];
+  if (teadUpParam !== null) {
+    // teadUp=true → all three modes including drama
+    // teadUp=false → on_field + learn only (no drama)
+    const teadUpOn = teadUpParam === 'true' || teadUpParam === '1';
+    modes = teadUpOn ? ['drama', 'on_field', 'learn'] : ['on_field', 'learn'];
+  } else if (modesParam) {
+    modes = modesParam.split(',').filter((m): m is 'drama' | 'on_field' | 'learn' =>
+      ['drama', 'on_field', 'learn'].includes(m)
+    );
+  }
   const wantsModes = modes.length > 0;
 
   // ─────────────────────────────────────────────────────────

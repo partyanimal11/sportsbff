@@ -10,7 +10,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { BottomTabs, BottomTabsSpacer } from '@/components/BottomTabs';
-import { ModeToggle, type Mode } from '@/components/ModeToggle';
+import { TeaUpToggle } from '@/components/TeaUpToggle';
 import { TierPill, type Tier } from '@/components/TierPill';
 import { getProfile, setProfile } from '@/lib/profile';
 
@@ -42,7 +42,7 @@ export default function ScanPage() {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [result, setResult] = useState<ScanResult | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [modes, setModes] = useState<Mode[]>(['drama']);
+  const [teadUp, setTeadUp] = useState<boolean>(false);
   const fileRef = useRef<HTMLInputElement>(null);
   const cameraRef = useRef<HTMLInputElement>(null);
 
@@ -50,15 +50,19 @@ export default function ScanPage() {
   useEffect(() => {
     setMounted(true);
     const p = getProfile();
-    if (p.defaultModes && p.defaultModes.length > 0) {
-      setModes(p.defaultModes as Mode[]);
-    }
+    setTeadUp(!!p.teadUpEnabled);
   }, []);
 
-  function persistModes(next: Mode[]) {
-    setModes(next);
-    setProfile({ defaultModes: next });
+  function toggleTeadUp() {
+    const next = !teadUp;
+    setTeadUp(next);
+    setProfile({ teadUpEnabled: next });
   }
+
+  // Active modes derived from teadUp — drama is gated by the master toggle
+  const modes = teadUp
+    ? (['drama', 'on_field', 'learn'] as const)
+    : (['on_field', 'learn'] as const);
 
   async function handleFile(file: File) {
     const url = URL.createObjectURL(file);
@@ -69,7 +73,7 @@ export default function ScanPage() {
     try {
       const form = new FormData();
       form.append('image', file);
-      const qs = `?modes=${modes.join(',')}`;
+      const qs = `?teadUp=${teadUp ? 'true' : 'false'}`;
       const res = await fetch(`/api/scan${qs}`, { method: 'POST', body: form });
       if (!res.ok) {
         if (res.status === 404) {
@@ -97,7 +101,7 @@ export default function ScanPage() {
     setPreviewUrl(null);
     try {
       // No image — backend returns a sample
-      const qs = `?modes=${modes.join(',')}&sample=${RANDOM_ATHLETES[Math.floor(Math.random() * RANDOM_ATHLETES.length)]}`;
+      const qs = `?teadUp=${teadUp ? 'true' : 'false'}&sample=${RANDOM_ATHLETES[Math.floor(Math.random() * RANDOM_ATHLETES.length)]}`;
       const res = await fetch(`/api/scan${qs}`, { method: 'POST', body: new FormData() });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = (await res.json()) as ScanResult;
@@ -121,11 +125,11 @@ export default function ScanPage() {
     <main className="min-h-screen flex flex-col bg-white">
       {/* Header */}
       <header className="px-4 sm:px-6 py-3 border-b border-[var(--hairline)] flex items-center justify-between gap-3 bg-white sticky top-0 z-10">
-        <Link href="/scan" className="font-display text-lg sm:text-xl font-extrabold text-green tracking-wide shrink-0">
-          Tea'd Up
+        <Link href="/" className="font-display text-base sm:text-lg font-extrabold text-green tracking-wide uppercase shrink-0">
+          SPORTS<span className="text-tangerine">★</span>BFF
         </Link>
         {mounted && (
-          <ModeToggle active={modes} onChange={persistModes} disabled={phase === 'scanning'} />
+          <TeaUpToggle enabled={teadUp} onToggle={toggleTeadUp} disabled={phase === 'scanning'} />
         )}
       </header>
 
@@ -133,7 +137,7 @@ export default function ScanPage() {
         <div className="max-w-md mx-auto">
           {phase === 'idle' && <IdleState onCamera={() => cameraRef.current?.click()} onUpload={() => fileRef.current?.click()} onSample={trySample} />}
           {(phase === 'scanning') && <ScanningState previewUrl={previewUrl} />}
-          {phase === 'result' && result && <ResultCard result={result} modes={modes} onReset={reset} />}
+          {phase === 'result' && result && <ResultCard result={result} modes={[...modes]} onReset={reset} />}
           {phase === 'unknown' && <UnknownState onReset={reset} error={error} />}
 
           {/* Hidden file inputs */}
@@ -330,7 +334,9 @@ function UnknownState({ onReset, error }: { onReset: () => void; error: string |
    Result card — hero band + mode-tabbed sections + actions
    ================================================================= */
 
-function ResultCard({ result, modes, onReset }: { result: ScanResult; modes: Mode[]; onReset: () => void }) {
+type LocalMode = 'drama' | 'on_field' | 'learn';
+
+function ResultCard({ result, modes, onReset }: { result: ScanResult; modes: LocalMode[]; onReset: () => void }) {
   const teamColors = getTeamColors(result.team);
 
   return (

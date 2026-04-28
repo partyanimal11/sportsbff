@@ -13,25 +13,34 @@ export type Profile = {
   league?: 'nfl' | 'nba' | 'both';
   lens: string;
   onboardedAt?: string;
-  dramaMode?: boolean;
   /** When ON, every BFF response auto-plays via TTS after streaming finishes. */
   autoPlayVoice?: boolean;
   /** Override for the lens-default voice. If unset, uses getVoiceForLens(lens). */
   voiceOverride?: string;
-  // Tea'd Up additions
-  /** Active mode pills (Drama / On-field / Learn). Default: ['drama']. */
-  defaultModes?: ('drama' | 'on_field' | 'learn')[];
   /** When true, Learn mode uses the Euphoria voice for explanations. */
   euphoriaLensEnabled?: boolean;
-  /** Set once on first install (Tea'd Up onboarding). */
+  /** Set once on first install. */
   firstSeenAt?: string;
+
+  // ─── Tea'd Up master toggle ─────────────────────────────────────
+  /**
+   * When true, every scan + chat response includes the gossip/drama layer
+   * with confirmation tier pills. When false, sportsBFF stays clean: rules,
+   * storylines, on-field info only — no drama.
+   */
+  teadUpEnabled?: boolean;
+
+  // ─── DEPRECATED but kept for back-compat ───────────────────────
+  /** @deprecated use teadUpEnabled instead */
+  dramaMode?: boolean;
+  /** @deprecated 3-mode toggle replaced by Tea'd Up master switch */
+  defaultModes?: ('drama' | 'on_field' | 'learn')[];
 };
 
 const DEFAULT: Profile = {
   lens: 'plain',
-  dramaMode: false,
+  teadUpEnabled: false,
   autoPlayVoice: false,
-  defaultModes: ['drama'],
   euphoriaLensEnabled: false,
 };
 

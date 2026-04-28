@@ -1,17 +1,19 @@
 'use client';
 
 /**
- * Tea'd Up — landing page.
+ * sportsBFF — landing page.
  *
- * Premium white throughout. v5-style hero with phone mockup showing the scan
- * result + confirmation tier pills as the marketing image. Real-time daily
- * Tea feed (not tarot). Strong serif typography, tangerine CTAs.
+ * Premium white throughout. Scan-result phone mockup as hero image (v5 pattern).
+ * Tea'd Up demoed as the master toggle — flip it to see how the same scan
+ * pivots from clean info to gossip. Four feature scenes follow:
+ * Scan / BFF / Today / Learn.
  */
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { isOnboarded } from '@/lib/profile';
+import { TeaUpToggle } from '@/components/TeaUpToggle';
 
 export default function Root() {
   const router = useRouter();
@@ -26,7 +28,7 @@ export default function Root() {
       <Hero />
       <ScanScene />
       <BFFScene />
-      <TeaScene />
+      <TodayScene />
       <LearnScene />
       <FinalCTA />
       <Footer />
@@ -35,30 +37,20 @@ export default function Root() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   NAV — sticky top, premium white
+   NAV
    ──────────────────────────────────────────────────────────────── */
 
 function Nav() {
   return (
     <header className="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-[var(--hairline)]">
       <div className="max-w-6xl mx-auto px-4 sm:px-8 py-3 flex items-center justify-between gap-3">
-        <Link href="/" className="flex items-center gap-2 shrink-0">
-          <svg viewBox="0 0 100 100" width="22" height="22" aria-hidden>
-            <path d="M 26 30 Q 26 70 38 80 L 56 80 Q 68 70 68 30 Z" fill="#0D2D24" />
-            <ellipse cx="48" cy="83" rx="20" ry="2.5" fill="#0D2D24" />
-            <path d="M 68 38 Q 80 42 80 56 Q 80 66 68 70" stroke="#0D2D24" strokeWidth="3" fill="none" />
-            <path d="M 38 30 Q 47 55 38 80" stroke="#FF6B3D" strokeWidth="2" fill="none" />
-            <path d="M 56 30 Q 47 55 56 80" stroke="#FF6B3D" strokeWidth="2" fill="none" />
-            <path d="M 26 50 Q 47 55 68 50" stroke="#FF6B3D" strokeWidth="2" fill="none" />
-          </svg>
-          <span className="font-display font-extrabold text-[15px] sm:text-[16px] tracking-wide text-green uppercase">
-            Tea'd Up
-          </span>
+        <Link href="/" className="font-display text-base sm:text-[17px] font-extrabold text-green tracking-wide uppercase shrink-0">
+          SPORTS<span className="text-tangerine">★</span>BFF
         </Link>
         <nav className="hidden md:flex items-center gap-7 text-[13px] text-ink-soft">
           <Link href="/scan" className="hover:text-ink">Scan</Link>
-          <Link href="/chat" className="hover:text-ink">BFF</Link>
-          <Link href="/tea" className="hover:text-ink">Tea</Link>
+          <Link href="/chat" className="hover:text-ink">Chat</Link>
+          <Link href="/tea" className="hover:text-ink">Today</Link>
           <Link href="/learn" className="hover:text-ink">Learn</Link>
         </nav>
         <Link
@@ -74,19 +66,21 @@ function Nav() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   HERO — premium white, headline + scan result phone mockup
+   HERO — your sports BFF + scan-result phone mockup
    ──────────────────────────────────────────────────────────────── */
 
 function Hero() {
+  // Demo state — flipping Tea'd Up live so the visitor sees the toggle in action
+  const [demoTeaUp, setDemoTeaUp] = useState(true);
+
   return (
     <section className="relative overflow-hidden bg-white">
-      {/* Soft ambient color washes — subtle, premium */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute -top-24 -left-24 w-[400px] h-[400px] rounded-full bg-tangerine/[0.06] blur-[100px]" />
-        <div className="absolute top-32 -right-24 w-[360px] h-[360px] rounded-full bg-magenta/[0.05] blur-[100px]" />
+        <div className="absolute -top-32 -left-24 w-[440px] h-[440px] rounded-full bg-tangerine/[0.07] blur-[100px]" />
+        <div className="absolute top-32 -right-24 w-[380px] h-[380px] rounded-full bg-magenta/[0.05] blur-[100px]" />
       </div>
 
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-8 sm:pt-16 pb-16 sm:pb-20 grid md:grid-cols-[1.05fr_0.95fr] gap-8 md:gap-14 items-center">
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-10 sm:pt-16 pb-16 sm:pb-20 grid md:grid-cols-[1.05fr_0.95fr] gap-8 md:gap-14 items-center">
         {/* Copy */}
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-ink-soft mb-5 shadow-sm">
@@ -94,18 +88,18 @@ function Hero() {
             Closed beta · iOS + web · Spring 2026
           </div>
 
-          <h1 className="font-display text-[44px] sm:text-[64px] md:text-[72px] font-bold text-green leading-[0.92] tracking-tight">
-            Learn the tea.
+          <h1 className="font-display text-[44px] sm:text-[60px] md:text-[68px] font-bold text-green leading-[0.92] tracking-tight">
+            Learn the game.
             <br />
-            <span className="italic font-medium text-tangerine">Learn the game.</span>
+            <span className="italic font-medium text-tangerine">Get the tea.</span>
           </h1>
 
-          <p className="mt-4 text-[14px] tracking-[0.04em] uppercase font-bold text-tangerine">
+          <p className="mt-3 text-[12px] tracking-[0.18em] uppercase font-bold text-tangerine">
             Your sports BFF.
           </p>
 
-          <p className="mt-4 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed max-w-md">
-            Scan any player. Ask anything. <strong className="text-ink">Get the tea, the rules, and the storylines</strong> — confirmed, reported, never guessed. For everyone who's been told they wouldn't get it.
+          <p className="mt-5 text-[16px] sm:text-[17px] text-ink-soft leading-relaxed max-w-md">
+            <strong className="text-ink">Scan any player.</strong> Get the storylines, the rules, and (if you flip it on) the gossip — confirmed, reported, never guessed. For everyone who's been told they wouldn't get it.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-3 items-center">
@@ -119,7 +113,7 @@ function Hero() {
               href="/scan"
               className="inline-flex items-center gap-2 bg-white text-green font-semibold rounded-full px-6 py-3 text-[14.5px] border border-[var(--hairline)] hover:bg-cream-warm transition"
             >
-              See the scan →
+              Try the scan →
             </Link>
           </div>
 
@@ -136,11 +130,15 @@ function Hero() {
           </div>
         </div>
 
-        {/* Hero image — phone mockup with scan result */}
+        {/* Phone mockup — scan result with live Tea'd Up demo toggle */}
         <div className="relative">
-          <ScanResultMockup />
+          <div className="absolute -top-2 right-0 z-10 flex flex-col items-end gap-1.5">
+            <span className="text-[10px] font-mono tracking-wider uppercase text-muted">tap to flip the vibe →</span>
+            <TeaUpToggle enabled={demoTeaUp} onToggle={() => setDemoTeaUp((v) => !v)} />
+          </div>
+          <ScanResultMockup teadUp={demoTeaUp} />
           <div className="font-script text-magenta text-[16px] rotate-[-2deg] text-center mt-3">
-            scan any player → get the tea ✏
+            scan any player → get the {demoTeaUp ? 'tea' : 'breakdown'} ✏
           </div>
         </div>
       </div>
@@ -148,13 +146,11 @@ function Hero() {
   );
 }
 
-/* The hero phone mockup — the marketing image. Shows a scan result with the
-   team-colored hero band + tier pill + drama claim. Communicates the product
-   in a single visual. */
-function ScanResultMockup() {
+/* The hero phone mockup. Re-renders content based on Tea'd Up toggle state —
+   so the visitor literally sees what flipping the toggle does. */
+function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
   return (
     <div className="relative max-w-md mx-auto">
-      {/* Floating glow */}
       <div className="absolute -inset-8 bg-gradient-to-br from-tangerine/15 via-magenta/12 to-lemon/15 blur-2xl rounded-[60px] -z-10" />
 
       <div
@@ -167,24 +163,10 @@ function ScanResultMockup() {
             '0 56px 80px -32px rgba(13,45,36,0.22)',
         }}
       >
-        {/* Status bar pretender */}
         <div className="px-5 pt-4 pb-2 flex items-center justify-between text-[10px] text-muted-soft font-mono tracking-wider">
           <span>9:41</span>
           <span className="font-bold tracking-widest text-tangerine">● SCAN MODE</span>
           <span>●●●●</span>
-        </div>
-
-        {/* Mode toggle pills */}
-        <div className="px-4 pb-3 flex items-center gap-1.5">
-          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tangerine text-white text-[11px] font-semibold shadow-sm">
-            🔥 Drama
-          </span>
-          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white text-ink-soft text-[11px] font-semibold border border-[var(--hairline)]">
-            🏀 On-field
-          </span>
-          <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-white text-ink-soft text-[11px] font-semibold border border-[var(--hairline)]">
-            📚 Learn
-          </span>
         </div>
 
         {/* Hero band — Sixers colors for Embiid */}
@@ -204,7 +186,6 @@ function ScanResultMockup() {
               <div className="font-display font-bold text-white leading-[0.92] tracking-tight" style={{ fontSize: 'clamp(28px, 5.5vw, 36px)' }}>
                 Joel Embiid
               </div>
-              {/* Live game chip */}
               <div className="mt-2.5 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[9px] font-bold tracking-wider text-white" style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)' }}>
                 <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
                 PHI 102 · MIA 98 · 4Q 2:14
@@ -224,25 +205,40 @@ function ScanResultMockup() {
           </div>
         </div>
 
-        {/* Drama section */}
+        {/* Content varies based on Tea'd Up state */}
         <div className="px-5 py-4">
-          <div className="flex items-center gap-2 text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">
-            <span aria-hidden>🔥</span> Drama
-          </div>
-          <div className="bg-white rounded-2xl p-4 border border-[var(--hairline)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_4px_12px_-6px_rgba(13,45,36,0.08)]">
-            <span className="inline-block px-2 py-0.5 rounded-full text-[9px] font-semibold uppercase tracking-wider mb-2" style={{ background: '#FAEEDA', color: '#854F0B' }}>
-              Speculation
-            </span>
-            <h3 className="font-display font-bold text-[16px] text-green leading-tight">
-              Did he ask out?
-            </h3>
-            <p className="mt-1 text-[13px] text-ink leading-relaxed">
-              Locker-room sources hint Embiid considered a trade in March. Sixers brass denied on the record.
-            </p>
-            <div className="mt-2 text-[11px] text-tangerine font-semibold">
-              ▾ See sources (1)
-            </div>
-          </div>
+          {teadUp ? (
+            // Tea'd Up ON — drama section with tier pill
+            <>
+              <div className="flex items-center gap-2 text-[10px] font-bold tracking-[0.18em] uppercase text-magenta mb-3">
+                <span aria-hidden>🔥</span> Drama
+              </div>
+              <div className="bg-white rounded-2xl p-4 border border-[var(--hairline)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_4px_12px_-6px_rgba(13,45,36,0.08)]">
+                <span className="inline-block px-2 py-0.5 rounded-full text-[9px] font-semibold uppercase tracking-wider mb-2" style={{ background: '#FAEEDA', color: '#854F0B' }}>
+                  Speculation
+                </span>
+                <h3 className="font-display font-bold text-[16px] text-green leading-tight">Did he ask out?</h3>
+                <p className="mt-1 text-[13px] text-ink leading-relaxed">
+                  Locker-room sources hint Embiid considered a trade in March. Sixers brass denied on the record.
+                </p>
+                <div className="mt-2 text-[11px] text-tangerine font-semibold">▾ See sources (1)</div>
+              </div>
+            </>
+          ) : (
+            // Tea'd Up OFF — clean storyline + concept
+            <>
+              <div className="flex items-center gap-2 text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">
+                <span aria-hidden>🏀</span> The story
+              </div>
+              <div className="bg-white rounded-2xl p-4 border border-[var(--hairline)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_4px_12px_-6px_rgba(13,45,36,0.08)]">
+                <h3 className="font-display font-bold text-[16px] text-green leading-tight">"Best center alive" debate</h3>
+                <p className="mt-1 text-[13px] text-ink leading-relaxed">
+                  2023 MVP. 7'0, 280, post-up game from another era. The injury history is the asterisk on every conversation about him.
+                </p>
+                <div className="mt-2 text-[11px] text-tangerine font-semibold">▾ Why it matters</div>
+              </div>
+            </>
+          )}
         </div>
 
         {/* Footer actions — minimal */}
@@ -271,7 +267,7 @@ function ScanResultMockup() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   SCENE 2 — Scan section (white)
+   SCENE 2 — Scan
    ──────────────────────────────────────────────────────────────── */
 
 function ScanScene() {
@@ -281,22 +277,21 @@ function ScanScene() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">① Scan</div>
           <h2 className="font-display text-[40px] sm:text-[52px] font-bold text-green leading-[0.96] tracking-tight">
-            Point. ID. <span className="italic text-tangerine">Tea.</span>
+            Point. ID. <span className="italic text-tangerine">Decoded.</span>
           </h2>
           <p className="mt-4 text-[16px] text-ink-soft leading-relaxed max-w-md mx-auto">
-            Camera, screenshot, or live broadcast. Tea'd Up reads the player and serves the gossip in seconds.
+            Camera, screenshot, or live broadcast. We ID the player and serve the storylines in seconds.
           </p>
         </div>
 
-        {/* Tier pills as proof points */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#E8F0EC', color: '#0F6E56' }}>✓ Confirmed</span>
           <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#E6F1FB', color: '#185FA5' }}>📰 Reported</span>
           <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#FAEEDA', color: '#854F0B' }}>💭 Speculation</span>
           <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#F1EFE8', color: '#5F5E5A' }}>❓ Rumor</span>
         </div>
         <p className="text-center text-[13px] text-ink-soft italic max-w-md mx-auto">
-          Every drama claim labeled. Sourced. Hedged. <strong className="not-italic text-tangerine">Never guessed.</strong>
+          Flip Tea'd Up on and every drama claim ships labeled. <strong className="not-italic text-tangerine">Sourced. Hedged. Never guessed.</strong>
         </p>
 
         <div className="mt-10 text-center">
@@ -310,7 +305,7 @@ function ScanScene() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   SCENE 3 — BFF chat (white, gossip emphasis)
+   SCENE 3 — BFF (chat) with iMessage preview
    ──────────────────────────────────────────────────────────────── */
 
 function BFFScene() {
@@ -318,20 +313,20 @@ function BFFScene() {
     <section className="relative px-5 sm:px-8 py-16 sm:py-24 bg-white border-t border-[var(--hairline)]">
       <div className="max-w-5xl mx-auto grid md:grid-cols-[0.95fr_1.05fr] gap-10 md:gap-14 items-center">
         <div>
-          <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">② Your BFF · the gossip</div>
+          <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">② Chat</div>
           <h2 className="font-display text-[40px] sm:text-[52px] font-bold text-green leading-[0.95] tracking-tight">
-            She's got the tea. <span className="italic text-tangerine">And the receipts.</span>
+            Ask anything. <span className="italic text-tangerine">No question is dumb.</span>
           </h2>
           <p className="mt-4 text-[16px] text-ink-soft leading-relaxed">
-            Confirmed beefs. Reported drama. Off-the-record speculation. Every storyline traced to a source — or labeled <span className="italic text-tangerine font-semibold">never confirmed</span>.
+            The friend who knows every player AND patiently explains a third down. Drill into any team, any storyline, any rule — at your pace.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-2">
             {[
-              { label: 'Trade rumors', emoji: '🔄' },
-              { label: 'Locker-room beefs', emoji: '👀' },
-              { label: 'Burner accounts', emoji: '📱' },
-              { label: 'Contract chaos', emoji: '💰' },
+              { label: '"What\'s a sack?"', emoji: '🏈' },
+              { label: '"Why is OKC so good?"', emoji: '🏀' },
+              { label: '"What happened with KD?"', emoji: '👀' },
+              { label: '"How does the cap work?"', emoji: '💰' },
             ].map((p) => (
               <span key={p.label} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[12px] text-ink-soft font-semibold">
                 <span aria-hidden>{p.emoji}</span>
@@ -350,18 +345,18 @@ function BFFScene() {
               <div className="text-[10px] text-muted uppercase tracking-wider mt-1">storylines</div>
             </div>
             <div>
-              <div className="font-display text-[28px] font-bold text-green leading-none">4</div>
-              <div className="text-[10px] text-muted uppercase tracking-wider mt-1">tiers</div>
+              <div className="font-display text-[28px] font-bold text-green leading-none">∞</div>
+              <div className="text-[10px] text-muted uppercase tracking-wider mt-1">questions</div>
             </div>
           </div>
 
           <p className="mt-6 text-[13px] text-ink-soft italic">
-            Voice mode reads it aloud. Drama mode goes harder. <span className="text-tangerine font-semibold not-italic">Never invents.</span>
+            Voice mode reads it aloud. Tea'd Up adds the gossip. <span className="text-tangerine font-semibold not-italic">Never invents.</span>
           </p>
 
           <div className="mt-6">
             <Link href="/chat" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
-              Spill some tea →
+              Open the chat →
             </Link>
           </div>
         </div>
@@ -382,38 +377,37 @@ function BFFThreadMockup() {
         <div className="flex flex-col gap-2.5">
           <div className="flex justify-end">
             <div className="px-4 py-2.5 text-white text-[14.5px] max-w-[78%]" style={{ background: 'linear-gradient(180deg, #FF7A52 0%, #FF5723 100%)', borderRadius: 20, borderBottomRightRadius: 6 }}>
-              what's the embiid drama 👀
+              what does first down mean
+            </div>
+          </div>
+          <div className="flex">
+            <div className="px-4 py-2.5 text-ink text-[14px] max-w-[88%]" style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}>
+              the offense gets 4 tries to move the ball 10 yards. if they make it → another 4 tries (a "first down"). if not → the other team gets the ball ☕
+            </div>
+          </div>
+          <div className="flex justify-end">
+            <div className="px-4 py-2.5 text-white text-[14.5px] max-w-[78%]" style={{ background: 'linear-gradient(180deg, #FF7A52 0%, #FF5723 100%)', borderRadius: 20, borderBottomRightRadius: 6 }}>
+              ok and embiid drama 👀
             </div>
           </div>
           <div className="flex">
             <div className="px-4 py-2.5 text-ink text-[14px] max-w-[88%]" style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}>
               <span className="inline-flex items-center px-1.5 py-px rounded-full text-[8px] font-semibold uppercase tracking-wider mr-1.5" style={{ background: '#FAEEDA', color: '#854F0B' }}>Speculation</span>
-              <span>locker-room whispers say embiid wanted out in march. sixers denied on the record. but the room knows ☕</span>
-            </div>
-          </div>
-          <div className="flex justify-end">
-            <div className="px-4 py-2.5 text-white text-[14.5px] max-w-[78%]" style={{ background: 'linear-gradient(180deg, #FF7A52 0%, #FF5723 100%)', borderRadius: 20, borderBottomRightRadius: 6 }}>
-              wait who told you this
-            </div>
-          </div>
-          <div className="flex">
-            <div className="px-4 py-2.5 text-ink text-[14px] max-w-[88%]" style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}>
-              <span className="inline-flex items-center px-1.5 py-px rounded-full text-[8px] font-semibold uppercase tracking-wider mr-1.5" style={{ background: '#E6F1FB', color: '#185FA5' }}>Reported</span>
-              <span>the athletic ran it april 3rd. one source on record. so it stays reported — not confirmed. i never lie. ☕</span>
+              <span>flip Tea'd Up on and i'll spill. or stay clean — your call.</span>
             </div>
           </div>
           <div className="flex">
             <div className="px-4 py-2.5 inline-flex items-center gap-1" style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}>
-              <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdot 1.2s ease-in-out infinite', animationDelay: '0s' }} />
-              <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdot 1.2s ease-in-out infinite', animationDelay: '0.2s' }} />
-              <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdot 1.2s ease-in-out infinite', animationDelay: '0.4s' }} />
+              <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdotL 1.2s ease-in-out infinite', animationDelay: '0s' }} />
+              <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdotL 1.2s ease-in-out infinite', animationDelay: '0.2s' }} />
+              <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdotL 1.2s ease-in-out infinite', animationDelay: '0.4s' }} />
             </div>
           </div>
           <div className="text-right text-[10px] text-muted mt-1">Read · 8:15 PM</div>
         </div>
       </div>
       <style jsx>{`
-        @keyframes tdot {
+        @keyframes tdotL {
           0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
           30% { transform: translateY(-3px); opacity: 1; }
         }
@@ -423,25 +417,24 @@ function BFFThreadMockup() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   SCENE 4 — Daily Tea (real-time live feed, NOT tarot)
+   SCENE 4 — Today (live feed)
    ──────────────────────────────────────────────────────────────── */
 
-function TeaScene() {
+function TodayScene() {
   return (
     <section className="relative px-5 sm:px-8 py-16 sm:py-24 bg-white border-t border-[var(--hairline)]">
       <div className="max-w-5xl mx-auto grid md:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-14 items-center">
-        {/* Live feed mockup */}
         <div className="order-2 md:order-1">
-          <TeaFeedMockup />
+          <TodayFeedMockup />
         </div>
 
         <div className="order-1 md:order-2">
-          <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">③ Daily Tea · live</div>
+          <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">③ Today · live</div>
           <h2 className="font-display text-[40px] sm:text-[52px] font-bold text-green leading-[0.95] tracking-tight">
-            The tea. <span className="italic text-tangerine">Real time.</span>
+            What's happening, <span className="italic text-tangerine">right now.</span>
           </h2>
           <p className="mt-4 text-[16px] text-ink-soft leading-relaxed">
-            Every hour, fresh drops from across the league. Trade reports. Locker-room beefs. Burner-account moments. Every entry sourced and tier-labeled.
+            Real-time drops from across the league. Trade reports, on-court moments, breaking news — sourced and tier-labeled. Toggle Tea'd Up on for the gossip layer.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3 text-[12px]">
@@ -450,7 +443,7 @@ function TeaScene() {
               <span className="text-ink-soft font-semibold">Updated hourly</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)]">
-              <span className="text-ink-soft font-semibold">📱 Tap to open in chat</span>
+              <span className="text-ink-soft font-semibold">📱 Tap to ask</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)]">
               <span className="text-ink-soft font-semibold">📤 Built to share</span>
@@ -463,7 +456,7 @@ function TeaScene() {
 
           <div className="mt-6">
             <Link href="/tea" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
-              See today's tea →
+              See today's feed →
             </Link>
           </div>
         </div>
@@ -472,61 +465,20 @@ function TeaScene() {
   );
 }
 
-function TeaFeedMockup() {
+function TodayFeedMockup() {
   const items = [
-    {
-      time: '32 min ago',
-      league: 'NBA',
-      tier: 'reported',
-      tierLabel: 'Reported',
-      tierBg: '#E6F1FB',
-      tierColor: '#185FA5',
-      headline: 'Embiid trade chatter, again',
-      summary: 'The Athletic: Sixers and three teams have had "exploratory conversations" about a trade package centered on Embiid.',
-      source: 'The Athletic · 32m',
-    },
-    {
-      time: '1 hr ago',
-      league: 'NFL',
-      tier: 'confirmed',
-      tierLabel: 'Confirmed',
-      tierBg: '#E8F0EC',
-      tierColor: '#0F6E56',
-      headline: 'Mahomes on the three-peat: "we want it"',
-      summary: "Postgame presser. He's said it before, he said it louder tonight. Reid grinned in the back.",
-      source: 'NFL Network · 1h',
-    },
-    {
-      time: '2 hr ago',
-      league: 'NBA',
-      tier: 'speculation',
-      tierLabel: 'Speculation',
-      tierBg: '#FAEEDA',
-      tierColor: '#854F0B',
-      headline: 'KD reply guy spotted again?',
-      summary: "@gethigher77 quote-tweeted a Wemby highlight at 2:14 AM. The account is, allegedly, KD's. Allegedly.",
-      source: 'Twitter · 2h',
-    },
-    {
-      time: '4 hr ago',
-      league: 'NFL',
-      tier: 'rumor',
-      tierLabel: 'Rumor',
-      tierBg: '#F1EFE8',
-      tierColor: '#5F5E5A',
-      headline: 'Belichick + Bills coordinator role?',
-      summary: "Twitter rumor mill churning. No outlet has touched it. Filed under: probably not but stay tuned.",
-      source: 'Reddit · 4h',
-    },
+    { time: '32m', league: 'NBA', tier: 'reported', tBg: '#E6F1FB', tColor: '#185FA5', headline: 'Embiid trade chatter, again', summary: 'Sixers and three teams in "exploratory" talks per The Athletic.', src: 'The Athletic' },
+    { time: '1h', league: 'NFL', tier: 'confirmed', tBg: '#E8F0EC', tColor: '#0F6E56', headline: 'Mahomes on the three-peat', summary: '"We want it." Postgame presser. Reid grinned in the back.', src: 'NFL Network' },
+    { time: '2h', league: 'NBA', tier: 'speculation', tBg: '#FAEEDA', tColor: '#854F0B', headline: 'KD reply guy spotted, again?', summary: '@gethigher77 quote-tweeted a Wemby highlight at 2:14 AM.', src: 'Twitter' },
+    { time: '4h', league: 'NFL', tier: 'rumor', tBg: '#F1EFE8', tColor: '#5F5E5A', headline: 'Belichick + Bills coordinator role?', summary: 'Twitter rumor. No outlet has touched it.', src: 'Reddit' },
   ];
 
   return (
     <div className="relative max-w-md mx-auto w-full">
-      {/* Phone-frame styled feed */}
       <div className="bg-white rounded-3xl border border-[var(--hairline)] overflow-hidden shadow-[0_24px_48px_-16px_rgba(13,45,36,0.18)]">
         <div className="px-5 pt-4 pb-3 border-b border-[var(--hairline)] flex items-center justify-between">
           <div>
-            <div className="font-display italic text-[18px] font-bold text-green leading-none">today's tea</div>
+            <div className="font-display italic text-[18px] font-bold text-green leading-none">today.</div>
             <div className="text-[10px] text-muted font-mono uppercase tracking-wider mt-1">tuesday · apr 28 · live</div>
           </div>
           <div className="inline-flex items-center gap-1.5 text-[10px] font-bold tracking-wider text-tangerine">
@@ -536,24 +488,21 @@ function TeaFeedMockup() {
         </div>
         <div className="divide-y divide-[var(--hairline)]">
           {items.map((it, i) => (
-            <div key={i} className="px-5 py-3.5 hover:bg-cream-warm transition cursor-pointer">
+            <div key={i} className="px-5 py-3.5">
               <div className="flex items-center gap-2 mb-1.5">
                 <span className="inline-block px-1.5 py-px rounded text-[8px] font-bold tracking-widest uppercase" style={{ background: it.league === 'NBA' ? '#E6F1FB' : '#FCE4EC', color: it.league === 'NBA' ? '#185FA5' : '#9C2454' }}>
                   {it.league}
                 </span>
-                <span className="inline-block px-1.5 py-px rounded-full text-[8px] font-semibold uppercase tracking-wider" style={{ background: it.tierBg, color: it.tierColor }}>
-                  {it.tierLabel}
+                <span className="inline-block px-1.5 py-px rounded-full text-[8px] font-semibold uppercase tracking-wider" style={{ background: it.tBg, color: it.tColor }}>
+                  {it.tier}
                 </span>
-                <span className="text-[10px] text-muted ml-auto font-mono">{it.time}</span>
+                <span className="text-[10px] text-muted ml-auto font-mono">{it.time} ago</span>
               </div>
               <h3 className="font-display font-bold text-[14.5px] text-green leading-tight">{it.headline}</h3>
               <p className="mt-1 text-[12.5px] text-ink-soft leading-relaxed">{it.summary}</p>
-              <div className="mt-1.5 text-[10px] text-muted italic">{it.source}</div>
+              <div className="mt-1.5 text-[10px] text-muted italic">{it.src}</div>
             </div>
           ))}
-        </div>
-        <div className="px-5 py-3 bg-cream-warm/40 text-center">
-          <span className="text-[11px] text-tangerine font-semibold">Pull for fresh tea ↓</span>
         </div>
       </div>
     </div>
@@ -561,7 +510,7 @@ function TeaFeedMockup() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   SCENE 5 — Learn (light grey, the only non-white surface)
+   SCENE 5 — Learn (light grey)
    ──────────────────────────────────────────────────────────────── */
 
 function LearnScene() {
@@ -571,7 +520,7 @@ function LearnScene() {
         <div>
           <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">④ Learn</div>
           <h2 className="font-display text-[40px] sm:text-[52px] font-bold text-green leading-[0.95] tracking-tight">
-            Learn the league. <span className="italic text-tangerine">5 minutes</span> at a time.
+            Master both leagues. <span className="italic text-tangerine">5 minutes</span> at a time.
           </h2>
           <p className="mt-4 text-[16px] text-ink-soft leading-relaxed">
             Bite-sized lessons. Glossary in plain English. Plus Euphoria mode — more shows coming.
@@ -624,7 +573,7 @@ function LearnScene() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   FINAL CTA (white)
+   FINAL CTA
    ──────────────────────────────────────────────────────────────── */
 
 function FinalCTA() {
@@ -663,7 +612,7 @@ function Footer() {
     <footer className="px-6 py-10 bg-green-deep text-white" style={{ paddingBottom: 'max(env(safe-area-inset-bottom), 2.5rem)' }}>
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
         <div>
-          <div className="font-display font-bold text-base tracking-wide">Tea'd Up</div>
+          <div className="font-display font-extrabold text-base tracking-wide uppercase">SPORTS<span className="text-tangerine">★</span>BFF</div>
           <div className="font-display italic text-xs text-white/60 mt-1">your sports BFF</div>
         </div>
         <div className="text-[10px] text-white/40 font-mono tracking-widest uppercase">v1.0 · spring 2026 · NFL + NBA</div>
