@@ -226,7 +226,7 @@ function ChatPage() {
       <div ref={scrollRef} className="flex-1 overflow-y-auto px-3 sm:px-4 overscroll-contain">
         <div className="max-w-2xl mx-auto py-5 md:py-8 flex flex-col gap-3.5">
           {messages.length === 0 ? (
-            <EmptyState teadUp={teadUp} onAsk={focusInput} onPick={(p) => send(p)} onBrowse={() => setBrowseOpen(true)} league={league} onPickLeague={(l) => { setLeague(l); setProfile({ league: l }); }} />
+            <EmptyState teadUp={teadUp} onAsk={focusInput} onPick={(p) => send(p)} onBrowse={() => setBrowseOpen(true)} league={league} onPickLeague={(l) => { setLeague(l); setProfile({ league: l }); }} onToggleTeadUp={toggleTeadUp} />
           ) : (
             messages.map((m, i) => (
               <Bubble
@@ -306,11 +306,9 @@ function ChatPage() {
 
 function EmptyState({
   teadUp,
-  onAsk,
   onPick,
   onBrowse,
-  league,
-  onPickLeague,
+  onToggleTeadUp,
 }: {
   teadUp: boolean;
   onAsk: () => void;
@@ -318,66 +316,118 @@ function EmptyState({
   onBrowse: () => void;
   league: 'nfl' | 'nba' | 'both';
   onPickLeague: (l: 'nfl' | 'nba' | 'both') => void;
+  onToggleTeadUp: () => void;
 }) {
   return (
-    <div className="text-center mt-2 sm:mt-4 px-1">
-      <h1 className="font-display text-[28px] sm:text-[32px] font-bold text-green leading-[1.05] tracking-tight">
-        {teadUp ? (
-          <>What's the tea<br /><span className="italic text-magenta">on?</span></>
-        ) : (
-          <>Ask anything.<br /><span className="italic text-tangerine">No question is dumb.</span></>
-        )}
-      </h1>
-      <p className="mt-3 text-[14px] sm:text-[15px] text-ink-soft">
-        {teadUp
-          ? "I'll spill what I know — confirmed, reported, or rumor."
-          : "Rules, players, storylines — the league, decoded."}
-      </p>
+    <div className="mt-2 sm:mt-4 px-1">
+      {/* Goldie intro */}
+      <div className="flex flex-col items-center text-center">
+        <div
+          className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-pink-soft mb-3"
+          style={{ background: '#FDEEF1' }}
+        >
+          <img
+            src="/brand/goldie.png"
+            alt="Goldie, your sports BFF"
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
 
+        <h1 className="font-display text-[28px] sm:text-[32px] font-bold text-green leading-[1.05] tracking-tight">
+          {teadUp ? (
+            <>Spill the tea, Goldie.<br /><span className="italic text-magenta">I want everything.</span></>
+          ) : (
+            <>Ask anything.<br /><span className="italic text-tangerine">No question is dumb.</span></>
+          )}
+        </h1>
+        <p className="mt-2 text-[13px] sm:text-[14px] text-ink-soft max-w-xs">
+          {teadUp
+            ? "I'll share what I know — confirmed, reported, or rumor. Tier-tagged so you know the source."
+            : "Rules, players, storylines — the league, decoded. Flip Tea'd Up on if you want the gossip layer too."}
+        </p>
+      </div>
+
+      {/* TEA'D UP — huge promotion banner */}
       <button
-        onClick={onAsk}
-        className="mt-5 w-full inline-flex items-center justify-center gap-2 bg-tangerine text-white font-semibold rounded-full py-4 text-[15px] hover:bg-tangerine-dark transition shadow-[0_4px_16px_-4px_rgba(255,107,61,0.4)]"
+        onClick={onToggleTeadUp}
+        aria-pressed={teadUp}
+        className="mt-5 w-full block rounded-3xl p-4 sm:p-5 text-left transition shadow-[0_8px_22px_-10px_rgba(232,75,122,0.4)]"
+        style={{
+          background: teadUp
+            ? 'linear-gradient(135deg, #E84B7A 0%, #FF6B3D 100%)'
+            : 'linear-gradient(135deg, #FDEEF1 0%, #FFE7DB 100%)',
+          color: teadUp ? '#FFFFFF' : '#0D2D24',
+        }}
       >
-        💬 Ask anything →
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-start gap-3 min-w-0">
+            <span className={`text-3xl shrink-0 ${teadUp ? 'animate-pulse' : ''}`} aria-hidden>☕</span>
+            <div className="min-w-0">
+              <div className="text-[10px] font-bold tracking-[0.22em] uppercase opacity-80">
+                Tea'd Up · {teadUp ? 'ON' : 'OFF'}
+              </div>
+              <div className="font-display font-bold text-[18px] sm:text-[20px] leading-tight mt-0.5">
+                {teadUp ? "You're getting the gossip layer" : "Want the gossip layer?"}
+              </div>
+              <div className="text-[12px] sm:text-[13px] opacity-90 leading-snug mt-0.5">
+                {teadUp
+                  ? "Drama, beefs, burner accounts — every claim tier-tagged. Tap to turn off."
+                  : "Drama, beefs, burner accounts — tap to flip it on."}
+              </div>
+            </div>
+          </div>
+          <span className="text-[20px] shrink-0" aria-hidden>{teadUp ? '✓' : '→'}</span>
+        </div>
       </button>
 
+      {/* Main CTA — opens prompt browser */}
+      <button
+        onClick={onBrowse}
+        className="mt-4 w-full inline-flex items-center justify-center gap-2 bg-tangerine text-white font-semibold rounded-full py-4 text-[15px] hover:bg-tangerine-dark transition shadow-[0_4px_16px_-4px_rgba(255,107,61,0.4)]"
+      >
+        💬 Browse questions to ask →
+      </button>
+
+      {/* Find a player — clearly framed */}
       <div className="mt-7 flex items-center gap-3">
         <div className="flex-1 h-px bg-[var(--hairline)]" />
-        <span className="text-[11px] text-muted tracking-wider uppercase">or find tea by team</span>
+        <span className="text-[11px] text-muted tracking-wider uppercase">or look up a player</span>
         <div className="flex-1 h-px bg-[var(--hairline)]" />
       </div>
 
       <div className="mt-4 grid grid-cols-2 gap-2.5">
         {[
-          { id: 'nba' as const, label: 'NBA', sub: '30 teams · 82 games', emoji: '🏀' },
-          { id: 'nfl' as const, label: 'NFL', sub: '32 teams · Sundays', emoji: '🏈' },
+          { id: 'nba' as const, label: 'NBA player', sub: 'Tell me about a star', emoji: '🏀', seed: 'I want to learn about a specific NBA player. Suggest 5 stars I should know about, with one sentence on each.' },
+          { id: 'nfl' as const, label: 'NFL player', sub: 'Tell me about a star', emoji: '🏈', seed: 'I want to learn about a specific NFL player. Suggest 5 stars I should know about, with one sentence on each.' },
         ].map((s) => (
           <button
             key={s.id}
-            onClick={() => onPick(`What's the latest tea in the ${s.label}?`)}
-            className="bg-white border border-[var(--hairline)] rounded-2xl p-4 text-left hover:bg-cream-warm transition shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]"
+            onClick={() => onPick(s.seed)}
+            className="bg-white border border-[var(--hairline)] rounded-2xl p-4 text-left hover:bg-cream-warm hover:border-tangerine/40 transition shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]"
           >
             <div className="text-3xl mb-2" aria-hidden>{s.emoji}</div>
-            <div className="font-display font-bold text-[18px] text-green">{s.label}</div>
-            <div className="text-[11px] text-ink-soft mt-0.5">{s.sub}</div>
+            <div className="font-display font-bold text-[16px] text-green leading-tight">{s.label}</div>
+            <div className="text-[11px] text-ink-soft mt-0.5 italic">{s.sub} →</div>
           </button>
         ))}
       </div>
 
-      <p className="mt-7 text-[11px] text-muted">Try one to start:</p>
-      <div className="mt-3 flex flex-wrap gap-1.5 sm:gap-2 justify-center">
+      {/* Quick prompts */}
+      <p className="mt-7 text-[11px] text-muted text-center">Or try one of these to start:</p>
+      <div className="mt-3 flex flex-col gap-2">
         {STARTER_PROMPTS.slice(0, 4).map((q) => (
           <button
             key={q}
             onClick={() => onPick(q)}
-            className="text-[12px] sm:text-[13px] bg-white border border-[var(--hairline)] rounded-full px-3 sm:px-4 py-1.5 sm:py-2 text-ink-soft hover:bg-green hover:text-white hover:border-green transition"
+            className="w-full text-left text-[13px] sm:text-[14px] bg-white border border-[var(--hairline)] rounded-2xl px-4 py-3 text-green hover:bg-cream-warm hover:border-tangerine/40 transition flex items-center justify-between gap-2"
           >
-            {q}
+            <span>{q}</span>
+            <span className="text-tangerine shrink-0">→</span>
           </button>
         ))}
       </div>
 
-      <button onClick={onBrowse} className="mt-5 inline-flex items-center gap-2 text-[13px] font-semibold text-tangerine hover:text-tangerine-dark">
+      <button onClick={onBrowse} className="mt-5 w-full inline-flex items-center justify-center gap-2 text-[13px] font-semibold text-tangerine hover:text-tangerine-dark">
         Browse 100+ more questions →
       </button>
     </div>
@@ -411,10 +461,11 @@ function Bubble({
     voicePlayer.play(messageId, m.content, { lens: 'plain' });
   }
 
-  // Typing indicator — three animated dots
+  // Typing indicator — three animated dots, with Goldie avatar
   if (showTyping) {
     return (
       <div className="flex gap-2 items-end">
+        <GoldieAvatar />
         <div
           className="rounded-[20px] px-4 py-3 inline-flex items-center gap-1"
           style={{
@@ -436,37 +487,38 @@ function Bubble({
     );
   }
 
-  // iMessage-style bubble (BFF cream-grey + tangerine user)
+  // iMessage-style bubble (BFF cream + deep-green user)
   return (
     <div className={`flex flex-col ${m.role === 'user' ? 'items-end' : 'items-start'} gap-1`}>
-      <div
-        className={`max-w-[80%] sm:max-w-[78%] px-4 py-2.5 text-[15px] leading-[1.45] ${
-          m.role === 'user'
-            ? 'text-white'
-            : 'text-ink'
-        }`}
-        style={{
-          background: m.role === 'user'
-            ? 'linear-gradient(180deg, #FF7A52 0%, #FF5723 100%)'
-            : '#F1EFE8',
-          borderRadius: 20,
-          borderBottomRightRadius: m.role === 'user' ? 6 : 20,
-          borderBottomLeftRadius: m.role === 'user' ? 20 : 6,
-          boxShadow: m.role === 'user'
-            ? '0 1px 0 rgba(255,255,255,0.25) inset, 0 4px 12px -4px rgba(255,107,61,0.4)'
-            : '0 1px 0 rgba(255,255,255,0.6) inset, 0 1px 2px rgba(13,45,36,0.04)',
-        }}
-      >
-        {isAssistant ? (
-          <BFFContent text={m.content} />
-        ) : (
-          <span className="whitespace-pre-wrap">{m.content}</span>
-        )}
+      <div className={`flex ${m.role === 'user' ? 'flex-row-reverse' : 'flex-row'} items-end gap-2 ${m.role === 'user' ? 'self-end' : 'self-start'} max-w-[88%]`}>
+        {isAssistant && <GoldieAvatar />}
+        <div
+          className={`px-4 py-2.5 text-[15px] leading-[1.45] ${
+            m.role === 'user' ? 'text-white' : 'text-ink'
+          }`}
+          style={{
+            background: m.role === 'user'
+              ? 'linear-gradient(180deg, #143A2E 0%, #0D2D24 100%)'
+              : '#F1EFE8',
+            borderRadius: 20,
+            borderBottomRightRadius: m.role === 'user' ? 6 : 20,
+            borderBottomLeftRadius: m.role === 'user' ? 20 : 6,
+            boxShadow: m.role === 'user'
+              ? '0 1px 0 rgba(255,255,255,0.15) inset, 0 4px 12px -4px rgba(13,45,36,0.4)'
+              : '0 1px 0 rgba(255,255,255,0.6) inset, 0 1px 2px rgba(13,45,36,0.04)',
+          }}
+        >
+          {isAssistant ? (
+            <BFFContent text={m.content} />
+          ) : (
+            <span className="whitespace-pre-wrap">{m.content}</span>
+          )}
+        </div>
       </div>
 
-      {/* Read receipt + play button row, only on the last assistant message */}
+      {/* Read receipt + read-aloud button row, only on the last assistant message */}
       {(canPlay || (isLastMessage && m.role === 'user')) && (
-        <div className={`flex items-center gap-2 ${m.role === 'user' ? 'flex-row-reverse' : ''} mt-0.5`}>
+        <div className={`flex items-center gap-2 ${m.role === 'user' ? 'flex-row-reverse' : 'pl-9'} mt-0.5`}>
           {isLastMessage && m.role === 'user' && (
             <span className="text-[10px] text-muted">Delivered</span>
           )}
@@ -475,25 +527,48 @@ function Bubble({
               type="button"
               onClick={handlePlay}
               disabled={isLoading}
-              aria-label={isPlaying ? 'Stop voice' : 'Play voice'}
-              className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold transition ${
+              aria-label={isPlaying ? 'Stop reading' : 'Read this answer aloud'}
+              className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold transition ${
                 isPlaying
                   ? 'bg-tangerine text-white'
-                  : 'text-ink-soft bg-cream-warm border border-[var(--hairline)] hover:border-tangerine hover:text-tangerine'
+                  : 'text-ink-soft bg-white border border-[var(--hairline)] hover:border-tangerine hover:text-tangerine'
               }`}
+              title="Have Goldie read this answer aloud"
             >
               {isLoading ? (
-                <span className="inline-block w-2.5 h-2.5 rounded-full border-[1.2px] border-current border-t-transparent animate-spin" />
+                <span className="inline-block w-3 h-3 rounded-full border-[1.5px] border-current border-t-transparent animate-spin" />
               ) : isPlaying ? (
-                <svg width="9" height="9" viewBox="0 0 12 12" fill="currentColor"><rect x="2" y="2" width="3" height="8" rx="0.5" /><rect x="7" y="2" width="3" height="8" rx="0.5" /></svg>
+                <svg width="10" height="10" viewBox="0 0 12 12" fill="currentColor"><rect x="2" y="2" width="3" height="8" rx="0.5" /><rect x="7" y="2" width="3" height="8" rx="0.5" /></svg>
               ) : (
-                <svg width="9" height="9" viewBox="0 0 12 12" fill="currentColor"><path d="M3 2 L10 6 L3 10 Z" /></svg>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <path d="M11 5L6 9H2v6h4l5 4V5z" />
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                </svg>
               )}
-              <span>{isLoading ? '…' : isPlaying ? 'Stop' : 'Play'}</span>
+              <span>{isLoading ? 'Loading…' : isPlaying ? 'Stop' : 'Read aloud'}</span>
             </button>
           )}
         </div>
       )}
+    </div>
+  );
+}
+
+/**
+ * Goldie avatar — small circular portrait shown next to BFF messages.
+ */
+function GoldieAvatar() {
+  return (
+    <div
+      className="shrink-0 w-7 h-7 rounded-full overflow-hidden border border-[var(--hairline)] mb-0.5"
+      style={{ background: '#FDEEF1' }}
+      aria-hidden
+    >
+      <img
+        src="/brand/goldie.png"
+        alt=""
+        className="w-full h-full object-cover object-top"
+      />
     </div>
   );
 }
@@ -529,75 +604,164 @@ const COLOR_MAP: Record<string, { bg: string; text: string }> = {
 
 function BrowsePrompts({ onPick, onClose }: { onPick: (p: string) => void; onClose: () => void }) {
   const [query, setQuery] = useState('');
-  const [activeCat, setActiveCat] = useState<string>(PROMPT_LIBRARY[0].id);
+  // On mobile, show a 2-step picker: categories grid → prompts list. On desktop, side-by-side.
+  const [activeCat, setActiveCat] = useState<string | null>(null);
+
   const q = query.trim().toLowerCase();
   const filteredCats = q
     ? PROMPT_LIBRARY.map((c) => ({ ...c, prompts: c.prompts.filter((p) => p.toLowerCase().includes(q)) })).filter((c) => c.prompts.length > 0)
     : PROMPT_LIBRARY;
-  const cat = filteredCats.find((c) => c.id === activeCat) ?? filteredCats[0];
+
+  // When searching, just show all matching prompts mixed across categories
+  const searchResults: string[] = q
+    ? filteredCats.flatMap((c) => c.prompts).slice(0, 50)
+    : [];
+
+  const cat = filteredCats.find((c) => c.id === activeCat) ?? null;
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => { document.body.style.overflow = ''; };
   }, []);
 
+  function pickRandom() {
+    const all = PROMPT_LIBRARY.flatMap((c) => c.prompts);
+    onPick(all[Math.floor(Math.random() * all.length)]);
+  }
+
   return (
     <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center" role="dialog" aria-modal>
       <div className="absolute inset-0 bg-ink/40 backdrop-blur-sm" onClick={onClose} />
-      <div className="relative w-full md:max-w-3xl bg-white md:rounded-[28px] rounded-t-[28px] shadow-2xl overflow-hidden flex flex-col max-h-[90vh] md:max-h-[80vh]">
+      <div className="relative w-full md:max-w-3xl bg-white md:rounded-[28px] rounded-t-[28px] shadow-2xl overflow-hidden flex flex-col max-h-[92vh] md:max-h-[82vh]">
+        {/* Header */}
         <div className="px-5 py-4 border-b border-[var(--hairline)] flex items-center gap-3">
-          <div className="font-display text-lg font-bold text-green flex-1">Browse prompts.</div>
+          {/* Mobile-only back button when a category is open */}
+          {cat && !q && (
+            <button
+              onClick={() => setActiveCat(null)}
+              aria-label="Back to all categories"
+              className="md:hidden w-9 h-9 rounded-full hover:bg-cream-warm transition flex items-center justify-center text-ink-soft"
+            >
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                <path d="M10 13 L4 8 L10 3" />
+              </svg>
+            </button>
+          )}
+          <div className="font-display text-lg font-bold text-green flex-1 min-w-0 truncate">
+            {cat && !q ? <><span aria-hidden>{cat.emoji}</span> {cat.name}</> : 'Ask Goldie anything.'}
+          </div>
           <button onClick={onClose} className="w-9 h-9 rounded-full hover:bg-cream-warm transition flex items-center justify-center text-ink-soft" aria-label="Close">
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 3 L13 13 M13 3 L3 13" /></svg>
           </button>
         </div>
-        <div className="px-5 pt-3 pb-2 border-b border-[var(--hairline)]">
+
+        {/* Search + Surprise me */}
+        <div className="px-5 pt-3 pb-3 border-b border-[var(--hairline)] flex items-center gap-2">
           <input
             autoFocus
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search prompts…"
-            className="w-full bg-cream-warm border border-[var(--hairline)] rounded-full px-4 py-2 text-[14px] focus:outline-none"
+            placeholder="Search 100+ prompts…"
+            className="flex-1 min-w-0 bg-cream-warm border border-[var(--hairline)] rounded-full px-4 py-2.5 text-[14px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
           />
+          <button
+            onClick={pickRandom}
+            className="shrink-0 inline-flex items-center gap-1 bg-tangerine text-white font-semibold rounded-full px-3.5 py-2.5 text-[12px] hover:bg-tangerine-dark transition"
+            title="Pick a random prompt"
+          >
+            🎲 <span className="hidden sm:inline">Surprise me</span>
+          </button>
         </div>
+
+        {/* Body */}
         <div className="flex-1 overflow-hidden flex flex-col md:flex-row">
-          <nav className="md:w-52 md:border-r border-[var(--hairline)] md:overflow-y-auto md:py-3 px-3 md:px-2 py-2.5">
-            <div className="flex md:flex-col gap-1.5 overflow-x-auto md:overflow-visible">
-              {filteredCats.map((c) => {
-                const isActive = c.id === cat?.id;
-                const colors = COLOR_MAP[c.color] ?? COLOR_MAP.tangerine;
-                return (
-                  <button
-                    key={c.id}
-                    onClick={() => setActiveCat(c.id)}
-                    className={`shrink-0 flex items-center gap-2 px-3 py-2 rounded-xl text-left text-[13px] font-medium transition whitespace-nowrap md:whitespace-normal ${
-                      isActive ? `${colors.bg} ${colors.text}` : 'text-ink-soft hover:bg-cream-warm'
-                    }`}
-                  >
-                    <span>{c.emoji}</span>
-                    <span className="flex-1">{c.name}</span>
-                  </button>
-                );
-              })}
+          {/* Search-mode: flat list of matching prompts */}
+          {q && (
+            <div className="flex-1 overflow-y-auto p-4">
+              {searchResults.length > 0 ? (
+                <div className="flex flex-col gap-2">
+                  {searchResults.map((p) => (
+                    <button
+                      key={p}
+                      onClick={() => onPick(p)}
+                      className="text-left bg-white border border-[var(--hairline)] rounded-2xl px-4 py-3 text-[14px] text-ink hover:border-tangerine hover:bg-cream-warm transition flex items-center justify-between gap-2"
+                    >
+                      <span>{p}</span>
+                      <span className="text-tangerine shrink-0">→</span>
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center text-muted py-12">No prompts match &quot;{query}&quot;.</div>
+              )}
             </div>
-          </nav>
-          <div className="flex-1 overflow-y-auto p-4">
-            {cat ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {cat.prompts.map((p) => (
+          )}
+
+          {/* Browse-mode: category sidebar (desktop) + prompts list (right) / category grid (mobile) */}
+          {!q && (
+            <>
+              {/* Desktop sidebar — vertical category list */}
+              <nav className="hidden md:block md:w-56 md:border-r border-[var(--hairline)] md:overflow-y-auto py-3 px-2">
+                <div className="flex flex-col gap-1">
+                  {PROMPT_LIBRARY.map((c) => {
+                    const isActive = activeCat === c.id || (!activeCat && c === PROMPT_LIBRARY[0]);
+                    const colors = COLOR_MAP[c.color] ?? COLOR_MAP.tangerine;
+                    return (
+                      <button
+                        key={c.id}
+                        onClick={() => setActiveCat(c.id)}
+                        className={`flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-left text-[13px] font-medium transition ${
+                          isActive ? `${colors.bg} ${colors.text}` : 'text-ink-soft hover:bg-cream-warm'
+                        }`}
+                      >
+                        <span className="text-base">{c.emoji}</span>
+                        <span className="flex-1">{c.name}</span>
+                        <span className="text-[10px] text-muted">{c.prompts.length}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </nav>
+
+              {/* Mobile: 2-column category grid (when no category picked) */}
+              {!cat && (
+                <div className="md:hidden flex-1 overflow-y-auto p-4">
+                  <p className="text-[11px] text-muted uppercase tracking-wider mb-3 text-center">Pick a category</p>
+                  <div className="grid grid-cols-2 gap-2.5">
+                    {PROMPT_LIBRARY.map((c) => {
+                      const colors = COLOR_MAP[c.color] ?? COLOR_MAP.tangerine;
+                      return (
+                        <button
+                          key={c.id}
+                          onClick={() => setActiveCat(c.id)}
+                          className={`bg-white border border-[var(--hairline)] rounded-2xl p-4 text-left hover:bg-cream-warm transition shadow-[0_4px_12px_-6px_rgba(13,45,36,0.08)] flex flex-col gap-1.5 min-h-[112px]`}
+                        >
+                          <div className={`text-3xl mb-1 ${colors.text}`} aria-hidden>{c.emoji}</div>
+                          <div className="font-display font-bold text-[14px] text-green leading-tight">{c.name}</div>
+                          <div className="text-[10px] text-ink-soft italic line-clamp-2">{c.description}</div>
+                          <div className="text-[10px] text-muted mt-auto">{c.prompts.length} prompts →</div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* Prompts list (desktop always; mobile when category picked) */}
+              <div className={`flex-1 overflow-y-auto p-4 ${!cat ? 'hidden md:block' : ''}`}>
+                {(cat ?? PROMPT_LIBRARY[0]).prompts.map((p) => (
                   <button
                     key={p}
                     onClick={() => onPick(p)}
-                    className="text-left bg-white border border-[var(--hairline)] rounded-xl px-4 py-3 text-[14px] text-ink hover:border-green hover:bg-cream-warm transition"
+                    className="block w-full text-left bg-white border border-[var(--hairline)] rounded-2xl px-4 py-3 text-[14px] text-ink hover:border-tangerine hover:bg-cream-warm transition mb-2 flex items-center justify-between gap-2"
                   >
-                    {p}
+                    <span>{p}</span>
+                    <span className="text-tangerine shrink-0">→</span>
                   </button>
                 ))}
               </div>
-            ) : (
-              <div className="text-center text-muted py-12">No prompts match "{query}".</div>
-            )}
-          </div>
+            </>
+          )}
         </div>
       </div>
     </div>

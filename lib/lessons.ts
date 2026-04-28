@@ -80,7 +80,7 @@ export const LESSONS: Lesson[] = [
       { type: 'keyterm', term: 'Quarterback (QB)', def: 'The guy who throws the ball. The most important player on the field. Also the one in the commercials.' },
       { type: 'keyterm', term: 'Wide receiver (WR)', def: 'The guy who runs downfield to catch the QB\'s passes.' },
       { type: 'keyterm', term: 'Running back (RB)', def: 'The guy the QB hands the ball to so he can run with it.' },
-      { type: 'keyterm', term: 'Sack', def: "When a defender tackles the QB before he can throw. Costs the offense yards and ends the play. *(Spotted: a quarterback in the dirt.)*" },
+      { type: 'keyterm', term: 'Sack', def: "When a defender tackles the QB before he can throw. Costs the offense yards and ends the play. The QB ends up on the grass while the defender celebrates." },
       { type: 'keyterm', term: 'Interception', def: "When the defense catches a pass meant for the offense. Possession flips immediately. Devastating." },
       { type: 'keyterm', term: 'Fumble', def: "When the player carrying the ball drops it. Whoever picks it up first owns it." },
       { type: 'keyterm', term: 'First down', def: "When the offense gets the 10 yards they needed. Fresh set of four tries. Crowd cheers." },

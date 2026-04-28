@@ -76,7 +76,7 @@ export const PROMPT_LIBRARY: PromptCategory[] = [
     description: "Off-field beef, group chats, scandals, and tea.",
     color: 'magenta',
     prompts: [
-      "Why is everyone saying KD is Gossip Girl?",
+      "Why does KD keep getting caught running burner accounts?",
       "What's the deal with Travis Kelce and Taylor Swift?",
       "Who are the most-hated teams in each league?",
       "What was the Luka trade and why was it shocking?",
@@ -264,7 +264,7 @@ export function allPrompts(): { text: string; categoryId: string; category: stri
  */
 export const STARTER_PROMPTS = [
   "What's a sack?",
-  "Why is everyone saying KD is Gossip Girl?",
+  "Why does KD keep getting caught running burner accounts?",
   "How does the salary cap work?",
   "What's the trade deadline?",
   "How does fantasy football work?",

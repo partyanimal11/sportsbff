@@ -239,7 +239,7 @@ const ENTRIES: DemoEntry[] = [
   // ─────────── NBA: players ───────────
   {
     id: 'kd-burner',
-    triggers: ['kd', 'kevin durant', 'gethigher', 'burner', 'gossip girl'],
+    triggers: ['kd', 'kevin durant', 'gethigher', 'burner'],
     league: 'nba',
     variants: {
       default:

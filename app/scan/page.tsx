@@ -208,13 +208,14 @@ function IdleState({ onCamera, onUpload, onSample }: { onCamera: () => void; onU
         </div>
       </div>
 
-      <h1 className="font-display text-[34px] sm:text-4xl font-bold text-green leading-[0.95] tracking-tight">
-        Scan a player.
-        <br />
-        <span className="italic font-medium text-tangerine">Get the tea.</span>
+      <h1 className="font-display text-[28px] sm:text-[34px] font-bold text-green leading-[1.05] tracking-tight">
+        Point your camera at any TV, scan a screenshot, snap a poster.
       </h1>
-      <p className="mt-3 sm:mt-4 text-[15px] sm:text-base text-ink-soft max-w-xs mx-auto leading-relaxed">
-        Camera, screenshot, or live broadcast. We ID the player and serve the gossip.
+      <p className="mt-3 sm:mt-4 font-display italic text-[20px] sm:text-[24px] font-medium text-tangerine leading-tight tracking-tight">
+        Every player decoded in seconds.
+      </p>
+      <p className="mt-4 text-[14px] sm:text-[15px] text-ink-soft max-w-xs mx-auto leading-relaxed">
+        Works on all things sports — NFL + NBA. We never store your photos.
       </p>
 
       <div className="mt-6 sm:mt-8 flex flex-col gap-3">

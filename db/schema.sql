@@ -9,7 +9,7 @@ create table if not exists profiles (
   id uuid primary key references auth.users(id) on delete cascade,
   email text not null,
   display_name text,
-  preferred_lens text default 'gossip-girl',
+  preferred_lens text default 'plain',
   preferred_league text check (preferred_league in ('nfl', 'nba', 'both')),
   created_at timestamptz default now(),
   beta_invited_at timestamptz,

@@ -575,8 +575,8 @@ function BFFScene() {
 const BFF_DEMO_RESPONSES: Record<string, string> = {
   "What's a sack?":
     "when a defender tackles the QB behind the line of scrimmage *while he still has the ball*. costs the offense yards + a down. the all-time leaders get their own stat line — bruce smith has 200. they make tiktoks of their celebrations now ☕",
-  "Why is everyone saying KD is Gossip Girl?":
-    "burner accounts. KD got caught running anonymous twitter alts (@gethigher77 was the famous one) to defend himself in NBA arguments. same energy as dan humphrey writing about the upper east side from the outside while *being* the upper east side. spotted: a forward with too much time 👀",
+  "Why does KD keep getting caught running burner accounts?":
+    "@gethigher77 is the famous one. KD has been caught running anonymous twitter alts for nearly a decade — replying to fans, defending himself in NBA arguments, sometimes calling out his own teammates. the mask-slip moments are legendary. the man cannot stop logging on 👀",
   "How does the salary cap work?":
     "every team gets the same money pool to spend on players (~$255M in the NBA this season, ~$255M in the NFL — wild coincidence). go over → penalties, lost picks, taxes that snowball if you keep doing it. it's the league's way of forcing parity. without it, the lakers would just buy everyone.",
   "What's the trade deadline?":
