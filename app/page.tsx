@@ -11,18 +11,34 @@
  * pivot from clean info to gossip. Every other surface stays neutral.
  */
 
-import { useEffect, useRef, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useEffect, useRef, useState, Suspense } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { isOnboarded } from '@/lib/profile';
 import { TeaUpToggle } from '@/components/TeaUpToggle';
 import { STARTER_PROMPTS } from '@/lib/prompts';
 
 export default function Root() {
+  return (
+    <Suspense fallback={null}>
+      <RootInner />
+    </Suspense>
+  );
+}
+
+function RootInner() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   useEffect(() => {
-    if (isOnboarded()) router.replace('/scan');
-  }, [router]);
+    // Auto-redirect to /scan for already-onboarded users is DISABLED during the
+    // closed-beta / testing phase — Aaron needs the landing page to always show
+    // so it can be iterated on. Re-enable when real users start coming through:
+    //   if (searchParams.get('preview') !== '1' && isOnboarded()) {
+    //     router.replace('/scan');
+    //   }
+    void router;
+    void searchParams;
+  }, [router, searchParams]);
 
   return (
     <main className="bg-white" style={{ minHeight: '100dvh' }}>
