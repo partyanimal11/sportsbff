@@ -53,17 +53,8 @@ const LENS_VOICE_MAP: Record<string, OpenAIVoice> = {
   'bachelor':         'ballad',   // earnest, reality-show host
   'bravo':            'coral',    // perky reunion-couch energy
 
-  // Show lenses
-  'gossip-girl':      'coral',    // bright, conspiratorial Kristen-Bell-coded
-  'bridgerton':       'fable',    // British-leaning narrator
-  'succession':       'onyx',     // deep, authoritative, Logan Roy
+  // Show lens (Euphoria only — all other show lenses retired)
   'euphoria':         'shimmer',  // breathy, cinematic, slightly dreamy
-  'mean-girls':       'coral',    // perky-but-edged
-  'love-island':      'fable',    // British, mocking, Iain-Stirling-coded
-  'wednesday':        'echo',     // deadpan, calm-cold
-  'white-lotus':      'verse',    // arched-eyebrow narrator
-  'the-bear':         'ash',      // intense, kitchen-energy
-  'house-of-the-dragon': 'onyx',  // regal, deep, Targaryen
 };
 
 const DEFAULT_VOICE: OpenAIVoice = 'nova';

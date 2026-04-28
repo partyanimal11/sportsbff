@@ -2,16 +2,10 @@ import nfl from '@/data/teams/nfl.json';
 import nba from '@/data/teams/nba.json';
 import players from '@/data/players-sample.json';
 import playersDeep from '@/data/players-deep.json';
-import gossipGirl from '@/data/shows/gossip-girl.json';
-import bridgerton from '@/data/shows/bridgerton.json';
-import succession from '@/data/shows/succession.json';
+// Euphoria is the one prestige-TV lens we still ship.
+// Other show lenses (gossip-girl, bridgerton, succession, mean-girls, love-island,
+// wednesday, white-lotus, the-bear, house-of-the-dragon) were retired 2026-04-28.
 import euphoria from '@/data/shows/euphoria.json';
-import meanGirls from '@/data/shows/mean-girls.json';
-import loveIsland from '@/data/shows/love-island.json';
-import wednesday from '@/data/shows/wednesday.json';
-import whiteLotus from '@/data/shows/white-lotus.json';
-import theBear from '@/data/shows/the-bear.json';
-import houseOfTheDragon from '@/data/shows/house-of-the-dragon.json';
 import mappings from '@/data/mappings.json';
 import leagueDrama from '@/data/league-drama.json';
 import coaches from '@/data/coaches.json';
@@ -79,18 +73,7 @@ type GlossaryEntry = {
 const TEAMS: Team[] = [...(nfl as Team[]), ...(nba as Team[])];
 const PLAYERS: Player[] = players as Player[];
 const PLAYERS_DEEP: Record<string, DeepPlayer> = playersDeep as Record<string, DeepPlayer>;
-const SHOWS: Show[] = [
-  gossipGirl,
-  bridgerton,
-  succession,
-  euphoria,
-  meanGirls,
-  loveIsland,
-  wednesday,
-  whiteLotus,
-  theBear,
-  houseOfTheDragon,
-] as Show[];
+const SHOWS: Show[] = [euphoria] as Show[];
 const SHOWS_BY_ID = new Map(SHOWS.map((s) => [s.id, s]));
 const MAPPINGS: Mapping[] = mappings as Mapping[];
 const LEAGUE_DRAMA: { nfl: LeagueDramaShape; nba: LeagueDramaShape } = leagueDrama as any;

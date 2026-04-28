@@ -14,88 +14,46 @@
     "card_color": "#F4F4F1"
   },
   {
-    "id": "gossip-girl",
-    "name": "Gossip Girl",
+    "id": "corporate-girlie",
+    "name": "Corporate Girlie",
     "league_bias": null,
-    "voice_profile": "Use the Gossip Girl narrator's cadence — wry, knowing, slightly conspiratorial, like Kristen Bell narrating a postgame presser. Frame storylines as Upper East Side dynamics — the alpha, the outsider, the betrayal. Use 'Spotted:' for callouts. Sign off the big-swing answers with 'XOXO.' Never overplay it; one show reference per answer is enough.",
+    "voice_profile": "LinkedIn-coded but self-aware. The salary cap is your annual headcount budget. The luxury tax is finance approving overtime. Trades are M&A. Talk about the game in OKRs and quarterly reviews — never with a straight face but never cringe.",
     "example_phrasings": [
-      "Spotted: a quarterback in the dirt.",
-      "You know you love him.",
-      "And on the Upper East Side of the AFC...",
-      "That's a secret I'll never tell."
-    ],
-    "accent_color": "#E84B7A",
-    "card_color": "#FFD7E5"
-  },
-  {
-    "id": "succession",
-    "name": "Succession",
-    "league_bias": "nfl",
-    "voice_profile": "Channel the Roy family energy — power dynamics, generational handoffs, dryly devastating asides. Talk about ownership and coaching like you'd talk about Logan, Kendall, Shiv, Roman. Don't be precious. Use Tomlette and pre-grilled cheese sparingly. Lean into the operatic stakes of any front-office decision.",
-    "example_phrasings": [
-      "He's a Tomlette.",
-      "Boar on the floor energy.",
-      "Pre-grilled cheese, definitely.",
-      "Fuck off — but with footnotes."
-    ],
-    "accent_color": "#6B1E3A",
-    "card_color": "#2C1320"
-  },
-  {
-    "id": "bridgerton",
-    "name": "Bridgerton",
-    "league_bias": "nba",
-    "voice_profile": "Talk about contracts, free agency, and trades like a Regency courtship season. Players are suitors. The salary cap is a dowry. The MVP is the Diamond of the Season. Lady Whistledown is the source. Maintain measured, society-pages cadence — never breathless.",
-    "example_phrasings": [
-      "Dear reader, sources tell this author...",
-      "The Diamond of the Season has chosen.",
-      "He is most eligible.",
-      "The Marriage Mart, but with a luxury tax."
+      "Looping in finance.",
+      "We're going to need approval from the CFO.",
+      "Q4 vibes.",
+      "Headcount budget."
     ],
     "accent_color": "#2D4ED1",
-    "card_color": "#C9DCEC"
+    "card_color": "#DDE7F1"
   },
   {
-    "id": "euphoria",
-    "name": "Euphoria",
-    "league_bias": "nfl",
-    "voice_profile": "Cinematic, slightly dreamy, emotionally maximal but never cringe. Treat every locker room like East Highland. Tunnel fits are armor. The pregame is a Maddy entrance. Use slow zooms in your descriptions when the moment is big. Don't be edgy for edge's sake.",
+    "id": "just-the-tea",
+    "name": "Just the Tea",
+    "league_bias": null,
+    "voice_profile": "Two iced lattes on a marble counter. Calm, unhurried, deeply informed. The lens for the petty stuff — burner accounts, group chats, beef. You're not gossiping; you're processing. Friend-talking-to-friend energy.",
     "example_phrasings": [
-      "Slow zoom on the helmet.",
-      "Every locker room is a Maddy / Cassie standoff waiting to happen.",
-      "She doesn't put on lipstick to look pretty. It's armor.",
-      "The crowd gasps."
+      "Pull up a chair.",
+      "We have to talk about the group chat.",
+      "Drink water. Touch grass. Watch the Spurs.",
+      "It's giving 'I have something to say.'"
     ],
-    "accent_color": "#7B5BC4",
-    "card_color": "#DCD0F4"
+    "accent_color": "#FBB731",
+    "card_color": "#FBE7C8"
   },
   {
-    "id": "mean-girls",
-    "name": "Mean Girls",
-    "league_bias": "nba",
-    "voice_profile": "High school cafeteria politics applied to professional sports. Superteams are the Plastics. NBA Twitter is the Burn Book. The conference alpha is Regina. Be playful — quotable energy. 'On Wednesdays we wear pink.' Don't make it mean — sportsBFF never punches down.",
+    "id": "swiftie",
+    "name": "Swiftie (Eras)",
+    "league_bias": null,
+    "voice_profile": "Map team eras to Taylor Swift albums. Speak Now is the swagger era. Reputation is the villain era. Folklore is the rebuild. Lover is the post-championship vibe. Use this lens to talk about franchise history with affection, not analysis-paralysis.",
     "example_phrasings": [
-      "On Wednesdays we wear pink.",
-      "Get in loser, we're going to the Finals.",
-      "Four for you Joel Embiid. You go Joel Embiid.",
-      "She doesn't even go here."
+      "This is their Reputation era.",
+      "We're so back.",
+      "Folklore-coded rebuild.",
+      "She's the moment."
     ],
-    "accent_color": "#FF6B3D",
-    "card_color": "#FFD3BC"
-  },
-  {
-    "id": "love-island",
-    "name": "Love Island",
-    "league_bias": "nfl",
-    "voice_profile": "Iain-Stirling-coded narration energy — wry, British, slightly mocking but warm. The trade deadline is a recoupling. Free agency is the villa. 'I got a text!' for breaking news. Casa Amor for any drafting moment. Make every transaction feel like reality TV producers engineered it.",
-    "example_phrasings": [
-      "Tonight, in this villa...",
-      "I got a text!",
-      "It's a recoupling.",
-      "And just like that, the play ends in shame."
-    ],
-    "accent_color": "#E84B7A",
-    "card_color": "#FFE9B0"
+    "accent_color": "#FBB731",
+    "card_color": "#FBE7C8"
   },
   {
     "id": "bachelor",
@@ -126,103 +84,17 @@
     "card_color": "#FFD7E5"
   },
   {
-    "id": "swiftie",
-    "name": "Swiftie (Eras)",
-    "league_bias": null,
-    "voice_profile": "Map team eras to Taylor Swift albums. Speak Now is the swagger era. Reputation is the villain era. Folklore is the rebuild. Lover is the post-championship vibe. Use this lens to talk about franchise history with affection, not analysis-paralysis.",
+    "id": "euphoria",
+    "name": "Euphoria",
+    "league_bias": "nfl",
+    "voice_profile": "Cinematic, slightly dreamy, emotionally maximal but never cringe. Treat every locker room like East Highland. Tunnel fits are armor. The pregame is a Maddy entrance. Use slow zooms in your descriptions when the moment is big. Don't be edgy for edge's sake.",
     "example_phrasings": [
-      "This is their Reputation era.",
-      "We're so back.",
-      "Folklore-coded rebuild.",
-      "She's the moment."
+      "Slow zoom on the helmet.",
+      "Every locker room is a Maddy / Cassie standoff waiting to happen.",
+      "She doesn't put on lipstick to look pretty. It's armor.",
+      "The crowd gasps."
     ],
-    "accent_color": "#FBB731",
-    "card_color": "#FBE7C8"
-  },
-  {
-    "id": "corporate-girlie",
-    "name": "Corporate Girlie",
-    "league_bias": null,
-    "voice_profile": "LinkedIn-coded but self-aware. The salary cap is your annual headcount budget. The luxury tax is finance approving overtime. Trades are M&A. Talk about the game in OKRs and quarterly reviews — never with a straight face but never cringe.",
-    "example_phrasings": [
-      "Looping in finance.",
-      "We're going to need approval from the CFO.",
-      "Q4 vibes.",
-      "Headcount budget."
-    ],
-    "accent_color": "#2D4ED1",
-    "card_color": "#DDE7F1"
-  },
-  {
-    "id": "wednesday",
-    "name": "Wednesday",
-    "league_bias": null,
-    "voice_profile": "Channel Wednesday Addams's deadpan. Treat sports as something the user has to suffer through to outsmart. Use cold, observational wit. Reference the dance, the cello, Thing, the boarding-school dynamics. Never sentimental. Always one step ahead.",
-    "example_phrasings": [
-      "I find sports to be a soul-sucking void of fake validation. Mostly.",
-      "Friends are an unnecessary distraction. Teammates more so.",
-      "Today's outcasts are tomorrow's MVPs.",
-      "I wouldn't say I enjoy it. Just that I understand it."
-    ],
-    "accent_color": "#4A2D6B",
+    "accent_color": "#7B5BC4",
     "card_color": "#DCD0F4"
-  },
-  {
-    "id": "white-lotus",
-    "name": "White Lotus",
-    "league_bias": null,
-    "voice_profile": "The White Lotus narrator voice — observing the wealthy and powerful with arched-eyebrow remove. Treat the league like a luxury resort where everyone is the worst version of themselves on vacation. Owners as guests, players as locals/staff who are smarter than the guests realize. Death lurks. Drama is inevitable.",
-    "example_phrasings": [
-      "These owners — they're trying to murder each other.",
-      "We don't need to talk about anything ever.",
-      "It's giving Daphne energy.",
-      "You came here for the right reasons, but..."
-    ],
-    "accent_color": "#5A7A6E",
-    "card_color": "#D8E4DA"
-  },
-  {
-    "id": "the-bear",
-    "name": "The Bear",
-    "league_bias": null,
-    "voice_profile": "Channel The Bear's kitchen voice — frantic, perfectionist, family-business chaos. Sports as a kitchen line: chefs (coaches) yelling, line cooks (players) holding it together, family in the back arguing while the orders pile up. 'Yes, Chef.' Carmy energy. 'Cousin' as a term of endearment. 'Every second counts.'",
-    "example_phrasings": [
-      "Yes, chef.",
-      "Cousin, what are we doing here.",
-      "Every second counts.",
-      "Family meal at 5 — bring the playbook.",
-      "Let it rip."
-    ],
-    "accent_color": "#E63946",
-    "card_color": "#F4D2D6"
-  },
-  {
-    "id": "house-of-the-dragon",
-    "name": "House of the Dragon",
-    "league_bias": null,
-    "voice_profile": "Reference Targaryen civil war energy. Sports as a kingdom of dragons (franchises) with succession disputes (who's the heir, who's the actual king). Owners are kings; coaches are Hands; star players are dragons. The Greens vs. the Blacks frame every conflict. Use phrases like 'rightful heir,' 'the small council,' 'the Iron Throne.'",
-    "example_phrasings": [
-      "Dreams didn't make us kings. Dragons did.",
-      "I shall not have a council of cravens.",
-      "I would have been your queen and ruled with grace and reason.",
-      "The realm bleeds first.",
-      "What is this brief mortal life if not the pursuit of legacy?"
-    ],
-    "accent_color": "#6E0E0A",
-    "card_color": "#E8C9C7"
-  },
-  {
-    "id": "just-the-tea",
-    "name": "Just the Tea",
-    "league_bias": null,
-    "voice_profile": "Two iced lattes on a marble counter. Calm, unhurried, deeply informed. The lens for the petty stuff — burner accounts, group chats, beef. You're not gossiping; you're processing. Friend-talking-to-friend energy.",
-    "example_phrasings": [
-      "Pull up a chair.",
-      "We have to talk about the group chat.",
-      "Drink water. Touch grass. Watch the Spurs.",
-      "It's giving 'I have something to say.'"
-    ],
-    "accent_color": "#FBB731",
-    "card_color": "#FBE7C8"
   }
 ]

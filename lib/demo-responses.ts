@@ -2,9 +2,8 @@
  * Demo-mode response library.
  *
  * Activates when OPENAI_API_KEY isn't set. Pattern-matches the user's question
- * against a small library of pre-written answers, with lens-aware variants
- * for the Big Six show flavors. This lets us play with the chat experience
- * without paying for tokens.
+ * against a small library of pre-written answers, with optional Euphoria-flavored
+ * variants. (Other show lenses retired — Euphoria is the one prestige-TV lens.)
  *
  * When OPENAI_API_KEY is set, this file is bypassed entirely — the real
  * model takes over.
@@ -30,18 +29,8 @@ const ENTRIES: DemoEntry[] = [
     variants: {
       default:
         "A **sack** is when a defender catches the quarterback before he can throw the ball — and it costs the offense yards. The play ends right there, behind the line of scrimmage.\n\nThink of it as the QB being interrupted mid-sentence, except the sentence was a touchdown pass.",
-      'gossip-girl':
-        "A **sack** is when the defender catches the quarterback before he can throw — like Dan getting outed as Gossip Girl in the finale. The play ends right there. The QB lost yards. *Spotted: a quarterback in the dirt.*",
-      succession:
-        "A **sack** is the moment Logan Roy walks in unannounced. The QB had a plan. The defender had a better one. Now the QB is on the floor losing yards. Tom would call it a Tomlette.",
-      bridgerton:
-        "A **sack** is when an uninvited suitor arrives at your dinner table mid-proposal. The QB was nearly engaged. Then a defender — Anthony Bridgerton energy — entered the room and ended the courtship. The play is over. Yards lost.",
       euphoria:
         "A **sack** is Nate walking up uninvited to whatever Cassie was about to do. The QB was about to throw something beautiful. The defensive end (the Nate of the moment) got there first. Slow zoom on the helmet. The crowd gasps.",
-      'mean-girls':
-        "A **sack** is Regina George finding out you've been sitting at a different lunch table. The QB had a plan. Regina had better intel. He goes down behind the line. The Plastics dance to *Jingle Bell Rock*. The play is over.",
-      'love-island':
-        "A **sack** is a recoupling gone wrong. The QB chose his pass. The defender chose to go to him instead. The QB is now on the grass, contemplating his choices. *And just like that, the play ends in shame.*",
     },
   },
   {
@@ -105,8 +94,6 @@ const ENTRIES: DemoEntry[] = [
     variants: {
       default:
         "**Fantasy football** is a season-long game. You and 9-11 friends draft real NFL players in late August. Each week, you pick which of your players will start. Their real-life stats earn you points.\n\nMost leagues meet for a draft (a 2-3 hour event). Then it's a 17-week season. Trash talk is the actual sport.\n\nIt's the easiest way to get into football, fast.",
-      'love-island':
-        "**Fantasy** is Casa Amor, year-round. You draft the players you like (the ones you'd couple up with). You set your lineup each week (your villa). You trash-talk your friends. You can trade. You can drop people who aren't bringing it. There's a salary cap, kind of.\n\nBy week six you'll know more about wide receivers than you wanted to. *I got a text!*",
     },
   },
   {
@@ -191,8 +178,6 @@ const ENTRIES: DemoEntry[] = [
     variants: {
       default:
         "The **salary cap** is the maximum a team can spend on player salaries in a season. Both leagues have one. Stars take a huge chunk; the rest is what you have left to fill out the roster.\n\nGo over the cap and you pay a **luxury tax** to the league. Some owners pay it gladly. Others won't even sniff it.",
-      bridgerton:
-        "The **salary cap** is your dowry. Each team gets the same amount each year. They cannot exceed it without paying the Queen (a luxury tax). Some teams court the Diamond of the Season — an MVP — by spending almost the whole dowry on her. Others diversify into three suitable cousins.\n\n**Cap space** is what's left in the dowry. It is the most powerful currency in the league.",
       'corporate-girlie':
         "The **salary cap** is your annual headcount budget. The **luxury tax** is when finance approves overtime, but only if you're hitting OKRs. Your **cap space** is what's still in the budget at the end of Q3 — and yes, you have to spend it before fiscal year-end.\n\nLooping in finance.",
     },
@@ -203,10 +188,6 @@ const ENTRIES: DemoEntry[] = [
     variants: {
       default:
         "The **MVP** is the Most Valuable Player. Awarded once a year by ~100 sportswriters. The MVP is rarely the *best* player — it's usually the player whose **narrative** is the best.\n\nThink of it like Best Picture. It's the one the room agreed to make a moment of.",
-      bridgerton:
-        "The **MVP** is the **Diamond of the Season**. The trophy. The face on every cover. Everyone says they want her. Most teams could not afford the courtship. The Queen (Adam Silver) declares the Diamond at season's end.",
-      'gossip-girl':
-        "The **MVP** is the It Girl of the season. The one everyone's writing about. The one the press won't shut up about. Sometimes she deserves it. Sometimes she's just the one Gossip Girl decided to crown. *You know you love her.*",
     },
   },
   {
@@ -216,10 +197,6 @@ const ENTRIES: DemoEntry[] = [
     variants: {
       default:
         "The **NBA trade deadline** is the date in February when teams can stop trading players. Once it passes, your roster is locked for the playoff push. Most of the year, trades happen quietly. The week before the deadline? Chaos.\n\nIt's the most-watched non-game day in the league.",
-      'love-island':
-        "It's a **recoupling**. Once a year, every player is in the villa. The producers (front offices) have been quietly arranging swaps for weeks. At 3pm ET, the texts go out. Some players are dumped. Some get a glow-up. Iain Stirling does a voiceover. NBA Twitter reacts like they personally know these people.\n\n*I got a text!*",
-      bridgerton:
-        "The **trade deadline** is the closing of the Marriage Mart for the season. Teams have been courting each other for months. On the appointed day, the matches are made — or not. After that, the suitors who remain unattached must wait until next year. The Queen's court watches.",
     },
   },
   {
@@ -261,14 +238,12 @@ const ENTRIES: DemoEntry[] = [
 
   // ─────────── NBA: players ───────────
   {
-    id: 'kd-gossip-girl',
-    triggers: ['kd', 'kevin durant', 'gossip girl', 'gethigher', 'burner'],
+    id: 'kd-burner',
+    triggers: ['kd', 'kevin durant', 'gethigher', 'burner', 'gossip girl'],
     league: 'nba',
     variants: {
       default:
-        "**Kevin Durant** has been running anonymous burner accounts for nine years — most recently @gethigher77 — calling out his own teammates from inside the locker room. Same outsider energy as Dan Humphrey. Same control of the narrative. Same eventual mask-slip.\n\nLonely Boy never left Brooklyn. KD never left the group chat.",
-      'gossip-girl':
-        "Because it's **true**. Dan Humphrey ran an anonymous blog for six seasons and nobody stopped him. Kevin Durant has been running burner accounts for nine years — most recently @gethigher77 — calling out his own teammates from inside the locker room. Same outsider energy. Same control of the narrative. Same eventual mask-slip moment.\n\nLonely Boy never left Brooklyn. KD never left the group chat.\n\nXOXO.",
+        "**Kevin Durant** has been running anonymous burner accounts for nine years — most recently @gethigher77 — calling out his own teammates and replying to fans from inside the locker room. The mask-slip moments are legendary. He's the most-discussed personality in the league for reasons that have very little to do with basketball.\n\nThe man cannot stop logging on.",
     },
   },
   {
@@ -277,9 +252,7 @@ const ENTRIES: DemoEntry[] = [
     league: 'nba',
     variants: {
       default:
-        "**Shai Gilgeous-Alexander**: Oklahoma City Thunder guard. Reigning MVP. Quietly the most-respected player in the league. Tailored cardigans postgame. Two-word answers. Says everything with his chest.\n\nChuck Bass energy.",
-      'gossip-girl':
-        "**Shai Gilgeous-Alexander** is the **Chuck Bass of the NBA**. Quiet menace. Immaculately dressed. Never explains himself. Says everything with his chest. 'I'm Chuck Bass' = 'I'm the MVP' — same sentence, same energy.\n\nReigning MVP. The face of the Oklahoma City Thunder. Tailored cardigans postgame. Two-word answers.\n\nXOXO.",
+        "**Shai Gilgeous-Alexander**: Oklahoma City Thunder guard. Reigning MVP. Quietly the most-respected player in the league. Tailored cardigans postgame. Two-word answers. Says everything with his chest.\n\nThe quiet menace of the league.",
     },
   },
   {
@@ -395,7 +368,7 @@ export function demoFallback(lensId: string): string {
     'For now, try one of these:',
     '',
     "- *What's a sack?*",
-    "- *Why is everyone saying KD is Gossip Girl?*",
+    "- *Who is Travis Kelce?*",
     "- *How does the salary cap work?*",
     "- *What's the trade deadline?*",
     "- *How does fantasy football work?*",
