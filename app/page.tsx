@@ -45,6 +45,7 @@ function RootInner() {
       <Nav />
       <Hero />
       <TrustStrip />
+      <PullQuote text="Sports media is finally for the rest of us." attribution="— Goldie, the GOAT" />
       <ScanScene />
       <BFFScene />
       <TodayScene />
@@ -52,6 +53,29 @@ function RootInner() {
       <FinalCTA />
       <Footer />
     </main>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   PULL QUOTE — editorial rhythm between sections
+   ──────────────────────────────────────────────────────────────── */
+
+function PullQuote({ text, attribution }: { text: string; attribution: string }) {
+  return (
+    <section className="relative px-4 sm:px-8 py-20 sm:py-28 bg-white overflow-hidden">
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-butter-soft/[0.4] blur-[140px]" />
+      </div>
+      <div className="max-w-3xl mx-auto text-center">
+        <span className="font-display text-tangerine text-[60px] leading-none block -mb-4" aria-hidden>"</span>
+        <blockquote className="font-display italic text-[28px] sm:text-[40px] md:text-[48px] font-medium text-green leading-[1.15] tracking-tight">
+          {text}
+        </blockquote>
+        <div className="mt-6 font-script text-magenta-dusty text-[18px] sm:text-[20px] rotate-[-1deg] inline-block">
+          {attribution}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -93,10 +117,19 @@ function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-white">
-      {/* Soft ambient washes — premium, not loud */}
+      {/* Soft pastel ambient washes — femme without pink */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full bg-tangerine/[0.04] blur-[120px]" />
-        <div className="absolute top-32 -right-32 w-[440px] h-[440px] rounded-full bg-magenta/[0.04] blur-[120px]" />
+        <div className="absolute -top-32 -right-24 w-[520px] h-[420px] rounded-full bg-lavender/30 blur-[140px]" />
+        <div className="absolute top-48 -left-24 w-[420px] h-[380px] rounded-full bg-butter-soft/40 blur-[130px]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] rounded-full bg-tangerine/[0.03] blur-[120px]" />
+      </div>
+
+      {/* Decorative scrapbook flourishes — tiny rotated stickers */}
+      <div className="hidden md:block absolute top-24 right-[15%] z-0 pointer-events-none">
+        <span className="text-tangerine text-3xl rotate-[18deg] inline-block opacity-60" aria-hidden>★</span>
+      </div>
+      <div className="hidden md:block absolute top-[60%] left-[8%] z-0 pointer-events-none">
+        <span className="text-periwinkle text-2xl rotate-[-12deg] inline-block opacity-70" aria-hidden>✿</span>
       </div>
 
       {/* Mobile order: badge → headline → subhead → body → CTAs → phone mockup → script
@@ -121,13 +154,19 @@ function Hero() {
               <span><strong className="text-green font-semibold">Hi, I'm Goldie</strong> · closed beta · iOS + web</span>
             </div>
 
-            <h1 className="font-display text-[48px] sm:text-[60px] md:text-[72px] font-bold text-green leading-[0.95] tracking-tight">
-              Learn the players.
+            <h1 className="font-display text-[52px] sm:text-[68px] md:text-[80px] font-bold text-green leading-[0.92] tracking-tight">
+              <span
+                className="float-left mr-2 text-[88px] sm:text-[112px] md:text-[136px] leading-[0.85] font-bold text-tangerine"
+                style={{ fontFeatureSettings: '"swsh"' }}
+              >
+                L
+              </span>
+              earn the players.
               <br />
               <span className="italic font-medium text-tangerine">Get the tea.</span>
             </h1>
 
-            <p className="mt-4 font-display italic text-[24px] sm:text-[26px] font-medium text-green leading-tight">
+            <p className="mt-5 font-display italic text-[24px] sm:text-[28px] font-medium text-green leading-tight">
               Your Sports BFF.
             </p>
 
@@ -155,26 +194,48 @@ function Hero() {
             </div>
           </div>
 
-          {/* PHONE MOCKUP — second on mobile, second on desktop */}
-          <div className="relative mt-4 md:mt-0">
-            {/* Toggle demo — sits ABOVE the mockup on mobile (no overlap), top-right on desktop */}
-            <div className="flex md:absolute md:-top-1 md:right-0 md:z-10 items-center md:items-end justify-center md:flex-col gap-2 md:gap-1.5 mb-4 md:mb-0">
+          {/* PHONE + MASCOT MOCKUP — polaroid-tilted, scrapbook-coded */}
+          <div className="relative mt-4 md:mt-0 md:pb-12">
+            {/* Toggle demo — sits ABOVE the mockup on mobile, top-right on desktop */}
+            <div className="flex md:absolute md:-top-2 md:right-0 md:z-20 items-center md:items-end justify-center md:flex-col gap-2 md:gap-1.5 mb-4 md:mb-0">
               <span className="text-[10px] font-mono tracking-wider uppercase text-muted">
                 tap to flip the vibe <span className="hidden md:inline">↓</span><span className="md:hidden">→</span>
               </span>
               <TeaUpToggle enabled={demoTeaUp} onToggle={() => setDemoTeaUp((v) => !v)} />
             </div>
-            <ScanResultMockup teadUp={demoTeaUp} />
 
-            {/* Goldie peeks from the bottom-left, slight overlap with the phone mockup */}
+            {/* Polaroid-tilted phone — slight rotation + thicker white "frame" shadow */}
+            <div
+              className="relative mx-auto max-w-[300px] sm:max-w-[360px]"
+              style={{
+                transform: 'rotate(2deg)',
+                filter: 'drop-shadow(0 18px 36px rgba(13,45,36,0.18)) drop-shadow(0 8px 16px rgba(13,45,36,0.10))',
+              }}
+            >
+              <ScanResultMockup teadUp={demoTeaUp} />
+            </div>
+
+            {/* Goldie — bigger, full-body, breaking the grid */}
             <img
               src="/brand/goldie.png"
               alt="Goldie, your sports BFF"
-              className="hidden sm:block absolute -bottom-4 -left-6 md:-left-10 w-32 md:w-40 h-auto z-10 pointer-events-none drop-shadow-[0_12px_24px_rgba(13,45,36,0.18)]"
+              className="absolute -bottom-2 sm:-bottom-4 -left-8 sm:-left-12 md:-left-16 w-40 sm:w-52 md:w-60 h-auto z-10 pointer-events-none drop-shadow-[0_12px_24px_rgba(13,45,36,0.18)]"
               style={{ animation: 'goldieFloat 4s ease-in-out infinite' }}
             />
 
-            <div className="font-script text-magenta text-[14px] sm:text-[15px] rotate-[-2deg] text-center mt-3">
+            {/* Scrapbook callout — Caveat hand-written arrow pointing at Goldie */}
+            <div
+              className="hidden md:flex absolute -bottom-2 left-[42%] z-20 items-center gap-1 pointer-events-none"
+              style={{ transform: 'rotate(-4deg)' }}
+            >
+              <svg width="44" height="32" viewBox="0 0 44 32" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="text-magenta-dusty" aria-hidden>
+                <path d="M40 4 Q 28 14, 14 22" strokeDasharray="3 3" />
+                <path d="M18 18 L 12 24 L 20 26" />
+              </svg>
+              <span className="font-script text-magenta-dusty text-[18px]">that's me!</span>
+            </div>
+
+            <div className="font-script text-magenta-dusty text-[14px] sm:text-[15px] rotate-[-2deg] text-center mt-6">
               scan any player → get the {demoTeaUp ? 'tea' : 'breakdown'} ✏
             </div>
           </div>
@@ -339,16 +400,30 @@ function TrustStrip() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 text-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
           {[
-            { num: '200+', label: 'Players' },
-            { num: '85', label: 'Storylines' },
-            { num: '4', label: 'Confirmation tiers' },
-            { num: '0', label: 'Invented gossip' },
+            { num: '200+', label: 'Players', bg: '#EFEAF5', text: '#4A2D6B' },          // lavender
+            { num: '85', label: 'Storylines', bg: '#E1ECDD', text: '#274D2C' },         // sage
+            { num: '4', label: 'Tier system', bg: '#FBF1D5', text: '#7B5B0F' },          // butter
+            { num: '0', label: 'Invented gossip', bg: '#FFEEE3', text: '#8C3D17' },      // peach
           ].map((s) => (
-            <div key={s.label}>
-              <div className="font-display text-[26px] sm:text-[32px] font-bold text-green leading-none">{s.num}</div>
-              <div className="text-[10px] sm:text-[11px] text-muted uppercase tracking-[0.16em] mt-1.5">{s.label}</div>
+            <div
+              key={s.label}
+              className="rounded-2xl p-4 sm:p-5 text-center"
+              style={{ background: s.bg }}
+            >
+              <div
+                className="font-display text-[34px] sm:text-[44px] font-bold leading-none tracking-tight"
+                style={{ color: s.text }}
+              >
+                {s.num}
+              </div>
+              <div
+                className="text-[9px] sm:text-[10px] font-mono uppercase tracking-[0.18em] mt-2 opacity-75"
+                style={{ color: s.text }}
+              >
+                {s.label}
+              </div>
             </div>
           ))}
         </div>
@@ -385,24 +460,61 @@ function ScanScene() {
           </p>
         </div>
 
-        {/* Dual mockup — viewfinder → result */}
-        <div className="grid sm:grid-cols-[1fr_auto_1fr] gap-6 sm:gap-8 items-center max-w-4xl mx-auto">
+        {/* Dual mockup — annotated diagram with hand-drawn step labels */}
+        <div className="relative grid sm:grid-cols-[1fr_auto_1fr] gap-6 sm:gap-10 items-center max-w-4xl mx-auto">
+          {/* Step 1 caption — Caveat script above the idle mockup */}
+          <div className="hidden sm:flex justify-center mb-2 absolute -top-8 left-0 right-1/2 z-10 pointer-events-none">
+            <div className="font-script text-tangerine text-[18px] rotate-[-2deg]">
+              Step 1 — point ↓
+            </div>
+          </div>
+
           <ScanIdleMockup />
-          <div className="hidden sm:flex items-center justify-center text-tangerine text-2xl">→</div>
+
+          {/* Curvy hand-drawn arrow between phones */}
+          <div className="hidden sm:flex items-center justify-center text-tangerine">
+            <svg width="60" height="40" viewBox="0 0 60 40" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <path d="M5 20 Q 30 5, 50 20" strokeDasharray="3 4" />
+              <path d="M44 14 L 52 20 L 46 28" />
+            </svg>
+          </div>
           <div className="sm:hidden flex items-center justify-center text-tangerine text-2xl">↓</div>
+
           <ScanResultThumbnail />
+
+          {/* Step 2 caption — above the result */}
+          <div className="hidden sm:flex justify-center mb-2 absolute -top-8 left-1/2 right-0 z-10 pointer-events-none">
+            <div className="font-script text-tangerine text-[18px] rotate-[2deg]">
+              Step 2 — get the tea ↓
+            </div>
+          </div>
         </div>
 
-        {/* Tier pills */}
+        {/* Tier pills — enamel-pin badges */}
         <div className="mt-14 sm:mt-16 max-w-2xl mx-auto">
           <p className="text-center text-[11px] font-bold tracking-[0.22em] uppercase text-muted mb-4">
             Every drama claim ships with a tier
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-2">
-            <span className="inline-flex items-center px-3 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#E8F0EC', color: '#0F6E56' }}>✓ Confirmed</span>
-            <span className="inline-flex items-center px-3 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#E6F1FB', color: '#185FA5' }}>📰 Reported</span>
-            <span className="inline-flex items-center px-3 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#FAEEDA', color: '#854F0B' }}>💭 Speculation</span>
-            <span className="inline-flex items-center px-3 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#F1EFE8', color: '#5F5E5A' }}>❓ Rumor</span>
+          <div className="flex flex-wrap items-center justify-center gap-2.5">
+            {[
+              { emoji: '✓', label: 'Confirmed', bg: '#E8F0EC', text: '#0F6E56', border: '#0F6E56' },
+              { emoji: '📰', label: 'Reported', bg: '#E6F1FB', text: '#185FA5', border: '#185FA5' },
+              { emoji: '💭', label: 'Speculation', bg: '#FAEEDA', text: '#854F0B', border: '#854F0B' },
+              { emoji: '❓', label: 'Rumor', bg: '#F1EFE8', text: '#5F5E5A', border: '#5F5E5A' },
+            ].map((t) => (
+              <span
+                key={t.label}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider"
+                style={{
+                  background: t.bg,
+                  color: t.text,
+                  boxShadow: `inset 0 0 0 1.5px ${t.border}33, inset 0 1px 0 rgba(255,255,255,0.8), 0 2px 4px -2px ${t.text}33`,
+                }}
+              >
+                <span aria-hidden>{t.emoji}</span>
+                {t.label}
+              </span>
+            ))}
           </div>
           <p className="mt-4 text-center text-[13px] text-ink-soft italic">
             Sourced. Hedged. <strong className="not-italic text-tangerine">Never guessed.</strong>
@@ -749,26 +861,38 @@ function BFFLiveChatMockup() {
           )}
         </div>
 
-        {/* Sticky prompt chips at the bottom — the actual interaction surface */}
+        {/* Sticky prompt chips at the bottom — friendship-bracelet beads */}
         <div className="px-4 py-4 border-t border-[var(--hairline)]" style={{ background: '#FAF7F1' }}>
-          <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-muted mb-2.5">
-            Try a prompt
+          <div className="flex items-center gap-1.5 mb-2.5">
+            <span className="text-[10px] font-bold tracking-[0.18em] uppercase text-muted">Try a prompt</span>
+            <span className="font-script text-magenta-dusty text-[15px] rotate-[-2deg] inline-block">↓ ask me anything</span>
           </div>
           <div className="flex flex-wrap gap-1.5">
-            {livePrompts.map((p) => {
+            {livePrompts.map((p, i) => {
               const used = usedPrompts.has(p);
+              // Friendship-bracelet bead palette — rotate through 5 pastels
+              const beadPalette = [
+                { bg: '#EFEAF5', text: '#4A2D6B', border: '#C9B6E4' }, // lavender
+                { bg: '#E1ECDD', text: '#274D2C', border: '#A6BFA0' }, // sage
+                { bg: '#FFEEE3', text: '#8C3D17', border: '#FFD3BC' }, // peach
+                { bg: '#FBF1D5', text: '#7B5B0F', border: '#F8E1A3' }, // butter
+                { bg: '#E5E9F8', text: '#283875', border: '#B8C2EE' }, // periwinkle
+                { bg: '#FDEEF1', text: '#7B2D4A', border: '#F4B6C2' }, // soft pink (Goldie's bow)
+              ];
+              const bead = beadPalette[i % beadPalette.length];
               return (
                 <button
                   key={p}
                   onClick={() => handlePrompt(p)}
                   disabled={isTyping || used}
-                  className={`text-[12.5px] px-3 py-1.5 rounded-full border font-medium transition ${
-                    used
-                      ? 'bg-cream-warm/60 border-[var(--hairline)] text-muted cursor-not-allowed'
-                      : isTyping
-                      ? 'bg-white/60 border-[var(--hairline)] text-muted cursor-wait'
-                      : 'bg-white border-[var(--hairline)] text-green hover:border-green hover:bg-green hover:text-white cursor-pointer'
+                  className={`text-[12.5px] px-3 py-1.5 rounded-full border-2 font-medium transition ${
+                    used || isTyping ? 'cursor-not-allowed opacity-50' : 'cursor-pointer hover:-translate-y-0.5 hover:shadow-sm'
                   }`}
+                  style={{
+                    background: bead.bg,
+                    color: bead.text,
+                    borderColor: bead.border,
+                  }}
                 >
                   {p}
                 </button>
@@ -817,9 +941,18 @@ function TodayScene() {
       className="relative px-4 sm:px-8 py-20 sm:py-28 border-t border-[var(--hairline)] overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #FDEEF1 0%, #FFFFFF 100%)' }}
     >
-      {/* Soft magenta wash to anchor the blush mood */}
+      {/* Softer dusty-magenta wash + subtle butter wash */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[600px] h-[400px] rounded-full bg-magenta/[0.06] blur-[140px]" />
+        <div className="absolute top-0 right-0 w-[600px] h-[400px] rounded-full bg-magenta-dusty/[0.06] blur-[140px]" />
+        <div className="absolute bottom-10 -left-32 w-[400px] h-[320px] rounded-full bg-butter-soft/[0.5] blur-[120px]" />
+      </div>
+
+      {/* Decorative coffee ring stain — top-right of the section */}
+      <div className="hidden md:block absolute top-12 right-[18%] z-0 pointer-events-none opacity-[0.08]">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" stroke="#7B2D4A" strokeWidth="1.5" aria-hidden>
+          <circle cx="40" cy="40" r="28" />
+          <circle cx="40" cy="40" r="24" strokeDasharray="2 4" />
+        </svg>
       </div>
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-[1.05fr_0.95fr] gap-12 md:gap-16 items-center">
@@ -828,9 +961,14 @@ function TodayScene() {
         </div>
 
         <div className="order-1 md:order-2">
-          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-magenta mb-4">③ Tea · live</div>
+          <div className="inline-flex items-center gap-2 mb-4">
+            <span className="text-[10px] font-bold tracking-[0.22em] uppercase text-magenta-dusty">③ Tea · daily drop</span>
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-white border border-magenta-dusty/20 text-magenta-dusty">
+              ☕ 6 AM ET
+            </span>
+          </div>
           <h2 className="font-display text-[42px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
-            Fresh tea. <span className="italic text-magenta">Every morning.</span>
+            Fresh tea. <span className="italic text-magenta-dusty">Every morning.</span>
           </h2>
           <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed">
             A morning drop with what's actually happening across the NFL + NBA — sourced, tier-labeled, never invented. Built to forward to the group chat before your coffee's done.
@@ -838,7 +976,7 @@ function TodayScene() {
 
           <div className="mt-7 flex flex-wrap gap-2.5">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[12px]">
-              <span className="w-1.5 h-1.5 rounded-full bg-magenta animate-pulse" />
+              <span className="w-1.5 h-1.5 rounded-full bg-magenta-dusty animate-pulse" />
               <span className="text-ink-soft font-semibold">Refreshed daily</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[12px]">
@@ -849,12 +987,25 @@ function TodayScene() {
             </div>
           </div>
 
-          <p className="mt-7 text-[13px] text-ink-soft italic">
-            Like a group chat that watches every game. <span className="text-magenta font-semibold not-italic">Without the bros.</span>
+          {/* Goldie holding a teacup */}
+          <div className="mt-6 hidden md:flex items-center gap-3">
+            <div
+              className="shrink-0 w-14 h-14 rounded-full overflow-hidden border-2 border-magenta-dusty/30"
+              style={{ background: '#FDEEF1' }}
+            >
+              <img src="/brand/goldie.png" alt="" aria-hidden className="w-full h-full object-cover object-top" />
+            </div>
+            <div className="font-script text-magenta-dusty text-[18px] rotate-[-1deg] leading-tight">
+              Goldie pours it. ☕
+            </div>
+          </div>
+
+          <p className="mt-6 text-[13px] text-ink-soft italic">
+            Like a group chat that watches every game. <span className="text-magenta-dusty font-semibold not-italic">Without the bros.</span>
           </p>
 
           <div className="mt-7">
-            <Link href="/tea" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-magenta hover:underline">
+            <Link href="/tea" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-magenta-dusty hover:underline">
               See today's feed →
             </Link>
           </div>
@@ -920,25 +1071,47 @@ function LearnScene() {
   return (
     <section
       className="relative px-4 sm:px-8 py-20 sm:py-28 border-t border-[var(--hairline)] overflow-hidden"
-      style={{ background: '#EFEAF5' }}
+      style={{ background: 'linear-gradient(180deg, #E5E0F2 0%, #EFEAF5 50%, #F4EDF8 100%)' }}
     >
-      {/* Soft sapphire wash to anchor the academic mood */}
+      {/* Layered sapphire + lavender washes for depth */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-20 -left-20 w-[500px] h-[400px] rounded-full bg-sapphire/[0.05] blur-[140px]" />
+        <div className="absolute top-10 -left-20 w-[520px] h-[400px] rounded-full bg-sapphire/[0.07] blur-[140px]" />
+        <div className="absolute bottom-0 right-0 w-[400px] h-[300px] rounded-full bg-lavender/30 blur-[120px]" />
       </div>
 
       <div className="max-w-6xl mx-auto grid md:grid-cols-[0.95fr_1.05fr] gap-12 md:gap-16 items-center">
         <div>
-          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-sapphire mb-4">④ Lessons</div>
+          <div className="inline-flex items-center gap-2 mb-4">
+            <span className="text-[10px] font-bold tracking-[0.22em] uppercase text-sapphire">④ Lessons</span>
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-white border border-sapphire/20 text-sapphire">
+              🔥 1-day streak
+            </span>
+          </div>
           <h2 className="font-display text-[42px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
             Master the rules. <span className="italic text-sapphire">5 minutes a day.</span>
           </h2>
           <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed">
-            Bite-sized lessons in plain English. The rules, the positions, the strategy — broken down so it actually clicks. Plus Euphoria mode for more cinematic explanations.
+            Bite-sized lessons in plain English. The rules, the positions, the strategy — broken down so it actually clicks. Plus <strong className="text-sapphire">Through Euphoria</strong> mode for more cinematic explanations.
           </p>
 
+          {/* Goldie reading a book — subtle illustration */}
+          <div className="mt-6 hidden md:flex items-center gap-3">
+            <div
+              className="shrink-0 w-14 h-14 rounded-full overflow-hidden border-2 border-lavender/60"
+              style={{ background: '#FDEEF1' }}
+            >
+              <img src="/brand/goldie.png" alt="" aria-hidden className="w-full h-full object-cover object-top" />
+            </div>
+            <div className="font-script text-sapphire text-[18px] rotate-[-1deg] leading-tight">
+              Goldie the GOAT picks the lessons.
+            </div>
+          </div>
+
           <div className="mt-7">
-            <Link href="/learn" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-sapphire hover:underline">
+            <Link
+              href="/learn"
+              className="inline-flex items-center gap-2 bg-sapphire text-white font-semibold rounded-full px-6 py-3 text-[14.5px] hover:opacity-90 transition shadow-[0_8px_22px_-10px_rgba(45,78,209,0.55)]"
+            >
               Start a lesson →
             </Link>
           </div>
@@ -946,36 +1119,64 @@ function LearnScene() {
 
         <div className="space-y-2.5 max-w-md mx-auto w-full">
           {[
-            { league: 'NFL', title: 'Football, in 5 minutes', sub: 'the rules, in plain english', color: '#E84B7A' },
-            { league: 'NBA', title: 'Basketball, in 5 minutes', sub: 'shot clock, fouls, & vibes', color: '#2D4ED1' },
-            { league: 'BOTH', title: 'The salary cap, decoded', sub: "why your team can't just sign anyone", color: '#FBB731' },
-          ].map((l) => (
-            <div key={l.title} className="flex items-center gap-3 bg-white rounded-2xl p-4 border border-[var(--hairline)] shadow-[0_4px_16px_-10px_rgba(13,45,36,0.08)]">
-              <span className="shrink-0 inline-flex items-center px-2 py-1 rounded-md text-[9px] font-bold uppercase tracking-widest" style={{ background: `${l.color}15`, color: l.color }}>
-                {l.league}
-              </span>
-              <div className="flex-1 min-w-0">
-                <div className="font-display font-bold text-[14.5px] text-green truncate">{l.title}</div>
-                <div className="text-[11.5px] text-ink-soft italic truncate">{l.sub}</div>
+            { league: 'NFL', title: 'Football, in 5 minutes', sub: 'the rules, in plain english', color: '#E84B7A', icon: '🏈', tint: '#FFEEE3' },
+            { league: 'NBA', title: 'Basketball, in 5 minutes', sub: 'shot clock, fouls, & vibes', color: '#2D4ED1', icon: '🏀', tint: '#E5E9F8' },
+            { league: 'BOTH', title: 'The salary cap, decoded', sub: "why your team can't just sign anyone", color: '#7B5B0F', icon: '💸', tint: '#FBF1D5' },
+          ].map((l, i) => (
+            <div
+              key={l.title}
+              className="group flex items-center gap-3 bg-white rounded-2xl p-3.5 border border-[var(--hairline)] shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)] hover:-translate-y-0.5 hover:shadow-[0_12px_28px_-12px_rgba(13,45,36,0.18)] transition"
+            >
+              {/* Big claymation-style icon tile */}
+              <div
+                className="shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center text-2xl"
+                style={{
+                  background: l.tint,
+                  boxShadow: `inset 0 1px 0 rgba(255,255,255,0.6), 0 4px 12px -4px ${l.color}33`,
+                }}
+                aria-hidden
+              >
+                {l.icon}
               </div>
-              <span className="text-muted text-[11px] shrink-0">5 min</span>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-1.5 mb-0.5">
+                  <span className="text-[8px] font-bold uppercase tracking-widest" style={{ color: l.color }}>
+                    {l.league}
+                  </span>
+                  <span className="text-[8px] font-mono uppercase tracking-wider text-muted">· 5 min · beginner</span>
+                </div>
+                <div className="font-display font-bold text-[15px] text-green leading-tight">{l.title}</div>
+                <div className="text-[12px] text-ink-soft italic mt-0.5">{l.sub}</div>
+                {/* Mini progress bar — empty for now, decorative */}
+                <div className="mt-2 h-1 rounded-full overflow-hidden" style={{ background: `${l.color}15` }}>
+                  <div className="h-full" style={{ background: l.color, width: i === 0 ? '60%' : i === 1 ? '20%' : '0%' }} />
+                </div>
+              </div>
+              <span
+                className="shrink-0 text-[16px] opacity-0 group-hover:opacity-100 transition"
+                style={{ color: l.color }}
+              >
+                →
+              </span>
             </div>
           ))}
 
-          <div className="mt-3 bg-white rounded-2xl p-4 border border-[var(--hairline)] flex items-center gap-3">
+          <div className="mt-3 bg-white rounded-2xl p-4 border border-lavender flex items-center gap-3 shadow-[0_8px_24px_-12px_rgba(74,45,107,0.18)]">
             <div
               className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-display font-extrabold text-xl"
               style={{
-                background: 'linear-gradient(135deg, #DCD0F4 0%, #4A2D6B 200%)',
-                color: '#4A2D6B',
+                background: 'linear-gradient(135deg, #DCD0F4 0%, #7B5BC4 100%)',
+                color: '#FFFFFF',
+                boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.4)',
               }}
             >
-              E
+              ✦
             </div>
             <div className="flex-1 min-w-0">
-              <div className="font-display font-bold text-[13.5px] text-green">✨ Euphoria mode</div>
-              <div className="text-[11.5px] text-ink-soft italic mt-0.5">tunnel fits as armor · more shows soon</div>
+              <div className="font-display font-bold text-[13.5px] text-green">✨ Through Euphoria</div>
+              <div className="text-[11.5px] text-ink-soft italic mt-0.5">tunnel fits as armor · cinematic mode</div>
             </div>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-lavender bg-lavender/15 px-2 py-1 rounded-md">NEW</span>
           </div>
         </div>
       </div>
@@ -995,17 +1196,30 @@ function FinalCTA() {
       </div>
 
       <div className="max-w-4xl mx-auto relative">
-        {/* Goldie waves goodbye, off to the right of the App Store card */}
+        {/* Goldie waves goodbye — bigger, full body, more prominent */}
         <img
           src="/brand/goldie.png"
           alt=""
           aria-hidden
-          className="hidden md:block absolute right-0 -top-6 w-36 h-auto pointer-events-none drop-shadow-[0_12px_24px_rgba(13,45,36,0.18)]"
+          className="hidden md:block absolute right-0 -top-12 w-56 h-auto pointer-events-none drop-shadow-[0_16px_32px_rgba(13,45,36,0.22)]"
           style={{ animation: 'goldieWave 3.5s ease-in-out infinite' }}
         />
 
+        {/* Mobile Goldie — centered above the heading */}
+        <img
+          src="/brand/goldie.png"
+          alt=""
+          aria-hidden
+          className="md:hidden block mx-auto w-32 h-auto -mb-2 drop-shadow-[0_12px_24px_rgba(13,45,36,0.18)]"
+          style={{ animation: 'goldieWave 3.5s ease-in-out infinite' }}
+        />
+
+        <div className="font-script text-magenta-dusty text-[20px] sm:text-[24px] rotate-[-2deg] inline-block mb-2">
+          see you tomorrow ✿
+        </div>
+
         {/* App Store-style preview card */}
-        <div className="inline-flex items-center gap-3 sm:gap-4 px-4 sm:px-5 py-3 sm:py-3.5 bg-white rounded-2xl border border-[var(--hairline)] shadow-[0_8px_28px_-10px_rgba(13,45,36,0.12)] mb-10">
+        <div className="inline-flex items-center gap-3 sm:gap-4 px-4 sm:px-5 py-3 sm:py-3.5 bg-white rounded-2xl border border-[var(--hairline)] shadow-[0_8px_28px_-10px_rgba(13,45,36,0.12)] mb-10 mt-3">
           <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl overflow-hidden flex items-center justify-center" style={{ background: '#FDEEF1' }}>
             <img
               src="/brand/goldie.png"
@@ -1031,12 +1245,20 @@ function FinalCTA() {
           Built for the group chat that just wants to <span className="italic text-tangerine">keep up.</span>
         </h2>
 
-        <Link
-          href="/onboarding"
-          className="mt-10 inline-flex items-center gap-2 bg-tangerine text-white font-semibold rounded-full px-8 sm:px-10 py-4 sm:py-4.5 text-[15.5px] sm:text-[16px] hover:bg-tangerine-dark transition shadow-[0_8px_28px_-6px_rgba(255,107,61,0.5)]"
-        >
-          Get started — free →
-        </Link>
+        {/* CTA with pastel halo glow */}
+        <div className="relative inline-block mt-10">
+          <div
+            className="absolute -inset-4 rounded-full blur-2xl pointer-events-none"
+            style={{ background: 'radial-gradient(circle, rgba(244,182,194,0.5) 0%, rgba(184,194,238,0.3) 50%, transparent 70%)' }}
+            aria-hidden
+          />
+          <Link
+            href="/onboarding"
+            className="relative inline-flex items-center gap-2 bg-tangerine text-white font-semibold rounded-full px-8 sm:px-10 py-4 sm:py-4.5 text-[15.5px] sm:text-[16px] hover:bg-tangerine-dark transition shadow-[0_8px_28px_-6px_rgba(255,107,61,0.5)]"
+          >
+            Get started — free →
+          </Link>
+        </div>
 
         <p className="mt-5 text-[12px] sm:text-[13px] text-muted">
           NFL + NBA. iOS coming. Free during beta.
