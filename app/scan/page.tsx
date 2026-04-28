@@ -118,9 +118,9 @@ export default function ScanPage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-cream-warm">
+    <main className="min-h-screen flex flex-col bg-white">
       {/* Header */}
-      <header className="px-4 sm:px-6 py-3 border-b border-[var(--hairline)] flex items-center justify-between gap-3 bg-white/90 backdrop-blur sticky top-0 z-10">
+      <header className="px-4 sm:px-6 py-3 border-b border-[var(--hairline)] flex items-center justify-between gap-3 bg-white sticky top-0 z-10">
         <Link href="/scan" className="font-display text-lg sm:text-xl font-extrabold text-green tracking-wide shrink-0">
           Tea'd Up
         </Link>

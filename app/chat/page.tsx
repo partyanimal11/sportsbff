@@ -164,9 +164,9 @@ function ChatPage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-cream-warm" style={{ minHeight: '100dvh' }}>
+    <main className="min-h-screen flex flex-col bg-white" style={{ minHeight: '100dvh' }}>
       {/* Header */}
-      <header className="px-3 sm:px-6 py-2.5 border-b border-[var(--hairline)] flex items-center justify-between gap-2 bg-white/90 backdrop-blur sticky top-0 z-20">
+      <header className="px-3 sm:px-6 py-2.5 border-b border-[var(--hairline)] flex items-center justify-between gap-2 bg-white/95 backdrop-blur sticky top-0 z-20">
         <div className="flex items-center gap-2 min-w-0">
           {messages.length > 0 && (
             <button
@@ -236,6 +236,7 @@ function ChatPage() {
                 streamingNow={streaming && i === messages.length - 1}
                 messageId={`msg-${i}`}
                 voicePlayer={voicePlayer}
+                isLastMessage={i === messages.length - 1}
               />
             ))
           )}
@@ -387,71 +388,107 @@ function Bubble({
   streamingNow,
   messageId,
   voicePlayer,
+  isLastMessage,
 }: {
   m: Msg;
   streamingNow: boolean;
   messageId: string;
   voicePlayer: ReturnType<typeof useVoicePlayer>;
+  isLastMessage?: boolean;
 }) {
   const isAssistant = m.role === 'assistant';
   const canPlay = isAssistant && !!m.content && !streamingNow;
   const isPlaying = voicePlayer.playingId === messageId;
   const isLoading = voicePlayer.loading && voicePlayer.playingId === null;
+  const showTyping = isAssistant && streamingNow && !m.content;
 
   function handlePlay() {
     voicePlayer.play(messageId, m.content, { lens: 'plain' });
   }
 
-  return (
-    <div className={`flex gap-3 ${m.role === 'user' ? 'flex-row-reverse' : ''}`}>
-      <div
-        className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-display text-[10px] font-bold tracking-wide ${
-          m.role === 'user' ? 'bg-tangerine text-white' : 'bg-green text-white'
-        }`}
-      >
-        {m.role === 'user' ? 'YOU' : 'TU'}
-      </div>
-      <div className={`max-w-[85%] flex flex-col gap-1.5 ${m.role === 'user' ? 'items-end' : 'items-start'}`}>
+  // Typing indicator — three animated dots
+  if (showTyping) {
+    return (
+      <div className="flex gap-2 items-end">
         <div
-          className={`rounded-2xl px-4 py-3 text-[15px] leading-relaxed ${
-            m.role === 'user'
-              ? 'bg-green text-white whitespace-pre-wrap'
-              : 'bg-white border border-[var(--hairline)] text-ink shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]'
-          }`}
+          className="rounded-[20px] px-4 py-3 inline-flex items-center gap-1"
+          style={{
+            background: '#F1EFE8',
+            borderBottomLeftRadius: 4,
+          }}
         >
-          {isAssistant ? (
-            m.content ? (
-              <BFFContent text={m.content} />
-            ) : (
-              streamingNow ? '…' : ''
-            )
-          ) : (
-            m.content
-          )}
+          <span className="w-2 h-2 rounded-full bg-ink-soft" style={{ animation: 'typingDot 1.2s ease-in-out infinite', animationDelay: '0s' }} />
+          <span className="w-2 h-2 rounded-full bg-ink-soft" style={{ animation: 'typingDot 1.2s ease-in-out infinite', animationDelay: '0.2s' }} />
+          <span className="w-2 h-2 rounded-full bg-ink-soft" style={{ animation: 'typingDot 1.2s ease-in-out infinite', animationDelay: '0.4s' }} />
         </div>
-        {canPlay && (
-          <button
-            type="button"
-            onClick={handlePlay}
-            disabled={isLoading}
-            aria-label={isPlaying ? 'Stop voice' : 'Play voice'}
-            className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold transition ${
-              isPlaying
-                ? 'bg-tangerine text-white'
-                : 'text-ink-soft bg-white border border-[var(--hairline)] hover:border-tangerine hover:text-tangerine'
-            }`}
-          >
-            {isLoading ? (
-              <span className="inline-block w-2.5 h-2.5 rounded-full border-[1.2px] border-current border-t-transparent animate-spin" />
-            ) : isPlaying ? (
-              <svg width="9" height="9" viewBox="0 0 12 12" fill="currentColor"><rect x="2" y="2" width="3" height="8" rx="0.5" /><rect x="7" y="2" width="3" height="8" rx="0.5" /></svg>
-            ) : (
-              <svg width="9" height="9" viewBox="0 0 12 12" fill="currentColor"><path d="M3 2 L10 6 L3 10 Z" /></svg>
-            )}
-            <span>{isLoading ? 'Loading' : isPlaying ? 'Stop' : 'Play'}</span>
-          </button>
+        <style jsx>{`
+          @keyframes typingDot {
+            0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+            30% { transform: translateY(-3px); opacity: 1; }
+          }
+        `}</style>
+      </div>
+    );
+  }
+
+  // iMessage-style bubble (BFF cream-grey + tangerine user)
+  return (
+    <div className={`flex flex-col ${m.role === 'user' ? 'items-end' : 'items-start'} gap-1`}>
+      <div
+        className={`max-w-[80%] sm:max-w-[78%] px-4 py-2.5 text-[15px] leading-[1.45] ${
+          m.role === 'user'
+            ? 'text-white'
+            : 'text-ink'
+        }`}
+        style={{
+          background: m.role === 'user'
+            ? 'linear-gradient(180deg, #FF7A52 0%, #FF5723 100%)'
+            : '#F1EFE8',
+          borderRadius: 20,
+          borderBottomRightRadius: m.role === 'user' ? 6 : 20,
+          borderBottomLeftRadius: m.role === 'user' ? 20 : 6,
+          boxShadow: m.role === 'user'
+            ? '0 1px 0 rgba(255,255,255,0.25) inset, 0 4px 12px -4px rgba(255,107,61,0.4)'
+            : '0 1px 0 rgba(255,255,255,0.6) inset, 0 1px 2px rgba(13,45,36,0.04)',
+        }}
+      >
+        {isAssistant ? (
+          <BFFContent text={m.content} />
+        ) : (
+          <span className="whitespace-pre-wrap">{m.content}</span>
         )}
       </div>
+
+      {/* Read receipt + play button row, only on the last assistant message */}
+      {(canPlay || (isLastMessage && m.role === 'user')) && (
+        <div className={`flex items-center gap-2 ${m.role === 'user' ? 'flex-row-reverse' : ''} mt-0.5`}>
+          {isLastMessage && m.role === 'user' && (
+            <span className="text-[10px] text-muted">Delivered</span>
+          )}
+          {canPlay && (
+            <button
+              type="button"
+              onClick={handlePlay}
+              disabled={isLoading}
+              aria-label={isPlaying ? 'Stop voice' : 'Play voice'}
+              className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold transition ${
+                isPlaying
+                  ? 'bg-tangerine text-white'
+                  : 'text-ink-soft bg-cream-warm border border-[var(--hairline)] hover:border-tangerine hover:text-tangerine'
+              }`}
+            >
+              {isLoading ? (
+                <span className="inline-block w-2.5 h-2.5 rounded-full border-[1.2px] border-current border-t-transparent animate-spin" />
+              ) : isPlaying ? (
+                <svg width="9" height="9" viewBox="0 0 12 12" fill="currentColor"><rect x="2" y="2" width="3" height="8" rx="0.5" /><rect x="7" y="2" width="3" height="8" rx="0.5" /></svg>
+              ) : (
+                <svg width="9" height="9" viewBox="0 0 12 12" fill="currentColor"><path d="M3 2 L10 6 L3 10 Z" /></svg>
+              )}
+              <span>{isLoading ? '…' : isPlaying ? 'Stop' : 'Play'}</span>
+            </button>
+          )}
+        </div>
+      )}
     </div>
   );
 }

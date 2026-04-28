@@ -37,7 +37,7 @@ export default function LearnPage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-cream-warm" style={{ minHeight: '100dvh' }}>
+    <main className="min-h-screen flex flex-col" style={{ minHeight: '100dvh', background: '#ECEAE3' }}>
       {/* Header */}
       <header className="px-4 sm:px-6 py-4 sm:py-5">
         <div className="max-w-md mx-auto">

@@ -52,6 +52,9 @@ type ScanResult = {
   };
 };
 
+// Rich sample results — each one includes mode-organized content with confirmed
+// drama claims, on-field narratives, and learn explainers. This way the
+// "Try a random athlete" demo looks like a real scan, not a placeholder.
 const SAMPLE_RESULTS: ScanResult[] = [
   {
     player_name: 'Travis Kelce',
@@ -61,6 +64,15 @@ const SAMPLE_RESULTS: ScanResult[] = [
     jersey_color: 'red',
     blurb: "Future Hall of Famer. Three rings. Yes — he's the one dating Taylor Swift.",
     game: { home: 'KC', home_score: 24, away: 'DAL', away_score: 17, clock: '4Q 2:14' },
+    modes: {
+      drama: [
+        { tier: 'confirmed', headline: 'Dating Taylor Swift since summer 2023', summary: "She's been at most home games. The Eras Tour cameo, the postgame hugs, the Pinkett Mahomes bestie pact — this one's been on every camera in the league." },
+        { tier: 'confirmed', headline: 'Co-hosts the New Heights podcast with brother Jason', summary: "The two-Kelce-brothers pod has been one of the most-listened sports shows in America since 2022. Jason retired in 2024 — Travis kept the mic." },
+        { tier: 'reported', headline: "Quietly the Chiefs' second-most-valuable player after Mahomes", summary: 'Per multiple league sources, his role in the offense and locker room is irreplaceable. The retirement watch every offseason is a national event.' },
+      ],
+      on_field: "The greatest receiving tight end of his generation. 3 Super Bowls. 4-time First-Team All-Pro. The Mahomes-Kelce connection is the most-productive QB-TE duo in NFL history. He's 36 and somehow still elite. Andy Reid has run the same Cover-2-beater concept off play-action to him for 11 years and defensive coordinators STILL haven't solved it.",
+      learn: "A 'tight end' is half-blocker, half-receiver — a hybrid position that lines up next to the offensive tackle. Most tight ends are blocking specialists who occasionally catch passes. Kelce inverted that — he's a receiver who occasionally blocks. That's why he's an NFL revolution: he made the position what it is today.",
+    },
   },
   {
     player_name: 'Patrick Mahomes',
@@ -70,6 +82,15 @@ const SAMPLE_RESULTS: ScanResult[] = [
     jersey_color: 'red',
     blurb: 'Three-time Super Bowl MVP. The face of the league. Side-arm passes that look like physics violations.',
     game: { home: 'KC', home_score: 24, away: 'DAL', away_score: 17, clock: '4Q 2:14' },
+    modes: {
+      drama: [
+        { tier: 'confirmed', headline: 'Chasing the three-peat — only the 1965-67 Packers have ever done it', summary: "Won Super Bowls LIV, LVII, LVIII. Going for back-to-back-to-back is the storyline of the 2025-26 season." },
+        { tier: 'reported', headline: "His brother Jackson and wife Brittany are perpetual tabloid storylines", summary: 'Jackson has had multiple TikTok controversies. Brittany is a polarizing main character who feuds publicly. Patrick stays out of it.' },
+        { tier: 'speculation', headline: 'Rumored to be one of the 5 richest athletes globally by 2030', summary: '$450M Chiefs extension, equity in KC Royals, State Farm campaigns, plus growing entertainment ventures.' },
+      ],
+      on_field: "The clearest GOAT-trajectory player since Brady. 3 Super Bowls + 3 SB MVPs by age 28 — both records. The side-arm 'no-look' pass is his signature, the unscripted scramble drill is his ceiling. Andy Reid is his Phil Jackson. The Chiefs offense is a machine: Reid's 5-step drop, Mahomes's 7-step extension, Kelce's option route.",
+      learn: "A 'quarterback' calls the play, takes the snap, and decides where the ball goes — pass, hand-off, or run. Modern QBs have to read defensive shells (Cover 1, 2, 3, 4) pre-snap, then improvise post-snap when the play breaks down. Mahomes's gift is 'extending plays' — when the original design fails he stays alive in the pocket and creates from chaos.",
+    },
   },
   {
     player_name: 'Shai Gilgeous-Alexander',
@@ -79,6 +100,15 @@ const SAMPLE_RESULTS: ScanResult[] = [
     jersey_color: 'blue',
     blurb: 'Reigning MVP. Postgame cardigans. Two-word answers. Says everything with his chest.',
     game: { home: 'OKC', home_score: 108, away: 'BOS', away_score: 102, clock: '3Q 4:32' },
+    modes: {
+      drama: [
+        { tier: 'confirmed', headline: '2024 NBA MVP — quiet, undeniable, undefeated narrative', summary: 'First Canadian MVP in NBA history. Beat Jokic and Luka in voting. Now leading OKC to the #1 seed in the West, on track for back-to-back.' },
+        { tier: 'confirmed', headline: 'Postgame cardigan economy is real', summary: 'Every postgame interview becomes a Vogue editorial. The fits drive merch sales for the Thunder beyond what any small-market team has ever pulled.' },
+        { tier: 'speculation', headline: "He'll be the first $300M+ extension in NBA history", summary: 'Contract talks loom. Insiders say OKC is fully prepared to lock him in long-term whatever the cost.' },
+      ],
+      on_field: "The smoothest mid-range scorer in basketball. Mr. Cardigan plays like Kobe in his footwork, like Harden in his foul-drawing, like Steph in his lift. The Thunder are running a basketball-historical experiment: youngest starting 5 in modern history, anchored by SGA's calm. He doesn't dunk often. He doesn't need to.",
+      learn: "A 'guard' is a backcourt player — the 1 (point guard, runs the offense) or 2 (shooting guard, scores). SGA is the 1 with 2 instincts. Modern positionless basketball blurred the lines, but his job is to bring the ball up, set the team into a play, and create his own shot if nothing develops. He averages 30+ a game doing it.",
+    },
   },
   {
     player_name: 'Victor Wembanyama',
@@ -88,15 +118,25 @@ const SAMPLE_RESULTS: ScanResult[] = [
     jersey_color: 'white',
     blurb: "7'4 French unicorn. Defensive Player of the Year favorite. Plays like LeBron and Dirk had a child raised by Pop.",
     game: { home: 'SAS', home_score: 96, away: 'DEN', away_score: 91, clock: '4Q 6:08' },
+    modes: {
+      drama: [
+        { tier: 'confirmed', headline: 'Pop suffered a stroke in November 2024 — Wemby is now the franchise face', summary: 'Greg Popovich, the all-time wins leader, collapsed at a team dinner. Mitch Johnson is interim. Wemby is leading the team without his architect.' },
+        { tier: 'confirmed', headline: '2024 Rookie of the Year, unanimous', summary: 'First rookie since LeBron with that combination of media attention + production. Averaged 21/10/4 with 3.6 blocks. Set the rookie 5x5 record.' },
+        { tier: 'speculation', headline: 'The "next-Jordan" mantle finally lands on someone who might earn it', summary: "Insiders say his work ethic + frame + skill set is unprecedented in NBA history. Expectations: 5+ MVPs, 3+ rings if healthy." },
+      ],
+      on_field: "Imagine 7'4 with guard skills. He shoots 3s. He handles. He blocks shots like Olajuwon. He's been compared to KD plus Bol Bol plus a young Dirk. The Spurs are tanking around him on purpose to give him another lottery pick. The 2025 season was his transition from prospect to proven elite. The ceiling is genuinely without precedent.",
+      learn: "A 'center' is the tallest player on the court, traditionally responsible for rebounding, rim defense, and putbacks. Modern centers (like Wemby, Embiid, Jokic) also handle, pass, and shoot — they're called 'unicorns' because their skill set used to be impossible. Wemby's reach is so absurd he can contest every shot near the rim while standing flat-footed.",
+    },
   },
 ];
 
 // In-memory rotating index so successive calls without an API key cycle the samples.
 let _sampleIndex = 0;
 function nextSample(): ScanResult {
+  // Deep clone so subsequent mutation (sample.modes assignment in fallback path) doesn't pollute the cache
   const r = SAMPLE_RESULTS[_sampleIndex % SAMPLE_RESULTS.length];
   _sampleIndex += 1;
-  return r;
+  return JSON.parse(JSON.stringify(r));
 }
 
 export async function POST(req: NextRequest) {
@@ -111,19 +151,20 @@ export async function POST(req: NextRequest) {
   const wantsModes = modes.length > 0;
 
   // ─────────────────────────────────────────────────────────
-  // No API key → return a sample so the demo never breaks
+  // No API key → return a rich pre-authored sample
   // ─────────────────────────────────────────────────────────
   if (!hasOpenAIKey()) {
     const sample = nextSample();
-    if (wantsModes) {
-      // Wrap the sample blurb into the modes shape so clients still get a usable response
+    if (wantsModes && sample.modes) {
+      // Filter the rich modes payload down to just the modes the client requested
       sample.modes = {
-        drama: modes.includes('drama')
-          ? [{ tier: 'speculation', headline: 'Demo mode', summary: sample.blurb }]
-          : undefined,
-        on_field: modes.includes('on_field') ? sample.blurb : undefined,
-        learn: modes.includes('learn') ? `${sample.player_name} plays ${sample.position} for the ${sample.team}.` : undefined,
+        drama: modes.includes('drama') ? sample.modes.drama : undefined,
+        on_field: modes.includes('on_field') ? sample.modes.on_field : undefined,
+        learn: modes.includes('learn') ? sample.modes.learn : undefined,
       };
+    } else if (!wantsModes) {
+      // Legacy callers don't want the modes field
+      delete sample.modes;
     }
     return new Response(JSON.stringify(sample), {
       status: 200,
