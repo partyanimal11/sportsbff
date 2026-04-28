@@ -18,9 +18,22 @@ export type Profile = {
   autoPlayVoice?: boolean;
   /** Override for the lens-default voice. If unset, uses getVoiceForLens(lens). */
   voiceOverride?: string;
+  // Tea'd Up additions
+  /** Active mode pills (Drama / On-field / Learn). Default: ['drama']. */
+  defaultModes?: ('drama' | 'on_field' | 'learn')[];
+  /** When true, Learn mode uses the Euphoria voice for explanations. */
+  euphoriaLensEnabled?: boolean;
+  /** Set once on first install (Tea'd Up onboarding). */
+  firstSeenAt?: string;
 };
 
-const DEFAULT: Profile = { lens: 'plain', dramaMode: false, autoPlayVoice: false };
+const DEFAULT: Profile = {
+  lens: 'plain',
+  dramaMode: false,
+  autoPlayVoice: false,
+  defaultModes: ['drama'],
+  euphoriaLensEnabled: false,
+};
 
 export function getProfile(): Profile {
   if (typeof window === 'undefined') return DEFAULT;

@@ -1,229 +1,138 @@
 'use client';
 
+/**
+ * Tea'd Up — Welcome intake (2 screens: league + name).
+ */
+
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { listLenses, DEFAULT_LENS_ID } from '@/lib/lens';
 import { setProfile } from '@/lib/profile';
-
-type Step = 1 | 2 | 3;
 
 export default function OnboardingPage() {
   const router = useRouter();
-  const [step, setStep] = useState<Step>(1);
+  const [step, setStep] = useState<1 | 2>(1);
   const [league, setLeague] = useState<'nfl' | 'nba' | 'both'>('both');
-  const [lens, setLens] = useState<string>(DEFAULT_LENS_ID);
-  const [name, setName] = useState<string>('');
-
-  const lenses = listLenses();
+  const [name, setName] = useState('');
 
   function finish() {
     setProfile({
       league,
-      lens,
-      displayName: name.trim() || undefined,
-      onboardedAt: new Date().toISOString(),
-    });
-    router.push('/chat');
-  }
-
-  function skip() {
-    // Use defaults — plain English lens, both leagues, no name.
-    setProfile({
-      league: 'both',
       lens: 'plain',
+      displayName: name.trim() || undefined,
+      defaultModes: ['drama'],
       onboardedAt: new Date().toISOString(),
+      firstSeenAt: new Date().toISOString(),
     });
-    router.push('/chat');
+    router.push('/scan');
   }
 
   return (
-    <main className="min-h-screen flex flex-col">
-      <header className="px-4 sm:px-8 py-3 sm:py-4 border-b border-[var(--hairline)] flex items-center justify-between gap-2 bg-white">
-        <Link href="/" className="font-display text-base sm:text-xl font-extrabold text-green tracking-wide uppercase shrink-0">
-          SPORTS<span className="text-tangerine">★</span>BFF
+    <main className="min-h-screen flex flex-col bg-cream-warm" style={{ minHeight: '100dvh' }}>
+      <header className="px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
+        <Link href="/" className="font-display text-base sm:text-lg font-extrabold text-green tracking-wide shrink-0">
+          Tea'd Up
         </Link>
-        <div className="flex items-center gap-2.5 sm:gap-5 shrink-0">
-          <div className="flex gap-1.5">
-            {[1, 2, 3].map((i) => (
-              <span
-                key={i}
-                className={`w-6 sm:w-8 h-1 rounded-full transition ${
-                  i <= step ? 'bg-tangerine' : 'bg-[var(--hairline)]'
-                }`}
-              />
-            ))}
-          </div>
-          <button
-            type="button"
-            onClick={skip}
-            className="text-[12px] sm:text-sm text-ink-soft hover:text-ink underline-offset-2 hover:underline"
-          >
-            Skip <span className="hidden sm:inline">— use defaults</span> →
-          </button>
+        <div className="flex gap-1.5">
+          {[1, 2].map((i) => (
+            <span
+              key={i}
+              className={`w-6 h-1 rounded-full transition ${
+                i <= step ? 'bg-tangerine' : 'bg-[var(--hairline)]'
+              }`}
+            />
+          ))}
         </div>
       </header>
 
-      <section className="flex-1 px-4 sm:px-6 py-8 sm:py-12 flex items-start sm:items-center justify-center">
-        <div className="w-full max-w-2xl">
-          {/* Step 1 — League */}
+      {/* PAGE X/2 status chip */}
+      <div className="px-4 sm:px-6 mb-2 flex justify-center">
+        <span
+          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold tracking-widest"
+          style={{ background: '#1C1108', color: '#FF8B4D', fontFamily: 'monospace' }}
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-[#FF8B4D] animate-pulse" />
+          PAGE {step}/2
+        </span>
+      </div>
+
+      <section className="flex-1 px-4 sm:px-6 py-6">
+        <div className="max-w-md mx-auto">
           {step === 1 && (
             <div>
-              <p className="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-tangerine mb-2 sm:mb-3">Step 1 of 3</p>
-              <h1 className="font-display text-[36px] sm:text-5xl font-bold text-green leading-tight tracking-tight">
-                Which sport?
+              <h1 className="font-display text-[34px] sm:text-[36px] font-bold text-green leading-tight tracking-tight">
+                Which league?
               </h1>
-              <p className="mt-2 sm:mt-3 text-[15px] sm:text-lg text-ink-soft">Pick one. We can add the other anytime.</p>
+              <p className="mt-2 text-[15px] text-ink-soft italic">(or both — there's no wrong answer)</p>
 
-              <div className="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-3 gap-2.5 sm:gap-3">
+              <div className="mt-6 space-y-3">
                 {[
-                  { id: 'nfl', label: 'NFL only', desc: '32 teams · Sunday is the day' },
-                  { id: 'nba', label: 'NBA only', desc: '30 teams · 82 games a season' },
-                  { id: 'both', label: 'Both, please', desc: 'Why choose · Recommended' },
+                  { id: 'nfl' as const, label: 'NFL only', sub: '32 teams · Sundays', emoji: '🏈' },
+                  { id: 'nba' as const, label: 'NBA only', sub: '30 teams · 82 games', emoji: '🏀' },
+                  { id: 'both' as const, label: 'Both, please', sub: 'Recommended · the full year of tea', emoji: '✨' },
                 ].map((l) => (
                   <button
                     key={l.id}
-                    type="button"
-                    onClick={() => setLeague(l.id as any)}
-                    className={`text-left rounded-2xl border p-5 transition ${
+                    onClick={() => setLeague(l.id)}
+                    className={`w-full text-left rounded-2xl border-2 p-4 transition flex items-center gap-3 ${
                       league === l.id
-                        ? 'border-tangerine bg-tangerine/5 shadow-soft'
+                        ? 'border-tangerine bg-white shadow-[0_4px_16px_-4px_rgba(255,107,61,0.3)]'
                         : 'border-[var(--hairline)] bg-white hover:border-ink-soft'
                     }`}
                   >
-                    <div className="font-display font-bold text-xl text-green">{l.label}</div>
-                    <div className="mt-1 text-sm text-ink-soft">{l.desc}</div>
+                    <div className={`shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-xl ${
+                      league === l.id ? 'bg-tangerine text-white' : 'bg-cream-warm text-ink'
+                    }`}>
+                      {l.emoji}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-display font-bold text-[18px] text-green">{l.label}</div>
+                      <div className="text-[12.5px] text-ink-soft">{l.sub}</div>
+                    </div>
+                    {league === l.id && (
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-tangerine shrink-0" aria-hidden>
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    )}
                   </button>
                 ))}
               </div>
 
-              <div className="mt-10 flex justify-end">
-                <button className="btn btn-primary" onClick={() => setStep(2)}>
-                  Next →
-                </button>
-              </div>
+              <button
+                onClick={() => setStep(2)}
+                className="mt-8 w-full inline-flex items-center justify-center gap-2 bg-tangerine text-white font-semibold rounded-full py-4 text-[15px] hover:bg-tangerine-dark transition shadow-[0_4px_16px_-4px_rgba(255,107,61,0.4)]"
+              >
+                Continue →
+              </button>
             </div>
           )}
 
-          {/* Step 2 — Lens */}
           {step === 2 && (
             <div>
-              <p className="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-tangerine mb-2 sm:mb-3">Step 2 of 3</p>
-              <h1 className="font-display text-[36px] sm:text-5xl font-bold text-green leading-tight tracking-tight">
-                Pick what you know. <span className="italic font-medium text-tangerine">Or don't.</span>
+              <h1 className="font-display text-[34px] sm:text-[36px] font-bold text-green leading-tight tracking-tight">
+                What should I call you?
               </h1>
-              <p className="mt-2 sm:mt-3 text-[15px] sm:text-lg text-ink-soft">
-                Choose a show you've watched twice — every answer starts speaking that show's language. Don't know any of these? Pick <strong className="text-ink">Just sports</strong>.
-              </p>
-
-              <div className="mt-6 sm:mt-8 grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3">
-                {lenses.map((l) => {
-                  const isActive = lens === l.id;
-                  const initials = l.name
-                    .split(' ')
-                    .map((w) => w[0])
-                    .join('')
-                    .slice(0, 2)
-                    .toUpperCase();
-                  return (
-                    <button
-                      key={l.id}
-                      type="button"
-                      onClick={() => setLens(l.id)}
-                      className={`group relative rounded-2xl overflow-hidden bg-white text-left transition-all duration-200 ${
-                        isActive
-                          ? 'shadow-lift -translate-y-1'
-                          : 'shadow-soft hover:shadow-lift hover:-translate-y-0.5 border border-[var(--hairline)]'
-                      }`}
-                      style={
-                        isActive
-                          ? { boxShadow: `0 0 0 3px ${l.accent_color}, 0 28px 56px -16px rgba(13,45,36,0.16)` }
-                          : {}
-                      }
-                    >
-                      {/* Poster art */}
-                      <div
-                        className="relative aspect-[3/4] flex items-center justify-center overflow-hidden"
-                        style={{
-                          background: `linear-gradient(135deg, ${l.card_color} 0%, ${l.accent_color} 200%)`,
-                        }}
-                      >
-                        <span
-                          className="font-display font-bold text-5xl tracking-tight transition-transform duration-300 group-hover:scale-110"
-                          style={{
-                            color: l.accent_color,
-                            textShadow: '0 2px 8px rgba(0,0,0,0.08)',
-                          }}
-                        >
-                          {initials}
-                        </span>
-                        {/* Subtle paper grain */}
-                        <div className="absolute inset-0 mix-blend-overlay opacity-30 pointer-events-none"
-                          style={{
-                            background: `radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4) 0%, transparent 60%)`,
-                          }}
-                        />
-                        {/* Active checkmark */}
-                        {isActive && (
-                          <div className="absolute top-2 right-2 w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-sm">
-                            <svg viewBox="0 0 12 12" width="11" height="11" fill="none">
-                              <path d="M2 6.2 L4.8 9 L10 3.5" stroke={l.accent_color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                          </div>
-                        )}
-                      </div>
-                      {/* Info */}
-                      <div className="p-3">
-                        <div className="font-display font-bold text-[15px] leading-tight text-green truncate">
-                          {l.name}
-                        </div>
-                        <div className="text-[10px] font-bold tracking-widest uppercase mt-1 text-muted">
-                          {l.league_bias ?? 'Both'}
-                        </div>
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-
-              <div className="mt-10 flex justify-between items-center">
-                <button className="text-sm text-ink-soft" onClick={() => setStep(1)}>
-                  ← Back
-                </button>
-                <button className="btn btn-primary" onClick={() => setStep(3)}>
-                  Next →
-                </button>
-              </div>
-            </div>
-          )}
-
-          {/* Step 3 — Name */}
-          {step === 3 && (
-            <div>
-              <p className="text-[11px] sm:text-xs font-bold tracking-widest uppercase text-tangerine mb-2 sm:mb-3">Step 3 of 3</p>
-              <h1 className="font-display text-[36px] sm:text-5xl font-bold text-green leading-tight tracking-tight">
-                What should we <span className="italic font-medium text-tangerine">call you?</span>
-              </h1>
-              <p className="mt-2 sm:mt-3 text-[15px] sm:text-lg text-ink-soft">Optional. We'll just use it in the chat header.</p>
+              <p className="mt-2 text-[15px] text-ink-soft italic">Just for the chat. You can skip this.</p>
 
               <input
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Your name (optional)"
-                className="mt-6 sm:mt-8 w-full bg-white border border-[var(--hairline)] rounded-full px-5 sm:px-6 py-3.5 sm:py-4 text-[16px] sm:text-lg focus:outline-none focus:ring-2 focus:ring-tangerine/30"
-                enterKeyHint="done"
+                placeholder="type your name..."
+                className="mt-6 w-full bg-white border-2 border-[var(--hairline)] rounded-full px-5 py-4 text-[16px] focus:outline-none focus:border-tangerine focus:ring-4 focus:ring-tangerine/10"
                 autoComplete="given-name"
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') finish();
-                }}
+                autoFocus
+                onKeyDown={(e) => { if (e.key === 'Enter') finish(); }}
               />
 
-              <div className="mt-8 sm:mt-10 flex justify-between items-center">
-                <button className="text-sm text-ink-soft" onClick={() => setStep(2)}>
-                  ← Back
-                </button>
-                <button className="btn btn-primary" onClick={finish}>
+              <div className="mt-8 flex flex-col gap-3">
+                <button
+                  onClick={finish}
+                  className="w-full inline-flex items-center justify-center gap-2 bg-tangerine text-white font-semibold rounded-full py-4 text-[15px] hover:bg-tangerine-dark transition shadow-[0_4px_16px_-4px_rgba(255,107,61,0.4)]"
+                >
                   Take me in →
+                </button>
+                <button onClick={() => setStep(1)} className="text-[13px] text-ink-soft hover:text-ink">
+                  ← Back
                 </button>
               </div>
             </div>

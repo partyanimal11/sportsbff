@@ -1,14 +1,24 @@
 'use client';
 
-import { useState, useRef } from 'react';
-import Link from 'next/link';
-
 /**
- * Scan UI — Phase 1 (demo mode).
- * Real photo upload + camera capture, but the "vision" is a cycling mock.
- * Once OPENAI_API_KEY is wired and we add a /api/scan route, this swaps to
- * a real GPT-4o-vision call.
+ * Tea'd Up — Scan tab.
+ *
+ * Hero feature. Camera/upload → /api/scan with modes → mode-organized result
+ * with confirmation tier pills + storyline narrative + concept explainer.
  */
+
+import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
+import { BottomTabs, BottomTabsSpacer } from '@/components/BottomTabs';
+import { ModeToggle, type Mode } from '@/components/ModeToggle';
+import { TierPill, type Tier } from '@/components/TierPill';
+import { getProfile, setProfile } from '@/lib/profile';
+
+type ScanModes = {
+  drama?: { tier: Tier; headline: string; summary: string }[];
+  on_field?: string;
+  learn?: string;
+};
 
 type ScanResult = {
   player_name: string;
@@ -18,281 +28,471 @@ type ScanResult = {
   jersey_color: 'red' | 'blue' | 'green' | 'purple' | 'yellow' | 'white';
   blurb: string;
   game?: { home: string; home_score: number; away: string; away_score: number; clock: string };
+  modes?: ScanModes;
 };
 
-const MOCK_RESULTS: ScanResult[] = [
-  {
-    player_name: 'Travis Kelce',
-    number: 87,
-    position: 'Tight End',
-    team: 'Kansas City Chiefs',
-    jersey_color: 'red',
-    blurb: 'Future Hall of Famer. Three rings. Yes — he\'s the one dating Taylor Swift.',
-    game: { home: 'KC', home_score: 24, away: 'DAL', away_score: 17, clock: '4Q 2:14' },
-  },
-  {
-    player_name: 'Patrick Mahomes',
-    number: 15,
-    position: 'Quarterback',
-    team: 'Kansas City Chiefs',
-    jersey_color: 'red',
-    blurb: 'Three-time Super Bowl MVP. The face of the league. Side-arm passes that look like physics violations.',
-    game: { home: 'KC', home_score: 24, away: 'DAL', away_score: 17, clock: '4Q 2:14' },
-  },
-  {
-    player_name: 'Shai Gilgeous-Alexander',
-    number: 2,
-    position: 'Guard',
-    team: 'Oklahoma City Thunder',
-    jersey_color: 'blue',
-    blurb: 'Reigning MVP. Tailored cardigans postgame. Two-word answers. Says everything with his chest.',
-    game: { home: 'OKC', home_score: 108, away: 'BOS', away_score: 102, clock: '3Q 4:32' },
-  },
-  {
-    player_name: 'Victor Wembanyama',
-    number: 1,
-    position: 'Center',
-    team: 'San Antonio Spurs',
-    jersey_color: 'white',
-    blurb: '7\'4 French unicorn. Defensive Player of the Year favorite. Plays like LeBron and Dirk had a child raised by Pop.',
-    game: { home: 'SAS', home_score: 96, away: 'DEN', away_score: 91, clock: '4Q 6:08' },
-  },
+const RANDOM_ATHLETES = [
+  'travis-kelce', 'patrick-mahomes', 'shai-gilgeous-alexander', 'victor-wembanyama',
+  'lebron-james', 'luka-doncic', 'kawhi-leonard', 'joel-embiid', 'josh-allen', 'lamar-jackson',
 ];
 
-const JERSEY_GRADIENT: Record<ScanResult['jersey_color'], string> = {
-  red: 'linear-gradient(180deg, #C8202A 0%, #921620 100%)',
-  blue: 'linear-gradient(180deg, #1F4FBA 0%, #0F347E 100%)',
-  green: 'linear-gradient(180deg, #2A6E47 0%, #163C25 100%)',
-  purple: 'linear-gradient(180deg, #6B3DAA 0%, #3F1B6E 100%)',
-  yellow: 'linear-gradient(180deg, #FBC531 0%, #C28A00 100%)',
-  white: 'linear-gradient(180deg, #F5F5F5 0%, #BFBFBF 100%)',
-};
-
 export default function ScanPage() {
-  const [phase, setPhase] = useState<'idle' | 'preview' | 'scanning' | 'result'>('idle');
+  const [mounted, setMounted] = useState(false);
+  const [phase, setPhase] = useState<'idle' | 'preview' | 'scanning' | 'result' | 'unknown'>('idle');
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [result, setResult] = useState<ScanResult | null>(null);
-  const [scanIndex, setScanIndex] = useState(0);
+  const [error, setError] = useState<string | null>(null);
+  const [modes, setModes] = useState<Mode[]>(['drama']);
   const fileRef = useRef<HTMLInputElement>(null);
   const cameraRef = useRef<HTMLInputElement>(null);
 
-  function handleFile(file: File) {
-    const url = URL.createObjectURL(file);
-    setPreviewUrl(url);
-    setPhase('preview');
-    // Auto-start scan
-    setTimeout(() => runScan(), 600);
+  // Hydrate from profile (avoids SSR mismatch)
+  useEffect(() => {
+    setMounted(true);
+    const p = getProfile();
+    if (p.defaultModes && p.defaultModes.length > 0) {
+      setModes(p.defaultModes as Mode[]);
+    }
+  }, []);
+
+  function persistModes(next: Mode[]) {
+    setModes(next);
+    setProfile({ defaultModes: next });
   }
 
-  function runScan() {
+  async function handleFile(file: File) {
+    const url = URL.createObjectURL(file);
+    setPreviewUrl(url);
     setPhase('scanning');
-    // Simulate vision API latency
-    setTimeout(() => {
-      const next = MOCK_RESULTS[scanIndex % MOCK_RESULTS.length];
-      setScanIndex((i) => i + 1);
-      setResult(next);
+    setError(null);
+
+    try {
+      const form = new FormData();
+      form.append('image', file);
+      const qs = `?modes=${modes.join(',')}`;
+      const res = await fetch(`/api/scan${qs}`, { method: 'POST', body: form });
+      if (!res.ok) {
+        if (res.status === 404) {
+          setPhase('unknown');
+          return;
+        }
+        throw new Error(`HTTP ${res.status}`);
+      }
+      const data = (await res.json()) as ScanResult;
+      if (data.player_name === 'Unknown' || !data.player_name) {
+        setPhase('unknown');
+        return;
+      }
+      setResult(data);
       setPhase('result');
-    }, 1800);
+    } catch (err) {
+      setError(String(err));
+      setPhase('unknown');
+    }
+  }
+
+  async function trySample() {
+    setPhase('scanning');
+    setError(null);
+    setPreviewUrl(null);
+    try {
+      // No image — backend returns a sample
+      const qs = `?modes=${modes.join(',')}&sample=${RANDOM_ATHLETES[Math.floor(Math.random() * RANDOM_ATHLETES.length)]}`;
+      const res = await fetch(`/api/scan${qs}`, { method: 'POST', body: new FormData() });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = (await res.json()) as ScanResult;
+      setResult(data);
+      setPhase('result');
+    } catch (err) {
+      setError(String(err));
+      setPhase('idle');
+    }
   }
 
   function reset() {
     if (previewUrl) URL.revokeObjectURL(previewUrl);
     setPreviewUrl(null);
     setResult(null);
+    setError(null);
     setPhase('idle');
   }
 
-  function trySample() {
-    setPhase('scanning');
-    setTimeout(() => {
-      const next = MOCK_RESULTS[scanIndex % MOCK_RESULTS.length];
-      setScanIndex((i) => i + 1);
-      setResult(next);
-      setPhase('result');
-    }, 1400);
-  }
-
   return (
-    <main className="min-h-screen flex flex-col">
-      <header className="px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 border-b border-[var(--hairline)] flex items-center justify-between gap-3 bg-white sticky top-0 z-10">
-        <Link href="/" className="font-display text-base sm:text-xl font-extrabold text-green tracking-wide uppercase shrink-0">
-          SPORTS<span className="text-tangerine">★</span>BFF
+    <main className="min-h-screen flex flex-col bg-cream-warm">
+      {/* Header */}
+      <header className="px-4 sm:px-6 py-3 border-b border-[var(--hairline)] flex items-center justify-between gap-3 bg-white/90 backdrop-blur sticky top-0 z-10">
+        <Link href="/scan" className="font-display text-lg sm:text-xl font-extrabold text-green tracking-wide shrink-0">
+          Tea'd Up
         </Link>
-        <nav className="flex gap-4 sm:gap-7 text-[13px] sm:text-sm text-ink-soft">
-          <Link href="/scan" className="text-green font-semibold">Scan</Link>
-          <Link href="/chat" className="hover:text-ink">Chat</Link>
-          <Link href="/lessons" className="hover:text-ink">Lessons</Link>
-        </nav>
+        {mounted && (
+          <ModeToggle active={modes} onChange={persistModes} disabled={phase === 'scanning'} />
+        )}
       </header>
 
-      <section className="flex-1 px-4 sm:px-6 py-8 sm:py-12">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cream-warm text-[11px] sm:text-xs text-ink-soft mb-5 sm:mb-6">
-            <span className="w-2 h-2 rounded-full bg-tangerine animate-pulse" />
-            Demo mode · vision API not wired yet
-          </div>
-          <h1 className="font-display text-[36px] sm:text-5xl md:text-6xl font-bold text-green leading-[0.95] tracking-tight">
-            Scan a game.
-            <br />
-            <span className="italic font-medium text-tangerine">Know who's playing.</span>
-          </h1>
-          <p className="mt-4 sm:mt-5 text-[15px] sm:text-lg text-ink-soft max-w-xl mx-auto">
-            Point your camera at any NFL or NBA broadcast — sportsBFF reads the scoreboard, identifies the players in frame, and gives you the bio, the stats, the drama.
-          </p>
+      <section className="flex-1 px-4 sm:px-6 py-6 sm:py-8">
+        <div className="max-w-md mx-auto">
+          {phase === 'idle' && <IdleState onCamera={() => cameraRef.current?.click()} onUpload={() => fileRef.current?.click()} onSample={trySample} />}
+          {(phase === 'scanning') && <ScanningState previewUrl={previewUrl} />}
+          {phase === 'result' && result && <ResultCard result={result} modes={modes} onReset={reset} />}
+          {phase === 'unknown' && <UnknownState onReset={reset} error={error} />}
 
-          {phase === 'idle' && (
-            <>
-              <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
-                <button className="btn btn-primary" onClick={() => cameraRef.current?.click()}>
-                  📷 Take a photo
-                </button>
-                <button className="btn btn-secondary" onClick={() => fileRef.current?.click()}>
-                  Upload from device
-                </button>
-                <button className="text-tangerine font-semibold text-sm hover:underline" onClick={trySample}>
-                  or try a sample →
-                </button>
-              </div>
-              <input
-                ref={cameraRef}
-                type="file"
-                accept="image/*"
-                capture="environment"
-                hidden
-                onChange={(e) => e.target.files?.[0] && handleFile(e.target.files[0])}
-              />
-              <input
-                ref={fileRef}
-                type="file"
-                accept="image/*"
-                hidden
-                onChange={(e) => e.target.files?.[0] && handleFile(e.target.files[0])}
-              />
-              <p className="mt-6 text-xs text-muted">
-                Point your phone at any NFL or NBA game on TV. Or drop a screenshot.
-              </p>
-            </>
-          )}
-
-          {(phase === 'preview' || phase === 'scanning') && (
-            <div className="mt-10 max-w-md mx-auto bg-white rounded-3xl border border-[var(--hairline)] shadow-lift overflow-hidden">
-              <div className="relative h-72 bg-black">
-                {previewUrl ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={previewUrl} alt="Your scan" className="w-full h-full object-cover" />
-                ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-[#2A6E47] via-[#1F5535] to-[#163C25]" />
-                )}
-                {/* Scan overlay */}
-                <div className="absolute inset-8 pointer-events-none">
-                  <div className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-tangerine" />
-                  <div className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-tangerine" />
-                  <div className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-tangerine" />
-                  <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-tangerine" />
-                  {phase === 'scanning' && (
-                    <div
-                      className="absolute left-0 right-0 h-0.5 bg-tangerine shadow-[0_0_12px_rgba(255,107,61,0.8)]"
-                      style={{
-                        animation: 'scanline 1.6s ease-in-out infinite',
-                      }}
-                    />
-                  )}
-                </div>
-              </div>
-              <div className="px-5 py-4 text-sm text-ink-soft flex items-center justify-between">
-                <span>{phase === 'scanning' ? 'Scanning…' : 'Preview ready'}</span>
-                {phase === 'preview' && (
-                  <button className="text-tangerine font-semibold text-sm" onClick={runScan}>
-                    Identify →
-                  </button>
-                )}
-              </div>
-            </div>
-          )}
-
-          {phase === 'result' && result && (
-            <div className="mt-10 max-w-md mx-auto">
-              <div className="bg-white rounded-3xl border border-[var(--hairline)] shadow-lift overflow-hidden text-left animate-[fadeUp_0.6s_ease]">
-                {result.game && (
-                  <div className="px-4 py-3 border-b border-[var(--hairline)] flex items-center justify-between text-xs uppercase tracking-widest text-muted">
-                    <span className="text-sage">● Scan complete</span>
-                    <span className="text-green font-semibold">
-                      {result.game.home} {result.game.home_score} vs {result.game.away}{' '}
-                      {result.game.away_score} · {result.game.clock}
-                    </span>
-                  </div>
-                )}
-                <div className="h-44 relative" style={{ background: 'linear-gradient(135deg, #2A6E47 0%, #1F5535 50%, #163C25 100%)' }}>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div
-                      className="w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-white font-display font-extrabold text-xl"
-                      style={{ background: JERSEY_GRADIENT[result.jersey_color] }}
-                    >
-                      {result.number}
-                    </div>
-                  </div>
-                </div>
-                <div className="p-5">
-                  <div className="flex items-center justify-between mb-3">
-                    <div>
-                      <div className="font-display font-bold text-2xl text-green leading-tight">
-                        {result.player_name}
-                      </div>
-                      <div className="text-sm text-muted mt-1">
-                        {result.position} · {result.team} · #{result.number}
-                      </div>
-                    </div>
-                  </div>
-                  <p className="text-[15px] text-ink leading-relaxed">{result.blurb}</p>
-                  <div className="mt-5 flex items-center gap-2">
-                    <Link
-                      href={`/chat?seed=${encodeURIComponent(`Tell me more about ${result.player_name}.`)}`}
-                      className="btn btn-dark"
-                    >
-                      💬 Ask more →
-                    </Link>
-                    <button className="btn btn-secondary" onClick={reset}>
-                      Scan another
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <p className="mt-4 text-xs text-muted">
-                Sample result — real vision pipeline lands when OpenAI is wired.
-              </p>
-            </div>
-          )}
+          {/* Hidden file inputs */}
+          <input
+            ref={cameraRef}
+            type="file"
+            accept="image/*"
+            capture="environment"
+            hidden
+            onChange={(e) => e.target.files?.[0] && handleFile(e.target.files[0])}
+          />
+          <input
+            ref={fileRef}
+            type="file"
+            accept="image/*"
+            hidden
+            onChange={(e) => e.target.files?.[0] && handleFile(e.target.files[0])}
+          />
         </div>
       </section>
 
-      <style jsx global>{`
-        @keyframes scanline {
-          0% {
-            top: 0;
-            opacity: 0;
-          }
-          15% {
-            opacity: 1;
-          }
-          85% {
-            opacity: 1;
-          }
-          100% {
-            top: 100%;
-            opacity: 0;
-          }
-        }
-        @keyframes fadeUp {
-          from {
-            opacity: 0;
-            transform: translateY(8px);
-          }
-          to {
-            opacity: 1;
-            transform: none;
-          }
-        }
-      `}</style>
+      <BottomTabsSpacer />
+      <BottomTabs />
     </main>
   );
+}
+
+/* =================================================================
+   Idle state — viewfinder hero + 3 CTAs
+   ================================================================= */
+
+function IdleState({ onCamera, onUpload, onSample }: { onCamera: () => void; onUpload: () => void; onSample: () => void }) {
+  return (
+    <div className="text-center mt-2 sm:mt-4">
+      {/* Camera-viewfinder hero with scanning animation */}
+      <div className="mx-auto w-44 h-44 sm:w-48 sm:h-48 relative mb-6 sm:mb-7" aria-hidden>
+        <div className="absolute inset-0 rounded-3xl border border-[var(--hairline)] bg-white/40 overflow-hidden">
+          {/* Rule-of-thirds grid */}
+          <div className="absolute inset-0">
+            <div className="absolute left-1/3 top-0 bottom-0 w-px bg-[rgba(13,45,36,0.08)]" />
+            <div className="absolute left-2/3 top-0 bottom-0 w-px bg-[rgba(13,45,36,0.08)]" />
+            <div className="absolute top-1/3 left-0 right-0 h-px bg-[rgba(13,45,36,0.08)]" />
+            <div className="absolute top-2/3 left-0 right-0 h-px bg-[rgba(13,45,36,0.08)]" />
+          </div>
+          {/* Corner brackets */}
+          <div className="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-tangerine" />
+          <div className="absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-tangerine" />
+          <div className="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-tangerine" />
+          <div className="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-tangerine" />
+          {/* Scan line */}
+          <div className="absolute left-2 right-2 h-0.5 bg-tangerine shadow-[0_0_10px_rgba(255,107,61,0.7)]" style={{ animation: 'scanLineIdle 1.8s ease-in-out infinite' }} />
+          {/* Center teacup logo */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <svg viewBox="0 0 100 100" width="60" height="60" aria-hidden>
+              <path d="M 26 30 Q 26 70 38 80 L 56 80 Q 68 70 68 30 Z" fill="#0D2D24" />
+              <ellipse cx="48" cy="83" rx="20" ry="2.5" fill="#0D2D24" />
+              <path d="M 68 38 Q 80 42 80 56 Q 80 66 68 70" stroke="#0D2D24" strokeWidth="3" fill="none" />
+              <path d="M 26 30 L 68 30" stroke="#FF6B3D" strokeWidth="1.5" />
+              <path d="M 38 30 Q 47 55 38 80" stroke="#FF6B3D" strokeWidth="2" fill="none" />
+              <path d="M 56 30 Q 47 55 56 80" stroke="#FF6B3D" strokeWidth="2" fill="none" />
+              <path d="M 26 50 Q 47 55 68 50" stroke="#FF6B3D" strokeWidth="2" fill="none" />
+            </svg>
+          </div>
+        </div>
+        <div className="mt-2 text-[10px] font-bold tracking-widest uppercase text-tangerine flex items-center justify-center gap-1.5">
+          <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
+          Ready to scan
+        </div>
+      </div>
+
+      <h1 className="font-display text-[34px] sm:text-4xl font-bold text-green leading-[0.95] tracking-tight">
+        Scan a player.
+        <br />
+        <span className="italic font-medium text-tangerine">Get the tea.</span>
+      </h1>
+      <p className="mt-3 sm:mt-4 text-[15px] sm:text-base text-ink-soft max-w-xs mx-auto leading-relaxed">
+        Camera, screenshot, or live broadcast. We ID the player and serve the gossip.
+      </p>
+
+      <div className="mt-6 sm:mt-8 flex flex-col gap-3">
+        <button
+          onClick={onCamera}
+          className="w-full inline-flex items-center justify-center gap-2 bg-tangerine text-white font-semibold rounded-full py-4 text-[15px] hover:bg-tangerine-dark transition shadow-[0_4px_16px_-4px_rgba(255,107,61,0.4)]"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+            <circle cx="12" cy="13" r="4" />
+          </svg>
+          Take a photo
+        </button>
+        <button
+          onClick={onUpload}
+          className="w-full inline-flex items-center justify-center gap-2 bg-white text-ink font-semibold rounded-full py-4 text-[15px] border border-[var(--hairline)] hover:bg-cream-warm transition"
+        >
+          Upload from device
+        </button>
+        <button
+          onClick={onSample}
+          className="text-tangerine text-[14px] font-semibold hover:underline mt-1"
+        >
+          🎲 Try a random athlete →
+        </button>
+      </div>
+
+      <p className="mt-6 text-[11px] text-muted">
+        We never store your photos.
+      </p>
+
+      <style jsx>{`
+        @keyframes scanLineIdle {
+          0% { top: 8px; opacity: 0; }
+          15% { opacity: 1; }
+          85% { opacity: 1; }
+          100% { top: calc(100% - 10px); opacity: 0; }
+        }
+      `}</style>
+    </div>
+  );
+}
+
+/* =================================================================
+   Scanning state — preview + brewing teacup animation
+   ================================================================= */
+
+function ScanningState({ previewUrl }: { previewUrl: string | null }) {
+  return (
+    <div className="text-center mt-4">
+      <div className="mx-auto w-full max-w-sm bg-white rounded-3xl border border-[var(--hairline)] overflow-hidden shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]">
+        <div className="relative h-72 bg-black">
+          {previewUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={previewUrl} alt="Your scan" className="w-full h-full object-cover" />
+          ) : (
+            <div className="w-full h-full bg-gradient-to-br from-[#2A6E47] via-[#1F5535] to-[#163C25]" />
+          )}
+          <div className="absolute inset-6 pointer-events-none">
+            <div className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-tangerine" />
+            <div className="absolute top-0 right-0 w-6 h-6 border-t-2 border-r-2 border-tangerine" />
+            <div className="absolute bottom-0 left-0 w-6 h-6 border-b-2 border-l-2 border-tangerine" />
+            <div className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-tangerine" />
+            <div
+              className="absolute left-0 right-0 h-0.5 bg-tangerine shadow-[0_0_12px_rgba(255,107,61,0.8)]"
+              style={{ animation: 'scanline 1.6s ease-in-out infinite' }}
+            />
+          </div>
+        </div>
+        <div className="px-5 py-4 flex items-center justify-center gap-2">
+          <span className="inline-block w-3 h-3 rounded-full border-2 border-tangerine border-t-transparent animate-spin" />
+          <span className="text-sm text-ink-soft">Brewing the tea…</span>
+        </div>
+      </div>
+      <style jsx global>{`
+        @keyframes scanline {
+          0% { top: 0; opacity: 0; }
+          15% { opacity: 1; }
+          85% { opacity: 1; }
+          100% { top: 100%; opacity: 0; }
+        }
+      `}</style>
+    </div>
+  );
+}
+
+/* =================================================================
+   Unknown state — never guess, ask the user
+   ================================================================= */
+
+function UnknownState({ onReset, error }: { onReset: () => void; error: string | null }) {
+  return (
+    <div className="text-center mt-6">
+      <div className="text-5xl mb-4" aria-hidden>☕</div>
+      <h2 className="font-display text-2xl sm:text-3xl font-bold text-green leading-tight">
+        Hmm. Not sure who this is.
+      </h2>
+      <p className="mt-3 text-ink-soft max-w-xs mx-auto">
+        Help me out — try a clearer crop on the jersey, or pick a random athlete.
+      </p>
+      <div className="mt-6 flex flex-col gap-3">
+        <button onClick={onReset} className="w-full inline-flex items-center justify-center gap-2 bg-tangerine text-white font-semibold rounded-full py-4 text-[15px]">
+          Try another photo
+        </button>
+        <p className="text-xs text-muted mt-2">
+          I never guess. If I can't tell, I ask.
+        </p>
+      </div>
+      {error && process.env.NODE_ENV === 'development' && (
+        <p className="mt-4 text-xs text-burgundy font-mono">{error}</p>
+      )}
+    </div>
+  );
+}
+
+/* =================================================================
+   Result card — hero band + mode-tabbed sections + actions
+   ================================================================= */
+
+function ResultCard({ result, modes, onReset }: { result: ScanResult; modes: Mode[]; onReset: () => void }) {
+  const teamColors = getTeamColors(result.team);
+
+  return (
+    <div className="space-y-4">
+      {/* Hero band */}
+      <div
+        className="rounded-3xl overflow-hidden relative shadow-[0_8px_24px_-12px_rgba(13,45,36,0.18)]"
+        style={{
+          background: `linear-gradient(135deg, ${teamColors.primary} 0%, ${teamColors.primary} 50%, ${teamColors.secondary} 200%)`,
+        }}
+      >
+        <div className="absolute inset-0 opacity-15" style={{ background: 'repeating-linear-gradient(90deg, transparent 0 60px, rgba(255,255,255,0.4) 60px 61px)' }} />
+        <div className="relative p-5 sm:p-6 flex items-end justify-between gap-4 min-h-[140px]">
+          <div className="flex-1 min-w-0">
+            <div className="text-[10px] sm:text-[11px] font-bold tracking-[0.18em] uppercase mb-2" style={{ color: teamColors.ink, opacity: 0.78 }}>
+              {result.position} · {result.team}
+              {result.number ? ` · #${result.number}` : ''}
+            </div>
+            <h1 className="font-display font-bold leading-[0.92] tracking-tight" style={{ color: teamColors.ink, fontSize: 'clamp(28px, 6.5vw, 40px)' }}>
+              {result.player_name}
+            </h1>
+            {result.game && (
+              <div className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider text-white" style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)' }}>
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                {result.game.home} {result.game.home_score} · {result.game.away} {result.game.away_score} · {result.game.clock}
+              </div>
+            )}
+          </div>
+          {result.number > 0 && (
+            <div
+              className="shrink-0 rounded-full text-white font-display font-extrabold text-2xl flex items-center justify-center"
+              style={{
+                width: 64,
+                height: 64,
+                background: teamColors.secondary,
+                boxShadow: '0 0 0 4px rgba(255,255,255,0.15) inset, 0 12px 32px -8px rgba(0,0,0,0.4)',
+              }}
+            >
+              {result.number}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Modes-organized sections */}
+      {modes.includes('drama') && result.modes?.drama && result.modes.drama.length > 0 && (
+        <DramaSection items={result.modes.drama} />
+      )}
+      {modes.includes('on_field') && result.modes?.on_field && (
+        <ModeSection emoji="🏀" label="On-field" body={result.modes.on_field} />
+      )}
+      {modes.includes('learn') && result.modes?.learn && (
+        <ModeSection emoji="📚" label="Learn" body={result.modes.learn} />
+      )}
+      {/* Fallback when no modes payload — show the legacy blurb */}
+      {(!result.modes || (!result.modes.drama && !result.modes.on_field && !result.modes.learn)) && result.blurb && (
+        <ModeSection emoji="☕" label="Tea" body={result.blurb} />
+      )}
+
+      {/* Footer actions */}
+      <div className="grid grid-cols-3 gap-2 mt-5">
+        <Link
+          href={`/chat?seed=${encodeURIComponent(`Tell me more about ${result.player_name}.`)}&modes=${modes.join(',')}`}
+          className="flex flex-col items-center justify-center gap-1.5 bg-white border border-[var(--hairline)] rounded-2xl py-3 hover:bg-cream-warm transition shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-green" aria-hidden>
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+          <span className="text-[11px] font-semibold text-ink">Ask follow-up</span>
+        </Link>
+        <button
+          onClick={() => alert('Saved to your scan history')}
+          className="flex flex-col items-center justify-center gap-1.5 bg-white border border-[var(--hairline)] rounded-2xl py-3 hover:bg-cream-warm transition shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-green" aria-hidden>
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+          </svg>
+          <span className="text-[11px] font-semibold text-ink">Save</span>
+        </button>
+        <button
+          onClick={() => {
+            if (typeof navigator !== 'undefined' && (navigator as any).share) {
+              (navigator as any).share({
+                title: `Tea'd Up · ${result.player_name}`,
+                text: `${result.player_name} (${result.team}) — ${result.blurb}`,
+                url: typeof window !== 'undefined' ? window.location.origin : 'https://teadup.app',
+              }).catch(() => {});
+            } else {
+              alert('Sharing not supported in this browser');
+            }
+          }}
+          className="flex flex-col items-center justify-center gap-1.5 bg-white border border-[var(--hairline)] rounded-2xl py-3 hover:bg-cream-warm transition shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-green" aria-hidden>
+            <circle cx="18" cy="5" r="3" />
+            <circle cx="6" cy="12" r="3" />
+            <circle cx="18" cy="19" r="3" />
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+          </svg>
+          <span className="text-[11px] font-semibold text-ink">Share</span>
+        </button>
+      </div>
+
+      <button onClick={onReset} className="w-full text-center text-[13px] text-muted hover:text-ink-soft mt-2 py-2">
+        ← scan another
+      </button>
+    </div>
+  );
+}
+
+function DramaSection({ items }: { items: { tier: Tier; headline: string; summary: string }[] }) {
+  return (
+    <div className="space-y-3">
+      <div className="flex items-center gap-2 text-[11px] font-bold tracking-[0.18em] uppercase text-tangerine">
+        <span aria-hidden>🔥</span> Drama
+      </div>
+      {items.map((item, i) => (
+        <div key={i} className="bg-white rounded-2xl p-4 border border-[var(--hairline)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_8px_24px_-12px_rgba(13,45,36,0.10)]">
+          <div className="mb-2"><TierPill tier={item.tier} /></div>
+          <h3 className="font-display font-bold text-[18px] text-green leading-tight">{item.headline}</h3>
+          <p className="mt-1.5 text-[14.5px] text-ink leading-relaxed">{item.summary}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function ModeSection({ emoji, label, body }: { emoji: string; label: string; body: string }) {
+  return (
+    <div className="space-y-2">
+      <div className="flex items-center gap-2 text-[11px] font-bold tracking-[0.18em] uppercase text-tangerine">
+        <span aria-hidden>{emoji}</span> {label}
+      </div>
+      <div className="bg-white rounded-2xl p-4 border border-[var(--hairline)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_8px_24px_-12px_rgba(13,45,36,0.10)]">
+        <p className="text-[14.5px] text-ink leading-relaxed whitespace-pre-line">{body}</p>
+      </div>
+    </div>
+  );
+}
+
+/* =================================================================
+   Team color lookup — mirrors PlayerProfile.tsx team colors
+   ================================================================= */
+
+function getTeamColors(team: string): { primary: string; secondary: string; ink: string } {
+  const t = team.toLowerCase();
+  if (t.includes('chiefs')) return { primary: '#E31837', secondary: '#FFB81C', ink: '#FFFFFF' };
+  if (t.includes('bills')) return { primary: '#00338D', secondary: '#C60C30', ink: '#FFFFFF' };
+  if (t.includes('eagles')) return { primary: '#004C54', secondary: '#A5ACAF', ink: '#FFFFFF' };
+  if (t.includes('cowboys')) return { primary: '#003594', secondary: '#869397', ink: '#FFFFFF' };
+  if (t.includes('ravens')) return { primary: '#241773', secondary: '#9E7C0C', ink: '#FFFFFF' };
+  if (t.includes('lakers')) return { primary: '#552583', secondary: '#FDB927', ink: '#FFFFFF' };
+  if (t.includes('warriors')) return { primary: '#1D428A', secondary: '#FFC72C', ink: '#FFFFFF' };
+  if (t.includes('celtics')) return { primary: '#007A33', secondary: '#BA9653', ink: '#FFFFFF' };
+  if (t.includes('thunder')) return { primary: '#007AC1', secondary: '#EF3B24', ink: '#FFFFFF' };
+  if (t.includes('spurs')) return { primary: '#C4CED4', secondary: '#000000', ink: '#000000' };
+  if (t.includes('76ers') || t.includes('sixers')) return { primary: '#006BB6', secondary: '#ED174C', ink: '#FFFFFF' };
+  if (t.includes('heat')) return { primary: '#98002E', secondary: '#F9A01B', ink: '#FFFFFF' };
+  if (t.includes('knicks')) return { primary: '#006BB6', secondary: '#F58426', ink: '#FFFFFF' };
+  if (t.includes('clippers')) return { primary: '#C8102E', secondary: '#1D428A', ink: '#FFFFFF' };
+  if (t.includes('mavericks') || t.includes('mavs')) return { primary: '#00538C', secondary: '#002B5E', ink: '#FFFFFF' };
+  if (t.includes('nuggets')) return { primary: '#0E2240', secondary: '#FEC524', ink: '#FFFFFF' };
+  return { primary: '#0D2D24', secondary: '#FF6B3D', ink: '#FFFFFF' };
 }

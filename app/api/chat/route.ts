@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server';
 import { z } from 'zod';
 import { getOpenAI, MODELS } from '@/lib/openai';
-import { buildSystemPrompt } from '@/lib/context';
+import { buildSystemPrompt, buildModesSystemPrompt, type Mode } from '@/lib/context';
 import { isValidLens, DEFAULT_LENS_ID } from '@/lib/lens';
 import { findDemoAnswer, demoFallback, streamDemoAnswer } from '@/lib/demo-responses';
 
@@ -34,8 +34,14 @@ const Schema = z.object({
     )
     .min(1)
     .max(40),
+  // Legacy (sportsBFF) — kept for backward compat
   lens: z.string().optional(),
   dramaMode: z.boolean().optional(),
+  // Tea'd Up — new modes-based payload (preferred going forward)
+  modes: z.array(z.enum(['drama', 'on_field', 'learn'])).optional(),
+  league: z.enum(['nfl', 'nba', 'both']).optional(),
+  displayName: z.string().max(60).optional(),
+  euphoriaLensEnabled: z.boolean().optional(),
 });
 
 /**
@@ -108,7 +114,18 @@ export async function POST(req: NextRequest) {
   // ─────────────────────────────────────────────────────────
   // LIVE MODE — call OpenAI
   // ─────────────────────────────────────────────────────────
-  const systemPrompt = buildSystemPrompt({ lensId, userMessage: last.content, dramaMode });
+  // Tea'd Up modes payload takes precedence if present.
+  // Otherwise fall back to the legacy sportsBFF lens-based prompt.
+  const useModesPath = Array.isArray(body.modes) && body.modes.length > 0;
+  const systemPrompt = useModesPath
+    ? buildModesSystemPrompt({
+        modes: body.modes as Mode[],
+        userMessage: last.content,
+        league: body.league ?? 'both',
+        displayName: body.displayName,
+        euphoriaLensEnabled: !!body.euphoriaLensEnabled,
+      })
+    : buildSystemPrompt({ lensId, userMessage: last.content, dramaMode });
 
   const completion = await getOpenAI().chat.completions.create({
     model: MODELS.CHAT,
