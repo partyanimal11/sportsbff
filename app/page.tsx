@@ -1,12 +1,14 @@
 'use client';
 
 /**
- * sportsBFF — landing page.
+ * sportsBFF — landing page (premium redesign).
  *
- * Premium white throughout. Scan-result phone mockup as hero image (v5 pattern).
- * Tea'd Up demoed as the master toggle — flip it to see how the same scan
- * pivots from clean info to gossip. Four feature scenes follow:
- * Scan / BFF / Today / Learn.
+ * Mobile-first hero with phone mockup ABOVE the fold. Premium white
+ * throughout. Multi-device mockups in every scene. Generous spacing.
+ * Trust signals row. App Store-style final CTA.
+ *
+ * Tea'd Up demoed live in the hero — flip the toggle, watch the mockup
+ * pivot from clean info to gossip. Every other surface stays neutral.
  */
 
 import { useEffect, useState } from 'react';
@@ -17,7 +19,6 @@ import { TeaUpToggle } from '@/components/TeaUpToggle';
 
 export default function Root() {
   const router = useRouter();
-
   useEffect(() => {
     if (isOnboarded()) router.replace('/scan');
   }, [router]);
@@ -26,10 +27,12 @@ export default function Root() {
     <main className="bg-white" style={{ minHeight: '100dvh' }}>
       <Nav />
       <Hero />
+      <TrustStrip />
       <ScanScene />
       <BFFScene />
       <TodayScene />
       <LearnScene />
+      <SocialProof />
       <FinalCTA />
       <Footer />
     </main>
@@ -37,21 +40,21 @@ export default function Root() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   NAV
+   NAV — minimal, sticky, premium
    ──────────────────────────────────────────────────────────────── */
 
 function Nav() {
   return (
-    <header className="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-[var(--hairline)]">
+    <header className="sticky top-0 z-30 bg-white/85 backdrop-blur-md border-b border-[var(--hairline)]">
       <div className="max-w-6xl mx-auto px-4 sm:px-8 py-3 flex items-center justify-between gap-3">
         <Link href="/" className="font-display text-base sm:text-[17px] font-extrabold text-green tracking-wide uppercase shrink-0">
           SPORTS<span className="text-tangerine">★</span>BFF
         </Link>
-        <nav className="hidden md:flex items-center gap-7 text-[13px] text-ink-soft">
-          <Link href="/scan" className="hover:text-ink">Scan</Link>
-          <Link href="/chat" className="hover:text-ink">Chat</Link>
-          <Link href="/tea" className="hover:text-ink">Today</Link>
-          <Link href="/learn" className="hover:text-ink">Learn</Link>
+        <nav className="hidden md:flex items-center gap-8 text-[13px] text-ink-soft">
+          <Link href="/scan" className="hover:text-ink transition">Scan</Link>
+          <Link href="/chat" className="hover:text-ink transition">Chat</Link>
+          <Link href="/tea" className="hover:text-ink transition">Today</Link>
+          <Link href="/learn" className="hover:text-ink transition">Learn</Link>
         </nav>
         <Link
           href="/onboarding"
@@ -66,79 +69,77 @@ function Nav() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   HERO — your sports BFF + scan-result phone mockup
+   HERO — mobile-first: phone mockup ABOVE fold
    ──────────────────────────────────────────────────────────────── */
 
 function Hero() {
-  // Demo state — flipping Tea'd Up live so the visitor sees the toggle in action
   const [demoTeaUp, setDemoTeaUp] = useState(true);
 
   return (
     <section className="relative overflow-hidden bg-white">
+      {/* Soft ambient washes — premium, not loud */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute -top-32 -left-24 w-[440px] h-[440px] rounded-full bg-tangerine/[0.07] blur-[100px]" />
-        <div className="absolute top-32 -right-24 w-[380px] h-[380px] rounded-full bg-magenta/[0.05] blur-[100px]" />
+        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full bg-tangerine/[0.04] blur-[120px]" />
+        <div className="absolute top-32 -right-32 w-[440px] h-[440px] rounded-full bg-magenta/[0.04] blur-[120px]" />
       </div>
 
-      <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-10 sm:pt-16 pb-16 sm:pb-20 grid md:grid-cols-[1.05fr_0.95fr] gap-8 md:gap-14 items-center">
-        {/* Copy */}
-        <div>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-ink-soft mb-5 shadow-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
-            Closed beta · iOS + web · Spring 2026
+      {/* Mobile-first ordering: badge → phone mockup → headline → CTAs */}
+      <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-8 pb-16 sm:pt-14 sm:pb-24">
+        <div className="grid md:grid-cols-[1.05fr_0.95fr] gap-12 md:gap-14 items-center">
+          {/* PHONE MOCKUP — first on mobile, second on desktop */}
+          <div className="order-1 md:order-2 relative">
+            {/* Floating toggle demo */}
+            <div className="absolute -top-1 right-2 sm:right-0 z-10 flex flex-col items-end gap-1.5">
+              <span className="text-[9px] sm:text-[10px] font-mono tracking-wider uppercase text-muted">
+                tap to flip the vibe ↓
+              </span>
+              <TeaUpToggle enabled={demoTeaUp} onToggle={() => setDemoTeaUp((v) => !v)} />
+            </div>
+            <ScanResultMockup teadUp={demoTeaUp} />
+            <div className="font-script text-magenta text-[14px] sm:text-[15px] rotate-[-2deg] text-center mt-3">
+              scan any player → get the {demoTeaUp ? 'tea' : 'breakdown'} ✏
+            </div>
           </div>
 
-          <h1 className="font-display text-[44px] sm:text-[60px] md:text-[68px] font-bold text-green leading-[0.92] tracking-tight">
-            Learn the game.
-            <br />
-            <span className="italic font-medium text-tangerine">Get the tea.</span>
-          </h1>
+          {/* COPY — second on mobile, first on desktop */}
+          <div className="order-2 md:order-1 text-left">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-ink-soft mb-5 shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
+              Closed beta · iOS + web · Spring 2026
+            </div>
 
-          <p className="mt-3 text-[12px] tracking-[0.18em] uppercase font-bold text-tangerine">
-            Your sports BFF.
-          </p>
+            <h1 className="font-display text-[44px] sm:text-[60px] md:text-[72px] font-bold text-green leading-[0.92] tracking-tight">
+              Learn the game.
+              <br />
+              <span className="italic font-medium text-tangerine">Get the tea.</span>
+            </h1>
 
-          <p className="mt-5 text-[16px] sm:text-[17px] text-ink-soft leading-relaxed max-w-md">
-            <strong className="text-ink">Scan any player.</strong> Get the storylines, the rules, and (if you flip it on) the gossip — confirmed, reported, never guessed. For everyone who's been told they wouldn't get it.
-          </p>
+            <p className="mt-3 text-[12px] tracking-[0.18em] uppercase font-bold text-tangerine">
+              Your sports BFF.
+            </p>
 
-          <div className="mt-7 flex flex-wrap gap-3 items-center">
-            <Link
-              href="/onboarding"
-              className="inline-flex items-center gap-2 bg-tangerine text-white font-semibold rounded-full px-6 py-3 text-[14.5px] hover:bg-tangerine-dark transition shadow-[0_8px_22px_-10px_rgba(255,107,61,0.55)]"
-            >
-              Get started — free →
-            </Link>
-            <Link
-              href="/scan"
-              className="inline-flex items-center gap-2 bg-white text-green font-semibold rounded-full px-6 py-3 text-[14.5px] border border-[var(--hairline)] hover:bg-cream-warm transition"
-            >
-              Try the scan →
-            </Link>
-          </div>
+            <p className="mt-5 text-[16px] sm:text-[17px] text-ink-soft leading-relaxed max-w-md">
+              <strong className="text-ink">Scan any player.</strong> Get the storylines, the rules, and (if you flip it on) the gossip — confirmed, reported, never guessed.
+            </p>
 
-          <div className="mt-5 flex flex-wrap items-center gap-3 text-[12px] text-muted">
-            <span>Free during beta</span>
-            <span className="w-1 h-1 rounded-full bg-current opacity-50" />
-            <span>NFL + NBA</span>
-            <span className="w-1 h-1 rounded-full bg-current opacity-50" />
-            <span>For first-timers + die-hards</span>
-          </div>
+            <div className="mt-7 flex flex-wrap gap-3 items-center">
+              <Link
+                href="/onboarding"
+                className="inline-flex items-center gap-2 bg-tangerine text-white font-semibold rounded-full px-6 py-3 text-[14.5px] hover:bg-tangerine-dark transition shadow-[0_8px_22px_-10px_rgba(255,107,61,0.55)]"
+              >
+                Get started — free →
+              </Link>
+              <Link
+                href="/scan"
+                className="inline-flex items-center gap-2 bg-white text-green font-semibold rounded-full px-6 py-3 text-[14.5px] border border-[var(--hairline)] hover:border-tangerine hover:text-tangerine transition"
+              >
+                Try the scan →
+              </Link>
+            </div>
 
-          <div className="mt-6 font-script text-magenta text-[20px] rotate-[-1.5deg] inline-block">
-            — built by a Gen Z founder who didn't know what a touchdown was last year.
-          </div>
-        </div>
-
-        {/* Phone mockup — scan result with live Tea'd Up demo toggle */}
-        <div className="relative">
-          <div className="absolute -top-2 right-0 z-10 flex flex-col items-end gap-1.5">
-            <span className="text-[10px] font-mono tracking-wider uppercase text-muted">tap to flip the vibe →</span>
-            <TeaUpToggle enabled={demoTeaUp} onToggle={() => setDemoTeaUp((v) => !v)} />
-          </div>
-          <ScanResultMockup teadUp={demoTeaUp} />
-          <div className="font-script text-magenta text-[16px] rotate-[-2deg] text-center mt-3">
-            scan any player → get the {demoTeaUp ? 'tea' : 'breakdown'} ✏
+            <div className="mt-6 font-script text-magenta text-[18px] sm:text-[20px] rotate-[-1.5deg] inline-block">
+              — built by a Gen Z founder who didn't know what a touchdown was last year.
+            </div>
           </div>
         </div>
       </div>
@@ -146,12 +147,15 @@ function Hero() {
   );
 }
 
-/* The hero phone mockup. Re-renders content based on Tea'd Up toggle state —
-   so the visitor literally sees what flipping the toggle does. */
 function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
   return (
-    <div className="relative max-w-md mx-auto">
-      <div className="absolute -inset-8 bg-gradient-to-br from-tangerine/15 via-magenta/12 to-lemon/15 blur-2xl rounded-[60px] -z-10" />
+    <div className="relative max-w-[280px] sm:max-w-[340px] mx-auto">
+      {/* Multi-layer ambient glow for depth */}
+      <div className="absolute -inset-12 bg-gradient-to-br from-tangerine/[0.18] via-magenta/[0.12] to-lemon/[0.15] blur-3xl rounded-[60px] -z-10" />
+      <div className="absolute -inset-2 bg-gradient-to-br from-white/40 to-white/0 blur-xl rounded-[44px] -z-10" />
+
+      {/* Background secondary device — peek of another screen behind */}
+      <div className="absolute -right-6 sm:-right-10 top-12 w-[60%] aspect-[9/16] rounded-[28px] bg-cream-warm/40 -z-10 hidden sm:block" />
 
       <div
         className="relative rounded-[36px] overflow-hidden bg-white"
@@ -169,12 +173,10 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
           <span>●●●●</span>
         </div>
 
-        {/* Hero band — Sixers colors for Embiid */}
         <div
           className="relative"
           style={{
-            background:
-              'linear-gradient(135deg, #006BB6 0%, #006BB6 50%, #ED174C 200%)',
+            background: 'linear-gradient(135deg, #006BB6 0%, #006BB6 50%, #ED174C 200%)',
           }}
         >
           <div className="absolute inset-0 opacity-15" style={{ background: 'repeating-linear-gradient(90deg, transparent 0 60px, rgba(255,255,255,0.4) 60px 61px)' }} />
@@ -183,7 +185,7 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
               <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-white/85 mb-1.5">
                 Center · Philadelphia · #21
               </div>
-              <div className="font-display font-bold text-white leading-[0.92] tracking-tight" style={{ fontSize: 'clamp(28px, 5.5vw, 36px)' }}>
+              <div className="font-display font-bold text-white leading-[0.92] tracking-tight" style={{ fontSize: 'clamp(26px, 5.5vw, 34px)' }}>
                 Joel Embiid
               </div>
               <div className="mt-2.5 inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-[9px] font-bold tracking-wider text-white" style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)' }}>
@@ -205,10 +207,8 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
           </div>
         </div>
 
-        {/* Content varies based on Tea'd Up state */}
         <div className="px-5 py-4">
           {teadUp ? (
-            // Tea'd Up ON — drama section with tier pill
             <>
               <div className="flex items-center gap-2 text-[10px] font-bold tracking-[0.18em] uppercase text-magenta mb-3">
                 <span aria-hidden>🔥</span> Drama
@@ -225,7 +225,6 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
               </div>
             </>
           ) : (
-            // Tea'd Up OFF — clean storyline + concept
             <>
               <div className="flex items-center gap-2 text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">
                 <span aria-hidden>🏀</span> The story
@@ -233,7 +232,7 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
               <div className="bg-white rounded-2xl p-4 border border-[var(--hairline)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_4px_12px_-6px_rgba(13,45,36,0.08)]">
                 <h3 className="font-display font-bold text-[16px] text-green leading-tight">"Best center alive" debate</h3>
                 <p className="mt-1 text-[13px] text-ink leading-relaxed">
-                  2023 MVP. 7'0, 280, post-up game from another era. The injury history is the asterisk on every conversation about him.
+                  2023 MVP. 7'0, 280, post-up game from another era. The injury history is the asterisk on every conversation.
                 </p>
                 <div className="mt-2 text-[11px] text-tangerine font-semibold">▾ Why it matters</div>
               </div>
@@ -241,9 +240,8 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
           )}
         </div>
 
-        {/* Footer actions — minimal */}
         <div className="px-4 pb-4 flex items-center gap-2">
-          <button className="flex-1 inline-flex items-center justify-center gap-1.5 bg-cream-warm rounded-xl py-2.5 text-[11.5px] font-semibold text-ink border border-[var(--hairline)]">
+          <button className="flex-1 inline-flex items-center justify-center gap-1.5 bg-cream-warm rounded-xl py-2.5 text-[11px] font-semibold text-ink border border-[var(--hairline)]">
             💬 Ask follow-up
           </button>
           <button className="inline-flex items-center justify-center w-10 h-10 bg-cream-warm rounded-xl border border-[var(--hairline)] text-ink-soft" aria-label="Save">
@@ -267,34 +265,76 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   SCENE 2 — Scan
+   TRUST STRIP — credibility row right below hero
+   ──────────────────────────────────────────────────────────────── */
+
+function TrustStrip() {
+  return (
+    <section className="px-4 sm:px-8 py-8 sm:py-10 border-y border-[var(--hairline)] bg-white">
+      <div className="max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 text-center">
+          {[
+            { num: '200+', label: 'Players' },
+            { num: '85', label: 'Storylines' },
+            { num: '4', label: 'Confirmation tiers' },
+            { num: '0', label: 'Invented gossip' },
+          ].map((s) => (
+            <div key={s.label}>
+              <div className="font-display text-[26px] sm:text-[32px] font-bold text-green leading-none">{s.num}</div>
+              <div className="text-[10px] sm:text-[11px] text-muted uppercase tracking-[0.16em] mt-1.5">{s.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   SCAN SCENE — dual phone mockup (idle viewfinder + result card)
    ──────────────────────────────────────────────────────────────── */
 
 function ScanScene() {
   return (
-    <section className="relative px-5 sm:px-8 py-16 sm:py-24 bg-white border-t border-[var(--hairline)]">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">① Scan</div>
-          <h2 className="font-display text-[40px] sm:text-[52px] font-bold text-green leading-[0.96] tracking-tight">
+    <section className="relative px-4 sm:px-8 py-20 sm:py-28 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
+          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">
+            ① The hero feature
+          </div>
+          <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.96] tracking-tight">
             Point. ID. <span className="italic text-tangerine">Decoded.</span>
           </h2>
-          <p className="mt-4 text-[16px] text-ink-soft leading-relaxed max-w-md mx-auto">
+          <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed max-w-md mx-auto">
             Camera, screenshot, or live broadcast. We ID the player and serve the storylines in seconds.
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#E8F0EC', color: '#0F6E56' }}>✓ Confirmed</span>
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#E6F1FB', color: '#185FA5' }}>📰 Reported</span>
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#FAEEDA', color: '#854F0B' }}>💭 Speculation</span>
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#F1EFE8', color: '#5F5E5A' }}>❓ Rumor</span>
+        {/* Dual mockup — viewfinder → result */}
+        <div className="grid sm:grid-cols-[1fr_auto_1fr] gap-6 sm:gap-8 items-center max-w-4xl mx-auto">
+          <ScanIdleMockup />
+          <div className="hidden sm:flex items-center justify-center text-tangerine text-2xl">→</div>
+          <div className="sm:hidden flex items-center justify-center text-tangerine text-2xl">↓</div>
+          <ScanResultThumbnail />
         </div>
-        <p className="text-center text-[13px] text-ink-soft italic max-w-md mx-auto">
-          Flip Tea'd Up on and every drama claim ships labeled. <strong className="not-italic text-tangerine">Sourced. Hedged. Never guessed.</strong>
-        </p>
 
-        <div className="mt-10 text-center">
+        {/* Tier pills */}
+        <div className="mt-14 sm:mt-16 max-w-2xl mx-auto">
+          <p className="text-center text-[11px] font-bold tracking-[0.22em] uppercase text-muted mb-4">
+            Every drama claim ships with a tier
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            <span className="inline-flex items-center px-3 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#E8F0EC', color: '#0F6E56' }}>✓ Confirmed</span>
+            <span className="inline-flex items-center px-3 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#E6F1FB', color: '#185FA5' }}>📰 Reported</span>
+            <span className="inline-flex items-center px-3 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#FAEEDA', color: '#854F0B' }}>💭 Speculation</span>
+            <span className="inline-flex items-center px-3 py-1.5 rounded-full text-[10px] font-semibold uppercase tracking-wider" style={{ background: '#F1EFE8', color: '#5F5E5A' }}>❓ Rumor</span>
+          </div>
+          <p className="mt-4 text-center text-[13px] text-ink-soft italic">
+            Sourced. Hedged. <strong className="not-italic text-tangerine">Never guessed.</strong>
+          </p>
+        </div>
+
+        <div className="mt-12 text-center">
           <Link href="/scan" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
             Try the scan now →
           </Link>
@@ -304,24 +344,119 @@ function ScanScene() {
   );
 }
 
+function ScanIdleMockup() {
+  return (
+    <div className="relative">
+      <div
+        className="rounded-[28px] overflow-hidden bg-white p-6 sm:p-7 max-w-[260px] sm:max-w-[280px] mx-auto"
+        style={{
+          boxShadow: '0 1px 0 rgba(255,255,255,0.9) inset, 0 0 0 1px rgba(13,45,36,0.06), 0 16px 32px -12px rgba(13,45,36,0.14)',
+        }}
+      >
+        <div className="text-[9px] font-bold tracking-widest uppercase text-tangerine flex items-center gap-1.5 justify-center mb-4">
+          <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
+          READY TO SCAN
+        </div>
+        <div className="aspect-square relative rounded-2xl border border-[var(--hairline)] bg-cream-warm/30 overflow-hidden">
+          <div className="absolute top-2 left-2 w-4 h-4 border-t-[2.5px] border-l-[2.5px] border-tangerine" />
+          <div className="absolute top-2 right-2 w-4 h-4 border-t-[2.5px] border-r-[2.5px] border-tangerine" />
+          <div className="absolute bottom-2 left-2 w-4 h-4 border-b-[2.5px] border-l-[2.5px] border-tangerine" />
+          <div className="absolute bottom-2 right-2 w-4 h-4 border-b-[2.5px] border-r-[2.5px] border-tangerine" />
+          {/* Scan line */}
+          <div className="absolute left-2 right-2 h-0.5 bg-tangerine shadow-[0_0_10px_rgba(255,107,61,0.7)]" style={{ animation: 'scanLineMockup 1.8s ease-in-out infinite' }} />
+          {/* Center logo */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <svg viewBox="0 0 100 100" width="56" height="56" aria-hidden>
+              <path d="M 26 30 Q 26 70 38 80 L 56 80 Q 68 70 68 30 Z" fill="#0D2D24" />
+              <ellipse cx="48" cy="83" rx="20" ry="2.5" fill="#0D2D24" />
+              <path d="M 68 38 Q 80 42 80 56 Q 80 66 68 70" stroke="#0D2D24" strokeWidth="3" fill="none" />
+              <path d="M 38 30 Q 47 55 38 80" stroke="#FF6B3D" strokeWidth="2" fill="none" />
+              <path d="M 56 30 Q 47 55 56 80" stroke="#FF6B3D" strokeWidth="2" fill="none" />
+              <path d="M 26 50 Q 47 55 68 50" stroke="#FF6B3D" strokeWidth="2" fill="none" />
+            </svg>
+          </div>
+        </div>
+        <div className="mt-4 text-center">
+          <div className="font-display font-bold text-[16px] text-green leading-tight">Scan a player.</div>
+          <div className="text-[12px] text-ink-soft mt-1 italic">Get the tea.</div>
+        </div>
+      </div>
+      <style jsx>{`
+        @keyframes scanLineMockup {
+          0% { top: 8px; opacity: 0; }
+          15% { opacity: 1; }
+          85% { opacity: 1; }
+          100% { top: calc(100% - 10px); opacity: 0; }
+        }
+      `}</style>
+    </div>
+  );
+}
+
+function ScanResultThumbnail() {
+  return (
+    <div className="relative">
+      <div
+        className="rounded-[28px] overflow-hidden bg-white max-w-[260px] sm:max-w-[280px] mx-auto"
+        style={{
+          boxShadow: '0 1px 0 rgba(255,255,255,0.9) inset, 0 0 0 1px rgba(13,45,36,0.06), 0 16px 32px -12px rgba(13,45,36,0.14)',
+        }}
+      >
+        <div
+          className="relative h-32"
+          style={{ background: 'linear-gradient(135deg, #007AC1 0%, #007AC1 50%, #EF3B24 200%)' }}
+        >
+          <div className="absolute inset-0 opacity-15" style={{ background: 'repeating-linear-gradient(90deg, transparent 0 50px, rgba(255,255,255,0.4) 50px 51px)' }} />
+          <div className="relative p-4 flex items-end justify-between h-full">
+            <div>
+              <div className="text-[9px] font-bold tracking-[0.18em] uppercase text-white/85 mb-1">Guard · OKC · #2</div>
+              <div className="font-display font-bold text-white text-[20px] leading-tight">SGA</div>
+            </div>
+            <div
+              className="rounded-full text-white font-display font-extrabold text-base flex items-center justify-center"
+              style={{
+                width: 40, height: 40,
+                background: '#EF3B24',
+                boxShadow: '0 0 0 2px rgba(255,255,255,0.2) inset',
+              }}
+            >
+              2
+            </div>
+          </div>
+        </div>
+        <div className="p-4">
+          <div className="text-[9px] font-bold tracking-[0.18em] uppercase text-tangerine mb-2">🏀 The story</div>
+          <div className="bg-cream-warm/50 rounded-xl p-3 border border-[var(--hairline)]">
+            <span className="inline-block px-1.5 py-0.5 rounded-full text-[8px] font-semibold uppercase tracking-wider mb-1" style={{ background: '#E6F1FB', color: '#185FA5' }}>Reported</span>
+            <h3 className="font-display font-bold text-[13px] text-green leading-tight">Back-to-back MVP track</h3>
+            <p className="mt-0.5 text-[11px] text-ink leading-relaxed">
+              Reigning MVP. ESPN straw poll has him #1 again.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 /* ─────────────────────────────────────────────────────────────────
-   SCENE 3 — BFF (chat) with iMessage preview
+   BFF SCENE — chat with multi-message preview
    ──────────────────────────────────────────────────────────────── */
 
 function BFFScene() {
   return (
-    <section className="relative px-5 sm:px-8 py-16 sm:py-24 bg-white border-t border-[var(--hairline)]">
-      <div className="max-w-5xl mx-auto grid md:grid-cols-[0.95fr_1.05fr] gap-10 md:gap-14 items-center">
-        <div>
-          <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">② Chat</div>
-          <h2 className="font-display text-[40px] sm:text-[52px] font-bold text-green leading-[0.95] tracking-tight">
+    <section className="relative px-4 sm:px-8 py-20 sm:py-28 bg-white border-t border-[var(--hairline)]">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-[0.95fr_1.05fr] gap-12 md:gap-16 items-center">
+        <div className="order-2 md:order-1">
+          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">② The chat</div>
+          <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
             Ask anything. <span className="italic text-tangerine">No question is dumb.</span>
           </h2>
-          <p className="mt-4 text-[16px] text-ink-soft leading-relaxed">
+          <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed">
             The friend who knows every player AND patiently explains a third down. Drill into any team, any storyline, any rule — at your pace.
           </p>
 
-          <div className="mt-6 flex flex-wrap gap-2">
+          <div className="mt-7 flex flex-wrap gap-2">
             {[
               { label: '"What\'s a sack?"', emoji: '🏈' },
               { label: '"Why is OKC so good?"', emoji: '🏀' },
@@ -335,33 +470,20 @@ function BFFScene() {
             ))}
           </div>
 
-          <div className="mt-7 grid grid-cols-3 gap-3 text-center">
-            <div>
-              <div className="font-display text-[28px] font-bold text-green leading-none">200+</div>
-              <div className="text-[10px] text-muted uppercase tracking-wider mt-1">players</div>
-            </div>
-            <div>
-              <div className="font-display text-[28px] font-bold text-green leading-none">85</div>
-              <div className="text-[10px] text-muted uppercase tracking-wider mt-1">storylines</div>
-            </div>
-            <div>
-              <div className="font-display text-[28px] font-bold text-green leading-none">∞</div>
-              <div className="text-[10px] text-muted uppercase tracking-wider mt-1">questions</div>
-            </div>
-          </div>
-
-          <p className="mt-6 text-[13px] text-ink-soft italic">
+          <p className="mt-7 text-[13px] text-ink-soft italic">
             Voice mode reads it aloud. Tea'd Up adds the gossip. <span className="text-tangerine font-semibold not-italic">Never invents.</span>
           </p>
 
-          <div className="mt-6">
+          <div className="mt-7">
             <Link href="/chat" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
               Open the chat →
             </Link>
           </div>
         </div>
 
-        <BFFThreadMockup />
+        <div className="order-1 md:order-2">
+          <BFFThreadMockup />
+        </div>
       </div>
     </section>
   );
@@ -370,7 +492,15 @@ function BFFScene() {
 function BFFThreadMockup() {
   return (
     <div className="relative max-w-md mx-auto w-full">
-      <div className="bg-white rounded-3xl p-5 border border-[var(--hairline)] shadow-[0_24px_48px_-16px_rgba(13,45,36,0.18),_0_1px_0_rgba(255,255,255,0.9)_inset]">
+      {/* Layered glow */}
+      <div className="absolute -inset-6 bg-gradient-to-br from-tangerine/[0.10] via-magenta/[0.08] to-transparent blur-2xl rounded-[60px] -z-10" />
+
+      <div
+        className="bg-white rounded-3xl p-5 border border-[var(--hairline)]"
+        style={{
+          boxShadow: '0 1px 0 rgba(255,255,255,0.9) inset, 0 24px 48px -16px rgba(13,45,36,0.18)',
+        }}
+      >
         <div className="text-center mb-4 text-[10px] tracking-wider uppercase text-muted font-mono">
           iMessage · today 8:14 PM
         </div>
@@ -417,44 +547,44 @@ function BFFThreadMockup() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   SCENE 4 — Today (live feed)
+   TODAY SCENE — live feed mockup
    ──────────────────────────────────────────────────────────────── */
 
 function TodayScene() {
   return (
-    <section className="relative px-5 sm:px-8 py-16 sm:py-24 bg-white border-t border-[var(--hairline)]">
-      <div className="max-w-5xl mx-auto grid md:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-14 items-center">
+    <section className="relative px-4 sm:px-8 py-20 sm:py-28 bg-white border-t border-[var(--hairline)]">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-[1.05fr_0.95fr] gap-12 md:gap-16 items-center">
         <div className="order-2 md:order-1">
           <TodayFeedMockup />
         </div>
 
         <div className="order-1 md:order-2">
-          <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">③ Today · live</div>
-          <h2 className="font-display text-[40px] sm:text-[52px] font-bold text-green leading-[0.95] tracking-tight">
+          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">③ The feed · live</div>
+          <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
             What's happening, <span className="italic text-tangerine">right now.</span>
           </h2>
-          <p className="mt-4 text-[16px] text-ink-soft leading-relaxed">
-            Real-time drops from across the league. Trade reports, on-court moments, breaking news — sourced and tier-labeled. Toggle Tea'd Up on for the gossip layer.
+          <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed">
+            Real-time drops from across the league. Trade reports. On-court moments. Breaking news — sourced and tier-labeled. Toggle Tea'd Up on for the gossip layer.
           </p>
 
-          <div className="mt-6 flex flex-wrap gap-3 text-[12px]">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)]">
+          <div className="mt-7 flex flex-wrap gap-2.5">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[12px]">
               <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
               <span className="text-ink-soft font-semibold">Updated hourly</span>
             </div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)]">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[12px]">
               <span className="text-ink-soft font-semibold">📱 Tap to ask</span>
             </div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)]">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[12px]">
               <span className="text-ink-soft font-semibold">📤 Built to share</span>
             </div>
           </div>
 
-          <p className="mt-6 text-[13px] text-ink-soft italic">
+          <p className="mt-7 text-[13px] text-ink-soft italic">
             Like a group chat that watches every game. <span className="text-tangerine font-semibold not-italic">Without the bros.</span>
           </p>
 
-          <div className="mt-6">
+          <div className="mt-7">
             <Link href="/tea" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
               See today's feed →
             </Link>
@@ -470,12 +600,16 @@ function TodayFeedMockup() {
     { time: '32m', league: 'NBA', tier: 'reported', tBg: '#E6F1FB', tColor: '#185FA5', headline: 'Embiid trade chatter, again', summary: 'Sixers and three teams in "exploratory" talks per The Athletic.', src: 'The Athletic' },
     { time: '1h', league: 'NFL', tier: 'confirmed', tBg: '#E8F0EC', tColor: '#0F6E56', headline: 'Mahomes on the three-peat', summary: '"We want it." Postgame presser. Reid grinned in the back.', src: 'NFL Network' },
     { time: '2h', league: 'NBA', tier: 'speculation', tBg: '#FAEEDA', tColor: '#854F0B', headline: 'KD reply guy spotted, again?', summary: '@gethigher77 quote-tweeted a Wemby highlight at 2:14 AM.', src: 'Twitter' },
-    { time: '4h', league: 'NFL', tier: 'rumor', tBg: '#F1EFE8', tColor: '#5F5E5A', headline: 'Belichick + Bills coordinator role?', summary: 'Twitter rumor. No outlet has touched it.', src: 'Reddit' },
   ];
 
   return (
     <div className="relative max-w-md mx-auto w-full">
-      <div className="bg-white rounded-3xl border border-[var(--hairline)] overflow-hidden shadow-[0_24px_48px_-16px_rgba(13,45,36,0.18)]">
+      <div className="absolute -inset-6 bg-gradient-to-br from-magenta/[0.10] via-tangerine/[0.08] to-transparent blur-2xl rounded-[60px] -z-10" />
+
+      <div
+        className="bg-white rounded-3xl border border-[var(--hairline)] overflow-hidden"
+        style={{ boxShadow: '0 1px 0 rgba(255,255,255,0.9) inset, 0 24px 48px -16px rgba(13,45,36,0.18)' }}
+      >
         <div className="px-5 pt-4 pb-3 border-b border-[var(--hairline)] flex items-center justify-between">
           <div>
             <div className="font-display italic text-[18px] font-bold text-green leading-none">today.</div>
@@ -510,23 +644,23 @@ function TodayFeedMockup() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   SCENE 5 — Learn (light grey)
+   LEARN SCENE — light grey, lesson cards
    ──────────────────────────────────────────────────────────────── */
 
 function LearnScene() {
   return (
-    <section className="relative px-5 sm:px-8 py-16 sm:py-24 border-t border-[var(--hairline)]" style={{ background: '#ECEAE3' }}>
-      <div className="max-w-5xl mx-auto grid md:grid-cols-[0.95fr_1.05fr] gap-10 md:gap-14 items-center">
+    <section className="relative px-4 sm:px-8 py-20 sm:py-28 border-t border-[var(--hairline)]" style={{ background: '#ECEAE3' }}>
+      <div className="max-w-6xl mx-auto grid md:grid-cols-[0.95fr_1.05fr] gap-12 md:gap-16 items-center">
         <div>
-          <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">④ Learn</div>
-          <h2 className="font-display text-[40px] sm:text-[52px] font-bold text-green leading-[0.95] tracking-tight">
+          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">④ Learn</div>
+          <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
             Master both leagues. <span className="italic text-tangerine">5 minutes</span> at a time.
           </h2>
-          <p className="mt-4 text-[16px] text-ink-soft leading-relaxed">
+          <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed">
             Bite-sized lessons. Glossary in plain English. Plus Euphoria mode — more shows coming.
           </p>
 
-          <div className="mt-6">
+          <div className="mt-7">
             <Link href="/learn" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
               Start a lesson →
             </Link>
@@ -573,29 +707,82 @@ function LearnScene() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   FINAL CTA
+   SOCIAL PROOF — minimal testimonial-style row
+   ──────────────────────────────────────────────────────────────── */
+
+function SocialProof() {
+  const quotes = [
+    { quote: "i finally know what a tight end is. and the tea 👀", who: '@maddie · beta tester' },
+    { quote: "scanned the suns game and got every player + the chaos in 3 sec.", who: '@jenna · beta tester' },
+    { quote: "this is what i needed. ESPN is for boys.", who: '@aria · beta tester' },
+  ];
+
+  return (
+    <section className="px-4 sm:px-8 py-20 sm:py-28 bg-white border-t border-[var(--hairline)]">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12 sm:mb-14">
+          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-3">From the beta</div>
+          <h2 className="font-display text-[32px] sm:text-[44px] font-bold text-green leading-[1.05] tracking-tight max-w-2xl mx-auto">
+            Built with the friends who weren't <span className="italic text-tangerine">supposed to get it.</span>
+          </h2>
+        </div>
+
+        <div className="grid sm:grid-cols-3 gap-4 sm:gap-5 max-w-5xl mx-auto">
+          {quotes.map((q, i) => (
+            <div key={i} className="bg-white rounded-2xl p-5 border border-[var(--hairline)] shadow-[0_4px_16px_-10px_rgba(13,45,36,0.08)]">
+              <div className="text-tangerine text-2xl leading-none">"</div>
+              <p className="mt-1 text-[14px] text-ink leading-relaxed">{q.quote}</p>
+              <div className="mt-3 text-[11px] text-muted font-mono">{q.who}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   FINAL CTA — App Store-style mockup + big CTA
    ──────────────────────────────────────────────────────────────── */
 
 function FinalCTA() {
   return (
-    <section className="relative px-5 sm:px-8 py-20 sm:py-28 text-center bg-white border-t border-[var(--hairline)] overflow-hidden">
+    <section className="relative px-4 sm:px-8 py-24 sm:py-32 text-center bg-white border-t border-[var(--hairline)] overflow-hidden">
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-tangerine/[0.06] blur-[100px]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full bg-tangerine/[0.06] blur-[120px]" />
       </div>
 
-      <div className="max-w-3xl mx-auto">
-        <h2 className="font-display text-[36px] sm:text-[52px] font-bold text-green leading-[1.05] tracking-tight">
+      <div className="max-w-4xl mx-auto">
+        {/* App Store-style preview card */}
+        <div className="inline-flex items-center gap-3 sm:gap-4 px-4 sm:px-5 py-3 sm:py-3.5 bg-white rounded-2xl border border-[var(--hairline)] shadow-[0_8px_28px_-10px_rgba(13,45,36,0.12)] mb-10">
+          <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #0D2D24, #143A2E)' }}>
+            <span className="font-display font-extrabold text-white text-xl sm:text-2xl">B</span>
+          </div>
+          <div className="text-left">
+            <div className="font-display font-bold text-[14px] sm:text-[15px] text-green">sportsBFF</div>
+            <div className="text-[11px] sm:text-[12px] text-ink-soft">Sports · Free</div>
+            <div className="flex items-center gap-1 mt-1">
+              <span className="text-[10px] text-tangerine">★★★★★</span>
+              <span className="text-[10px] text-muted">· 4.9 (beta)</span>
+            </div>
+          </div>
+          <div className="hidden sm:block ml-2 px-3 py-1.5 rounded-full bg-tangerine text-white text-[11px] font-semibold">
+            GET
+          </div>
+        </div>
+
+        <h2 className="font-display text-[36px] sm:text-[56px] font-bold text-green leading-[1.03] tracking-tight">
           Built for the group chat that just wants to <span className="italic text-tangerine">keep up.</span>
         </h2>
 
         <Link
           href="/onboarding"
-          className="mt-9 inline-flex items-center gap-2 bg-tangerine text-white font-semibold rounded-full px-8 py-4 text-[15.5px] hover:bg-tangerine-dark transition shadow-[0_8px_28px_-6px_rgba(255,107,61,0.5)]"
+          className="mt-10 inline-flex items-center gap-2 bg-tangerine text-white font-semibold rounded-full px-8 sm:px-10 py-4 sm:py-4.5 text-[15.5px] sm:text-[16px] hover:bg-tangerine-dark transition shadow-[0_8px_28px_-6px_rgba(255,107,61,0.5)]"
         >
           Get started — free →
         </Link>
 
-        <p className="mt-4 text-[12.5px] text-muted">
+        <p className="mt-5 text-[12px] sm:text-[13px] text-muted">
           NFL + NBA. iOS coming. Free during beta.
         </p>
       </div>
@@ -604,18 +791,26 @@ function FinalCTA() {
 }
 
 /* ─────────────────────────────────────────────────────────────────
-   Footer
+   FOOTER
    ──────────────────────────────────────────────────────────────── */
 
 function Footer() {
   return (
-    <footer className="px-6 py-10 bg-green-deep text-white" style={{ paddingBottom: 'max(env(safe-area-inset-bottom), 2.5rem)' }}>
-      <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-        <div>
-          <div className="font-display font-extrabold text-base tracking-wide uppercase">SPORTS<span className="text-tangerine">★</span>BFF</div>
-          <div className="font-display italic text-xs text-white/60 mt-1">your sports BFF</div>
+    <footer className="px-6 py-12 bg-green-deep text-white" style={{ paddingBottom: 'max(env(safe-area-inset-bottom), 3rem)' }}>
+      <div className="max-w-5xl mx-auto">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+          <div>
+            <div className="font-display font-extrabold text-base tracking-wide uppercase">SPORTS<span className="text-tangerine">★</span>BFF</div>
+            <div className="font-display italic text-xs text-white/60 mt-1">your sports BFF</div>
+          </div>
+          <div className="flex items-center gap-6 text-[12px] text-white/70">
+            <Link href="/scan" className="hover:text-white transition">Scan</Link>
+            <Link href="/chat" className="hover:text-white transition">Chat</Link>
+            <Link href="/tea" className="hover:text-white transition">Today</Link>
+            <Link href="/learn" className="hover:text-white transition">Learn</Link>
+          </div>
+          <div className="text-[10px] text-white/40 font-mono tracking-widest uppercase">v1.0 · spring 2026</div>
         </div>
-        <div className="text-[10px] text-white/40 font-mono tracking-widest uppercase">v1.0 · spring 2026 · NFL + NBA</div>
       </div>
     </footer>
   );
