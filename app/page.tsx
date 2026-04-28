@@ -28,13 +28,16 @@ export default function Root() {
       {/* SCENE 2 — Scan (white) */}
       <ScanScene />
 
-      {/* SCENE 3 — BFF (cream-warm, iMessage preview) */}
+      {/* SCENE 3 — BFF (cream-warm, gossip + iMessage preview) */}
       <BFFScene />
 
-      {/* SCENE 4 — Learn (light grey) */}
+      {/* SCENE 4 — Tea daily cards (cream + tarot deck) */}
+      <TeaScene />
+
+      {/* SCENE 5 — Learn (light grey) */}
       <LearnScene />
 
-      {/* SCENE 5 — Final CTA (cream-warm) */}
+      {/* SCENE 6 — Final CTA (cream-warm) */}
       <FinalCTA />
 
       {/* Footer */}
@@ -204,17 +207,32 @@ function BFFScene() {
     <section className="relative px-6 py-16 sm:py-24" style={{ background: '#F5F0E5' }}>
       <div className="max-w-md mx-auto">
         <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">
-          ② BFF
+          ② Your BFF · the gossip
         </div>
         <h2 className="font-display text-[36px] sm:text-[42px] font-bold text-green leading-[0.95] tracking-tight">
-          The friend with <span className="italic text-tangerine">the tea.</span>
+          She's got the tea. <span className="italic text-tangerine">And the receipts.</span>
         </h2>
         <p className="mt-4 text-[15px] text-ink-soft leading-relaxed">
-          Ask anything about any team. Drill into any storyline. Drama, on-field narratives, and the rules — your way.
+          Confirmed beefs. Reported drama. Off-the-record speculation. Every storyline traced to a source — or labeled <span className="italic text-tangerine">never confirmed</span>. Ask anything.
         </p>
 
+        {/* Four "kinds of tea" pills */}
+        <div className="mt-6 flex flex-wrap gap-2">
+          {[
+            { label: 'Trade rumors', emoji: '🔄' },
+            { label: 'Locker-room beefs', emoji: '👀' },
+            { label: 'Burner accounts', emoji: '📱' },
+            { label: 'Contract chaos', emoji: '💰' },
+          ].map((p) => (
+            <span key={p.label} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[11.5px] text-ink-soft font-semibold">
+              <span aria-hidden>{p.emoji}</span>
+              {p.label}
+            </span>
+          ))}
+        </div>
+
         {/* Mocked-up iMessage preview */}
-        <div className="mt-8 bg-white rounded-3xl p-5 border border-[var(--hairline)] shadow-[0_12px_32px_-12px_rgba(13,45,36,0.12)]">
+        <div className="mt-7 bg-white rounded-3xl p-5 border border-[var(--hairline)] shadow-[0_12px_32px_-12px_rgba(13,45,36,0.12)]">
           <div className="text-center mb-4 text-[10px] tracking-wider uppercase text-muted font-mono">
             iMessage · today 8:14 PM
           </div>
@@ -222,14 +240,14 @@ function BFFScene() {
             {/* User bubble */}
             <div className="flex justify-end">
               <div className="px-4 py-2.5 text-white text-[14.5px] max-w-[78%]" style={{ background: 'linear-gradient(180deg, #FF7A52 0%, #FF5723 100%)', borderRadius: 20, borderBottomRightRadius: 6 }}>
-                what's the embiid drama
+                what's the embiid drama 👀
               </div>
             </div>
             {/* BFF bubble */}
             <div className="flex">
               <div className="px-4 py-2.5 text-ink text-[14px] max-w-[88%]" style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}>
                 <span className="inline-flex items-center px-1.5 py-px rounded-full text-[8px] font-semibold uppercase tracking-wider mr-1.5" style={{ background: '#FAEEDA', color: '#854F0B' }}>Speculation</span>
-                <span>Locker-room sources hint Embiid considered a trade request in March. Sixers brass denied it on the record.</span>
+                <span>locker-room whispers say embiid wanted out in march. sixers denied on the record. but the room knows ☕</span>
               </div>
             </div>
             {/* User bubble */}
@@ -242,7 +260,21 @@ function BFFScene() {
             <div className="flex">
               <div className="px-4 py-2.5 text-ink text-[14px] max-w-[88%]" style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}>
                 <span className="inline-flex items-center px-1.5 py-px rounded-full text-[8px] font-semibold uppercase tracking-wider mr-1.5" style={{ background: '#E6F1FB', color: '#185FA5' }}>Reported</span>
-                <span>The Athletic ran it April 3, citing 'people familiar with the matter.' Solo source, so it stays Reported, not Confirmed. ☕</span>
+                <span>the athletic ran it april 3rd. one source, on record. so it stays reported — not confirmed. i never lie. ☕</span>
+              </div>
+            </div>
+            {/* User reaction */}
+            <div className="flex justify-end">
+              <div className="px-4 py-2.5 text-white text-[14.5px] max-w-[78%]" style={{ background: 'linear-gradient(180deg, #FF7A52 0%, #FF5723 100%)', borderRadius: 20, borderBottomRightRadius: 6 }}>
+                ok queen. who else is acting up rn
+              </div>
+            </div>
+            {/* BFF: typing */}
+            <div className="flex">
+              <div className="px-4 py-2.5 inline-flex items-center gap-1" style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}>
+                <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdotLanding 1.2s ease-in-out infinite', animationDelay: '0s' }} />
+                <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdotLanding 1.2s ease-in-out infinite', animationDelay: '0.2s' }} />
+                <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdotLanding 1.2s ease-in-out infinite', animationDelay: '0.4s' }} />
               </div>
             </div>
             {/* Read receipt */}
@@ -265,9 +297,135 @@ function BFFScene() {
           </div>
         </div>
 
-        <div className="mt-8 text-center">
+        <p className="mt-6 text-center text-[12px] text-ink-soft italic">
+          Voice mode reads it aloud. Drama mode goes harder. <span className="text-tangerine font-semibold">Never invents.</span>
+        </p>
+
+        <div className="mt-6 text-center">
           <Link href="/chat" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
-            Open the chat →
+            Spill some tea →
+          </Link>
+        </div>
+      </div>
+
+      <style jsx>{`
+        @keyframes tdotLanding {
+          0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+          30% { transform: translateY(-3px); opacity: 1; }
+        }
+      `}</style>
+    </section>
+  );
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   SCENE 4 — Tea daily ritual (cream + tarot mock)
+   ──────────────────────────────────────────────────────────────── */
+
+function TeaScene() {
+  return (
+    <section className="relative px-6 py-16 sm:py-24 border-t border-[var(--hairline)] overflow-hidden" style={{ background: '#FAF7EE' }}>
+      {/* Floating tarot motifs */}
+      <div className="absolute top-12 left-6 text-tangerine/20 text-2xl rotate-12" aria-hidden>✦</div>
+      <div className="absolute bottom-16 right-8 text-tangerine/30 text-3xl -rotate-12" aria-hidden>✦</div>
+      <div className="absolute top-1/2 right-4 text-tangerine/15 text-xl rotate-45" aria-hidden>✦</div>
+
+      <div className="max-w-md mx-auto relative">
+        <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">
+          ③ Daily Tea · the ritual
+        </div>
+        <h2 className="font-display text-[36px] sm:text-[42px] font-bold text-green leading-[0.95] tracking-tight">
+          Three cards. <span className="italic text-tangerine">Every morning.</span>
+        </h2>
+        <p className="mt-4 text-[15px] text-ink-soft leading-relaxed">
+          Sports tarot. Drama, players, and a 60-second crash course — pulled fresh every day at 6 AM. Like Co-Star but for the league.
+        </p>
+
+        {/* Tarot card mockup */}
+        <div className="mt-8 mx-auto max-w-[260px]">
+          <div className="text-center text-[10px] font-mono tracking-wider uppercase text-muted mb-2">
+            Card 1 of 3
+          </div>
+          <div
+            className="relative w-full rounded-[20px] overflow-hidden"
+            style={{
+              aspectRatio: '2 / 3',
+              background: '#FAF7EE',
+              border: '3px solid #FF6B3D',
+              boxShadow: '0 12px 32px -10px rgba(13,45,36,0.18)',
+            }}
+          >
+            <div className="absolute inset-2 border border-tangerine/30 rounded-[14px] pointer-events-none" />
+            <span className="absolute top-3 left-3 text-tangerine text-sm" aria-hidden>✦</span>
+            <span className="absolute top-3 right-3 text-tangerine text-sm" aria-hidden>✦</span>
+            <span className="absolute bottom-3 left-3 text-tangerine text-sm" aria-hidden>✦</span>
+            <span className="absolute bottom-3 right-3 text-tangerine text-sm" aria-hidden>✦</span>
+
+            <div className="relative h-full flex flex-col items-center justify-between p-5">
+              <div className="text-center w-full">
+                <div className="font-mono text-[10px] tracking-[0.18em] text-tangerine">XVI</div>
+                <div className="font-display italic text-[9px] tracking-[0.16em] uppercase text-ink-soft mt-1">
+                  · THE TOWER ·
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center justify-center flex-1 w-full">
+                {/* Lightning + tower */}
+                <svg viewBox="0 0 100 120" width="64" height="76" aria-hidden>
+                  <rect x="38" y="40" width="24" height="60" fill="none" stroke="#FF6B3D" strokeWidth="2" />
+                  <rect x="34" y="34" width="32" height="8" fill="none" stroke="#FF6B3D" strokeWidth="2" />
+                  <rect x="44" y="50" width="4" height="8" fill="#FF6B3D" />
+                  <rect x="52" y="50" width="4" height="8" fill="#FF6B3D" />
+                  <rect x="44" y="66" width="4" height="8" fill="#FF6B3D" />
+                  <rect x="52" y="66" width="4" height="8" fill="#FF6B3D" />
+                  <path d="M 50 10 L 42 28 L 50 28 L 38 50" stroke="#FF6B3D" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <h3 className="font-display text-[19px] font-bold text-green leading-[1.05] tracking-tight text-center mt-4 px-2">
+                  the embiid trade saga
+                </h3>
+              </div>
+
+              <div className="text-center">
+                <div className="font-display italic text-[11px] text-ink-soft">tap to reveal</div>
+                <div className="font-mono text-[10px] tracking-[0.18em] text-tangerine mt-1">XVI</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card indicators below */}
+          <div className="flex items-center justify-center gap-2 mt-4">
+            <span className="h-2 w-6 rounded-full bg-tangerine" />
+            <span className="h-2 w-2 rounded-full bg-[var(--hairline)]" />
+            <span className="h-2 w-2 rounded-full bg-[var(--hairline)]" />
+          </div>
+        </div>
+
+        {/* The 3 archetypes */}
+        <div className="mt-8 grid grid-cols-3 gap-3 text-center">
+          <div>
+            <div className="font-mono text-[10px] tracking-[0.16em] text-tangerine">XVI</div>
+            <div className="font-display font-bold text-[12px] text-green mt-1">THE TOWER</div>
+            <div className="text-[10px] text-ink-soft italic mt-0.5">today's drama</div>
+          </div>
+          <div>
+            <div className="font-mono text-[10px] tracking-[0.16em] text-tangerine">XX</div>
+            <div className="font-display font-bold text-[12px] text-green mt-1">THE COURT</div>
+            <div className="text-[10px] text-ink-soft italic mt-0.5">players to know</div>
+          </div>
+          <div>
+            <div className="font-mono text-[10px] tracking-[0.16em] text-tangerine">V</div>
+            <div className="font-display font-bold text-[12px] text-green mt-1">THE STUDY</div>
+            <div className="text-[10px] text-ink-soft italic mt-0.5">crash course</div>
+          </div>
+        </div>
+
+        <p className="mt-6 text-center text-[12px] text-ink-soft italic">
+          5-day streaks. Shareable cards. Built to screenshot.
+        </p>
+
+        <div className="mt-6 text-center">
+          <Link href="/tea" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
+            Pull today's cards →
           </Link>
         </div>
       </div>
@@ -284,7 +442,7 @@ function LearnScene() {
     <section className="relative px-6 py-16 sm:py-24 border-t border-[var(--hairline)]" style={{ background: '#ECEAE3' }}>
       <div className="max-w-md mx-auto">
         <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-tangerine mb-3">
-          ③ Learn
+          ④ Learn
         </div>
         <h2 className="font-display text-[36px] sm:text-[42px] font-bold text-green leading-[0.95] tracking-tight">
           Learn the league. <span className="italic text-tangerine">5 minutes</span> at a time.
