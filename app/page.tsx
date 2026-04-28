@@ -16,6 +16,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { isOnboarded } from '@/lib/profile';
 import { TeaUpToggle } from '@/components/TeaUpToggle';
+import { STARTER_PROMPTS } from '@/lib/prompts';
 
 export default function Root() {
   const router = useRouter();
@@ -30,8 +31,8 @@ export default function Root() {
       <TrustStrip />
       <ScanScene />
       <BFFScene />
-      <TodayScene />
       <LearnScene />
+      <TodayScene />
       <SocialProof />
       <FinalCTA />
       <Footer />
@@ -95,17 +96,17 @@ function Hero() {
             </div>
 
             <h1 className="font-display text-[48px] sm:text-[60px] md:text-[72px] font-bold text-green leading-[0.95] tracking-tight">
-              Watch like a fan.
+              Learn the players.
               <br />
-              <span className="italic font-medium text-tangerine">Talk like a friend.</span>
+              <span className="italic font-medium text-tangerine">Get the tea.</span>
             </h1>
 
             <p className="mt-4 font-display italic text-[24px] sm:text-[26px] font-medium text-green leading-tight">
-              Your sports BFF.
+              Your Sports BFF.
             </p>
 
             <p className="mt-5 text-[16px] sm:text-[17px] text-ink-soft leading-relaxed max-w-md">
-              <strong className="text-ink">Scan any player.</strong> The rules, the players, the storylines — <strong className="text-ink">explained without gatekeeping.</strong> Flip Tea'd Up on for the gossip.
+              Scan any TV or image to learn <strong className="text-ink">the players, the rules, and the storylines.</strong> Flip Tea'd Up on for the gossip.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3 items-center">
@@ -123,8 +124,8 @@ function Hero() {
               </Link>
             </div>
 
-            <div className="mt-6 font-script text-magenta text-[18px] sm:text-[20px] rotate-[-1.5deg] inline-block">
-              — built by a Gen Z founder who didn't know what a touchdown was last year.
+            <div className="mt-6 font-script text-magenta text-[20px] sm:text-[22px] rotate-[-1.5deg] inline-block">
+              — sports for the rest of us.
             </div>
           </div>
 
@@ -304,10 +305,10 @@ function ScanScene() {
             ① The hero feature
           </div>
           <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.96] tracking-tight">
-            Point. ID. <span className="italic text-tangerine">Decoded.</span>
+            Point. Scan. <span className="italic text-tangerine">Learn.</span>
           </h2>
-          <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed max-w-md mx-auto">
-            Camera, screenshot, or live broadcast. We ID the player and serve the storylines in seconds.
+          <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed max-w-lg mx-auto">
+            Point your camera at any TV, scan a screenshot, snap a poster — works on all things sports. Every player decoded in seconds.
           </p>
         </div>
 
@@ -447,43 +448,29 @@ function ScanResultThumbnail() {
 function BFFScene() {
   return (
     <section className="relative px-4 sm:px-8 py-20 sm:py-28 bg-white border-t border-[var(--hairline)]">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-[0.95fr_1.05fr] gap-12 md:gap-16 items-center">
-        <div className="order-2 md:order-1">
+      <div className="max-w-3xl mx-auto">
+        {/* Headline ABOVE the chat window — stacked layout */}
+        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
           <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">② The chat</div>
-          <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
-            Ask anything. <span className="italic text-tangerine">No question is dumb.</span>
+          <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.96] tracking-tight">
+            Ask anything. <span className="italic text-tangerine">No judgment.</span>
           </h2>
-          <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed">
-            The friend who knows every player AND patiently explains a third down. Drill into any team, any storyline, any rule — at your pace.
+          <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed max-w-lg mx-auto">
+            100+ pre-loaded prompts to get you started. Tap one and go — or type your own. Drill into any team, any storyline, any rule.
           </p>
-
-          <div className="mt-7 flex flex-wrap gap-2">
-            {[
-              { label: '"What\'s a sack?"', emoji: '🏈' },
-              { label: '"Why is OKC so good?"', emoji: '🏀' },
-              { label: '"What happened with KD?"', emoji: '👀' },
-              { label: '"How does the cap work?"', emoji: '💰' },
-            ].map((p) => (
-              <span key={p.label} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[12px] text-ink-soft font-semibold">
-                <span aria-hidden>{p.emoji}</span>
-                {p.label}
-              </span>
-            ))}
-          </div>
-
-          <p className="mt-7 text-[13px] text-ink-soft italic">
-            Voice mode reads it aloud. Tea'd Up adds the gossip. <span className="text-tangerine font-semibold not-italic">Never invents.</span>
-          </p>
-
-          <div className="mt-7">
-            <Link href="/chat" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
-              Open the chat →
-            </Link>
-          </div>
         </div>
 
-        <div className="order-1 md:order-2">
-          <BFFThreadMockup />
+        {/* Functional chat mockup with clickable prompts */}
+        <BFFThreadMockup />
+
+        <p className="mt-8 text-center text-[13px] text-ink-soft italic">
+          Voice mode reads it aloud. Tea'd Up adds the gossip. <span className="text-tangerine font-semibold not-italic">Never invents.</span>
+        </p>
+
+        <div className="mt-6 text-center">
+          <Link href="/chat" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
+            Open the chat →
+          </Link>
         </div>
       </div>
     </section>
@@ -491,58 +478,55 @@ function BFFScene() {
 }
 
 function BFFThreadMockup() {
+  // Live, clickable starter prompts — routes to /chat?seed=<prompt>
+  const livePrompts = STARTER_PROMPTS.slice(0, 6);
+
   return (
     <div className="relative max-w-md mx-auto w-full">
       {/* Layered glow */}
       <div className="absolute -inset-6 bg-gradient-to-br from-tangerine/[0.10] via-magenta/[0.08] to-transparent blur-2xl rounded-[60px] -z-10" />
 
       <div
-        className="bg-white rounded-3xl p-5 border border-[var(--hairline)]"
+        className="bg-white rounded-3xl p-5 sm:p-6 border border-[var(--hairline)]"
         style={{
           boxShadow: '0 1px 0 rgba(255,255,255,0.9) inset, 0 24px 48px -16px rgba(13,45,36,0.18)',
         }}
       >
-        <div className="text-center mb-4 text-[10px] tracking-wider uppercase text-muted font-mono">
-          iMessage · today 8:14 PM
+        <div className="text-center mb-5 text-[10px] tracking-wider uppercase text-muted font-mono">
+          iMessage · with sportsBFF
         </div>
+
+        {/* BFF intro bubble */}
         <div className="flex flex-col gap-2.5">
-          <div className="flex justify-end">
-            <div className="px-4 py-2.5 text-white text-[14.5px] max-w-[78%]" style={{ background: 'linear-gradient(180deg, #FF7A52 0%, #FF5723 100%)', borderRadius: 20, borderBottomRightRadius: 6 }}>
-              what does first down mean
-            </div>
-          </div>
           <div className="flex">
             <div className="px-4 py-2.5 text-ink text-[14px] max-w-[88%]" style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}>
-              the offense gets 4 tries to move the ball 10 yards. if they make it → another 4 tries (a "first down"). if not → the other team gets the ball ☕
+              hey 👋 ask me anything about NFL or NBA. or tap one to start ↓
             </div>
           </div>
-          <div className="flex justify-end">
-            <div className="px-4 py-2.5 text-white text-[14.5px] max-w-[78%]" style={{ background: 'linear-gradient(180deg, #FF7A52 0%, #FF5723 100%)', borderRadius: 20, borderBottomRightRadius: 6 }}>
-              ok and embiid drama 👀
-            </div>
-          </div>
-          <div className="flex">
-            <div className="px-4 py-2.5 text-ink text-[14px] max-w-[88%]" style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}>
-              <span className="inline-flex items-center px-1.5 py-px rounded-full text-[8px] font-semibold uppercase tracking-wider mr-1.5" style={{ background: '#FAEEDA', color: '#854F0B' }}>Speculation</span>
-              <span>flip Tea'd Up on and i'll spill. or stay clean — your call.</span>
-            </div>
-          </div>
-          <div className="flex">
-            <div className="px-4 py-2.5 inline-flex items-center gap-1" style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}>
-              <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdotL 1.2s ease-in-out infinite', animationDelay: '0s' }} />
-              <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdotL 1.2s ease-in-out infinite', animationDelay: '0.2s' }} />
-              <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'tdotL 1.2s ease-in-out infinite', animationDelay: '0.4s' }} />
-            </div>
-          </div>
-          <div className="text-right text-[10px] text-muted mt-1">Read · 8:15 PM</div>
+        </div>
+
+        {/* Pre-loaded prompts — actually clickable */}
+        <div className="mt-4 grid grid-cols-1 gap-2">
+          {livePrompts.map((p) => (
+            <Link
+              key={p}
+              href={`/chat?seed=${encodeURIComponent(p)}`}
+              className="group flex items-center justify-between gap-3 w-full text-left px-3.5 py-2.5 rounded-2xl bg-cream-warm/40 border border-[var(--hairline)] hover:bg-white hover:border-tangerine/40 hover:shadow-[0_4px_12px_-6px_rgba(255,107,61,0.25)] transition"
+            >
+              <span className="text-[13.5px] text-ink font-medium leading-snug">{p}</span>
+              <span className="shrink-0 text-tangerine text-[14px] opacity-0 group-hover:opacity-100 transition">→</span>
+            </Link>
+          ))}
+        </div>
+
+        {/* Footer hint */}
+        <div className="mt-4 pt-3 border-t border-[var(--hairline)] flex items-center justify-between gap-3">
+          <span className="text-[11px] text-muted font-mono tracking-wider">tap to start →</span>
+          <Link href="/chat" className="text-[11px] text-tangerine font-semibold hover:underline">
+            See all 100+ prompts
+          </Link>
         </div>
       </div>
-      <style jsx>{`
-        @keyframes tdotL {
-          0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
-          30% { transform: translateY(-3px); opacity: 1; }
-        }
-      `}</style>
     </div>
   );
 }
@@ -560,12 +544,12 @@ function TodayScene() {
         </div>
 
         <div className="order-1 md:order-2">
-          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">③ The feed · live</div>
+          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">④ The feed · live</div>
           <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
-            What's happening, <span className="italic text-tangerine">right now.</span>
+            Fresh tea. <span className="italic text-tangerine">Every morning.</span>
           </h2>
           <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed">
-            Real-time drops from across the league. Trade reports. On-court moments. Breaking news — sourced and tier-labeled. Toggle Tea'd Up on for the gossip layer.
+            Real-time drops from across both leagues. Trade reports, on-court moments, breaking news — sourced and tier-labeled. Tea'd Up on for the gossip layer.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-2.5">
@@ -653,9 +637,9 @@ function LearnScene() {
     <section className="relative px-4 sm:px-8 py-20 sm:py-28 border-t border-[var(--hairline)]" style={{ background: '#ECEAE3' }}>
       <div className="max-w-6xl mx-auto grid md:grid-cols-[0.95fr_1.05fr] gap-12 md:gap-16 items-center">
         <div>
-          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">④ Learn</div>
+          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">③ Learn</div>
           <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
-            Master both leagues. <span className="italic text-tangerine">5 minutes</span> at a time.
+            Master the rules. <span className="italic text-tangerine">5 minutes a day.</span>
           </h2>
           <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed">
             Bite-sized lessons. Glossary in plain English. Plus Euphoria mode — more shows coming.
