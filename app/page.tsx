@@ -33,7 +33,6 @@ export default function Root() {
       <BFFScene />
       <TodayScene />
       <LearnScene />
-      <SocialProof />
       <FinalCTA />
       <Footer />
     </main>
@@ -298,10 +297,13 @@ function TrustStrip() {
 
 function ScanScene() {
   return (
-    <section className="relative px-4 sm:px-8 py-20 sm:py-28 bg-white">
-      {/* Premium white — barely-there ambient wash */}
+    <section
+      className="relative px-4 sm:px-8 py-20 sm:py-28 border-t border-[var(--hairline)] overflow-hidden"
+      style={{ background: '#FAF8F4' }}
+    >
+      {/* Warm off-white base + barely-there tangerine wash */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-tangerine/[0.025] blur-[140px]" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-tangerine/[0.04] blur-[140px]" />
       </div>
 
       <div className="max-w-6xl mx-auto">
@@ -884,41 +886,6 @@ function LearnScene() {
               <div className="text-[11.5px] text-ink-soft italic mt-0.5">tunnel fits as armor · more shows soon</div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ─────────────────────────────────────────────────────────────────
-   SOCIAL PROOF — minimal testimonial-style row
-   ──────────────────────────────────────────────────────────────── */
-
-function SocialProof() {
-  const quotes = [
-    { quote: "i finally know what a tight end is. and the tea 👀", who: '@maddie · beta tester' },
-    { quote: "scanned the suns game and got every player + the chaos in 3 sec.", who: '@jenna · beta tester' },
-    { quote: "this is what i needed. ESPN is for boys.", who: '@aria · beta tester' },
-  ];
-
-  return (
-    <section className="px-4 sm:px-8 py-20 sm:py-28 bg-white border-t border-[var(--hairline)]">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12 sm:mb-14">
-          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-3">From the beta</div>
-          <h2 className="font-display text-[32px] sm:text-[44px] font-bold text-green leading-[1.05] tracking-tight max-w-2xl mx-auto">
-            Built with the friends who weren't <span className="italic text-tangerine">supposed to get it.</span>
-          </h2>
-        </div>
-
-        <div className="grid sm:grid-cols-3 gap-4 sm:gap-5 max-w-5xl mx-auto">
-          {quotes.map((q, i) => (
-            <div key={i} className="bg-white rounded-2xl p-5 border border-[var(--hairline)] shadow-[0_4px_16px_-10px_rgba(13,45,36,0.08)]">
-              <div className="text-tangerine text-2xl leading-none">"</div>
-              <p className="mt-1 text-[14px] text-ink leading-relaxed">{q.quote}</p>
-              <div className="mt-3 text-[11px] text-muted font-mono">{q.who}</div>
-            </div>
-          ))}
         </div>
       </div>
     </section>
