@@ -83,43 +83,29 @@ function Hero() {
         <div className="absolute top-32 -right-32 w-[440px] h-[440px] rounded-full bg-magenta/[0.04] blur-[120px]" />
       </div>
 
-      {/* Mobile-first ordering: badge → phone mockup → headline → CTAs */}
+      {/* Mobile order: badge → headline → subhead → body → CTAs → phone mockup → script
+          Desktop: copy on left, mockup on right (side-by-side) */}
       <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-8 pb-16 sm:pt-14 sm:pb-24">
-        <div className="grid md:grid-cols-[1.05fr_0.95fr] gap-12 md:gap-14 items-center">
-          {/* PHONE MOCKUP — first on mobile, second on desktop */}
-          <div className="order-1 md:order-2 relative">
-            {/* Floating toggle demo */}
-            <div className="absolute -top-1 right-2 sm:right-0 z-10 flex flex-col items-end gap-1.5">
-              <span className="text-[9px] sm:text-[10px] font-mono tracking-wider uppercase text-muted">
-                tap to flip the vibe ↓
-              </span>
-              <TeaUpToggle enabled={demoTeaUp} onToggle={() => setDemoTeaUp((v) => !v)} />
-            </div>
-            <ScanResultMockup teadUp={demoTeaUp} />
-            <div className="font-script text-magenta text-[14px] sm:text-[15px] rotate-[-2deg] text-center mt-3">
-              scan any player → get the {demoTeaUp ? 'tea' : 'breakdown'} ✏
-            </div>
-          </div>
-
-          {/* COPY — second on mobile, first on desktop */}
-          <div className="order-2 md:order-1 text-left">
+        <div className="grid md:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-14 items-center">
+          {/* COPY — first everywhere */}
+          <div className="text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-ink-soft mb-5 shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
               Closed beta · iOS + web · Spring 2026
             </div>
 
-            <h1 className="font-display text-[44px] sm:text-[60px] md:text-[72px] font-bold text-green leading-[0.92] tracking-tight">
-              Learn the game.
+            <h1 className="font-display text-[48px] sm:text-[60px] md:text-[72px] font-bold text-green leading-[0.95] tracking-tight">
+              Watch like a fan.
               <br />
-              <span className="italic font-medium text-tangerine">Get the tea.</span>
+              <span className="italic font-medium text-tangerine">Talk like a friend.</span>
             </h1>
 
-            <p className="mt-3 text-[12px] tracking-[0.18em] uppercase font-bold text-tangerine">
+            <p className="mt-4 font-display italic text-[24px] sm:text-[26px] font-medium text-green leading-tight">
               Your sports BFF.
             </p>
 
             <p className="mt-5 text-[16px] sm:text-[17px] text-ink-soft leading-relaxed max-w-md">
-              <strong className="text-ink">Scan any player.</strong> Get the storylines, the rules, and (if you flip it on) the gossip — confirmed, reported, never guessed.
+              <strong className="text-ink">Scan any player.</strong> The rules, the players, the storylines — <strong className="text-ink">explained without gatekeeping.</strong> Flip Tea'd Up on for the gossip.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3 items-center">
@@ -139,6 +125,21 @@ function Hero() {
 
             <div className="mt-6 font-script text-magenta text-[18px] sm:text-[20px] rotate-[-1.5deg] inline-block">
               — built by a Gen Z founder who didn't know what a touchdown was last year.
+            </div>
+          </div>
+
+          {/* PHONE MOCKUP — second on mobile, second on desktop */}
+          <div className="relative mt-4 md:mt-0">
+            {/* Toggle demo — sits ABOVE the mockup on mobile (no overlap), top-right on desktop */}
+            <div className="flex md:absolute md:-top-1 md:right-0 md:z-10 items-center md:items-end justify-center md:flex-col gap-2 md:gap-1.5 mb-4 md:mb-0">
+              <span className="text-[10px] font-mono tracking-wider uppercase text-muted">
+                tap to flip the vibe <span className="hidden md:inline">↓</span><span className="md:hidden">→</span>
+              </span>
+              <TeaUpToggle enabled={demoTeaUp} onToggle={() => setDemoTeaUp((v) => !v)} />
+            </div>
+            <ScanResultMockup teadUp={demoTeaUp} />
+            <div className="font-script text-magenta text-[14px] sm:text-[15px] rotate-[-2deg] text-center mt-3">
+              scan any player → get the {demoTeaUp ? 'tea' : 'breakdown'} ✏
             </div>
           </div>
         </div>
