@@ -11,7 +11,7 @@
  * pivot from clean info to gossip. Every other surface stays neutral.
  */
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { isOnboarded } from '@/lib/profile';
@@ -31,8 +31,8 @@ export default function Root() {
       <TrustStrip />
       <ScanScene />
       <BFFScene />
-      <LearnScene />
       <TodayScene />
+      <LearnScene />
       <SocialProof />
       <FinalCTA />
       <Footer />
@@ -299,16 +299,21 @@ function TrustStrip() {
 function ScanScene() {
   return (
     <section className="relative px-4 sm:px-8 py-20 sm:py-28 bg-white">
+      {/* Premium white — barely-there ambient wash */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-tangerine/[0.025] blur-[140px]" />
+      </div>
+
       <div className="max-w-6xl mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
-          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">
-            ① The hero feature
+        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
+          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-5">
+            ① Scan
           </div>
-          <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.96] tracking-tight">
-            Point. Scan. <span className="italic text-tangerine">Learn.</span>
+          <h2 className="font-display text-[32px] sm:text-[44px] md:text-[52px] font-bold text-green leading-[1.04] tracking-tight">
+            Point your camera at any TV, scan a screenshot, snap a poster — works on all things sports.
           </h2>
-          <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed max-w-lg mx-auto">
-            Point your camera at any TV, scan a screenshot, snap a poster — works on all things sports. Every player decoded in seconds.
+          <p className="mt-5 font-display italic text-[22px] sm:text-[26px] md:text-[30px] font-medium text-tangerine leading-tight tracking-tight">
+            Every player decoded in seconds.
           </p>
         </div>
 
@@ -447,29 +452,32 @@ function ScanResultThumbnail() {
 
 function BFFScene() {
   return (
-    <section className="relative px-4 sm:px-8 py-20 sm:py-28 bg-white border-t border-[var(--hairline)]">
+    <section
+      className="relative px-4 sm:px-8 py-20 sm:py-28 border-t border-[var(--hairline)]"
+      style={{ background: '#F8F4ED' }}
+    >
       <div className="max-w-3xl mx-auto">
         {/* Headline ABOVE the chat window — stacked layout */}
-        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
-          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">② The chat</div>
-          <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.96] tracking-tight">
-            Ask anything. <span className="italic text-tangerine">No judgment.</span>
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-green mb-4">② Chat</div>
+          <h2 className="font-display text-[42px] sm:text-[60px] font-bold text-green leading-[0.96] tracking-tight">
+            Ask anything. <span className="italic">No judgment.</span>
           </h2>
           <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed max-w-lg mx-auto">
-            100+ pre-loaded prompts to get you started. Tap one and go — or type your own. Drill into any team, any storyline, any rule.
+            Tap any of the 100+ pre-loaded prompts to start — beginner rules, juicy drama, or anything you've been too afraid to ask. Your BFF doesn't gatekeep.
           </p>
         </div>
 
-        {/* Functional chat mockup with clickable prompts */}
-        <BFFThreadMockup />
+        {/* Functional chat — clickable prompts, drop → type → reveal */}
+        <BFFLiveChatMockup />
 
         <p className="mt-8 text-center text-[13px] text-ink-soft italic">
-          Voice mode reads it aloud. Tea'd Up adds the gossip. <span className="text-tangerine font-semibold not-italic">Never invents.</span>
+          Voice mode reads it aloud. Tea'd Up adds the gossip. <span className="text-green font-semibold not-italic">Never invents.</span>
         </p>
 
         <div className="mt-6 text-center">
-          <Link href="/chat" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
-            Open the chat →
+          <Link href="/chat" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-green hover:underline">
+            Open the full chat →
           </Link>
         </div>
       </div>
@@ -477,58 +485,233 @@ function BFFScene() {
   );
 }
 
-function BFFThreadMockup() {
-  // Live, clickable starter prompts — routes to /chat?seed=<prompt>
+// Hand-written fake responses — landing page demos without burning the API budget.
+// Voice matches /api/chat: lowercase, casual, occasional emoji, never condescending.
+const BFF_DEMO_RESPONSES: Record<string, string> = {
+  "What's a sack?":
+    "when a defender tackles the QB behind the line of scrimmage *while he still has the ball*. costs the offense yards + a down. the all-time leaders get their own stat line — bruce smith has 200. they make tiktoks of their celebrations now ☕",
+  "Why is everyone saying KD is Gossip Girl?":
+    "burner accounts. KD got caught running anonymous twitter alts (@gethigher77 was the famous one) to defend himself in NBA arguments. same energy as dan humphrey writing about the upper east side from the outside while *being* the upper east side. spotted: a forward with too much time 👀",
+  "How does the salary cap work?":
+    "every team gets the same money pool to spend on players (~$255M in the NBA this season, ~$255M in the NFL — wild coincidence). go over → penalties, lost picks, taxes that snowball if you keep doing it. it's the league's way of forcing parity. without it, the lakers would just buy everyone.",
+  "What's the trade deadline?":
+    "the cutoff date when teams can swap players. after it passes → rosters are locked for the rest of the regular season. NBA: usually early february. NFL: late october. the 24 hours before are *unhinged* — front offices speed-run blockbuster trades while we all refresh twitter 📱",
+  "How does fantasy football work?":
+    "you draft real NFL players to a pretend team. each week, your players' real stats = your fantasy points. highest score in your league wins the matchup. win enough → playoffs → ring (no actual ring). it's why your friends suddenly care about the jaguars in october.",
+  "Who is Travis Kelce?":
+    "tight end for the kansas city chiefs. best at his position for a decade running. 3x super bowl champ. co-hosts *new heights* podcast with his brother jason (also famous, also retired). currently dating taylor swift, which single-handedly broke the NFL's viewership records. somehow beloved by everyone, even rival fans 💛",
+};
+
+type BFFMessage = { id: number; role: 'user' | 'bff'; content: string };
+
+function BFFLiveChatMockup() {
   const livePrompts = STARTER_PROMPTS.slice(0, 6);
+  const [thread, setThread] = useState<BFFMessage[]>([]);
+  const [isTyping, setIsTyping] = useState(false);
+  const [streamingText, setStreamingText] = useState('');
+  const [usedPrompts, setUsedPrompts] = useState<Set<string>>(new Set());
+  const nextId = useRef(1);
+
+  function handlePrompt(prompt: string) {
+    if (isTyping) return;
+    const answer = BFF_DEMO_RESPONSES[prompt] ?? "let me think about that one...";
+    const userMsg: BFFMessage = { id: nextId.current++, role: 'user', content: prompt };
+    setThread((prev) => [...prev, userMsg]);
+    setUsedPrompts((prev) => new Set(prev).add(prompt));
+    setIsTyping(true);
+    setStreamingText('');
+
+    // Pause for "typing dots" feel, then stream characters in
+    const TYPING_DELAY = 700;
+    const CHAR_INTERVAL = 18; // ms per character group
+    const CHARS_PER_TICK = 2;
+
+    setTimeout(() => {
+      let i = 0;
+      const interval = setInterval(() => {
+        i += CHARS_PER_TICK;
+        if (i >= answer.length) {
+          clearInterval(interval);
+          setStreamingText('');
+          setThread((prev) => [...prev, { id: nextId.current++, role: 'bff', content: answer }]);
+          setIsTyping(false);
+        } else {
+          setStreamingText(answer.slice(0, i));
+        }
+      }, CHAR_INTERVAL);
+    }, TYPING_DELAY);
+  }
+
+  function reset() {
+    setThread([]);
+    setStreamingText('');
+    setIsTyping(false);
+    setUsedPrompts(new Set());
+  }
+
+  const hasContent = thread.length > 0 || isTyping;
 
   return (
     <div className="relative max-w-md mx-auto w-full">
-      {/* Layered glow */}
-      <div className="absolute -inset-6 bg-gradient-to-br from-tangerine/[0.10] via-magenta/[0.08] to-transparent blur-2xl rounded-[60px] -z-10" />
+      {/* Soft green-tinted glow — matches section's BFF mood */}
+      <div className="absolute -inset-6 bg-gradient-to-br from-green/[0.06] via-cream-warm/[0.4] to-transparent blur-2xl rounded-[60px] -z-10" />
 
       <div
-        className="bg-white rounded-3xl p-5 sm:p-6 border border-[var(--hairline)]"
+        className="bg-white rounded-3xl border border-[var(--hairline)] overflow-hidden flex flex-col"
         style={{
           boxShadow: '0 1px 0 rgba(255,255,255,0.9) inset, 0 24px 48px -16px rgba(13,45,36,0.18)',
         }}
       >
-        <div className="text-center mb-5 text-[10px] tracking-wider uppercase text-muted font-mono">
-          iMessage · with sportsBFF
-        </div>
-
-        {/* BFF intro bubble */}
-        <div className="flex flex-col gap-2.5">
-          <div className="flex">
-            <div className="px-4 py-2.5 text-ink text-[14px] max-w-[88%]" style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}>
-              hey 👋 ask me anything about NFL or NBA. or tap one to start ↓
+        {/* Header — like an iMessage chat with a contact */}
+        <div className="px-5 py-3.5 border-b border-[var(--hairline)] flex items-center justify-between">
+          <div className="flex items-center gap-2.5">
+            <div className="w-7 h-7 rounded-full bg-green flex items-center justify-center text-white font-display font-bold text-[11px]">
+              B
+            </div>
+            <div className="leading-tight">
+              <div className="text-[12px] font-semibold text-green">sportsBFF</div>
+              <div className="text-[10px] text-muted font-mono">{isTyping ? 'typing…' : 'online'}</div>
             </div>
           </div>
-        </div>
-
-        {/* Pre-loaded prompts — actually clickable */}
-        <div className="mt-4 grid grid-cols-1 gap-2">
-          {livePrompts.map((p) => (
-            <Link
-              key={p}
-              href={`/chat?seed=${encodeURIComponent(p)}`}
-              className="group flex items-center justify-between gap-3 w-full text-left px-3.5 py-2.5 rounded-2xl bg-cream-warm/40 border border-[var(--hairline)] hover:bg-white hover:border-tangerine/40 hover:shadow-[0_4px_12px_-6px_rgba(255,107,61,0.25)] transition"
+          {hasContent && (
+            <button
+              onClick={reset}
+              className="text-[11px] text-muted hover:text-green font-mono tracking-wider transition"
             >
-              <span className="text-[13.5px] text-ink font-medium leading-snug">{p}</span>
-              <span className="shrink-0 text-tangerine text-[14px] opacity-0 group-hover:opacity-100 transition">→</span>
-            </Link>
-          ))}
+              ↻ reset
+            </button>
+          )}
         </div>
 
-        {/* Footer hint */}
-        <div className="mt-4 pt-3 border-t border-[var(--hairline)] flex items-center justify-between gap-3">
-          <span className="text-[11px] text-muted font-mono tracking-wider">tap to start →</span>
-          <Link href="/chat" className="text-[11px] text-tangerine font-semibold hover:underline">
-            See all 100+ prompts
-          </Link>
+        {/* Thread area — fixed min height so the box doesn't jump */}
+        <div className="flex-1 px-5 py-4 flex flex-col gap-2.5 min-h-[280px] max-h-[420px] overflow-y-auto">
+          {/* Empty state */}
+          {!hasContent && (
+            <>
+              <div className="flex">
+                <div
+                  className="px-4 py-2.5 text-ink text-[14px] max-w-[88%]"
+                  style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}
+                >
+                  hey 👋 i'm sportsBFF. tap a prompt below to start — or pretend i can hear you ☕
+                </div>
+              </div>
+              <div className="text-center text-[10px] text-muted font-mono uppercase tracking-wider mt-2">
+                ↓ pre-loaded prompts ↓
+              </div>
+            </>
+          )}
+
+          {/* Rendered thread */}
+          {thread.map((m) =>
+            m.role === 'user' ? (
+              <div key={m.id} className="flex justify-end">
+                <div
+                  className="px-4 py-2.5 text-white text-[14.5px] max-w-[78%]"
+                  style={{
+                    background: 'linear-gradient(180deg, #143A2E 0%, #0D2D24 100%)',
+                    borderRadius: 20,
+                    borderBottomRightRadius: 6,
+                  }}
+                >
+                  {m.content}
+                </div>
+              </div>
+            ) : (
+              <div key={m.id} className="flex">
+                <div
+                  className="px-4 py-2.5 text-ink text-[14px] max-w-[88%] leading-relaxed"
+                  style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}
+                  dangerouslySetInnerHTML={{ __html: renderInlineMarkdown(m.content) }}
+                />
+              </div>
+            )
+          )}
+
+          {/* Streaming bubble — currently being typed */}
+          {streamingText && (
+            <div className="flex">
+              <div
+                className="px-4 py-2.5 text-ink text-[14px] max-w-[88%] leading-relaxed"
+                style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}
+              >
+                <span dangerouslySetInnerHTML={{ __html: renderInlineMarkdown(streamingText) }} />
+                <span className="inline-block w-1.5 h-4 ml-0.5 align-middle bg-green/60 animate-pulse" />
+              </div>
+            </div>
+          )}
+
+          {/* Typing dots — between user-message and stream-start */}
+          {isTyping && !streamingText && (
+            <div className="flex">
+              <div
+                className="px-4 py-2.5 inline-flex items-center gap-1"
+                style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'bffDot 1.2s ease-in-out infinite', animationDelay: '0s' }} />
+                <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'bffDot 1.2s ease-in-out infinite', animationDelay: '0.2s' }} />
+                <span className="w-1.5 h-1.5 rounded-full bg-ink-soft" style={{ animation: 'bffDot 1.2s ease-in-out infinite', animationDelay: '0.4s' }} />
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Sticky prompt chips at the bottom — the actual interaction surface */}
+        <div className="px-4 py-4 border-t border-[var(--hairline)]" style={{ background: '#FAF7F1' }}>
+          <div className="text-[10px] font-bold tracking-[0.18em] uppercase text-muted mb-2.5">
+            Try a prompt
+          </div>
+          <div className="flex flex-wrap gap-1.5">
+            {livePrompts.map((p) => {
+              const used = usedPrompts.has(p);
+              return (
+                <button
+                  key={p}
+                  onClick={() => handlePrompt(p)}
+                  disabled={isTyping || used}
+                  className={`text-[12.5px] px-3 py-1.5 rounded-full border font-medium transition ${
+                    used
+                      ? 'bg-cream-warm/60 border-[var(--hairline)] text-muted cursor-not-allowed'
+                      : isTyping
+                      ? 'bg-white/60 border-[var(--hairline)] text-muted cursor-wait'
+                      : 'bg-white border-[var(--hairline)] text-green hover:border-green hover:bg-green hover:text-white cursor-pointer'
+                  }`}
+                >
+                  {p}
+                </button>
+              );
+            })}
+          </div>
+          <div className="mt-3 pt-2.5 border-t border-[var(--hairline)] flex items-center justify-between gap-3">
+            <span className="text-[10px] text-muted font-mono tracking-wider">
+              {usedPrompts.size > 0 ? `${usedPrompts.size}/6 tried` : 'tap any prompt →'}
+            </span>
+            <Link href="/chat" className="text-[11px] text-green font-semibold hover:underline">
+              See all 100+ →
+            </Link>
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes bffDot {
+          0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+          30% { transform: translateY(-3px); opacity: 1; }
+        }
+      `}</style>
     </div>
   );
+}
+
+// Tiny inline markdown — supports *italic* and **bold** only, escapes everything else.
+function renderInlineMarkdown(text: string): string {
+  const escaped = text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  return escaped
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>');
 }
 
 /* ─────────────────────────────────────────────────────────────────
@@ -537,25 +720,33 @@ function BFFThreadMockup() {
 
 function TodayScene() {
   return (
-    <section className="relative px-4 sm:px-8 py-20 sm:py-28 bg-white border-t border-[var(--hairline)]">
+    <section
+      className="relative px-4 sm:px-8 py-20 sm:py-28 border-t border-[var(--hairline)] overflow-hidden"
+      style={{ background: 'linear-gradient(180deg, #FDEEF1 0%, #FFFFFF 100%)' }}
+    >
+      {/* Soft magenta wash to anchor the blush mood */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute top-0 right-0 w-[600px] h-[400px] rounded-full bg-magenta/[0.06] blur-[140px]" />
+      </div>
+
       <div className="max-w-6xl mx-auto grid md:grid-cols-[1.05fr_0.95fr] gap-12 md:gap-16 items-center">
         <div className="order-2 md:order-1">
           <TodayFeedMockup />
         </div>
 
         <div className="order-1 md:order-2">
-          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">④ The feed · live</div>
-          <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
-            Fresh tea. <span className="italic text-tangerine">Every morning.</span>
+          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-magenta mb-4">③ Tea · live</div>
+          <h2 className="font-display text-[42px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
+            Fresh tea. <span className="italic text-magenta">Every morning.</span>
           </h2>
           <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed">
-            Real-time drops from across both leagues. Trade reports, on-court moments, breaking news — sourced and tier-labeled. Tea'd Up on for the gossip layer.
+            A morning drop with what's actually happening across the NFL + NBA — sourced, tier-labeled, never invented. Built to forward to the group chat before your coffee's done.
           </p>
 
           <div className="mt-7 flex flex-wrap gap-2.5">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[12px]">
-              <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
-              <span className="text-ink-soft font-semibold">Updated hourly</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-magenta animate-pulse" />
+              <span className="text-ink-soft font-semibold">Refreshed daily</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[var(--hairline)] text-[12px]">
               <span className="text-ink-soft font-semibold">📱 Tap to ask</span>
@@ -566,11 +757,11 @@ function TodayScene() {
           </div>
 
           <p className="mt-7 text-[13px] text-ink-soft italic">
-            Like a group chat that watches every game. <span className="text-tangerine font-semibold not-italic">Without the bros.</span>
+            Like a group chat that watches every game. <span className="text-magenta font-semibold not-italic">Without the bros.</span>
           </p>
 
           <div className="mt-7">
-            <Link href="/tea" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
+            <Link href="/tea" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-magenta hover:underline">
               See today's feed →
             </Link>
           </div>
@@ -600,8 +791,8 @@ function TodayFeedMockup() {
             <div className="font-display italic text-[18px] font-bold text-green leading-none">today.</div>
             <div className="text-[10px] text-muted font-mono uppercase tracking-wider mt-1">tuesday · apr 28 · live</div>
           </div>
-          <div className="inline-flex items-center gap-1.5 text-[10px] font-bold tracking-wider text-tangerine">
-            <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
+          <div className="inline-flex items-center gap-1.5 text-[10px] font-bold tracking-wider text-magenta">
+            <span className="w-1.5 h-1.5 rounded-full bg-magenta animate-pulse" />
             LIVE
           </div>
         </div>
@@ -634,19 +825,27 @@ function TodayFeedMockup() {
 
 function LearnScene() {
   return (
-    <section className="relative px-4 sm:px-8 py-20 sm:py-28 border-t border-[var(--hairline)]" style={{ background: '#ECEAE3' }}>
+    <section
+      className="relative px-4 sm:px-8 py-20 sm:py-28 border-t border-[var(--hairline)] overflow-hidden"
+      style={{ background: '#EFEAF5' }}
+    >
+      {/* Soft sapphire wash to anchor the academic mood */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute top-20 -left-20 w-[500px] h-[400px] rounded-full bg-sapphire/[0.05] blur-[140px]" />
+      </div>
+
       <div className="max-w-6xl mx-auto grid md:grid-cols-[0.95fr_1.05fr] gap-12 md:gap-16 items-center">
         <div>
-          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-4">③ Learn</div>
-          <h2 className="font-display text-[40px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
-            Master the rules. <span className="italic text-tangerine">5 minutes a day.</span>
+          <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-sapphire mb-4">④ Lessons</div>
+          <h2 className="font-display text-[42px] sm:text-[60px] font-bold text-green leading-[0.95] tracking-tight">
+            Master the rules. <span className="italic text-sapphire">5 minutes a day.</span>
           </h2>
           <p className="mt-5 text-[16px] sm:text-[18px] text-ink-soft leading-relaxed">
-            Bite-sized lessons. Glossary in plain English. Plus Euphoria mode — more shows coming.
+            Bite-sized lessons in plain English. The rules, the positions, the strategy — broken down so it actually clicks. Plus Euphoria mode for more cinematic explanations.
           </p>
 
           <div className="mt-7">
-            <Link href="/learn" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
+            <Link href="/learn" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-sapphire hover:underline">
               Start a lesson →
             </Link>
           </div>
