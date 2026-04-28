@@ -20,6 +20,7 @@ const config: Config = {
         muted: { DEFAULT: '#74746E', soft: '#9D9D97' },
         tangerine: { DEFAULT: '#FF6B3D', dark: '#FF5723' },
         magenta: { DEFAULT: '#E84B7A', soft: '#FCDCE6' },
+        pink: { soft: '#F4B6C2', blush: '#FDEEF1' },
         sapphire: '#2D4ED1',
         lemon: '#FBB731',
         lilac: '#B7A1E0',

@@ -89,9 +89,20 @@ function Hero() {
         <div className="grid md:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-14 items-center">
           {/* COPY — first everywhere */}
           <div className="text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-ink-soft mb-5 shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
-              Closed beta · iOS + web · Spring 2026
+            <div className="inline-flex items-center gap-2 pl-1 pr-3.5 py-1 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-ink-soft mb-5 shadow-sm">
+              <span
+                className="inline-flex items-center justify-center w-6 h-6 rounded-full overflow-hidden"
+                style={{ background: '#F4B6C2' }}
+                aria-hidden
+              >
+                <img
+                  src="/brand/goldie.png"
+                  alt=""
+                  className="w-7 h-7 object-cover object-top"
+                  style={{ marginTop: 1 }}
+                />
+              </span>
+              <span><strong className="text-green font-semibold">Hi, I'm Goldie</strong> · closed beta · iOS + web</span>
             </div>
 
             <h1 className="font-display text-[48px] sm:text-[60px] md:text-[72px] font-bold text-green leading-[0.95] tracking-tight">
@@ -138,12 +149,28 @@ function Hero() {
               <TeaUpToggle enabled={demoTeaUp} onToggle={() => setDemoTeaUp((v) => !v)} />
             </div>
             <ScanResultMockup teadUp={demoTeaUp} />
+
+            {/* Goldie peeks from the bottom-left, slight overlap with the phone mockup */}
+            <img
+              src="/brand/goldie.png"
+              alt="Goldie, your sports BFF"
+              className="hidden sm:block absolute -bottom-4 -left-6 md:-left-10 w-32 md:w-40 h-auto z-10 pointer-events-none drop-shadow-[0_12px_24px_rgba(13,45,36,0.18)]"
+              style={{ animation: 'goldieFloat 4s ease-in-out infinite' }}
+            />
+
             <div className="font-script text-magenta text-[14px] sm:text-[15px] rotate-[-2deg] text-center mt-3">
               scan any player → get the {demoTeaUp ? 'tea' : 'breakdown'} ✏
             </div>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes goldieFloat {
+          0%, 100% { transform: translateY(0) rotate(-2deg); }
+          50% { transform: translateY(-6px) rotate(-1deg); }
+        }
+      `}</style>
     </section>
   );
 }
@@ -271,8 +298,31 @@ function ScanResultMockup({ teadUp }: { teadUp: boolean }) {
 
 function TrustStrip() {
   return (
-    <section className="px-4 sm:px-8 py-8 sm:py-10 border-y border-[var(--hairline)] bg-white">
+    <section className="px-4 sm:px-8 py-10 sm:py-12 border-y border-[var(--hairline)] bg-white">
       <div className="max-w-5xl mx-auto">
+        {/* Meet Goldie — small intro band above the stats */}
+        <div className="flex items-center justify-center gap-4 sm:gap-5 mb-8 sm:mb-10">
+          <div
+            className="shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-pink-soft"
+            style={{ background: '#FDEEF1' }}
+          >
+            <img
+              src="/brand/goldie.png"
+              alt="Goldie, the sportsBFF mascot"
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+          <div className="text-left">
+            <div className="text-[10px] font-bold tracking-[0.22em] uppercase text-pink-soft mb-0.5">Meet</div>
+            <div className="font-display text-[20px] sm:text-[24px] font-bold text-green leading-tight">
+              Goldie. <span className="italic font-medium text-tangerine">The GOAT.</span>
+            </div>
+            <div className="font-script text-magenta text-[15px] sm:text-[17px] rotate-[-1.5deg] inline-block leading-none">
+              your sports BFF.
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 text-center">
           {[
             { num: '200+', label: 'Players' },
@@ -405,6 +455,23 @@ function ScanIdleMockup() {
 function ScanResultThumbnail() {
   return (
     <div className="relative">
+      {/* Goldie peek + speech bubble — top-right corner */}
+      <div className="absolute -top-6 -right-2 sm:-right-4 z-10 flex items-start gap-1 pointer-events-none">
+        <div className="font-script text-magenta text-[14px] sm:text-[15px] rotate-[-3deg] mt-2 bg-white border border-[var(--hairline)] rounded-2xl rounded-br-sm px-2.5 py-1 shadow-sm">
+          got the tea ☕
+        </div>
+        <div
+          className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-pink-soft"
+          style={{ background: '#FDEEF1' }}
+        >
+          <img
+            src="/brand/goldie.png"
+            alt=""
+            aria-hidden
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
+      </div>
       <div
         className="rounded-[28px] overflow-hidden bg-white max-w-[260px] sm:max-w-[280px] mx-auto"
         style={{
@@ -567,12 +634,20 @@ function BFFLiveChatMockup() {
         {/* Header — like an iMessage chat with a contact */}
         <div className="px-5 py-3.5 border-b border-[var(--hairline)] flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-full bg-green flex items-center justify-center text-white font-display font-bold text-[11px]">
-              B
+            <div
+              className="w-8 h-8 rounded-full overflow-hidden border border-[var(--hairline)]"
+              style={{ background: '#FDEEF1' }}
+            >
+              <img
+                src="/brand/goldie.png"
+                alt=""
+                className="w-full h-full object-cover object-top"
+                aria-hidden
+              />
             </div>
             <div className="leading-tight">
-              <div className="text-[12px] font-semibold text-green">sportsBFF</div>
-              <div className="text-[10px] text-muted font-mono">{isTyping ? 'typing…' : 'online'}</div>
+              <div className="text-[12px] font-semibold text-green">Goldie</div>
+              <div className="text-[10px] text-muted font-mono">{isTyping ? 'typing…' : 'the GOAT · online'}</div>
             </div>
           </div>
           {hasContent && (
@@ -595,7 +670,7 @@ function BFFLiveChatMockup() {
                   className="px-4 py-2.5 text-ink text-[14px] max-w-[88%]"
                   style={{ background: '#F1EFE8', borderRadius: 20, borderBottomLeftRadius: 6 }}
                 >
-                  hey 👋 i'm sportsBFF. tap a prompt below to start — or pretend i can hear you ☕
+                  hey 👋 i'm Goldie. tap a prompt below to start — i've got the tea ☕
                 </div>
               </div>
               <div className="text-center text-[10px] text-muted font-mono uppercase tracking-wider mt-2">
@@ -903,15 +978,29 @@ function FinalCTA() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full bg-tangerine/[0.06] blur-[120px]" />
       </div>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto relative">
+        {/* Goldie waves goodbye, off to the right of the App Store card */}
+        <img
+          src="/brand/goldie.png"
+          alt=""
+          aria-hidden
+          className="hidden md:block absolute right-0 -top-6 w-36 h-auto pointer-events-none drop-shadow-[0_12px_24px_rgba(13,45,36,0.18)]"
+          style={{ animation: 'goldieWave 3.5s ease-in-out infinite' }}
+        />
+
         {/* App Store-style preview card */}
         <div className="inline-flex items-center gap-3 sm:gap-4 px-4 sm:px-5 py-3 sm:py-3.5 bg-white rounded-2xl border border-[var(--hairline)] shadow-[0_8px_28px_-10px_rgba(13,45,36,0.12)] mb-10">
-          <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #0D2D24, #143A2E)' }}>
-            <span className="font-display font-extrabold text-white text-xl sm:text-2xl">B</span>
+          <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl overflow-hidden flex items-center justify-center" style={{ background: '#FDEEF1' }}>
+            <img
+              src="/brand/goldie.png"
+              alt=""
+              aria-hidden
+              className="w-full h-full object-cover object-top"
+            />
           </div>
           <div className="text-left">
             <div className="font-display font-bold text-[14px] sm:text-[15px] text-green">sportsBFF</div>
-            <div className="text-[11px] sm:text-[12px] text-ink-soft">Sports · Free</div>
+            <div className="text-[11px] sm:text-[12px] text-ink-soft">Sports · Free · with Goldie</div>
             <div className="flex items-center gap-1 mt-1">
               <span className="text-[10px] text-tangerine">★★★★★</span>
               <span className="text-[10px] text-muted">· 4.9 (beta)</span>
@@ -937,6 +1026,13 @@ function FinalCTA() {
           NFL + NBA. iOS coming. Free during beta.
         </p>
       </div>
+
+      <style jsx>{`
+        @keyframes goldieWave {
+          0%, 100% { transform: translateY(0) rotate(2deg); }
+          50% { transform: translateY(-8px) rotate(-2deg); }
+        }
+      `}</style>
     </section>
   );
 }
