@@ -132,12 +132,12 @@ function Hero() {
         <span className="text-periwinkle text-2xl rotate-[-12deg] inline-block opacity-70" aria-hidden>✿</span>
       </div>
 
-      {/* Mobile order: phone mockup FIRST (above the fold) → copy below
+      {/* Mobile order: badge → headline → subhead → body → CTAs → phone mockup
           Desktop: copy on left, mockup on right (side-by-side) */}
       <div className="max-w-6xl mx-auto px-5 sm:px-8 pt-8 pb-16 sm:pt-14 sm:pb-24">
         <div className="grid md:grid-cols-[1.05fr_0.95fr] gap-8 md:gap-14 items-center">
-          {/* COPY — second on mobile, first on desktop */}
-          <div className="text-left order-2 md:order-1">
+          {/* COPY — first everywhere */}
+          <div className="text-left">
             <div className="inline-flex items-center gap-2 pl-1 pr-3.5 py-1 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-ink-soft mb-5 shadow-sm">
               <span
                 className="inline-flex items-center justify-center w-6 h-6 rounded-full overflow-hidden"
@@ -209,8 +209,8 @@ function Hero() {
             </div>
           </div>
 
-          {/* PHONE + MASCOT MOCKUP — appears FIRST on mobile (above the fold), right column on desktop */}
-          <div className="relative md:mt-0 md:pb-12 order-1 md:order-2">
+          {/* PHONE + MASCOT MOCKUP — second everywhere */}
+          <div className="relative mt-4 md:mt-0 md:pb-12">
             {/* Toggle demo — sits ABOVE the mockup on mobile, top-right on desktop */}
             <div className="flex md:absolute md:-top-2 md:right-0 md:z-20 items-center md:items-end justify-center md:flex-col gap-2 md:gap-1.5 mb-3 md:mb-0">
               <span className="text-[10px] font-mono tracking-wider uppercase text-muted">
