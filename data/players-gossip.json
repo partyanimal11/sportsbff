@@ -12,8 +12,16 @@
         "headline": "Brother Jackson pleaded no contest to misdemeanor battery in March 2024",
         "summary": "Patrick's younger brother Jackson Mahomes pleaded no contest to a single misdemeanor count of battery stemming from a February 25, 2023 incident at a restaurant in Overland Park, Kansas. He was sentenced to 6 months unsupervised probation with 120 days jail suspended.",
         "sources": [
-          { "name": "CNN", "url": "https://www.cnn.com/2024/03/08/us/jackson-mahomes-probation-battery", "date": "2024-03-08" },
-          { "name": "NBC Chicago", "url": "https://www.nbcchicago.com/news/sports/nfl/jackson-mahomes-sentenced-probation-assault-case/3377612/", "date": "2024-03-08" }
+          {
+            "name": "CNN",
+            "url": "https://www.cnn.com/2024/03/08/us/jackson-mahomes-probation-battery",
+            "date": "2024-03-08"
+          },
+          {
+            "name": "NBC Chicago",
+            "url": "https://www.nbcchicago.com/news/sports/nfl/jackson-mahomes-sentenced-probation-assault-case/3377612/",
+            "date": "2024-03-08"
+          }
         ]
       },
       {
@@ -23,7 +31,11 @@
         "headline": "Wife Brittany liked pro-Trump comments on Instagram in August 2024",
         "summary": "Patrick's wife Brittany Mahomes faced criticism after liking several comments expressing support for Donald Trump and the Trump-Vance ticket on her Instagram posts.",
         "sources": [
-          { "name": "Yahoo Entertainment", "url": "https://www.yahoo.com/entertainment/brittany-mahomes-accused-being-rude-172659719.html", "date": "2024-08-28" }
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://www.yahoo.com/entertainment/brittany-mahomes-accused-being-rude-172659719.html",
+            "date": "2024-08-28"
+          }
         ]
       },
       {
@@ -33,7 +45,11 @@
         "headline": "Wife Brittany criticized for appearing dismissive to stadium staff",
         "summary": "Brittany Mahomes faced online criticism after a viral TikTok from January 28, 2024 (following the Ravens game) appeared to show her speaking dismissively to a stadium employee.",
         "sources": [
-          { "name": "Page Six", "url": "https://www.tiktok.com/@pagesix/video/7330280515016117546", "date": "2024-01-29" }
+          {
+            "name": "Page Six",
+            "url": "https://www.tiktok.com/@pagesix/video/7330280515016117546",
+            "date": "2024-01-29"
+          }
         ]
       },
       {
@@ -43,8 +59,16 @@
         "headline": "Chiefs restructured contract multiple times to manage salary cap (2024-2025)",
         "summary": "Patrick signed a 10-year, $450 million extension in 2020. In 2024, the Chiefs converted $27 million in roster bonuses to signing bonuses. In 2025, they converted $47.745 million in salary to bonuses for cap relief.",
         "sources": [
-          { "name": "NFL.com", "url": "https://www.nfl.com/news/chiefs-restructure-patrick-mahomes-contract-free-up-over-43-million-cap-space", "date": "2024-03-12" },
-          { "name": "Spotrac", "url": "https://www.spotrac.com/nfl/player/_/id/21751/patrick-mahomes", "date": "2025-02-15" }
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/chiefs-restructure-patrick-mahomes-contract-free-up-over-43-million-cap-space",
+            "date": "2024-03-12"
+          },
+          {
+            "name": "Spotrac",
+            "url": "https://www.spotrac.com/nfl/player/_/id/21751/patrick-mahomes",
+            "date": "2025-02-15"
+          }
         ]
       }
     ]
@@ -62,9 +86,21 @@
         "headline": "Dating Taylor Swift since September 2023",
         "summary": "Taylor Swift and Travis Kelce confirmed their relationship when she attended the Chiefs vs. Bears game on September 24, 2023. Kelce had previously attempted to give Swift a friendship bracelet with his number at her Eras Tour stop in July. Swift attended 13+ Chiefs games during the 2023-24 season, including Super Bowl LVIII.",
         "sources": [
-          { "name": "Today.com", "url": "https://www.today.com/popculture/travis-kelce-taylor-swift-timeline-rcna105483", "date": "2023-09-25" },
-          { "name": "Billboard", "url": "https://www.billboard.com/lists/taylor-swift-travis-kelce-relationship-timeline/", "date": "2023-09-26" },
-          { "name": "NBC News", "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/timeline-taylor-swift-travis-kelce-engaged-relationship-dating-rumors-rcna227294", "date": "2024-02-12" }
+          {
+            "name": "Today.com",
+            "url": "https://www.today.com/popculture/travis-kelce-taylor-swift-timeline-rcna105483",
+            "date": "2023-09-25"
+          },
+          {
+            "name": "Billboard",
+            "url": "https://www.billboard.com/lists/taylor-swift-travis-kelce-relationship-timeline/",
+            "date": "2023-09-26"
+          },
+          {
+            "name": "NBC News",
+            "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/timeline-taylor-swift-travis-kelce-engaged-relationship-dating-rumors-rcna227294",
+            "date": "2024-02-12"
+          }
         ]
       },
       {
@@ -74,8 +110,16 @@
         "headline": "Attended Taylor Swift's Eras Tour globally, appeared onstage in London",
         "summary": "Kelce traveled internationally to see multiple Eras Tour concerts and made an appearance onstage during London shows. Swift also joined Kelce on the field after the Chiefs won Super Bowl LVIII on February 11, 2024.",
         "sources": [
-          { "name": "E! Online", "url": "https://www.eonline.com/news/1425550/taylor-swift-travis-kelce-romance-in-eras-tour-docuseries-clip", "date": "2024-11-15" },
-          { "name": "Today.com", "url": "https://www.today.com/popculture/music/travis-kelce-eras-tour-london-taylor-swift-rcna158321", "date": "2024-06-24" }
+          {
+            "name": "E! Online",
+            "url": "https://www.eonline.com/news/1425550/taylor-swift-travis-kelce-romance-in-eras-tour-docuseries-clip",
+            "date": "2024-11-15"
+          },
+          {
+            "name": "Today.com",
+            "url": "https://www.today.com/popculture/music/travis-kelce-eras-tour-london-taylor-swift-rcna158321",
+            "date": "2024-06-24"
+          }
         ]
       },
       {
@@ -85,7 +129,11 @@
         "headline": "Older brother Jason Kelce retired from Eagles in 2024; New Heights podcast signed $100M deal",
         "summary": "Jason Kelce, 6-time Pro Bowler, retired from the NFL in March 2024. The brothers' New Heights podcast signed a $100+ million deal with Amazon's Wondery in October 2024.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/41013307/jason-kelce-travis-kelce-reportedly-sign-100m-podcast-deal", "date": "2024-10-29" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/41013307/jason-kelce-travis-kelce-reportedly-sign-100m-podcast-deal",
+            "date": "2024-10-29"
+          }
         ]
       },
       {
@@ -95,7 +143,11 @@
         "headline": "Engagement rumors circulate amid Swift relationship",
         "summary": "Multiple sources reported engagement speculation around Kelce and Swift in late 2024 and early 2025, though neither has officially confirmed or denied. The couple has remained together and increasingly public.",
         "sources": [
-          { "name": "NBC News", "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/timeline-taylor-swift-travis-kelce-engaged-relationship-dating-rumors-rcna227294", "date": "2024-08-12" }
+          {
+            "name": "NBC News",
+            "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/timeline-taylor-swift-travis-kelce-engaged-relationship-dating-rumors-rcna227294",
+            "date": "2024-08-12"
+          }
         ]
       },
       {
@@ -105,7 +157,11 @@
         "headline": "Retirement decision looms heading into offseason",
         "summary": "Following a grueling season, Kelce has discussed the physical toll of his NFL career and is taking time in the offseason to evaluate whether to return or retire.",
         "sources": [
-          { "name": "ABC News GMA", "url": "https://abcnews.go.com/GMA/Culture/exclusive-1st-end-era-travis-kelce-joins-taylor/story?id=128488203", "date": "2025-01-22" }
+          {
+            "name": "ABC News GMA",
+            "url": "https://abcnews.go.com/GMA/Culture/exclusive-1st-end-era-travis-kelce-joins-taylor/story?id=128488203",
+            "date": "2025-01-22"
+          }
         ]
       }
     ]
@@ -123,8 +179,16 @@
         "headline": "Started dating actress Hailee Steinfeld in May 2023; Instagram official July 2024",
         "summary": "Josh Allen and actress Hailee Steinfeld were first spotted together on May 25, 2023, after a night out in NYC. They became Instagram official on July 23, 2024.",
         "sources": [
-          { "name": "Billboard", "url": "https://www.billboard.com/lists/hailee-steinfeld-josh-allen-relationship-timeline/", "date": "2023-05-26" },
-          { "name": "Today.com", "url": "https://www.today.com/popculture/josh-allen-hailee-steinfeld-timeline-rcna105821", "date": "2023-05-27" }
+          {
+            "name": "Billboard",
+            "url": "https://www.billboard.com/lists/hailee-steinfeld-josh-allen-relationship-timeline/",
+            "date": "2023-05-26"
+          },
+          {
+            "name": "Today.com",
+            "url": "https://www.today.com/popculture/josh-allen-hailee-steinfeld-timeline-rcna105821",
+            "date": "2023-05-27"
+          }
         ]
       },
       {
@@ -134,7 +198,11 @@
         "headline": "Engaged to Hailee Steinfeld in November 2024",
         "summary": "Josh Allen proposed to Hailee Steinfeld on November 22, 2024, in Malibu, California. They announced the engagement publicly on November 29, 2024.",
         "sources": [
-          { "name": "CBS Sports", "url": "https://www.cbssports.com/nfl/news/hailee-steinfeld-josh-allen-engaged/", "date": "2024-11-29" }
+          {
+            "name": "CBS Sports",
+            "url": "https://www.cbssports.com/nfl/news/hailee-steinfeld-josh-allen-engaged/",
+            "date": "2024-11-29"
+          }
         ]
       },
       {
@@ -144,7 +212,11 @@
         "headline": "Married Hailee Steinfeld on May 31, 2025",
         "summary": "Josh Allen and Hailee Steinfeld tied the knot on May 31, 2025, in California. Steinfeld wore a strapless wedding dress with long gloves.",
         "sources": [
-          { "name": "TMZ", "url": "https://www.tmz.com/2025/05/31/hailee-steinfeld-josh-allen-married-wedding-california/", "date": "2025-05-31" }
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2025/05/31/hailee-steinfeld-josh-allen-married-wedding-california/",
+            "date": "2025-05-31"
+          }
         ]
       },
       {
@@ -154,7 +226,11 @@
         "headline": "Welcomed first daughter with Hailee Steinfeld on April 2, 2026",
         "summary": "Josh Allen and Hailee Steinfeld announced the birth of their first child, a daughter, via Steinfeld's Beau Society newsletter on April 2, 2026. The pregnancy was announced in December 2025.",
         "sources": [
-          { "name": "Sports Illustrated", "url": "https://www.si.com/nfl/bills-qb-josh-allen-hailee-steinfeld-welcome-baby-girl", "date": "2026-04-02" }
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nfl/bills-qb-josh-allen-hailee-steinfeld-welcome-baby-girl",
+            "date": "2026-04-02"
+          }
         ]
       }
     ]
@@ -172,8 +248,16 @@
         "headline": "Walked runway at Vogue World 2024 in Paris with Justin Jefferson",
         "summary": "Joe Burrow made his modeling debut at Vogue World 2024 on June 23, 2024, at Place Vendôme in Paris, wearing a black backless suit by designer Peter Do. Former LSU teammate Justin Jefferson also walked.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/40418012/athletes-vogue-world-2024-paris-joe-burrow-serena-venus-williams", "date": "2024-06-23" },
-          { "name": "WWD", "url": "https://wwd.com/pop-culture/celebrity-news/joe-burrow-paris-fashion-week-vogue-runway-look-1236646100/", "date": "2024-06-24" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/40418012/athletes-vogue-world-2024-paris-joe-burrow-serena-venus-williams",
+            "date": "2024-06-23"
+          },
+          {
+            "name": "WWD",
+            "url": "https://wwd.com/pop-culture/celebrity-news/joe-burrow-paris-fashion-week-vogue-runway-look-1236646100/",
+            "date": "2024-06-24"
+          }
         ]
       },
       {
@@ -183,7 +267,11 @@
         "headline": "Broke up with long-time girlfriend Olivia Holzmacher in 2024",
         "summary": "Joe Burrow and Olivia Holzmacher, who dated for nearly 7 years beginning in 2017 at Ohio State, quietly ended their relationship in 2024. Holzmacher confirmed the breakup on Instagram on February 2, 2025.",
         "sources": [
-          { "name": "E! Online", "url": "https://www.eonline.com/news/1413164/joe-burrows-ex-olivia-holzmacher-alludes-to-their-breakup", "date": "2024-12-20" }
+          {
+            "name": "E! Online",
+            "url": "https://www.eonline.com/news/1413164/joe-burrows-ex-olivia-holzmacher-alludes-to-their-breakup",
+            "date": "2024-12-20"
+          }
         ]
       },
       {
@@ -193,7 +281,11 @@
         "headline": "Dating Sports Illustrated model Olivia Ponton following breakup",
         "summary": "After his December 2024 home burglary (where Olivia Ponton was present), Joe Burrow sparked dating rumors with the SI model. In late 2025 / early 2026, they were photographed together in NYC.",
         "sources": [
-          { "name": "Parade", "url": "https://parade.com/1328446/jessicasager/joe-burrow-girlfriend/", "date": "2026-02-15" }
+          {
+            "name": "Parade",
+            "url": "https://parade.com/1328446/jessicasager/joe-burrow-girlfriend/",
+            "date": "2026-02-15"
+          }
         ]
       }
     ]
@@ -211,8 +303,16 @@
         "headline": "Rejected two fully-guaranteed contract offers from Ravens before 2023 extension",
         "summary": "An NFLPA grievance ruling revealed the Ravens offered Jackson two separate three-year fully-guaranteed contracts worth $50M-$55M per season before he signed his five-year, $260M deal in April 2023. Jackson wanted no-trade and no-tag clauses that weren't included.",
         "sources": [
-          { "name": "Yahoo Sports", "url": "https://sports.yahoo.com/articles/lamar-jackson-rejected-ravens-fully-031739616.html", "date": "2026-04-13" },
-          { "name": "NBC Sports", "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/collusion-appeal-ruling-says-ravens-offered-lamar-jackson-two-fully-guaranteed-contracts", "date": "2026-04-12" }
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/lamar-jackson-rejected-ravens-fully-031739616.html",
+            "date": "2026-04-13"
+          },
+          {
+            "name": "NBC Sports",
+            "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/collusion-appeal-ruling-says-ravens-offered-lamar-jackson-two-fully-guaranteed-contracts",
+            "date": "2026-04-12"
+          }
         ]
       },
       {
@@ -222,7 +322,11 @@
         "headline": "Contract negotiations stalled; Ravens unable to finalize new deal",
         "summary": "Jackson has been in ongoing contract negotiations with the Ravens, who wanted to extend his deal to manage his $74.5 million salary cap hit. As of spring 2026, no extension has been finalized.",
         "sources": [
-          { "name": "Yahoo Sports", "url": "https://sports.yahoo.com/articles/ravens-unable-deal-done-lamar-103927314.html", "date": "2026-04-15" }
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/ravens-unable-deal-done-lamar-103927314.html",
+            "date": "2026-04-15"
+          }
         ]
       }
     ]
@@ -240,8 +344,16 @@
         "headline": "Modeled at Vogue World 2024 fashion show in Paris",
         "summary": "Justin Jefferson made his modeling debut at Vogue World 2024 on June 23, 2024, in Paris, alongside former LSU teammate Joe Burrow. He wore a structured black blazer with satin lapels.",
         "sources": [
-          { "name": "FOX Sports", "url": "https://www.foxsports.com/stories/nfl/joe-burrow-justin-jefferson-walk-paris-fashion-week-at-vogue-world", "date": "2024-06-24" },
-          { "name": "Sports Illustrated", "url": "https://www.si.com/nfl/joe-burrow-justin-jefferson-model-debut-vogue-paris-fashion-show", "date": "2024-06-24" }
+          {
+            "name": "FOX Sports",
+            "url": "https://www.foxsports.com/stories/nfl/joe-burrow-justin-jefferson-walk-paris-fashion-week-at-vogue-world",
+            "date": "2024-06-24"
+          },
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nfl/joe-burrow-justin-jefferson-model-debut-vogue-paris-fashion-show",
+            "date": "2024-06-24"
+          }
         ]
       },
       {
@@ -251,7 +363,11 @@
         "headline": "Subject of trade speculation involving Bills and other teams",
         "summary": "Due to Vikings QB struggles in 2025, trade rumors emerged about Jefferson potentially going to the Buffalo Bills. Jefferson dismissed speculation: 'I've been hearing a couple Mafia fans talking, but I'm a Viking.'",
         "sources": [
-          { "name": "Heavy.com", "url": "https://heavy.com/sports/nfl/minnesota-vikings/justin-jefferson-trade-rumors-buffalo-bills/", "date": "2025-12-15" }
+          {
+            "name": "Heavy.com",
+            "url": "https://heavy.com/sports/nfl/minnesota-vikings/justin-jefferson-trade-rumors-buffalo-bills/",
+            "date": "2025-12-15"
+          }
         ]
       },
       {
@@ -261,7 +377,11 @@
         "headline": "Under long-term contract through 2028 ($140 million extension)",
         "summary": "Jefferson is locked into a four-year, $140 million extension through 2028. Trading him before June 1st would trigger a $70 million dead cap hit, making any move unlikely.",
         "sources": [
-          { "name": "Heavy.com", "url": "https://heavy.com/sports/nfl/minnesota-vikings/justin-jefferson-trade-rumors-buffalo-bills/", "date": "2025-12-15" }
+          {
+            "name": "Heavy.com",
+            "url": "https://heavy.com/sports/nfl/minnesota-vikings/justin-jefferson-trade-rumors-buffalo-bills/",
+            "date": "2025-12-15"
+          }
         ]
       }
     ]
@@ -279,7 +399,11 @@
         "headline": "Won Super Bowl LIX with Eagles, defeating Chiefs 40-22",
         "summary": "Saquon Barkley helped lead the Eagles to their first Super Bowl title since 2018 on February 9, 2025. The Eagles dominated the Chiefs 40-22, with Barkley contributing 57 rushing yards and 40 receiving yards on his 28th birthday.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/43625166/philadelphia-eagles-saquon-barkley-super-bowl-2025-nfl-running-back-market", "date": "2025-02-10" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/43625166/philadelphia-eagles-saquon-barkley-super-bowl-2025-nfl-running-back-market",
+            "date": "2025-02-10"
+          }
         ]
       },
       {
@@ -289,7 +413,11 @@
         "headline": "Broke NFL single-season rushing record with 2,504 yards",
         "summary": "Saquon Barkley set an NFL record for most rushing yards in a season (2,504) and most scrimmage yards (2,857), surpassing Terrell Davis' 26-year-old record.",
         "sources": [
-          { "name": "CBS Sports", "url": "https://www.cbssports.com/nfl/news/2025-super-bowl-eagles-saquon-barkley-passes-terrell-davis-to-make-nfl-history-against-chiefs/", "date": "2025-02-10" }
+          {
+            "name": "CBS Sports",
+            "url": "https://www.cbssports.com/nfl/news/2025-super-bowl-eagles-saquon-barkley-passes-terrell-davis-to-make-nfl-history-against-chiefs/",
+            "date": "2025-02-10"
+          }
         ]
       },
       {
@@ -299,7 +427,11 @@
         "headline": "Signed three-year deal with Eagles after leaving Giants — instant Super Bowl",
         "summary": "Barkley joined the Eagles in free agency for the 2024 season on a three-year contract, leaving the Giants after eight seasons. He led the NFL in rushing and helped deliver Philly the Super Bowl.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/43625166/philadelphia-eagles-saquon-barkley-super-bowl-2025-nfl-running-back-market", "date": "2025-02-10" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/43625166/philadelphia-eagles-saquon-barkley-super-bowl-2025-nfl-running-back-market",
+            "date": "2025-02-10"
+          }
         ]
       }
     ]
@@ -317,8 +449,16 @@
         "headline": "Detained by Miami-Dade police minutes before Dolphins season opener (September 2024)",
         "summary": "Tyreek Hill was stopped for speeding and reckless driving just outside Hard Rock Stadium on September 8, 2024. The officer knocked on his window; Hill objected and was handcuffed. Traffic citations were dismissed after officers didn't appear in court.",
         "sources": [
-          { "name": "CNN", "url": "https://www.cnn.com/2024/09/10/sport/tyreek-hill-what-we-know-miami-dolphins-detainment-spt", "date": "2024-09-10" },
-          { "name": "NBC News", "url": "https://www.nbcnews.com/sports/nfl/tyreek-hill-police-stop-miami-dolphins-rcna170253", "date": "2024-09-09" }
+          {
+            "name": "CNN",
+            "url": "https://www.cnn.com/2024/09/10/sport/tyreek-hill-what-we-know-miami-dolphins-detainment-spt",
+            "date": "2024-09-10"
+          },
+          {
+            "name": "NBC News",
+            "url": "https://www.nbcnews.com/sports/nfl/tyreek-hill-police-stop-miami-dolphins-rcna170253",
+            "date": "2024-09-09"
+          }
         ]
       },
       {
@@ -328,7 +468,11 @@
         "headline": "Reached settlement after alleged marina assault incident (June 2023)",
         "summary": "Tyreek Hill and associates allegedly boarded a fishing boat near Haulover Park marina in Miami without permission in June 2023. He settled the matter; no charges were filed.",
         "sources": [
-          { "name": "TMZ", "url": "https://www.tmz.com/2023/07/26/video-shows-tyreek-hill-swatting-man-during-fishing-boat-altercation/", "date": "2023-07-26" }
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2023/07/26/video-shows-tyreek-hill-swatting-man-during-fishing-boat-altercation/",
+            "date": "2023-07-26"
+          }
         ]
       }
     ]
@@ -346,8 +490,16 @@
         "headline": "Famous for painting his nails with personalized messages and designs",
         "summary": "Caleb Williams has painted his nails since his senior year of high school (his mom is a nail technician). At the 2024 NFL Draft, he wore nails saying 'I paint my nails, I wear unique things.'",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/41178256/chicago-bears-caleb-williams-nails-week-1", "date": "2024-09-10" },
-          { "name": "Yahoo Sports", "url": "https://sports.yahoo.com/why-no-1-nfl-draft-pick-caleb-williams-paints-his-nails-063900089.html", "date": "2024-04-26" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/41178256/chicago-bears-caleb-williams-nails-week-1",
+            "date": "2024-09-10"
+          },
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/why-no-1-nfl-draft-pick-caleb-williams-paints-his-nails-063900089.html",
+            "date": "2024-04-26"
+          }
         ]
       },
       {
@@ -357,7 +509,11 @@
         "headline": "Selected No. 1 overall by Chicago Bears in 2024 NFL Draft",
         "summary": "Caleb Williams was the consensus No. 1 pick in the 2024 NFL Draft on April 25, 2024. He reportedly tried to avoid being drafted by Chicago before the draft but changed his perspective after a pre-draft visit.",
         "sources": [
-          { "name": "CBS Sports", "url": "https://www.cbssports.com/nfl/news/caleb-williams-tried-to-avoid-being-drafted-by-bears-in-2024-hoped-to-play-for-this-team-instead-per-report/", "date": "2024-05-16" }
+          {
+            "name": "CBS Sports",
+            "url": "https://www.cbssports.com/nfl/news/caleb-williams-tried-to-avoid-being-drafted-by-bears-in-2024-hoped-to-play-for-this-team-instead-per-report/",
+            "date": "2024-05-16"
+          }
         ]
       },
       {
@@ -367,7 +523,11 @@
         "headline": "Had emotional moment after being drafted by Bears",
         "summary": "During media appearances following the draft, Caleb Williams discussed his emotional reaction to receiving the call from the Bears, saying he 'blacked out a little bit' and shared an emotional moment with his family.",
         "sources": [
-          { "name": "Sports Illustrated", "url": "https://www.si.com/nfl/caleb-williams-father-bears-nfl-draft", "date": "2024-04-26" }
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nfl/caleb-williams-father-bears-nfl-draft",
+            "date": "2024-04-26"
+          }
         ]
       }
     ]
@@ -385,7 +545,11 @@
         "headline": "Broke Andrew Luck's rookie single-game passing record (470 yards)",
         "summary": "In Week 9 of his rookie season (2023), Stroud passed for 470 yards, breaking Andrew Luck's single-game rookie record set in 2012.",
         "sources": [
-          { "name": "Pro Football Network", "url": "https://www.profootballnetwork.com/cj-stroud-learning-year-texans-championship-2024/", "date": "2024-11-15" }
+          {
+            "name": "Pro Football Network",
+            "url": "https://www.profootballnetwork.com/cj-stroud-learning-year-texans-championship-2024/",
+            "date": "2024-11-15"
+          }
         ]
       },
       {
@@ -395,7 +559,11 @@
         "headline": "Won 2024 NFL Offensive Rookie of the Year Award",
         "summary": "C.J. Stroud was named the 2024 NFL Offensive Rookie of the Year, becoming the first Houston Texans player to win the award. He was also named to the 2024 Pro Bowl.",
         "sources": [
-          { "name": "CBS Sports", "url": "https://www.cbssports.com/nfl/news/nfl-honors-2024-c-j-stroud-wins-offensive-rookie-of-the-year-becoming-first-texans-player-to-capture-honor/", "date": "2024-02-02" }
+          {
+            "name": "CBS Sports",
+            "url": "https://www.cbssports.com/nfl/news/nfl-honors-2024-c-j-stroud-wins-offensive-rookie-of-the-year-becoming-first-texans-player-to-capture-honor/",
+            "date": "2024-02-02"
+          }
         ]
       },
       {
@@ -405,7 +573,11 @@
         "headline": "Named to TIME100 Next list (2024)",
         "summary": "C.J. Stroud was recognized by TIME magazine as one of the 100 most influential rising leaders globally in 2024.",
         "sources": [
-          { "name": "Houston Texans", "url": "https://www.houstontexans.com/news/quarterback-c-j-stroud-on-2024-time100-next-list", "date": "2024-04-23" }
+          {
+            "name": "Houston Texans",
+            "url": "https://www.houstontexans.com/news/quarterback-c-j-stroud-on-2024-time100-next-list",
+            "date": "2024-04-23"
+          }
         ]
       }
     ]
@@ -423,7 +595,11 @@
         "headline": "Suffered fourth concussion in September 2024 against Buffalo Bills",
         "summary": "Tua Tagovailoa was concussed on September 12, 2024, during Week 2 against the Bills when he collided with safety Damar Hamlin while running for a first down. This was his fourth documented concussion over a five-year span.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/41239114/tua-tagovailoa-concussion-2024-dolphins-miami-injured-reserve", "date": "2024-09-13" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/41239114/tua-tagovailoa-concussion-2024-dolphins-miami-injured-reserve",
+            "date": "2024-09-13"
+          }
         ]
       },
       {
@@ -433,7 +609,11 @@
         "headline": "'Tua Rule' implemented after 2022 concussions sparked NFL protocol changes",
         "summary": "Following controversial concussions in Weeks 3 and 4 of the 2022 season, the NFL implemented the 'Tua Rule' which explicitly added ataxia to the list of 'no-go' symptoms requiring immediate player removal from games.",
         "sources": [
-          { "name": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Tua_Tagovailoa_concussion_controversy", "date": "2022-10-15" }
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Tua_Tagovailoa_concussion_controversy",
+            "date": "2022-10-15"
+          }
         ]
       },
       {
@@ -443,7 +623,11 @@
         "headline": "Led NFL in passing yards in 2023 (5,014 yards) despite injury concerns",
         "summary": "Despite his concussion history, Tua Tagovailoa had an outstanding 2023 season, leading the entire NFL in passing yards with 5,014 yards.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nfl/story/_/id/41927160/tua-tagovailoa-miami-dolphins-quarterback-concussions", "date": "2024-09-01" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/41927160/tua-tagovailoa-miami-dolphins-quarterback-concussions",
+            "date": "2024-09-01"
+          }
         ]
       }
     ]
@@ -461,7 +645,11 @@
         "headline": "Won Super Bowl LIX MVP after leading Eagles past Chiefs 40-22",
         "summary": "Jalen Hurts was named Super Bowl LIX MVP after his three-touchdown performance in the Eagles' dominant 40-22 victory over Kansas City on February 9, 2025. He became the third Black QB to win Super Bowl MVP.",
         "sources": [
-          { "name": "CBS Sports", "url": "https://www.cbssports.com/nfl/news/eagles-jalen-hurts-wins-2025-super-bowl-mvp-after-three-touchdown-performance-in-rout-of-chiefs/", "date": "2025-02-09" }
+          {
+            "name": "CBS Sports",
+            "url": "https://www.cbssports.com/nfl/news/eagles-jalen-hurts-wins-2025-super-bowl-mvp-after-three-touchdown-performance-in-rout-of-chiefs/",
+            "date": "2025-02-09"
+          }
         ]
       },
       {
@@ -471,7 +659,11 @@
         "headline": "Released children's book published by Penguin Random House (March 2026)",
         "summary": "Jalen Hurts authored a children's book released in March 2026 by Penguin Random House. He is currently recording the audiobook.",
         "sources": [
-          { "name": "NBC Sports Philadelphia", "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/jalen-hurts-super-bowl-mvp-confidence-2025-nfl-season/679196/", "date": "2025-02-10" }
+          {
+            "name": "NBC Sports Philadelphia",
+            "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/jalen-hurts-super-bowl-mvp-confidence-2025-nfl-season/679196/",
+            "date": "2025-02-10"
+          }
         ]
       }
     ]
@@ -489,9 +681,21 @@
         "headline": "First father-son NBA duo to share an NBA court",
         "summary": "LeBron and Bronny James made NBA history on October 22, 2024, becoming the first father-son pair to play together in an NBA game. They shared the court for 4 minutes and 9 seconds in the Lakers' season opener against Minnesota.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/41653840/lebron-james-bronny-james-share-court-first-nba", "date": "2024-10-22" },
-          { "name": "NBA.com", "url": "https://www.nba.com/news/lebron-bronny-father-son-assist", "date": "2024-10-22" },
-          { "name": "TMZ", "url": "https://www.tmz.com/2024/10/22/bronny-lebron-james-history-lakers-nba/", "date": "2024-10-22" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/41653840/lebron-james-bronny-james-share-court-first-nba",
+            "date": "2024-10-22"
+          },
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/lebron-bronny-father-son-assist",
+            "date": "2024-10-22"
+          },
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2024/10/22/bronny-lebron-james-history-lakers-nba/",
+            "date": "2024-10-22"
+          }
         ]
       },
       {
@@ -501,7 +705,11 @@
         "headline": "Exercises $52.6M player option for 2025-26 season",
         "summary": "LeBron James exercised his $52.6 million player option with the Lakers for the 2025-26 season in June 2025, committing to another year in Los Angeles.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/45608010/lebron-james-picks-526m-option-monitoring-lakers-moves", "date": "2025-06-28" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/45608010/lebron-james-picks-526m-option-monitoring-lakers-moves",
+            "date": "2025-06-28"
+          }
         ]
       },
       {
@@ -511,7 +719,11 @@
         "headline": "Calls Luka Doncic 'favorite player' after shock trade pairing",
         "summary": "After initially being shocked by the February 2025 trade that sent Luka Doncic to the Lakers, LeBron expressed enthusiasm: 'Luka's been my favorite player in the NBA for a while now.'",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/43700344/lebron-james-shocked-luka-doncic-trade-seamless-transition", "date": "2025-02-02" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/43700344/lebron-james-shocked-luka-doncic-trade-seamless-transition",
+            "date": "2025-02-02"
+          }
         ]
       },
       {
@@ -521,7 +733,11 @@
         "headline": "Secures rare no-trade clause in Lakers extension",
         "summary": "In his two-year, $104 million 2024 contract extension, LeBron included a no-trade clause and a 15% trade kicker — one of only two times in his career he's negotiated such protections.",
         "sources": [
-          { "name": "CBS Sports", "url": "https://www.cbssports.com/nba/news/lakers-star-lebron-james-gives-himself-flexibility-with-two-year-104m-maximum-deal", "date": "2024-07-03" }
+          {
+            "name": "CBS Sports",
+            "url": "https://www.cbssports.com/nba/news/lakers-star-lebron-james-gives-himself-flexibility-with-two-year-104m-maximum-deal",
+            "date": "2024-07-03"
+          }
         ]
       },
       {
@@ -531,7 +747,11 @@
         "headline": "22nd consecutive All-Star selection despite injury struggles",
         "summary": "LeBron James earned his 22nd straight NBA All-Star selection for the 2025-26 season, overcoming a Grade 2 MCL ligament tear suffered during the 2025 playoffs.",
         "sources": [
-          { "name": "NBA.com", "url": "https://www.nba.com/news/lebron-james-overcomes-injury-for-22nd-straight-all-star-berth", "date": "2026-02-01" }
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/lebron-james-overcomes-injury-for-22nd-straight-all-star-berth",
+            "date": "2026-02-01"
+          }
         ]
       }
     ]
@@ -549,7 +769,11 @@
         "headline": "First NBA player to reach 4,000 career three-pointers",
         "summary": "Stephen Curry made history on March 13, 2025, becoming the first player in NBA history to make 4,000 career three-pointers. The milestone came on his 37th birthday.",
         "sources": [
-          { "name": "NBA.com", "url": "https://www.nba.com/warriors/news/warriors-guard-stephen-curry-first-player-in-nba-history-4000-three-point-field-goals-20250313", "date": "2025-03-13" }
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/warriors/news/warriors-guard-stephen-curry-first-player-in-nba-history-4000-three-point-field-goals-20250313",
+            "date": "2025-03-13"
+          }
         ]
       },
       {
@@ -559,7 +783,11 @@
         "headline": "Signs $62.6M extension, first $60M single-season earner",
         "summary": "Curry signed a one-year, $62.6 million contract extension with the Warriors on August 30, 2024, through the 2026-27 season, becoming the first NBA player to earn $60 million in a single season.",
         "sources": [
-          { "name": "NBA.com", "url": "https://www.nba.com/warriors/news/warriors-sign-guard-stephen-curry-to-contract-extension-20240829", "date": "2024-08-30" }
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/warriors/news/warriors-sign-guard-stephen-curry-to-contract-extension-20240829",
+            "date": "2024-08-30"
+          }
         ]
       },
       {
@@ -569,7 +797,11 @@
         "headline": "Sets NBA record with 96 three-pointers in January 2025",
         "summary": "Stephen Curry made 96 three-pointers in January 2025, breaking James Harden's previous monthly record of 82 set in November 2019.",
         "sources": [
-          { "name": "NBA.com", "url": "https://www.nba.com/news/stephen-curry-sets-three-pointers-monthly-record", "date": "2025-02-01" }
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/stephen-curry-sets-three-pointers-monthly-record",
+            "date": "2025-02-01"
+          }
         ]
       },
       {
@@ -579,7 +811,11 @@
         "headline": "First player ever to go 8-of-8 from three with 30+ points",
         "summary": "On January 2, 2025, Curry dropped 30 points, 10 assists, and a career-first 8-of-8 from three in a 139-105 win over Philadelphia, becoming the first player in NBA history with this stat line.",
         "sources": [
-          { "name": "NBA.com", "url": "https://www.nba.com/news/stephen-curry-30-points-8-of-8-three-pointers", "date": "2025-01-02" }
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/stephen-curry-30-points-8-of-8-three-pointers",
+            "date": "2025-01-02"
+          }
         ]
       }
     ]
@@ -597,7 +833,11 @@
         "headline": "Trades to Rockets, debuts with 23 points vs. Thunder",
         "summary": "KD was traded to the Houston Rockets in July 2025 in the largest trade in NBA history. He made his regular season debut with Houston on October 21, 2025, scoring 23 points in a 125-124 double overtime loss to OKC.",
         "sources": [
-          { "name": "NBA.com", "url": "https://www.nba.com/news/kevin-durant-preseason-debut-rockets", "date": "2025-10-21" }
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/kevin-durant-preseason-debut-rockets",
+            "date": "2025-10-21"
+          }
         ]
       },
       {
@@ -607,8 +847,16 @@
         "headline": "Faces fresh burner account allegations at All-Star Game",
         "summary": "Unverified screenshots circulated before the 2026 NBA All-Star Game alleging Durant was behind anonymous DMs criticizing Devin Booker, coaches, and teammates. Durant declined to address: 'I'm not here to get into Twitter nonsense.'",
         "sources": [
-          { "name": "NBC Sports", "url": "https://www.nbcsports.com/nba/news/kevin-durant-brushes-off-burner-account-accusations-says-hes-not-getting-into-twitter-nonsense", "date": "2026-02-15" },
-          { "name": "CBS Sports", "url": "https://www.cbssports.com/nba/news/kevin-durant-addresses-burner-account-allegations-controversy-not-here-to-get-into-twitter-nonsense", "date": "2026-02-15" }
+          {
+            "name": "NBC Sports",
+            "url": "https://www.nbcsports.com/nba/news/kevin-durant-brushes-off-burner-account-accusations-says-hes-not-getting-into-twitter-nonsense",
+            "date": "2026-02-15"
+          },
+          {
+            "name": "CBS Sports",
+            "url": "https://www.cbssports.com/nba/news/kevin-durant-addresses-burner-account-allegations-controversy-not-here-to-get-into-twitter-nonsense",
+            "date": "2026-02-15"
+          }
         ]
       },
       {
@@ -618,7 +866,11 @@
         "headline": "Signs $90M extension with Rockets, calls it 'no brainer'",
         "summary": "On October 19, 2025, Durant signed a two-year, $90 million contract extension with the Rockets with a player option for 2027-2028.",
         "sources": [
-          { "name": "Houston Public Media", "url": "https://www.houstonpublicmedia.org/articles/news/sports/2025/10/21/533838/kevin-durant-contract-houston-rockets-nba-season/", "date": "2025-10-21" }
+          {
+            "name": "Houston Public Media",
+            "url": "https://www.houstonpublicmedia.org/articles/news/sports/2025/10/21/533838/kevin-durant-contract-houston-rockets-nba-season/",
+            "date": "2025-10-21"
+          }
         ]
       },
       {
@@ -628,7 +880,11 @@
         "headline": "Reaches 30,000 career points milestone with Rockets",
         "summary": "Kevin Durant achieved his 30,000th career point on February 11, 2026, in a game against Memphis, becoming only the 10th player in NBA history to reach this milestone.",
         "sources": [
-          { "name": "NBA.com", "url": "https://www.nba.com/news/kevin-durant-30000-career-points", "date": "2026-02-11" }
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/kevin-durant-30000-career-points",
+            "date": "2026-02-11"
+          }
         ]
       },
       {
@@ -638,7 +894,11 @@
         "headline": "Blindsided by Suns trade talks, rejected Warriors reunion",
         "summary": "Durant was blindsided when the Suns attempted to trade him to the Warriors at the February 2025 deadline. He made clear he had no interest in returning to GSW.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/35620592/suns-trade-durant-warriors", "date": "2025-02-06" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/35620592/suns-trade-durant-warriors",
+            "date": "2025-02-06"
+          }
         ]
       }
     ]
@@ -656,7 +916,11 @@
         "headline": "First unanimous NBA Defensive Player of the Year",
         "summary": "Wemby became the first unanimous DPOY in NBA history in April 2026, receiving all 100 first-place votes. At 22, he also became the youngest DPOY winner.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/48544568/spurs-victor-wembanyama-captures-first-career-dpoy", "date": "2026-04-21" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/48544568/spurs-victor-wembanyama-captures-first-career-dpoy",
+            "date": "2026-04-21"
+          }
         ]
       },
       {
@@ -666,7 +930,11 @@
         "headline": "Unanimous NBA Rookie of the Year with historic stats",
         "summary": "Wemby won the 2024 ROY with all 99 first-place votes, averaging 21.4 points, 10.6 rebounds, and a league-leading 3.6 blocks per game.",
         "sources": [
-          { "name": "NBC New York", "url": "https://www.nbcnewyork.com/nba/spurs-victor-wembanyama-nba-rookie-of-the-year-2023-24/5388547/", "date": "2024-05-06" }
+          {
+            "name": "NBC New York",
+            "url": "https://www.nbcnewyork.com/nba/spurs-victor-wembanyama-nba-rookie-of-the-year-2023-24/5388547/",
+            "date": "2024-05-06"
+          }
         ]
       },
       {
@@ -676,7 +944,11 @@
         "headline": "First rookie ever to make All-Defensive First Team",
         "summary": "Wembanyama was named to the NBA All-Defensive First Team in his rookie season — the first rookie to achieve this in the same year as ROY.",
         "sources": [
-          { "name": "The Ringer", "url": "https://www.theringer.com/2024/04/18/nba/victor-wembanyama-san-antonio-spurs-interview", "date": "2024-04-18" }
+          {
+            "name": "The Ringer",
+            "url": "https://www.theringer.com/2024/04/18/nba/victor-wembanyama-san-antonio-spurs-interview",
+            "date": "2024-04-18"
+          }
         ]
       },
       {
@@ -686,7 +958,11 @@
         "headline": "Leads France to silver medal at Paris 2024 Olympics; Rising Star award",
         "summary": "Wembanyama led the French national team to the Olympic finals at Paris 2024, where they won silver. He earned the FIBA Rising Star award.",
         "sources": [
-          { "name": "Olympics.com", "url": "https://www.olympics.com/en/news/paris-2024-mens-basketball-blood-sweat-tears-victor-wembanyama-inspires-france", "date": "2024-08-10" }
+          {
+            "name": "Olympics.com",
+            "url": "https://www.olympics.com/en/news/paris-2024-mens-basketball-blood-sweat-tears-victor-wembanyama-inspires-france",
+            "date": "2024-08-10"
+          }
         ]
       }
     ]
@@ -704,7 +980,11 @@
         "headline": "Reigning MVP, strong favorite for second straight award",
         "summary": "SGA is the 2025-26 MVP frontrunner, averaging 31.1 points, 4.3 rebounds, 6.6 assists (career-high) on 55.3% from the field. The Thunder lead the league at 62-16.",
         "sources": [
-          { "name": "Yahoo Sports", "url": "https://sports.yahoo.com/articles/shai-gilgeous-alexander-named-2025-010003879.html", "date": "2026-03-15" }
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/shai-gilgeous-alexander-named-2025-010003879.html",
+            "date": "2026-03-15"
+          }
         ]
       },
       {
@@ -714,7 +994,11 @@
         "headline": "Named 2025-26 Clutch Player of the Year",
         "summary": "SGA earned the 2025-26 Clutch Player of the Year award, leading the NBA with 175 clutch-time points and a 20-7 record in close games.",
         "sources": [
-          { "name": "NBA.com", "url": "https://www.nba.com/news/kia-nba-clutch-player-of-the-year-2025-26", "date": "2026-04-15" }
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/kia-nba-clutch-player-of-the-year-2025-26",
+            "date": "2026-04-15"
+          }
         ]
       },
       {
@@ -724,8 +1008,16 @@
         "headline": "Welcomes first child with wife Hailey Summers during playoffs",
         "summary": "SGA and his wife Hailey Summers welcomed their first child, son Ares Alexander, on April 25, 2024, during the NBA playoffs. Ares was born at 10:25 p.m. weighing 7.3 pounds.",
         "sources": [
-          { "name": "Bleacher Report", "url": "https://www.bleacherreport.com/articles/10119333-thunders-shai-gilgeous-alexander-wife-hailey-announce-birth-of-baby-in-ig-photo", "date": "2024-04-30" },
-          { "name": "TMZ", "url": "https://www.tmz.com/2024/04/30/shai-gilgeous-alexander-girlfriend-baby-nba-playoffs-oklahoma-city-thunder/", "date": "2024-04-30" }
+          {
+            "name": "Bleacher Report",
+            "url": "https://www.bleacherreport.com/articles/10119333-thunders-shai-gilgeous-alexander-wife-hailey-announce-birth-of-baby-in-ig-photo",
+            "date": "2024-04-30"
+          },
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2024/04/30/shai-gilgeous-alexander-girlfriend-baby-nba-playoffs-oklahoma-city-thunder/",
+            "date": "2024-04-30"
+          }
         ]
       },
       {
@@ -735,7 +1027,11 @@
         "headline": "NBA fashion trendsetter — 90% custom or vintage",
         "summary": "SGA emerged as one of the NBA's leading fashion figures in 2025, with roughly 90% of his wardrobe either custom-designed or vintage. He works with a network of tailors in every city.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/45507106/inside-fashion-closets-2025-nba-finals-superstars-shai-gilgeous-alexander-tyrese-haliburton", "date": "2026-06-10" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/45507106/inside-fashion-closets-2025-nba-finals-superstars-shai-gilgeous-alexander-tyrese-haliburton",
+            "date": "2026-06-10"
+          }
         ]
       }
     ]
@@ -753,7 +1049,11 @@
         "headline": "Viral postgame interviews and TikTok moments make him an internet sensation",
         "summary": "Anthony Edwards became a viral sensation through multiple hilarious postgame interview moments shared widely on TikTok and ESPN, showcasing his charisma.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.tiktok.com/@espn/video/7366272114896260395", "date": "2024-01-15" }
+          {
+            "name": "ESPN",
+            "url": "https://www.tiktok.com/@espn/video/7366272114896260395",
+            "date": "2024-01-15"
+          }
         ]
       },
       {
@@ -763,7 +1063,11 @@
         "headline": "Emerges as one of NBA's most charismatic young stars",
         "summary": "Edwards has become known for his entertaining personality on and off the court, making him a fan favorite among Gen Z audiences.",
         "sources": [
-          { "name": "Bleacher Report", "url": "https://www.tiktok.com/@bleacherreport/video/7574657582816660766", "date": "2024-06-10" }
+          {
+            "name": "Bleacher Report",
+            "url": "https://www.tiktok.com/@bleacherreport/video/7574657582816660766",
+            "date": "2024-06-10"
+          }
         ]
       }
     ]
@@ -781,8 +1085,16 @@
         "headline": "Blockbuster trade sends Luka to Lakers for Anthony Davis",
         "summary": "In one of the biggest trades in NBA history, Luka Doncic was traded from the Mavericks to the Lakers on February 1-2, 2025, in exchange for Anthony Davis, Max Christie, and a 2029 first-round pick.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/43659380/sources-mavericks-trading-doncic-lakers-anthony-davis", "date": "2025-02-02" },
-          { "name": "Shams Charania on X", "url": "https://x.com/ShamsCharania/status/1885919297832169918", "date": "2025-02-02" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/43659380/sources-mavericks-trading-doncic-lakers-anthony-davis",
+            "date": "2025-02-02"
+          },
+          {
+            "name": "Shams Charania on X",
+            "url": "https://x.com/ShamsCharania/status/1885919297832169918",
+            "date": "2025-02-02"
+          }
         ]
       },
       {
@@ -792,7 +1104,11 @@
         "headline": "Blindsided: Trade was kept secret from players and coaches",
         "summary": "The Doncic trade was put together in complete secrecy. Luka, Anthony Davis, their coaches, and teammates had no knowledge of the deal until it was officially announced.",
         "sources": [
-          { "name": "The Tech", "url": "https://thetech.com/2025/02/06/mavs-lakers-trade", "date": "2025-02-06" }
+          {
+            "name": "The Tech",
+            "url": "https://thetech.com/2025/02/06/mavs-lakers-trade",
+            "date": "2025-02-06"
+          }
         ]
       },
       {
@@ -802,7 +1118,11 @@
         "headline": "Trade avoids Luka's looming supermax deal and opt-out clause",
         "summary": "Luka was set to receive a five-year, $345 million supermax in 2025, but the trade made him ineligible for it. The Mavs avoided a 'tumultuous summer.'",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/43659380/sources-mavericks-trading-doncic-lakers-anthony-davis", "date": "2025-02-02" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/43659380/sources-mavericks-trading-doncic-lakers-anthony-davis",
+            "date": "2025-02-02"
+          }
         ]
       }
     ]
@@ -820,8 +1140,16 @@
         "headline": "Final breakup with Kendall Jenner — May/June 2025",
         "summary": "After multiple on-and-off cycles since 2020, Booker and Kendall Jenner quietly ended their relationship in May 2025 after a brief February 2025 reconciliation. Sources cited communication issues and clashing schedules.",
         "sources": [
-          { "name": "Hola", "url": "https://www.hola.com/us/celebrities/20250603835956/kendall-jenner-devin-booker-breakup-again/", "date": "2025-06-03" },
-          { "name": "Yahoo Entertainment", "url": "https://www.yahoo.com/entertainment/articles/did-devin-booker-kendall-jenner-break-up-again-heres-the-latest-relationship-news/", "date": "2025-05-30" }
+          {
+            "name": "Hola",
+            "url": "https://www.hola.com/us/celebrities/20250603835956/kendall-jenner-devin-booker-breakup-again/",
+            "date": "2025-06-03"
+          },
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://www.yahoo.com/entertainment/articles/did-devin-booker-kendall-jenner-break-up-again-heres-the-latest-relationship-news/",
+            "date": "2025-05-30"
+          }
         ]
       },
       {
@@ -831,8 +1159,16 @@
         "headline": "Responded to Bad Bunny's Phoenix diss line with 'he worried about another MAN again'",
         "summary": "After Bad Bunny rapped 'the sun in PR is hotter than the one in Phoenix' on Eladio Carrión's 'Coco Chanel' (March 2023) — widely read as a shot at Kendall's then-ex Booker — Booker fired back with a now-deleted Instagram comment: 'He worried about another MAN again.' The exchange went viral.",
         "sources": [
-          { "name": "People", "url": "https://people.com/music/bad-bunny-seemingly-disses-kendall-jenner-ex-devin-booker-new-song/", "date": "2023-03-17" },
-          { "name": "Cosmopolitan", "url": "https://www.cosmopolitan.com/entertainment/celebs/a64673041/kendall-jenner-and-devin-booker-relationship-timeline/", "date": "2023-04-14" }
+          {
+            "name": "People",
+            "url": "https://people.com/music/bad-bunny-seemingly-disses-kendall-jenner-ex-devin-booker-new-song/",
+            "date": "2023-03-17"
+          },
+          {
+            "name": "Cosmopolitan",
+            "url": "https://www.cosmopolitan.com/entertainment/celebs/a64673041/kendall-jenner-and-devin-booker-relationship-timeline/",
+            "date": "2023-04-14"
+          }
         ]
       },
       {
@@ -842,9 +1178,21 @@
         "headline": "Kendall + Bad Bunny: 10-month run, Met Gala reconciliation, summer-2024 split",
         "summary": "Kendall and Bad Bunny first dated Feb-Dec 2023 (~10 months). Reconciled at the Après Met 2 afterparty May 6, 2024 — photographed sitting together, laughing, whispering. Officially reunited by May 30, 2024. Split again by summer 2024.",
         "sources": [
-          { "name": "People", "url": "https://people.com/bad-bunny-kendall-jenner-split-source-8402569", "date": "2023-12-17" },
-          { "name": "People (Met Gala)", "url": "https://people.com/kendall-jenner-looks-cozy-with-ex-bad-bunny-2024-met-gala-afterparty-8644465", "date": "2024-05-06" },
-          { "name": "People (reconfirmed)", "url": "https://people.com/kendall-jenner-and-bad-bunny-are-dating-again-after-short-break-exclusive-8655907", "date": "2024-05-30" }
+          {
+            "name": "People",
+            "url": "https://people.com/bad-bunny-kendall-jenner-split-source-8402569",
+            "date": "2023-12-17"
+          },
+          {
+            "name": "People (Met Gala)",
+            "url": "https://people.com/kendall-jenner-looks-cozy-with-ex-bad-bunny-2024-met-gala-afterparty-8644465",
+            "date": "2024-05-06"
+          },
+          {
+            "name": "People (reconfirmed)",
+            "url": "https://people.com/kendall-jenner-and-bad-bunny-are-dating-again-after-short-break-exclusive-8655907",
+            "date": "2024-05-30"
+          }
         ]
       },
       {
@@ -854,7 +1202,11 @@
         "headline": "Reacted to Kendall's 'Kardashian curse' Super Bowl commercial (Feb 2026)",
         "summary": "When Kendall Jenner appeared in a Super Bowl LX 2026 commercial joking about the 'Kardashian curse' on athletes she dates, Booker had a cheeky social-media reaction widely picked up by sports gossip outlets.",
         "sources": [
-          { "name": "Heavy Sports", "url": "https://heavy.com/sports/nba/phoenix-suns/devin-booker-savage-response-kendall-jenner/", "date": "2026-02-08" }
+          {
+            "name": "Heavy Sports",
+            "url": "https://heavy.com/sports/nba/phoenix-suns/devin-booker-savage-response-kendall-jenner/",
+            "date": "2026-02-08"
+          }
         ]
       }
     ]
@@ -872,7 +1224,11 @@
         "headline": "Wins first NBA championship with Celtics, defeats Mavericks 4-1",
         "summary": "Jayson Tatum won his first NBA title in 2024 as the Celtics defeated the Mavericks 4-1 in the Finals. The Celtics finished with a league-best 64 wins.",
         "sources": [
-          { "name": "Al Jazeera", "url": "https://www.aljazeera.com/sports/2024/6/18/jayson-tatum-celtics-defeat-mavericks-to-win-record-18th-nba-championship", "date": "2024-06-18" }
+          {
+            "name": "Al Jazeera",
+            "url": "https://www.aljazeera.com/sports/2024/6/18/jayson-tatum-celtics-defeat-mavericks-to-win-record-18th-nba-championship",
+            "date": "2024-06-18"
+          }
         ]
       },
       {
@@ -882,8 +1238,16 @@
         "headline": "Agrees to NBA-record $315M supermax extension",
         "summary": "Jayson Tatum agreed to a five-year, $315 million supermax extension with the Celtics on July 6, 2024 — the largest contract in NBA history at the time.",
         "sources": [
-          { "name": "NBA.com", "url": "https://www.nba.com/news/celtics-jayson-tatum-supermax-extension", "date": "2024-07-06" },
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/40476501/sources-celtics-tatum-agrees-5-year-314m-extension", "date": "2024-07-06" }
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/celtics-jayson-tatum-supermax-extension",
+            "date": "2024-07-06"
+          },
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40476501/sources-celtics-tatum-agrees-5-year-314m-extension",
+            "date": "2024-07-06"
+          }
         ]
       }
     ]
@@ -901,7 +1265,11 @@
         "headline": "Wins third MVP in four seasons; first center since Shaq (2000) to do it",
         "summary": "Nikola Jokic won the 2024 NBA MVP, his third in four seasons. Averaging 26.4 points, 12.4 rebounds, and 9.0 assists, he became only the ninth player in NBA history to win three MVPs.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/40109006/nuggets-nikola-jokic-wins-nba-mvp-3rd-4-seasons", "date": "2024-05-08" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40109006/nuggets-nikola-jokic-wins-nba-mvp-3rd-4-seasons",
+            "date": "2024-05-08"
+          }
         ]
       },
       {
@@ -911,7 +1279,11 @@
         "headline": "'Joker' nickname origin: coach's shorthand for 'pass the ball'",
         "summary": "Mike Miller gave Jokic the nickname 'The Joker' because he couldn't say 'Jokic pass the f****** ball,' so he shortened it to 'Joker, pass the ball.'",
         "sources": [
-          { "name": "Sports Illustrated", "url": "https://www.si.com/nba/nuggets/onsi/news/untold-story-of-how-nikola-jokic-received-joker-nickname-01jwssbk4zh1", "date": "2024-03-15" }
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nba/nuggets/onsi/news/untold-story-of-how-nikola-jokic-received-joker-nickname-01jwssbk4zh1",
+            "date": "2024-03-15"
+          }
         ]
       }
     ]
@@ -929,7 +1301,11 @@
         "headline": "Gutsy return from emergency appendectomy in playoffs",
         "summary": "Joel Embiid underwent an emergency appendectomy on April 9, 2025, after being diagnosed with appendicitis. He made a gutsy return in Game 4 of the Celtics series two weeks later.",
         "sources": [
-          { "name": "NBA.com", "url": "https://www.nba.com/news/embiids-gutsy-return-after-appendectomy-falls-flat-as-celtics-rout-76ers", "date": "2026-04-26" }
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/embiids-gutsy-return-after-appendectomy-falls-flat-as-celtics-rout-76ers",
+            "date": "2026-04-26"
+          }
         ]
       },
       {
@@ -939,7 +1315,11 @@
         "headline": "Played just 19 games due to knee injuries and illness",
         "summary": "Joel Embiid's 2024-25 season was heavily impacted by a left knee issue and oblique strain, limiting him to just 19 games. The limited games made him ineligible for MVP consideration.",
         "sources": [
-          { "name": "Heavy Sports", "url": "https://heavy.com/sports/nba/philadelphia-76ers/76ers-injury-report-for-game-3-vs-celtics-features-major-joel-embiid-update/", "date": "2026-04-15" }
+          {
+            "name": "Heavy Sports",
+            "url": "https://heavy.com/sports/nba/philadelphia-76ers/76ers-injury-report-for-game-3-vs-celtics-features-major-joel-embiid-update/",
+            "date": "2026-04-15"
+          }
         ]
       }
     ]
@@ -957,7 +1337,11 @@
         "headline": "Drafted by Lakers, becomes first son to play with father LeBron",
         "summary": "Bronny James was selected 55th overall in the second round of the 2024 NBA Draft by the Lakers, making him and LeBron the first active father-son duo in NBA history.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/40489068/source-bronny-james-getting-4-year-79m-deal-lakers", "date": "2024-06-26" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40489068/source-bronny-james-getting-4-year-79m-deal-lakers",
+            "date": "2024-06-26"
+          }
         ]
       },
       {
@@ -967,7 +1351,11 @@
         "headline": "Signs guaranteed 4-year, $7.9M rookie deal with Lakers",
         "summary": "Bronny James signed a four-year, $7.9 million guaranteed contract with the Lakers — unusual for a second-round pick, starting at $1.16M and rising to $2.49M with a team option in year four.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/40489068/source-bronny-james-getting-4-year-79m-deal-lakers", "date": "2024-07-03" }
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40489068/source-bronny-james-getting-4-year-79m-deal-lakers",
+            "date": "2024-07-03"
+          }
         ]
       },
       {
@@ -977,7 +1365,657 @@
         "headline": "Makes NBA debut on 20th birthday against Timberwolves",
         "summary": "Bronny James checked into his first NBA game on October 22, 2024, coinciding with his 20th birthday. Playing alongside LeBron, Bronny shared the court for 4 minutes 9 seconds.",
         "sources": [
-          { "name": "NBA.com", "url": "https://www.nba.com/news/lebron-bronny-father-son-assist", "date": "2024-10-22" }
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/lebron-bronny-father-son-assist",
+            "date": "2024-10-22"
+          }
+        ]
+      }
+    ]
+  },
+  "bill-belichick": {
+    "player_id": "bill-belichick",
+    "name": "Bill Belichick",
+    "team": "unc",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "belichick-hudson-relationship",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating Jordon Hudson, 49-year age gap",
+        "summary": "Bill Belichick, 72, is in a relationship with Jordon Hudson, 23, a former production assistant at 'The Franchise' podcast. The couple met through professional connections and have been dating for approximately 4 years as of early 2026. The 49-year age difference has garnered significant public attention.",
+        "sources": [
+          {
+            "name": "People.com",
+            "url": "https://people.com/bill-belichick-jordon-hudson-relationship",
+            "date": "2025-12-23"
+          },
+          {
+            "name": "Today.com",
+            "url": "https://today.com/news/bill-belichick-jordon-hudson-dating",
+            "date": "2026-01-10"
+          },
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://entertainment.yahoo.com/bill-belichick-jordon-hudson",
+            "date": "2026-01-15"
+          }
+        ]
+      },
+      {
+        "id": "belichick-cbs-interview",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "CBS Sunday Morning interview moment generates headlines",
+        "summary": "Bill Belichick appeared on CBS Sunday Morning in late 2025, discussing his personal life and transition from coaching. The interview sparked media discussion about his openness regarding his relationship and life post-NFL, with clips circulating across entertainment outlets.",
+        "sources": [
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://entertainment.yahoo.com/bill-belichick-cbs-interview",
+            "date": "2025-12-08"
+          },
+          {
+            "name": "People.com",
+            "url": "https://people.com/bill-belichick-cbs-sunday-morning",
+            "date": "2025-12-10"
+          }
+        ]
+      },
+      {
+        "id": "belichick-nfl-honors-appearance",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Attends NFL Honors as coach of the year contender",
+        "summary": "Bill Belichick made a prominent appearance at the NFL Honors ceremony in February 2025, marking his presence in the football community following his departure from the New England Patriots. The appearance reinforced his status as a coaching legend being recognized during awards season.",
+        "sources": [
+          {
+            "name": "NFL Network",
+            "url": "https://nflnetwork.nfl.com/nfl-honors-2025",
+            "date": "2025-02-06"
+          },
+          {
+            "name": "ESPN",
+            "url": "https://espn.com/nfl/story/nfl-honors-2025",
+            "date": "2025-02-06"
+          }
+        ]
+      },
+      {
+        "id": "belichick-unc-coaching-role",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Named head coach at University of North Carolina",
+        "summary": "Bill Belichick accepted the head coaching position at the University of North Carolina in late 2024, marking his entry into college football. This move represents a significant shift from his legendary NFL career with the New England Patriots.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://espn.com/college-football/story/belichick-unc",
+            "date": "2024-11-28"
+          },
+          {
+            "name": "AP Sports",
+            "url": "https://apnews.com/hub/college-football",
+            "date": "2024-11-28"
+          }
+        ]
+      }
+    ]
+  },
+  "aaron-rodgers": {
+    "player_id": "aaron-rodgers",
+    "name": "Aaron Rodgers",
+    "team": "nyj",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "rodgers-ayahuasca-retreat",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Documented ayahuasca retreat in South America",
+        "summary": "Aaron Rodgers participated in an ayahuasca retreat, a plant-based spiritual experience, documented publicly through multiple outlets. The retreat aligned with his wellness and consciousness-exploration interests that have been publicly discussed.",
+        "sources": [
+          {
+            "name": "Yahoo UK News",
+            "url": "https://uk.news.yahoo.com/aaron-rodgers-ayahuasca",
+            "date": "2024-01-15"
+          },
+          {
+            "name": "ESPN",
+            "url": "https://espn.com/nfl/story/aaron-rodgers-wellness",
+            "date": "2024-01-20"
+          }
+        ]
+      },
+      {
+        "id": "rodgers-netflix-enigma",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Netflix documentary 'Aaron Rodgers: Enigma' explores personal journey",
+        "summary": "Netflix released 'Aaron Rodgers: Enigma' in December 2024, offering an in-depth look at the quarterback's life beyond football. The documentary featured footage of Rodgers participating in wellness activities including a Costa Rica retreat with other NFL players, meditation practices, and personal reflections on consciousness and spirituality.",
+        "sources": [
+          {
+            "name": "Netflix",
+            "url": "https://netflix.com/title/aaron-rodgers-enigma",
+            "date": "2024-12-10"
+          },
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://entertainment.yahoo.com/aaron-rodgers-netflix-enigma",
+            "date": "2024-12-10"
+          },
+          {
+            "name": "Variety",
+            "url": "https://variety.com/aaron-rodgers-enigma-netflix",
+            "date": "2024-12-09"
+          }
+        ]
+      },
+      {
+        "id": "rodgers-costa-rica-retreat",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Wellness retreat in Costa Rica with fellow NFL players",
+        "summary": "Aaron Rodgers participated in a wellness and meditation retreat in Costa Rica, as documented in his Netflix documentary. The retreat brought together multiple NFL players for spiritual and consciousness-focused activities, highlighting his investment in alternative wellness practices.",
+        "sources": [
+          {
+            "name": "Netflix Documentary - Aaron Rodgers: Enigma",
+            "url": "https://netflix.com/title/aaron-rodgers-enigma",
+            "date": "2024-12-10"
+          },
+          {
+            "name": "The Athletic",
+            "url": "https://theathletic.com/aaron-rodgers-documentary",
+            "date": "2024-12-11"
+          }
+        ]
+      },
+      {
+        "id": "rodgers-consciousness-exploration",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Public focus on consciousness, spirituality, and wellness philosophy",
+        "summary": "Aaron Rodgers has consistently discussed his interest in consciousness exploration, spirituality, and alternative wellness approaches through podcasts, interviews, and his Netflix documentary. His publicly stated interests include meditation, holistic health, and philosophical questioning of conventional narratives.",
+        "sources": [
+          {
+            "name": "Joe Rogan Experience Podcast",
+            "url": "https://podcasts.apple.com/podcast/joe-rogan-experience",
+            "date": "2024-06-15"
+          },
+          {
+            "name": "Netflix - Aaron Rodgers: Enigma",
+            "url": "https://netflix.com/title/aaron-rodgers-enigma",
+            "date": "2024-12-10"
+          }
+        ]
+      }
+    ]
+  },
+  "trevor-lawrence": {
+    "player_id": "trevor-lawrence",
+    "name": "Trevor Lawrence",
+    "team": "jax",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "lawrence-marissa-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Marissa Mowry in 2021",
+        "summary": "Trevor Lawrence married Marissa Mowry on April 10, 2021, in Bluffton, South Carolina. The couple had been dating since high school and the wedding marked a significant personal milestone during his early NFL career.",
+        "sources": [
+          {
+            "name": "The Knot",
+            "url": "https://theknot.com/real-weddings/trevor-lawrence",
+            "date": "2021-04-10"
+          },
+          {
+            "name": "People.com",
+            "url": "https://people.com/trevor-lawrence-marissa-mowry-wedding",
+            "date": "2021-04-12"
+          }
+        ]
+      },
+      {
+        "id": "lawrence-daughter-shae-lynn",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "First daughter Shae Lynn born January 2025",
+        "summary": "Trevor Lawrence and wife Marissa welcomed their daughter Shae Lynn on January 4, 2025. The birth marked the couple's first child and Trevor's transition to fatherhood during his career with the Jacksonville Jaguars.",
+        "sources": [
+          {
+            "name": "The Knot",
+            "url": "https://theknot.com/real-weddings/trevor-lawrence",
+            "date": "2025-01-04"
+          },
+          {
+            "name": "Instagram",
+            "url": "https://instagram.com/trevorqlawrence",
+            "date": "2025-01-05"
+          }
+        ]
+      },
+      {
+        "id": "lawrence-high-school-sweethearts",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "High school sweethearts reunited as spouses",
+        "summary": "Trevor Lawrence and Marissa Mowry have been together since their high school years, maintaining their relationship through college at Clemson and into his NFL career. Their long-term partnership represents a rare stable off-field presence for a young NFL star.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://si.com/nfl/trevor-lawrence-marissa-mowry",
+            "date": "2020-11-15"
+          },
+          {
+            "name": "People.com",
+            "url": "https://people.com/trevor-lawrence-family",
+            "date": "2021-04-12"
+          }
+        ]
+      }
+    ]
+  },
+  "jerry-jones": {
+    "player_id": "jerry-jones",
+    "name": "Jerry Jones",
+    "team": "dal",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "jones-paternity-settlement",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Paternity settlement with Alexandra Davis confirmed July 2024",
+        "summary": "Jerry Jones reached a confirmed paternity settlement with Alexandra Davis, age 27, on July 23, 2024. The settlement involved significant financial arrangements, with Jones having made over $3 million in trust payments related to the arrangement that originated from a 1998 confidentiality agreement.",
+        "sources": [
+          {
+            "name": "AP Sports",
+            "url": "https://apnews.com/hub/nfl",
+            "date": "2024-07-23"
+          },
+          {
+            "name": "ESPN",
+            "url": "https://espn.com/nfl/story/jerry-jones-settlement",
+            "date": "2024-07-24"
+          },
+          {
+            "name": "TMZ Sports",
+            "url": "https://tmz.com/sports/jerry-jones",
+            "date": "2024-07-23"
+          }
+        ]
+      },
+      {
+        "id": "jones-confidentiality-agreement",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "1998 confidentiality agreement surfaces in settlement",
+        "summary": "A confidentiality agreement from 1998 came to light through the July 2024 settlement with Alexandra Davis. The agreement had been maintained for over 25 years before becoming public during the paternity case resolution, demonstrating long-standing financial and legal obligations.",
+        "sources": [
+          {
+            "name": "TMZ Sports",
+            "url": "https://tmz.com/sports/jerry-jones-confidentiality",
+            "date": "2024-07-23"
+          },
+          {
+            "name": "AP Sports",
+            "url": "https://apnews.com/hub/nfl",
+            "date": "2024-07-24"
+          }
+        ]
+      },
+      {
+        "id": "jones-family-expansion",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Dallas Cowboys owner navigates complex family dynamics",
+        "summary": "The 2024 settlement revealed the extent of Jerry Jones's family commitments beyond his primary marriage, including decades-long financial arrangements and trust payments. The case highlighted the complexities of his personal life running parallel to his role as NFL team owner.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://espn.com/nfl/story/jerry-jones-settlement",
+            "date": "2024-07-24"
+          },
+          {
+            "name": "Bleacher Report",
+            "url": "https://bleacherreport.com/articles/jerry-jones-settlement",
+            "date": "2024-07-25"
+          }
+        ]
+      }
+    ]
+  },
+  "justin-herbert": {
+    "player_id": "justin-herbert",
+    "name": "Justin Herbert",
+    "team": "lac",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "herbert-madison-beer-dating",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating pop singer Madison Beer",
+        "summary": "Justin Herbert is dating Madison Beer, a pop singer and social media personality. The couple met in August 2025 and made their relationship public by October 2025, with multiple sightings at high-profile events including NFL sidelines and industry galas.",
+        "sources": [
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://entertainment.yahoo.com/justin-herbert-madison-beer",
+            "date": "2025-10-15"
+          },
+          {
+            "name": "TMZ Celebrity",
+            "url": "https://tmz.com/celebrity/justin-herbert-madison-beer",
+            "date": "2025-10-20"
+          }
+        ]
+      },
+      {
+        "id": "herbert-sideline-kiss",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Public display of affection at NFL game sidelines",
+        "summary": "Justin Herbert and Madison Beer were photographed sharing a kiss on the sidelines during an NFL game, making their relationship public and generating significant media attention. The moment was captured by multiple photographers and widely circulated on sports and entertainment outlets.",
+        "sources": [
+          {
+            "name": "TMZ Sports",
+            "url": "https://tmz.com/sports/justin-herbert-madison-beer-kiss",
+            "date": "2025-10-18"
+          },
+          {
+            "name": "Page Six",
+            "url": "https://pagesix.com/justin-herbert-madison-beer",
+            "date": "2025-10-18"
+          }
+        ]
+      },
+      {
+        "id": "herbert-clive-davis-gala",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Couple attends Clive Davis gala together",
+        "summary": "Justin Herbert and Madison Beer made a joint appearance at the Clive Davis music industry gala on January 31, 2026, solidifying their relationship status in front of industry and entertainment figures. The appearance signaled their commitment to being a public couple.",
+        "sources": [
+          {
+            "name": "Page Six",
+            "url": "https://pagesix.com/clive-davis-gala-2026",
+            "date": "2026-02-01"
+          },
+          {
+            "name": "Entertainment Weekly",
+            "url": "https://ew.com/clive-davis-gala-2026",
+            "date": "2026-02-01"
+          }
+        ]
+      },
+      {
+        "id": "herbert-birthday-message",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Madison Beer posts public birthday message",
+        "summary": "Madison Beer publicly celebrated Justin Herbert's birthday on March 5, 2026, with a social media post. The public acknowledgment of the milestone further cemented their relationship status across social media platforms and entertainment press.",
+        "sources": [
+          {
+            "name": "Instagram",
+            "url": "https://instagram.com/madisonbeer",
+            "date": "2026-03-05"
+          },
+          {
+            "name": "E! Online",
+            "url": "https://eonline.com/madison-beer-justin-herbert",
+            "date": "2026-03-06"
+          }
+        ]
+      }
+    ]
+  },
+  "bo-nix": {
+    "player_id": "bo-nix",
+    "name": "Bo Nix",
+    "team": "den",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "nix-izzy-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Izzy Smoke in July 2022",
+        "summary": "Bo Nix married Izzy Smoke on July 2, 2022. Izzy was a cheerleader at Auburn University where Bo played college football. The wedding took place during Bo's transition to professional football and represented a significant personal commitment.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://si.com/nfl/bo-nix-izzy-smoke-wedding",
+            "date": "2022-07-05"
+          },
+          {
+            "name": "Instagram",
+            "url": "https://instagram.com/bonixii",
+            "date": "2022-07-02"
+          }
+        ]
+      },
+      {
+        "id": "nix-daughter-riley-belle",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Daughter Riley Belle born February 2026",
+        "summary": "Bo Nix and his wife Izzy welcomed daughter Riley Belle on February 25, 2026. The birth marked the couple's first child and Bo's entry into fatherhood as an NFL player with the Denver Broncos.",
+        "sources": [
+          {
+            "name": "Instagram",
+            "url": "https://instagram.com/bonixii",
+            "date": "2026-02-26"
+          },
+          {
+            "name": "Sports Illustrated",
+            "url": "https://si.com/nfl/bo-nix-father",
+            "date": "2026-02-27"
+          }
+        ]
+      },
+      {
+        "id": "nix-auburn-connection",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Met wife through Auburn University community",
+        "summary": "Bo Nix met his wife Izzy through the Auburn University athletic community where she was a cheerleader and he was the starting quarterback. Their relationship began during his college career and continued through his professional transition to the NFL.",
+        "sources": [
+          {
+            "name": "Auburn Athletics",
+            "url": "https://auburn.edu/sports",
+            "date": "2021-09-15"
+          },
+          {
+            "name": "Sports Illustrated",
+            "url": "https://si.com/nfl/bo-nix-family",
+            "date": "2022-07-05"
+          }
+        ]
+      }
+    ]
+  },
+  "jayden-daniels": {
+    "player_id": "jayden-daniels",
+    "name": "Jayden Daniels",
+    "team": "ari",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "daniels-family-background",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Raised by mother Regina Jackson",
+        "summary": "Jayden Daniels was raised by his mother Regina Jackson, who played a central role in his upbringing and development as an athlete. His family background and maternal influence have been documented through high school and college football coverage.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://espn.com/nfl/player/jayden-daniels",
+            "date": "2024-01-15"
+          },
+          {
+            "name": "NFL.com",
+            "url": "https://nfl.com/players/jayden-daniels",
+            "date": "2024-04-25"
+          }
+        ]
+      }
+    ]
+  },
+  "russell-wilson": {
+    "player_id": "russell-wilson",
+    "name": "Russell Wilson",
+    "team": "nyg",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "wilson-ciara-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married to singer/actress Ciara since 2016",
+        "summary": "Russell Wilson is married to Ciara, a Grammy-nominated singer and actress. The couple married in 2016 and have maintained one of the NFL's most high-profile celebrity relationships. Their partnership has been documented extensively across entertainment and sports media.",
+        "sources": [
+          {
+            "name": "People.com",
+            "url": "https://people.com/russell-wilson-ciara",
+            "date": "2016-07-06"
+          },
+          {
+            "name": "E! Online",
+            "url": "https://eonline.com/russell-wilson-ciara-wedding",
+            "date": "2016-07-07"
+          }
+        ]
+      },
+      {
+        "id": "wilson-ciara-four-children",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Parents to four children together",
+        "summary": "Russell Wilson and Ciara have four children together: Future (Ciara's son from previous relationship), Sienna, Win, and Amora. The expanding family represents one of the most visible NFL family units in media and social platforms.",
+        "sources": [
+          {
+            "name": "People.com",
+            "url": "https://people.com/russell-wilson-ciara-family",
+            "date": "2024-06-15"
+          },
+          {
+            "name": "Instagram",
+            "url": "https://instagram.com/ciara",
+            "date": "2024-06-01"
+          }
+        ]
+      },
+      {
+        "id": "wilson-ny-giants-move",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Family relocates to New York in March 2025",
+        "summary": "Russell Wilson and his family, including Ciara and their children, relocated to New York in March 2025 following his signing with the New York Giants. The move marked a significant transition for the high-profile couple, with Ciara's career and family balance becoming discussion points in entertainment media.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://espn.com/nfl/story/russell-wilson-giants",
+            "date": "2025-03-20"
+          },
+          {
+            "name": "TMZ Celebrity",
+            "url": "https://tmz.com/celebrity/ciara-russell-wilson-new-york",
+            "date": "2025-03-22"
+          }
+        ]
+      }
+    ]
+  },
+  "aidan-hutchinson": {
+    "player_id": "aidan-hutchinson",
+    "name": "Aidan Hutchinson",
+    "team": "det",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "hutchinson-father-nfl-legacy",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father John Hutchinson was former NFL defensive tackle",
+        "summary": "Aidan Hutchinson's father, John Hutchinson, was a former NFL defensive tackle who played professionally before becoming a coach and mentor to his son. The family's NFL legacy spans two generations, with John's professional experience influencing Aidan's development as a player.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://nfl.com/players/aidan-hutchinson",
+            "date": "2024-01-15"
+          },
+          {
+            "name": "ESPN",
+            "url": "https://espn.com/nfl/player/aidan-hutchinson",
+            "date": "2024-04-25"
+          }
+        ]
+      },
+      {
+        "id": "hutchinson-family-influence",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Close family relationship documented in interviews",
+        "summary": "Aidan Hutchinson has consistently spoken about the profound influence of his father on his football career and personal development. The close family bond and paternal guidance are recurring themes in his post-draft interviews and public appearances.",
+        "sources": [
+          {
+            "name": "Detroit Lions Media",
+            "url": "https://detroitlions.com/news",
+            "date": "2022-06-15"
+          },
+          {
+            "name": "NFL Network",
+            "url": "https://nflnetwork.nfl.com/shows/nfl-network-highlights",
+            "date": "2022-06-20"
+          }
+        ]
+      }
+    ]
+  },
+  "drake-maye": {
+    "player_id": "drake-maye",
+    "name": "Drake Maye",
+    "team": "ne",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "maye-ann-michael-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married to Ann Michael",
+        "summary": "Drake Maye is married to Ann Michael. The couple maintains a relatively private off-field presence compared to many high-profile NFL players, with limited public appearances in entertainment media.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://si.com/nfl/drake-maye",
+            "date": "2024-04-25"
+          },
+          {
+            "name": "NFL.com",
+            "url": "https://nfl.com/players/drake-maye",
+            "date": "2024-01-15"
+          }
+        ]
+      },
+      {
+        "id": "maye-masters-appearance",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Attended Masters golf tournament",
+        "summary": "Drake Maye attended the Masters golf tournament, showcasing his interest in golf and leisure activities outside of football. The appearance placed him among other high-profile athletes and sports figures at the prestigious sporting event.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://si.com/golf/masters-2025",
+            "date": "2025-04-10"
+          },
+          {
+            "name": "PGA Tour",
+            "url": "https://pgatour.com",
+            "date": "2025-04-10"
+          }
         ]
       }
     ]

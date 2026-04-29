@@ -13,6 +13,7 @@ import { BottomTabs, BottomTabsSpacer } from '@/components/BottomTabs';
 import { TeaUpToggle } from '@/components/TeaUpToggle';
 import { TierPill, type Tier } from '@/components/TierPill';
 import { getProfile, setProfile } from '@/lib/profile';
+import { getSocial, instagramUrl } from '@/lib/players-social';
 
 type ScanModes = {
   drama?: { tier: Tier; headline: string; summary: string }[];
@@ -623,6 +624,7 @@ type LocalMode = 'drama' | 'on_field' | 'learn';
 
 function ResultCard({ result, modes, onReset }: { result: ScanResult; modes: LocalMode[]; onReset: () => void }) {
   const teamColors = getTeamColors(result.team);
+  const social = getSocial(result.player_name);
 
   return (
     <div className="space-y-4">
@@ -643,6 +645,28 @@ function ResultCard({ result, modes, onReset }: { result: ScanResult; modes: Loc
             <h1 className="font-display font-bold leading-[0.92] tracking-tight" style={{ color: teamColors.ink, fontSize: 'clamp(28px, 6.5vw, 40px)' }}>
               {result.player_name}
             </h1>
+            {/* Instagram link — direct to the player's IG. Editorial-safe (just a hyperlink, no hosted image). */}
+            {social?.instagram && (
+              <a
+                href={instagramUrl(social.instagram)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2.5 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold transition active:scale-[0.96] hover:bg-white/10"
+                style={{
+                  color: teamColors.ink,
+                  background: 'rgba(255,255,255,0.18)',
+                  backdropFilter: 'blur(6px)',
+                  border: '1px solid rgba(255,255,255,0.25)',
+                }}
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+                @{social.instagram}
+              </a>
+            )}
             {result.game && (
               <div className="mt-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[10px] font-semibold tracking-wider text-white" style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)' }}>
                 <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
