@@ -43,7 +43,7 @@ export default function TeaPage() {
   const [data, setData] = useState<TodayResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [teadUp, setTeadUp] = useState<boolean>(false);
+  const [teadUp, setTeadUp] = useState<boolean>(true);
   const [displayName, setDisplayName] = useState('');
   const [refreshing, setRefreshing] = useState(false);
 

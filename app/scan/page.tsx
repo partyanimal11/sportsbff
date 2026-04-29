@@ -42,7 +42,7 @@ export default function ScanPage() {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [result, setResult] = useState<ScanResult | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [teadUp, setTeadUp] = useState<boolean>(false);
+  const [teadUp, setTeadUp] = useState<boolean>(true);
   const fileRef = useRef<HTMLInputElement>(null);
   const cameraRef = useRef<HTMLInputElement>(null);
 
@@ -662,17 +662,33 @@ function ResultCard({ result, modes, onReset }: { result: ScanResult; modes: Loc
         </div>
       </div>
 
-      {/* Modes-organized sections */}
+      {/* DRAMA — primary card, always lead. Scaled up + magenta accent for visual hierarchy. */}
       {modes.includes('drama') && result.modes?.drama && result.modes.drama.length > 0 && (
         <DramaSection items={result.modes.drama} />
       )}
-      {modes.includes('on_field') && result.modes?.on_field && (
-        <ModeSection emoji="🏀" label="On-field" body={result.modes.on_field} />
+
+      {/* SECONDARY — on-field + learn rendered as collapsible smaller cards below the gossip. */}
+      {((modes.includes('on_field') && result.modes?.on_field) ||
+        (modes.includes('learn') && result.modes?.learn)) && (
+        <details className="group bg-cream-warm/40 rounded-2xl border border-[var(--hairline)] overflow-hidden">
+          <summary className="flex items-center justify-between px-4 py-3 cursor-pointer list-none hover:bg-cream-warm transition">
+            <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-ink-soft">
+              Also: the sports stuff
+            </span>
+            <span className="text-ink-soft group-open:rotate-180 transition-transform">▾</span>
+          </summary>
+          <div className="px-4 pb-4 space-y-3 pt-1">
+            {modes.includes('on_field') && result.modes?.on_field && (
+              <SecondaryModeSection emoji="🏀" label="On-field" body={result.modes.on_field} />
+            )}
+            {modes.includes('learn') && result.modes?.learn && (
+              <SecondaryModeSection emoji="📚" label="Learn" body={result.modes.learn} />
+            )}
+          </div>
+        </details>
       )}
-      {modes.includes('learn') && result.modes?.learn && (
-        <ModeSection emoji="📚" label="Learn" body={result.modes.learn} />
-      )}
-      {/* Fallback when no modes payload — show the legacy blurb */}
+
+      {/* Fallback when no modes payload — show the legacy blurb prominently */}
       {(!result.modes || (!result.modes.drama && !result.modes.on_field && !result.modes.learn)) && result.blurb && (
         <ModeSection emoji="☕" label="Tea" body={result.blurb} />
       )}
@@ -732,14 +748,21 @@ function ResultCard({ result, modes, onReset }: { result: ScanResult; modes: Loc
 function DramaSection({ items }: { items: { tier: Tier; headline: string; summary: string }[] }) {
   return (
     <div className="space-y-3">
-      <div className="flex items-center gap-2 text-[11px] font-bold tracking-[0.18em] uppercase text-tangerine">
-        <span aria-hidden>🔥</span> Drama
+      <div className="flex items-center gap-2">
+        <span className="text-[11px] font-bold tracking-[0.22em] uppercase text-magenta-dusty">
+          ☕ The tea
+        </span>
+        <span className="text-[10px] font-mono uppercase tracking-wider text-muted">· lead with the gossip</span>
       </div>
       {items.map((item, i) => (
-        <div key={i} className="bg-white rounded-2xl p-4 border border-[var(--hairline)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_8px_24px_-12px_rgba(13,45,36,0.10)]">
+        <div
+          key={i}
+          className="bg-white rounded-2xl p-5 shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_12px_32px_-12px_rgba(212,64,122,0.18)]"
+          style={{ border: '1.5px solid rgba(212,64,122,0.18)' }}
+        >
           <div className="mb-2"><TierPill tier={item.tier} /></div>
-          <h3 className="font-display font-bold text-[18px] text-green leading-tight">{item.headline}</h3>
-          <p className="mt-1.5 text-[14.5px] text-ink leading-relaxed">{item.summary}</p>
+          <h3 className="font-display font-bold text-[19px] text-green leading-tight">{item.headline}</h3>
+          <p className="mt-2 text-[15px] text-ink leading-relaxed">{item.summary}</p>
         </div>
       ))}
     </div>
@@ -755,6 +778,21 @@ function ModeSection({ emoji, label, body }: { emoji: string; label: string; bod
       <div className="bg-white rounded-2xl p-4 border border-[var(--hairline)] shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,_0_8px_24px_-12px_rgba(13,45,36,0.10)]">
         <p className="text-[14.5px] text-ink leading-relaxed whitespace-pre-line">{body}</p>
       </div>
+    </div>
+  );
+}
+
+/**
+ * Secondary mode section — smaller, quieter treatment for the "also: the sports stuff"
+ * collapsible. Used for on-field + learn when drama is the primary content.
+ */
+function SecondaryModeSection({ emoji, label, body }: { emoji: string; label: string; body: string }) {
+  return (
+    <div>
+      <div className="flex items-center gap-1.5 text-[10px] font-bold tracking-[0.18em] uppercase text-ink-soft mb-1.5">
+        <span aria-hidden>{emoji}</span> {label}
+      </div>
+      <p className="text-[13px] text-ink leading-relaxed whitespace-pre-line">{body}</p>
     </div>
   );
 }

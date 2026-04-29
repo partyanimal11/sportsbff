@@ -39,7 +39,8 @@ export type Profile = {
 
 const DEFAULT: Profile = {
   lens: 'plain',
-  teadUpEnabled: false,
+  // Tea'd Up is ON by default — gossip-first is the brand. Users can flip it off.
+  teadUpEnabled: true,
   autoPlayVoice: false,
   euphoriaLensEnabled: false,
 };

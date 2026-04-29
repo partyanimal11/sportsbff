@@ -49,7 +49,7 @@ export default function ChatPageWrapper() {
 
 function ChatPage() {
   const [mounted, setMounted] = useState(false);
-  const [teadUp, setTeadUp] = useState<boolean>(false);
+  const [teadUp, setTeadUp] = useState<boolean>(true);
   const [displayName, setDisplayName] = useState<string>('');
   const [league, setLeague] = useState<'nfl' | 'nba' | 'both'>('both');
   const [autoPlay, setAutoPlay] = useState(false);
