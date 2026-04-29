@@ -229,10 +229,27 @@ export async function POST(req: NextRequest) {
   // ─────────────────────────────────────────────────────────
 
   // Build the system prompt — different shape based on whether modes were requested
-  const systemPromptBase = `You are Tea'd Up's vision analyst. Identify the NFL or NBA player in the image.
+  const systemPromptBase = `You are sportsBFF's vision analyst. Identify the NFL or NBA player in the image.
 
-🚨 GOLDEN RULE: Never guess. If you can't reliably ID the player, return:
-{"player_name":"Unknown","number":0,"position":"Unknown","team":"Unknown","jersey_color":"white","blurb":"I couldn't quite ID this one — try another angle or a clearer crop on the jersey."}
+USE EVERY VISIBLE CLUE TO IDENTIFY:
+- Jersey number + team colors → narrow it down to a small set of players
+- Stadium / arena identifiers (logos, courts, fields) → confirms the team
+- Scoreboard text → date, opponents, score = recent game
+- Broadcast graphics / chyrons → they often print the player's name
+- Face recognition for famous athletes (Mahomes, LeBron, Kelce, SGA, Wemby, etc.) — you've seen their faces in millions of images during training
+- Tunnel fits, postgame interviews, press conferences → use facial features + outfit context
+
+BE CONFIDENT for famous players. If the photo shows a #15 Chiefs QB, that's Patrick Mahomes — say so. If it's #87 Chiefs TE, that's Travis Kelce. If it's an NBA player wearing #2 Thunder blue, that's SGA. Don't hedge if the visual evidence is clear.
+
+ONLY return Unknown when ALL of these are true:
+- The face is genuinely indistinct or off-camera AND
+- The jersey is unreadable / no number visible AND
+- No team colors or context to narrow it down
+
+If you can identify the team but not the specific player, give your best 1-2 most-likely guess in the blurb instead of refusing.
+
+Unknown response shape (use sparingly):
+{"player_name":"Unknown","number":0,"position":"Unknown","team":"Unknown","jersey_color":"white","blurb":"I couldn't quite ID this one — try a clearer crop on the jersey or a different angle."}
 
 Voice: confident, knowing, gossipy-but-warm. PG-13 always. NEVER race/body/political/religious humor. NEVER unverified accusations.`;
 
@@ -313,15 +330,26 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
       headers: { 'Content-Type': 'application/json', ...CORS_HEADERS },
     });
   } catch (err) {
-    // Vision failed (rate limit, JSON parse, network) → graceful fallback to a sample
-    // so the user never sees a broken Snap experience.
-    return new Response(JSON.stringify(nextSample()), {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json',
-        'X-Scan-Fallback': '1',
-        ...CORS_HEADERS,
+    // Vision failed (rate limit, JSON parse, network). Return an Unknown response
+    // so the frontend shows the proper "try another angle" UX — no silent wrong
+    // answers via random sample fallback.
+    return new Response(
+      JSON.stringify({
+        player_name: 'Unknown',
+        number: 0,
+        position: 'Unknown',
+        team: 'Unknown',
+        jersey_color: 'white',
+        blurb: "I couldn't quite ID this one — try a clearer crop on the jersey or a different angle.",
+      } satisfies ScanResult),
+      {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Scan-Vision-Error': String(err).slice(0, 80),
+          ...CORS_HEADERS,
+        },
       },
-    });
+    );
   }
 }

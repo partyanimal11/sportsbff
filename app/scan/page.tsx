@@ -38,7 +38,7 @@ const RANDOM_ATHLETES = [
 
 export default function ScanPage() {
   const [mounted, setMounted] = useState(false);
-  const [phase, setPhase] = useState<'idle' | 'preview' | 'scanning' | 'result' | 'unknown'>('idle');
+  const [phase, setPhase] = useState<'idle' | 'live' | 'preview' | 'scanning' | 'result' | 'unknown'>('idle');
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [result, setResult] = useState<ScanResult | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -174,7 +174,23 @@ export default function ScanPage() {
 
       <section className="flex-1 px-4 sm:px-6 py-6 sm:py-8">
         <div className="max-w-md mx-auto">
-          {phase === 'idle' && <IdleState onCamera={() => cameraRef.current?.click()} onUpload={() => fileRef.current?.click()} onSample={trySample} />}
+          {phase === 'idle' && (
+            <IdleState
+              onLiveScan={() => setPhase('live')}
+              onUpload={() => fileRef.current?.click()}
+              onSample={trySample}
+            />
+          )}
+          {phase === 'live' && (
+            <LiveCamera
+              onCapture={(blob) => handleFile(new File([blob], 'scan.jpg', { type: 'image/jpeg' }))}
+              onCancel={() => setPhase('idle')}
+              onFallbackUpload={() => {
+                setPhase('idle');
+                setTimeout(() => fileRef.current?.click(), 50);
+              }}
+            />
+          )}
           {(phase === 'scanning') && <ScanningState previewUrl={previewUrl} />}
           {phase === 'result' && result && <ResultCard result={result} modes={[...modes]} onReset={reset} />}
           {phase === 'unknown' && <UnknownState onReset={reset} error={error} />}
@@ -208,7 +224,7 @@ export default function ScanPage() {
    Idle state — viewfinder hero + 3 CTAs
    ================================================================= */
 
-function IdleState({ onCamera, onUpload, onSample }: { onCamera: () => void; onUpload: () => void; onSample: () => void }) {
+function IdleState({ onLiveScan, onUpload, onSample }: { onLiveScan: () => void; onUpload: () => void; onSample: () => void }) {
   return (
     <div className="text-center mt-2 sm:mt-4">
       {/* Camera-viewfinder hero with scanning animation */}
@@ -259,14 +275,14 @@ function IdleState({ onCamera, onUpload, onSample }: { onCamera: () => void; onU
 
       <div className="mt-6 sm:mt-8 flex flex-col gap-3">
         <button
-          onClick={onCamera}
+          onClick={onLiveScan}
           className="w-full inline-flex items-center justify-center gap-2 bg-tangerine text-white font-semibold rounded-full py-4 text-[15px] hover:bg-tangerine-dark transition shadow-[0_4px_16px_-4px_rgba(255,107,61,0.4)]"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
             <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
             <circle cx="12" cy="13" r="4" />
           </svg>
-          Take a photo
+          Open camera + scan
         </button>
         <button
           onClick={onUpload}
@@ -301,6 +317,231 @@ function IdleState({ onCamera, onUpload, onSample }: { onCamera: () => void; onU
 /* =================================================================
    Scanning state — preview + brewing teacup animation
    ================================================================= */
+
+/* =================================================================
+   Live camera — in-page video stream + tap-to-capture
+   ================================================================= */
+
+function LiveCamera({
+  onCapture,
+  onCancel,
+  onFallbackUpload,
+}: {
+  onCapture: (blob: Blob) => void;
+  onCancel: () => void;
+  onFallbackUpload: () => void;
+}) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const streamRef = useRef<MediaStream | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [ready, setReady] = useState(false);
+  const [facingMode, setFacingMode] = useState<'environment' | 'user'>('environment');
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function start() {
+      if (typeof navigator === 'undefined' || !navigator.mediaDevices?.getUserMedia) {
+        setError('Your browser doesn’t support live camera. Try uploading a photo instead.');
+        return;
+      }
+
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({
+          video: {
+            facingMode: { ideal: facingMode },
+            width: { ideal: 1280 },
+            height: { ideal: 1280 },
+          },
+          audio: false,
+        });
+        if (cancelled) {
+          stream.getTracks().forEach((t) => t.stop());
+          return;
+        }
+        streamRef.current = stream;
+        const v = videoRef.current;
+        if (v) {
+          v.srcObject = stream;
+          v.play().catch(() => {});
+        }
+        setReady(true);
+      } catch (err: unknown) {
+        const e = err as { name?: string; message?: string };
+        if (e.name === 'NotAllowedError' || e.name === 'PermissionDeniedError') {
+          setError('Camera permission was denied. Allow camera access in your browser, or upload a photo instead.');
+        } else if (e.name === 'NotFoundError') {
+          setError('No camera found on this device. Upload a photo instead.');
+        } else {
+          setError(e.message || 'Couldn’t open the camera.');
+        }
+      }
+    }
+
+    start();
+
+    return () => {
+      cancelled = true;
+      streamRef.current?.getTracks().forEach((t) => t.stop());
+      streamRef.current = null;
+    };
+  }, [facingMode]);
+
+  function captureFrame() {
+    const v = videoRef.current;
+    if (!v || !v.videoWidth || !v.videoHeight) return;
+    const canvas = document.createElement('canvas');
+    canvas.width = v.videoWidth;
+    canvas.height = v.videoHeight;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    ctx.drawImage(v, 0, 0);
+    canvas.toBlob(
+      (blob) => {
+        if (blob) onCapture(blob);
+      },
+      'image/jpeg',
+      0.85,
+    );
+  }
+
+  function flipCamera() {
+    setFacingMode((m) => (m === 'environment' ? 'user' : 'environment'));
+    setReady(false);
+  }
+
+  // Permission/error fallback state
+  if (error) {
+    return (
+      <div className="text-center mt-6">
+        <div className="text-5xl mb-4" aria-hidden>📷</div>
+        <h2 className="font-display text-2xl font-bold text-green leading-tight">
+          Camera not available
+        </h2>
+        <p className="mt-3 text-ink-soft text-[14px] max-w-xs mx-auto leading-relaxed">{error}</p>
+        <div className="mt-6 flex flex-col gap-3">
+          <button
+            onClick={onFallbackUpload}
+            className="w-full inline-flex items-center justify-center gap-2 bg-tangerine text-white font-semibold rounded-full py-3.5 text-[15px] hover:bg-tangerine-dark transition"
+          >
+            Upload a photo instead
+          </button>
+          <button onClick={onCancel} className="text-[13px] text-muted hover:text-ink py-2">
+            ← back
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="text-center">
+      {/* Live viewfinder — tall aspect ratio, scan-line overlay */}
+      <div
+        className="relative mx-auto w-full max-w-sm bg-black rounded-3xl overflow-hidden shadow-[0_8px_24px_-12px_rgba(13,45,36,0.18)]"
+        style={{ aspectRatio: '3 / 4' }}
+      >
+        {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
+        <video
+          ref={videoRef}
+          autoPlay
+          playsInline
+          muted
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ transform: facingMode === 'user' ? 'scaleX(-1)' : 'none' }}
+        />
+
+        {/* Loading shimmer until ready */}
+        {!ready && (
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2A6E47] via-[#1F5535] to-[#163C25] flex items-center justify-center">
+            <span className="inline-block w-5 h-5 rounded-full border-2 border-tangerine border-t-transparent animate-spin" />
+          </div>
+        )}
+
+        {/* Viewfinder overlay — corner brackets + scan line */}
+        <div className="absolute inset-6 pointer-events-none">
+          <div className="absolute top-0 left-0 w-8 h-8 border-t-[2.5px] border-l-[2.5px] border-tangerine" />
+          <div className="absolute top-0 right-0 w-8 h-8 border-t-[2.5px] border-r-[2.5px] border-tangerine" />
+          <div className="absolute bottom-0 left-0 w-8 h-8 border-b-[2.5px] border-l-[2.5px] border-tangerine" />
+          <div className="absolute bottom-0 right-0 w-8 h-8 border-b-[2.5px] border-r-[2.5px] border-tangerine" />
+          {ready && (
+            <div
+              className="absolute left-0 right-0 h-0.5 bg-tangerine shadow-[0_0_12px_rgba(255,107,61,0.8)]"
+              style={{ animation: 'liveScanline 1.6s ease-in-out infinite' }}
+            />
+          )}
+        </div>
+
+        {/* Top status bar */}
+        <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/50 backdrop-blur text-[10px] font-bold tracking-widest uppercase text-tangerine">
+            <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
+            LIVE · point at a player
+          </span>
+          <button
+            onClick={flipCamera}
+            aria-label="Flip camera"
+            className="w-8 h-8 rounded-full bg-black/50 backdrop-blur flex items-center justify-center text-white hover:bg-black/70 transition"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <polyline points="1 4 1 10 7 10" />
+              <polyline points="23 20 23 14 17 14" />
+              <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Capture controls */}
+      <div className="mt-5 flex items-center justify-center gap-5">
+        <button
+          onClick={onCancel}
+          aria-label="Cancel"
+          className="w-12 h-12 rounded-full bg-white border border-[var(--hairline)] flex items-center justify-center text-ink-soft hover:bg-cream-warm transition"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden>
+            <path d="M3 3 L13 13 M13 3 L3 13" />
+          </svg>
+        </button>
+
+        {/* The big capture button */}
+        <button
+          onClick={captureFrame}
+          disabled={!ready}
+          aria-label="Capture and scan"
+          className="w-20 h-20 rounded-full bg-white border-4 border-tangerine flex items-center justify-center transition hover:scale-105 active:scale-95 disabled:opacity-50 shadow-[0_8px_22px_-10px_rgba(255,107,61,0.55)]"
+        >
+          <span className="block w-14 h-14 rounded-full bg-tangerine" />
+        </button>
+
+        <button
+          onClick={onFallbackUpload}
+          aria-label="Upload from device instead"
+          className="w-12 h-12 rounded-full bg-white border border-[var(--hairline)] flex items-center justify-center text-ink-soft hover:bg-cream-warm transition"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <circle cx="8.5" cy="8.5" r="1.5" />
+            <polyline points="21 15 16 10 5 21" />
+          </svg>
+        </button>
+      </div>
+
+      <p className="mt-4 text-[12px] text-muted">
+        Frame the player's jersey. Tap the orange button to scan.
+      </p>
+
+      <style jsx>{`
+        @keyframes liveScanline {
+          0% { top: 0; opacity: 0; }
+          15% { opacity: 1; }
+          85% { opacity: 1; }
+          100% { top: 100%; opacity: 0; }
+        }
+      `}</style>
+    </div>
+  );
+}
 
 function ScanningState({ previewUrl }: { previewUrl: string | null }) {
   return (
