@@ -70,6 +70,34 @@
             "date": "2025-02-15"
           }
         ]
+      },
+      {
+        "id": "mahomes-brittany-political-differences",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Wife Brittany shows MAGA support; Patrick refuses political endorsements",
+        "summary": "Brittany Mahomes attended Stagecoach music festival in April 2026 and has liked pro-Trump messaging. Patrick stated he won't endorse candidates, focusing instead on voter registration and research. The couple disagrees politically but maintains mutual respect.",
+        "sources": [
+          {
+            "name": "NBC News",
+            "url": "https://www.nbcnews.com/news/us-news/patrick-mahomes-wont-endorse-presidential-candidate-trump-praises-brit-rcna170808",
+            "date": "2026-04-15"
+          }
+        ]
+      },
+      {
+        "id": "mahomes-sister-zoe-messi-meeting",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Half-sister Zoe met Lionel Messi at Super Bowl LIX",
+        "summary": "Patrick's half-sister Zoe, an aspiring soccer player, met her idol Lionel Messi during Super Bowl LIX in New Orleans and had an emotional moment.",
+        "sources": [
+          {
+            "name": "Professional Football Network",
+            "url": "https://www.profootballnetwork.com/who-is-patrick-mahomes-sister-mia-randall-lifestyle/",
+            "date": "2026-02-15"
+          }
+        ]
       }
     ]
   },
@@ -161,6 +189,34 @@
             "name": "ABC News GMA",
             "url": "https://abcnews.go.com/GMA/Culture/exclusive-1st-end-era-travis-kelce-joins-taylor/story?id=128488203",
             "date": "2025-01-22"
+          }
+        ]
+      },
+      {
+        "id": "kelce-swift-engagement-august-2025",
+        "tier": "reported",
+        "category": "romance",
+        "headline": "Engaged to Taylor Swift, August 2025 proposal",
+        "summary": "Kelce proposed to Taylor Swift on August 10, 2025 with the playful caption 'Your English teacher and your gym teacher are getting married.' Wedding planned for July 3, 2026 in Manhattan.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/45502036/travis-kelce-taylor-swift-engagement-announcement-kansas-city-chiefs-marriage-wedding",
+            "date": "2025-08-10"
+          }
+        ]
+      },
+      {
+        "id": "kelce-kingdom-documentary",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Featured in ESPN's 'The Kingdom' Chiefs documentary series",
+        "summary": "Six-part ESPN documentary 'The Kingdom' follows the Kansas City Chiefs' 2024 season with Kelce featured alongside Patrick Mahomes, Andy Reid, and Chris Jones. Available on Disney+ and ESPN.",
+        "sources": [
+          {
+            "name": "Bleacher Report",
+            "url": "https://bleacherreport.com/articles/25195518-espns-chiefs-documentary-kingdom-previewed-video-mahomes-kelce-reid",
+            "date": "2026-02-01"
           }
         ]
       }
@@ -1549,6 +1605,34 @@
             "date": "2024-12-10"
           }
         ]
+      },
+      {
+        "id": "rodgers-married-2025-brittani",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married to Brittani, previously dated Mallory Edens",
+        "summary": "Rodgers confirmed he's been married for 'a couple of months' during an offseason interview. His spouse is named Brittani and prefers to stay out of the spotlight. Previously dated Milwaukee Bucks heiress Mallory Edens.",
+        "sources": [
+          {
+            "name": "Extra TV",
+            "url": "https://extratv.com/2025/06/10/aaron-rodgers-confirms-he-s-been-married-for-a-couple-months",
+            "date": "2025-06-10"
+          }
+        ]
+      },
+      {
+        "id": "rodgers-ayahuasca-netflix",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Netflix documentary 'Enigma' features ayahuasca retreat",
+        "summary": "Netflix documentary 'Aaron Rodgers: Enigma' (December 2024) features Rodgers' week-long ayahuasca retreat in Costa Rica in 2023. He described it as spiritual transformation for mental clarity and personal development.",
+        "sources": [
+          {
+            "name": "Hollywood Reporter",
+            "url": "https://www.hollywoodreporter.com/lists/aaron-rodgers-netflix-series-enigma/",
+            "date": "2024-12-15"
+          }
+        ]
       }
     ]
   },
@@ -2015,6 +2099,1912 @@
             "name": "PGA Tour",
             "url": "https://pgatour.com",
             "date": "2025-04-10"
+          }
+        ]
+      }
+    ]
+  },
+  "ja-morant": {
+    "player_id": "ja-morant",
+    "name": "Ja Morant",
+    "team": "mem",
+    "league": "nba",
+    "items": [
+      {
+        "id": "morant-coach-conflict-suspension",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Suspended after clash with coach Tuomas Iisalo over leadership",
+        "summary": "Ja was suspended one game in November 2025 after a postgame exchange with coach Tuomas Iisalo, where Iisalo challenged his leadership and Morant responded in a tone the franchise deemed inappropriate. He later told players and ex-coaches he would no longer play for Memphis.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/46849285/why-was-ja-morant-suspended-next-faq-latest-grizzlies-drama",
+            "date": "2026-04-15"
+          },
+          {
+            "name": "BET News",
+            "url": "https://www.bet.com/article/u7hoh5/ja-morant-suspended-after-blasting-grizzlies-coaching-staff",
+            "date": "2025-11-17"
+          }
+        ]
+      },
+      {
+        "id": "morant-alienated-teammates",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Felt alienated by teammates following suspension",
+        "summary": "After his one-game suspension in 2025, Morant felt alienated by his team, which contributed to his decision to request out. Multiple league sources later confirmed the Grizzlies were entertaining trade offers for the All-Star guard.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/48477422/inside-end-ja-morant-era-memphis",
+            "date": "2026-04-20"
+          },
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/ja-morant-had-problems-teammates-141240146.html",
+            "date": "2026-04-21"
+          }
+        ]
+      }
+    ]
+  },
+  "kyrie-irving": {
+    "player_id": "kyrie-irving",
+    "name": "Kyrie Irving",
+    "team": "dal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "kyrie-marlene-relationship",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Long-term partner Marlene Wilkerson, two kids together",
+        "summary": "Kyrie has been in a long-term relationship with entrepreneur and influencer Marlene Wilkerson since 2018. They got engaged in 2019 and have two sons together. Irving emphasized in 2025 that 86% of NBA marriages end in divorce, and he focuses on the 14% that succeed.",
+        "sources": [
+          {
+            "name": "Pro Football Network",
+            "url": "https://www.profootballnetwork.com/nba/is-kyrie-irving-married-all-about-mavericks-star-wife-marlene-wilkerson/",
+            "date": "2025-08-10"
+          },
+          {
+            "name": "Basketball Network",
+            "url": "https://www.basketballnetwork.net/off-the-court/kyrie-irving-claims-86-of-nba-marriages-end-in-divorce-i-try-to-focus-on-the-other-14/",
+            "date": "2025-07-15"
+          }
+        ]
+      }
+    ]
+  },
+  "tyrese-haliburton": {
+    "player_id": "tyrese-haliburton",
+    "name": "Tyrese Haliburton",
+    "team": "ind",
+    "league": "nba",
+    "items": [
+      {
+        "id": "haliburton-jade-jones-engagement",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Engaged to college sweetheart Jade Jones at Iowa State",
+        "summary": "Tyrese proposed to longtime girlfriend Jade Jones on July 28, 2025, at the Hilton Coliseum basketball court where they first met at Iowa State. He presented her with an oval-cut diamond ring after six years of dating.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/45844544/tyrese-haliburton-proposes-engaged-jade-jones-pacers",
+            "date": "2025-07-29"
+          },
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2025/07/28/tyrese-haliburton-engagement-jade-jones/",
+            "date": "2025-07-28"
+          }
+        ]
+      },
+      {
+        "id": "haliburton-viral-criticism",
+        "tier": "speculation",
+        "category": "off_field",
+        "headline": "Addressed viral jokes about his social circle",
+        "summary": "In early 2025, Haliburton addressed online criticism about hanging out with white women, noting he grew up around all white people in Wisconsin. He clarified that people in a viral video were his fiancee's sister and childhood friends, not strangers.",
+        "sources": [
+          {
+            "name": "Basketball Network",
+            "url": "https://www.basketballnetwork.net/off-the-court/tyrese-haliburton-addresses-the-viral-jokes-about-only-hanging-out-with-white-girls/",
+            "date": "2025-02-01"
+          },
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/grew-around-white-people-tyrese-080500303.html",
+            "date": "2025-01-31"
+          }
+        ]
+      }
+    ]
+  },
+  "jalen-brunson": {
+    "player_id": "jalen-brunson",
+    "name": "Jalen Brunson",
+    "team": "nyk",
+    "league": "nba",
+    "items": [
+      {
+        "id": "brunson-ali-marks-wedding",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married high school sweetheart Ali Marks at Ritz-Carlton Chicago",
+        "summary": "Jalen married his high school girlfriend Ali Marks on July 29, 2023, at a lavish Ritz-Carlton wedding in Chicago. They have been together since 2013 at Adlai E. Stevenson High School in Illinois.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/article/jalen-brunson-wife-ali-marks-114554426.html",
+            "date": "2023-08-01"
+          },
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-is-jalen-brunsons-wife-everything-we-know-about-ali-marks-brunson/",
+            "date": "2023-08-02"
+          }
+        ]
+      },
+      {
+        "id": "brunson-daughter-born",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Welcomed daughter Jordyn James Brunson",
+        "summary": "Jalen and Ali welcomed their first child together, daughter Jordyn James Brunson, on July 31, 2024. Ali is a physical therapist who runs the AMB Method fitness program in Scarsdale, NY.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/article/jalen-brunson-wife-ali-marks-114554426.html",
+            "date": "2024-08-15"
+          },
+          {
+            "name": "Hello Magazine",
+            "url": "https://www.hellomagazine.com/brides/882001/new-york-knicks-star-jalen-brunson-wife-and-child/",
+            "date": "2024-08-20"
+          }
+        ]
+      }
+    ]
+  },
+  "jamal-murray": {
+    "player_id": "jamal-murray",
+    "name": "Jamal Murray",
+    "team": "den",
+    "league": "nba",
+    "items": [
+      {
+        "id": "murray-harper-hempel-longtime",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating longtime girlfriend Harper Hempel since Kentucky",
+        "summary": "Jamal has been dating Harper Hempel since they met at the University of Kentucky in 2015. Hempel is a professional photographer and head of partnerships at The Cold Life, and maintains a private Instagram with over 58k followers.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-is-jamal-murray-dating-all-you-need-to-know-about-two-hundred-eight-million-denver-nuggets-star-s-love-life/",
+            "date": "2024-06-15"
+          },
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://www.yahoo.com/entertainment/jamal-murray-girlfriend-harper-hempel-183044375.html",
+            "date": "2024-05-20"
+          }
+        ]
+      }
+    ]
+  },
+  "klay-thompson": {
+    "player_id": "klay-thompson",
+    "name": "Klay Thompson",
+    "team": "dal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "thompson-megan-breakup-cheating",
+        "tier": "reported",
+        "category": "romance",
+        "headline": "Broke up with Megan Thee Stallion over cheating allegations",
+        "summary": "Megan Thee Stallion ended her nine-month relationship with Klay Thompson in April 2026, posting on Instagram that he cheated and had cold feet about being monogamous. She said trust and fidelity are non-negotiable. Thompson has not publicly responded.",
+        "sources": [
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2026/04/25/megan-thee-stallion-klay-thompson-break-up/",
+            "date": "2026-04-25"
+          },
+          {
+            "name": "E! News",
+            "url": "https://www.eonline.com/news/1431326/megan-thee-stallion-alleges-klay-thompson-cheated-reveals-break-up",
+            "date": "2026-04-26"
+          }
+        ]
+      },
+      {
+        "id": "thompson-megan-thanksgiving",
+        "tier": "reported",
+        "category": "romance",
+        "headline": "Got approval from parents after Thanksgiving dinner",
+        "summary": "In November 2025, Megan Thee Stallion cooked Thanksgiving dinner for Klay's parents Mychal and Julie Thompson. Mychal called it the best Thanksgiving food he'd ever eaten, signaling family approval before the couple's eventual split.",
+        "sources": [
+          {
+            "name": "Basketball Network",
+            "url": "https://www.basketballnetwork.net/off-the-court/charlamagne-tha-god-says-megan-thee-stallion-klay-thompson-breakup-is-overblown-why-are-we-acting-like-they-was-married-for-20-years/",
+            "date": "2026-04-27"
+          }
+        ]
+      }
+    ]
+  },
+  "damian-lillard": {
+    "player_id": "damian-lillard",
+    "name": "Damian Lillard",
+    "team": "mil",
+    "league": "nba",
+    "items": [
+      {
+        "id": "lillard-divorce-filing",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Filed for divorce from wife Kay'La citing irreconcilable differences",
+        "summary": "Damian filed for divorce from his estranged wife Kay'La in October 2023, citing irreconcilable differences. The couple share three children: Damian Jr. and twins Kali and Kalii.",
+        "sources": [
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2023/10/05/milwaukee-bucks-damian-lillard-files-divorce-wife-kayla/",
+            "date": "2023-10-05"
+          },
+          {
+            "name": "Bleacher Report",
+            "url": "https://bleacherreport.com/articles/10092251-report-bucks-damian-lillard-files-for-divorce-from-wife-kay-la-ahead-of-nba-season",
+            "date": "2023-10-05"
+          }
+        ]
+      },
+      {
+        "id": "lillard-custody-battle",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Estranged wife seeks sole custody of three children",
+        "summary": "In divorce filings, Kay'La sought sole custody of their three children, stating Lillard had never been the sole parent responsible for their care for extended periods without help from nannies and assistants. She indicated desire for children to maintain a healthy relationship with their father.",
+        "sources": [
+          {
+            "name": "Essence",
+            "url": "https://www.essence.com/lifestyle/lillard-custody-battle/",
+            "date": "2023-10-15"
+          },
+          {
+            "name": "KOIN",
+            "url": "https://www.koin.com/news/lillards-wife-seeking-sole-custody-of-couples-3-children/",
+            "date": "2023-10-10"
+          }
+        ]
+      }
+    ]
+  },
+  "donovan-mitchell": {
+    "player_id": "donovan-mitchell",
+    "name": "Donovan Mitchell",
+    "team": "cle",
+    "league": "nba",
+    "items": [
+      {
+        "id": "mitchell-coco-jones-engagement",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Engaged to Grammy-winning singer Coco Jones",
+        "summary": "Donovan proposed to singer Coco Jones on July 11, 2025, while on vacation after his season and her tour. He got down on one knee with her song 'You' playing. They started dating in June 2023 after meeting at an Usher concert.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/45719084/cleveland-cavaliers-donovan-mitchell-engagement-coco-jones",
+            "date": "2025-07-12"
+          },
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2025/07/11/donovan-mitchell-coco-jones-engaged/",
+            "date": "2025-07-11"
+          }
+        ]
+      }
+    ]
+  },
+  "lamelo-ball": {
+    "player_id": "lamelo-ball",
+    "name": "LaMelo Ball",
+    "team": "cha",
+    "league": "nba",
+    "items": [
+      {
+        "id": "lamelo-ana-montana-age-gap",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating model Ana Montana with 12-year age gap",
+        "summary": "LaMelo has been dating model and influencer Ana Montana (real name Analicia Chaves) since 2021, going public in June 2023. The couple faced criticism for their 12-year age difference but keep their relationship low-key.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/onsi/athlete-lifestyle/news/lamelo-ball-girlfriend-ana-montana-toxic-confession-sparks-buzz",
+            "date": "2025-03-20"
+          },
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://www.yahoo.com/entertainment/lamelo-ball-girlfriend-ana-montana-220913000.html",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "lamelo-no-homo-fine",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Fined $100,000 for using anti-gay slur in postgame interview",
+        "summary": "LaMelo was fined $100,000 by the NBA on November 17, 2024, for using the phrase 'no homo' during a postgame interview after the Hornets beat the Bucks. The NBA called it an offensive and derogatory comment.",
+        "sources": [
+          {
+            "name": "CNN",
+            "url": "https://www.cnn.com/2024/11/18/sport/lamelo-ball-fined-offensive-phrase-spt-intl",
+            "date": "2024-11-18"
+          },
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/nba/article/nba-fines-lamelo-ball-100k-230401113.html",
+            "date": "2024-11-17"
+          }
+        ]
+      },
+      {
+        "id": "lamelo-lawsuit-hit-child",
+        "tier": "reported",
+        "category": "legal",
+        "headline": "Sued by mother claiming he hit her child with his car",
+        "summary": "In May 2024, a lawsuit was filed against LaMelo and the Hornets alleging he hit a 12-year-old boy with his car outside the Spectrum Center in October 2023 after a fan event. The boy suffered minor bruises and scratches. The plaintiff seeks over $25,000 in damages.",
+        "sources": [
+          {
+            "name": "CNN",
+            "url": "https://www.cnn.com/2024/05/23/sport/lamelo-ball-sued-nba-hornets-spt-intl/index.html",
+            "date": "2024-05-23"
+          },
+          {
+            "name": "ABC7",
+            "url": "https://abc7.com/post/mother-sues-charlotte-hornets-star-lamelo-ball-allegedly/14872481/",
+            "date": "2024-05-22"
+          }
+        ]
+      }
+    ]
+  },
+  "anthony-davis": {
+    "player_id": "anthony-davis",
+    "name": "Anthony Davis",
+    "team": "wsh",
+    "league": "nba",
+    "items": [
+      {
+        "id": "davis-marlen-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Married to Marlen Davis with three children",
+        "summary": "Anthony married Marlen Polanco in 2021 at a star-studded Beverly Hills Hotel wedding attended by LeBron James, Adele, and Russell Westbrook. They have three children together and live in Bel Air. Marlen manages the household and estate design.",
+        "sources": [
+          {
+            "name": "Hello Magazine",
+            "url": "https://www.hellomagazine.com/celebrities/879474/meet-dallas-mavericks-star-anthony-davis-stunning-wife-and-their-three-children/",
+            "date": "2024-06-15"
+          },
+          {
+            "name": "NBC Insider",
+            "url": "https://www.nbc.com/nbc-insider/2024-olympic-basketball-anthony-davis-wife-marlen-kids",
+            "date": "2024-07-20"
+          }
+        ]
+      },
+      {
+        "id": "davis-trade-washington",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded to Washington Wizards in three-team deal",
+        "summary": "Anthony was traded to the Washington Wizards in early February 2026 in a three-team deal involving the Mavericks and Hornets. The Mavericks sought financial flexibility and draft picks, shedding $70 million in payroll. Davis had only played in about one-third of games as a Maverick.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nba/mavericks/onsi/news/why-dallas-mavericks-traded-anthony-davis-washington-wizards-overs-hawks-raptors-",
+            "date": "2026-02-05"
+          },
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/mavs/news/mavericks-shrewd-trade-of-davis-geared-to-improve-future-roster-flexibility",
+            "date": "2026-02-05"
+          }
+        ]
+      }
+    ]
+  },
+  "jimmy-butler": {
+    "player_id": "jimmy-butler",
+    "name": "Jimmy Butler",
+    "team": "gsw",
+    "league": "nba",
+    "items": [
+      {
+        "id": "butler-rent-lawsuit",
+        "tier": "reported",
+        "category": "legal",
+        "headline": "Sued for unpaid rent and property damage in Miami Beach",
+        "summary": "Jimmy Butler was sued by Five Star Marketing and Promotions for allegedly failing to pay $260,000 in rent and leaving behind more than $127,000 in damages on a luxury home he leased in Miami Beach, Florida.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/44082578/jimmy-butler-faces-lawsuit-unpaid-rent-property-damages",
+            "date": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "id": "butler-heat-suspension",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Suspended indefinitely by Miami Heat, requested trade",
+        "summary": "Jimmy Butler was suspended by the Miami Heat for conduct detrimental to the team after he requested a trade, marking a dramatic end to his tenure with the franchise.",
+        "sources": [
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2025/01/27/jimmy-butler-suspended/",
+            "date": "2025-01-27"
+          }
+        ]
+      }
+    ]
+  },
+  "kawhi-leonard": {
+    "player_id": "kawhi-leonard",
+    "name": "Kawhi Leonard",
+    "team": "lac",
+    "league": "nba",
+    "items": [
+      {
+        "id": "kawhi-aspiration-scandal",
+        "tier": "reported",
+        "category": "legal",
+        "headline": "NBA investigates $28M Aspiration endorsement deal for salary cap circumvention",
+        "summary": "The NBA launched an investigation into Kawhi Leonard's $28 million endorsement deal with Aspiration, a company backed by Clippers owner Steve Ballmer. Reports suggest the deal was a no-show job used to circumvent the salary cap, with Leonard making no visible promotional appearances for the company.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/48369328/the-latest-kawhi-leonard-steve-ballmer-nba-investigation-aspiration-la-clippers",
+            "date": "2025-09-01"
+          },
+          {
+            "name": "The Ringer",
+            "url": "https://www.theringer.com/2025/09/09/nba/kawhi-leonard-los-angeles-clippers-steve-ballmer-aspiration-salary-cap-circumvention",
+            "date": "2025-09-09"
+          }
+        ]
+      },
+      {
+        "id": "kawhi-family-evacuation",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Stepped away from team to be with family during Southern California wildfires",
+        "summary": "After appearing in just two games in early 2025, Kawhi Leonard stepped away from the Clippers to be with family members who were forced to evacuate during the Southern California wildfires.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/48369328/the-latest-kawhi-leonard-steve-ballmer-nba-investigation-aspiration-la-clippers",
+            "date": "2025-01-15"
+          }
+        ]
+      }
+    ]
+  },
+  "trae-young": {
+    "player_id": "trae-young",
+    "name": "Trae Young",
+    "team": "wsh",
+    "league": "nba",
+    "items": [
+      {
+        "id": "trae-traded-washington",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded mid-season from Hawks to Wizards in blockbuster deal",
+        "summary": "Trae Young was traded from the Atlanta Hawks to the Washington Wizards in early January 2026 as part of a mid-season blockbuster, ending his eight-year tenure with Atlanta.",
+        "sources": [
+          {
+            "name": "Clutch Points",
+            "url": "https://clutchpoints.com/nba/atlanta-hawks/sources-hawks-trade-trae-young-to-wizards",
+            "date": "2026-01-09"
+          }
+        ]
+      }
+    ]
+  },
+  "tyler-herro": {
+    "player_id": "tyler-herro",
+    "name": "Tyler Herro",
+    "team": "mia",
+    "league": "nba",
+    "items": [
+      {
+        "id": "herro-foot-procedure",
+        "tier": "confirmed",
+        "category": "health",
+        "headline": "Underwent minor foot procedure during playoffs",
+        "summary": "Tyler Herro underwent a minor foot procedure in April 2026, though the injury was not expected to impact training camp and he was expected to be ready with no restrictions.",
+        "sources": [
+          {
+            "name": "Hot Hot Hoops",
+            "url": "https://hothothoops.com/2026/04/04/miami-heat-unfortunate-injury-update-tyler-herro-wizards/",
+            "date": "2026-04-04"
+          }
+        ]
+      }
+    ]
+  },
+  "bam-adebayo": {
+    "player_id": "bam-adebayo",
+    "name": "Bam Adebayo",
+    "team": "mia",
+    "league": "nba",
+    "items": [
+      {
+        "id": "bam-aja-couple",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating WNBA MVP A'ja Wilson, called her his 'life partner'",
+        "summary": "Bam Adebayo and WNBA star A'ja Wilson made their relationship official, with Wilson calling him her life partner. The couple met during the 2024 Paris Olympics and have been spotted together frequently. Wilson openly discussed plans for the future including starting a family.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/bam-adebayo-girlfriend-ja-wilson-161152893.html",
+            "date": "2026-03-01"
+          }
+        ]
+      }
+    ]
+  },
+  "karl-anthony-towns": {
+    "player_id": "karl-anthony-towns",
+    "name": "Karl-Anthony Towns",
+    "team": "nyk",
+    "league": "nba",
+    "items": [
+      {
+        "id": "kat-jordyn-woods-proposal",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Proposed to model Jordyn Woods on Christmas 2025 with rooftop NYC proposal",
+        "summary": "Karl-Anthony Towns proposed to Jordyn Woods on Christmas Day 2025 at a rooftop venue with the New York City skyline in the background. The couple has been dating since 2020 and announced the engagement on Instagram.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/47412952/karl-anthony-towns-jordyn-woods-proposal-engagement-nba-new-york-knicks",
+            "date": "2025-12-25"
+          },
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2025/12/25/jordyn-woods-karl-towns-engaged/",
+            "date": "2025-12-25"
+          }
+        ]
+      }
+    ]
+  },
+  "russell-westbrook": {
+    "player_id": "russell-westbrook",
+    "name": "Russell Westbrook",
+    "team": "sac",
+    "league": "nba",
+    "items": [
+      {
+        "id": "westbrook-vow-renewal-italy",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Renewed vows with wife Nina in romantic ceremony aboard boat in Italy",
+        "summary": "Russell and Nina Westbrook renewed their vows in August 2025 aboard a flower-adorned boat in Portofino, Italy, celebrating nearly 10 years of marriage. Both got emotional during the ceremony surrounded by family and friends.",
+        "sources": [
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2025/08/25/russell-westbrook-renews-vows-wife/",
+            "date": "2025-08-25"
+          }
+        ]
+      }
+    ]
+  },
+  "draymond-green": {
+    "player_id": "draymond-green",
+    "name": "Draymond Green",
+    "team": "gsw",
+    "league": "nba",
+    "items": [
+      {
+        "id": "draymond-fifth-child",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Wife Hazel Renee expecting their fifth child together during 2025-26 season",
+        "summary": "Draymond Green opened up about the emotional toll of being on the road while his pregnant wife Hazel Renee remained at home during the 2025-26 season. The couple is expecting their fifth child together.",
+        "sources": [
+          {
+            "name": "TheGrio",
+            "url": "https://thegrio.com/2025/12/05/draymond-green-opens-up-about-spending-so-much-time-away-from-home-pretty-sh-ty/",
+            "date": "2025-12-05"
+          }
+        ]
+      }
+    ]
+  },
+  "zion-williamson": {
+    "player_id": "zion-williamson",
+    "name": "Zion Williamson",
+    "team": "nop",
+    "league": "nba",
+    "items": [
+      {
+        "id": "zion-civil-lawsuit",
+        "tier": "reported",
+        "category": "legal",
+        "headline": "Accused of rape and domestic violence in civil lawsuit filed May 2025",
+        "summary": "A woman identified as Jane Doe from Seattle filed a civil lawsuit in Los Angeles Superior Court alleging Zion Williamson committed rape, sexual assault, physical abuse, and domestic violence over a relationship spanning from 2018 to 2023. Williamson denies the allegations and claims the plaintiff attempted extortion.",
+        "sources": [
+          {
+            "name": "Sportico",
+            "url": "https://www.sportico.com/law/analysis/2025/zion-williamson-lawsuit-pelicans-forward-accused-of-sexual-assault-1234854551/",
+            "date": "2025-05-30"
+          },
+          {
+            "name": "The Duke Chronicle",
+            "url": "https://www.dukechronicle.com/article/2025/05/duke-mens-basketball-zion-williamson-lawsuit-rape-abuse-assault-damages",
+            "date": "2025-05-15"
+          }
+        ]
+      },
+      {
+        "id": "zion-onlyfans-paternity",
+        "tier": "rumor",
+        "category": "off_field",
+        "headline": "OnlyFans model claims he is father of her child, demands DNA test",
+        "summary": "An OnlyFans creator named Alisa Alcantara (@dopechick69) publicly claimed in January 2026 that Zion Williamson is the father of her child and demanded a DNA test to settle a paternity dispute.",
+        "sources": [
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://www.yahoo.com/entertainment/celebrity/articles/onlyfans-model-claims-nba-player-232758547.html",
+            "date": "2026-01-15"
+          }
+        ]
+      }
+    ]
+  },
+  "scottie-barnes": {
+    "player_id": "scottie-barnes",
+    "name": "Scottie Barnes",
+    "team": "tor",
+    "league": "nba",
+    "items": [
+      {
+        "id": "barnes-alyssa-relationship",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating Toronto flight attendant Alyssa Rae Holmes, have daughter together",
+        "summary": "Scottie Barnes is in a relationship with Alyssa Rae Holmes, a 33-year-old Toronto-based flight attendant and musician. The couple's daughter Milli was born in October 2024. This relationship began in late 2024 after his breakup with his high school sweetheart Nari.",
+        "sources": [
+          {
+            "name": "Professional Football Network",
+            "url": "https://www.profootballnetwork.com/nba/scottie-barnes-girlfriend-alyssa-rae-holmes-daughter-milli/",
+            "date": "2024-12-01"
+          }
+        ]
+      }
+    ]
+  },
+  "chet-holmgren": {
+    "player_id": "chet-holmgren",
+    "name": "Chet Holmgren",
+    "team": "okc",
+    "league": "nba",
+    "items": [
+      {
+        "id": "holmgren-emelia-relationship",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Revealed new girlfriend Emelia on Instagram in April 2026",
+        "summary": "Chet Holmgren made his relationship public by posting a photo with his girlfriend Emelia (Instagram: @emeliascarlett) to his Instagram story on April 13, 2026. The couple appears to have been together for some time.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/onsi/athlete-lifestyle/news/chet-holmgren-reveals-new-girlfriend-emelia-with-dinner-embrace-photo",
+            "date": "2026-04-13"
+          }
+        ]
+      }
+    ]
+  },
+  "deaaron-fox": {
+    "player_id": "deaaron-fox",
+    "name": "De'Aaron Fox",
+    "team": "sas",
+    "league": "nba",
+    "items": [
+      {
+        "id": "fox-traded-spurs",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded to San Antonio Spurs in 2025, homecoming for wife Recee",
+        "summary": "De'Aaron Fox was traded from the Sacramento Kings to the San Antonio Spurs in 2025, marking a homecoming for his wife Recee Caldwell Fox, who grew up in San Antonio. The couple has two children together.",
+        "sources": [
+          {
+            "name": "Clutch Points",
+            "url": "https://clutchpoints.com/nba/san-antonio-spurs/deaaron-fox-wife-recee-caldwell",
+            "date": "2025-02-15"
+          }
+        ]
+      }
+    ]
+  },
+  "brock-purdy": {
+    "player_id": "brock-purdy",
+    "name": "Brock Purdy",
+    "team": "sf",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "purdy-jenna-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married to college sweetheart Jenna Brandt",
+        "summary": "Brock married former Iowa State volleyball player Jenna Brandt on March 9, 2024 in Des Moines, Iowa after a long-distance relationship.",
+        "sources": [
+          {
+            "name": "NBC Sports Bay Area",
+            "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/brock-purdy-jenna-purdy-birth-child/1864170/",
+            "date": "2024-03-09"
+          }
+        ]
+      },
+      {
+        "id": "purdy-daughter-birth",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Welcomed first child, daughter Millie Joleen",
+        "summary": "Brock and Jenna welcomed their daughter Millie Joleen Purdy in July 2025. Jenna announced the birth on Instagram on July 28, 2025.",
+        "sources": [
+          {
+            "name": "NBC Sports Bay Area",
+            "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/brock-purdy-jenna-purdy-birth-child/1864170/",
+            "date": "2025-07-28"
+          }
+        ]
+      }
+    ]
+  },
+  "christian-mccaffrey": {
+    "player_id": "christian-mccaffrey",
+    "name": "Christian McCaffrey",
+    "team": "sf",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "mccaffrey-olivia-engagement",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Engaged to model Olivia Culpo",
+        "summary": "Christian proposed to Olivia Culpo on April 2, 2023 at Amangiri wellness resort in Utah with a custom three-stone engagement ring from Ring Concierge.",
+        "sources": [
+          {
+            "name": "E! Online",
+            "url": "https://www.eonline.com/news/1370788/olivia-culpo-and-nfl-player-christian-mccaffrey-are-engaged",
+            "date": "2023-04-02"
+          }
+        ]
+      },
+      {
+        "id": "mccaffrey-olivia-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Olivia Culpo in June 2024",
+        "summary": "Christian and Olivia Culpo married in June 2024 in Rhode Island after three years of dating.",
+        "sources": [
+          {
+            "name": "Distractify",
+            "url": "https://www.distractify.com/p/christian-mccaffrey-olivia-culpo-relationship-timeline",
+            "date": "2024-06-01"
+          }
+        ]
+      },
+      {
+        "id": "mccaffrey-daughter-birth",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "First child, daughter Colette Annalise, born July 2025",
+        "summary": "Christian and Olivia welcomed their first daughter, Colette Annalise McCaffrey, in July 2025.",
+        "sources": [
+          {
+            "name": "Hello Magazine",
+            "url": "https://www.hellomagazine.com/healthandbeauty/mother-and-baby/841472/olivia-culpo-christian-mccaffreys-relationship-timeline-as-they-prepare-to-welcome-first-child/",
+            "date": "2025-07-01"
+          }
+        ]
+      }
+    ]
+  },
+  "deebo-samuel": {
+    "player_id": "deebo-samuel",
+    "name": "Deebo Samuel",
+    "team": "sf",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "deebo-mahogany-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Long-term partner Mahogany Jones; father to son Tysan",
+        "summary": "Deebo has been with fashion entrepreneur Mahogany Jones since 2019. They welcomed son Tysan Samuel in December 2021. Jones is a fashion entrepreneur and influencer with nearly 275K Instagram followers.",
+        "sources": [
+          {
+            "name": "Pro Football Network",
+            "url": "https://www.profootballnetwork.com/deebo-samuel-relationship-lifestyle/",
+            "date": "2021-12-01"
+          }
+        ]
+      },
+      {
+        "id": "deebo-kids-camp",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Hosted free kids camp in hometown Spartanburg",
+        "summary": "Deebo hosted a free skills camp at Spartanburg High School in April 2026 with over 400 kids participating, including his own son.",
+        "sources": [
+          {
+            "name": "Fox Carolina",
+            "url": "https://www.foxcarolina.com/2026/04/25/nfl-wr-former-gamecock-deebo-samuel-hosts-kids-camp-spartanburg/",
+            "date": "2026-04-25"
+          }
+        ]
+      }
+    ]
+  },
+  "george-kittle": {
+    "player_id": "george-kittle",
+    "name": "George Kittle",
+    "team": "sf",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "kittle-claire-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married to college sweetheart Claire Till since 2019",
+        "summary": "George met Claire Till at the University of Iowa in 2012 and proposed in 2018. They married on April 10, 2019 in Iowa City.",
+        "sources": [
+          {
+            "name": "Hello Magazine",
+            "url": "https://www.hellomagazine.com/brides/513080/inside-san-francisco-49ers-george-kittle-relationship-bodybuilder-wife-claire-marriage/",
+            "date": "2019-04-10"
+          }
+        ]
+      },
+      {
+        "id": "kittle-pregnancy-loss",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Claire had ectopic pregnancy in early 2023",
+        "summary": "In February 2023, Claire revealed she had an ectopic pregnancy earlier that year, discovered at 7.5 weeks along. The condition is unviable and dangerous.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/george-kittle-wife-shares-heartbreaking-moment-she-saw-his-devastating-playoff-injury-162837555.html",
+            "date": "2023-02-01"
+          }
+        ]
+      },
+      {
+        "id": "kittle-stay-home-dad",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "George reveals dream of becoming stay-at-home dad after NFL",
+        "summary": "In an exclusive People interview, George said his dream job after ending his NFL career is to be a stay-at-home dad.",
+        "sources": [
+          {
+            "name": "AOL",
+            "url": "https://www.aol.com/articles/george-kittle-reveals-wants-stay-193957127.html",
+            "date": "2025-01-15"
+          }
+        ]
+      }
+    ]
+  },
+  "davante-adams": {
+    "player_id": "davante-adams",
+    "name": "Davante Adams",
+    "team": "lar",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "adams-pierce-drama",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Requested trade after Raiders coach liked post questioning his future",
+        "summary": "In September 2024, Raiders HC Antonio Pierce's verified Instagram account liked a post speculating Davante had played his last game with the team. Davante requested a trade hours later, saying Pierce never communicated with him about it.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/davante-adams-says-he-hasn-t-heard-from-antonio-pierce-after-hc-appears-to-like-post-on-trade-speculation",
+            "date": "2024-10-01"
+          }
+        ]
+      },
+      {
+        "id": "adams-photographer-assault",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Charged with misdemeanor assault for shoving photographer",
+        "summary": "Davante was charged with misdemeanor assault for pushing a freelance photographer working for Monday Night Football while walking off the field after a loss to Kansas City Chiefs.",
+        "sources": [
+          {
+            "name": "ABC News",
+            "url": "https://abcnews.go.com/Sports/raiders-wide-receiver-davante-adams-charged-misdemeanor-assault/story?id=91387710",
+            "date": "2022-10-10"
+          }
+        ]
+      }
+    ]
+  },
+  "stefon-diggs": {
+    "player_id": "stefon-diggs",
+    "name": "Stefon Diggs",
+    "team": "hou",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "diggs-cardi-baby",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating rapper Cardi B; welcomed baby boy in November 2025",
+        "summary": "Stefon and Cardi B confirmed their relationship on June 1, 2025 via Instagram. In September 2025, Cardi announced to Gayle King she was having Stefon's baby. They welcomed a baby boy in November 2025.",
+        "sources": [
+          {
+            "name": "Billboard",
+            "url": "https://www.billboard.com/lists/cardi-b-stefon-diggs-relationship-timeline/",
+            "date": "2025-06-01"
+          }
+        ]
+      },
+      {
+        "id": "diggs-second-daughter",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Second daughter born in April 2025 with model Aileen Lopera",
+        "summary": "Stefon's second daughter was born in April 2025 with model Aileen Lopera.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/stefon-diggs-girlfriend-cardi-b-000000423.html",
+            "date": "2025-04-01"
+          }
+        ]
+      },
+      {
+        "id": "diggs-yacht-video",
+        "tier": "reported",
+        "category": "legal",
+        "headline": "Video surfaced of Diggs on yacht with pink substance; Patriots launched investigation",
+        "summary": "In May 2025, a video of Stefon with women on a yacht holding a pink substance surfaced online. Patriots HC Mike Vrabel announced the team would investigate.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/stefon-diggs-girlfriend-cardi-b-000000423.html",
+            "date": "2025-05-15"
+          }
+        ]
+      }
+    ]
+  },
+  "cooper-kupp": {
+    "player_id": "cooper-kupp",
+    "name": "Cooper Kupp",
+    "team": "lar",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "kupp-anna-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "High school sweethearts married since 2015",
+        "summary": "Cooper and Anna Marie Kupp have been together since 2012 in high school and married in 2015, two years before Cooper's NFL debut.",
+        "sources": [
+          {
+            "name": "Pro Football Network",
+            "url": "https://www.profootballnetwork.com/who-are-cooper-kupps-wife-anna-a-look-at-seahawks-wrs-relationship-timeline/",
+            "date": "2015-01-01"
+          }
+        ]
+      },
+      {
+        "id": "kupp-three-sons",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father of three sons",
+        "summary": "Cooper and Anna have three boys: Cooper Jameson (born 2018), Cypress Stellar (born 2021), and Solas Reign (born 2023).",
+        "sources": [
+          {
+            "name": "Just Jared",
+            "url": "https://www.justjared.com/2026/02/08/who-are-cooper-kupps-wife-kids-meet-his-family-see-the-cutest-photos/",
+            "date": "2023-01-01"
+          }
+        ]
+      },
+      {
+        "id": "kupp-relocation-struggle",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Anna struggled emotionally after Rams-to-Seahawks trade in 2026",
+        "summary": "After 8 years in Los Angeles, Anna had difficulty adjusting to the Seattle move in early 2026. She wrote on Substack: 'If I'm being honest the first few months, I cried every day.'",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/cried-every-day-sobbed-cooper-103053112.html",
+            "date": "2026-02-01"
+          }
+        ]
+      }
+    ]
+  },
+  "puka-nacua": {
+    "player_id": "puka-nacua",
+    "name": "Puka Nacua",
+    "team": "lar",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "nacua-hallie-breakup",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Broke up with longtime girlfriend Hallie Aiono in early 2025",
+        "summary": "Puka and Hallie Aiono dated from 2021-early 2025. In May 2025, they announced expecting a baby boy together. However, the relationship ended and Hallie filed paternity documents.",
+        "sources": [
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2025/05/12/puka-nacua-hallie-aiono-baby/",
+            "date": "2025-05-12"
+          }
+        ]
+      },
+      {
+        "id": "nacua-son-birth",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Son Kingston born October 30, 2025",
+        "summary": "Puka and Hallie welcomed their son Kingston on October 30, 2025, months after their breakup and paternity filing.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nfl-active-news-rams-puka-nacuas-estranged-pregnant-gf-announces-personal-news-amid-legal-battle/",
+            "date": "2025-10-30"
+          }
+        ]
+      }
+    ]
+  },
+  "jamarr-chase": {
+    "player_id": "jamarr-chase",
+    "name": "Ja'Marr Chase",
+    "team": "cin",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "chase-deja-nicole",
+        "tier": "reported",
+        "category": "romance",
+        "headline": "Linked to influencer and entrepreneur Deja Nicole Hiott",
+        "summary": "Ja'Marr has been connected to influencer and entrepreneur Deja Nicole Hiott since early 2025.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://www.yahoo.com/entertainment/ja-marr-chase-dating-girlfriend-113453377.html",
+            "date": "2025-01-15"
+          }
+        ]
+      },
+      {
+        "id": "chase-son-birth",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Welcomed son in January 2024",
+        "summary": "Ja'Marr welcomed a son in January 2024. He also has another son from a previous relationship.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://www.yahoo.com/entertainment/ja-marr-chase-dating-girlfriend-113453377.html",
+            "date": "2024-01-01"
+          }
+        ]
+      }
+    ]
+  },
+  "ceedee-lamb": {
+    "player_id": "ceedee-lamb",
+    "name": "CeeDee Lamb",
+    "team": "dal",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "lamb-crymson-viral-moment",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "2020 NFL Draft viral phone-grabbing moment with ex Crymson Rose",
+        "summary": "During the 2020 NFL Draft, CeeDee's then-girlfriend Crymson Rose reached for his phone while he was on a call with the Cowboys. The 13-second video went viral with millions of views. Rose explained she was trying to answer his agent's FaceTime.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/cowboys-wr-cee-dee-lamb-and-girlfriend-crymson-rose-explain-her-viral-phonegrabbing-incident-152218529.html",
+            "date": "2020-04-23"
+          }
+        ]
+      },
+      {
+        "id": "lamb-crymson-breakup",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Broke up with Crymson Rose after draft video backlash",
+        "summary": "CeeDee and Crymson Rose broke up quietly after the viral draft video caused public backlash. Rose has since married another man and announced expecting a baby girl in late 2025.",
+        "sources": [
+          {
+            "name": "Blavity",
+            "url": "https://www.blavity.com/women/ceedee-lamb-girlfriend",
+            "date": "2020-06-01"
+          }
+        ]
+      }
+    ]
+  },
+  "dak-prescott": {
+    "player_id": "dak-prescott",
+    "name": "Dak Prescott",
+    "team": "dal",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "prescott-sarah-wedding-cancellation",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Called off wedding to fiancée Sarah Jane Ramos in March 2026",
+        "summary": "Dak called off his wedding to fiancée Sarah Jane Ramos in early March 2026, just weeks before they were set to marry in Lake Como, Italy. The breakup came after a major argument during a joint bachelor-bachelorette trip in the Bahamas.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/onsi/athlete-lifestyle/news/dak-prescott-ex-fiancee-sarah-reach-unexpected-family-agreement-before-court-case",
+            "date": "2026-03-01"
+          }
+        ]
+      },
+      {
+        "id": "prescott-sarah-infidelity",
+        "tier": "reported",
+        "category": "romance",
+        "headline": "Ramos allegedly called off wedding over 'ongoing infidelity issues'",
+        "summary": "Reports claim Sarah Jane Ramos ended the engagement citing Dak's 'ongoing infidelity issues' and belief that he talked to other women during their relationship.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/onsi/athlete-lifestyle/news/dak-prescott-ex-fiancee-sarah-reach-unexpected-family-agreement-before-court-case",
+            "date": "2026-03-05"
+          }
+        ]
+      },
+      {
+        "id": "prescott-daughters",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Co-parenting two daughters with Sarah Jane Ramos",
+        "summary": "Dak and Sarah are co-parenting two daughters: Margaret Jane 'MJ' (2 years old) and Aurora Dakota (11 months old). They reached a temporary settlement agreement regarding custody before a potential court case in Collin County, Texas.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/dak-prescott-family-tree-meet-fiancee-sarah-jane-ramos-daughters-margaret-jane-rose-aurora-rayne-and-more-082001212.html",
+            "date": "2026-03-10"
+          }
+        ]
+      }
+    ]
+  },
+  "brock-bowers": {
+    "player_id": "brock-bowers",
+    "name": "Brock Bowers",
+    "team": "lv",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "bowers-cameron-girlfriend",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating girlfriend Cameron Newell",
+        "summary": "Brock Bowers is in a relationship with Cameron Newell. The couple has been spotted on romantic outings, including dinner dates at Newport Beach and vacations to the Bahamas during the offseason.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/article/brock-bowers-family-tree-meet-football-dad-warren-softball-mom-deanna-and-more-from-athletic-roots-205225106.html",
+            "date": "2025-06-01"
+          }
+        ]
+      },
+      {
+        "id": "bowers-athletic-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Comes from athletic family; mother was All-American softball player",
+        "summary": "Brock's parents met at Utah State University. His mother DeAnna was an All-American softball player, inducted into the school's athletic Hall of Fame. His father Warren was an All-Big West center on the football team.",
+        "sources": [
+          {
+            "name": "Pro Football Network",
+            "url": "https://www.profootballnetwork.com/who-are-brock-bowers-parents-warren-deanna-bowers-lifestyle/",
+            "date": "2025-01-15"
+          }
+        ]
+      }
+    ]
+  },
+  "marvin-harrison-jr": {
+    "player_id": "marvin-harrison-jr",
+    "name": "Marvin Harrison Jr.",
+    "team": "ari",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "harrison-hof-dad",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Son of Pro Football Hall of Famer Marvin Harrison Sr.",
+        "summary": "Marvin Jr.'s father, Marvin Harrison Sr., is a Hall of Fame wide receiver who played for the Indianapolis Colts from 1996-2008. However, Harrison Sr. struggles watching his son play, saying it's difficult for his 'mental capacity.'",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/46817336/nfl-cardinals-marvin-harrison-jr-sr-monday-night-football",
+            "date": "2025-10-01"
+          }
+        ]
+      },
+      {
+        "id": "harrison-mother-sacrifice",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Mother Dawne made academics a priority; worked multiple jobs",
+        "summary": "Marvin Jr.'s mother Dawne Harrison worked multiple jobs while he was growing up and made academics a priority. She encouraged him to maintain a GPA 'north of 3.5' throughout high school and college.",
+        "sources": [
+          {
+            "name": "Pro Football Network",
+            "url": "https://www.profootballnetwork.com/who-are-marvin-harrison-jr-parents-marvin-sr-latoia-lifestyle/",
+            "date": "2024-01-01"
+          }
+        ]
+      }
+    ]
+  },
+  "malik-nabers": {
+    "player_id": "malik-nabers",
+    "name": "Malik Nabers",
+    "team": "nyg",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "nabers-gambling-guidance",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Received NFL gambling policy guidance for $10K OROY bet",
+        "summary": "In the 2025 offseason, Malik Nabers and former LSU teammate Jayden Daniels received guidance from the NFL about its gambling policy after proposing a friendly $10,000 bet on which would earn Offensive Rookie of the Year honors.",
+        "sources": [
+          {
+            "name": "Clutch Points",
+            "url": "https://clutchpoints.com/nfl/nfl-stories/nfl-rumors-malik-nabers-off-field-concerns-shot-down-by-jordan-schultz",
+            "date": "2025-05-15"
+          }
+        ]
+      }
+    ]
+  },
+  "derrick-henry": {
+    "player_id": "derrick-henry",
+    "name": "Derrick Henry",
+    "team": "bal",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "henry-third-daughter",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Welcomed third daughter Monroe on January 13, 2026",
+        "summary": "Derrick welcomed his third daughter, Monroe, born January 13, 2026. He shared a photo on Instagram Story with the message 'Heaven Sent' and 'GIRL DAD.'",
+        "sources": [
+          {
+            "name": "Newsweek",
+            "url": "https://www.newsweek.com/sports/nfl/ravens-rb-derrick-henry-makes-big-personal-announcement-11861304",
+            "date": "2026-01-13"
+          }
+        ]
+      },
+      {
+        "id": "henry-adrianna-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Long-term partner Adrianna Rivas since 2016",
+        "summary": "Derrick has been in a long-term relationship with Adrianna Rivas since 2016. They have multiple daughters together, with his 5-year-old playing basketball and soccer.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/article/derrick-henry-family-tree-meet-girlfriend-adrianna-rivas-daughters-valentina-and-celine-and-more-170954600.html",
+            "date": "2016-01-01"
+          }
+        ]
+      },
+      {
+        "id": "henry-community-mvp",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Named NFLPA Community MVP Week 10 2024; bought coats for 465 students",
+        "summary": "In October 2024, Derrick was named Week 10 NFLPA Community MVP after buying new winter coats for all 465 students at Curtis Bay Elementary.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/article/derrick-henry-family-tree-meet-girlfriend-adrianna-rivas-daughters-valentina-and-celine-and-more-170954600.html",
+            "date": "2024-10-15"
+          }
+        ]
+      }
+    ]
+  },
+  "micah-parsons": {
+    "player_id": "micah-parsons",
+    "name": "Micah Parsons",
+    "team": "gb",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "parsons-jerry-jones-feud",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Public feud with Cowboys owner Jerry Jones over contract",
+        "summary": "Parsons deleted all Cowboys references from social media and filed a grievance against Dallas after failed contract negotiations. He broke silence with scathing public rebuke of Jones, then was traded to Green Bay.",
+        "sources": [
+          {
+            "name": "Rolling Out",
+            "url": "https://rollingout.com/2026/01/02/micah-parsols-unleashes-social-media/",
+            "date": "2026-01-02"
+          },
+          {
+            "name": "CBS Sports",
+            "url": "https://www.cbssports.com/nfl/news/cowboys-drama-with-micah-parsons-hits-another-level-plus-rookie-quarterbacks-who-could-start-in-2025-",
+            "date": "2025-08-15"
+          }
+        ]
+      },
+      {
+        "id": "parsons-leveon-bell-feud",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Social media beef with former NFL star Le'Veon Bell",
+        "summary": "Parsons exchanged words with Le'Veon Bell in a public social media disagreement.",
+        "sources": [
+          {
+            "name": "Total Packers",
+            "url": "https://totalpackers.com/2026/04/packers-news-micah-parsons-blasts-bell/",
+            "date": "2026-04-01"
+          }
+        ]
+      }
+    ]
+  },
+  "myles-garrett": {
+    "player_id": "myles-garrett",
+    "name": "Myles Garrett",
+    "team": "cle",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "garrett-chloe-kim-romance",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating Olympic snowboarder Chloe Kim",
+        "summary": "Garrett sparked dating rumors with Olympic snowboarder Chloe Kim when they attended the 2025 Crunchyroll Anime Awards together in Japan. He subsequently accompanied her to a Los Angeles premiere for the Michael Jackson biopic.",
+        "sources": [
+          {
+            "name": "Just Jared",
+            "url": "https://www.justjared.com/2026/02/12/chloe-kims-boyfriend-myles-garrett-cheers-her-on-at-olympics-2026-snowboarding-final/",
+            "date": "2026-02-12"
+          }
+        ]
+      }
+    ]
+  },
+  "sauce-gardner": {
+    "player_id": "sauce-gardner",
+    "name": "Sauce Gardner",
+    "team": "ind",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "gardner-ice-spice-romance",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Relationship with rapper Ice Spice",
+        "summary": "Gardner and Ice Spice met at the Vanity Fair Oscars Party in March 2025 and made their relationship Instagram official on April 1, 2025 with a mirror selfie.",
+        "sources": [
+          {
+            "name": "Just Jared",
+            "url": "https://www.justjared.com/2025/04/29/ice-spice-seemingly-confirms-sauce-gardner-romance-with-new-selfie/",
+            "date": "2025-04-29"
+          },
+          {
+            "name": "BET",
+            "url": "https://www.bet.com/article/rejcrc/ice-spice-talks-privacy-and-going-public-with-sauce-gardner-on-instagram",
+            "date": "2025-05-01"
+          }
+        ]
+      },
+      {
+        "id": "gardner-brooklyn-nikole-romance",
+        "tier": "rumor",
+        "category": "romance",
+        "headline": "Spotted with Latto's sister Brooklyn Nikole",
+        "summary": "Gardner was spotted leaving dinner with rapper Latto's sister Brooklyn Nikole in mid-November 2025. The two are rumored to be dating after being spotted together on vacation and getting matching tattoos.",
+        "sources": [
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2025/11/13/sauce-gardner-dinner-latto-sister-brooklyn-dating-rumors/",
+            "date": "2025-11-13"
+          }
+        ]
+      }
+    ]
+  },
+  "maxx-crosby": {
+    "player_id": "maxx-crosby",
+    "name": "Maxx Crosby",
+    "team": "lv",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "crosby-failed-physical-ravens",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Failed physical ended Ravens trade, blamed 'degenerative' knee",
+        "summary": "A blockbuster trade to Baltimore was agreed upon and celebrated, then collapsed when Crosby failed his physical. Ravens cited medical concerns about his knee and reclaimed their two first-round picks.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/48168497/2026-nfl-free-agency-maxx-crosby-trade-backed-physical-raiders-ravens-edge-rushers",
+            "date": "2026-03-15"
+          }
+        ]
+      },
+      {
+        "id": "crosby-wont-play-raiders",
+        "tier": "reported",
+        "category": "culture",
+        "headline": "Informed Raiders he does not intend to play for Las Vegas again",
+        "summary": "Crosby informed Raiders ownership that he does not intend to play for Las Vegas again after conflict over being shut down for final two games due to knee injury.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/betting/prediction-market/nfl/where-will-maxx-crosby-play-in-2026-the-kalshi-markets-seem-like-they-might-already-know",
+            "date": "2026-04-10"
+          }
+        ]
+      }
+    ]
+  },
+  "zach-lavine": {
+    "player_id": "zach-lavine",
+    "name": "Zach LaVine",
+    "team": "sac",
+    "league": "nba",
+    "items": [
+      {
+        "id": "lavine-kings-trade-2026",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded to Sacramento Kings in three-team deal",
+        "summary": "LaVine was acquired by the Sacramento Kings in a major trade at the deadline, moving from the Chicago Bulls. He intends to pick up his player option for next season.",
+        "sources": [
+          {
+            "name": "NBA.com Kings",
+            "url": "https://www.nba.com/kings/news/kings-acquire-zach-lavine-sidy-cissoko-and-multiple-draft-picks-in-three-team-trade",
+            "date": "2025-02-15"
+          }
+        ]
+      },
+      {
+        "id": "lavine-married-hunter",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married to high school sweetheart Hunter Mar",
+        "summary": "LaVine has been married to Hunter LaVine (formerly Hunter Mar) since 2021. They met at Bothell High School in Washington and have two sons together.",
+        "sources": [
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://www.yahoo.com/entertainment/zach-lavine-wife-hunter-job-065030404.html",
+            "date": "2025-06-01"
+          }
+        ]
+      }
+    ]
+  },
+  "bradley-beal": {
+    "player_id": "bradley-beal",
+    "name": "Bradley Beal",
+    "team": "lac",
+    "league": "nba",
+    "items": [
+      {
+        "id": "beal-suns-buyout-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Agreed to buyout with Suns, joined LA Clippers",
+        "summary": "After two seasons with Phoenix, Beal agreed to a buyout in summer 2025 and signed with the LA Clippers on a two-year, $11 million deal with player option.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/45755171/bradley-beal-agrees-buyout-suns-join-clippers",
+            "date": "2025-08-01"
+          }
+        ]
+      },
+      {
+        "id": "beal-hip-fracture-2026",
+        "tier": "confirmed",
+        "category": "health",
+        "headline": "Suffered fractured hip, season-ending surgery April 2026",
+        "summary": "Beal sustained a left hip fracture after six games with the Clippers in November 2025 and underwent season-ending surgery. Expected full recovery in 6-9 months.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/46944704/clippers-bradley-beal-needs-season-ending-hip-surgery-agent-says",
+            "date": "2025-11-15"
+          }
+        ]
+      }
+    ]
+  },
+  "pascal-siakam": {
+    "player_id": "pascal-siakam",
+    "name": "Pascal Siakam",
+    "team": "ind",
+    "league": "nba",
+    "items": [
+      {
+        "id": "siakam-all-star-2026",
+        "tier": "confirmed",
+        "category": "career",
+        "headline": "Named 2026 NBA All-Star Reserve",
+        "summary": "Siakam earned his fourth All-Star selection and second consecutive as an Eastern Conference reserve on February 1, 2026, despite Indiana's struggles.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nba/pacers/onsi/news/pascal-siakam-named-2026-nba-all-star-reserve-01kgdkzw9jdy",
+            "date": "2026-02-01"
+          }
+        ]
+      },
+      {
+        "id": "siakam-single-2026",
+        "tier": "reported",
+        "category": "romance",
+        "headline": "Keeping personal life private as single player",
+        "summary": "Siakam is currently single and focusing on his basketball career with Indiana. Past rumors linked him to Bianca Andreescu and Jena Frumes, but those relationships have ended.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-is-pascal-siakam-dating-anyone-details-on-indiana-pacers-star-s-relationship-status/",
+            "date": "2025-12-15"
+          }
+        ]
+      }
+    ]
+  },
+  "domantas-sabonis": {
+    "player_id": "domantas-sabonis",
+    "name": "Domantas Sabonis",
+    "team": "sac",
+    "league": "nba",
+    "items": [
+      {
+        "id": "sabonis-knee-surgery-2026",
+        "tier": "confirmed",
+        "category": "health",
+        "headline": "Season-ending knee surgery February 2026",
+        "summary": "Sabonis underwent surgery to repair a torn meniscus in his left knee on February 18, 2026, ending his season after just 19 games.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/kings-domantas-sabonis-returns-after-missing-27-games-because-of-knee-injury",
+            "date": "2026-02-18"
+          }
+        ]
+      },
+      {
+        "id": "sabonis-married-shashana",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married to dancer Shashana Rosen at French Riviera wedding",
+        "summary": "Sabonis married Shashana Rosen, co-founder of dance studios, in August 2022 at the French Riviera. They have two children together: son Tiger and daughter Eleven.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-is-domantas-sabonis-wife-shashana-everything-to-know-about-kings-stars-married-life/",
+            "date": "2022-08-20"
+          }
+        ]
+      }
+    ]
+  },
+  "alperen-sengun": {
+    "player_id": "alperen-sengun",
+    "name": "Alperen Sengun",
+    "team": "hou",
+    "league": "nba",
+    "items": [
+      {
+        "id": "sengun-all-star-2026",
+        "tier": "confirmed",
+        "category": "career",
+        "headline": "Named 2026 NBA All-Star, Turkey's two-time All-Star",
+        "summary": "Sengun was selected as a 2026 All-Star, his second consecutive selection and becoming Turkey's first two-time NBA All-Star at age 23.",
+        "sources": [
+          {
+            "name": "SI/Rockets",
+            "url": "https://www.si.com/nba/rockets/onsi/alperen-sengun-explains-the-reason-behind-his-speech-that-motivated-the-rockets",
+            "date": "2026-02-01"
+          }
+        ]
+      },
+      {
+        "id": "sengun-girlfriend-hannah-cherry",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating girlfriend Hannah Cherry since January 2022",
+        "summary": "Sengun has been in a relationship with Hannah Cherry for nearly four years. The couple maintains a private relationship while occasionally sharing moments on social media.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-is-alperen-senguns-girlfriend-hannah-cherry-everything-to-know-about-houston-rockets-stars-romance-life/",
+            "date": "2025-09-01"
+          }
+        ]
+      }
+    ]
+  },
+  "austin-reaves": {
+    "player_id": "austin-reaves",
+    "name": "Austin Reaves",
+    "team": "lal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "reaves-oblique-injury-2026",
+        "tier": "confirmed",
+        "category": "health",
+        "headline": "Sidelined with Grade 2 left oblique strain",
+        "summary": "Reaves missed nearly four weeks with a Grade 2 left oblique strain sustained on April 2. He was optimistic about returning for Game 5 of the Lakers' playoff series vs. Houston.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/austin-reaves-potential-game-5-return",
+            "date": "2026-04-15"
+          }
+        ]
+      },
+      {
+        "id": "reaves-engaged-jenna-barber",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "High school sweetheart Jenna Barber, longtime partner",
+        "summary": "Reaves has been with girlfriend Jenna Barber since meeting at Cedar Ridge High School in 2014. Barber is currently enrolled in chiropractic school and is a longtime supporter of his NBA career.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/onsi/athlete-lifestyle/relationships/who-is-lakers-star-austin-reaves-girlfriend-jenna-barber",
+            "date": "2025-08-01"
+          }
+        ]
+      }
+    ]
+  },
+  "cooper-flagg": {
+    "player_id": "cooper-flagg",
+    "name": "Cooper Flagg",
+    "team": "dal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "flagg-rookie-of-year-2026",
+        "tier": "confirmed",
+        "category": "career",
+        "headline": "Won NBA Rookie of the Year 2025-26 with Mavericks",
+        "summary": "Flagg won Rookie of the Year after his elite freshman season with Dallas. He became only the second player ever (after LeBron James) to be the youngest ROY winner, averaging 21 PPG, 6.7 RPG, 4.5 APG.",
+        "sources": [
+          {
+            "name": "SI/NBA Draft",
+            "url": "https://www.si.com/nba/draft/nba-rookies/top-pick-cooper-flagg-wins-nba-rookie-of-the-year-award",
+            "date": "2026-04-20"
+          }
+        ]
+      },
+      {
+        "id": "flagg-twin-brother-ace-maine",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Fraternal twin brother Ace committed to University of Maine",
+        "summary": "Cooper has a fraternal twin brother, Ace, who transferred to Montverde Academy and committed to play basketball at the University of Maine starting in 2025-26.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/mens-college-basketball/story/_/id/42100173/ace-flagg-brother-duke-phenom-cooper-flagg-commits-play-maine",
+            "date": "2024-08-15"
+          }
+        ]
+      }
+    ]
+  },
+  "reed-sheppard": {
+    "player_id": "reed-sheppard",
+    "name": "Reed Sheppard",
+    "team": "hou",
+    "league": "nba",
+    "items": [
+      {
+        "id": "sheppard-athletic-legacy",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Son of 1998 NCAA championship winner Jeff Sheppard",
+        "summary": "Reed is the son of Jeff Sheppard, who won two NCAA national championships and was the 1998 tournament's Most Outstanding Player. His mother, Stacey Reed, also played college basketball at Kentucky.",
+        "sources": [
+          {
+            "name": "CBS Sports",
+            "url": "https://www.cbssports.com/college-basketball/news/her-name-her-game-how-kentuckys-reed-sheppard-was-made-in-his-mothers-image-30-years-after-her-uk-career",
+            "date": "2024-03-15"
+          }
+        ]
+      }
+    ]
+  },
+  "stephon-castle": {
+    "player_id": "stephon-castle",
+    "name": "Stephon Castle",
+    "team": "sas",
+    "league": "nba",
+    "items": [
+      {
+        "id": "castle-uconn-championship-2024",
+        "tier": "confirmed",
+        "category": "career",
+        "headline": "Won NCAA national championship as UConn freshman",
+        "summary": "Castle helped lead UConn to the 2024 NCAA national championship in his freshman year before declaring for the NBA Draft on April 19, 2024.",
+        "sources": [
+          {
+            "name": "CBSSports",
+            "url": "https://www.cbssports.com/college-basketball/news/2024-nba-draft-stephon-castle-turns-pro-after-helping-uconn-win-national-championship-as-a-freshman",
+            "date": "2024-04-19"
+          }
+        ]
+      },
+      {
+        "id": "castle-triple-double-february-2026",
+        "tier": "confirmed",
+        "category": "career",
+        "headline": "Posted career-high 40 points with triple-double February 2026",
+        "summary": "On February 7, 2026, Castle recorded a career-high 40 points with 12 rebounds and 12 assists, becoming only the second Spurs player after David Robinson to record a 40-point triple-double.",
+        "sources": [
+          {
+            "name": "SI/Spurs",
+            "url": "https://www.si.com/nba/spurs/onsi/news/san-antonio-spurs-stephon-castle-was-supposed-to-be-next-hes-already-here",
+            "date": "2026-02-07"
+          }
+        ]
+      }
+    ]
+  },
+  "christian-wilkins": {
+    "player_id": "christian-wilkins",
+    "name": "Christian Wilkins",
+    "team": "buf",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "wilkins-raiders-release-2026",
+        "tier": "confirmed",
+        "category": "health",
+        "headline": "Released by Raiders, rehabbing foot injury",
+        "summary": "Wilkins was released by the Las Vegas Raiders on July 24, 2025 after suffering a Jones fracture in Week 5 of the 2024 season. He is rehabbing his foot and intends to play in 2026.",
+        "sources": [
+          {
+            "name": "Pro Football Rumors",
+            "url": "https://www.profootballrumors.com/2026/03/christian-wilkins-planning-2026-return",
+            "date": "2026-03-01"
+          }
+        ]
+      },
+      {
+        "id": "wilkins-bills-signing-2026",
+        "tier": "confirmed",
+        "category": "career",
+        "headline": "Signed one-year, $6M deal with Buffalo Bills",
+        "summary": "On March 13, 2026, Wilkins signed a one-year, $6 million contract with the Buffalo Bills.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/article/christian-wilkins-free-agent-return-002448163.html",
+            "date": "2026-03-13"
+          }
+        ]
+      }
+    ]
+  },
+  "cj-gardner-johnson": {
+    "player_id": "cj-gardner-johnson",
+    "name": "CJ Gardner-Johnson",
+    "team": "buf",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "cjgj-texans-release-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Released by Texans after three games, joined Bills",
+        "summary": "After being acquired from Philadelphia in March 2025, Gardner-Johnson was released by the Texans after just three games. Coach DeMeco Ryans said the decision was his own.",
+        "sources": [
+          {
+            "name": "CBS Sports",
+            "url": "https://www.cbssports.com/nfl/news/texans-release-c-j-gardner-johnson-houston-lets-veteran-safety-go-after-trading-for-him-this-offseason/",
+            "date": "2025-09-15"
+          }
+        ]
+      },
+      {
+        "id": "cjgj-bills-signing-2026",
+        "tier": "confirmed",
+        "category": "career",
+        "headline": "Signed one-year contract with Buffalo Bills March 2026",
+        "summary": "On March 13, 2026, Gardner-Johnson signed a one-year contract with the Buffalo Bills.",
+        "sources": [
+          {
+            "name": "NBC Sports",
+            "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/texans-release-s-c-j-gardner-johnson",
+            "date": "2026-03-13"
+          }
+        ]
+      }
+    ]
+  },
+  "pat-mcafee": {
+    "player_id": "pat-mcafee",
+    "name": "Pat McAfee",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "mcafee-espn-influence-2026",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Anchors ESPN's 2026 NFL Draft coverage with personality-driven approach",
+        "summary": "McAfee's fingerprints are all over ESPN's daytime programming. The Pat McAfee Show averages 447,000 live concurrent viewers and surpassed 1 billion social media views. ESPN positioned McAfee for the 2026 draft with on-site broadcast from Pittsburgh.",
+        "sources": [
+          {
+            "name": "Awful Announcing",
+            "url": "https://awfulannouncing.com/espn/pat-mcafee-establishment-even-doesnt-want-to-be.html",
+            "date": "2026-02-15"
+          }
+        ]
+      },
+      {
+        "id": "mcafee-producer-tensions-2026",
+        "tier": "reported",
+        "category": "culture",
+        "headline": "Some ESPN producers report tension with McAfee's 'diva' behavior",
+        "summary": "While McAfee has backing from top ESPN executives, some internal reports suggest producers are frustrated with what they perceive as unprofessional behavior.",
+        "sources": [
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/espn-producers-fed-up-with-mcafees-diva-behavior",
+            "date": "2026-03-01"
           }
         ]
       }
