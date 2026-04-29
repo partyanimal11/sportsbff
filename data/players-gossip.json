@@ -6755,5 +6755,731 @@
         ]
       }
     ]
+  },
+  "nic-claxton": {
+    "player_id": "nic-claxton",
+    "name": "Nic Claxton",
+    "team": "bkn",
+    "league": "nba",
+    "items": [
+      {
+        "id": "claxton-father-celtics",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Charles played for Boston Celtics + serves as his personal coach",
+        "summary": "Charles Claxton is from the U.S. Virgin Islands, played college ball at Georgia, and was briefly on the Boston Celtics roster in 1995-96. He's now Nic's personal development coach.",
+        "sources": [
+          {
+            "name": "RevUpSports",
+            "url": "https://revupsports.com/athletes/basketball/nic-claxton/discover/nic-claxton-family-father-footsteps/",
+            "date": "2024-01-15"
+          }
+        ]
+      },
+      {
+        "id": "claxton-mariah-castro",
+        "tier": "reported",
+        "category": "romance",
+        "headline": "Dating model + yoga influencer Mariah Castro",
+        "summary": "Nic is in a relationship with Mariah Castro, a model + fitness/yoga enthusiast from San Diego. They've been linked publicly through her social channels.",
+        "sources": [
+          {
+            "name": "Sportskeeda",
+            "url": "https://www.sportskeeda.com/basketball/nic-claxton-girlfriend",
+            "date": "2024-06-20"
+          }
+        ]
+      }
+    ]
+  },
+  "noah-clowney": {
+    "player_id": "noah-clowney",
+    "name": "Noah Clowney",
+    "team": "bkn",
+    "league": "nba",
+    "items": [
+      {
+        "id": "clowney-not-jadeveon",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Spartanburg, SC kid — NOT related to NFL star Jadeveon Clowney",
+        "summary": "Noah is from Spartanburg, South Carolina (Dorman HS) — same town as NFL pass-rusher Jadeveon Clowney. Despite the shared last name they are not related; their parents are different families.",
+        "sources": [
+          {
+            "name": "Sportskeeda",
+            "url": "https://www.sportskeeda.com/basketball/news-who-noah-clowney-s-brother-jadeveon-clowney-exploring-relation-two",
+            "date": "2024-08-10"
+          }
+        ]
+      }
+    ]
+  },
+  "egor-demin": {
+    "player_id": "egor-demin",
+    "name": "Egor Demin",
+    "team": "bkn",
+    "league": "nba",
+    "items": [
+      {
+        "id": "demin-russian-basketball-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Russian basketball family — dad Vladimir was pro, mom Natalia played",
+        "summary": "Born and raised in Moscow. Father Vladimir Demin was a Russian pro basketball player who introduced him to the sport. Mother Natalia also played at a high level until age 18.",
+        "sources": [
+          {
+            "name": "The Playoffs",
+            "url": "https://theplayoffs.news/en/egor-demin-parents-all-about-egor-demin-father-mother/",
+            "date": "2025-06-26"
+          }
+        ]
+      },
+      {
+        "id": "demin-delaney-gibb-byu",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating BYU's Delaney Gibb — 2025 Big 12 Freshman of the Year",
+        "summary": "Egor is dating Delaney Gibb, a Canadian guard on the BYU women's basketball team from Raymond, Alberta — named 2025 Big 12 Freshman of the Year. They met at BYU and have been public on social media together.",
+        "sources": [
+          {
+            "name": "Sportskeeda",
+            "url": "https://www.sportskeeda.com/basketball/egor-demin-girlfriend",
+            "date": "2025-06-28"
+          }
+        ]
+      },
+      {
+        "id": "demin-nyc-adjustment-injury",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Out for the season with plantar fasciitis + struggling with NYC life",
+        "summary": "Demin is out for the rest of the 2025-26 season as of March 9, 2026 with plantar fasciitis in his left foot. He's also publicly opened up about struggling to adjust to NBA life in NYC — citing missing college bonfires, bowling, and hiking from BYU.",
+        "sources": [
+          {
+            "name": "Basketball Network",
+            "url": "https://www.basketballnetwork.net/off-the-court/egor-demin-complains-about-new-york-rent-admits-he-is-struggling-to-adjust-to-nba-life",
+            "date": "2026-02-15"
+          }
+        ]
+      }
+    ]
+  },
+  "michael-porter-jr": {
+    "player_id": "michael-porter-jr",
+    "name": "Michael Porter Jr.",
+    "team": "bkn",
+    "league": "nba",
+    "items": [
+      {
+        "id": "mpj-brother-jontay-banned",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Brother Jontay Porter banned from NBA for life over gambling (April 2024)",
+        "summary": "Michael's brother Jontay Porter was banned for life from the NBA on April 17, 2024 for removing himself from games during the 2023-24 season to benefit sports bettors and wagering on NBA games. Jontay admitted to the scheme in court — one of the most consequential gambling scandals in NBA history.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40027921/jontay-porter-toronto-raptors-banned-life-nba-gambling",
+            "date": "2024-04-17"
+          }
+        ]
+      },
+      {
+        "id": "mpj-brother-coban-prison",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Brother Coban serving 6 years in prison for fatal DUI crash",
+        "summary": "Michael's younger brother Coban Porter was sentenced to six years in prison for DUI vehicular homicide and vehicular assault following the death of 42-year-old Kathy Rothman in a January 2023 crash. Sentenced April 2024.",
+        "sources": [
+          {
+            "name": "KRDO",
+            "url": "https://krdo.com/news/2024/04/19/michael-porter-jr-s-younger-brother-coban-sentenced-to-6-years-in-prison-for-fatal-dui-crash/",
+            "date": "2024-04-19"
+          }
+        ]
+      },
+      {
+        "id": "mpj-kelsey-calemine-costa-rica",
+        "tier": "reported",
+        "category": "romance",
+        "headline": "Linked to influencer Kelsey Calemine — went to Costa Rica to 'rekindle relationship with God'",
+        "summary": "Michael was linked to influencer Kelsey Calemine for nearly a year, spotted Rolex shopping together in March 2025. After his July 2025 trade from Denver to Brooklyn, he traveled to Costa Rica to 'rekindle his relationship with God,' shifting public focus from the romance to spiritual growth.",
+        "sources": [
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2025/03/19/michael-porter-jr-rolex-shopping-kelsey-calemine/",
+            "date": "2025-03-19"
+          }
+        ]
+      },
+      {
+        "id": "mpj-dad-christian-rap-rahlo",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Michael Sr. produced Christian hip-hop as 'Rahlo' for over a decade",
+        "summary": "Michael Porter Sr. spent more than a decade producing and performing Christian hip-hop music under the stage name Rahlo. The Porter family is deeply rooted in both basketball and faith.",
+        "sources": [
+          {
+            "name": "Basketnews",
+            "url": "https://basketnews.com/news-236633-michael-porter-jr-brothers.html",
+            "date": "2024-06-15"
+          }
+        ]
+      }
+    ]
+  },
+  "drake-powell": {
+    "player_id": "drake-powell",
+    "name": "Drake Powell",
+    "team": "bkn",
+    "league": "nba",
+    "items": [
+      {
+        "id": "powell-cousin-of-hubert-davis",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Cousin of UNC head coach Hubert Davis",
+        "summary": "Drake is a cousin of University of North Carolina men's basketball head coach Hubert Davis, which made his recruitment to UNC effectively a family decision.",
+        "sources": [
+          {
+            "name": "Tar Heels Athletics",
+            "url": "https://goheels.com/news/drake-powell-drafted",
+            "date": "2025-06-25"
+          }
+        ]
+      },
+      {
+        "id": "powell-unc-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Both parents are UNC alums — dad played baseball, mom was all-state hooper",
+        "summary": "Father Dedric played baseball at UNC. Mother Cherice was an all-state high school basketball player who also attended UNC. Both shaped his early development.",
+        "sources": [
+          {
+            "name": "Yardbarker",
+            "url": "https://www.yardbarker.com/nba/articles/a_heartwarming_moment_for_drake_powell_and_his_family/s1_16538_42472730",
+            "date": "2025-06-26"
+          }
+        ]
+      }
+    ]
+  },
+  "miles-bridges": {
+    "player_id": "miles-bridges",
+    "name": "Miles Bridges",
+    "team": "cha",
+    "league": "nba",
+    "items": [
+      {
+        "id": "bridges-mychelle-felony-2022",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Felony domestic violence charges + child abuse counts (June 2022)",
+        "summary": "Arrested June 29, 2022 on three felony counts (one count of injuring child's parent, two counts of child abuse) after assaulting then-girlfriend Mychelle Johnson in front of their two children on June 27-28, 2022. Pleaded no contest to felony domestic violence November 3, 2022; remaining charges dismissed. Sentenced to 3 years probation, no jail time.",
+        "sources": [
+          {
+            "name": "CNN",
+            "url": "https://www.cnn.com/2022/07/20/sport/nba-miles-bridges-charged-domestic-child-abuse-spt",
+            "date": "2022-07-20"
+          }
+        ]
+      },
+      {
+        "id": "bridges-nba-suspension",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Suspended 30 games by NBA over domestic violence",
+        "summary": "Suspended 30 games without pay by the NBA, with 20 games deemed already served by missing the entire 2022-23 season. Required to miss the first 10 games of his next NBA contract. League consulted with domestic violence experts before issuing the discipline.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/nba-suspends-miles-bridges-for-30-games-without-pay",
+            "date": "2023-04-14"
+          }
+        ]
+      },
+      {
+        "id": "bridges-injuries-public-record",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Mychelle Johnson posted documented injuries from the assault",
+        "summary": "Mychelle Johnson posted photos and hospital discharge documents online showing closed nasal-bone fracture, rib contusion, multiple bruises, neck muscle strain, and torn eardrum from being strangled. She described the assault as lasting until she lost consciousness — making this one of the most public DV records in modern NBA history.",
+        "sources": [
+          {
+            "name": "CNN",
+            "url": "https://www.cnn.com/2022/07/20/sport/nba-miles-bridges-charged-domestic-child-abuse-spt",
+            "date": "2022-07-20"
+          }
+        ]
+      }
+    ]
+  },
+  "moussa-diabate": {
+    "player_id": "moussa-diabate",
+    "name": "Moussa Diabate",
+    "team": "cha",
+    "league": "nba",
+    "items": [
+      {
+        "id": "diabate-paris-malian-heritage",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Paris-born to Malian + Guinean parents — eldest of 5",
+        "summary": "Born and raised in Paris, France. Mother Korotoumou came from Mali seeking economic opportunity; father is from Guinea. Moussa is the eldest of five children, raised primarily by his mother through significant economic hardship.",
+        "sources": [
+          {
+            "name": "CLTure",
+            "url": "https://clture.org/moussa-diabate/",
+            "date": "2025-01-20"
+          }
+        ]
+      },
+      {
+        "id": "diabate-late-start-basketball",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Didn't pick up basketball until age 12 — moved to Florida at 14",
+        "summary": "Started basketball at age 12 (much later than American peers) when friends urged him to try because of his height. At 14 left family in Paris to attend Montverde Academy in Florida — a major cultural transition while still learning English.",
+        "sources": [
+          {
+            "name": "CLTure",
+            "url": "https://clture.org/moussa-diabate/",
+            "date": "2025-01-20"
+          }
+        ]
+      }
+    ]
+  },
+  "kon-knueppel": {
+    "player_id": "kon-knueppel",
+    "name": "Kon Knueppel",
+    "team": "cha",
+    "league": "nba",
+    "items": [
+      {
+        "id": "knueppel-five-K-brothers",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Five basketball-playing brothers, all named with K — Wisconsin Lutheran dynasty",
+        "summary": "One of five Knueppel boys all named with K: Kon II, Kager, Kinston, Kash, Kidman. The family will have at least one Knueppel on Wisconsin Lutheran HS basketball roster from 2020 through 2030 — a hyper-local hooping dynasty.",
+        "sources": [
+          {
+            "name": "Milwaukee Journal Sentinel",
+            "url": "https://www.jsonline.com/story/sports/high-school/2026/03/21/wisconsin-lutheran-basketball-knueppel-brothers-cousin-zavier-zens/89265905007/",
+            "date": "2026-03-21"
+          }
+        ]
+      },
+      {
+        "id": "knueppel-mom-greenbay-legend",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Mom Chari is a UW-Green Bay legend — retired-jersey, 1,964 pts",
+        "summary": "Mother Chari Nordgaard Knueppel is a UW-Green Bay legend — one of three players with a retired jersey, all-time leading scorer with 1,964 career points. Played pro in Greece for a year, tried out for the Lynx, and coached at UW-Green Bay for three years before starting the family.",
+        "sources": [
+          {
+            "name": "Minnesota Athletes",
+            "url": "https://minnesotaathletes.wordpress.com/2024/03/19/chari-nordgaard-knueppel-family-with-athletic-history-future-encourages-others-to-set-goals-and-work-at-them-every-day/",
+            "date": "2024-03-19"
+          }
+        ]
+      }
+    ]
+  },
+  "brandon-miller": {
+    "player_id": "brandon-miller",
+    "name": "Brandon Miller",
+    "team": "cha",
+    "league": "nba",
+    "items": [
+      {
+        "id": "miller-jamea-harris-trial-testimony",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Testified in 2025 capital murder trial — admitted bringing the gun to scene",
+        "summary": "Testified May 8, 2025 in the capital murder trial of Michael Lynn Davis for the January 15, 2023 shooting death of Jamea Harris. Former Alabama teammate Darius Miles was charged with aiding and abetting. Miller was not charged with a crime but confirmed he transported Miles' gun in his Dodge Charger to the scene; two bullets hit his windshield during the shooting. He was the #2 overall pick in 2023 despite the case.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/mens-college-basketball/story/_/id/45055724/brandon-miller-testifies-was-almost-hit-bullets-23",
+            "date": "2025-05-08"
+          }
+        ]
+      },
+      {
+        "id": "miller-wrongful-death-settlement",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Wrongful-death lawsuit settled April 2025 — trust for Harris's child",
+        "summary": "Wrongful-death lawsuit filed by Jamea Harris's mother against Miller, Miles, and Davis was settled on April 4, 2025. All parties agreed to dismiss with prejudice. A trust fund was established for Harris's minor child as part of the settlement.",
+        "sources": [
+          {
+            "name": "Tuscaloosa News",
+            "url": "https://www.tuscaloosanews.com/story/sports/college/basketball/2025/04/04/wrongful-death-lawsuit-against-alabama-basketball-darius-miles-brandon-miller-michael-davis-settled/82883869007/",
+            "date": "2025-04-04"
+          }
+        ]
+      },
+      {
+        "id": "miller-alabama-football-dad",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Darrell played football at Alabama — 'Miller Time' chant origin",
+        "summary": "Father Darrell Miller was an Alabama football tight end in 1990 — limited opportunities but well-liked, earned the 'Miller Time' chant from teammates. Brandon grew up in Tennessee as a lifelong Alabama Crimson Tide fan because of his dad — that family loyalty drove the recruitment.",
+        "sources": [
+          {
+            "name": "Tuscaloosa News",
+            "url": "https://www.tuscaloosanews.com/story/sports/college/basketball/2023/01/13/alabama-basketball-brandon-miller-stats-nick-saban-nate-oats/69786568007/",
+            "date": "2023-01-13"
+          }
+        ]
+      }
+    ]
+  },
+  "matas-buzelis": {
+    "player_id": "matas-buzelis",
+    "name": "Matas Buzelis",
+    "team": "chi",
+    "league": "nba",
+    "items": [
+      {
+        "id": "buzelis-lithuanian-legacy",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Three-generation Lithuanian basketball family — grandpa was Žalgiris captain",
+        "summary": "First-gen American with deep Lithuanian roots. Father Aidas played in the Lithuanian Basketball League and worked as physiotherapist for Lithuania's national team. Mother Kristina Jankauskaitė played for Lithuanian youth teams. Paternal grandfather Petras Buzelis was captain of Žalgiris Kaunas + 6× Lithuanian League champion. Grandmother Elena was a 2× European Champions Cup winner in handball.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-what-are-matas-buzelis-ethnicity-religion-all-details-of-the-chicago-bulls-stars-nationality-revealed/",
+            "date": "2024-03-15"
+          }
+        ]
+      }
+    ]
+  },
+  "josh-giddey": {
+    "player_id": "josh-giddey",
+    "name": "Josh Giddey",
+    "team": "chi",
+    "league": "nba",
+    "items": [
+      {
+        "id": "giddey-australian-basketball-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Born in Melbourne to Australian basketball royalty",
+        "summary": "Born in Melbourne to professional basketball players Kim and Warrick Giddey. Father Warrick is a 2× NBL champion (1993, 1997) with the Melbourne Tigers. Mother Kim played in the WNBL for the Melbourne Tigers. Sister Hannah played college ball at Oral Roberts and Southern Nazarene.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-what-is-josh-giddey-s-ethnicity-uncovering-chicago-bulls-stars-family-roots-and-more/",
+            "date": "2024-02-10"
+          }
+        ]
+      },
+      {
+        "id": "giddey-investigation-closed-2024",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Newport Beach + NBA investigations both closed without charges in 2024",
+        "summary": "Newport Beach Police Department closed an investigation into alleged inappropriate relationship with an underage individual in January 2024 — unable to corroborate any criminal activity. The NBA closed its parallel investigation in May 2024 without pursuing discipline.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40204769/sources-nba-closes-investigation-thunder-josh-giddey",
+            "date": "2024-05-20"
+          }
+        ]
+      }
+    ]
+  },
+  "tre-jones": {
+    "player_id": "tre-jones",
+    "name": "Tre Jones",
+    "team": "chi",
+    "league": "nba",
+    "items": [
+      {
+        "id": "tre-brother-tyus-jones",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Brother Tyus Jones is Denver Nuggets PG + 2015 NCAA champion MVP",
+        "summary": "Tre's older brother Tyus plays for the Denver Nuggets and was Most Outstanding Player of the 2015 NCAA championship at Duke (23 pts, 5 reb in title game). Older brother Jadee coaches at Apple Valley HS and Minnehaha Academy. Father Rob played at UW-Parkside in the 1980s.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Tre_Jones",
+            "date": "2024-04-01"
+          }
+        ]
+      },
+      {
+        "id": "tre-maddy-torres-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married college sweetheart Maddy Torres — 3 daughters including newborn twins",
+        "summary": "Married Maddy Torres in 2023 after proposing at Duke Chapel in May 2022. Three daughters: oldest Zara (3) and newborn twins Jemma and Jianna (under 3 months as of April 2026). Met at Duke.",
+        "sources": [
+          {
+            "name": "KENS5 San Antonio",
+            "url": "https://www.kens5.com/article/sports/nba/spurs/spurs-player-tre-jones-engagement-girlfriend-nba-san-antonio-wife/273-789872e0-34ae-409e-8223-e42cb01a786e",
+            "date": "2022-05-09"
+          }
+        ]
+      }
+    ]
+  },
+  "isaac-okoro": {
+    "player_id": "isaac-okoro",
+    "name": "Isaac Okoro",
+    "team": "chi",
+    "league": "nba",
+    "items": [
+      {
+        "id": "okoro-nigerian-immigrant-parents",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Atlanta-born to Nigerian immigrants Godwin + Gloria",
+        "summary": "Born in Atlanta to Nigerian immigrants Godwin and Gloria Okoro. Father emigrated from Nigeria in the 1980s. Family moved to Powder Springs, Georgia. Isaac discovered basketball through local church leagues organized by his father.",
+        "sources": [
+          {
+            "name": "FanBuzz",
+            "url": "https://fanbuzz.com/college-basketball/isaac-okoro-family/",
+            "date": "2020-11-12"
+          }
+        ]
+      },
+      {
+        "id": "okoro-youngest-of-four",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Youngest of four — siblings all multi-sport athletes",
+        "summary": "Youngest of four with older brother Michael and two sisters Rachel and Ashley. One sister did cheerleading, another played volleyball. Family emphasis on education + character through athletics is central to the Okoro home.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-axtive-basketball-news-what-are-isaac-okoros-ethnicity-religion-cavs-stars-nationality-early-life-revealed/",
+            "date": "2021-04-20"
+          }
+        ]
+      }
+    ]
+  },
+  "jalen-smith": {
+    "player_id": "jalen-smith",
+    "name": "Jalen Smith",
+    "team": "chi",
+    "league": "nba",
+    "items": [
+      {
+        "id": "smith-navy-dad-portsmouth",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Charles is a retired Navy officer — Portsmouth, VA roots",
+        "summary": "Born in Portsmouth, Virginia to Charles (retired Navy officer) and Orletha Smith. Father pushed his competitive drive and advocated for private school education at Mount Saint Joseph.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Jalen_Smith",
+            "date": "2024-03-01"
+          }
+        ]
+      },
+      {
+        "id": "smith-kayla-killette-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Engaged to Kayla Killette in 2022 — married by mid-2024",
+        "summary": "Proposed to longtime girlfriend Kayla Killette in August 2022. The couple appears to have married by mid-2024 based on his Instagram post captioned 'i do.'",
+        "sources": [
+          {
+            "name": "Sportskeeda",
+            "url": "https://www.sportskeeda.com/basketball/jalen-smith-girlfriend",
+            "date": "2024-05-01"
+          }
+        ]
+      }
+    ]
+  },
+  "cade-cunningham": {
+    "player_id": "cade-cunningham",
+    "name": "Cade Cunningham",
+    "team": "det",
+    "league": "nba",
+    "items": [
+      {
+        "id": "cade-daughter-riley",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Daughter Riley born 2018 — 'girl dad' before he was even drafted",
+        "summary": "Cade has a daughter named Riley born in 2018, before his college years at Oklahoma State. He's been a 'girl dad' since high school and frequently brings Riley to Pistons home games and family events.",
+        "sources": [
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://www.yahoo.com/entertainment/articles/cade-cunningham-girlfriend-nikia-withers-085040254.html",
+            "date": "2025-06-20"
+          }
+        ]
+      },
+      {
+        "id": "cade-nikia-withers",
+        "tier": "reported",
+        "category": "romance",
+        "headline": "Quietly dating former USC volleyball player Nikia Withers since 2021",
+        "summary": "Cade has been linked with Nikia Withers — a former USC Trojans volleyball player and Athletes Unlimited athlete who now works in HR — since 2021. The couple keeps the relationship low-key but has been spotted together at Pistons home games.",
+        "sources": [
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://www.yahoo.com/entertainment/articles/cade-cunningham-girlfriend-nikia-withers-085040254.html",
+            "date": "2025-06-20"
+          }
+        ]
+      }
+    ]
+  },
+  "jalen-duren": {
+    "player_id": "jalen-duren",
+    "name": "Jalen Duren",
+    "team": "det",
+    "league": "nba",
+    "items": [
+      {
+        "id": "duren-mom-aneisea-philly",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Raised by single mom Aneisea Hudgins in Sharon Hill, PA",
+        "summary": "Mother Aneisea Hudgins raised Jalen as a single mom in Sharon Hill, Pennsylvania while working at a Philadelphia nonprofit. When he announced his Memphis commitment in August 2021, his mom, older sister Jada, and brother Jermel were beside him at the press conference.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-are-jalen-duren-parents-everything-you-need-to-know-about-the-detroit-pistons-stars-family-and-background-2/",
+            "date": "2025-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "tobias-harris": {
+    "player_id": "tobias-harris",
+    "name": "Tobias Harris",
+    "team": "det",
+    "league": "nba",
+    "items": [
+      {
+        "id": "harris-jasmine-oheka-castle",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Jasmine Winton at Oheka Castle on Long Island, Aug 2022",
+        "summary": "Tobias married longtime love Jasmine Winton at Oheka Castle in Huntington, New York on August 6, 2022 after being engaged since 2020. Tobias is from Long Island and the castle setting held personal significance from his childhood.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/nba-star-tobias-harris-weds-longtime-love-jasmine-winton/",
+            "date": "2022-08-07"
+          }
+        ]
+      },
+      {
+        "id": "harris-first-mothers-day-2025",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Jasmine celebrated first Mother's Day in May 2025",
+        "summary": "Tobias and Jasmine celebrated their first Mother's Day together in May 2025 — confirming they had at least one child together by then.",
+        "sources": [
+          {
+            "name": "Threads",
+            "url": "https://www.threads.com/@sportsgossipog/post/DJiQvSztVZD/",
+            "date": "2025-05-11"
+          }
+        ]
+      }
+    ]
+  },
+  "duncan-robinson": {
+    "player_id": "duncan-robinson",
+    "name": "Duncan Robinson",
+    "team": "det",
+    "league": "nba",
+    "items": [
+      {
+        "id": "duncan-caroline-nava-engaged",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Engaged to longtime partner Caroline Nava",
+        "summary": "Duncan is engaged to Caroline Nava — they've been together through his entire 7-year Heat tenure including her father's mid-game stroke crisis when the Heat were playing in Mexico. Famously low-key relationship, but tight-knit.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-after-devastating-loss-duncan-robinson-s-girlfriend-pens-emotional-message-to-miami-heat-s-forty-eight-million-dollars-trade-decision/",
+            "date": "2025-07-08"
+          }
+        ]
+      },
+      {
+        "id": "duncan-williams-d3-underdog",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Williams College Division III walk-on to NBA's all-time fastest 1000-3PM",
+        "summary": "Duncan is the league's most famous D-III-to-NBA story. Started at Division III Williams College, went undrafted in 2018. Became the Miami Heat's all-time three-point leader (1,200+ makes) and the fastest player in NBA history to 1,000 career threes. Signed a $90M extension in 2021.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-after-devastating-loss-duncan-robinson-s-girlfriend-pens-emotional-message-to-miami-heat-s-forty-eight-million-dollars-trade-decision/",
+            "date": "2025-07-08"
+          }
+        ]
+      }
+    ]
+  },
+  "ausar-thompson": {
+    "player_id": "ausar-thompson",
+    "name": "Ausar Thompson",
+    "team": "det",
+    "league": "nba",
+    "items": [
+      {
+        "id": "ausar-twin-amen-rockets",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Identical twin Amen plays for the Houston Rockets — first twins drafted top-5 ever",
+        "summary": "Ausar's identical twin Amen Thompson was drafted #4 overall by Houston in 2023 — Ausar went #5 to Detroit. First twins in NBA history drafted in the top five. They've played against each other multiple times since.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/44802920/the-rapid-rise-amen-ausar-thompson",
+            "date": "2025-04-23"
+          }
+        ]
+      },
+      {
+        "id": "ausar-blood-clot-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Missed end of 2023-24 + start of 2024-25 with blood clot",
+        "summary": "Diagnosed with a blood clot late in his rookie 2023-24 season — missed the rest of that year and didn't return to NBA play until November 25, 2024.",
+        "sources": [
+          {
+            "name": "Bleacher Report",
+            "url": "https://bleacherreport.com/articles/10113809-pistons-ausar-thompson-will-miss-rest-of-2023-24-nba-season-for-blood-clot-treatment",
+            "date": "2024-03-20"
+          }
+        ]
+      },
+      {
+        "id": "ausar-overtime-elite",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Skipped senior year of HS for Overtime Elite — pioneers of pro-development league",
+        "summary": "Ausar + Amen skipped senior year at Pine Crest (Fort Lauderdale) to join Atlanta-based Overtime Elite for two seasons before the 2023 NBA Draft. OTE offered 24-hour gym access, NBA-level training, elite competition, and a $100K minimum salary — making them poster kids for the alt-development pathway.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/44802920/the-rapid-rise-amen-ausar-thompson",
+            "date": "2025-04-23"
+          }
+        ]
+      }
+    ]
   }
 }
