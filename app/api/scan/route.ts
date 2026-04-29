@@ -1,5 +1,47 @@
 import { NextRequest } from 'next/server';
 import { getOpenAI, MODELS, hasOpenAIKey } from '@/lib/openai';
+import gossipData from '@/data/players-gossip.json';
+
+type GossipSource = { name: string; url: string; date: string };
+type GossipItem = {
+  id: string;
+  tier: 'confirmed' | 'reported' | 'speculation' | 'rumor';
+  category: string;
+  headline: string;
+  summary: string;
+  sources: GossipSource[];
+};
+type GossipPlayer = {
+  player_id: string;
+  name: string;
+  team: string;
+  league: 'nfl' | 'nba';
+  items: GossipItem[];
+};
+const GOSSIP: Record<string, GossipPlayer> = gossipData as Record<string, GossipPlayer>;
+const DRAMA_CATEGORIES = new Set(['romance', 'family', 'legal', 'culture', 'off_field']);
+
+/** Convert a player name to slug-id format and look up gossip. Tries exact + partial match. */
+function lookupGossipByName(playerName: string): GossipPlayer | null {
+  if (!playerName || playerName === 'Unknown') return null;
+  const slug = playerName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  if (GOSSIP[slug]) return GOSSIP[slug];
+  // Try matching by full name
+  for (const [, p] of Object.entries(GOSSIP)) {
+    if (p.name.toLowerCase() === playerName.toLowerCase()) return p;
+  }
+  return null;
+}
+
+/** Extract drama-only items (off-court only — no career/health/sports stats). */
+function getDramaItems(player: GossipPlayer): GossipItem[] {
+  return player.items.filter((i) => DRAMA_CATEGORIES.has(i.category));
+}
+
+/** Extract on-field items (career, health, sports stats). */
+function getOnFieldItems(player: GossipPlayer): GossipItem[] {
+  return player.items.filter((i) => !DRAMA_CATEGORIES.has(i.category));
+}
 
 /**
  * POST /api/scan
@@ -270,6 +312,19 @@ Return a single JSON object with these exact fields:
 
 Return JSON with both legacy + modes-organized content. Active modes: ${modes.join(', ')}.
 
+🚫 CRITICAL — "drama" is NEVER sports content. Never put career stats, MVPs, contracts, playoff runs, championships, draft picks, or game performances in the drama array. Those go in on_field.
+
+✅ DRAMA = OFF-COURT/OFF-FIELD ONLY:
+- Romance / dating / breakups / engagements (Travis-Taylor, Booker-Kendall, Booker-Bad-Bunny diss exchange, Hailee Steinfeld, etc.)
+- Family drama (Brittany Mahomes, Jackson Mahomes legal stuff, Kelce brothers podcast, Bronny James)
+- Legal incidents (Tyreek Hill detainment, Jackson Mahomes battery)
+- Cultural moments (Vogue runway, fashion, viral interviews, Caleb's painted nails, KD's burner accounts)
+- Internet / social-media moments
+
+❌ NOT DRAMA: stats, scoring records, MVPs, All-Star selections, contract extensions, salary, trades, championships, game-winners, injury timelines.
+
+If you don't know real off-court drama for this player, return drama as an empty array []. Never invent. Never substitute career content as a placeholder.
+
 CONFIRMATION TIERS for drama claims:
 [CONFIRMED] = 2+ mainstream outlets reported
 [REPORTED]  = 1 mainstream outlet on the record
@@ -325,6 +380,27 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
 
     const raw = completion.choices[0]?.message?.content ?? '{}';
     const parsed = JSON.parse(raw) as ScanResult;
+
+    // OVERRIDE drama with curated, sourced gossip from the database when we have it.
+    // The vision model often invents sports-stat content as "drama"; the curated DB is
+    // off-court only with real citations. Database wins over vision for drama claims.
+    const playerGossip = lookupGossipByName(parsed.player_name);
+    if (playerGossip && wantsModes && parsed.modes) {
+      if (modes.includes('drama')) {
+        const dramaItems = getDramaItems(playerGossip).slice(0, 3);
+        if (dramaItems.length > 0) {
+          parsed.modes.drama = dramaItems.map((it) => ({
+            tier: it.tier,
+            headline: it.headline,
+            summary: `${it.summary} (Sources: ${it.sources.map((s) => s.name).join(', ')})`,
+          }));
+        }
+      }
+      // For on_field, also let curated DB inform if available — but as a narrative paragraph.
+      // We keep the vision-generated on_field UNLESS the DB has solid items. Keep things simple
+      // for v1 and just augment drama; on_field can be improved in a v2.
+    }
+
     return new Response(JSON.stringify(parsed), {
       status: 200,
       headers: { 'Content-Type': 'application/json', ...CORS_HEADERS },

@@ -814,44 +814,47 @@
     "league": "nba",
     "items": [
       {
-        "id": "booker-kendall-jenner-breakup",
+        "id": "booker-kendall-final-breakup-2025",
         "tier": "confirmed",
         "category": "romance",
-        "headline": "Breaks up with Kendall Jenner again after on-and-off relationship",
-        "summary": "Devin Booker and Kendall Jenner ended their relationship in May 2025 after trying to reconcile. Their on-and-off dating history spans since 2020 with multiple breakups and reunions.",
+        "headline": "Final breakup with Kendall Jenner — May/June 2025",
+        "summary": "After multiple on-and-off cycles since 2020, Booker and Kendall Jenner quietly ended their relationship in May 2025 after a brief February 2025 reconciliation. Sources cited communication issues and clashing schedules.",
         "sources": [
-          { "name": "Yahoo Sports", "url": "https://www.yahoo.com/entertainment/articles/did-devin-booker-kendall-jenner-break-up-again-heres-the-latest-relationship-news/", "date": "2025-05-30" },
-          { "name": "Hola!", "url": "https://www.hola.com/us/celebrities/20250603835956/kendall-jenner-devin-booker-breakup-again/", "date": "2025-06-03" }
+          { "name": "Hola", "url": "https://www.hola.com/us/celebrities/20250603835956/kendall-jenner-devin-booker-breakup-again/", "date": "2025-06-03" },
+          { "name": "Yahoo Entertainment", "url": "https://www.yahoo.com/entertainment/articles/did-devin-booker-kendall-jenner-break-up-again-heres-the-latest-relationship-news/", "date": "2025-05-30" }
         ]
       },
       {
-        "id": "booker-145m-extension",
+        "id": "booker-bad-bunny-diss-response",
         "tier": "confirmed",
-        "category": "career",
-        "headline": "Signs $145M extension, highest annual salary in NBA history",
-        "summary": "Devin Booker agreed to a two-year, $145 million max extension with the Suns in late 2024, with an annual salary of $72.5 million — highest annual extension salary in NBA history at the time.",
+        "category": "romance",
+        "headline": "Responded to Bad Bunny's Phoenix diss line with 'he worried about another MAN again'",
+        "summary": "After Bad Bunny rapped 'the sun in PR is hotter than the one in Phoenix' on Eladio Carrión's 'Coco Chanel' (March 2023) — widely read as a shot at Kendall's then-ex Booker — Booker fired back with a now-deleted Instagram comment: 'He worried about another MAN again.' The exchange went viral.",
         "sources": [
-          { "name": "ESPN", "url": "https://www.espn.com/nba/story/_/id/45705332/devin-booker-agrees-2-year-145m-max-extension-suns", "date": "2024-12-18" }
+          { "name": "People", "url": "https://people.com/music/bad-bunny-seemingly-disses-kendall-jenner-ex-devin-booker-new-song/", "date": "2023-03-17" },
+          { "name": "Cosmopolitan", "url": "https://www.cosmopolitan.com/entertainment/celebs/a64673041/kendall-jenner-and-devin-booker-relationship-timeline/", "date": "2023-04-14" }
+        ]
+      },
+      {
+        "id": "kendall-bad-bunny-arc",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Kendall + Bad Bunny: 10-month run, Met Gala reconciliation, summer-2024 split",
+        "summary": "Kendall and Bad Bunny first dated Feb-Dec 2023 (~10 months). Reconciled at the Après Met 2 afterparty May 6, 2024 — photographed sitting together, laughing, whispering. Officially reunited by May 30, 2024. Split again by summer 2024.",
+        "sources": [
+          { "name": "People", "url": "https://people.com/bad-bunny-kendall-jenner-split-source-8402569", "date": "2023-12-17" },
+          { "name": "People (Met Gala)", "url": "https://people.com/kendall-jenner-looks-cozy-with-ex-bad-bunny-2024-met-gala-afterparty-8644465", "date": "2024-05-06" },
+          { "name": "People (reconfirmed)", "url": "https://people.com/kendall-jenner-and-bad-bunny-are-dating-again-after-short-break-exclusive-8655907", "date": "2024-05-30" }
         ]
       },
       {
         "id": "booker-kendall-super-bowl-joke",
         "tier": "reported",
         "category": "culture",
-        "headline": "Reacts cheekily to Kendall's 'Kardashian curse' Super Bowl commercial",
-        "summary": "Despite their 2025 breakup, Devin Booker had a cheeky reaction when Kendall Jenner appeared in a Super Bowl 2026 commercial joking about the 'Kardashian curse.'",
+        "headline": "Reacted to Kendall's 'Kardashian curse' Super Bowl commercial (Feb 2026)",
+        "summary": "When Kendall Jenner appeared in a Super Bowl LX 2026 commercial joking about the 'Kardashian curse' on athletes she dates, Booker had a cheeky social-media reaction widely picked up by sports gossip outlets.",
         "sources": [
           { "name": "Heavy Sports", "url": "https://heavy.com/sports/nba/phoenix-suns/devin-booker-savage-response-kendall-jenner/", "date": "2026-02-08" }
-        ]
-      },
-      {
-        "id": "booker-suns-career-commitment",
-        "tier": "reported",
-        "category": "career",
-        "headline": "Committed to Suns; wants to bring championship to Phoenix",
-        "summary": "Booker has played all 10 NBA seasons with the Suns and has publicly expressed the desire to play his entire career in Phoenix and bring a championship.",
-        "sources": [
-          { "name": "Boardroom", "url": "https://boardroom.tv/devin-booker-contract-salary-supermax/", "date": "2024-12-20" }
         ]
       }
     ]

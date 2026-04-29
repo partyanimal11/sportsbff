@@ -185,16 +185,18 @@ export function retrieveContextChunks(query: string, lensId: string, limit = 12,
         }
       }
 
-      // Pull SOURCED GOSSIP — the cited stuff. Every claim is tied to a real article.
-      // The model MUST cite (Source: NAME) when stating any of this in a response.
+      // Pull SOURCED GOSSIP — drama categories ONLY (romance, family, legal, culture, off_field).
+      // Sports / career / health items go into ON-FIELD context, not drama.
+      // Every claim is tied to a real article — model MUST cite source name when stating any.
       const playerGossip = GOSSIP[p.id];
       if (playerGossip?.items?.length) {
+        const DRAMA_CATEGORIES = new Set(['romance', 'family', 'legal', 'culture', 'off_field']);
         for (const item of playerGossip.items) {
-          const sourceList = item.sources
-            .map((s) => `${s.name} (${s.date})`)
-            .join(' + ');
+          const isDrama = DRAMA_CATEGORIES.has(item.category);
+          const tag = isDrama ? 'GOSSIP' : 'ON-FIELD';
+          const sourceList = item.sources.map((s) => `${s.name} (${s.date})`).join(' + ');
           chunks.push(
-            `[GOSSIP · ${p.name} · ${item.tier.toUpperCase()}] ${item.headline}: ${item.summary} (Sources: ${sourceList})`
+            `[${tag} · ${p.name} · ${item.tier.toUpperCase()}] ${item.headline}: ${item.summary} (Sources: ${sourceList})`
           );
         }
       }
@@ -401,15 +403,38 @@ GLOSSARY USAGE:
 - If a [LENS-FLAVORED DEF] chunk is present, weave the lens flavoring into the explanation naturally — don't just paste it.
 
 GOSSIP USAGE — REQUIRED CITATION RULES:
-- [GOSSIP · Player · TIER] chunks contain real, verified, sourced gossip items pulled from a curated database. Each ends with "(Sources: NAME (date) + NAME (date))".
-- When you state any of this gossip in your response, you MUST attach the tier label and cite the source(s) inline. Examples:
+
+🚫 GOSSIP IS NEVER SPORTS STATS. Never put career/contract/playoff/health/MVP/championship/scoring stuff in a "gossip" or "drama" or "tea" answer. Those are ON-FIELD content. Drama is OFF-COURT life.
+
+✅ GOSSIP MEANS:
+- Romance / dating / breakups / engagements / WAGs (Travis-Taylor, Booker-Kendall, Kendall-Bad Bunny, Hailee Steinfeld, etc.)
+- Family drama (Brittany Mahomes, Jackson Mahomes legal stuff, Bronny James, Kelce brothers podcast)
+- Legal incidents (Tyreek Hill detainment, Jackson Mahomes battery, etc.)
+- Cultural moments (Vogue runway, fashion, viral interviews, Caleb's painted nails)
+- Off-field beefs (KD's burner accounts, social-media drama, podcast controversies)
+- Internet moments (TikToks, viral memes about the player as a person)
+
+❌ NOT GOSSIP (do NOT include in a tea answer):
+- Stats / scoring records / MVPs / All-Star selections / DPOY
+- Contract extensions / salary / trades / draft picks / playoff runs / championships
+- Game-winning shots / on-court achievements
+- Injuries / concussions (unless tied to public-interest controversy like Tua's protocol changes)
+
+Use [GOSSIP · Player · TIER] chunks for the tea answers. Use [ON-FIELD · Player · TIER] chunks for sports / career questions. Don't mix them.
+
+CITATION FORMAT (mandatory):
+- Lead each gossip claim with the tier label in brackets exactly: [CONFIRMED] / [REPORTED] / [SPECULATION] / [RUMOR]
+- Cite source names inline in parentheses — short form: "per Page Six", "(via TMZ)", "according to People + E! Online"
+- Examples:
+    "[CONFIRMED] Booker shut Bad Bunny down with a 'he worried about another MAN again' Instagram comment after Bad Bunny's Phoenix-diss line on 'Coco Chanel' (per People, Cosmopolitan)."
     "[CONFIRMED] Travis Kelce has been dating Taylor Swift since September 2023 (per Today, Billboard)."
-    "[REPORTED] Joe Burrow is reportedly dating SI model Olivia Ponton (per Parade)."
-- The tier label is what gives the brand its credibility. Always lead a gossip claim with [CONFIRMED] / [REPORTED] / [SPECULATION] / [RUMOR] in brackets exactly.
-- Source names go in parentheses at the end of the sentence — short form like "per ESPN" or "(via Page Six)". Do NOT paste full URLs into your response — names only.
-- If a user asks about a player and there is GOSSIP in the retrieved chunks, ALWAYS pull from it (with citation) before reaching into your training memory.
-- If there is NO gossip chunk for a player the user asked about, be honest: "I don't have anything sourced on [player] yet — want to ask about a teammate or someone with bigger storylines this season?"
-- NEVER invent gossip that isn't in the retrieved chunks. NEVER invent a source name. NEVER cite a publication you can't see in the chunks.`;
+- Never paste full URLs in your response — names only.
+
+ABSOLUTE RULES:
+- If a user asks for "tea" / "gossip" / "drama" on a player and there are NO [GOSSIP] chunks for them → be honest: "I don't have any tea on [player] yet — want to ask about [teammate with gossip]?"
+- Never invent gossip not in the retrieved chunks.
+- Never invent a source name.
+- Never cite a publication that isn't visible in the chunks.`;
 
 const DRAMA_MODE_RULES = `🔥 DRAMA MODE IS ON — the user wants the spicy version of every answer.
 
