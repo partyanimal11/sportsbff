@@ -49,17 +49,25 @@ export default function LearnPage() {
         </div>
       </header>
 
-      {/* Sub-tabs */}
+      {/* Sub-tabs — refined elegance */}
       <div className="px-4 sm:px-6 mb-4">
         <div className="max-w-md mx-auto">
-          <div className="bg-white rounded-full border border-[var(--hairline)] p-1 flex">
+          <div
+            className="bg-white rounded-full p-1 flex"
+            style={{ border: '0.5px solid rgba(13,45,36,0.10)' }}
+          >
             {(['lessons', 'glossary', 'lens'] as const).map((t) => (
               <button
                 key={t}
                 onClick={() => setTab(t)}
-                className={`flex-1 py-2 text-[13px] font-semibold rounded-full transition ${
-                  tab === t ? 'bg-tangerine text-white shadow-sm' : 'text-ink-soft hover:text-ink'
+                className={`flex-1 py-2 text-[13px] font-semibold rounded-full transition active:scale-[0.98] ${
+                  tab === t ? 'bg-tangerine text-white' : 'text-ink-soft hover:text-ink'
                 }`}
+                style={
+                  tab === t
+                    ? { boxShadow: '0 1px 2px rgba(255,107,61,0.18), 0 4px 12px -6px rgba(255,107,61,0.30)' }
+                    : undefined
+                }
               >
                 {t === 'lens' ? 'Lens' : t.charAt(0).toUpperCase() + t.slice(1)}
               </button>
@@ -86,26 +94,32 @@ export default function LearnPage() {
 function LessonsList() {
   const lessons = listLessonsForLibrary();
   return (
-    <div className="space-y-3">
+    <div className="space-y-2.5">
       {lessons.map((lesson) => (
         <Link
           key={lesson.slug}
           href={`/lessons/${lesson.slug}`}
-          className="group block bg-white border border-[var(--hairline)] rounded-2xl p-5 shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)] hover:-translate-y-0.5 transition"
+          className="group block bg-white rounded-2xl p-5 transition active:scale-[0.99] hover:-translate-y-0.5"
+          style={{
+            border: '0.5px solid rgba(13,45,36,0.10)',
+            boxShadow: '0 1px 2px rgba(13,45,36,0.04), 0 8px 20px -10px rgba(13,45,36,0.10)',
+          }}
         >
-          <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center justify-between mb-2.5">
             <span
-              className={`text-[10px] font-bold tracking-widest uppercase px-2 py-1 rounded-md ${
+              className={`text-[9px] font-bold tracking-[0.18em] uppercase px-2 py-1 rounded-md ${
                 lesson.league === 'nfl' ? 'bg-magenta/10 text-magenta' : 'bg-sapphire/10 text-sapphire'
               }`}
             >
               {lesson.league.toUpperCase()}
             </span>
-            <span className="text-[11px] text-muted">{lesson.minutes} min · {lesson.difficulty}</span>
+            <span className="text-[10px] font-mono uppercase tracking-wider text-muted">
+              {lesson.minutes} min · {lesson.difficulty}
+            </span>
           </div>
-          <h3 className="font-display font-bold text-[19px] text-green leading-snug">{lesson.title}</h3>
+          <h3 className="font-display font-bold text-[19px] text-green leading-snug tracking-tight">{lesson.title}</h3>
           <p className="mt-1 text-[13.5px] text-ink-soft italic">{lesson.subtitle}</p>
-          <div className="mt-3 text-[12px] text-tangerine font-semibold opacity-0 group-hover:opacity-100 transition">
+          <div className="mt-3 text-[12px] text-tangerine font-semibold opacity-50 group-hover:opacity-100 transition">
             Start →
           </div>
         </Link>
@@ -160,23 +174,29 @@ function GlossaryList({ euphoriaEnabled }: { euphoriaEnabled: boolean }) {
 function LensSection({ enabled, onToggle }: { enabled: boolean; onToggle: () => void }) {
   return (
     <div>
-      <div className="bg-white border border-[var(--hairline)] rounded-2xl p-5 shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]">
+      <div
+        className="bg-white rounded-2xl p-5"
+        style={{
+          border: '0.5px solid rgba(13,45,36,0.10)',
+          boxShadow: '0 1px 2px rgba(13,45,36,0.04), 0 12px 28px -12px rgba(13,45,36,0.14)',
+        }}
+      >
         <div className="flex items-start gap-4">
           <div
-            className="shrink-0 w-14 h-14 rounded-xl flex items-center justify-center font-display font-extrabold text-2xl"
+            className="shrink-0 w-14 h-14 rounded-2xl flex items-center justify-center font-display font-extrabold text-2xl"
             style={{
-              background: 'linear-gradient(135deg, #DCD0F4 0%, #4A2D6B 200%)',
-              color: '#4A2D6B',
-              boxShadow: '0 0 0 3px #4A2D6B, 0 14px 32px -10px rgba(13,45,36,0.18)',
+              background: '#7B5BC4',
+              color: '#FFFFFF',
+              boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 8px 20px -10px rgba(123,91,196,0.4)',
             }}
           >
-            E
+            ✦
           </div>
           <div className="flex-1 min-w-0">
             <div className="font-display font-bold text-[18px] text-green leading-tight">
               Through Euphoria
             </div>
-            <div className="text-[11px] font-bold tracking-widest uppercase text-muted mt-0.5">
+            <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-muted mt-1">
               NBA · NFL
             </div>
             <p className="mt-2 text-[13.5px] text-ink-soft leading-relaxed">
@@ -186,9 +206,14 @@ function LensSection({ enabled, onToggle }: { enabled: boolean; onToggle: () => 
         </div>
         <button
           onClick={onToggle}
-          className={`w-full mt-4 inline-flex items-center justify-center gap-2 rounded-full py-3 text-[14px] font-semibold transition ${
-            enabled ? 'bg-tangerine text-white' : 'bg-cream-warm border border-[var(--hairline)] text-ink hover:bg-white'
+          className={`w-full mt-4 inline-flex items-center justify-center gap-2 rounded-full py-3 text-[14px] font-semibold transition active:scale-[0.98] ${
+            enabled ? 'bg-sapphire text-white hover:bg-sapphire' : 'bg-white text-ink hover:bg-cream-warm'
           }`}
+          style={
+            enabled
+              ? { boxShadow: '0 1px 2px rgba(45,78,209,0.18), 0 8px 20px -10px rgba(45,78,209,0.40)' }
+              : { border: '0.5px solid rgba(13,45,36,0.18)' }
+          }
         >
           {enabled ? '✓ Euphoria ON — slow zoom' : 'Turn on Euphoria lens'}
         </button>

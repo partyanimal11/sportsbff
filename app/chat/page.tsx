@@ -312,16 +312,23 @@ function ChatPage() {
         </div>
       </div>
 
-      {/* Input bar */}
-      <div className="border-t border-[var(--hairline)] bg-white" style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}>
+      {/* Input bar — refined elegance, hairline borders, more breathing room */}
+      <div
+        className="bg-white"
+        style={{
+          paddingBottom: 'env(safe-area-inset-bottom)',
+          borderTop: '0.5px solid rgba(13,45,36,0.08)',
+        }}
+      >
         <div className="max-w-2xl mx-auto px-3 md:px-4 py-3 flex gap-2 items-center">
           <button
             onClick={() => setBrowseOpen(true)}
             disabled={streaming}
             aria-label="Browse prompts"
-            className="shrink-0 w-11 h-11 rounded-full bg-cream-warm border border-[var(--hairline)] flex items-center justify-center text-tangerine hover:bg-tangerine hover:text-white hover:border-tangerine transition"
+            className="shrink-0 w-11 h-11 rounded-full bg-white flex items-center justify-center text-ink-soft hover:text-tangerine transition active:scale-[0.96]"
+            style={{ border: '0.5px solid rgba(13,45,36,0.18)' }}
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
               <path d="M9 18h6" />
               <path d="M10 22h4" />
               <path d="M12 2a7 7 0 0 0-4 12.7c.7.7 1 1.6 1 2.5V18h6v-.8c0-.9.4-1.8 1-2.5A7 7 0 0 0 12 2Z" />
@@ -337,8 +344,9 @@ function ChatPage() {
                 send();
               }
             }}
-            placeholder="ask the BFF…"
-            className="flex-1 min-w-0 bg-cream-warm border border-[var(--hairline)] rounded-full px-4 md:px-5 py-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+            placeholder="Ask Goldie…"
+            className="flex-1 min-w-0 bg-cream-warm rounded-full px-5 py-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-green/20"
+            style={{ border: '0.5px solid rgba(13,45,36,0.10)' }}
             disabled={streaming}
             enterKeyHint="send"
             autoComplete="off"
@@ -348,7 +356,10 @@ function ChatPage() {
             onClick={() => send()}
             disabled={streaming || !input.trim()}
             aria-label="Send"
-            className="shrink-0 h-11 w-11 sm:w-auto sm:px-5 rounded-full bg-green text-white font-semibold text-[14px] hover:bg-green-2 transition disabled:opacity-50"
+            className="shrink-0 h-11 w-11 sm:w-auto sm:px-5 rounded-full bg-green text-white font-semibold text-[14px] transition active:scale-[0.96] hover:bg-green-dark disabled:opacity-40"
+            style={{
+              boxShadow: '0 1px 2px rgba(13,45,36,0.18), 0 6px 14px -6px rgba(13,45,36,0.30)',
+            }}
           >
             {streaming ? '…' : (
               <>
@@ -433,10 +444,10 @@ function EmptyState({
           aria-pressed={teadUp}
           className="inline-flex items-center gap-1.5 mb-3 px-2.5 py-1 rounded-full text-[11px] font-semibold transition"
           style={{
-            background: teadUp ? 'linear-gradient(135deg, #E84B7A 0%, #FF6B3D 100%)' : 'rgba(13,45,36,0.04)',
+            background: teadUp ? '#D4407A' : '#FFFFFF',
             color: teadUp ? '#FFFFFF' : '#3A3A3D',
-            boxShadow: teadUp ? '0 4px 12px -4px rgba(232,75,122,0.4)' : 'none',
-            border: teadUp ? 'none' : '1px solid rgba(13,45,36,0.08)',
+            boxShadow: teadUp ? '0 1px 2px rgba(212,64,122,0.18), 0 6px 16px -8px rgba(212,64,122,0.35)' : 'none',
+            border: teadUp ? '1px solid rgba(212,64,122,0.4)' : '1px solid rgba(13,45,36,0.08)',
           }}
         >
           <span aria-hidden>☕</span>
@@ -481,7 +492,11 @@ function EmptyState({
           <button
             key={s.id}
             onClick={() => onOpenPlayerBrowse(s.id)}
-            className="bg-white border border-[var(--hairline)] rounded-2xl p-4 text-left hover:bg-cream-warm hover:border-tangerine/40 transition shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]"
+            className="bg-white rounded-2xl p-4 text-left transition active:scale-[0.98] hover:bg-cream-warm"
+            style={{
+              border: '0.5px solid rgba(13,45,36,0.10)',
+              boxShadow: '0 1px 2px rgba(13,45,36,0.04), 0 8px 20px -10px rgba(13,45,36,0.10)',
+            }}
           >
             <div className="text-3xl mb-2" aria-hidden>{s.emoji}</div>
             <div className="font-display font-bold text-[16px] text-green leading-tight">{s.label}</div>
@@ -490,22 +505,28 @@ function EmptyState({
         ))}
       </div>
 
-      {/* Quick prompts */}
-      <p className="mt-7 text-[11px] text-muted text-center">Or try one of these to start:</p>
-      <div className="mt-3 flex flex-col gap-2">
+      {/* Quick prompts — refined hairline cards */}
+      <p className="mt-7 text-[10px] font-mono uppercase tracking-[0.18em] text-muted text-center">
+        Or try one of these
+      </p>
+      <div className="mt-3 flex flex-col gap-1.5">
         {STARTER_PROMPTS.slice(0, 4).map((q) => (
           <button
             key={q}
             onClick={() => onPick(q)}
-            className="w-full text-left text-[13px] sm:text-[14px] bg-white border border-[var(--hairline)] rounded-2xl px-4 py-3 text-green hover:bg-cream-warm hover:border-tangerine/40 transition flex items-center justify-between gap-2"
+            className="w-full text-left text-[13.5px] sm:text-[14px] bg-white rounded-2xl px-4 py-3.5 text-green transition active:scale-[0.99] hover:bg-cream-warm flex items-center justify-between gap-2"
+            style={{ border: '0.5px solid rgba(13,45,36,0.08)' }}
           >
             <span>{q}</span>
-            <span className="text-tangerine shrink-0">→</span>
+            <span className="text-ink-soft shrink-0 text-[14px]">→</span>
           </button>
         ))}
       </div>
 
-      <button onClick={onBrowse} className="mt-5 w-full inline-flex items-center justify-center gap-2 text-[13px] font-semibold text-tangerine hover:text-tangerine-dark">
+      <button
+        onClick={onBrowse}
+        className="mt-5 w-full inline-flex items-center justify-center gap-2 text-[13px] font-semibold text-tangerine hover:text-tangerine-dark transition"
+      >
         Browse 100+ more questions →
       </button>
     </div>
@@ -575,14 +596,12 @@ function Bubble({
             m.role === 'user' ? 'text-white' : 'text-ink'
           }`}
           style={{
-            background: m.role === 'user'
-              ? 'linear-gradient(180deg, #143A2E 0%, #0D2D24 100%)'
-              : '#F1EFE8',
+            background: m.role === 'user' ? '#0D2D24' : '#F1EFE8',
             borderRadius: 20,
             borderBottomRightRadius: m.role === 'user' ? 6 : 20,
             borderBottomLeftRadius: m.role === 'user' ? 20 : 6,
             boxShadow: m.role === 'user'
-              ? '0 1px 0 rgba(255,255,255,0.15) inset, 0 4px 12px -4px rgba(13,45,36,0.4)'
+              ? '0 1px 2px rgba(13,45,36,0.18), 0 8px 20px -10px rgba(13,45,36,0.30)'
               : '0 1px 0 rgba(255,255,255,0.6) inset, 0 1px 2px rgba(13,45,36,0.04)',
           }}
         >

@@ -865,9 +865,10 @@ function BFFLiveChatMockup() {
                 <div
                   className="px-4 py-2.5 text-white text-[14.5px] max-w-[78%]"
                   style={{
-                    background: 'linear-gradient(180deg, #143A2E 0%, #0D2D24 100%)',
+                    background: '#0D2D24',
                     borderRadius: 20,
                     borderBottomRightRadius: 6,
+                    boxShadow: '0 1px 2px rgba(13,45,36,0.18), 0 8px 20px -10px rgba(13,45,36,0.30)',
                   }}
                 >
                   {m.content}

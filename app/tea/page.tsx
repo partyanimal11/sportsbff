@@ -310,17 +310,22 @@ function FeedRow({ item }: { item: FeedItem }) {
 
   return (
     <li>
-      <Link href={href} className="block py-4 hover:bg-cream-warm/40 -mx-2 px-2 rounded-lg transition">
-        <div className="flex items-center gap-2 mb-1.5 flex-wrap">
+      <Link
+        href={href}
+        className="group block py-5 -mx-2 px-2 rounded-xl transition active:scale-[0.99] hover:bg-cream-warm/50"
+      >
+        <div className="flex items-center gap-2 mb-2 flex-wrap">
           <LeagueBadge league={item.league} />
           <TierPill tier={item.tier} />
-          <span className="text-[10px] text-muted ml-auto font-mono">{item.time}</span>
+          <span className="text-[10px] text-muted ml-auto font-mono uppercase tracking-wider">{item.time}</span>
         </div>
-        <h3 className="font-display font-bold text-[16px] text-green leading-[1.25]">{item.headline}</h3>
-        <p className="mt-1 text-[13.5px] text-ink-soft leading-relaxed">{item.summary}</p>
-        <div className="mt-2 flex items-center justify-between">
+        <h3 className="font-display font-bold text-[17px] text-green leading-[1.25] tracking-tight">{item.headline}</h3>
+        <p className="mt-1.5 text-[13.5px] text-ink-soft leading-relaxed">{item.summary}</p>
+        <div className="mt-2.5 flex items-center justify-between">
           <span className="text-[11px] text-muted italic">{item.source}</span>
-          <span className="text-[11px] text-tangerine font-semibold">open in chat →</span>
+          <span className="text-[11px] text-magenta-dusty font-semibold opacity-70 group-hover:opacity-100 transition">
+            open in chat →
+          </span>
         </div>
       </Link>
     </li>

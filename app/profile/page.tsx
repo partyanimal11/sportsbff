@@ -70,7 +70,7 @@ export default function ProfilePage() {
               onChange={(e) => setName(e.target.value)}
               onBlur={() => update('displayName', name.trim() || undefined)}
               placeholder="What should we call you?"
-              className="mt-2 w-full bg-white border border-[var(--hairline)] rounded-full px-4 py-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+              className="mt-2 w-full bg-white border-[0.5px] border-[rgba(13,45,36,0.10)] rounded-full px-4 py-3 text-[16px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
               autoComplete="given-name"
             />
           </div>
@@ -99,7 +99,7 @@ export default function ProfilePage() {
           </div>
 
           {/* Tea'd Up master toggle */}
-          <div className="bg-white rounded-2xl border border-[var(--hairline)] p-4 shadow-[0_4px_16px_-10px_rgba(13,45,36,0.08)]">
+          <div className="bg-white rounded-2xl border-[0.5px] border-[rgba(13,45,36,0.10)] p-4 shadow-[0_4px_16px_-10px_rgba(13,45,36,0.08)]">
             <div className="flex items-center justify-between gap-4">
               <div className="flex-1 min-w-0">
                 <div className="font-display font-bold text-[15px] text-green flex items-center gap-1.5">
@@ -117,7 +117,7 @@ export default function ProfilePage() {
           </div>
 
           {/* Voice */}
-          <div className="bg-white rounded-2xl border border-[var(--hairline)] p-4 shadow-[0_4px_16px_-10px_rgba(13,45,36,0.08)]">
+          <div className="bg-white rounded-2xl border-[0.5px] border-[rgba(13,45,36,0.10)] p-4 shadow-[0_4px_16px_-10px_rgba(13,45,36,0.08)]">
             <div className="flex items-center justify-between gap-4 mb-3">
               <div className="flex-1 min-w-0">
                 <div className="font-display font-bold text-[15px] text-green">Auto-play voice</div>
@@ -139,7 +139,7 @@ export default function ProfilePage() {
             </div>
             <label className="text-[10px] font-semibold uppercase tracking-wide text-ink-soft">Voice</label>
             <select
-              className="mt-1.5 w-full bg-white border border-[var(--hairline)] rounded-full px-3 py-2 text-[14px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+              className="mt-1.5 w-full bg-white border-[0.5px] border-[rgba(13,45,36,0.10)] rounded-full px-3 py-2 text-[14px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
               value={profile.voiceOverride ?? ''}
               onChange={(e) => update('voiceOverride', (e.target.value || undefined) as Profile['voiceOverride'])}
             >
@@ -153,7 +153,7 @@ export default function ProfilePage() {
           </div>
 
           {/* Euphoria lens */}
-          <div className="bg-white rounded-2xl border border-[var(--hairline)] p-4 shadow-[0_4px_16px_-10px_rgba(13,45,36,0.08)]">
+          <div className="bg-white rounded-2xl border-[0.5px] border-[rgba(13,45,36,0.10)] p-4 shadow-[0_4px_16px_-10px_rgba(13,45,36,0.08)]">
             <div className="flex items-center justify-between gap-4">
               <div className="flex-1 min-w-0">
                 <div className="font-display font-bold text-[15px] text-green flex items-center gap-1.5">

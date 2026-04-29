@@ -273,26 +273,30 @@ function IdleState({ onLiveScan, onUpload, onSample }: { onLiveScan: () => void;
         Works on all things sports — NFL + NBA. We never store your photos.
       </p>
 
-      <div className="mt-6 sm:mt-8 flex flex-col gap-3">
+      <div className="mt-7 sm:mt-9 flex flex-col gap-2.5">
         <button
           onClick={onLiveScan}
-          className="w-full inline-flex items-center justify-center gap-2 bg-tangerine text-white font-semibold rounded-full py-4 text-[15px] hover:bg-tangerine-dark transition shadow-[0_4px_16px_-4px_rgba(255,107,61,0.4)]"
+          className="w-full inline-flex items-center justify-center gap-2 bg-tangerine text-white font-semibold rounded-full py-3.5 text-[15px] transition active:scale-[0.98] hover:bg-tangerine-dark"
+          style={{
+            boxShadow: '0 1px 2px rgba(255,107,61,0.18), 0 12px 24px -10px rgba(255,107,61,0.40)',
+          }}
         >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
             <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
             <circle cx="12" cy="13" r="4" />
           </svg>
-          Open camera + scan
+          Open camera
         </button>
         <button
           onClick={onUpload}
-          className="w-full inline-flex items-center justify-center gap-2 bg-white text-ink font-semibold rounded-full py-4 text-[15px] border border-[var(--hairline)] hover:bg-cream-warm transition"
+          className="w-full inline-flex items-center justify-center gap-2 bg-white text-green font-semibold rounded-full py-3.5 text-[15px] transition active:scale-[0.98] hover:bg-cream-warm"
+          style={{ border: '0.5px solid rgba(13,45,36,0.18)' }}
         >
-          Upload from device
+          Upload a photo
         </button>
         <button
           onClick={onSample}
-          className="text-tangerine text-[14px] font-semibold hover:underline mt-1"
+          className="text-ink-soft text-[13px] font-medium hover:text-tangerine transition mt-2"
         >
           🎲 Try a random athlete →
         </button>
@@ -693,54 +697,65 @@ function ResultCard({ result, modes, onReset }: { result: ScanResult; modes: Loc
         <ModeSection emoji="☕" label="Tea" body={result.blurb} />
       )}
 
-      {/* Footer actions */}
-      <div className="grid grid-cols-3 gap-2 mt-5">
-        <Link
-          href={`/chat?seed=${encodeURIComponent(`Tell me more about ${result.player_name}.`)}&modes=${modes.join(',')}`}
-          className="flex flex-col items-center justify-center gap-1.5 bg-white border border-[var(--hairline)] rounded-2xl py-3 hover:bg-cream-warm transition shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-green" aria-hidden>
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-          </svg>
-          <span className="text-[11px] font-semibold text-ink">Ask follow-up</span>
-        </Link>
+      {/* Primary follow-up CTA — solid tangerine, premium feel */}
+      <Link
+        href={`/chat?seed=${encodeURIComponent(`Tell me more about ${result.player_name}.`)}&modes=${modes.join(',')}`}
+        className="block w-full text-center bg-tangerine text-white font-semibold rounded-full py-3.5 text-[14.5px] mt-2 transition active:scale-[0.98] hover:bg-tangerine-dark"
+        style={{
+          boxShadow: '0 1px 2px rgba(255,107,61,0.18), 0 12px 24px -10px rgba(255,107,61,0.40)',
+        }}
+      >
+        Ask Goldie a follow-up →
+      </Link>
+
+      {/* Secondary actions — subtle row, hairline borders */}
+      <div className="grid grid-cols-3 gap-2 mt-3">
         <button
           onClick={() => alert('Saved to your scan history')}
-          className="flex flex-col items-center justify-center gap-1.5 bg-white border border-[var(--hairline)] rounded-2xl py-3 hover:bg-cream-warm transition shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]"
+          className="flex flex-col items-center justify-center gap-1 bg-white rounded-2xl py-3 transition active:scale-[0.98] hover:bg-cream-warm"
+          style={{ border: '0.5px solid rgba(13,45,36,0.10)' }}
         >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-green" aria-hidden>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-ink-soft" aria-hidden>
             <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
           </svg>
-          <span className="text-[11px] font-semibold text-ink">Save</span>
+          <span className="text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Save</span>
         </button>
         <button
           onClick={() => {
             if (typeof navigator !== 'undefined' && (navigator as any).share) {
               (navigator as any).share({
-                title: `Tea'd Up · ${result.player_name}`,
+                title: `sportsBFF · ${result.player_name}`,
                 text: `${result.player_name} (${result.team}) — ${result.blurb}`,
-                url: typeof window !== 'undefined' ? window.location.origin : 'https://teadup.app',
+                url: typeof window !== 'undefined' ? window.location.origin : 'https://sportsbff.app',
               }).catch(() => {});
             } else {
               alert('Sharing not supported in this browser');
             }
           }}
-          className="flex flex-col items-center justify-center gap-1.5 bg-white border border-[var(--hairline)] rounded-2xl py-3 hover:bg-cream-warm transition shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]"
+          className="flex flex-col items-center justify-center gap-1 bg-white rounded-2xl py-3 transition active:scale-[0.98] hover:bg-cream-warm"
+          style={{ border: '0.5px solid rgba(13,45,36,0.10)' }}
         >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-green" aria-hidden>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-ink-soft" aria-hidden>
             <circle cx="18" cy="5" r="3" />
             <circle cx="6" cy="12" r="3" />
             <circle cx="18" cy="19" r="3" />
             <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
             <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
           </svg>
-          <span className="text-[11px] font-semibold text-ink">Share</span>
+          <span className="text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Share</span>
+        </button>
+        <button
+          onClick={onReset}
+          className="flex flex-col items-center justify-center gap-1 bg-white rounded-2xl py-3 transition active:scale-[0.98] hover:bg-cream-warm"
+          style={{ border: '0.5px solid rgba(13,45,36,0.10)' }}
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-ink-soft" aria-hidden>
+            <path d="M3 7V5a2 2 0 0 1 2-2h2 M17 3h2a2 2 0 0 1 2 2v2 M21 17v2a2 2 0 0 1-2 2h-2 M7 21H5a2 2 0 0 1-2-2v-2" />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+          <span className="text-[10px] font-semibold text-ink-soft uppercase tracking-wider">Scan again</span>
         </button>
       </div>
-
-      <button onClick={onReset} className="w-full text-center text-[13px] text-muted hover:text-ink-soft mt-2 py-2">
-        ← scan another
-      </button>
     </div>
   );
 }
