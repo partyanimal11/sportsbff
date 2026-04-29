@@ -2821,6 +2821,34 @@
             "date": "2026-04-04"
           }
         ]
+      },
+      {
+        "id": "herro-katya-elise-family",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Long-term partner Katya Elise Henry — daughter Zya + son Harlem",
+        "summary": "Dating fitness model + influencer Katya Elise Henry since March 2020. Two kids together: daughter Zya Elise (b. Sept 2021) and son Harlem (b. Jan 2023). Couple still together as of March 2026 but not married.",
+        "sources": [
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://www.yahoo.com/entertainment/tyler-herro-girlfriend-katya-elise-182009632.html",
+            "date": "2025-02-12"
+          }
+        ]
+      },
+      {
+        "id": "herro-wisconsin-roots",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Wisconsin native (Greenfield), Whitnall HS standout",
+        "summary": "Born January 20, 2000 in Greenfield, Wisconsin. The Midwestern roots are central to his low-key vibe and are a constant reference in his media appearances.",
+        "sources": [
+          {
+            "name": "SI Lifestyle",
+            "url": "https://www.si.com/onsi/athlete-lifestyle/news/tyler-herro-girlfriend-katya-elise-henry-white-dress-post-turns-heads-heat",
+            "date": "2026-03-15"
+          }
+        ]
       }
     ]
   },
@@ -5941,6 +5969,788 @@
             "name": "Valley Tales (Substack)",
             "url": "https://valleytales.substack.com/p/devin-vassells-former-coach-this",
             "date": "2020-10-30"
+          }
+        ]
+      }
+    ]
+  },
+  "dereck-lively-ii": {
+    "player_id": "dereck-lively-ii",
+    "name": "Dereck Lively II",
+    "team": "dal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "lively-father-overdose-2011",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father died of a heroin overdose in 2011 when Lively was a child",
+        "summary": "Dereck Lively II's father died from a heroin overdose in 2011 when Dereck was a child, shaping his family's trajectory and his relationship with his mother Kathy.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://theathletic.com/nba/dereck-lively-ii",
+            "date": "2024-05-12"
+          }
+        ]
+      },
+      {
+        "id": "lively-mom-kathy-cancer-2024",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Mother Kathy Drysdale died of cancer April 2024 during his rookie year",
+        "summary": "Lively's mother Kathy Drysdale battled cancer for 11 years before passing away in April 2024 during Dereck's rookie NBA season. Lively missed games to be with her in her final weeks.",
+        "sources": [
+          {
+            "name": "Andscape",
+            "url": "https://andscape.com/sports/dereck-lively-ii-mothers-cancer",
+            "date": "2024-04-15"
+          }
+        ]
+      }
+    ]
+  },
+  "pj-washington": {
+    "player_id": "pj-washington",
+    "name": "P.J. Washington",
+    "team": "dal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "pjw-brittany-renner-son",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Has son with influencer Brittany Renner born May 2021",
+        "summary": "P.J. Washington has a son born May 2021 with ex-girlfriend Brittany Renner, the well-known fitness model and social media personality whose relationship + parenting drama with PJ became a major NBA-Twitter storyline.",
+        "sources": [
+          {
+            "name": "Yahoo Entertainment",
+            "url": "https://www.yahoo.com/entertainment/pj-washington-brittany-renner",
+            "date": "2022-03-10"
+          }
+        ]
+      },
+      {
+        "id": "pjw-alisah-chanel-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married model Alisah Chanel in October 2023",
+        "summary": "P.J. Washington married model Alisah Chanel in October 2023, after the two welcomed son Preston in December 2022. Their wedding came after years of public co-parenting drama with his prior child's mother Brittany Renner.",
+        "sources": [
+          {
+            "name": "Complex",
+            "url": "https://www.complex.com/sports/pj-washington",
+            "date": "2023-10-20"
+          }
+        ]
+      }
+    ]
+  },
+  "christian-braun": {
+    "player_id": "christian-braun",
+    "name": "Christian Braun",
+    "team": "den",
+    "league": "nba",
+    "items": [
+      {
+        "id": "braun-burlington-kansas",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Burlington, Kansas native — Mr. Kansas Basketball 2019",
+        "summary": "Born April 17, 2001 in Burlington, Kansas. Named Mr. Kansas Basketball 2019 + Gatorade Player of the Year for Kansas before staying in-state for KU. Older brother Parker also played college ball (Missouri / Santa Clara / Kansas) and got a 2024 Summer League invite from Denver.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Christian_Braun",
+            "date": "2024-02-17"
+          }
+        ]
+      },
+      {
+        "id": "braun-cb2-apparel-line",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Launched The CB2 Collection apparel line at Kansas",
+        "summary": "Released The CB2 Collection in February 2022 while at Kansas — T-shirts and hoodies priced $29.95-$49.95 featuring his name, jersey #2, and signature. One of the early NIL-era player apparel launches.",
+        "sources": [
+          {
+            "name": "KU Sports",
+            "url": "https://www2.kusports.com/weblogs/tale-tait/2022/feb/15/ku-junior-christian-braun-releases-appar/",
+            "date": "2022-02-15"
+          }
+        ]
+      }
+    ]
+  },
+  "aaron-gordon": {
+    "player_id": "aaron-gordon",
+    "name": "Aaron Gordon",
+    "team": "den",
+    "league": "nba",
+    "items": [
+      {
+        "id": "gordon-kimberly-marriage-14yr",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "14-year marriage to Kimberly Obregon Gordon",
+        "summary": "Married to Kimberly Obregon Gordon for 14 years as of August 2025. They met during a difficult period in his life and have been together ever since — celebrated their 14th anniversary in summer 2025.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40248394/former-nba-player-drew-gordon-dies-car-accident-age-33",
+            "date": "2024-05-30"
+          }
+        ]
+      },
+      {
+        "id": "gordon-brother-drew-death",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Brother + best friend Drew Gordon (former NBA) died May 2024 in car crash",
+        "summary": "Aaron's older brother Drew Gordon — a former NBA player + Aaron's best friend — died in a two-vehicle car accident in Clackamas County, Oregon on May 30, 2024 at age 33. Left behind widow Angela and three sons.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40248394/former-nba-player-drew-gordon-dies-car-accident-age-33",
+            "date": "2024-05-30"
+          }
+        ]
+      },
+      {
+        "id": "gordon-took-in-drew-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Convinced Drew's widow + sons to move to Denver, helps raise them",
+        "summary": "After Drew's death, Aaron convinced his brother's widow Angela and her two young sons (Zayne, 5; Brody, 2) to move to the Denver area in fall 2024. Aaron is actively involved in their daily lives and has them over regularly.",
+        "sources": [
+          {
+            "name": "Andscape",
+            "url": "https://andscape.com/features/denver-nuggets-forward-aaron-gordon-is-carrying-brother-family-with-him-in-nba-playoffs/",
+            "date": "2025-04-29"
+          }
+        ]
+      },
+      {
+        "id": "gordon-jersey-32-tribute",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Switched to jersey #32 in honor of brother Drew",
+        "summary": "Before the 2025-26 season, Aaron switched from #50 to #32 to honor his late brother Drew. Quote: 'It means he is with me. He has my back just like he has my front.'",
+        "sources": [
+          {
+            "name": "Andscape",
+            "url": "https://andscape.com/features/denver-nuggets-forward-aaron-gordon-is-carrying-brother-family-with-him-in-nba-playoffs/",
+            "date": "2025-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "cameron-johnson": {
+    "player_id": "cameron-johnson",
+    "name": "Cameron Johnson",
+    "team": "den",
+    "league": "nba",
+    "items": [
+      {
+        "id": "johnson-kayla-michelle-2021",
+        "tier": "reported",
+        "category": "romance",
+        "headline": "Quietly dating model + farm CEO Kayla Michelle since 2021",
+        "summary": "Cam has been quietly dating Kayla Michelle since 2021. She's a model with The Agency Arizona, CEO of Replica Farm in NJ since 2020, basketball-themed acrylic painter, and equestrian. Studied neuroscience + psychology with aspirations of becoming a neuropsychologist before pivoting.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-is-cam-johnson-s-girlfriend-kayla-michelle-all-you-need-to-know-about-the-brooklyn-nets-stars-dating-life/",
+            "date": "2024-11-15"
+          }
+        ]
+      },
+      {
+        "id": "johnson-pittsburgh-moon-twp",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Moon Township, Pennsylvania native — represented Team USA at 2023 FIBA",
+        "summary": "Cam grew up in Moon Township, PA, attended Pitt before transferring to UNC. Represented Team USA at the 2023 FIBA Basketball World Cup.",
+        "sources": [
+          {
+            "name": "Sportskeeda",
+            "url": "https://www.sportskeeda.com/basketball/cam-johnson-girlfriend",
+            "date": "2023-08-21"
+          }
+        ]
+      }
+    ]
+  },
+  "deandre-ayton": {
+    "player_id": "deandre-ayton",
+    "name": "Deandre Ayton",
+    "team": "lal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "ayton-bahamas-heritage",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Born Nassau, Bahamas — Nigerian-Jamaican-Bahamian heritage",
+        "summary": "Born in Nassau, Bahamas. Father Alvin is of Nigerian Igbo descent, mother Andrea is Jamaican-Bahamian. Multi-cultural identity central to his story.",
+        "sources": [
+          {
+            "name": "Tribune242",
+            "url": "https://www.tribune242.com/news/2016/nov/25/deandre-got-love-basketball-and-rest-history/",
+            "date": "2016-11-25"
+          }
+        ]
+      },
+      {
+        "id": "ayton-anissa-evans-son",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Long-term partner Anissa Evans (childhood friend) — son DJ b. 2021",
+        "summary": "In a long-term relationship with Anissa Evans, also from Nassau, Bahamas — they knew each other as children. Son Deandre Ayton Jr. born March 6, 2021.",
+        "sources": [
+          {
+            "name": "Sportskeeda",
+            "url": "https://www.sportskeeda.com/basketball/deandre-ayton-girlfriend",
+            "date": "2023-12-18"
+          }
+        ]
+      },
+      {
+        "id": "ayton-2k-legend",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Famously hardcore NBA 2K player — 4-5 hours daily",
+        "summary": "Plays NBA 2K at least 4-5 hours daily and has achieved NBA 2K Legend status (Level 40 across four seasons). Has openly talked about it being his main offseason hobby.",
+        "sources": [
+          {
+            "name": "HoopsHype",
+            "url": "https://www.hoopshype.com/story/sports/nba/rumors/2022/05/12/deandre-ayton-plays-nba-2k-at-least-four-hours-every-day/84686655007/",
+            "date": "2022-05-12"
+          }
+        ]
+      }
+    ]
+  },
+  "rui-hachimura": {
+    "player_id": "rui-hachimura",
+    "name": "Rui Hachimura",
+    "team": "lal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "rui-japanese-beninese",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Japanese-Beninese heritage — mother Japanese, father from Benin",
+        "summary": "Born in Sendai, Japan to a Japanese mother and Beninese father. Has spoken openly about the difficulty of being 'hafu' (biracial) growing up in Japan, where biracial identities are still a sensitive cultural topic.",
+        "sources": [
+          {
+            "name": "Heavy",
+            "url": "https://heavy.com/sports/2019/03/rui-hachimura-parents-mother-father/",
+            "date": "2019-03-28"
+          }
+        ]
+      },
+      {
+        "id": "rui-tokyo-flagbearer",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Japan's flagbearer at Tokyo 2020 Olympics opening ceremony",
+        "summary": "Selected as one of Japan's two flagbearers for the Tokyo 2020 Olympics opening ceremony — the first time the IOC had each country pick both a male and female flagbearer. A landmark moment for biracial representation in Japan.",
+        "sources": [
+          {
+            "name": "NBC Olympics",
+            "url": "https://www.nbcolympics.com/news/japan-selects-rui-hachimura-yui-susaki-flagbearers-olympics",
+            "date": "2021-07-05"
+          }
+        ]
+      },
+      {
+        "id": "rui-fashion-black-samurai",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Fashion icon — 'Black Samurai' Air Jordan, Balenciaga, Dior",
+        "summary": "Recognized league-wide as a fashion icon. Wears Balenciaga, Dior, LV, Fear of God. Has Air Jordan sneaker collabs including a 'Black Samurai' edition inspired by his Japanese heritage.",
+        "sources": [
+          {
+            "name": "GOAT",
+            "url": "https://www.goat.com/editorial/rui-hachimura-interview",
+            "date": "2021-03-01"
+          }
+        ]
+      }
+    ]
+  },
+  "marcus-smart": {
+    "player_id": "marcus-smart",
+    "name": "Marcus Smart",
+    "team": "lal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "smart-mom-camellia-cancer",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Mother Camellia died of bone marrow cancer Sept 2018",
+        "summary": "Camellia Smart was diagnosed with myelodysplastic syndrome (bone marrow cancer) in April 2018 and died September 16, 2018 at age 63. Marcus has been openly carrying her memory throughout his career — quiet days off, dedicated wins.",
+        "sources": [
+          {
+            "name": "The Oklahoman",
+            "url": "https://www.oklahoman.com/story/sports/nba/thunder/2018/04/18/former-oklahoma-state-guard-marcus-smart-reveals-mother-has-cancer/60530163007/",
+            "date": "2018-04-18"
+          }
+        ]
+      },
+      {
+        "id": "smart-brothers-todd-michael",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Half-brother Todd Westbrook died of cancer; brother Michael had Bloods affiliation",
+        "summary": "Marcus's half-brother Todd Westbrook died of cancer at age 33 when Marcus was 9. Older brother Michael was previously associated with the Bloods gang and selling crack cocaine — Marcus has been candid about the family's hard chapters as fuel for his story.",
+        "sources": [
+          {
+            "name": "Heavy",
+            "url": "https://heavy.com/sports/nba/boston-celtics/marcus-smart-family/",
+            "date": "2023-04-20"
+          }
+        ]
+      },
+      {
+        "id": "smart-maisa-engagement",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Engaged to entrepreneur Maisa Hallum on Christmas 2022 — Will Smith cameo",
+        "summary": "Engaged to Maisa Hallum (California-native co-founder of Sousa Swim) on Christmas Day 2022. The proposal famously included a video message from Will Smith filmed from Antarctica.",
+        "sources": [
+          {
+            "name": "Heavy",
+            "url": "https://heavy.com/sports/nba/boston-celtics/marcus-smart-family/",
+            "date": "2023-04-20"
+          }
+        ]
+      }
+    ]
+  },
+  "davion-mitchell": {
+    "player_id": "davion-mitchell",
+    "name": "Davion Mitchell",
+    "team": "mia",
+    "league": "nba",
+    "items": [
+      {
+        "id": "mitchell-hinesville-ga-roots",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Liberty County, Georgia kid — first state title for Hinesville HS",
+        "summary": "Born September 5, 1998 in Hinesville, Georgia. Led Liberty County HS to its first Class 4A state title as a junior, averaging 24.2 PPG, 7.1 APG, 2.9 SPG. Named Savannah Morning News Player of the Year.",
+        "sources": [
+          {
+            "name": "Savannah Morning News",
+            "url": "https://www.savannahnow.com/story/sports/college/basketball/2021/04/06/baylor-basketball-national-champion-guard-davion-mitchell-of-hinesville-beats-gonzaga-for-ncaa-title/7104206002/",
+            "date": "2021-04-06"
+          }
+        ]
+      }
+    ]
+  },
+  "norman-powell": {
+    "player_id": "norman-powell",
+    "name": "Norman Powell",
+    "team": "mia",
+    "league": "nba",
+    "items": [
+      {
+        "id": "powell-san-diego-strong",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "San Diego native + Lincoln HS alum, 'San Diego Strong' ambassador",
+        "summary": "Born and raised in San Diego, California. Graduated Lincoln High School (2011) before going to UCLA. Local-hero status; serves as a 'San Diego Strong' community ambassador.",
+        "sources": [
+          {
+            "name": "NBC 7 San Diego",
+            "url": "https://www.nbcsandiego.com/news/local/san-diego-strong-lincoln-high-alum-norman-powell-ready-for-nba-finals/158935/",
+            "date": "2019-05-29"
+          }
+        ]
+      }
+    ]
+  },
+  "andrew-wiggins": {
+    "player_id": "andrew-wiggins",
+    "name": "Andrew Wiggins",
+    "team": "mia",
+    "league": "nba",
+    "items": [
+      {
+        "id": "wiggins-mychal-johnson-family",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Long-term partner is Notre Dame hooper Mychal Johnson",
+        "summary": "Wiggins has been with former Notre Dame women's basketball player Mychal Johnson since high school — they met when she played for St. Joseph's HS in West Virginia and he was at Huntington Prep. Two daughters together (Amyah b. Oct 2018, Alayah b. April 2021), expecting third child as of October 2024.",
+        "sources": [
+          {
+            "name": "AOL/People",
+            "url": "https://www.aol.com/andrew-wiggins-girlfriend-mychal-johnson-010000618.html",
+            "date": "2024-12-26"
+          }
+        ]
+      },
+      {
+        "id": "wiggins-girl-dad",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Embraces 'girl dad' identity publicly",
+        "summary": "Has spoken publicly about being a 'girl dad,' calling it 'the best.' Quote: coming home to his daughters is what keeps him going on bad workdays.",
+        "sources": [
+          {
+            "name": "E! News",
+            "url": "https://www.eonline.com/news/1338430/nba-player-andrew-wiggins-shares-rare-glimpse-into-his-all-star-life-as-a-girl-dad",
+            "date": "2022-07-01"
+          }
+        ]
+      }
+    ]
+  },
+  "luguentz-dort": {
+    "player_id": "luguentz-dort",
+    "name": "Luguentz Dort",
+    "team": "okc",
+    "league": "nba",
+    "items": [
+      {
+        "id": "dort-melina-savard-baby",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Expecting first child with girlfriend Melina Savard",
+        "summary": "On Valentine's Day 2025, Dort announced via an Instagram pregnancy photoshoot that he and longtime girlfriend Melina Savard are expecting their first child — going public with the relationship for the first time.",
+        "sources": [
+          {
+            "name": "Heavy Sports",
+            "url": "https://heavy.com/sports/nba/oklahoma-city-thunder/melina-savard/",
+            "date": "2025-02-15"
+          }
+        ]
+      },
+      {
+        "id": "dort-haitian-canadian-montreal",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Haitian-Canadian from Montreal-Nord — immigrant parents from Haiti",
+        "summary": "Born April 19, 1999 in Montreal, Quebec to Haitian immigrant parents. Grew up in the Montreal-Nord neighborhood. Proudly displays Haitian and Canadian flags in his Instagram bio, frequently posts in French.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-what-is-lu-dorts-relationship-status-everything-to-know-about-oklahoma-city-thunder-stars-dating-life/",
+            "date": "2024-12-10"
+          }
+        ]
+      },
+      {
+        "id": "dort-foundation-3-cities",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Founded Maizon Dort Foundation in 3 cities (Montreal, OKC, Phoenix)",
+        "summary": "In 2022, Dort established the Maizon Dort Foundation, dedicated to underprivileged youth across Montreal, Oklahoma City, and central Arizona. The foundation runs sports, creative-expression, and academic-support programs.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-what-is-lu-dorts-relationship-status-everything-to-know-about-oklahoma-city-thunder-stars-dating-life/",
+            "date": "2024-12-10"
+          }
+        ]
+      },
+      {
+        "id": "dort-montreal-nord-doc",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Produced documentary 'Montreal-Nord: A Place to Dream' — premiered at 2025 Summer League Film Festival",
+        "summary": "Dort championed the documentary 'Montreal-Nord: A Place to Dream', selected for the 2025 Summer League Film Festival in Las Vegas. Directed by Riley Sisco + Brett Anderson, produced with Canada Basketball + Buckets & Borders. Screened July 17-19, 2025.",
+        "sources": [
+          {
+            "name": "Canada Basketball",
+            "url": "https://www.basketball.ca/news/luguentz-dorts-film-montreal-nord-a-place-to-dream-selected-for-the-2025-summer-league-film-festival-in-las-vegas",
+            "date": "2025-07-15"
+          }
+        ]
+      }
+    ]
+  },
+  "isaiah-hartenstein": {
+    "player_id": "isaiah-hartenstein",
+    "name": "Isaiah Hartenstein",
+    "team": "okc",
+    "league": "nba",
+    "items": [
+      {
+        "id": "hart-kourtney-yacht-wedding",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married model Kourtney Kellar on a Newport Beach yacht in July 2023",
+        "summary": "Married model + influencer Kourtney Kellar on July 29, 2023 in Newport Beach, California aboard a 6,000-sq-ft yacht with 60 guests. They met in 2019 when Hartenstein slid into her IG DMs complimenting her smile. He proposed on Malibu Beach in April 2022.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/who-is-kourtney-kellar-isaiah-hartenstein/",
+            "date": "2025-05-27"
+          }
+        ]
+      },
+      {
+        "id": "hart-son-elijah-finals-viral",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Son Elijah's viral nap on his shoulder during 2025 Finals win",
+        "summary": "Hartenstein's 13-month-old son Elijah James (b. May 23, 2024) fell asleep on his shoulder amid the championship confetti after Game 7 of the 2025 NBA Finals. The viral moment became one of the defining images of the Thunder's first title.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/article/isaiah-hartenstein-son-steals-spotlight-063210544.html",
+            "date": "2025-06-23"
+          }
+        ]
+      },
+      {
+        "id": "hart-german-american-roots",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "German-American — moved to Germany at age 8 when his dad signed pro",
+        "summary": "Born in the US but moved to Germany at age 8 when his father signed with the Giessen 46ers basketball team. Grew up developing his game in Germany before pursuing the NBA. Wife Kourtney's engagement caption was in German: 'Ich hab ja natürlich gesagt' (Of course I said yes).",
+        "sources": [
+          {
+            "name": "Bleacher Report",
+            "url": "https://bleacherreport.com/articles/2715915-better-off-against-men-why-a-family-chose-life-abroad-to-prep-son-for-nba",
+            "date": "2019-08-15"
+          }
+        ]
+      }
+    ]
+  },
+  "jalen-williams": {
+    "player_id": "jalen-williams",
+    "name": "Jalen Williams",
+    "team": "okc",
+    "league": "nba",
+    "items": [
+      {
+        "id": "jdub-brother-cody-jazz",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Younger brother Cody plays for the Utah Jazz — first faced him Feb 2025",
+        "summary": "Jalen's younger brother Cody Williams plays for the Utah Jazz (drafted 10th overall in 2024). Their parents watched the brothers face off for the first time on February 22, 2025 (Thunder vs Jazz).",
+        "sources": [
+          {
+            "name": "Pro Football Network",
+            "url": "https://www.profootballnetwork.com/nba/jalen-williams-parents-ronald-nicole-family-and-personal-life/",
+            "date": "2025-05-29"
+          }
+        ]
+      },
+      {
+        "id": "jdub-air-force-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Both parents Air Force veterans — 36 combined years service",
+        "summary": "Father Ronald 'Ice' Williams served 24 years as a jet-engine mechanic + logistics specialist. Mother Nicole served 12 years as a medical professional on bases worldwide. They met on Air Force Academy basketball courts. Three kids: Jasmine, Jalen, Cody.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/nicole-williams-sons-grew-up-watching-her-play-basketball-on-an-army-base-now-one-of-them-is-playing-in-the-nba-finals-exclusive-11748999",
+            "date": "2025-06-05"
+          }
+        ]
+      },
+      {
+        "id": "jdub-mom-scholarships-medicine",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Mom Nicole turned down 3 D-I basketball scholarships for military medicine",
+        "summary": "Mother Nicole Williams earned three full-ride basketball scholarship offers out of high school but chose to pursue military medicine instead. She played co-ed basketball on military bases on the side — Jalen and Cody grew up watching her play.",
+        "sources": [
+          {
+            "name": "The Ringer",
+            "url": "https://www.theringer.com/2025/01/16/nba/jalen-williams-oklahoma-city-thunder-breakout-star",
+            "date": "2025-01-16"
+          }
+        ]
+      }
+    ]
+  },
+  "paolo-banchero": {
+    "player_id": "paolo-banchero",
+    "name": "Paolo Banchero",
+    "team": "orl",
+    "league": "nba",
+    "items": [
+      {
+        "id": "paolo-mom-uw-leading-scorer",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Mom Rhonda is University of Washington's all-time leading scorer",
+        "summary": "Paolo's mother Rhonda Smith-Banchero is the University of Washington's all-time leading scorer and a Husky Hall of Famer. She played pro overseas and coached at Holy Names Academy in Seattle, where Paolo grew up around her drills and practices daily.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-are-paolo-bancheros-parents-everything-to-know-about-mario-banchero-and-rhonda-smith-banchero/",
+            "date": "2026-04-26"
+          }
+        ]
+      },
+      {
+        "id": "paolo-italian-heritage",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Italian-American heritage — dad Mario, played at Washington",
+        "summary": "Paolo's father Mario Banchero is of Italian descent and played college basketball for the Washington Huskies. The Italian heritage gave Paolo dual citizenship eligibility — he plays internationally for Team USA but Italy made a serious recruiting push.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-are-paolo-bancheros-parents-everything-to-know-about-mario-banchero-and-rhonda-smith-banchero/",
+            "date": "2026-04-26"
+          }
+        ]
+      }
+    ]
+  },
+  "desmond-bane": {
+    "player_id": "desmond-bane",
+    "name": "Desmond Bane",
+    "team": "orl",
+    "league": "nba",
+    "items": [
+      {
+        "id": "bane-tatum-talley-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married TCU sweetheart Tatum Talley in Cabo, Sept 2024",
+        "summary": "Married fitness instructor Tatum Talley on September 7, 2024 at a beachside ceremony in Los Cabos, Mexico. The couple met at TCU freshman orientation in 2016. They have a son named Armani and announced their second pregnancy at the rehearsal dinner.",
+        "sources": [
+          {
+            "name": "Vocal.media",
+            "url": "https://vocal.media/unbalanced/who-is-desmond-bane-s-wife-meet-tatum-talley",
+            "date": "2025-04-01"
+          }
+        ]
+      },
+      {
+        "id": "bane-nigerian-wedding-tradition",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Incorporated Nigerian wedding tradition at Cabo ceremony",
+        "summary": "Bane's father is Nigerian. The Cabo wedding incorporated a vibrant Nigerian tradition where family members danced the bride and groom in while throwing money — symbolizing prosperity, support, happiness.",
+        "sources": [
+          {
+            "name": "Vocal.media",
+            "url": "https://vocal.media/unbalanced/who-is-desmond-bane-s-wife-meet-tatum-talley",
+            "date": "2025-04-01"
+          }
+        ]
+      }
+    ]
+  },
+  "wendell-carter-jr": {
+    "player_id": "wendell-carter-jr",
+    "name": "Wendell Carter Jr.",
+    "team": "orl",
+    "league": "nba",
+    "items": [
+      {
+        "id": "wcj-angel-reese-relationship",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating WNBA superstar Angel Reese (Atlanta Dream)",
+        "summary": "Wendell is dating WNBA star Angel Reese, who recently moved to the Atlanta Dream. The couple keeps the focus on basketball and works to block out media attention on the relationship — but it's one of the league's most-watched cross-sport romances.",
+        "sources": [
+          {
+            "name": "Complex",
+            "url": "https://www.complex.com/sports/a/bernadette-giacomazzo/wendell-carter-angel-reese-relationship",
+            "date": "2026-04-15"
+          }
+        ]
+      },
+      {
+        "id": "wcj-platform2-foundation",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Hosts TopGolf fundraiser with parents for A Platform 2 Foundation",
+        "summary": "Wendell co-runs A Platform 2 Foundation with parents Wendell Sr. and Kylia, focused on empowering youth and families. Annual TopGolf fundraiser is a tentpole community event for the Magic.",
+        "sources": [
+          {
+            "name": "NBA.com Magic",
+            "url": "https://www.nba.com/magic/news/wendell-carter-jr-hosts-topgolf-fundraiser-with-his-parents-to-benefit-local-youth-and-families-20230308",
+            "date": "2023-03-08"
+          }
+        ]
+      }
+    ]
+  },
+  "jalen-suggs": {
+    "player_id": "jalen-suggs",
+    "name": "Jalen Suggs",
+    "team": "orl",
+    "league": "nba",
+    "items": [
+      {
+        "id": "suggs-minneapolis-roots",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "West St. Paul, Minnesota native — Minnehaha HS legend",
+        "summary": "From West St. Paul, Minnesota. Attended Minnehaha Academy where he was a top-7 recruit nationally in the class of 2020. Local hero in the Twin Cities, regularly returns to coach AAU camps in summer.",
+        "sources": [
+          {
+            "name": "Sports Reference",
+            "url": "https://www.sports-reference.com/cbb/players/jalen-suggs-1.html",
+            "date": "2026-04-26"
+          }
+        ]
+      }
+    ]
+  },
+  "franz-wagner": {
+    "player_id": "franz-wagner",
+    "name": "Franz Wagner",
+    "team": "orl",
+    "league": "nba",
+    "items": [
+      {
+        "id": "franz-moritz-brothers-magic",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Brother Moritz also on the Magic — both products of ALBA Berlin",
+        "summary": "Franz's older brother Moritz Wagner (b. 1997) plays for the same Magic team. Both came up through ALBA Berlin's youth program before going to Michigan and then the NBA. Rare brother-on-same-team setup at this level.",
+        "sources": [
+          {
+            "name": "Tissot",
+            "url": "https://www.tissotwatches.com/en-th/magazine-news-wagner-brothers.html",
+            "date": "2026-01-15"
+          }
+        ]
+      },
+      {
+        "id": "franz-berlin-host-magic",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Hosted Magic teammates in Berlin during 2026 NBA Berlin Games",
+        "summary": "During the 2026 NBA Berlin Games, Franz brought Magic teammates Paolo Banchero, Desmond Bane and others to Berlin's famous Borchardt restaurant and gave them a tour of ALBA Berlin's youth facility.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/the-athletic-wagner-brothers-proud-products-of-berlin-offer-magic-teammates-a-taste-of-home",
+            "date": "2026-01-14"
+          }
+        ]
+      },
+      {
+        "id": "franz-adidas-sneaker-deal",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed adidas sneaker deal with brother Moritz Dec 2025",
+        "summary": "Franz + Moritz signed joint adidas sneaker deals in December 2025 — a homecoming to the German brand. Both wear adidas Harden Vol 10 and Anthony Edwards 2 silhouettes.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/fannation/sneakers/news/adidas-signs-franz-moritz-wagner-sneaker-deals",
+            "date": "2025-12-15"
           }
         ]
       }
