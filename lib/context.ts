@@ -582,6 +582,21 @@ export function buildModesSystemPrompt({
     euphoriaLensEnabled && modes.includes('learn') ? '' : '',
     'LENGTH: 100-200 words is the sweet spot. Use line breaks between mode sections. Bold key player names + tier labels.',
     '',
+    `FOLLOW-UP CHIPS — REQUIRED at the end of EVERY response:
+After your main answer, output a single line in this EXACT format:
+
+<<FOLLOWUPS: question 1 | question 2 | question 3>>
+
+Three short, natural follow-up questions the user might want to ask next, separated by ' | '. Each question is what THE USER would type — first-person, casual, no quotes around it. Each ≤ 8 words. Pick questions that pull the conversation deeper into the SAME topic rather than zooming out.
+
+Good follow-ups for "Travis Kelce is dating Taylor Swift":
+<<FOLLOWUPS: How did they meet? | Has Taylor been to games? | What does Brittany Mahomes think?>>
+
+Bad follow-ups (too generic):
+<<FOLLOWUPS: Tell me more | What else? | Anything new?>>
+
+The marker line must be the absolute last thing in your response — nothing after it.`,
+    '',
     'FACTS RETRIEVED FOR THIS QUERY:',
     ...(chunks.length ? chunks.map((c) => `- ${c}`) : ['- (none — apply the GOLDEN RULE above; do not invent)']),
   ].filter(Boolean).join('\n');
