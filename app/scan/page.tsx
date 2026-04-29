@@ -71,8 +71,12 @@ export default function ScanPage() {
     setError(null);
 
     try {
+      // Downscale on the client so phone photos (~5-15 MB) become ~300-800 KB.
+      // Vision API errors silently on huge payloads — this fixes most "it didn't work" cases.
+      const compressed = await downscaleImage(file, 1280, 0.85);
+
       const form = new FormData();
-      form.append('image', file);
+      form.append('image', compressed);
       const qs = `?teadUp=${teadUp ? 'true' : 'false'}`;
       const res = await fetch(`/api/scan${qs}`, { method: 'POST', body: form });
       if (!res.ok) {
@@ -93,6 +97,41 @@ export default function ScanPage() {
       setError(String(err));
       setPhase('unknown');
     }
+  }
+
+  /**
+   * Downscale an image to a max dimension and re-encode as JPEG.
+   * Reduces phone photos from ~10 MB to under 1 MB so the vision API
+   * doesn't time out or reject the payload.
+   */
+  async function downscaleImage(file: File, maxDim: number, quality: number): Promise<Blob> {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => {
+        const scale = Math.min(1, maxDim / Math.max(img.naturalWidth, img.naturalHeight));
+        const w = Math.round(img.naturalWidth * scale);
+        const h = Math.round(img.naturalHeight * scale);
+        const canvas = document.createElement('canvas');
+        canvas.width = w;
+        canvas.height = h;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) {
+          resolve(file);
+          return;
+        }
+        ctx.drawImage(img, 0, 0, w, h);
+        canvas.toBlob(
+          (blob) => {
+            if (blob) resolve(blob);
+            else resolve(file);
+          },
+          'image/jpeg',
+          quality,
+        );
+      };
+      img.onerror = () => reject(new Error('Image decode failed'));
+      img.src = URL.createObjectURL(file);
+    });
   }
 
   async function trySample() {

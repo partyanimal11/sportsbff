@@ -142,9 +142,11 @@ function nextSample(): ScanResult {
 export async function POST(req: NextRequest) {
   // Parse query string. New: ?teadUp=true (single master toggle).
   // Legacy: ?modes=drama,on_field,learn (still supported).
+  // Demo: ?sample=<id> returns a pre-authored sample (no image required).
   const url = new URL(req.url);
   const teadUpParam = url.searchParams.get('teadUp');
   const modesParam = url.searchParams.get('modes');
+  const sampleParam = url.searchParams.get('sample');
 
   let modes: ('drama' | 'on_field' | 'learn')[] = [];
   if (teadUpParam !== null) {
@@ -159,26 +161,53 @@ export async function POST(req: NextRequest) {
   }
   const wantsModes = modes.length > 0;
 
-  // ─────────────────────────────────────────────────────────
-  // No API key → return a rich pre-authored sample
-  // ─────────────────────────────────────────────────────────
-  if (!hasOpenAIKey()) {
-    const sample = nextSample();
+  /** Helper: return a sample with the modes-payload filtered to the requested modes. */
+  function returnSample(s: ScanResult, fallback = false): Response {
+    const sample = JSON.parse(JSON.stringify(s)) as ScanResult;
     if (wantsModes && sample.modes) {
-      // Filter the rich modes payload down to just the modes the client requested
       sample.modes = {
         drama: modes.includes('drama') ? sample.modes.drama : undefined,
         on_field: modes.includes('on_field') ? sample.modes.on_field : undefined,
         learn: modes.includes('learn') ? sample.modes.learn : undefined,
       };
     } else if (!wantsModes) {
-      // Legacy callers don't want the modes field
       delete sample.modes;
     }
     return new Response(JSON.stringify(sample), {
       status: 200,
-      headers: { 'Content-Type': 'application/json', ...CORS_HEADERS },
+      headers: {
+        'Content-Type': 'application/json',
+        ...(fallback ? { 'X-Scan-Fallback': '1' } : {}),
+        ...CORS_HEADERS,
+      },
     });
+  }
+
+  // ─────────────────────────────────────────────────────────
+  // ?sample=<id> → demo mode: return a specific or random sample
+  // (also: ?sample=random or ?sample alone). No image required.
+  // ─────────────────────────────────────────────────────────
+  if (sampleParam !== null) {
+    const slug = sampleParam.trim().toLowerCase();
+    // Try to match by slug fragments of the player name (e.g. 'travis-kelce' → matches 'Travis Kelce')
+    const match =
+      slug && slug !== 'random'
+        ? SAMPLE_RESULTS.find((s) =>
+            s.player_name
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, '-')
+              .includes(slug.replace(/[^a-z0-9]+/g, '-'))
+          )
+        : null;
+    const picked = match ?? SAMPLE_RESULTS[Math.floor(Math.random() * SAMPLE_RESULTS.length)];
+    return returnSample(picked);
+  }
+
+  // ─────────────────────────────────────────────────────────
+  // No API key → return a rich pre-authored sample
+  // ─────────────────────────────────────────────────────────
+  if (!hasOpenAIKey()) {
+    return returnSample(nextSample());
   }
 
   let imageBase64: string | null = null;

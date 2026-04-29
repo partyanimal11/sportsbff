@@ -18,6 +18,24 @@ import { BottomTabs, BottomTabsSpacer } from '@/components/BottomTabs';
 import { TeaUpToggle } from '@/components/TeaUpToggle';
 import { TierPill, parseTierPills } from '@/components/TierPill';
 import { PROMPT_LIBRARY, STARTER_PROMPTS } from '@/lib/prompts';
+import {
+  listConversations,
+  getConversation,
+  saveConversation,
+  deleteConversation,
+  makeTitle,
+  newConversationId,
+  relativeTime,
+  type Conversation,
+} from '@/lib/chat-history';
+import nflTeams from '@/data/teams/nfl.json';
+import nbaTeams from '@/data/teams/nba.json';
+import playersSample from '@/data/players-sample.json';
+
+type TeamRecord = { id: string; league: 'nfl' | 'nba'; name: string; city: string; conference?: string; head_coach?: string; signature?: string };
+type PlayerRecord = { id: string; name: string; team: string; league: 'nfl' | 'nba'; position: string; number?: number; bio?: string; drama?: string };
+const ALL_TEAMS: TeamRecord[] = [...(nflTeams as TeamRecord[]), ...(nbaTeams as TeamRecord[])];
+const ALL_PLAYERS: PlayerRecord[] = playersSample as PlayerRecord[];
 
 type Msg = { role: 'user' | 'assistant'; content: string };
 
@@ -40,6 +58,11 @@ function ChatPage() {
   const [streaming, setStreaming] = useState(false);
   const [demoMode, setDemoMode] = useState(false);
   const [browseOpen, setBrowseOpen] = useState(false);
+  const [playerBrowseLeague, setPlayerBrowseLeague] = useState<'nba' | 'nfl' | null>(null);
+  // Chat history (localStorage-backed)
+  const [historyOpen, setHistoryOpen] = useState(false);
+  const [conversationId, setConversationId] = useState<string | null>(null);
+  const [historyList, setHistoryList] = useState<Conversation[]>([]);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const voicePlayer = useVoicePlayer();
@@ -66,6 +89,53 @@ function ChatPage() {
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
   }, [messages, streaming]);
+
+  // Auto-save the conversation to localStorage whenever messages change (debounced via streaming check)
+  useEffect(() => {
+    if (streaming) return; // wait until streaming is done so we save the final content
+    if (messages.length === 0) return;
+    const id = conversationId ?? newConversationId();
+    if (!conversationId) setConversationId(id);
+    saveConversation({
+      id,
+      title: makeTitle(messages),
+      messages,
+      createdAt: Date.now(),
+      updatedAt: Date.now(),
+      teadUpOn: teadUp,
+    });
+    setHistoryList(listConversations());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [messages, streaming]);
+
+  // Hydrate the history drawer when it opens
+  useEffect(() => {
+    if (historyOpen) setHistoryList(listConversations());
+  }, [historyOpen]);
+
+  function startNewChat() {
+    setMessages([]);
+    setConversationId(null);
+    setHistoryOpen(false);
+    voicePlayer.stop();
+  }
+
+  function loadConversation(c: Conversation) {
+    setMessages(c.messages);
+    setConversationId(c.id);
+    setHistoryOpen(false);
+    voicePlayer.stop();
+  }
+
+  function removeConversation(id: string) {
+    deleteConversation(id);
+    setHistoryList(listConversations());
+    // If we deleted the current convo, reset
+    if (id === conversationId) {
+      setMessages([]);
+      setConversationId(null);
+    }
+  }
 
   function toggleTeadUp() {
     const next = !teadUp;
@@ -163,22 +233,22 @@ function ChatPage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-white" style={{ minHeight: '100dvh' }}>
+    <main className="flex flex-col bg-white overflow-hidden" style={{ height: '100dvh' }}>
       {/* Header */}
       <header className="px-3 sm:px-6 py-2.5 border-b border-[var(--hairline)] flex items-center justify-between gap-2 bg-white/95 backdrop-blur sticky top-0 z-20">
         <div className="flex items-center gap-2 min-w-0">
-          {messages.length > 0 && (
-            <button
-              onClick={clearConversation}
-              aria-label="Clear conversation"
-              className="w-9 h-9 rounded-full flex items-center justify-center text-ink-soft hover:bg-cream-warm transition shrink-0"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-                <line x1="19" y1="12" x2="5" y2="12" />
-                <polyline points="12 19 5 12 12 5" />
-              </svg>
-            </button>
-          )}
+          {/* Hamburger — opens chat history drawer */}
+          <button
+            onClick={() => setHistoryOpen(true)}
+            aria-label="Open chat history"
+            className="w-9 h-9 rounded-full flex items-center justify-center text-ink-soft hover:bg-cream-warm transition shrink-0"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
           <Link href="/" className="font-display text-base sm:text-lg font-extrabold text-green tracking-wide uppercase shrink-0">
             SPORTS<span className="text-tangerine">★</span>BFF
           </Link>
@@ -226,7 +296,7 @@ function ChatPage() {
       <div ref={scrollRef} className="flex-1 overflow-y-auto px-3 sm:px-4 overscroll-contain">
         <div className="max-w-2xl mx-auto py-5 md:py-8 flex flex-col gap-3.5">
           {messages.length === 0 ? (
-            <EmptyState teadUp={teadUp} onAsk={focusInput} onPick={(p) => send(p)} onBrowse={() => setBrowseOpen(true)} league={league} onPickLeague={(l) => { setLeague(l); setProfile({ league: l }); }} onToggleTeadUp={toggleTeadUp} />
+            <EmptyState teadUp={teadUp} onAsk={focusInput} onPick={(p) => send(p)} onBrowse={() => setBrowseOpen(true)} league={league} onPickLeague={(l) => { setLeague(l); setProfile({ league: l }); }} onToggleTeadUp={toggleTeadUp} onOpenPlayerBrowse={(l) => setPlayerBrowseLeague(l)} />
           ) : (
             messages.map((m, i) => (
               <Bubble
@@ -296,6 +366,26 @@ function ChatPage() {
       <BottomTabs />
 
       {browseOpen && <BrowsePrompts onPick={(p) => { setBrowseOpen(false); send(p); }} onClose={() => setBrowseOpen(false)} />}
+      {playerBrowseLeague && (
+        <PlayerBrowse
+          league={playerBrowseLeague}
+          onPick={(prompt) => {
+            setPlayerBrowseLeague(null);
+            send(prompt);
+          }}
+          onClose={() => setPlayerBrowseLeague(null)}
+        />
+      )}
+      {historyOpen && (
+        <HistoryDrawer
+          conversations={historyList}
+          activeId={conversationId}
+          onPick={loadConversation}
+          onNewChat={startNewChat}
+          onDelete={removeConversation}
+          onClose={() => setHistoryOpen(false)}
+        />
+      )}
     </main>
   );
 }
@@ -309,6 +399,7 @@ function EmptyState({
   onPick,
   onBrowse,
   onToggleTeadUp,
+  onOpenPlayerBrowse,
 }: {
   teadUp: boolean;
   onAsk: () => void;
@@ -317,6 +408,7 @@ function EmptyState({
   league: 'nfl' | 'nba' | 'both';
   onPickLeague: (l: 'nfl' | 'nba' | 'both') => void;
   onToggleTeadUp: () => void;
+  onOpenPlayerBrowse: (l: 'nba' | 'nfl') => void;
 }) {
   return (
     <div className="mt-2 sm:mt-4 px-1">
@@ -329,9 +421,28 @@ function EmptyState({
           <img
             src="/brand/goldie.png"
             alt="Goldie, your sports BFF"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover object-top"
           />
         </div>
+
+        {/* Tiny Tea'd Up status chip — sits inline with the headline area */}
+        <button
+          onClick={onToggleTeadUp}
+          aria-pressed={teadUp}
+          className="inline-flex items-center gap-1.5 mb-3 px-2.5 py-1 rounded-full text-[11px] font-semibold transition"
+          style={{
+            background: teadUp ? 'linear-gradient(135deg, #E84B7A 0%, #FF6B3D 100%)' : 'rgba(13,45,36,0.04)',
+            color: teadUp ? '#FFFFFF' : '#3A3A3D',
+            boxShadow: teadUp ? '0 4px 12px -4px rgba(232,75,122,0.4)' : 'none',
+            border: teadUp ? 'none' : '1px solid rgba(13,45,36,0.08)',
+          }}
+        >
+          <span aria-hidden>☕</span>
+          <span>Tea'd Up · {teadUp ? 'ON' : 'OFF'}</span>
+          <span className="opacity-70 text-[10px]">{teadUp ? '· tap to mute' : '· tap for gossip'}</span>
+        </button>
 
         <h1 className="font-display text-[28px] sm:text-[32px] font-bold text-green leading-[1.05] tracking-tight">
           {teadUp ? (
@@ -343,42 +454,9 @@ function EmptyState({
         <p className="mt-2 text-[13px] sm:text-[14px] text-ink-soft max-w-xs">
           {teadUp
             ? "I'll share what I know — confirmed, reported, or rumor. Tier-tagged so you know the source."
-            : "Rules, players, storylines — the league, decoded. Flip Tea'd Up on if you want the gossip layer too."}
+            : "Rules, players, storylines — the league, decoded."}
         </p>
       </div>
-
-      {/* TEA'D UP — huge promotion banner */}
-      <button
-        onClick={onToggleTeadUp}
-        aria-pressed={teadUp}
-        className="mt-5 w-full block rounded-3xl p-4 sm:p-5 text-left transition shadow-[0_8px_22px_-10px_rgba(232,75,122,0.4)]"
-        style={{
-          background: teadUp
-            ? 'linear-gradient(135deg, #E84B7A 0%, #FF6B3D 100%)'
-            : 'linear-gradient(135deg, #FDEEF1 0%, #FFE7DB 100%)',
-          color: teadUp ? '#FFFFFF' : '#0D2D24',
-        }}
-      >
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex items-start gap-3 min-w-0">
-            <span className={`text-3xl shrink-0 ${teadUp ? 'animate-pulse' : ''}`} aria-hidden>☕</span>
-            <div className="min-w-0">
-              <div className="text-[10px] font-bold tracking-[0.22em] uppercase opacity-80">
-                Tea'd Up · {teadUp ? 'ON' : 'OFF'}
-              </div>
-              <div className="font-display font-bold text-[18px] sm:text-[20px] leading-tight mt-0.5">
-                {teadUp ? "You're getting the gossip layer" : "Want the gossip layer?"}
-              </div>
-              <div className="text-[12px] sm:text-[13px] opacity-90 leading-snug mt-0.5">
-                {teadUp
-                  ? "Drama, beefs, burner accounts — every claim tier-tagged. Tap to turn off."
-                  : "Drama, beefs, burner accounts — tap to flip it on."}
-              </div>
-            </div>
-          </div>
-          <span className="text-[20px] shrink-0" aria-hidden>{teadUp ? '✓' : '→'}</span>
-        </div>
-      </button>
 
       {/* Main CTA — opens prompt browser */}
       <button
@@ -397,12 +475,12 @@ function EmptyState({
 
       <div className="mt-4 grid grid-cols-2 gap-2.5">
         {[
-          { id: 'nba' as const, label: 'NBA player', sub: 'Tell me about a star', emoji: '🏀', seed: 'I want to learn about a specific NBA player. Suggest 5 stars I should know about, with one sentence on each.' },
-          { id: 'nfl' as const, label: 'NFL player', sub: 'Tell me about a star', emoji: '🏈', seed: 'I want to learn about a specific NFL player. Suggest 5 stars I should know about, with one sentence on each.' },
+          { id: 'nba' as const, label: 'NBA player', sub: 'Pick a team, find a star', emoji: '🏀' },
+          { id: 'nfl' as const, label: 'NFL player', sub: 'Pick a team, find a star', emoji: '🏈' },
         ].map((s) => (
           <button
             key={s.id}
-            onClick={() => onPick(s.seed)}
+            onClick={() => onOpenPlayerBrowse(s.id)}
             className="bg-white border border-[var(--hairline)] rounded-2xl p-4 text-left hover:bg-cream-warm hover:border-tangerine/40 transition shadow-[0_8px_24px_-12px_rgba(13,45,36,0.10)]"
           >
             <div className="text-3xl mb-2" aria-hidden>{s.emoji}</div>
@@ -550,6 +628,325 @@ function Bubble({
           )}
         </div>
       )}
+    </div>
+  );
+}
+
+/* =================================================================
+   Player browse modal — pick team → see roster → pick player → seed chat
+   ================================================================= */
+
+function PlayerBrowse({
+  league,
+  onPick,
+  onClose,
+}: {
+  league: 'nba' | 'nfl';
+  onPick: (prompt: string) => void;
+  onClose: () => void;
+}) {
+  const [search, setSearch] = useState('');
+  const [activeTeam, setActiveTeam] = useState<string | null>(null);
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = ''; };
+  }, []);
+
+  const teams = ALL_TEAMS.filter((t) => t.league === league);
+  const teamLogo: Record<string, string> = { nba: '🏀', nfl: '🏈' };
+
+  const q = search.trim().toLowerCase();
+  const playerSearchResults: PlayerRecord[] = q
+    ? ALL_PLAYERS.filter((p) =>
+        p.league === league && (
+          p.name.toLowerCase().includes(q) ||
+          p.id.includes(q.replace(/\s+/g, '-'))
+        )
+      ).slice(0, 30)
+    : [];
+
+  const teamRoster: PlayerRecord[] = activeTeam
+    ? ALL_PLAYERS.filter((p) => p.league === league && p.team === activeTeam)
+    : [];
+  const activeTeamData = activeTeam ? teams.find((t) => t.id === activeTeam) : null;
+
+  function pickPlayer(p: PlayerRecord) {
+    onPick(`Tell me everything about ${p.name}.`);
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center" role="dialog" aria-modal>
+      <div className="absolute inset-0 bg-ink/40 backdrop-blur-sm" onClick={onClose} />
+      <div className="relative w-full md:max-w-2xl bg-white md:rounded-[28px] rounded-t-[28px] shadow-2xl overflow-hidden flex flex-col max-h-[92vh] md:max-h-[82vh]">
+        {/* Header */}
+        <div className="px-5 py-4 border-b border-[var(--hairline)] flex items-center gap-3">
+          {activeTeam && !q && (
+            <button
+              onClick={() => setActiveTeam(null)}
+              aria-label="Back to teams"
+              className="w-9 h-9 rounded-full hover:bg-cream-warm transition flex items-center justify-center text-ink-soft"
+            >
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                <path d="M10 13 L4 8 L10 3" />
+              </svg>
+            </button>
+          )}
+          <div className="font-display text-lg font-bold text-green flex-1 min-w-0 truncate">
+            {activeTeamData && !q ? (
+              <><span aria-hidden>{teamLogo[league]}</span> {activeTeamData.city} {activeTeamData.name}</>
+            ) : (
+              <>{league === 'nba' ? '🏀' : '🏈'} Find a {league.toUpperCase()} player</>
+            )}
+          </div>
+          <button onClick={onClose} className="w-9 h-9 rounded-full hover:bg-cream-warm transition flex items-center justify-center text-ink-soft" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 3 L13 13 M13 3 L3 13" /></svg>
+          </button>
+        </div>
+
+        {/* Search */}
+        <div className="px-5 pt-3 pb-3 border-b border-[var(--hairline)]">
+          <input
+            autoFocus
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder={`Search ${league.toUpperCase()} players by name…`}
+            className="w-full bg-cream-warm border border-[var(--hairline)] rounded-full px-4 py-2.5 text-[14px] focus:outline-none focus:ring-2 focus:ring-tangerine/30"
+          />
+        </div>
+
+        {/* Body */}
+        <div className="flex-1 overflow-y-auto p-4">
+          {/* Search results across all teams */}
+          {q && (
+            playerSearchResults.length > 0 ? (
+              <div className="flex flex-col gap-2">
+                {playerSearchResults.map((p) => (
+                  <PlayerRow key={p.id} player={p} team={teams.find((t) => t.id === p.team)} onPick={() => pickPlayer(p)} />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center text-muted py-12 text-sm">
+                No players match &quot;{search}&quot;.
+                <div className="mt-2 text-[12px]">
+                  <button onClick={() => setSearch('')} className="text-tangerine font-semibold hover:underline">
+                    Clear search to browse by team →
+                  </button>
+                </div>
+              </div>
+            )
+          )}
+
+          {/* Team grid (no team selected) */}
+          {!q && !activeTeam && (
+            <>
+              <p className="text-[11px] text-muted uppercase tracking-wider mb-3 text-center">Pick a team</p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                {teams.map((t) => (
+                  <button
+                    key={t.id}
+                    onClick={() => setActiveTeam(t.id)}
+                    className="bg-white border border-[var(--hairline)] rounded-2xl p-3 text-left hover:bg-cream-warm hover:border-tangerine/40 transition shadow-[0_4px_12px_-6px_rgba(13,45,36,0.08)]"
+                  >
+                    <div className="font-display font-bold text-[14px] text-green leading-tight truncate">{t.city}</div>
+                    <div className="text-[12px] text-ink-soft truncate">{t.name}</div>
+                    {t.conference && (
+                      <div className="text-[9px] font-mono uppercase tracking-wider text-muted mt-1">{t.conference[0]}{t.conference.slice(1).toLowerCase()}</div>
+                    )}
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+
+          {/* Team roster (after team selected) */}
+          {!q && activeTeam && activeTeamData && (
+            <>
+              {activeTeamData.signature && (
+                <p className="text-[12px] text-ink-soft italic mb-3 text-center">{activeTeamData.signature}</p>
+              )}
+              {teamRoster.length > 0 ? (
+                <div className="flex flex-col gap-2">
+                  {teamRoster.map((p) => (
+                    <PlayerRow key={p.id} player={p} team={activeTeamData} onPick={() => pickPlayer(p)} />
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center text-muted py-8">
+                  <p className="text-sm">No players from {activeTeamData.city} are in our starter roster yet.</p>
+                  <p className="mt-2 text-[12px]">
+                    But Goldie can still tell you about anyone —{' '}
+                    <button
+                      onClick={() => onPick(`Tell me about the ${activeTeamData.city} ${activeTeamData.name} starting roster — who are the main players to know?`)}
+                      className="text-tangerine font-semibold hover:underline"
+                    >
+                      ask about the team roster
+                    </button>
+                  </p>
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function PlayerRow({
+  player,
+  team,
+  onPick,
+}: {
+  player: PlayerRecord;
+  team?: TeamRecord;
+  onPick: () => void;
+}) {
+  return (
+    <button
+      onClick={onPick}
+      className="w-full bg-white border border-[var(--hairline)] rounded-2xl px-4 py-3 hover:border-tangerine hover:bg-cream-warm transition flex items-center gap-3 text-left"
+    >
+      <div
+        className="shrink-0 w-11 h-11 rounded-full bg-cream-warm flex items-center justify-center font-display font-bold text-green text-[14px]"
+        aria-hidden
+      >
+        {player.number ? `#${player.number}` : player.position}
+      </div>
+      <div className="flex-1 min-w-0">
+        <div className="font-display font-bold text-[14.5px] text-green truncate">{player.name}</div>
+        <div className="text-[11.5px] text-ink-soft truncate">
+          {player.position}
+          {team && <> · {team.city} {team.name}</>}
+        </div>
+      </div>
+      <span className="text-tangerine shrink-0">→</span>
+    </button>
+  );
+}
+
+/* =================================================================
+   History drawer — slide-in sidebar with past conversations
+   ================================================================= */
+
+function HistoryDrawer({
+  conversations,
+  activeId,
+  onPick,
+  onNewChat,
+  onDelete,
+  onClose,
+}: {
+  conversations: Conversation[];
+  activeId: string | null;
+  onPick: (c: Conversation) => void;
+  onNewChat: () => void;
+  onDelete: (id: string) => void;
+  onClose: () => void;
+}) {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = ''; };
+  }, []);
+
+  return (
+    <div className="fixed inset-0 z-50 flex" role="dialog" aria-modal aria-label="Chat history">
+      {/* Drawer — slides in from the left */}
+      <div
+        className="relative w-[88vw] max-w-[340px] bg-white shadow-2xl flex flex-col"
+        style={{ animation: 'historyDrawerSlide 0.22s ease-out' }}
+      >
+        <div className="px-4 py-3 border-b border-[var(--hairline)] flex items-center justify-between gap-2">
+          <div className="font-display text-[16px] font-bold text-green flex items-center gap-2">
+            <span aria-hidden>💬</span> Chat history
+          </div>
+          <button
+            onClick={onClose}
+            aria-label="Close history"
+            className="w-8 h-8 rounded-full hover:bg-cream-warm transition flex items-center justify-center text-ink-soft"
+          >
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 3 L13 13 M13 3 L3 13" /></svg>
+          </button>
+        </div>
+
+        <div className="px-3 py-2 border-b border-[var(--hairline)]">
+          <button
+            onClick={onNewChat}
+            className="w-full inline-flex items-center justify-center gap-2 bg-tangerine text-white font-semibold rounded-full py-2.5 text-[13.5px] hover:bg-tangerine-dark transition"
+          >
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <path d="M8 3 L8 13 M3 8 L13 8" />
+            </svg>
+            New chat
+          </button>
+        </div>
+
+        <div className="flex-1 overflow-y-auto px-2 py-2">
+          {conversations.length === 0 ? (
+            <div className="text-center text-muted py-12 px-4">
+              <div className="text-3xl mb-3" aria-hidden>☕</div>
+              <p className="text-[13px]">No saved chats yet. Start one and it'll show up here.</p>
+            </div>
+          ) : (
+            <div className="flex flex-col gap-1">
+              {conversations.map((c) => {
+                const isActive = c.id === activeId;
+                return (
+                  <div
+                    key={c.id}
+                    className={`group flex items-center gap-2 rounded-xl transition ${
+                      isActive ? 'bg-tangerine/10' : 'hover:bg-cream-warm'
+                    }`}
+                  >
+                    <button
+                      onClick={() => onPick(c)}
+                      className="flex-1 min-w-0 text-left px-3 py-2.5"
+                    >
+                      <div className={`font-semibold text-[13.5px] leading-tight truncate ${isActive ? 'text-tangerine' : 'text-green'}`}>
+                        {c.title}
+                      </div>
+                      <div className="text-[11px] text-muted mt-0.5 flex items-center gap-1.5">
+                        <span>{relativeTime(c.updatedAt)}</span>
+                        <span>·</span>
+                        <span>{c.messages.length} {c.messages.length === 1 ? 'msg' : 'msgs'}</span>
+                        {c.teadUpOn && <span className="text-magenta-dusty" aria-hidden>· ☕</span>}
+                      </div>
+                    </button>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (confirm('Delete this chat?')) onDelete(c.id);
+                      }}
+                      aria-label="Delete chat"
+                      className="shrink-0 w-7 h-7 rounded-full hover:bg-red-50 hover:text-red-600 transition flex items-center justify-center text-muted opacity-0 group-hover:opacity-100 mr-1"
+                    >
+                      <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                        <path d="M3 4 H 13 M5 4 V 13 H 11 V 4 M7 4 V 2 H 9 V 4" />
+                      </svg>
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+
+        <div className="px-3 py-2 border-t border-[var(--hairline)] text-center">
+          <span className="text-[10px] text-muted font-mono uppercase tracking-wider">
+            saved on this device
+          </span>
+        </div>
+      </div>
+
+      {/* Backdrop — tap to close */}
+      <div className="flex-1 bg-ink/40 backdrop-blur-sm" onClick={onClose} />
+
+      <style jsx>{`
+        @keyframes historyDrawerSlide {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(0); }
+        }
+      `}</style>
     </div>
   );
 }
