@@ -873,6 +873,48 @@
             "date": "2025-01-02"
           }
         ]
+      },
+      {
+        "id": "curry-ayesha-family",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Ayesha Alexander in 2011 — four kids, hot sauce empire",
+        "summary": "Married chef-entrepreneur Ayesha Alexander in 2011 after meeting in their teens at a Charlotte church youth group. Four kids: Riley, Ryan, Canon, Caius. Ayesha runs International Smoke restaurants, Sweet July lifestyle brand, and the Eat. Learn. Play. Foundation with Steph.",
+        "sources": [
+          {
+            "name": "Essence",
+            "url": "https://www.essence.com/gallery/ayesha-curry-family-photos/",
+            "date": "2023-03-23"
+          }
+        ]
+      },
+      {
+        "id": "curry-christian-faith",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Devout Christian — writes Philippians 4:13 on every shoe",
+        "summary": "Curry has been openly Christian throughout his career. Had a faith conversion in 8th grade when his pastor challenged him to make the religion personal rather than inherited. Writes 'I can do all things…' (Philippians 4:13) on every pair of shoes he wears.",
+        "sources": [
+          {
+            "name": "Faithwire",
+            "url": "https://www.faithwire.com/2019/06/04/steph-curry-explains-moment-he-truly-became-a-christian-and-gave-my-life-to-christ/",
+            "date": "2019-06-04"
+          }
+        ]
+      },
+      {
+        "id": "curry-eat-learn-play",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Co-founded Eat. Learn. Play. Foundation — 2.5M+ meals served",
+        "summary": "Steph + Ayesha co-founded the Eat. Learn. Play. Foundation focused on ending childhood hunger in the Bay Area. Partnered with No Kid Hungry and connected over 2.5 million meals to children.",
+        "sources": [
+          {
+            "name": "SF Chronicle",
+            "url": "https://www.sfchronicle.com/insidescoop/article/Ayesha-Curry-has-helped-connect-children-with-2-5-12422367.php",
+            "date": "2017-12-11"
+          }
+        ]
       }
     ]
   },
@@ -1018,6 +1060,48 @@
             "name": "Olympics.com",
             "url": "https://www.olympics.com/en/news/paris-2024-mens-basketball-blood-sweat-tears-victor-wembanyama-inspires-france",
             "date": "2024-08-10"
+          }
+        ]
+      },
+      {
+        "id": "wemby-family-france",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Felix (DRC long-jumper), mother Elodie (pro basketball, 6'3)",
+        "summary": "Father Felix Wembanyama is from the DRC, a high-level long jumper. Mother Elodie de Fautereau is 6'3, a former pro basketball player and coach. Sister Eve (6'1) and brother Oscar (6'5) both play basketball. Grandfather Michel played in French Division One.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/all-about-victor-wembanyama-family-parents-8350490",
+            "date": "2023-11-07"
+          }
+        ]
+      },
+      {
+        "id": "wemby-shaolin-temple",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Spent 10 days at a Shaolin temple in China studying kung fu and Buddhism",
+        "summary": "During the 2025 offseason, Wemby spent 10 days at a Shaolin temple in Zhengzhou, China practicing kung fu and studying Buddhism. He doesn't identify as Buddhist but values the warrior-monk philosophy. The trip generated significant cultural buzz.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/victor-wembanyama-spurs-return-blood-clot",
+            "date": "2025-07-15"
+          }
+        ]
+      },
+      {
+        "id": "wemby-blood-clot-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Diagnosed with deep vein thrombosis in right shoulder Feb 2025",
+        "summary": "After the 2025 All-Star Game, Wemby was diagnosed with a blood clot (deep vein thrombosis) in his right shoulder. Missed the remainder of the 2024-25 season. Medically cleared in July 2025 and returned for the 2025-26 season.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/nba/article/victor-wembanyama-spurs-miss-rest-of-regular-season-with-blood-clot-in-shoulder-175153572.html",
+            "date": "2025-02-20"
           }
         ]
       }
@@ -1305,6 +1389,48 @@
             "date": "2024-07-06"
           }
         ]
+      },
+      {
+        "id": "tatum-ella-mai-relationship",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Long-term partner is Grammy-winning singer Ella Mai",
+        "summary": "Tatum is in a long-term relationship with English R&B singer Ella Mai (of 'Boo'd Up' fame). Began dating around 2020 and have one son together named Dylan. Extremely private — marriage status unconfirmed.",
+        "sources": [
+          {
+            "name": "Hello Magazine",
+            "url": "https://www.hellomagazine.com/us/892104/meet-boston-celtics-jayson-tatum-grammy-award-winning-partner-their-only-child/",
+            "date": "2024-09-10"
+          }
+        ]
+      },
+      {
+        "id": "tatum-deuce-toriah-lachell",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Eldest son Deuce (b. 2017) with high-school girlfriend Toriah Lachell",
+        "summary": "Tatum's eldest son Jayson Christopher Tatum Jr. ('Deuce') was born December 6, 2017 during his rookie year. Mother is Toriah Lachell Mimms, his high-school girlfriend from Chaminade College Prep in St. Louis; she works as a hairstylist.",
+        "sources": [
+          {
+            "name": "Heavy",
+            "url": "https://heavy.com/sports/nba/boston-celtics/jayson-tatum-ex-baby-mother-toriah-mimms/",
+            "date": "2024-07-20"
+          }
+        ]
+      },
+      {
+        "id": "tatum-st-louis-parents",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Single-mom origin — attorney mother Brandy raised him in St. Louis",
+        "summary": "Born March 3, 1998 in St. Louis. Father Justin is a high-school basketball coach. Mother Brandy Cole-Barnes is an attorney who earned communications, political science, and law degrees from Saint Louis University while raising Jayson as a single mom.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-are-jayson-tatums-parents-everything-to-know-about-justin-tatum-and-brandy-cole/",
+            "date": "2024-06-18"
+          }
+        ]
       }
     ]
   },
@@ -1375,6 +1501,48 @@
             "name": "Heavy Sports",
             "url": "https://heavy.com/sports/nba/philadelphia-76ers/76ers-injury-report-for-game-3-vs-celtics-features-major-joel-embiid-update/",
             "date": "2026-04-15"
+          }
+        ]
+      },
+      {
+        "id": "embiid-anne-de-paula-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Brazilian SI Swimsuit model Anne de Paula in 2023",
+        "summary": "Married Anne de Paula on July 22, 2023 in Southampton, NY. Wedding featured performances by Meek Mill and Brian McKnight.",
+        "sources": [
+          {
+            "name": "The Knot",
+            "url": "https://www.theknot.com/content/joel-embiid-relationship",
+            "date": "2023-07-22"
+          }
+        ]
+      },
+      {
+        "id": "embiid-son-arthur",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Son Arthur named for late younger brother killed in Cameroon car crash",
+        "summary": "Son Arthur Elijah de Paula Embiid born September 17, 2020. Named after Joel's younger brother Arthur, who died in a 2014 car accident in Cameroon at age 13.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/all-about-joel-embiid-son-arthur-8668846",
+            "date": "2020-09-17"
+          }
+        ]
+      },
+      {
+        "id": "embiid-troel-instagram-troll",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Famously trolled Sixers fans by changing IG bio to 'Troel'",
+        "summary": "In summer 2023 Embiid changed his Instagram bio to 'Troel' (removing his Philadelphia location), sparking viral speculation that he was forcing a trade. He later confirmed it was a joke.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/extra-mustard/2023/08/17/joel-embiid-happy-76ers-despite-social-media-bio-changes",
+            "date": "2023-08-17"
           }
         ]
       }
@@ -3913,6 +4081,34 @@
             "date": "2026-02-07"
           }
         ]
+      },
+      {
+        "id": "castle-mom-uconn-ring",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Mom Quannette surprised him with his UConn ring at MSG on Christmas Eve",
+        "summary": "Stephon's mother Quannette surprised him with his 2024 NCAA championship ring at Madison Square Garden on Christmas Eve 2024 — the Spurs orchestrated the moment. Both parents (Quannette + Stacey) moved from Georgia to San Antonio when Stephon was drafted to support him.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/6018426/2024/12/24/stephon-castle-mom-spurs-uconn-championship-ring/",
+            "date": "2024-12-24"
+          }
+        ]
+      },
+      {
+        "id": "castle-dad-stacey-nyc",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Stacey is a 90s NYC basketball legend, played at Wake + UCF",
+        "summary": "Stephon's father Stacey Castle is a New York City basketball legend who played at Wake Forest then UCF in the mid-90s, scoring 11.4 PPG his senior year. NYC roots run deep on both sides — both parents are from New York.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/ncaa-college-basketball-news-who-are-stephon-castles-parents-deep-dive-into-uconn-no-fives-family-history/",
+            "date": "2024-04-07"
+          }
+        ]
       }
     ]
   },
@@ -4865,6 +5061,886 @@
             "name": "ESPN",
             "url": "https://www.espn.com/nba/story/_/id/30137519/lonzo-ball-says-fathers-big-baller-brand-shoes-likely-caused-2018-knee-injury",
             "date": "2020-09-22"
+          }
+        ]
+      }
+    ]
+  },
+  "nickeil-alexander-walker": {
+    "player_id": "nickeil-alexander-walker",
+    "name": "Nickeil Alexander-Walker",
+    "team": "atl",
+    "league": "nba",
+    "items": [
+      {
+        "id": "naw-cousin-sga",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Cousin of MVP Shai Gilgeous-Alexander",
+        "summary": "Grew up together in Canada with cousin Shai Gilgeous-Alexander; have discussed their competitive relationship but describe being like 'twin brothers' growing up.",
+        "sources": [
+          {
+            "name": "Basketball Network",
+            "url": "https://www.basketballnetwork.net/off-the-court/nickeil-alexander-walker-talks-about-growing-up-with-shai-gilgeous-alexanders-father",
+            "date": "2026-04-18"
+          }
+        ]
+      }
+    ]
+  },
+  "cj-mccollum": {
+    "player_id": "cj-mccollum",
+    "name": "CJ McCollum",
+    "team": "atl",
+    "league": "nba",
+    "items": [
+      {
+        "id": "cjm-marriage-elise",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married longtime girlfriend Elise Espinosa October 2020",
+        "summary": "Married Elise Espinosa in October 2020 after a 10-year relationship dating back to high school in Lehigh Valley.",
+        "sources": [
+          {
+            "name": "Bleacher Report",
+            "url": "https://www.facebook.com/bleacherreport/posts/cj-mccollum-and-his-longtime-girlfriend-elise-got-married-%EF%B8%8Fvia-cj-mccollum/10158609466626006/",
+            "date": "2020-10-29"
+          }
+        ]
+      }
+    ]
+  },
+  "jaylen-brown": {
+    "player_id": "jaylen-brown",
+    "name": "Jaylen Brown",
+    "team": "bos",
+    "league": "nba",
+    "items": [
+      {
+        "id": "brown-kysre-gondrezick",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Brief 2024 romance with WNBA's Kysre Gondrezick",
+        "summary": "Brown dated Chicago Sky guard and fashion model Kysre Gondrezick starting summer 2024. They went Instagram official at the 2024 ESPYs in July, but split early in the 2024-25 NBA season as Brown re-focused on basketball.",
+        "sources": [
+          {
+            "name": "BOSSIP",
+            "url": "https://bossip.com/2777783/kysre-gondrezick-jaylen-brown-break-up/",
+            "date": "2025-02-01"
+          }
+        ]
+      },
+      {
+        "id": "brown-family-marselles-mechalle",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father a 7-foot heavyweight boxer; mother a professor",
+        "summary": "Father Marselles Brown was a 7-foot heavyweight boxing champion. Mother Mechalle Brown raised Jaylen and older brother Quenton in Marietta, Georgia after separation; she's a professor with degrees from Michigan State and AIU.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-meet-jaylen-browns-boxing-world-champion-father-and-mother-all-about-celtics-stars-parents/",
+            "date": "2024-06-15"
+          }
+        ]
+      },
+      {
+        "id": "brown-mit-bridge-program",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "MIT Media Lab fellow + 7uice Foundation STEM Bridge Program",
+        "summary": "Named MIT Media Lab fellow in 2019. Founded 7uice Foundation tackling education and income inequality, plus a Bridge Program partnership with MIT offering STEAM curriculum (space, synthetic biology, AI) to 8th-12th graders in underserved Boston communities.",
+        "sources": [
+          {
+            "name": "MIT Media Lab",
+            "url": "https://www.media.mit.edu/articles/building-a-bridge-for-learning-jaylen-brown-david-kong-tedxbeaconstreet/",
+            "date": "2024-09-20"
+          }
+        ]
+      }
+    ]
+  },
+  "sam-hauser": {
+    "player_id": "sam-hauser",
+    "name": "Sam Hauser",
+    "team": "bos",
+    "league": "nba",
+    "items": [
+      {
+        "id": "hauser-mary-dodge-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Wisconsin volleyball alum Mary Dodge in 2023",
+        "summary": "Hauser married college sweetheart Mary Dodge on August 4, 2023 after proposing in Nantucket in August 2022. Mary played volleyball for Wisconsin and earned a BS in Communication Sciences. Couple welcomed their first child in March 2025.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-is-sam-hauser-s-wife-mary-dodge-all-about-celtics-sniper-s-life-partner-who-once-represented-team-usa-essentiallysports/",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "hauser-wisconsin-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Wisconsin basketball family — brother Joey played at MSU",
+        "summary": "Hauser born December 8, 1997 in Green Bay, raised in Stevens Point. Both parents played college basketball; father Dave is a former assistant coach. Brother Joey played at Marquette and Michigan State.",
+        "sources": [
+          {
+            "name": "Sportskeeda",
+            "url": "https://www.sportskeeda.com/basketball/sam-hauser-parents",
+            "date": "2024-05-10"
+          }
+        ]
+      }
+    ]
+  },
+  "neemias-queta": {
+    "player_id": "neemias-queta",
+    "name": "Neemias Queta",
+    "team": "bos",
+    "league": "nba",
+    "items": [
+      {
+        "id": "queta-portuguese-refugee-parents",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Parents fled Guinea-Bissau civil war to settle in Portugal",
+        "summary": "Born July 13, 1999 in Lisbon to Bissau-Guinean parents Mica and Djaneuba Queta who fled the Guinea-Bissau civil war (1998-99), settling first in Cape Verde then Portugal. Raised in Vale da Amoreira, Barreiro working-class neighborhood. First NBA player from Portugal.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-what-are-neemias-quetas-ethnicity-religion-all-about-celtics-stars-nationality-early-life-revealed/",
+            "date": "2024-10-20"
+          }
+        ]
+      },
+      {
+        "id": "queta-basketball-discovery",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Discovered basketball at 10 by tagging along with sister",
+        "summary": "At age 10 Queta followed his older sister to a basketball tryout at the local Barreirense club. Despite soccer dominating Portuguese sports culture, coaches spotted his height + coordination and convinced the family to invest in a niche-sport pursuit.",
+        "sources": [
+          {
+            "name": "yebscore",
+            "url": "https://yebscore.com/news/who-is-the-girlfriend-of-neemias-queta-his-parents-family-salary-jersey/",
+            "date": "2024-06-12"
+          }
+        ]
+      }
+    ]
+  },
+  "derrick-white": {
+    "player_id": "derrick-white",
+    "name": "Derrick White",
+    "team": "bos",
+    "league": "nba",
+    "items": [
+      {
+        "id": "white-hannah-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married college sweetheart Hannah Schneider in 2021, two sons",
+        "summary": "White married Hannah Schneider on August 28, 2021 in a church ceremony. Both attended University of Colorado Boulder. Two sons together: Hendrix James (b. May 2022, named for Jimi Hendrix) and Daxton (b. Nov 2023).",
+        "sources": [
+          {
+            "name": "Sportskeeda",
+            "url": "https://www.sportskeeda.com/basketball/derrick-white-wife",
+            "date": "2024-07-12"
+          }
+        ]
+      },
+      {
+        "id": "white-underdog-colorado-journey",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Cut in 8th grade, NAIA-bound, climbed to NBA Finals MVP candidate",
+        "summary": "White was cut from his middle-school team in 8th grade. As a 6-foot 155-lb senior averaging 20 PPG, his only college offer was non-scholarship NAIA Johnson & Wales. Transferred to D-II UCCS, grew to 6'4, became a star averaging 25.8 PPG his junior year. Drafted 29th overall in 2017 by the Spurs.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/colorados-derrick-white-went-unrecruited-unlikely-nba-prospect-170715016.html",
+            "date": "2024-05-22"
+          }
+        ]
+      }
+    ]
+  },
+  "jarrett-allen": {
+    "player_id": "jarrett-allen",
+    "name": "Jarrett Allen",
+    "team": "cle",
+    "league": "nba",
+    "items": [
+      {
+        "id": "allen-father-leonard-pro-baller",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Leonard Sr. drafted by Mavericks 1985, played in Spain",
+        "summary": "Jarrett's father Leonard Allen Sr. was drafted by the Dallas Mavericks in 1985 and played professionally in Spain's top league before settling into coaching, instilling discipline in his son.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-jarrett-allen-s-parents-everything-to-know-about-the-cleveland-cavaliers-stars-family-background/",
+            "date": "2025-04-22"
+          }
+        ]
+      },
+      {
+        "id": "allen-pet-cats",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Famously the league's nicest guy with a cat-Instagram following",
+        "summary": "Cavs fans on Reddit celebrate Allen as the most normal, cool, relatable NBA player. His low-key personality and pet cats have made him a fan-favorite cultural figure beyond his on-court game.",
+        "sources": [
+          {
+            "name": "Reddit r/clevelandcavs",
+            "url": "https://www.reddit.com/r/clevelandcavs/comments/1gf6y7u/jarrett_allen_and_his_kitties/",
+            "date": "2026-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "james-harden": {
+    "player_id": "james-harden",
+    "name": "James Harden",
+    "team": "cle",
+    "league": "nba",
+    "items": [
+      {
+        "id": "harden-khloe-2015",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "8-month romance with Khloé Kardashian in 2015-16",
+        "summary": "Harden and reality TV star Khloé Kardashian dated July 2015–February 2016 after meeting at Kanye West's basketball party. They split due to long-distance strain and Lamar Odom's overdose crisis affecting Khloé.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/who-has-khloe-kardashian-dated-11950792",
+            "date": "2026-04-15"
+          }
+        ]
+      },
+      {
+        "id": "harden-tabloid-fatigue",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Quoted that Kardashian-tabloid life killed his focus",
+        "summary": "Harden publicly stated he couldn't handle the paparazzi attention from dating Khloé — said he didn't need photos of himself driving or stories about his shoes and restaurants. The distraction affected his team focus.",
+        "sources": [
+          {
+            "name": "Basketball Network",
+            "url": "https://www.basketballnetwork.net/off-the-court/james-harden-on-his-failed-relationship-with-khloe-kardashian",
+            "date": "2024-09-05"
+          }
+        ]
+      }
+    ]
+  },
+  "evan-mobley": {
+    "player_id": "evan-mobley",
+    "name": "Evan Mobley",
+    "team": "cle",
+    "league": "nba",
+    "items": [
+      {
+        "id": "mobley-brother-isaiah",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Brother Isaiah Mobley also plays for Cleveland Cavaliers",
+        "summary": "Evan's older brother Isaiah was drafted by Cleveland in 2022 (49th overall), one year before Evan. They played together at USC under their father Eric's coaching staff — a three-generation basketball family.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Isaiah_Mobley",
+            "date": "2026-01-15"
+          }
+        ]
+      },
+      {
+        "id": "mobley-father-eric-coach",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Eric played pro overseas + coaches at USC",
+        "summary": "Eric Mobley played college ball at Cal Poly Pomona and Portland, then pro in China, Indonesia, Mexico, and Portugal. Coached AAU for 11 years before joining USC's staff in 2018 — recruited and coached both his sons.",
+        "sources": [
+          {
+            "name": "USA Today (Trojans Wire)",
+            "url": "https://trojanswire.usatoday.com/2021/07/22/the-mobley-family-connection-at-usc-trojans-basketball/",
+            "date": "2021-07-22"
+          }
+        ]
+      }
+    ]
+  },
+  "dean-wade": {
+    "player_id": "dean-wade",
+    "name": "Dean Wade",
+    "team": "cle",
+    "league": "nba",
+    "items": [
+      {
+        "id": "wade-kansas-farmboy",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Authentic Kansas farmboy from population-1,295 town",
+        "summary": "Dean grew up in St. John, Kansas (pop. 1,295) in rural Stafford County. Parents Jay (K-State football) and Trish (volleyball + basketball at Florida Southern, All-American) relocated from Wichita for the small-town schools and community.",
+        "sources": [
+          {
+            "name": "Kansas State Blogs",
+            "url": "https://blogs.k-state.edu/kansasprofile/2016/01/04/kansas-profile-now-thats-rural-dean-wade/",
+            "date": "2016-01-04"
+          }
+        ]
+      },
+      {
+        "id": "wade-kayla-engagement",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Engaged to Kansas State basketball alum Kayla Goth",
+        "summary": "Dean proposed to Kayla Goth, a former Kansas State basketball player, in August 2021. Engagement announced via Instagram.",
+        "sources": [
+          {
+            "name": "KSNT News",
+            "url": "https://www.ksnt.com/sports/kansas-state-wildcats/former-k-state-basketball-stars-find-forever-together/",
+            "date": "2021-08-31"
+          }
+        ]
+      }
+    ]
+  },
+  "vj-edgecombe": {
+    "player_id": "vj-edgecombe",
+    "name": "VJ Edgecombe",
+    "team": "phi",
+    "league": "nba",
+    "items": [
+      {
+        "id": "edgecombe-bahamas-origin",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Bahamas-born — grew up running on a generator with no consistent power",
+        "summary": "Born in Bimini, The Bahamas. Grew up in humble circumstances, describing himself as coming 'from nothing' with limited electricity — lived off a generator as a child. Mentored by Bahamian NBA star Buddy Hield in youth development camps.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/V._J._Edgecombe",
+            "date": "2025-01-01"
+          }
+        ]
+      }
+    ]
+  },
+  "paul-george": {
+    "player_id": "paul-george",
+    "name": "Paul George",
+    "team": "phi",
+    "league": "nba",
+    "items": [
+      {
+        "id": "george-daniela-rajic-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married SI Swimsuit model Daniela Rajic in 2022, three kids",
+        "summary": "Married Daniela Rajic on June 29, 2022 in California after proposing on the beach in November 2020. Together since 2013. Three children: Olivia (8), Natasha (4), and Paul Jr. (b. October 2021).",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/clippers-paul-george-marries-longtime-love-daniela-rajic-in-california/",
+            "date": "2022-06-29"
+          }
+        ]
+      },
+      {
+        "id": "george-podcast-p",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Hosts Podcast P with Paul George",
+        "summary": "Hosts the Podcast P with Paul George show featuring conversations with NBA legends like Baron Davis, Jim Jackson, and Paul Pierce. Paused the podcast during the 2026 playoffs to focus on his championship run.",
+        "sources": [
+          {
+            "name": "Apple Podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/podcast-p-with-paul-george/id1675161522",
+            "date": "2026-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "tyrese-maxey": {
+    "player_id": "tyrese-maxey",
+    "name": "Tyrese Maxey",
+    "team": "phi",
+    "league": "nba",
+    "items": [
+      {
+        "id": "maxey-family-tyrone-coach",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Tyrone played college ball + coached him; only boy with three sisters",
+        "summary": "Born Nov 4, 2000 to Tyrone (former South Plains College + Washington State player) and Denyse Maxey. Only boy in family with three sisters: Denasia, Talia, Keiara. Father coached Tyrese; mother runs the Maxey Foundation.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-are-tyrese-maxey-s-parents-siblings-hometown-and-inside-76ers-star-s-personal-life/",
+            "date": "2024-11-27"
+          }
+        ]
+      }
+    ]
+  },
+  "kelly-oubre-jr": {
+    "player_id": "kelly-oubre-jr",
+    "name": "Kelly Oubre Jr.",
+    "team": "phi",
+    "league": "nba",
+    "items": [
+      {
+        "id": "oubre-paris-mens-fashion",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Walked Paris Men's Fashion Week — NBA's resident style icon",
+        "summary": "Walked the runway at Paris Men's Fashion Week. Features in fashion editorials and is celebrated league-wide for distinctive personal style — one of the NBA's most-photographed off-court fashion presences.",
+        "sources": [
+          {
+            "name": "Andscape (ESPN)",
+            "url": "https://andscape.com/videos/the-style-of-swagger-kelly-oubre-jr/",
+            "date": "2016-12-01"
+          }
+        ]
+      },
+      {
+        "id": "oubre-lambo-redlight-2024",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Crashed his Lamborghini through a Center City red light — internal-affairs probe",
+        "summary": "On April 23, 2024 at 1:45 a.m. in Center City Philadelphia, Oubre's 2021 Lamborghini ran a red light and struck a 2023 Hyundai Elantra. No injuries. Philadelphia police launched an internal affairs investigation into whether he received special treatment (no ticket issued, no breath/blood test).",
+        "sources": [
+          {
+            "name": "NY Post",
+            "url": "https://nypost.com/2024/04/27/sports/kelly-oubre-jr-s-car-accident-sparks-police-to-launch-internal-affairs-probe/",
+            "date": "2024-04-27"
+          }
+        ]
+      }
+    ]
+  },
+  "brandin-podziemski": {
+    "player_id": "brandin-podziemski",
+    "name": "Brandin Podziemski",
+    "team": "gs",
+    "league": "nba",
+    "items": [
+      {
+        "id": "podziemski-wisconsin-roots",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Wisconsin native of Polish descent — Mr. Basketball Wisconsin 2021",
+        "summary": "Grew up in Greenfield, Wisconsin to a Polish-descent family. Attended St. John's Northwestern Military Academy in Delafield. Named Wisconsin Mr. Basketball 2021 after averaging 35.1 PPG as a senior, plus Gatorade Player of the Year.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Brandin_Podziemski",
+            "date": "2026-04-29"
+          }
+        ]
+      },
+      {
+        "id": "podziemski-curry-comments",
+        "tier": "reported",
+        "category": "culture",
+        "headline": "Walked back viral 'I can be better than Steph' comments",
+        "summary": "In early 2026 Podziemski went viral for confident pre-season comments about wanting to be 'a household name' and beat Steph Curry's level. He later walked them back, saying his confidence is his strength but should be tempered with respect for the greatest PG.",
+        "sources": [
+          {
+            "name": "NBC Sports Bay Area",
+            "url": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/brandin-podziemski-household-name/1880770/",
+            "date": "2026-03-26"
+          }
+        ]
+      },
+      {
+        "id": "podziemski-poland-citizenship",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Pursuing Polish citizenship to play for Poland's national team",
+        "summary": "Due to his Polish descent, Podziemski has expressed interest in obtaining Polish citizenship to represent the Polish national basketball team. Spurs forward Jeremy Sochan has been actively recruiting him.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Brandin_Podziemski",
+            "date": "2026-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "kristaps-porzingis": {
+    "player_id": "kristaps-porzingis",
+    "name": "Kristaps Porzingis",
+    "team": "gs",
+    "league": "nba",
+    "items": [
+      {
+        "id": "porzingis-laura-vizla",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating Latvian model Laura Vizla — went public 2021",
+        "summary": "Porzingis has been in a relationship with fellow Latvian Laura Vizla since at least 2021. Vizla is a model, former cheerleader for VEF Riga, and influencer with 60k+ Instagram followers. The couple travels Europe together regularly between seasons.",
+        "sources": [
+          {
+            "name": "The Sun",
+            "url": "https://www.the-sun.com/sport/8921922/laura-vizla-stunning-model-girlfriend-kristaps-porzingis/",
+            "date": "2023-08-24"
+          }
+        ]
+      },
+      {
+        "id": "porzingis-latvian-unicorn",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "The 'Unicorn' nickname — earned by KD himself",
+        "summary": "At 7'2 with elite shooting range, Porzingis was christened 'The Unicorn' early in his career — a label personally bestowed by Kevin Durant for the rare combination of size + skill. He proudly represents Latvia internationally.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/celtics-kristaps-porzingis-undergo-foot-surgery-162355062.html",
+            "date": "2024-06-25"
+          }
+        ]
+      }
+    ]
+  },
+  "gui-santos": {
+    "player_id": "gui-santos",
+    "name": "Gui Santos",
+    "team": "gs",
+    "league": "nba",
+    "items": [
+      {
+        "id": "santos-brazilian-basketball-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Brazilian basketball legacy — both parents played pro",
+        "summary": "Born and raised in Brasília, Brazil. Both parents played professional basketball: father Deivisson played five seasons in Brazil's NBB league, mother Lucineide also a pro player. Came up through Minas Tênis Clube before being drafted to GS in 2022.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Gui_Santos",
+            "date": "2026-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "giannis-antetokounmpo": {
+    "player_id": "giannis-antetokounmpo",
+    "name": "Giannis Antetokounmpo",
+    "team": "mil",
+    "league": "nba",
+    "items": [
+      {
+        "id": "giannis-mariah-greece-wedding",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Mariah Riddlesprigger in 3-day Greek wedding Sept 2024",
+        "summary": "Married longtime partner Mariah Riddlesprigger on September 1, 2024 in a three-day celebration at Costa Navarino resort near Pylos, Greece. Attended by LeBron James, Jrue Holiday, Serena Williams, and Greek PM Kyriakos Mitsotakis.",
+        "sources": [
+          {
+            "name": "Hello Magazine",
+            "url": "https://www.hellomagazine.com/us/892473/meet-giannis-antetokounmpos-rarely-seen-wife-mariah-and-their-four-children/",
+            "date": "2026-03-28"
+          }
+        ]
+      },
+      {
+        "id": "giannis-four-kids",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Four children with Mariah — Liam, Maverick, Eva, Aria",
+        "summary": "Giannis and Mariah have four children: Liam Charles (b. 2020), Maverick Shai (b. 2021), Eva Brooke (b. 2023), and Aria Capri (b. 2025).",
+        "sources": [
+          {
+            "name": "Hello Magazine",
+            "url": "https://www.hellomagazine.com/us/892473/meet-giannis-antetokounmpos-rarely-seen-wife-mariah-and-their-four-children/",
+            "date": "2026-03-28"
+          }
+        ]
+      }
+    ]
+  },
+  "kyle-kuzma": {
+    "player_id": "kyle-kuzma",
+    "name": "Kyle Kuzma",
+    "team": "mil",
+    "league": "nba",
+    "items": [
+      {
+        "id": "kuzma-winnie-harlow-engagement",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Engaged to model Winnie Harlow on Valentine's Day Eve 2025",
+        "summary": "Proposed to model Winnie Harlow on February 13, 2025 in Turks and Caicos with an 8.5-carat oval-cut diamond ring. He designed the ring himself over three months. The couple first visited the proposal location in 2022 and decided then it was where they'd eventually get engaged.",
+        "sources": [
+          {
+            "name": "Vogue",
+            "url": "https://www.vogue.com/article/winnie-harlow-kyle-kuzma-engagement-turks-and-caicos",
+            "date": "2025-02-18"
+          }
+        ]
+      }
+    ]
+  },
+  "ryan-rollins": {
+    "player_id": "ryan-rollins",
+    "name": "Ryan Rollins",
+    "team": "mil",
+    "league": "nba",
+    "items": [
+      {
+        "id": "rollins-target-shoplifting-2023",
+        "tier": "reported",
+        "category": "legal",
+        "headline": "Faced 7 petty-larceny charges for shoplifting at a Virginia Target in 2023",
+        "summary": "Rollins faced seven petty-larceny charges in Alexandria, Virginia in 2023 for repeatedly shoplifting small household items from a Target store. The Wizards waived him on January 8, 2024, citing the legal troubles. He signed with Milwaukee on Feb 21, 2024.",
+        "sources": [
+          {
+            "name": "Wisconsin Sports Heroics",
+            "url": "https://wisportsheroics.com/ryan-rollins-journey-waived-bucks-breakout/",
+            "date": "2026-03-04"
+          }
+        ]
+      }
+    ]
+  },
+  "myles-turner": {
+    "player_id": "myles-turner",
+    "name": "Myles Turner",
+    "team": "mil",
+    "league": "nba",
+    "items": [
+      {
+        "id": "turner-foundation",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Founded the Myles Turner Foundation for underserved youth",
+        "summary": "Turner founded the Myles Turner Foundation focused on supporting underprivileged youth, promoting education, and community giving. He has made a $1 million commitment to charitable causes.",
+        "sources": [
+          {
+            "name": "TikTok / GQ Sports",
+            "url": "https://www.tiktok.com/@gqsports/video/7507721453442288939",
+            "date": "2026-04-29"
+          }
+        ]
+      },
+      {
+        "id": "turner-texas-working-class",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father drove buses at DFW airport for 40 years — working-class Texas roots",
+        "summary": "Turner's mother worked in business despite facing discrimination; his father drove buses at DFW airport for 40 years. The family struggled through the 2008 mortgage crisis but his parents shielded him from the financial stress.",
+        "sources": [
+          {
+            "name": "Players' Tribune",
+            "url": "https://www.facebook.com/theplayerstribune/posts/myles-turners-parents-sacrificed-so-much-to-give-him-the-opportunity-to-play-the/1194099932080506/",
+            "date": "2025-03-11"
+          }
+        ]
+      }
+    ]
+  },
+  "og-anunoby": {
+    "player_id": "og-anunoby",
+    "name": "OG Anunoby",
+    "team": "ny",
+    "league": "nba",
+    "items": [
+      {
+        "id": "og-nigerian-british-heritage",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Nigerian-British heritage — born London, raised in Missouri",
+        "summary": "OG was born in London, England to Nigerian parents Ogugua Sr. and Grace Anunoby. His father is a Nigerian academic and his mother is a longtime supporter of his career. Family moved to Jefferson City, Missouri when OG was young.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-meet-og-anunoby-parents-everything-to-know-about-knicks-stars-family/",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "og-brother-chigbo-nfl",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Brother Chigbo Anunoby played in the NFL",
+        "summary": "OG's older brother Chigbo Anunoby played football at Morehouse and Indiana before brief NFL stints. The siblings grew up athletic and competitive together in Jefferson City, Missouri.",
+        "sources": [
+          {
+            "name": "Indiana Daily Student",
+            "url": "https://www.idsnews.com/article/2017/03/og-anunoby-family-indiana-basketball",
+            "date": "2017-03-15"
+          }
+        ]
+      }
+    ]
+  },
+  "mikal-bridges": {
+    "player_id": "mikal-bridges",
+    "name": "Mikal Bridges",
+    "team": "ny",
+    "league": "nba",
+    "items": [
+      {
+        "id": "bridges-mother-tyneeha-single-mom",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Raised by single mom Tyneeha Rivers — VP at Comcast Spectacor",
+        "summary": "Mikal was raised by his single mother Tyneeha Rivers, now a VP of Human Resources at Comcast Spectacor (which owns the Philadelphia 76ers). Their bond is famously close — when Mikal was drafted by the Suns in 2018, Tyneeha actually worked for Comcast Spectacor, owners of the team that traded him on draft night.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nba/2018/06/22/mikal-bridges-mother-tyneeha-rivers-76ers-trade",
+            "date": "2018-06-22"
+          }
+        ]
+      },
+      {
+        "id": "bridges-villanova-knicks-reunion",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Reunited with Villanova championship core (Brunson/DiVincenzo/Hart) on Knicks",
+        "summary": "After being traded to the Knicks in 2024, Bridges joined Villanova championship teammates Jalen Brunson, Donte DiVincenzo, and Josh Hart — a rare reunion of a college title-winning core in the NBA. The 'Nova Knicks' became a cultural moment in NYC.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40523847/nova-knicks-reunion-bridges-brunson-divincenzo-hart",
+            "date": "2024-07-10"
+          }
+        ]
+      }
+    ]
+  },
+  "josh-hart": {
+    "player_id": "josh-hart",
+    "name": "Josh Hart",
+    "team": "ny",
+    "league": "nba",
+    "items": [
+      {
+        "id": "hart-shannon-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Shannon Phillips in 2021 — twin sons Hendrix + Haze",
+        "summary": "Hart married longtime girlfriend Shannon Phillips in 2021. They welcomed twin sons Hendrix and Haze in May 2023. Shannon and the kids are regular fixtures at Knicks games and Hart's social media.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-josh-hart-wife-shannon-phillips-twins/",
+            "date": "2023-06-12"
+          }
+        ]
+      },
+      {
+        "id": "hart-villanova-core",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Original 'Nova Knicks' — three Villanova teammates joined him in NY",
+        "summary": "Hart was the first of the Villanova championship core to join the Knicks. After his arrival, teammate Jalen Brunson signed in 2022, then Donte DiVincenzo in 2023, then Mikal Bridges in 2024 — completing the rare college-title-team reunion in the NBA.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40523847/nova-knicks-reunion-bridges-brunson-divincenzo-hart",
+            "date": "2024-07-10"
+          }
+        ]
+      }
+    ]
+  },
+  "julian-champagnie": {
+    "player_id": "julian-champagnie",
+    "name": "Julian Champagnie",
+    "team": "sa",
+    "league": "nba",
+    "items": [
+      {
+        "id": "champagnie-twin-justin",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Identical twin Justin also plays in NBA — faced him on Feb 10 2025",
+        "summary": "Julian's identical twin brother Justin is also an NBA player (currently with the Wizards). The twins separated for college (Julian to St. John's, Justin to Pittsburgh) for the first time in their lives. They played against each other on February 10, 2025 — a rare twin-NBA matchup.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/7003280/2026/01/28/julian-champagnie-spurs-stats-nba-twin-brother/",
+            "date": "2026-01-28"
+          }
+        ]
+      },
+      {
+        "id": "champagnie-cassidy-engagement",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Engaged to Cassidy Velez — got cut by 76ers on Valentine's Day 2023",
+        "summary": "Engaged to Cassidy Velez. When he was cut by the Sixers on Valentine's Day 2023, Velez supported him through a difficult dinner in Wilmington, Delaware before they relocated back to NY with her parents. They got engaged after he stuck in the league.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/7003280/2026/01/28/julian-champagnie-spurs-stats-nba-twin-brother/",
+            "date": "2026-01-28"
+          }
+        ]
+      },
+      {
+        "id": "champagnie-covid-keycard-shimmy",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Snuck into St. John's gym during COVID lockdown via keycard shimmy",
+        "summary": "During the spring 2020 COVID lockdown, Champagnie snuck into the St. John's practice facility using a keycard-shimmy technique to access the court for extra workouts. Later called this period 'the best time in my life' for his development.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/7003280/2026/01/28/julian-champagnie-spurs-stats-nba-twin-brother/",
+            "date": "2026-01-28"
+          }
+        ]
+      }
+    ]
+  },
+  "devin-vassell": {
+    "player_id": "devin-vassell",
+    "name": "Devin Vassell",
+    "team": "sa",
+    "league": "nba",
+    "items": [
+      {
+        "id": "vassell-parents-moved-sa",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Parents moved from Atlanta to San Antonio to manage his life",
+        "summary": "Vassell's parents Andrew (CarMax employee) and Cynthia (former nurse) relocated from Atlanta to San Antonio after the Spurs drafted him #11 overall in 2020. They handle daily-life logistics so he can focus on basketball; attend every home game.",
+        "sources": [
+          {
+            "name": "San Antonio Magazine",
+            "url": "https://www.sanantoniomag.com/nba-life-is-a-family-affair-for-devin-vassell/",
+            "date": "2022-04-01"
+          }
+        ]
+      },
+      {
+        "id": "vassell-underdog-list",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Keeps a written list of every recruiter who ignored him",
+        "summary": "Vassell came out of Suwanee, Georgia as a 2-star unranked recruit with virtually no major-school interest outside FSU. He maintains a detailed personal list of every coach and program who underrated him — fuel he openly cites in interviews. FSU's CY Young called him 'a high-character gym rat with the professionalism of someone much older.'",
+        "sources": [
+          {
+            "name": "Valley Tales (Substack)",
+            "url": "https://valleytales.substack.com/p/devin-vassells-former-coach-this",
+            "date": "2020-10-30"
           }
         ]
       }
