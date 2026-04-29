@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server';
 import { z } from 'zod';
 import { getOpenAI, MODELS } from '@/lib/openai';
-import { buildSystemPrompt, buildModesSystemPrompt, type Mode } from '@/lib/context';
+import { buildSystemPrompt, buildModesSystemPrompt, buildModesSystemPromptWithLive, type Mode } from '@/lib/context';
 import { isValidLens, DEFAULT_LENS_ID } from '@/lib/lens';
 import { findDemoAnswer, demoFallback, streamDemoAnswer } from '@/lib/demo-responses';
 
@@ -130,7 +130,10 @@ export async function POST(req: NextRequest) {
     ? ['drama', 'on_field', 'learn']
     : ['on_field', 'learn'];
 
-  const systemPrompt = buildModesSystemPrompt({
+  // Live-aware variant prepends today's date + ESPN headlines + active games so
+  // the model isn't stuck in 2023. ESPN-fetch failures fall back to the sync
+  // version automatically — chat never breaks if ESPN is down.
+  const systemPrompt = await buildModesSystemPromptWithLive({
     modes: activeModes,
     userMessage: last.content,
     league: body.league ?? 'both',

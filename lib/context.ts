@@ -545,6 +545,25 @@ const MODE_DESCRIPTIONS: Record<Mode, string> = {
 const EUPHORIA_LEARN_FLAVOR = `EUPHORIA LENS (active in LEARN mode only):
 The user has opted in to "Through Euphoria" lens for Learn mode. When in LEARN mode, you may flavor explanations with Euphoria-show references — slow zooms, Maddy/Cassie/Lexi parallels, "tunnel walk = armor" framing, "every locker room is East Highland." Cinematic, slightly dreamy. Keep it under one show reference per answer. Do NOT use Euphoria voice in Drama or On-field mode unless the user explicitly invokes it.`;
 
+/**
+ * Async variant of buildModesSystemPrompt that prepends a live-context block
+ * (today's date, season phase, top headlines, today's games) fetched from
+ * ESPN. Use this from API routes; falls back to the sync version on failure.
+ */
+export async function buildModesSystemPromptWithLive(
+  input: BuildModesPromptInput,
+): Promise<string> {
+  const base = buildModesSystemPrompt(input);
+  try {
+    const { buildLiveContext } = await import('./live-context');
+    const live = await buildLiveContext({ league: input.league ?? 'both' });
+    return `${live}\n\n────────────────────────────────────────\n\n${base}`;
+  } catch {
+    // ESPN unreachable or live-context module errored — fall back to sync version
+    return base;
+  }
+}
+
 export function buildModesSystemPrompt({
   modes,
   userMessage,
