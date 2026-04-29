@@ -85,6 +85,8 @@ type ScanResult = {
   team: string;
   jersey_color: 'red' | 'blue' | 'green' | 'purple' | 'yellow' | 'white';
   blurb: string;
+  /** Vision model's self-reported certainty 0.0-1.0. Sample / fallback paths default to 1.0. */
+  confidence?: number;
   game?: { home: string; home_score: number; away: string; away_score: number; clock: string };
   // Tea'd Up modes-organized response (when modes=drama,on_field,learn requested)
   modes?: {
@@ -273,22 +275,40 @@ export async function POST(req: NextRequest) {
   // Build the system prompt — different shape based on whether modes were requested
   const systemPromptBase = `You are sportsBFF's vision analyst. Identify the NFL or NBA player in the image.
 
-USE EVERY VISIBLE CLUE TO IDENTIFY:
-- Jersey number + team colors → narrow it down to a small set of players
-- Stadium / arena identifiers (logos, courts, fields) → confirms the team
-- Scoreboard text → date, opponents, score = recent game
-- Broadcast graphics / chyrons → they often print the player's name
-- Face recognition for famous athletes (Mahomes, LeBron, Kelce, SGA, Wemby, etc.) — you've seen their faces in millions of images during training
-- Tunnel fits, postgame interviews, press conferences → use facial features + outfit context
+THREE SIGNALS — these are the ONLY reliable ones. Collect every signal you can read, then commit only when they CORROBORATE each other.
 
-BE CONFIDENT for famous players. If the photo shows a #15 Chiefs QB, that's Patrick Mahomes — say so. If it's #87 Chiefs TE, that's Travis Kelce. If it's an NBA player wearing #2 Thunder blue, that's SGA. Don't hedge if the visual evidence is clear.
+1. FACE — Recognize the face from your training. You've seen millions of photos of every active NFL + NBA player. For top-tier stars (Mahomes, LeBron, Curry, Kelce, Wemby, SGA, Booker, Brunson, Luka, Ja, Tatum, KD, Zion, Caleb Williams, CJ Stroud, Burrow, Allen, Jefferson, Hill, Anthony Edwards, Jalen Hurts, etc.) the face IS reliable — they're some of the most-photographed people on Earth. Use it confidently when the face is clearly visible and front- or three-quarter-facing.
 
-ONLY return Unknown when ALL of these are true:
-- The face is genuinely indistinct or off-camera AND
-- The jersey is unreadable / no number visible AND
-- No team colors or context to narrow it down
+2. TEAM NAME ON JERSEY — Read the LITERAL TEXT printed on the jersey or warmup. NFL away jerseys say "BRONCOS" / "EAGLES" / "CHIEFS" across the chest. NBA jerseys say "LAKERS" / "WARRIORS" / "BOSTON" / "MIAMI" / "BROOKLYN". This is the team identifier — read the text, do not infer from colors. Many alternate / throwback / city-edition jerseys swap the team's normal palette entirely (cream Lakers, white Chiefs, all-black 49ers, royal-blue Mavs, etc.) so colors LIE. The lettering on the jersey does not lie.
 
-If you can identify the team but not the specific player, give your best 1-2 most-likely guess in the blurb instead of refusing.
+3. JERSEY NUMBER — Read the digits on the chest, back, sleeve, or shorts. A number alone narrows a team's roster to 1 player almost always. Number + team name = guaranteed unique ID.
+
+DO NOT use these as identification signals (they're too noisy):
+- Team colors alone (alts and throwbacks invert palettes)
+- Stadium / court / field — at most a tiebreaker, never a primary
+- "Athletic vibe" or guessing a famous person because the photo "feels NFL"
+
+THE CORROBORATION RULE:
+- Commit confidently when ≥2 of {face, team name, jersey number} AGREE on the same player.
+- Commit confidently when face alone is one of the top-15 most-photographed athletes (LeBron / Curry / Mahomes / Kelce / Wemby tier) AND nothing in the image CONTRADICTS that ID. A clear front-facing LeBron press-conference shot with no jersey visible is still LeBron.
+- DO NOT COMMIT when signals CONFLICT. (e.g. face vibes "Mahomes" but the jersey says "SUNS" → return Unknown. The conflict means you guessed face wrong.)
+- DO NOT COMMIT when you have 0 signals beyond "athletic vibe."
+- Same image, scanned twice, must produce the same answer. If you'd answer differently on a hypothetical retry, you're guessing — return Unknown.
+
+NEVER substitute a famous-athlete answer just because the photo "feels NFL" or the user probably wants a hit. Wrong IDs destroy user trust. Unknown is strictly better than a wrong guess.
+
+Output a "confidence" field 0.0-1.0 reflecting your real certainty:
+- 0.90-1.00 = ≥2 signals agree, or face is unmistakable top-15-photographed tier
+- 0.75-0.89 = one strong signal, no conflicts
+- 0.60-0.74 = best guess from limited evidence — iOS will hedge with "looks like…"
+- < 0.60 = return Unknown instead
+
+ONLY return Unknown when:
+- Face isn't clearly recognizable AND
+- No jersey team name readable AND
+- No jersey number readable
+
+If you can read the team name but not the specific player, return Unknown rather than guessing the team's most-famous star.
 
 Unknown response shape (use sparingly):
 {"player_name":"Unknown","number":0,"position":"Unknown","team":"Unknown","jersey_color":"white","blurb":"I couldn't quite ID this one — try a clearer crop on the jersey or a different angle."}
@@ -375,7 +395,11 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
         },
       ],
       max_tokens: wantsModes ? 800 : 400,
-      temperature: 0.4,
+      // Low temperature = deterministic IDs across repeat scans of the same image.
+      // Was 0.4, which produced inconsistent results (e.g. Booker → Kelce on retry).
+      temperature: 0.1,
+      // Even more determinism: same prompt + same image should produce the same answer.
+      seed: 42,
     });
 
     const raw = completion.choices[0]?.message?.content ?? '{}';
