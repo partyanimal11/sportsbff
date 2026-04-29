@@ -11,7 +11,26 @@ import leagueDrama from '@/data/league-drama.json';
 import coaches from '@/data/coaches.json';
 import owners from '@/data/owners.json';
 import glossary from '@/data/glossary.json';
+import gossip from '@/data/players-gossip.json';
 import { getLens, type Lens } from './lens';
+
+type GossipSource = { name: string; url: string; date: string };
+type GossipItem = {
+  id: string;
+  tier: 'confirmed' | 'reported' | 'speculation' | 'rumor';
+  category: string;
+  headline: string;
+  summary: string;
+  sources: GossipSource[];
+};
+type GossipPlayer = {
+  player_id: string;
+  name: string;
+  team: string;
+  league: 'nfl' | 'nba';
+  items: GossipItem[];
+};
+const GOSSIP: Record<string, GossipPlayer> = gossip as Record<string, GossipPlayer>;
 
 type Team = { id: string; name: string; city: string; league: 'nfl' | 'nba'; conference?: string; head_coach?: string; signature?: string };
 type Player = { id: string; name: string; team: string; league: 'nfl' | 'nba'; position: string; number?: number; bio?: string; drama?: string; aliases?: string[] };
@@ -163,6 +182,20 @@ export function retrieveContextChunks(query: string, lensId: string, limit = 12,
         }
         if (deep.running_jokes?.length) {
           chunks.push(`[RUNNING JOKES · ${p.name}] ${deep.running_jokes.join(' || ')}`);
+        }
+      }
+
+      // Pull SOURCED GOSSIP — the cited stuff. Every claim is tied to a real article.
+      // The model MUST cite (Source: NAME) when stating any of this in a response.
+      const playerGossip = GOSSIP[p.id];
+      if (playerGossip?.items?.length) {
+        for (const item of playerGossip.items) {
+          const sourceList = item.sources
+            .map((s) => `${s.name} (${s.date})`)
+            .join(' + ');
+          chunks.push(
+            `[GOSSIP · ${p.name} · ${item.tier.toUpperCase()}] ${item.headline}: ${item.summary} (Sources: ${sourceList})`
+          );
         }
       }
     }
@@ -365,7 +398,18 @@ REQUIRED — SHOW VOICE (for non-player questions when an active show lens is se
 
 GLOSSARY USAGE:
 - If a [GLOSSARY] chunk is present in the retrieved facts, use the plain definition as your factual base.
-- If a [LENS-FLAVORED DEF] chunk is present, weave the lens flavoring into the explanation naturally — don't just paste it.`;
+- If a [LENS-FLAVORED DEF] chunk is present, weave the lens flavoring into the explanation naturally — don't just paste it.
+
+GOSSIP USAGE — REQUIRED CITATION RULES:
+- [GOSSIP · Player · TIER] chunks contain real, verified, sourced gossip items pulled from a curated database. Each ends with "(Sources: NAME (date) + NAME (date))".
+- When you state any of this gossip in your response, you MUST attach the tier label and cite the source(s) inline. Examples:
+    "[CONFIRMED] Travis Kelce has been dating Taylor Swift since September 2023 (per Today, Billboard)."
+    "[REPORTED] Joe Burrow is reportedly dating SI model Olivia Ponton (per Parade)."
+- The tier label is what gives the brand its credibility. Always lead a gossip claim with [CONFIRMED] / [REPORTED] / [SPECULATION] / [RUMOR] in brackets exactly.
+- Source names go in parentheses at the end of the sentence — short form like "per ESPN" or "(via Page Six)". Do NOT paste full URLs into your response — names only.
+- If a user asks about a player and there is GOSSIP in the retrieved chunks, ALWAYS pull from it (with citation) before reaching into your training memory.
+- If there is NO gossip chunk for a player the user asked about, be honest: "I don't have anything sourced on [player] yet — want to ask about a teammate or someone with bigger storylines this season?"
+- NEVER invent gossip that isn't in the retrieved chunks. NEVER invent a source name. NEVER cite a publication you can't see in the chunks.`;
 
 const DRAMA_MODE_RULES = `🔥 DRAMA MODE IS ON — the user wants the spicy version of every answer.
 
