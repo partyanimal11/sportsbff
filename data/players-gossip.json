@@ -1482,7 +1482,7 @@
       {
         "id": "belichick-nfl-honors-appearance",
         "tier": "confirmed",
-        "category": "off_field",
+        "category": "career",
         "headline": "Attends NFL Honors as coach of the year contender",
         "summary": "Bill Belichick made a prominent appearance at the NFL Honors ceremony in February 2025, marking his presence in the football community following his departure from the New England Patriots. The appearance reinforced his status as a coaching legend being recognized during awards season.",
         "sources": [
@@ -1766,6 +1766,20 @@
             "name": "Bleacher Report",
             "url": "https://bleacherreport.com/articles/jerry-jones-settlement",
             "date": "2024-07-25"
+          }
+        ]
+      },
+      {
+        "id": "jones-paternity-settlement-2024",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Settled paternity case with Alexandra Davis after two-year dispute",
+        "summary": "Jones reached a settlement in February 2024 with Alexandra Davis, who had sued claiming she was his biological daughter and challenging a 1998 settlement that allegedly required her mother to keep his paternity secret. Jones avoided a court-ordered DNA test as part of the resolution.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/40626967/cowboys-jerry-jones-reaches-resolution-paternity-countersuit",
+            "date": "2024-02-28"
           }
         ]
       }
@@ -4005,6 +4019,852 @@
             "name": "Front Office Sports",
             "url": "https://frontofficesports.com/espn-producers-fed-up-with-mcafees-diva-behavior",
             "date": "2026-03-01"
+          }
+        ]
+      }
+    ]
+  },
+  "andy-reid": {
+    "player_id": "andy-reid",
+    "name": "Andy Reid",
+    "team": "kc",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "reid-son-garrett-death",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Son Garrett died of accidental drug overdose at Eagles training camp 2012",
+        "summary": "Andy Reid's eldest son Garrett, age 29, was found dead in his dorm room at Lehigh University during the Eagles' training camp in August 2012. Cause of death was accidental heroin overdose. He had been working with the team as a strength conditioning intern.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/8244644/kansas-city-chiefs-coach-andy-reid-son-garrett-dies",
+            "date": "2012-08-05"
+          }
+        ]
+      },
+      {
+        "id": "reid-cheeseburger-culture",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Cheeseburger and Hawaiian-shirt persona is its own NFL meme",
+        "summary": "Reid's love of cheeseburgers and tropical-print Hawaiian shirts has become a defining cultural element of his coaching brand, regularly featured in Chiefs marketing and broadcast packages.",
+        "sources": [
+          {
+            "name": "Kansas City Star",
+            "url": "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article260459482.html",
+            "date": "2022-01-22"
+          }
+        ]
+      }
+    ]
+  },
+  "sean-mcvay": {
+    "player_id": "sean-mcvay",
+    "name": "Sean McVay",
+    "team": "lar",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "mcvay-veronika-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Ukrainian model Veronika Khomyn after 9-year courtship",
+        "summary": "Sean McVay married longtime girlfriend Veronika Khomyn — a model and businesswoman originally from Ukraine — in June 2022 in Beverly Hills after first meeting at a club in Washington D.C. in 2013.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/sean-mcvay-marries-veronika-khomyn/",
+            "date": "2022-06-19"
+          }
+        ]
+      },
+      {
+        "id": "mcvay-baby-jordan",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Welcomed son Jordan in March 2024",
+        "summary": "Sean and Veronika McVay welcomed their first child, son Jordan John McVay, on March 10, 2024.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/onsi/athlete-lifestyle/news/los-angeles-rams-coach-sean-mcvay-welcomes-first-child-with-wife-veronika",
+            "date": "2024-03-11"
+          }
+        ]
+      }
+    ]
+  },
+  "steve-kerr": {
+    "player_id": "steve-kerr",
+    "name": "Steve Kerr",
+    "team": "gsw",
+    "league": "nba",
+    "items": [
+      {
+        "id": "kerr-father-assassination",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Malcolm Kerr was assassinated outside his Beirut office in 1984",
+        "summary": "Steve Kerr's father, Malcolm Kerr — president of the American University of Beirut — was assassinated by gunmen in January 1984 when Steve was 18 and a freshman at Arizona. Kerr has often said the experience profoundly shaped his perspective on life and on speaking out about gun violence.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/13452218/inside-malcolm-kerr-assassination-shaped-steve-kerr-life",
+            "date": "2015-09-08"
+          }
+        ]
+      },
+      {
+        "id": "kerr-gun-violence-advocacy",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Outspoken advocate against gun violence following Uvalde",
+        "summary": "Steve Kerr has been one of the most vocal NBA figures on gun control, most notably in his impassioned 2022 press conference following the Uvalde school shooting where he refused to talk basketball and demanded the U.S. Senate vote on background check legislation.",
+        "sources": [
+          {
+            "name": "NBC News",
+            "url": "https://www.nbcnews.com/news/sports/warriors-coach-steve-kerr-pleads-action-emotional-appeal-uvalde-school-rcna30597",
+            "date": "2022-05-24"
+          }
+        ]
+      }
+    ]
+  },
+  "gregg-popovich": {
+    "player_id": "gregg-popovich",
+    "name": "Gregg Popovich",
+    "team": "sas",
+    "league": "nba",
+    "items": [
+      {
+        "id": "popovich-erin-death-2018",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Wife Erin died in 2018 after long illness",
+        "summary": "Gregg Popovich's wife of more than 40 years, Erin, died in April 2018 after a lengthy illness. Players including LeBron James publicly paid tribute, and Popovich missed games to be with their two children, Micky and Jill.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/23192574/erin-popovich-wife-gregg-popovich-dies-67",
+            "date": "2018-04-18"
+          }
+        ]
+      },
+      {
+        "id": "popovich-stroke-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Suffered mild stroke during pregame meal in November 2024",
+        "summary": "Popovich suffered a mild stroke before a Spurs home game on November 2, 2024. He stepped away from the bench for the rest of the season and announced his retirement as head coach in May 2025, transitioning to a front-office role.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/45123412/spurs-gregg-popovich-stroke-stepping-down-coach",
+            "date": "2025-05-02"
+          }
+        ]
+      }
+    ]
+  },
+  "doc-rivers": {
+    "player_id": "doc-rivers",
+    "name": "Doc Rivers",
+    "team": "mil",
+    "league": "nba",
+    "items": [
+      {
+        "id": "rivers-son-austin-feuds",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Coached son Austin in NBA, addressed nepotism complaints publicly",
+        "summary": "Doc Rivers coached his son Austin Rivers on the Clippers from 2015–2018, becoming the first-ever NBA father–son coach–player duo. Both repeatedly addressed accusations of preferential treatment from teammates and media throughout the run.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/12914843/austin-rivers-talks-playing-father-doc-rivers-clippers",
+            "date": "2015-07-22"
+          }
+        ]
+      }
+    ]
+  },
+  "joe-mazzulla": {
+    "player_id": "joe-mazzulla",
+    "name": "Joe Mazzulla",
+    "team": "bos",
+    "league": "nba",
+    "items": [
+      {
+        "id": "mazzulla-college-arrest",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Arrested twice in college, openly addressed it as part of his redemption story",
+        "summary": "While at West Virginia, Mazzulla was arrested in 2008 for an underage drinking incident at a bar and again in 2009 on a battery charge. He has spoken openly about both incidents and his subsequent path toward sobriety and faith.",
+        "sources": [
+          {
+            "name": "Boston Globe",
+            "url": "https://www.bostonglobe.com/2022/09/29/sports/who-is-joe-mazzulla-celtics-interim-head-coach/",
+            "date": "2022-09-29"
+          }
+        ]
+      }
+    ]
+  },
+  "dan-campbell": {
+    "player_id": "dan-campbell",
+    "name": "Dan Campbell",
+    "team": "det",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "campbell-kneecaps-press-conference",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Iconic 'biting kneecaps' introductory press conference",
+        "summary": "At his introductory press conference as Lions head coach in January 2021, Campbell delivered a now-famous monologue promising the team would 'bite a kneecap off' of opponents — a clip that became an NFL meme and shorthand for his entire coaching identity.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/30748322/detroit-lions-coach-dan-campbell-promises-team-bite-kneecaps-introductory-press-conference",
+            "date": "2021-01-21"
+          }
+        ]
+      }
+    ]
+  },
+  "sean-payton": {
+    "player_id": "sean-payton",
+    "name": "Sean Payton",
+    "team": "den",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "payton-skylene-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married former Miss West Virginia Skylene Montgomery in 2022",
+        "summary": "Sean Payton, after his 2012 divorce from first wife Beth Shuey, married former Miss West Virginia and pharmaceutical sales rep Skylene Montgomery in June 2022 at the Vatican-affiliated Mission Inn Resort in California.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/sean-payton-marries-skylene-montgomery/",
+            "date": "2022-06-26"
+          }
+        ]
+      },
+      {
+        "id": "payton-divorce-beth-2012",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Divorced first wife Beth Shuey after 20 years",
+        "summary": "Sean Payton and his first wife Beth Shuey divorced in 2014 after 20 years of marriage. They have two adult children together: Connor and Meghan.",
+        "sources": [
+          {
+            "name": "Times-Picayune",
+            "url": "https://www.nola.com/sports/saints/article_b2b1b1f0-9a3a-5f5a-bfba-7d04f6c4c6e4.html",
+            "date": "2014-04-15"
+          }
+        ]
+      }
+    ]
+  },
+  "jim-harbaugh": {
+    "player_id": "jim-harbaugh",
+    "name": "Jim Harbaugh",
+    "team": "lac",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "harbaugh-ncaa-suspension",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Suspended by Big Ten + NCAA for sign-stealing scandal at Michigan",
+        "summary": "While head coach at Michigan, Harbaugh was suspended by the Big Ten for the final three games of the 2023 regular season for his role in the Connor Stalions sign-stealing operation. The NCAA later issued a 10-year show-cause order in August 2025.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/college-football/story/_/id/38894872/michigan-jim-harbaugh-suspended-big-ten-three-games-sign-stealing",
+            "date": "2023-11-10"
+          }
+        ]
+      },
+      {
+        "id": "harbaugh-michigan-to-chargers",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Left Michigan for Chargers immediately after winning 2024 national title",
+        "summary": "Days after winning the 2024 College Football National Championship, Harbaugh left Michigan to become head coach of the Los Angeles Chargers — a move that drew sharp commentary from Wolverines fans who felt he had used the title as a stepping stone.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/39438412/los-angeles-chargers-hire-jim-harbaugh-head-coach-michigan",
+            "date": "2024-01-24"
+          }
+        ]
+      }
+    ]
+  },
+  "robert-kraft": {
+    "player_id": "robert-kraft",
+    "name": "Robert Kraft",
+    "team": "ne",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "kraft-orchids-asia-2019",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Charged with soliciting prostitution at Orchids of Asia spa, charges dropped",
+        "summary": "Kraft was charged in February 2019 after a sting operation at Orchids of Asia Day Spa in Florida. Prosecutors alleged surveillance footage showed him paying for sex acts. Charges were dropped in 2020 when a Florida appeals court ruled the spa's surveillance video was obtained illegally.",
+        "sources": [
+          {
+            "name": "CNN",
+            "url": "https://www.cnn.com/2019/03/15/us/robert-kraft-florida-day-spa-investigation",
+            "date": "2019-03-15"
+          }
+        ]
+      },
+      {
+        "id": "kraft-blumberg-engagement",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married NYC ophthalmologist Dr. Dana Blumberg in 2022",
+        "summary": "Kraft, then 81, married eye doctor Dr. Dana Blumberg, then 47, in October 2022 in a star-studded New York City wedding featuring performances from Elton John and Meek Mill. The couple welcomed their first child, daughter Penelope, in November 2024.",
+        "sources": [
+          {
+            "name": "Page Six",
+            "url": "https://pagesix.com/2022/10/14/robert-kraft-marries-dana-blumberg-in-star-studded-wedding/",
+            "date": "2022-10-14"
+          }
+        ]
+      }
+    ]
+  },
+  "daniel-snyder": {
+    "player_id": "daniel-snyder",
+    "name": "Daniel Snyder",
+    "team": "wsh",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "snyder-sexual-harassment-fine",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Fined $60M after NFL probe found sexual harassment + financial misconduct",
+        "summary": "An independent NFL investigation led by Mary Jo White concluded in July 2024 that Snyder had sexually harassed a former employee at a team dinner and had withheld $11M in shared revenue from other owners. He was fined $60 million and forced to sell.",
+        "sources": [
+          {
+            "name": "Washington Post",
+            "url": "https://www.washingtonpost.com/sports/2023/07/20/mary-jo-white-snyder-commanders/",
+            "date": "2023-07-20"
+          }
+        ]
+      },
+      {
+        "id": "snyder-team-sale-2023",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Sold Commanders to Josh Harris group for $6.05B",
+        "summary": "Snyder sold the Washington Commanders to a group led by Josh Harris in July 2023 for a then-record $6.05 billion, ending his 24-year ownership. The sale closed days before the NFL released its investigation findings.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/38099193/washington-commanders-sale-dan-snyder-josh-harris-approved-nfl",
+            "date": "2023-07-20"
+          }
+        ]
+      }
+    ]
+  },
+  "mark-cuban": {
+    "player_id": "mark-cuban",
+    "name": "Mark Cuban",
+    "team": "dal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "cuban-mavericks-sale-2023",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Sold majority of Mavericks to Adelson family for $3.5B",
+        "summary": "In December 2023 Cuban sold majority ownership of the Dallas Mavericks to Miriam Adelson and the Dumont family for approximately $3.5 billion, retaining a roughly 27% stake while stepping away from day-to-day team operations.",
+        "sources": [
+          {
+            "name": "Fortune",
+            "url": "https://www.fortune.com/2023/12/27/dallas-mavericks-sold-mark-cuban-adelson-nba/",
+            "date": "2023-12-27"
+          }
+        ]
+      },
+      {
+        "id": "cuban-sale-regret-2026",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Publicly regrets selling to the Adelson family",
+        "summary": "In April 2026, Cuban told Fortune 'I don't regret selling. I regret who I sold to,' citing the Lakers' $10B and Celtics' $6.1B sales as evidence he'd left money on the table — and lamenting the Luka Dončić trade that happened on the new ownership's watch.",
+        "sources": [
+          {
+            "name": "Fortune",
+            "url": "https://fortune.com/2026/04/09/mark-cuban-regrets-who-he-sold-dallas-mavericks-to/",
+            "date": "2026-04-09"
+          }
+        ]
+      }
+    ]
+  },
+  "jeanie-buss": {
+    "player_id": "jeanie-buss",
+    "name": "Jeanie Buss",
+    "team": "lal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "buss-jay-mohr-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married comedian Jay Mohr in Malibu after Phil Jackson breakup",
+        "summary": "Lakers governor Jeanie Buss married comedian and actor Jay Mohr on May 26, 2023 in a small ceremony in Malibu. Buss was previously engaged to former Lakers coach Phil Jackson for 17 years before they split in 2017.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/jeanie-buss-marries-jay-mohr/",
+            "date": "2023-05-27"
+          }
+        ]
+      }
+    ]
+  },
+  "james-dolan": {
+    "player_id": "james-dolan",
+    "name": "James Dolan",
+    "team": "nyk",
+    "league": "nba",
+    "items": [
+      {
+        "id": "dolan-spike-lee-2020",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Spike Lee said he was 'harassed' over MSG entrance dispute",
+        "summary": "In March 2020, Spike Lee — a fixture courtside at Knicks games for decades — said he was 'harassed' by Madison Square Garden security at Dolan's direction over which entrance he was using. Lee threatened to skip the rest of the season in protest.",
+        "sources": [
+          {
+            "name": "CBS News",
+            "url": "https://www.cbsnews.com/news/spike-lee-knicks-james-dolan-director-says-harassed-by-owner-madison-square-garden/",
+            "date": "2020-03-06"
+          }
+        ]
+      },
+      {
+        "id": "dolan-charles-oakley-arrest",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Had Knicks legend Charles Oakley physically removed from MSG",
+        "summary": "In February 2017, Hall of Famer and Knicks legend Charles Oakley was forcibly removed from his courtside seat at MSG after an altercation with security and arrested. Oakley repeatedly blamed Dolan, sparking a years-long public feud and a federal lawsuit Oakley ultimately lost.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/18636953/charles-oakley-arrested-altercation-madison-square-garden",
+            "date": "2017-02-09"
+          }
+        ]
+      }
+    ]
+  },
+  "charles-barkley": {
+    "player_id": "charles-barkley",
+    "name": "Charles Barkley",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "barkley-gambling-lifestyle",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Openly discussed losing $30M+ gambling over career",
+        "summary": "Charles Barkley has been candid for over a decade about his gambling addiction, telling ESPN in 2006 he had lost approximately $10 million gambling, with later interviews placing the lifetime total at over $30 million. He has said he kept it under control and never let it impact his family.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/news/story?id=2440111",
+            "date": "2006-05-04"
+          }
+        ]
+      },
+      {
+        "id": "barkley-tnt-aol-deal-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Vocal critic of WBD's failed attempt to keep NBA on TNT",
+        "summary": "After Warner Bros. Discovery lost NBA broadcast rights to NBC and Amazon, Barkley publicly criticized WBD CEO David Zaslav, threatening to retire and saying the company had been 'mismanaged for years.' He ultimately signed a new TNT deal in late 2024 to stay on Inside the NBA.",
+        "sources": [
+          {
+            "name": "Sports Business Journal",
+            "url": "https://www.sportsbusinessjournal.com/Daily/Issues/2024/10/02/Media/charles-barkley-tnt-deal",
+            "date": "2024-10-02"
+          }
+        ]
+      }
+    ]
+  },
+  "shaquille-oneal": {
+    "player_id": "shaquille-oneal",
+    "name": "Shaquille O'Neal",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "shaq-shaunie-divorce",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Divorce from Shaunie finalized in 2011 after Shaq admitted infidelity",
+        "summary": "Shaq and Shaunie O'Neal married in December 2002 and Shaunie filed for divorce in November 2009 citing infidelity. The divorce was finalized in 2011. Shaq has since publicly admitted full responsibility, saying 'I was bad. It was all me.'",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/news/story?id=6608944",
+            "date": "2011-05-10"
+          }
+        ]
+      },
+      {
+        "id": "shaq-shaunie-rebuild-comments",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Said in 2024 he 'wasn't a great husband' and would change everything if he could",
+        "summary": "Speaking on Shannon Sharpe's 'Club Shay Shay' podcast in early 2024, Shaq publicly admitted he 'wasn't a great husband' to ex-wife Shaunie and said he would do everything differently if given another chance — comments that re-ignited public sympathy for Shaunie, who has since remarried.",
+        "sources": [
+          {
+            "name": "Today.com",
+            "url": "https://www.today.com/popculture/celebrities/shaquille-oneal-shaunie-divorce-not-great-husband-rcna135988",
+            "date": "2024-02-05"
+          }
+        ]
+      }
+    ]
+  },
+  "stephen-a-smith": {
+    "player_id": "stephen-a-smith",
+    "name": "Stephen A. Smith",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "stephen-a-presidential-2028",
+        "tier": "reported",
+        "category": "culture",
+        "headline": "Has publicly entertained 2028 presidential run",
+        "summary": "In November 2024, Smith said he'd 'consider' running for president in 2028 if he saw a real path to victory. By February 2025 he walked it back to wanting to influence who the next president is, but the speculation has dominated cable-news appearances since.",
+        "sources": [
+          {
+            "name": "ABC News",
+            "url": "https://abcnews.go.com/Politics/stephen-smith-choice-run-president/story?id=120752510",
+            "date": "2024-11-07"
+          }
+        ]
+      }
+    ]
+  },
+  "skip-bayless": {
+    "player_id": "skip-bayless",
+    "name": "Skip Bayless",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "skip-fox-departure-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Parted ways with Fox Sports after 'Undisputed' ratings collapse",
+        "summary": "After losing co-host Shannon Sharpe in 2023 and seeing 'Undisputed' ratings drop sharply, Bayless and Fox Sports mutually parted ways in August 2024 — ending a 19-year run at the network.",
+        "sources": [
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/skip-bayless-fox-sports-undisputed-ending/",
+            "date": "2024-08-22"
+          }
+        ]
+      },
+      {
+        "id": "skip-brady-2026-flip",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Turned on Tom Brady after years of public worship",
+        "summary": "After more than a decade of effusive Tom Brady defenses on TV, Bayless reversed course in early 2026 — calling Brady's post-football life 'pathetic' and mocking his Pizza Hut commercials and Fox broadcast role on his independent podcast.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/skip-bayless-calls-tom-brady-200620032.html",
+            "date": "2026-01-16"
+          }
+        ]
+      }
+    ]
+  },
+  "tony-romo": {
+    "player_id": "tony-romo",
+    "name": "Tony Romo",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "romo-candice-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married former Miss Missouri Candice Crawford after Jessica Simpson era",
+        "summary": "Tony Romo and former Miss Missouri Candice Crawford — sister of 'Gossip Girl' actor Chace Crawford — began dating in 2009 after his much-publicized split from Jessica Simpson. They married in May 2011 and have three sons together.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/celebrity/tony-romo-marries-candice-crawford-in-texas/",
+            "date": "2011-05-29"
+          }
+        ]
+      }
+    ]
+  },
+  "tom-brady": {
+    "player_id": "tom-brady",
+    "name": "Tom Brady",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "brady-gisele-divorce",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Divorced supermodel Gisele Bündchen in October 2022 after 13 years",
+        "summary": "Brady and Gisele Bündchen divorced on October 28, 2022 after 13 years of marriage and two children together. The divorce coincided with Brady's final NFL season; he later told Howard Stern the divorce was a major reason for his eventual retirement.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/tom-brady-gisele-bundchen-divorce-finalized/",
+            "date": "2022-10-28"
+          }
+        ]
+      },
+      {
+        "id": "brady-irina-shayk-rekindled",
+        "tier": "reported",
+        "category": "romance",
+        "headline": "On-and-off romance with model Irina Shayk since 2023",
+        "summary": "Brady and supermodel Irina Shayk first started dating in summer 2023 after meeting at a wedding in Italy. They split that October but reconnected in 2025–2026, with Page Six reporting the two were 'open to seeing where things go' as of early 2026.",
+        "sources": [
+          {
+            "name": "Page Six",
+            "url": "https://pagesix.com/2026/02/14/tom-brady-irina-shayk-rekindled-romance/",
+            "date": "2026-02-14"
+          }
+        ]
+      }
+    ]
+  },
+  "rob-gronkowski": {
+    "player_id": "rob-gronkowski",
+    "name": "Rob Gronkowski",
+    "team": "tb",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "gronk-camille-relationship",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "10+ year relationship with Camille Kostek, still not married as of 2026",
+        "summary": "Gronkowski has dated Sports Illustrated Swimsuit model Camille Kostek since 2015. The couple regularly addresses engagement speculation in interviews — Kostek told People in September 2025 they're 'not in a rush' and prioritize keeping the spark alive over a wedding.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/camille-kostek-keeping-spark-alive-with-gronk-exclusive-11809098",
+            "date": "2025-09-12"
+          }
+        ]
+      }
+    ]
+  },
+  "aaron-donald": {
+    "player_id": "aaron-donald",
+    "name": "Aaron Donald",
+    "team": "lar",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "donald-erica-marriage",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Married sports marketer Erica Sherman in 2020, raising son Aaric",
+        "summary": "Aaron Donald married longtime girlfriend Erica Sherman, who works in sports marketing, in April 2020. The couple welcomed their son Aaric in September 2021. Donald has frequently credited Erica as a major influence behind his sudden 2024 retirement.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/who-is-erica-donald-aaron-donald-wife/",
+            "date": "2023-06-07"
+          }
+        ]
+      }
+    ]
+  },
+  "jj-watt": {
+    "player_id": "jj-watt",
+    "name": "JJ Watt",
+    "team": "ari",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "watt-kealia-soccer-power-couple",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married former USWNT player Kealia Ohai in 2020",
+        "summary": "JJ Watt married former USWNT and Houston Dash forward Kealia Ohai in February 2020 in the Bahamas. The couple are co-owners of Burnley FC in the English Championship and routinely appear at Premier League matches together.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/jj-watt-kealia-ohai-marry-bahamas/",
+            "date": "2020-02-17"
+          }
+        ]
+      },
+      {
+        "id": "watt-second-son-niko",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Welcomed second son Niko Benjamin in June 2025",
+        "summary": "JJ and Kealia Watt welcomed their second son, Niko Benjamin, on June 14, 2025. Their elder son, Koa, was born in October 2022.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/jj-watt-and-wife-kealia-welcome-baby-no-2-11749795",
+            "date": "2025-06-25"
+          }
+        ]
+      }
+    ]
+  },
+  "dwyane-wade": {
+    "player_id": "dwyane-wade",
+    "name": "Dwyane Wade",
+    "team": "mia",
+    "league": "nba",
+    "items": [
+      {
+        "id": "wade-zaya-support",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Public support for transgender daughter Zaya, launched LGBTQ+ youth platform",
+        "summary": "Wade and wife Gabrielle Union have been outspoken supporters of their daughter Zaya since she came out as transgender in 2020 at age 12. In 2024 they launched Translatable, a platform supporting transgender youth and their families. Zaya was honored as a groundbreaker at the 2024 Out100 event.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/gabrielle-union-dwyane-wade-support-daughter-zaya-out100-event-honoring-lgbtq-8760675",
+            "date": "2024-12-12"
+          }
+        ]
+      },
+      {
+        "id": "wade-gabrielle-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married actress Gabrielle Union in 2014 after off-and-on courtship",
+        "summary": "Wade and Gabrielle Union married in August 2014 after an off-and-on relationship that began in 2008. Their daughter Kaavia James was born via surrogate in 2018. The couple has been candid about Wade fathering a son, Xavier, with another woman during a brief breakup with Union in 2013.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/gabrielle-union-dwyane-wade-relationship-timeline/",
+            "date": "2024-08-30"
+          }
+        ]
+      }
+    ]
+  },
+  "antonio-brown": {
+    "player_id": "antonio-brown",
+    "name": "Antonio Brown",
+    "team": "tb",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "ab-bankruptcy-2024",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Filed Chapter 7 bankruptcy with $3.5M+ in claimed debts",
+        "summary": "Brown filed for Chapter 7 bankruptcy in May 2024, listing more than $3.5 million in debts. A trustee began moving to liquidate two of his Florida homes. Brown publicly disputed the filings on social media even while bankruptcy proceedings continued.",
+        "sources": [
+          {
+            "name": "USA TODAY",
+            "url": "https://www.usatoday.com/story/sports/nfl/steelers/2025/07/24/antonio-brown-attempted-murder-charge-bankruptcy-music-steelers-nfl/84391106007/",
+            "date": "2025-07-24"
+          }
+        ]
+      },
+      {
+        "id": "ab-attempted-murder-2025",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Charged with attempted second-degree murder in Miami",
+        "summary": "Miami-Dade prosecutors charged Brown with attempted second-degree murder in June 2025 after he allegedly fired two shots at an acquaintance outside an amateur boxing event in May 2025. He fled the U.S. for the United Arab Emirates and remains the subject of an active arrest warrant.",
+        "sources": [
+          {
+            "name": "USA TODAY",
+            "url": "https://www.usatoday.com/story/sports/nfl/steelers/2025/07/24/antonio-brown-attempted-murder-charge-bankruptcy-music-steelers-nfl/84391106007/",
+            "date": "2025-07-24"
+          }
+        ]
+      }
+    ]
+  },
+  "carmelo-anthony": {
+    "player_id": "carmelo-anthony",
+    "name": "Carmelo Anthony",
+    "team": "nyk",
+    "league": "nba",
+    "items": [
+      {
+        "id": "melo-lala-divorce-2021",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Officially divorced La La Anthony in 2021 after on-and-off separation",
+        "summary": "Carmelo and La La Anthony, who married in July 2010, finalized their divorce in 2021 after years of separations including a notable 2017 split tied to paternity reports involving another woman. They co-parent their son Kiyan Anthony, who is now an NBA prospect.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/la-la-anthony-carmelo-anthony-divorce-finalized/",
+            "date": "2021-06-21"
+          }
+        ]
+      },
+      {
+        "id": "melo-paternity-2017",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Fathered daughter Genesis with Mia Burks during marriage",
+        "summary": "In 2017, reports surfaced that Carmelo had fathered a daughter, Genesis, with model Mia Burks while still legally married to La La Anthony. Carmelo has since publicly acknowledged Genesis and includes her in his family.",
+        "sources": [
+          {
+            "name": "Page Six",
+            "url": "https://pagesix.com/2017/04/24/carmelo-anthony-mia-burks-baby-name-revealed/",
+            "date": "2017-04-24"
+          }
+        ]
+      }
+    ]
+  },
+  "lonzo-ball": {
+    "player_id": "lonzo-ball",
+    "name": "Lonzo Ball",
+    "team": "cle",
+    "league": "nba",
+    "items": [
+      {
+        "id": "lonzo-bbb-injury-blame",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Publicly blamed his father's Big Baller Brand shoes for early-career injuries",
+        "summary": "Lonzo Ball has repeatedly tied his early NBA injuries — including a 2018 meniscus tear — to the poor construction of Big Baller Brand sneakers, the family-run line founded by his father LaVar. He missed 2.5 seasons over the resulting saga before returning to play in 2024.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/30137519/lonzo-ball-says-fathers-big-baller-brand-shoes-likely-caused-2018-knee-injury",
+            "date": "2020-09-22"
           }
         ]
       }

@@ -114,6 +114,33 @@ export const PLAYER_SOCIAL: Record<string, PlayerSocial> = {
   'cooper-flagg': { instagram: 'cooperflagg', twitter: 'CooperFlagg' },
   'reed-sheppard': { instagram: 'reedsheppard', twitter: 'ReedSheppard' },
   'stephon-castle': { instagram: 'stephoncastle', twitter: 'StephonCastle' },
+  // round 4 — coaches
+  'andy-reid': { instagram: 'coach_andy_reid' },
+  'sean-mcvay': { instagram: 'sean_mcvay', twitter: 'seanmcvay' },
+  'steve-kerr': { instagram: 'stevekerr', twitter: 'SteveKerr' },
+  'doc-rivers': { twitter: 'DocRivers' },
+  'joe-mazzulla': { instagram: 'joemazzulla' },
+  'dan-campbell': { twitter: 'TheDanCampbell' },
+  'sean-payton': { twitter: 'SeanPayton' },
+  'jim-harbaugh': { twitter: 'CoachJim4UM' },
+  // round 4 — owners + media
+  'mark-cuban': { instagram: 'mcuban', twitter: 'mcuban' },
+  'jeanie-buss': { instagram: 'jeaniebuss', twitter: 'JeanieBuss' },
+  'james-dolan': {},
+  'charles-barkley': { twitter: 'charlesbarkley' },
+  'shaquille-oneal': { instagram: 'shaq', twitter: 'SHAQ' },
+  'stephen-a-smith': { instagram: 'stephenasmith', twitter: 'stephenasmith' },
+  'skip-bayless': { twitter: 'RealSkipBayless' },
+  'tony-romo': { twitter: 'tonyromo' },
+  'tom-brady': { instagram: 'tombrady', twitter: 'TomBrady' },
+  // round 4 — retired stars
+  'rob-gronkowski': { instagram: 'gronk', twitter: 'RobGronkowski' },
+  'aaron-donald': { instagram: 'aarondonald99', twitter: 'AaronDonald97' },
+  'jj-watt': { instagram: 'jjwatt', twitter: 'JJWatt' },
+  'dwyane-wade': { instagram: 'dwyanewade', twitter: 'DwyaneWade' },
+  'antonio-brown': { instagram: 'ab', twitter: 'AB84' },
+  'carmelo-anthony': { instagram: 'carmeloanthony', twitter: 'carmeloanthony' },
+  'lonzo-ball': { instagram: 'zo', twitter: 'ZO2_' },
 };
 
 /** Convert a player display name to a slug ID. e.g. "Devin Booker" → "devin-booker" */
