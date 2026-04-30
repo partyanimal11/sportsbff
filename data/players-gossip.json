@@ -7481,5 +7481,679 @@
         ]
       }
     ]
+  },
+  "jabari-smith-jr": {
+    "player_id": "jabari-smith-jr",
+    "name": "Jabari Smith Jr.",
+    "team": "hou",
+    "league": "nba",
+    "items": [
+      {
+        "id": "jabari-sr-nba-legacy",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Jabari Sr. was a 2000 NBA draft pick out of LSU",
+        "summary": "Jabari Smith Jr. is the son of Jabari Smith Sr., who played college basketball at LSU (1998-2000) and was selected in the second round of the 2000 NBA Draft by the Sacramento Kings.",
+        "sources": [
+          {
+            "name": "WAFB",
+            "url": "https://www.wafb.com/2022/06/24/auburns-jabari-smith-jr-son-former-lsu-star-taken-no-3-overall-by-rockets/",
+            "date": "2022-06-23"
+          }
+        ]
+      },
+      {
+        "id": "jabari-adidas-rookie-class",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed Adidas shoe deal as part of 2022 rookie class",
+        "summary": "Smith Jr. signed a shoe endorsement contract with Adidas in December 2022 as one of 12 NBA rookies from the 2022-23 class to join the brand.",
+        "sources": [
+          {
+            "name": "Houston Chronicle",
+            "url": "https://www.chron.com/sports/rockets/article/jabari-smith-houston-rockets-adidas-17656972.php",
+            "date": "2022-12-15"
+          }
+        ]
+      }
+    ]
+  },
+  "amen-thompson": {
+    "player_id": "amen-thompson",
+    "name": "Amen Thompson",
+    "team": "hou",
+    "league": "nba",
+    "items": [
+      {
+        "id": "amen-twin-ausar-pistons",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Identical twin Ausar plays for Detroit Pistons — first twins drafted top-5",
+        "summary": "Amen and Ausar Thompson are identical twins (born January 30, 2003) — first twins in NBA history selected in the top 5 of the same draft. Amen #4 to Houston, Ausar #5 to Detroit (2023).",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/rockets-pick-amen-pistons-pick-ausar-as-thompson-twins-are-no-4-and-no-5-picks-in-nba-draft",
+            "date": "2023-06-23"
+          }
+        ]
+      },
+      {
+        "id": "amen-troy-jamaican-trainer-dad",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Dad Troy is Jamaican-American basketball trainer who started them at age 7",
+        "summary": "Father Troy Thompson is of Jamaican descent and works as a basketball trainer. He started Amen and Ausar in basketball at age 7. The twins were homeschooled in 6th and 7th grade specifically to focus on basketball training.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-are-amen-thompson-s-parents-rockets-star-s-family-early-life-and-other-details-revealed/",
+            "date": "2025-04-24"
+          }
+        ]
+      },
+      {
+        "id": "amen-overtime-elite-pioneer",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Bypassed college for Overtime Elite — won OTE Finals MVP",
+        "summary": "Amen and Ausar bypassed college basketball to sign with Overtime Elite (OTE), a professional development league for ages 16-20. They won OTE championships and earned Finals MVP honors before going #4 and #5 in the 2023 NBA Draft.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/rockets-pick-amen-pistons-pick-ausar-as-thompson-twins-are-no-4-and-no-5-picks-in-nba-draft",
+            "date": "2023-06-23"
+          }
+        ]
+      },
+      {
+        "id": "amen-childhood-training-regimen",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Childhood training: 2-mile dribble runs + 200 push-ups + 50 pull-ups daily",
+        "summary": "The Thompson twins' father-led childhood fitness routine: run 2 miles dribbling left-handed, 200 push-ups, 200 sit-ups, 50 pull-ups, 500 calf raises, one hour of dribbling practice, 200+ layups, daily sprint competitions. Notorious in basketball circles.",
+        "sources": [
+          {
+            "name": "Champ Hoops (Facebook)",
+            "url": "https://www.facebook.com/hustleballers/posts/thompson-twins-childhood-fitness-routinerun-two-miles-dribbling-left-handed200-p/1234091508506128/",
+            "date": "2025-05-16"
+          }
+        ]
+      }
+    ]
+  },
+  "andrew-nembhard": {
+    "player_id": "andrew-nembhard",
+    "name": "Andrew Nembhard",
+    "team": "ind",
+    "league": "nba",
+    "items": [
+      {
+        "id": "nembhard-brother-ryan-mavs",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Brother Ryan signed with Mavs — first Canadian brothers to face off in NBA",
+        "summary": "Andrew's younger brother Ryan Nembhard signed a two-way deal with the Dallas Mavericks in 2025. The Nembhards became the first Canadian brothers to face each other in an NBA regular season game on October 29, 2025.",
+        "sources": [
+          {
+            "name": "NBA.com (The Athletic)",
+            "url": "https://www.nba.com/news/the-athletic-mavericks-two-way-signee-ryan-nembhard-has-nba-model-his-older-brother-andrew",
+            "date": "2025-07-16"
+          }
+        ]
+      },
+      {
+        "id": "nembhard-aurora-jamaican",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Aurora, Ontario kid with Jamaican heritage through father Claude",
+        "summary": "Andrew was born January 16, 2000 in Aurora, Ontario, Canada. His father Claude is of Jamaican descent. Andrew attended Vaughan Secondary then Montverde Academy before college.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Andrew_Nembhard",
+            "date": "2026-04-17"
+          }
+        ]
+      }
+    ]
+  },
+  "aaron-nesmith": {
+    "player_id": "aaron-nesmith",
+    "name": "Aaron Nesmith",
+    "team": "ind",
+    "league": "nba",
+    "items": [
+      {
+        "id": "nesmith-brother-eddie-harvard-md",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Older brother Eddie is a Harvard-grad MD finishing residency at Boston Medical",
+        "summary": "Aaron's older brother Eddie Nesmith graduated from Harvard with a degree in molecular biology and health policy, then earned his MD at UCSF. As of June 2025, Eddie was finishing his anesthesiology residency at Boston Medical Center. The brothers were attending Pacers playoff games together.",
+        "sources": [
+          {
+            "name": "Pro Football Network",
+            "url": "https://www.profootballnetwork.com/nba/who-are-aaron-nesmiths-siblings-get-to-know-the-pacers-stars-family-during-2025-nba-finals/",
+            "date": "2025-06-05"
+          }
+        ]
+      },
+      {
+        "id": "nesmith-charleston-nigerian-heritage",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Charleston SC kid — parents Bernard + Ernie of Nigerian heritage",
+        "summary": "Aaron is from Charleston, South Carolina. His parents Bernard and Ernie Nesmith are of Nigerian heritage but have lived most of their lives in the US. Both Aaron and brother Eddie attended Porter-Gaud School in Charleston.",
+        "sources": [
+          {
+            "name": "Vanderbilt Athletics",
+            "url": "https://vucommodores.com/nesmith-to-boston/",
+            "date": "2020-11-18"
+          }
+        ]
+      }
+    ]
+  },
+  "ivica-zubac": {
+    "player_id": "ivica-zubac",
+    "name": "Ivica Zubac",
+    "team": "ind",
+    "league": "nba",
+    "items": [
+      {
+        "id": "zubac-daughter-born-trade-day",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Wife gave birth to daughter Sienna the SAME day he was traded to Indiana",
+        "summary": "On February 5, 2026 — the exact same day Zubac was traded from the Clippers to the Pacers — his wife Kristina Prišč gave birth to their first daughter, Sienna Leina Zubac. Surreal life moment juxtaposing the biggest career change with the biggest family change.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/ivica-zubac-wife-welcomed-first-child-before-clippers-pacers-trade",
+            "date": "2026-02-08"
+          }
+        ]
+      },
+      {
+        "id": "zubac-mostar-bosnia-roots",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Born in Mostar, Bosnia and Herzegovina — identifies as Croatian",
+        "summary": "Born March 18, 1997 in Mostar, Bosnia and Herzegovina. Grew up in Čitluk, just east of the Croatian border. Holds dual citizenship but identifies fully as Croatian and represents Croatia internationally.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ivica_Zubac",
+            "date": "2026-04-29"
+          }
+        ]
+      },
+      {
+        "id": "zubac-cousin-zoran-planinic",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Cousin of former NBA player Zoran Planinić",
+        "summary": "Former NBA player Zoran Planinić — also from Mostar — is Ivica's cousin. Family pipeline of Bosnian/Croatian basketball talent.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ivica_Zubac",
+            "date": "2026-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "kris-dunn": {
+    "player_id": "kris-dunn",
+    "name": "Kris Dunn",
+    "team": "lac",
+    "league": "nba",
+    "items": [
+      {
+        "id": "dunn-mom-pia-death-providence",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Mother Pia died at 50 during his Providence years — troubled past",
+        "summary": "Kris's mother Pia died at age 50 while he was at Providence College, a loss that hit him hard during his junior year. She had a troubled history with legal issues including credit card fraud, bad checks, and DUI charges. Kris and older brother John (5 years older, who became Kris's father figure) had been displaced to Alexandria, Virginia from Connecticut as kids to escape the home situation.",
+        "sources": [
+          {
+            "name": "USA Today",
+            "url": "https://www.usatoday.com/story/sports/nba/playoffs/2016/06/21/providence-kris-dunn-tough-upbringing-prepared-nba-draft/86178188/",
+            "date": "2016-06-23"
+          }
+        ]
+      }
+    ]
+  },
+  "derrick-jones-jr": {
+    "player_id": "derrick-jones-jr",
+    "name": "Derrick Jones Jr.",
+    "team": "lac",
+    "league": "nba",
+    "items": [
+      {
+        "id": "djj-shakara-paris-proposal",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Proposed to longtime girlfriend Shakara Pritchett during NBA Paris game Jan 2023",
+        "summary": "Derrick proposed to Shakara Pritchett during an NBA Paris game in January 2023 — got down on one knee at the team dinner. They'd been together 7 years (met in Cleveland in 2016 during his pre-draft period) and have two children together.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-is-derrick-jones-jrs-fiancee-whom-he-proposed-in-paris-everything-you-need-to-know-about-mavs-twenty-seven-yo-forward/",
+            "date": "2024-06-11"
+          }
+        ]
+      },
+      {
+        "id": "djj-puma-airplane-mode",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Multi-year Puma deal as 'Airplane Mode' after 2020 dunk contest win",
+        "summary": "Following his 2020 NBA Slam Dunk Contest win (windmill from the free throw line over Aaron Gordon), Derrick signed a multi-year Puma footwear/apparel deal that gave him the 'Airplane Mode' brand identity. Signed with ANTA in 2025 to expand globally.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/28724674/derrick-jones-jr-gets-puma-deal-dunk-contest-win",
+            "date": "2020-02-17"
+          }
+        ]
+      }
+    ]
+  },
+  "brook-lopez": {
+    "player_id": "brook-lopez",
+    "name": "Brook Lopez",
+    "team": "lac",
+    "league": "nba",
+    "items": [
+      {
+        "id": "brook-twin-robin-disney-fans",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Twin brother Robin Lopez also in NBA — both lifelong Disney fanatics",
+        "summary": "Brook's twin brother Robin Lopez is also an NBA player. Both brothers are famously Disney enthusiasts and have been documented at Walt Disney World multiple times — even featuring it in life milestones.",
+        "sources": [
+          {
+            "name": "NY Post",
+            "url": "https://nypost.com/2022/08/19/bucks-brook-lopez-gets-engaged-to-girlfriend-at-disney-world/",
+            "date": "2022-08-19"
+          }
+        ]
+      },
+      {
+        "id": "brook-disney-proposal-hailee",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Proposed to Hailee Strickland at Disney's Animal Kingdom — married 13 years to the day after meeting there",
+        "summary": "Brook proposed to longtime girlfriend Hailee Strickland at Disney's Animal Kingdom in Lake Buena Vista, FL on August 15, 2022. They married in California in August 2023 — exactly 13 years after first meeting at the same Disney park. Hailee runs Honor Pilates.",
+        "sources": [
+          {
+            "name": "Milwaukee Journal Sentinel",
+            "url": "https://www.jsonline.com/story/sports/nba/bucks/2023/08/16/milwaukee-bucks-brook-lopez-marries-hailee-strickland-in-california/70604575007/",
+            "date": "2023-08-16"
+          }
+        ]
+      }
+    ]
+  },
+  "santi-aldama": {
+    "player_id": "santi-aldama",
+    "name": "Santi Aldama",
+    "team": "mem",
+    "league": "nba",
+    "items": [
+      {
+        "id": "aldama-dad-1992-olympian",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Santiago competed for Spain at 1992 Barcelona Olympics",
+        "summary": "Santi's father Santiago Aldama Toledo was a professional basketball player in Spain and Portugal who competed for Spain's national team at the 1992 Summer Olympics in Barcelona. Uncle Santi Toledo also played pro.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Santi_Aldama",
+            "date": "2026-04-29"
+          }
+        ]
+      },
+      {
+        "id": "aldama-las-palmas-canary-islands",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Born in Las Palmas, Gran Canaria — Spain's Canary Islands",
+        "summary": "Born January 10, 2001 in Las Palmas, Gran Canaria, Spain. Came up through Canterbury Basketball Academy in Spain.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Santi_Aldama",
+            "date": "2026-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "cedric-coward": {
+    "player_id": "cedric-coward",
+    "name": "Cedric Coward",
+    "team": "mem",
+    "league": "nba",
+    "items": [
+      {
+        "id": "coward-grandpa-olympic-gold",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Grandfather Maxie Parks won Olympic gold in 1976 4x400 relay",
+        "summary": "Cedric's grandfather Maxie Parks won a gold medal in the 4x400m relay at the 1976 Montreal Summer Olympics. Decorated track-and-field Olympian.",
+        "sources": [
+          {
+            "name": "SLAM Magazine",
+            "url": "https://slamonline.com/nba/cedric-coward-261/",
+            "date": "2026-04-15"
+          }
+        ]
+      },
+      {
+        "id": "coward-built-house-with-grandpa",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Spent college summers building a house from foundation up with grandpa",
+        "summary": "During college summers, Coward worked alongside his Olympic-gold-medalist grandfather Maxie Parks building a house from the foundation up — learning patience and the value of following proper steps through hands-on labor.",
+        "sources": [
+          {
+            "name": "SLAM Magazine",
+            "url": "https://slamonline.com/nba/cedric-coward-261/",
+            "date": "2026-04-15"
+          }
+        ]
+      },
+      {
+        "id": "coward-fresno-three-school-path",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Fresno kid — D-III Willamette → Eastern Washington → Washington State",
+        "summary": "Born September 11, 2003 in Fresno, California. Started at Division III Willamette University (2021-22), transferred to Eastern Washington (2022-24), finally Washington State (2024-25) before going pro. The most under-the-radar pipeline in the lottery class.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cedric_Coward",
+            "date": "2026-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "zach-edey": {
+    "player_id": "zach-edey",
+    "name": "Zach Edey",
+    "team": "mem",
+    "league": "nba",
+    "items": [
+      {
+        "id": "edey-toronto-hockey-baseball",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Toronto kid — played hockey and baseball before basketball",
+        "summary": "Born May 14, 2002 in Toronto, Ontario, Canada to Julia and Glen Edey. Grew up playing hockey and baseball — typical Canadian sports — and didn't pick up basketball until his sophomore year of high school.",
+        "sources": [
+          {
+            "name": "Purdue Athletics",
+            "url": "https://purduesports.com/sports/mens-basketball/roster/player/zach-edey",
+            "date": "2026-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "jaylen-wells": {
+    "player_id": "jaylen-wells",
+    "name": "Jaylen Wells",
+    "team": "mem",
+    "league": "nba",
+    "items": [
+      {
+        "id": "wells-sacramento-916-hero",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "'916 hero' — stayed in hometown Sacramento instead of LA/Vegas",
+        "summary": "From Sacramento, California (area code 916), attended Folsom High School. Unlike peers who migrated to Las Vegas or LA prep schools, Wells deliberately stayed in Sacramento to build local basketball community — earning the '916 hero' nickname.",
+        "sources": [
+          {
+            "name": "Memphis Commercial Appeal",
+            "url": "https://www.commercialappeal.com/story/sports/nba/grizzlies/2025/01/04/jaylen-wells-memphis-grizzlies-sacramento-kings/77262991007/",
+            "date": "2025-01-04"
+          }
+        ]
+      },
+      {
+        "id": "wells-parents-sacramento-er",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Fred is assistant ER manager at Kaiser Sacramento; older brother Anthony coached him",
+        "summary": "Father Fred Wells works as assistant ER manager at Kaiser Permanente in Sacramento. Mother Lakeitha (Hayward) Wells. Two older brothers Deandre Stallings and Anthony Wells — Anthony famously noted Jaylen could do 22 pull-ups on tree branches at age 5.",
+        "sources": [
+          {
+            "name": "Sportskeeda",
+            "url": "https://www.sportskeeda.com/basketball/jaylen-wells-parents",
+            "date": "2026-03-13"
+          }
+        ]
+      }
+    ]
+  },
+  "mike-conley": {
+    "player_id": "mike-conley",
+    "name": "Mike Conley",
+    "team": "min",
+    "league": "nba",
+    "items": [
+      {
+        "id": "conley-mary-peluso-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Mary Peluso in 2014 — Greg Oden was a groomsman",
+        "summary": "Mike married Mary LaReve Peluso on July 5, 2014. They met at Ohio State. Greg Oden — Mike's college teammate at OSU — was a groomsman at the wedding.",
+        "sources": [
+          {
+            "name": "Heavy",
+            "url": "https://heavy.com/sports/2017/04/mary-peluso-mike-conley-wife-girlfriend-family-children-married-memphis-grizzlies/",
+            "date": "2017-04-25"
+          }
+        ]
+      },
+      {
+        "id": "conley-three-sons",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Three sons — Myles, Noah, Elijah",
+        "summary": "Mike + Mary have three sons: Myles Alex (b. July 2016), Noah (b. 2018), and Elijah Michael (b. August 16, 2020).",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-is-mike-conleys-wife-mary-everything-to-know-about-timberwolves-stars-marriage-life-after-cheating-allegations/",
+            "date": "2024-11-27"
+          }
+        ]
+      },
+      {
+        "id": "conley-dad-olympic-triple-jump",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Father Mike Sr. is an Olympic gold medalist + World champion in triple jump",
+        "summary": "Mike Conley Sr. — Mike's dad — is an Olympic gold medalist + World Championships gold medalist in the triple jump event. Athletic legacy on both sides.",
+        "sources": [
+          {
+            "name": "Reddit r/todayilearned",
+            "url": "https://www.reddit.com/r/todayilearned/comments/1nk6qb0/til_mike_conleys_dad_is_an_olympic_gold_medalist/",
+            "date": "2024-04-30"
+          }
+        ]
+      },
+      {
+        "id": "conley-blue-eyes-clapback",
+        "tier": "reported",
+        "category": "culture",
+        "headline": "Famously responded to cheating rumors with #imNOTthatnice",
+        "summary": "Online rumors implied infidelity because his oldest son Myles has blue eyes. Mike clapped back on social media with the now-iconic hashtag #imNOTthatnice — a beloved player moment for handling internet noise with humor.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-is-mike-conleys-wife-mary-everything-to-know-about-timberwolves-stars-marriage-life-after-cheating-allegations/",
+            "date": "2024-11-27"
+          }
+        ]
+      }
+    ]
+  },
+  "rudy-gobert": {
+    "player_id": "rudy-gobert",
+    "name": "Rudy Gobert",
+    "team": "min",
+    "league": "nba",
+    "items": [
+      {
+        "id": "gobert-covid-patient-zero",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "NBA's COVID 'patient zero' — tested positive March 11, 2020, league shut down",
+        "summary": "On March 11, 2020 Rudy became the first NBA player to test positive for COVID-19. The diagnosis triggered the league-wide shutdown — the moment the pandemic became real for American sports.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/30582683/jazz-center-rudy-gobert-loves-game-covid-19-infamous-mic-touching-incident",
+            "date": "2020-12-24"
+          }
+        ]
+      },
+      {
+        "id": "gobert-mic-touching-incident",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Touched every microphone at presser two days before testing positive",
+        "summary": "On March 9, 2020 Gobert jokingly touched all the microphones at a media press conference — the moment instantly became infamous after his positive test 48 hours later. One of the most memorable moments in pandemic sports lore.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/30582683/jazz-center-rudy-gobert-loves-game-covid-19-infamous-mic-touching-incident",
+            "date": "2020-12-24"
+          }
+        ]
+      },
+      {
+        "id": "gobert-daughter-reflesh-2024",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Welcomed daughter Reflesh in 2024 with partner Marie-Sophie Sicard",
+        "summary": "Rudy and partner Marie-Sophie Sicard welcomed daughter Reflesh in 2024. He's been notably more public about fatherhood since.",
+        "sources": [
+          {
+            "name": "Star Tribune",
+            "url": "https://www.startribune.com/on-the-tunnel-walk-timberwolves-let-their-personality-and-fashion-shine/601361938",
+            "date": "2025-05-27"
+          }
+        ]
+      },
+      {
+        "id": "gobert-tunnel-fashion-icon",
+        "tier": "reported",
+        "category": "culture",
+        "headline": "Tunnel-walk fashion icon — French style on the road",
+        "summary": "Rudy is one of the league's most recognized tunnel-walk fashion presences, regularly bringing French-tailored sensibilities + statement pieces to the Wolves' road-game arrivals.",
+        "sources": [
+          {
+            "name": "Star Tribune",
+            "url": "https://www.startribune.com/on-the-tunnel-walk-timberwolves-let-their-personality-and-fashion-shine/601361938",
+            "date": "2025-05-27"
+          }
+        ]
+      }
+    ]
+  },
+  "jaden-mcdaniels": {
+    "player_id": "jaden-mcdaniels",
+    "name": "Jaden McDaniels",
+    "team": "min",
+    "league": "nba",
+    "items": [
+      {
+        "id": "jaden-brother-jalen-nba",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Older brother Jalen also plays in the NBA",
+        "summary": "Jaden's older brother Jalen McDaniels plays professional basketball in the NBA. Jalen was drafted by the Charlotte Hornets in 2019 and has bounced around the league since.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-are-jaden-mcdaniels-and-jalen-mcdaniels-related-detailed-list-of-siblings-in-the-nba/",
+            "date": "2024-04-03"
+          }
+        ]
+      },
+      {
+        "id": "jaden-son-mekhi-2024",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Welcomed son Mekhi in June 2024 with partner Allison Audrey",
+        "summary": "Jaden and partner Allison Audrey welcomed their first son, Mekhi, in June 2024.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Jaden_McDaniels",
+            "date": "2026-04-30"
+          }
+        ]
+      }
+    ]
+  },
+  "julius-randle": {
+    "player_id": "julius-randle",
+    "name": "Julius Randle",
+    "team": "min",
+    "league": "nba",
+    "items": [
+      {
+        "id": "randle-kendra-shaw-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Kentucky teammate-era love Kendra Shaw in 2015",
+        "summary": "Julius married Kendra Shaw — both were University of Kentucky students when they met at her 20th birthday party in 2013. Married July 6, 2014.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-is-julius-randles-wife-everything-you-need-to-know-about-kendra-shaw/",
+            "date": "2024-04-30"
+          }
+        ]
+      },
+      {
+        "id": "randle-three-kids",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Three children — Kyden, Jaycey, and daughter Romi Joelle",
+        "summary": "Julius + Kendra have three children: Kyden (b. December 23, 2016), Jaycey (b. October 16, 2021), and daughter Romi Joelle (b. May 2025).",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/nba/knicks/onsi/news/former-new-york-knicks-star-julius-randle-welcomes-third-child",
+            "date": "2025-05-03"
+          }
+        ]
+      },
+      {
+        "id": "randle-traded-for-kat",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded from Knicks to Wolves in the Karl-Anthony Towns blockbuster",
+        "summary": "In October 2024, Julius (along with Donte DiVincenzo) was traded from the New York Knicks to the Minnesota Timberwolves in exchange for Karl-Anthony Towns — one of the most consequential trades of the 2024 offseason.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/why-kat-randle-trade-worked-for-both-the-knicks-and-timberwolves",
+            "date": "2025-05-19"
+          }
+        ]
+      }
+    ]
   }
 }
