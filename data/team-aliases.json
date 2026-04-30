@@ -1,0 +1,224 @@
+{
+  "generated_at": "2026-04-30",
+  "description": "Maps jersey-text tokens (uppercased) to {league, teamId} for OCR-first scan lookup. Includes city names, team names, common abbreviations, and throwback variations.",
+  "aliases": {
+    "ATLANTA": [{"league":"nba","team":"atl"},{"league":"wnba","team":"atl"},{"league":"nfl","team":"atl"}],
+    "HAWKS": [{"league":"nba","team":"atl"}],
+    "DREAM": [{"league":"wnba","team":"atl"}],
+    "FALCONS": [{"league":"nfl","team":"atl"}],
+
+    "BOSTON": [{"league":"nba","team":"bos"}],
+    "CELTICS": [{"league":"nba","team":"bos"}],
+    "CELTS": [{"league":"nba","team":"bos"}],
+
+    "BROOKLYN": [{"league":"nba","team":"bkn"}],
+    "NETS": [{"league":"nba","team":"bkn"}],
+    "BKN": [{"league":"nba","team":"bkn"}],
+
+    "CHARLOTTE": [{"league":"nba","team":"cha"}],
+    "HORNETS": [{"league":"nba","team":"cha"}],
+    "BUZZ": [{"league":"nba","team":"cha"}],
+
+    "CHICAGO": [{"league":"nba","team":"chi"},{"league":"wnba","team":"chi"},{"league":"nfl","team":"chi"}],
+    "BULLS": [{"league":"nba","team":"chi"}],
+    "SKY": [{"league":"wnba","team":"chi"}],
+    "BEARS": [{"league":"nfl","team":"chi"}],
+
+    "CLEVELAND": [{"league":"nba","team":"cle"},{"league":"nfl","team":"cle"}],
+    "CAVALIERS": [{"league":"nba","team":"cle"}],
+    "CAVS": [{"league":"nba","team":"cle"}],
+    "BROWNS": [{"league":"nfl","team":"cle"}],
+
+    "DALLAS": [{"league":"nba","team":"dal"},{"league":"wnba","team":"dal"},{"league":"nfl","team":"dal"}],
+    "MAVERICKS": [{"league":"nba","team":"dal"}],
+    "MAVS": [{"league":"nba","team":"dal"}],
+    "WINGS": [{"league":"wnba","team":"dal"}],
+    "COWBOYS": [{"league":"nfl","team":"dal"}],
+    "BOYS": [{"league":"nfl","team":"dal"}],
+
+    "DENVER": [{"league":"nba","team":"den"},{"league":"nfl","team":"den"}],
+    "NUGGETS": [{"league":"nba","team":"den"}],
+    "NUGGS": [{"league":"nba","team":"den"}],
+    "BRONCOS": [{"league":"nfl","team":"den"}],
+
+    "DETROIT": [{"league":"nba","team":"det"},{"league":"nfl","team":"det"}],
+    "PISTONS": [{"league":"nba","team":"det"}],
+    "MOTOR": [{"league":"nba","team":"det"}],
+    "LIONS": [{"league":"nfl","team":"det"}],
+
+    "GOLDEN": [{"league":"nba","team":"gs"},{"league":"wnba","team":"gs"}],
+    "STATE": [{"league":"nba","team":"gs"},{"league":"wnba","team":"gs"}],
+    "WARRIORS": [{"league":"nba","team":"gs"}],
+    "DUBS": [{"league":"nba","team":"gs"}],
+    "GSW": [{"league":"nba","team":"gs"}],
+    "VALKYRIES": [{"league":"wnba","team":"gs"}],
+    "VALKS": [{"league":"wnba","team":"gs"}],
+    "VALK": [{"league":"wnba","team":"gs"}],
+
+    "HOUSTON": [{"league":"nba","team":"hou"},{"league":"nfl","team":"hou"}],
+    "ROCKETS": [{"league":"nba","team":"hou"}],
+    "TEXANS": [{"league":"nfl","team":"hou"}],
+
+    "INDIANA": [{"league":"nba","team":"ind"},{"league":"wnba","team":"ind"}],
+    "PACERS": [{"league":"nba","team":"ind"}],
+    "FEVER": [{"league":"wnba","team":"ind"}],
+    "INDY": [{"league":"nba","team":"ind"},{"league":"wnba","team":"ind"},{"league":"nfl","team":"ind"}],
+    "COLTS": [{"league":"nfl","team":"ind"}],
+
+    "CLIPPERS": [{"league":"nba","team":"lac"}],
+    "CLIPS": [{"league":"nba","team":"lac"}],
+
+    "LAKERS": [{"league":"nba","team":"lal"}],
+    "LAKE": [{"league":"nba","team":"lal"}],
+    "LAL": [{"league":"nba","team":"lal"}],
+    "SHOW": [{"league":"nba","team":"lal"}],
+
+    "SPARKS": [{"league":"wnba","team":"la"}],
+
+    "MEMPHIS": [{"league":"nba","team":"mem"}],
+    "GRIZZLIES": [{"league":"nba","team":"mem"}],
+    "GRIZ": [{"league":"nba","team":"mem"}],
+
+    "MIAMI": [{"league":"nba","team":"mia"},{"league":"nfl","team":"mia"}],
+    "HEAT": [{"league":"nba","team":"mia"}],
+    "DOLPHINS": [{"league":"nfl","team":"mia"}],
+    "FINS": [{"league":"nfl","team":"mia"}],
+
+    "MILWAUKEE": [{"league":"nba","team":"mil"}],
+    "BUCKS": [{"league":"nba","team":"mil"}],
+
+    "MINNESOTA": [{"league":"nba","team":"min"},{"league":"wnba","team":"min"},{"league":"nfl","team":"min"}],
+    "TIMBERWOLVES": [{"league":"nba","team":"min"}],
+    "WOLVES": [{"league":"nba","team":"min"}],
+    "TWOLVES": [{"league":"nba","team":"min"}],
+    "LYNX": [{"league":"wnba","team":"min"}],
+    "VIKINGS": [{"league":"nfl","team":"min"}],
+    "VIKES": [{"league":"nfl","team":"min"}],
+    "SKOL": [{"league":"nfl","team":"min"}],
+
+    "PELICANS": [{"league":"nba","team":"no"}],
+    "PELS": [{"league":"nba","team":"no"}],
+    "SAINTS": [{"league":"nfl","team":"no"}],
+    "WHODAT": [{"league":"nfl","team":"no"}],
+
+    "KNICKS": [{"league":"nba","team":"ny"}],
+    "LIBERTY": [{"league":"wnba","team":"ny"}],
+    "GIANTS": [{"league":"nfl","team":"nyg"}],
+    "GMEN": [{"league":"nfl","team":"nyg"}],
+    "JETS": [{"league":"nfl","team":"nyj"}],
+
+    "OKLAHOMA": [{"league":"nba","team":"okc"}],
+    "THUNDER": [{"league":"nba","team":"okc"}],
+    "OKC": [{"league":"nba","team":"okc"}],
+
+    "ORLANDO": [{"league":"nba","team":"orl"}],
+    "MAGIC": [{"league":"nba","team":"orl"}],
+
+    "PHILADELPHIA": [{"league":"nba","team":"phi"},{"league":"nfl","team":"phi"}],
+    "PHILLY": [{"league":"nba","team":"phi"},{"league":"nfl","team":"phi"}],
+    "76ERS": [{"league":"nba","team":"phi"}],
+    "SIXERS": [{"league":"nba","team":"phi"}],
+    "EAGLES": [{"league":"nfl","team":"phi"}],
+    "BIRDS": [{"league":"nfl","team":"phi"}],
+
+    "PHOENIX": [{"league":"nba","team":"phx"},{"league":"wnba","team":"phx"}],
+    "SUNS": [{"league":"nba","team":"phx"}],
+    "MERCURY": [{"league":"wnba","team":"phx"}],
+    "MERC": [{"league":"wnba","team":"phx"}],
+
+    "PORTLAND": [{"league":"nba","team":"por"},{"league":"wnba","team":"por"}],
+    "BLAZERS": [{"league":"nba","team":"por"}],
+    "TRAILBLAZERS": [{"league":"nba","team":"por"}],
+    "FIRE": [{"league":"wnba","team":"por"}],
+    "RIPCITY": [{"league":"nba","team":"por"}],
+
+    "SPURS": [{"league":"nba","team":"sa"}],
+    "ANTONIO": [{"league":"nba","team":"sa"}],
+
+    "SACRAMENTO": [{"league":"nba","team":"sac"}],
+    "KINGS": [{"league":"nba","team":"sac"}],
+    "BEAM": [{"league":"nba","team":"sac"}],
+
+    "TORONTO": [{"league":"nba","team":"tor"},{"league":"wnba","team":"tor"}],
+    "RAPTORS": [{"league":"nba","team":"tor"}],
+    "RAPS": [{"league":"nba","team":"tor"}],
+    "TEMPO": [{"league":"wnba","team":"tor"}],
+
+    "UTAH": [{"league":"nba","team":"utah"}],
+    "JAZZ": [{"league":"nba","team":"utah"}],
+
+    "WASHINGTON": [{"league":"nba","team":"wsh"},{"league":"wnba","team":"wsh"},{"league":"nfl","team":"wsh"}],
+    "WIZARDS": [{"league":"nba","team":"wsh"}],
+    "WIZ": [{"league":"nba","team":"wsh"}],
+    "MYSTICS": [{"league":"wnba","team":"wsh"}],
+    "COMMANDERS": [{"league":"nfl","team":"wsh"}],
+
+    "CONNECTICUT": [{"league":"wnba","team":"con"}],
+    "SUN": [{"league":"wnba","team":"con"}],
+
+    "VEGAS": [{"league":"wnba","team":"lv"},{"league":"nfl","team":"lv"}],
+    "LAS": [{"league":"wnba","team":"lv"},{"league":"nfl","team":"lv"}],
+    "ACES": [{"league":"wnba","team":"lv"}],
+    "RAIDERS": [{"league":"nfl","team":"lv"}],
+
+    "SEATTLE": [{"league":"wnba","team":"sea"},{"league":"nfl","team":"sea"}],
+    "STORM": [{"league":"wnba","team":"sea"}],
+    "SEAHAWKS": [{"league":"nfl","team":"sea"}],
+    "HAWKS_SEA": [{"league":"nfl","team":"sea"}],
+
+    "ARIZONA": [{"league":"nfl","team":"ari"}],
+    "CARDINALS": [{"league":"nfl","team":"ari"}],
+    "CARDS": [{"league":"nfl","team":"ari"}],
+
+    "BALTIMORE": [{"league":"nfl","team":"bal"}],
+    "RAVENS": [{"league":"nfl","team":"bal"}],
+
+    "BUFFALO": [{"league":"nfl","team":"buf"}],
+    "BILLS": [{"league":"nfl","team":"buf"}],
+    "MAFIA": [{"league":"nfl","team":"buf"}],
+
+    "CAROLINA": [{"league":"nfl","team":"car"}],
+    "PANTHERS": [{"league":"nfl","team":"car"}],
+
+    "CINCINNATI": [{"league":"nfl","team":"cin"}],
+    "BENGALS": [{"league":"nfl","team":"cin"}],
+    "WHODEY": [{"league":"nfl","team":"cin"}],
+
+    "GREEN": [{"league":"nfl","team":"gb"}],
+    "BAY": [{"league":"nfl","team":"gb"}],
+    "PACKERS": [{"league":"nfl","team":"gb"}],
+    "PACK": [{"league":"nfl","team":"gb"}],
+
+    "JACKSONVILLE": [{"league":"nfl","team":"jax"}],
+    "JAGUARS": [{"league":"nfl","team":"jax"}],
+    "JAGS": [{"league":"nfl","team":"jax"}],
+
+    "KANSAS": [{"league":"nfl","team":"kc"}],
+    "CITY": [{"league":"nfl","team":"kc"}],
+    "CHIEFS": [{"league":"nfl","team":"kc"}],
+
+    "ANGELES": [{"league":"nba","team":"lal"},{"league":"nfl","team":"lar"}],
+    "CHARGERS": [{"league":"nfl","team":"lac"}],
+    "BOLTS": [{"league":"nfl","team":"lac"}],
+    "RAMS": [{"league":"nfl","team":"lar"}],
+
+    "ENGLAND": [{"league":"nfl","team":"ne"}],
+    "NEW": [{"league":"nfl","team":"ne"}],
+    "PATRIOTS": [{"league":"nfl","team":"ne"}],
+    "PATS": [{"league":"nfl","team":"ne"}],
+
+    "PITTSBURGH": [{"league":"nfl","team":"pit"}],
+    "STEELERS": [{"league":"nfl","team":"pit"}],
+
+    "FRANCISCO": [{"league":"nfl","team":"sf"}],
+    "49ERS": [{"league":"nfl","team":"sf"}],
+    "NINERS": [{"league":"nfl","team":"sf"}],
+
+    "TAMPA": [{"league":"nfl","team":"tb"}],
+    "BUCCANEERS": [{"league":"nfl","team":"tb"}],
+    "BUCS": [{"league":"nfl","team":"tb"}],
+
+    "TENNESSEE": [{"league":"nfl","team":"ten"}],
+    "TITANS": [{"league":"nfl","team":"ten"}]
+  }
+}
