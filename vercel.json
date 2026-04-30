@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/build-today",
+      "schedule": "0 11 * * *"
+    }
+  ]
+}

@@ -1,8 +1,25 @@
 import { NextRequest } from 'next/server';
+import { unstable_cache } from 'next/cache';
 import { getOpenAI, MODELS, hasOpenAIKey } from '@/lib/openai';
 import { pickFallbackTea, type TeaCard } from '@/lib/tea-fallback';
 import { getLens } from '@/lib/lens';
+import { buildTodayFeed, type TeaCard as TeaFeedCard } from '@/lib/today-feed';
 import players from '@/data/players-sample.json';
+
+/**
+ * Cached daily Tea feed builder. Wraps buildTodayFeed() so the LLM rewrite
+ * pass runs at most once per day. The /api/cron/build-today endpoint
+ * invalidates this via revalidateTag('today-feed').
+ *
+ * Falls through gracefully if the build returns nothing — the existing
+ * lens-voiced single-card payload still ships, so the iOS app never
+ * sees an empty Tea tab.
+ */
+const getCachedTodayFeed = unstable_cache(
+  async (): Promise<TeaFeedCard[]> => buildTodayFeed(),
+  ['today-feed'],
+  { revalidate: 86400, tags: ['today-feed'] }
+);
 
 /**
  * POST /api/today
@@ -45,6 +62,12 @@ type TodayResponse = {
   drama: { prompt: string; response: string };
   players: { id: string; name: string; team: string; league: 'nfl' | 'nba'; number: number }[];
   lesson: { title: string; body: string };
+  /**
+   * NEW (2026-05): Multi-card Tea feed generated daily from live ESPN headlines.
+   * 8-12 fresh cards rewritten in sportsBFF voice with tier/category tags.
+   * Empty array if generation hasn't run yet today (falls back to drama+lesson).
+   */
+  cards?: TeaFeedCard[];
   cached?: boolean;
   fallback?: boolean;
 };
@@ -182,12 +205,17 @@ export async function POST(req: NextRequest) {
   const vibeLevel = body.vibeLevel;
   const today = isoDateUTC();
 
+  // Pull the daily multi-card Tea feed in parallel with everything else.
+  // Cached for 24h, invalidated by /api/cron/build-today.
+  const cardsPromise = getCachedTodayFeed().catch(() => [] as TeaFeedCard[]);
+
   // Cache check
   const key = cacheKey(lens, league, today);
   const cached = _cache.get(key);
   if (cached && cached.expires > Date.now()) {
+    const cards = await cardsPromise;
     return new Response(
-      JSON.stringify({ ...cached.value, cached: true }),
+      JSON.stringify({ ...cached.value, cards, cached: true }),
       { status: 200, headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } }
     );
   }
@@ -195,9 +223,11 @@ export async function POST(req: NextRequest) {
   // No API key → fallback
   if (!hasOpenAIKey()) {
     const fallback = pickFallbackTea(lens, league);
+    const cards = await cardsPromise;
     const response: TodayResponse = {
       date: today,
       ...fallback,
+      cards,
       fallback: true,
     };
     _cache.set(key, { value: response, expires: Date.now() + CACHE_TTL_MS });
@@ -209,24 +239,34 @@ export async function POST(req: NextRequest) {
 
   // Generate fresh Tea
   try {
-    const card = await generateTea(lens, league, displayName, vibeLevel);
+    const [card, cards] = await Promise.all([
+      generateTea(lens, league, displayName, vibeLevel),
+      cardsPromise,
+    ]);
     const response: TodayResponse = {
       date: today,
       drama: card.drama,
       players: card.players,
       lesson: card.lesson,
+      cards,
     };
     _cache.set(key, { value: response, expires: Date.now() + CACHE_TTL_MS });
     return new Response(JSON.stringify(response), {
       status: 200,
-      headers: { 'Content-Type': 'application/json', ...CORS_HEADERS },
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Today-Cards-Count': String(cards.length),
+        ...CORS_HEADERS,
+      },
     });
   } catch (err) {
     // Generation failed — graceful fallback to evergreen pack
     const fallback = pickFallbackTea(lens, league);
+    const cards = await cardsPromise;
     const response: TodayResponse = {
       date: today,
       ...fallback,
+      cards,
       fallback: true,
     };
     return new Response(JSON.stringify(response), {
@@ -238,4 +278,28 @@ export async function POST(req: NextRequest) {
       },
     });
   }
+}
+
+/**
+ * GET /api/today — convenience endpoint returning JUST the new cards feed.
+ * iOS Tea-tab v2 hits this directly when it only needs the multi-card list
+ * (no lens-voiced drama/lesson).
+ */
+export async function GET() {
+  const cards = await getCachedTodayFeed().catch(() => [] as TeaFeedCard[]);
+  return new Response(
+    JSON.stringify({
+      date: isoDateUTC(),
+      cards,
+      count: cards.length,
+    }),
+    {
+      status: 200,
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Today-Cards-Count': String(cards.length),
+        ...CORS_HEADERS,
+      },
+    }
+  );
 }
