@@ -1,0 +1,1564 @@
+{
+  "quizzes": [
+    {
+      "lessonSlug": "nfl/01-the-rules",
+      "questions": [
+        {
+          "id": "rules-q1",
+          "question": "How many downs does the offense get to move the ball 10 yards?",
+          "options": [
+            "Three",
+            "Four",
+            "Five",
+            "Two"
+          ],
+          "correctIndex": 1,
+          "explanation": "Four downs to move 10 yards. If they succeed, they get four new downs. If they fail, the other team gets the ball."
+        },
+        {
+          "id": "rules-q2",
+          "question": "How many 15-minute quarters are there in an NFL game?",
+          "options": [
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+          ],
+          "correctIndex": 2,
+          "explanation": "Four 15-minute quarters make a 60-minute game (though it takes over 3 hours because of stoppages, timeouts, and commercials)."
+        },
+        {
+          "id": "rules-q3",
+          "question": "How many points is a touchdown worth?",
+          "options": [
+            "3 points",
+            "6 points",
+            "7 points",
+            "5 points"
+          ],
+          "correctIndex": 1,
+          "explanation": "A touchdown is worth 6 points. Teams then get to try for 1 extra point (kick) or 2 extra points (another trip to the end zone)."
+        },
+        {
+          "id": "rules-q4",
+          "question": "What does '3rd and 7' mean?",
+          "options": [
+            "3 yards gained, 7 to go",
+            "Third down, need 7 more yards",
+            "Third team, 7 points",
+            "3 timeouts left, 7 minutes"
+          ],
+          "correctIndex": 1,
+          "explanation": "It's the third down (try) and the offense needs 7 more yards to get a fresh set of downs. The numbers tell you exactly how many yards they still need."
+        },
+        {
+          "id": "rules-q5",
+          "question": "When a team is ahead late in the game and 'runs out the clock,' what are they doing?",
+          "options": [
+            "Calling a timeout to freeze the clock",
+            "Running the ball instead of passing to keep the clock moving",
+            "Stopping play to check the scoreboard clock",
+            "Scoring field goals to run up the score"
+          ],
+          "correctIndex": 1,
+          "explanation": "Running the ball keeps the clock moving without stops, which wastes the opponent's time and makes it harder for them to score. It's a time-management strategy."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/02-positions-on-the-field",
+      "questions": [
+        {
+          "id": "pos-q1",
+          "question": "What is the main job of the offensive line?",
+          "options": [
+            "Catch passes downfield",
+            "Protect the QB and create running paths",
+            "Run the ball forward",
+            "Call plays for the offense"
+          ],
+          "correctIndex": 1,
+          "explanation": "The five offensive linemen protect the quarterback and open running lanes. They're the foundation of every successful offense."
+        },
+        {
+          "id": "pos-q2",
+          "question": "Which defensive position is described as 'the chess pieces of the defense'?",
+          "options": [
+            "Cornerback",
+            "Safety",
+            "Linebacker",
+            "Defensive end"
+          ],
+          "correctIndex": 2,
+          "explanation": "Linebackers can run sideways, diagnose plays instantly, and either rush forward or drop back to cover receivers. They're incredibly versatile."
+        },
+        {
+          "id": "pos-q3",
+          "question": "What makes a tight end different from a wide receiver?",
+          "options": [
+            "Tight ends are faster",
+            "Tight ends are smaller",
+            "Tight ends can both block like linemen AND catch like receivers",
+            "Tight ends can only run short routes"
+          ],
+          "correctIndex": 2,
+          "explanation": "Tight ends are hybrids\u2014they can block like linemen to protect the QB or run, and they catch passes like receivers. It's a two-in-one role."
+        },
+        {
+          "id": "pos-q4",
+          "question": "In the defensive secondary, what's the main difference between a cornerback and a safety?",
+          "options": [
+            "Cornerbacks are faster",
+            "Safeties line up closer to the line of scrimmage",
+            "Cornerbacks cover receivers one-on-one; safeties play deeper and help over the top",
+            "Safeties never cover receivers"
+          ],
+          "correctIndex": 2,
+          "explanation": "Cornerbacks line up against receivers one-on-one, while safeties play deeper and can help wherever they're needed\u2014they're the last line of defense."
+        },
+        {
+          "id": "pos-q5",
+          "question": "Which position is often called 'the household name' because of star recognition?",
+          "options": [
+            "Running back",
+            "Linebacker",
+            "Wide receiver",
+            "Quarterback"
+          ],
+          "correctIndex": 3,
+          "explanation": "The best quarterbacks are household names. Patrick Mahomes, Josh Allen, Jalen Hurts\u2014these are the stars everyone knows. A good QB makes a team competitive."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/03-reading-the-score",
+      "questions": [
+        {
+          "id": "score-q1",
+          "question": "How many points is a field goal worth?",
+          "options": [
+            "2 points",
+            "1 point",
+            "3 points",
+            "6 points"
+          ],
+          "correctIndex": 2,
+          "explanation": "A field goal (kicking the ball through the uprights) is worth 3 points. It's a key scoring option when the end zone is out of reach."
+        },
+        {
+          "id": "score-q2",
+          "question": "What is the 'red zone'?",
+          "options": [
+            "Any area inside the 50-yard line",
+            "The area within 20 yards of the opponent's end zone",
+            "The area where the defense has an advantage",
+            "A penalty zone for excessive celebrations"
+          ],
+          "correctIndex": 1,
+          "explanation": "The red zone is roughly the last 20 yards before the end zone. Scoring is much easier here because there's less field to work with."
+        },
+        {
+          "id": "score-q3",
+          "question": "After a touchdown, what's the difference between kicking the extra point and going for two?",
+          "options": [
+            "Kicking gets 1 point, going for two gets 2 points if successful",
+            "Kicking gets 2 points, going for two gets 3 points",
+            "They're the same thing",
+            "Going for two is only allowed twice per game"
+          ],
+          "correctIndex": 0,
+          "explanation": "A PAT (extra point kick) from 15 yards away = 1 point. Going for two (advancing the ball from the 2-yard line) = 2 points but riskier."
+        },
+        {
+          "id": "score-q4",
+          "question": "What is a 'safety' in football?",
+          "options": [
+            "A defensive player position",
+            "A type of helmet",
+            "When the defense tackles the opponent's ball-carrier in their own end zone",
+            "A penalty called on the offense"
+          ],
+          "correctIndex": 2,
+          "explanation": "A safety (2 points) is rare. It happens when the defense tackles the offense's ball-carrier in their own end zone, which is a huge momentum swing."
+        },
+        {
+          "id": "score-q5",
+          "question": "If an offense is on '4th and goal,' what does that mean?",
+          "options": [
+            "Fourth down and the end zone is close enough to reach",
+            "The team scored a goal",
+            "Four quarterbacks are on the field",
+            "The fourth quarter just started"
+          ],
+          "correctIndex": 0,
+          "explanation": "Fourth and goal = fourth down with the end zone in reach. Teams usually go for it (try to score) instead of punting because the risk-reward is worth it."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/04-offense-101",
+      "questions": [
+        {
+          "id": "off-q1",
+          "question": "What is an 'audible' in football?",
+          "options": [
+            "A loud crowd at the stadium",
+            "When the QB changes the play at the line based on what they see",
+            "A penalty for talking too much",
+            "A replay of the previous play"
+          ],
+          "correctIndex": 1,
+          "explanation": "An audible is a last-second play change by the QB after reading the defense. It's cinematic and crucial for adjusting to what the defense is showing."
+        },
+        {
+          "id": "off-q2",
+          "question": "What is 'the pocket'?",
+          "options": [
+            "A zone on the sideline",
+            "The protected area the offensive line creates around the QB",
+            "A penalty zone",
+            "The area near the end zone"
+          ],
+          "correctIndex": 1,
+          "explanation": "The pocket is where the QB stands protected by linemen. It usually lasts about 3 seconds before defenders break through."
+        },
+        {
+          "id": "off-q3",
+          "question": "When does the offense NOT want to complete a pass?",
+          "options": [
+            "When they're winning",
+            "When about to get sacked and nobody is open; throwing it away avoids a worse outcome",
+            "Never\u2014they always want to complete it",
+            "In the first quarter"
+          ],
+          "correctIndex": 1,
+          "explanation": "Sometimes an incomplete pass is better than a sack (loss of yards) or interception. A smart QB knows when to chuck it away and reset."
+        },
+        {
+          "id": "off-q4",
+          "question": "What's the difference between a 'pocket passer' and a 'mobile QB'?",
+          "options": [
+            "Pocket passers wear different uniforms",
+            "Pocket passers stay in place; mobile QBs escape and use their legs",
+            "Mobile QBs can't throw",
+            "There's no real difference"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pocket passers excel at staying in the pocket and throwing with precision. Mobile QBs scramble and beat defenders with their legs. The best can do both."
+        },
+        {
+          "id": "off-q5",
+          "question": "When Mahomes improvises and extends a play, what skill is he using?",
+          "options": [
+            "Breaking the rules",
+            "Scrambling to create time for receivers to get open",
+            "Running the ball every time",
+            "Throwing from random angles"
+          ],
+          "correctIndex": 1,
+          "explanation": "When the pocket breaks down, a great QB like Mahomes scrambles\u2014moves around, buys time, and lets receivers get open in space for a completion."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/05-defense-101",
+      "questions": [
+        {
+          "id": "def-q1",
+          "question": "What's the difference between a 3-4 front and a 4-3 front?",
+          "options": [
+            "The scores of the game",
+            "3-4 has three linemen/four linebackers; 4-3 has four linemen/three linebackers",
+            "They're the same thing",
+            "3-4 is used only in the playoffs"
+          ],
+          "correctIndex": 1,
+          "explanation": "Different fronts emphasize different priorities. A 3-4 is flexible and good for pressure. A 4-3 is better at stopping runs and maintaining discipline."
+        },
+        {
+          "id": "def-q2",
+          "question": "What is 'man coverage'?",
+          "options": [
+            "A coverage scheme where everyone covers a zone",
+            "One defender is assigned to one receiver all over the field",
+            "Only men are allowed to play defense",
+            "A penalty called on the offense"
+          ],
+          "correctIndex": 1,
+          "explanation": "Man coverage = one defender per receiver, following them everywhere. High risk if your corners aren't better than their receivers, but it can shut them down."
+        },
+        {
+          "id": "def-q3",
+          "question": "What does 'Cover 2' mean?",
+          "options": [
+            "Two defenders on the line",
+            "Two safeties deep, providing coverage over the top",
+            "Coverage of two-point conversions",
+            "Two flagrant fouls allowed"
+          ],
+          "correctIndex": 1,
+          "explanation": "Cover 2 = two free safeties playing deep. It prevents long plays but leaves the middle of the field vulnerable to short passes."
+        },
+        {
+          "id": "def-q4",
+          "question": "What is a 'blitz'?",
+          "options": [
+            "A fast play",
+            "When the defense sends more defenders than the offense has blockers",
+            "A type of sack",
+            "A timeout"
+          ],
+          "correctIndex": 1,
+          "explanation": "A blitz forces the QB to get rid of the ball fast. High-risk, high-reward: either you force a sack or the QB finds an open receiver for a big gain."
+        },
+        {
+          "id": "def-q5",
+          "question": "Which defensive team would sack Josh Allen more effectively\u2014a team with elite corners or a team with elite pass-rushers?",
+          "options": [
+            "Elite corners definitely",
+            "Elite pass-rushers, who can pressure the QB before he gets his throw off",
+            "It doesn't matter",
+            "Depends on the weather"
+          ],
+          "correctIndex": 1,
+          "explanation": "Pass-rushers win by getting to the QB fast. Corners win by making him hold the ball longer. Allen can escape, so elite rush is more valuable against him."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/06-special-teams",
+      "questions": [
+        {
+          "id": "spec-q1",
+          "question": "What is a 'coffin corner kick'?",
+          "options": [
+            "A kick that hits the corner of the goalpost",
+            "When a punter lands the ball near the sideline close to the opponent's end zone",
+            "A penalty for excessive celebration",
+            "A fake punt play"
+          ],
+          "correctIndex": 1,
+          "explanation": "A skill kick where the punter pins the opponent deep in their own territory. It's incredibly valuable because it gives them terrible field position."
+        },
+        {
+          "id": "spec-q2",
+          "question": "What is the job of the return specialist?",
+          "options": [
+            "Return to the sideline for instructions",
+            "Catch punts or kickoffs and advance the ball downfield",
+            "Return the ball to the QB",
+            "Return to huddle"
+          ],
+          "correctIndex": 1,
+          "explanation": "Return specialists are explosive players who catch punts or kickoffs and try to get as close to the opponent's end zone as possible. One great return can flip field position."
+        },
+        {
+          "id": "spec-q3",
+          "question": "What does a 'fair catch' do?",
+          "options": [
+            "Guarantees a touchdown",
+            "Lets the returner catch the ball without being hit but also without advancing it",
+            "Gives the returner 5 extra yards",
+            "Stops the game for 2 minutes"
+          ],
+          "correctIndex": 1,
+          "explanation": "Waving your hand above your head signals a fair catch. You won't be hit, but you can't return it. Sometimes the safe play is the right play."
+        },
+        {
+          "id": "spec-q4",
+          "question": "In a close game, why do teams pay so much attention to special teams?",
+          "options": [
+            "It's required by the rules",
+            "One blocked kick, great punt, or long return can shift momentum and field position\u2014worth 4+ points",
+            "It's just for show",
+            "It doesn't actually matter"
+          ],
+          "correctIndex": 1,
+          "explanation": "In tight games, special teams is where momentum lives. A blocked FG or great return can swing a game. It's the margin of victory."
+        },
+        {
+          "id": "spec-q5",
+          "question": "What makes a kicker's job so high-pressure?",
+          "options": [
+            "They work in extreme weather conditions",
+            "One miss can lose the game in the final seconds",
+            "They have to run the fastest",
+            "It's less pressure than other positions"
+          ],
+          "correctIndex": 1,
+          "explanation": "Kickers often decide games with their leg. A miss on a chip-shot is catastrophic. A 40-yarder under pressure is legendary. The weight is entirely on them."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/07-the-season",
+      "questions": [
+        {
+          "id": "seas-q1",
+          "question": "How many regular season games do NFL teams play?",
+          "options": [
+            "14 games",
+            "16 games",
+            "17 games",
+            "20 games"
+          ],
+          "correctIndex": 2,
+          "explanation": "The NFL regular season is 17 games from September to early January. That's the gauntlet before the playoffs begin."
+        },
+        {
+          "id": "seas-q2",
+          "question": "What is a 'division winner' in the NFL?",
+          "options": [
+            "The team that wins a playoff game",
+            "The team with the best record in their four-team division",
+            "A team that splits wins with all opponents",
+            "The NFL commissioner's choice"
+          ],
+          "correctIndex": 1,
+          "explanation": "Each division has four teams. The team with the most wins in their division automatically makes the playoffs, even with a mediocre record."
+        },
+        {
+          "id": "seas-q3",
+          "question": "What is a 'wild card' team?",
+          "options": [
+            "A team that cheats",
+            "A team with the best record that didn't win their division",
+            "A team picked randomly for the playoffs",
+            "A team that can pick any opponent"
+          ],
+          "correctIndex": 1,
+          "explanation": "The three wild card spots go to non-division winners with the best records. They make the playoffs but have the hardest path (play the top seeds first)."
+        },
+        {
+          "id": "seas-q4",
+          "question": "Why is the #1 seed such a huge advantage?",
+          "options": [
+            "They get to pick their opponents",
+            "They get a bye week, play at home all playoffs, and rest while others play",
+            "They automatically win the Super Bowl",
+            "It doesn't really matter"
+          ],
+          "correctIndex": 1,
+          "explanation": "The #1 seed gets a week off (bye), then plays every remaining playoff game at home. That's a massive rest and home-field advantage."
+        },
+        {
+          "id": "seas-q5",
+          "question": "Can a #7 seed actually win the Super Bowl?",
+          "options": [
+            "No, only top seeds can",
+            "Technically yes, but it rarely happens and they'd have to win three straight playoff games",
+            "Only if they're the defending champions",
+            "No, wild cards are eliminated after one game"
+          ],
+          "correctIndex": 1,
+          "explanation": "The playoff bracket allows Cinderella stories. A #7 seed can beat everyone and win it all, though it's rare. That's what makes the playoffs beautiful."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/08-watch-like-a-pro",
+      "questions": [
+        {
+          "id": "watch-q1",
+          "question": "What's a key thing to notice about the safeties before the snap?",
+          "options": [
+            "Where they're lined up tells you if it's likely a pass or run play",
+            "Their uniform number",
+            "How tall they are",
+            "Whether they look tired"
+          ],
+          "correctIndex": 0,
+          "explanation": "Deep safeties usually signal a pass play. Safeties closer to the line suggest a run. Reading the safety alignment is the biggest pre-snap key."
+        },
+        {
+          "id": "watch-q2",
+          "question": "In the 'red zone,' why does play-calling change?",
+          "options": [
+            "The field is smaller, so there's less room to work and more pressure to score",
+            "The defense gets stronger",
+            "The offense is required to change plays",
+            "It doesn't change at all"
+          ],
+          "correctIndex": 0,
+          "explanation": "Inside the 20-yard line, the field is compressed. There's less space to work with, so plays get more aggressive and desperation is real."
+        },
+        {
+          "id": "watch-q3",
+          "question": "What does it mean when announcers talk about '3rd and long'?",
+          "options": [
+            "The offense needs many yards to get a first down, so a pass is almost guaranteed",
+            "The game is running long",
+            "It's the third quarter",
+            "It's irrelevant to play prediction"
+          ],
+          "correctIndex": 0,
+          "explanation": "3rd and long (8+ yards) almost always means a pass play. The offense needs yards, the defense knows they're passing. That's predictable football."
+        },
+        {
+          "id": "watch-q4",
+          "question": "During the 'two-minute warning,' what changes?",
+          "options": [
+            "Nothing changes",
+            "Teams abandon their normal plays for clock management strategy",
+            "The field dimensions change",
+            "All substitutions are frozen"
+          ],
+          "correctIndex": 1,
+          "explanation": "With two minutes left in the half or game, every play is about managing the clock. Teams get more conservative or more desperate depending on the score."
+        },
+        {
+          "id": "watch-q5",
+          "question": "Which of these tells you a defense is expecting a run play?",
+          "options": [
+            "Safeties lined up deep",
+            "Linebackers standing up and looking low",
+            "Cornerbacks backing away",
+            "Defensive line playing spread out"
+          ],
+          "correctIndex": 1,
+          "explanation": "When linebackers are upright and looking low, they're braced for a run. They're expecting the RB to come their way. That's a defensive read."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/01-the-rules",
+      "questions": [
+        {
+          "id": "nba-rules-q1",
+          "question": "How many points is a free throw worth?",
+          "options": [
+            "2 points",
+            "1 point",
+            "3 points",
+            "0 points"
+          ],
+          "correctIndex": 1,
+          "explanation": "A free throw (undefended shot from the line) is worth 1 point. Teams get free throws when they're fouled."
+        },
+        {
+          "id": "nba-rules-q2",
+          "question": "How long does a team have to shoot the ball in the NBA?",
+          "options": [
+            "30 seconds",
+            "24 seconds",
+            "15 seconds",
+            "45 seconds"
+          ],
+          "correctIndex": 1,
+          "explanation": "The 24-second shot clock keeps the game fast. If it hits zero without a shot, the offense loses the ball. That's why basketball never feels slow."
+        },
+        {
+          "id": "nba-rules-q3",
+          "question": "How many fouls can an NBA player commit before fouling out?",
+          "options": [
+            "4 fouls",
+            "5 fouls",
+            "6 fouls",
+            "7 fouls"
+          ],
+          "correctIndex": 2,
+          "explanation": "Six fouls and you're done for the game. In the NBA's 48-minute format, managing foul trouble is crucial strategy."
+        },
+        {
+          "id": "nba-rules-q4",
+          "question": "What is 'traveling' in basketball?",
+          "options": [
+            "Going on a road trip",
+            "Taking more than two steps without dribbling",
+            "Passing the ball out of bounds",
+            "Moving too fast down the court"
+          ],
+          "correctIndex": 1,
+          "explanation": "Traveling is taking more than two steps without bouncing the ball. Players get furious when this is called because the rule is nuanced."
+        },
+        {
+          "id": "nba-rules-q5",
+          "question": "Why do teams intentionally foul near the end of close games?",
+          "options": [
+            "It's not allowed",
+            "To reset the clock and give themselves another chance",
+            "To save time",
+            "To intimidate the other team"
+          ],
+          "correctIndex": 1,
+          "explanation": "Fouling stops the clock and gives the opposing team free throws but resets possession. Late-game fouling is strategic clock management."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/02-positions",
+      "questions": [
+        {
+          "id": "nba-pos-q1",
+          "question": "What is Steph Curry's main contribution to changing how positions work in the NBA?",
+          "options": [
+            "He invented a new position",
+            "He showed that shooting 25-footers was as valuable as layups",
+            "He made players shorter",
+            "He changed the rules"
+          ],
+          "correctIndex": 1,
+          "explanation": "Curry proved that elite three-point shooting from 35+ feet changes everything. Now centers have to shoot threes, and positions became less defined by size."
+        },
+        {
+          "id": "nba-pos-q2",
+          "question": "What is a 'stretch big'?",
+          "options": [
+            "A tall player who can't shoot",
+            "A power forward or center who shoots three-pointers",
+            "A small player who plays center",
+            "A player who stretches before games"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stretch bigs are big men (4s and 5s) who can shoot from deep. They force defenses to spread out and open up driving lanes."
+        },
+        {
+          "id": "nba-pos-q3",
+          "question": "Why is Victor Wembanyama considered position-less?",
+          "options": [
+            "He's listed as no position",
+            "He's 7'4\" but can guard everyone and play point-center",
+            "He doesn't know his position",
+            "Position-less players get paid more"
+          ],
+          "correctIndex": 1,
+          "explanation": "Wembanyama is so versatile\u2014he's tall enough to play center but skilled enough to guard and initiate like a point guard. That's position-less basketball."
+        },
+        {
+          "id": "nba-pos-q4",
+          "question": "What is the traditional job of a point guard?",
+          "options": [
+            "Score more than anyone else",
+            "Bring the ball up and run the offense",
+            "Only defend one type of player",
+            "Play the entire game without sitting"
+          ],
+          "correctIndex": 1,
+          "explanation": "Point guards are the floor generals. They bring the ball up, run plays, and are usually the best ball-handlers and passers on their team."
+        },
+        {
+          "id": "nba-pos-q5",
+          "question": "In 2026, why does the 'position name' matter less than it used to?",
+          "options": [
+            "The NBA eliminated positions",
+            "What matters is skill (shooting, passing, IQ) not size or name",
+            "Tall players can't play anymore",
+            "All players play multiple positions simultaneously"
+          ],
+          "correctIndex": 1,
+          "explanation": "Modern basketball cares about what players CAN DO, not their label. A 6'2\" forward might guard a 6'4\" power forward if they have better feet and discipline."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/03-offense",
+      "questions": [
+        {
+          "id": "nba-off-q1",
+          "question": "What is the 'pick-and-roll'?",
+          "options": [
+            "A defensive play",
+            "One player sets a screen, the ball-handler uses it to get open, then either drives or the screener 'rolls' for a pass",
+            "A type of foul",
+            "A celebration after a score"
+          ],
+          "correctIndex": 1,
+          "explanation": "The pick-and-roll is basketball's bread and butter. It creates confusion and usually results in an open shot or easy bucket. Every team runs it."
+        },
+        {
+          "id": "nba-off-q2",
+          "question": "What is an 'isolation' (iso) in basketball?",
+          "options": [
+            "A type of timeout",
+            "Teammates clear out; one player goes 1-on-1 against one defender",
+            "A defensive strategy",
+            "A foul"
+          ],
+          "correctIndex": 1,
+          "explanation": "An iso is high-risk, high-reward. One player vs. one defender in a cleared-out area. It's main-character energy in concentrated form."
+        },
+        {
+          "id": "nba-off-q3",
+          "question": "What does 'spacing' mean in basketball?",
+          "options": [
+            "The distance between the players and the court edges",
+            "Having good shooters spread out to force defenses to extend",
+            "The time between possessions",
+            "How far apart the courts are"
+          ],
+          "correctIndex": 1,
+          "explanation": "If you have five good shooters on court, defenses can't crowd the paint. That spacing opens driving lanes and creates offense."
+        },
+        {
+          "id": "nba-off-q4",
+          "question": "What is 'transition' basketball?",
+          "options": [
+            "Moving between quarters",
+            "When a team gets a rebound/turnover and is moving toward the other basket fast",
+            "Substituting players",
+            "A timeout"
+          ],
+          "correctIndex": 1,
+          "explanation": "Transition is the fast break\u2014quick passes, easy buckets before the defense sets up. It's why aggressive guards who push pace are so valuable."
+        },
+        {
+          "id": "nba-off-q5",
+          "question": "Why would an elite playmaker like Shai Gilgeous-Alexander prefer making reads mid-possession over running a set play?",
+          "options": [
+            "Set plays are boring",
+            "Mid-possession reads let him react to what the defense is showing, creating better offense",
+            "Set plays aren't allowed",
+            "He doesn't prefer it"
+          ],
+          "correctIndex": 1,
+          "explanation": "Great leaders like SGA excel at reading defenses in real-time. If defense adjusts, they counter. That flexibility beats predictable set plays."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/04-defense",
+      "questions": [
+        {
+          "id": "nba-def-q1",
+          "question": "What is the difference between man-to-man and zone defense?",
+          "options": [
+            "Man = guarding a person; Zone = guarding an area",
+            "Zone = better defense",
+            "Man = only for good teams",
+            "They're the same thing"
+          ],
+          "correctIndex": 0,
+          "explanation": "Man coverage: you chase your assigned player. Zone: you protect an area. Man is exhausting but flexible. Zone is safer but bad against shooters."
+        },
+        {
+          "id": "nba-def-q2",
+          "question": "What is a 'switch' in basketball defense?",
+          "options": [
+            "Turning off the lights",
+            "Exchanging defensive assignments, usually on a pick-and-roll",
+            "Switching teams",
+            "A type of foul"
+          ],
+          "correctIndex": 1,
+          "explanation": "When an offensive pick-and-roll happens, defenders switch assignments. It prevents easy lanes but can create mismatches (like a big guarding a guard)."
+        },
+        {
+          "id": "nba-def-q3",
+          "question": "What is 'drop coverage'?",
+          "options": [
+            "Playing defense while dropping the ball",
+            "A big defender stays back near the rim instead of coming out to the three-point line",
+            "A strategy that never works",
+            "A penalty"
+          ],
+          "correctIndex": 1,
+          "explanation": "Drop coverage protects the paint but requires guards to stay tight on the perimeter. If guards get beaten, it fails spectacularly."
+        },
+        {
+          "id": "nba-def-q4",
+          "question": "What is a 'trap' in basketball?",
+          "options": [
+            "Catching the ball",
+            "Sending two defenders at the ball-handler to force a turnover",
+            "A type of screen",
+            "A celebration"
+          ],
+          "correctIndex": 1,
+          "explanation": "A trap is aggressive defense. Two defenders swarm the ball-handler. High-variance: either you force turnovers or skilled playmakers break it for open shots."
+        },
+        {
+          "id": "nba-def-q5",
+          "question": "Why would a team with elite corners switching on everything have an advantage against pick-and-roll heavy offenses?",
+          "options": [
+            "Switching isn't important",
+            "Elite corners can guard anyone, so they don't get punished when mismatches occur",
+            "All corners are equal",
+            "Pick-and-rolls don't create mismatches"
+          ],
+          "correctIndex": 1,
+          "explanation": "If you can switch everything, you eliminate the advantage of creating a big-on-guard mismatch. Elite versatility on defense is championship-level."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/05-the-season",
+      "questions": [
+        {
+          "id": "nba-seas-q1",
+          "question": "How many games does each NBA team play in the regular season?",
+          "options": [
+            "60 games",
+            "72 games",
+            "82 games",
+            "90 games"
+          ],
+          "correctIndex": 2,
+          "explanation": "The NBA regular season is 82 games from October to April. That's a marathon to determine playoff seeding."
+        },
+        {
+          "id": "nba-seas-q2",
+          "question": "What is the 'play-in tournament'?",
+          "options": [
+            "A tournament before the regular season",
+            "A bracket where seeds 7\u201310 fight for the final playoff spots",
+            "A type of draft",
+            "The championship"
+          ],
+          "correctIndex": 1,
+          "explanation": "Added in 2020-21, the play-in tournament makes the stretch run dramatic. Seeds 7-10 play mini-series for the last playoff spots."
+        },
+        {
+          "id": "nba-seas-q3",
+          "question": "What is 'tanking' in the NBA?",
+          "options": [
+            "Playing aggressive defense",
+            "Intentionally losing games late in the season to get a better draft pick",
+            "Scoring a lot of points",
+            "A penalty"
+          ],
+          "correctIndex": 1,
+          "explanation": "Controversial but technically allowed: losing on purpose to improve draft odds. It's controversial because it hurts fans and competitive balance."
+        },
+        {
+          "id": "nba-seas-q4",
+          "question": "How many games are in each playoff series?",
+          "options": [
+            "Best-of-3",
+            "Best-of-5",
+            "Best-of-7",
+            "Best-of-9"
+          ],
+          "correctIndex": 2,
+          "explanation": "First team to 4 wins advances. Series can end 4-0, 4-1, 4-2, or 4-3. Each series is a grueling battle."
+        },
+        {
+          "id": "nba-seas-q5",
+          "question": "Why does the #1 seed get a bye in the first round of the NBA playoffs?",
+          "options": [
+            "It's random",
+            "They don't actually get a bye",
+            "They earned the best record, so they skip straight to round 2 while seeds 5-8 fight each other",
+            "The #2 seed gets the bye instead"
+          ],
+          "correctIndex": 2,
+          "explanation": "The top two seeds don't play in round one. Seeds 1-2 wait while seeds 3-8 battle. That's a rest advantage for the best teams."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/06-the-finals",
+      "questions": [
+        {
+          "id": "nba-finals-q1",
+          "question": "What do championship rings symbolize in NBA culture?",
+          "options": [
+            "Marriage between teams",
+            "Ultimate status and legacy achievement",
+            "Nothing significant",
+            "Jewelry sponsorship"
+          ],
+          "correctIndex": 1,
+          "explanation": "Rings are the ultimate measure of a star's legacy. One ring is good. Three is dynasty. No ring is the gap in every GOAT debate."
+        },
+        {
+          "id": "nba-finals-q2",
+          "question": "What is the 'Finals MVP'?",
+          "options": [
+            "The best player on the winning team for the season",
+            "The best player in the Finals series",
+            "The team's coach",
+            "Voted on by fans"
+          ],
+          "correctIndex": 1,
+          "explanation": "Finals MVP goes to whoever had the best series\u2014usually the leading scorer but can be a clutch defender. It's the ultimate honor."
+        },
+        {
+          "id": "nba-finals-q3",
+          "question": "Why might a star player with tons of individual stats still be considered 'incomplete' without a championship?",
+          "options": [
+            "The rules require it",
+            "Rings are the only currency that matters for legacy in basketball culture",
+            "Stats are all that matters",
+            "Championships don't matter"
+          ],
+          "correctIndex": 1,
+          "explanation": "Rightly or wrongly, the NBA culture says: no ring = incomplete career. It's not rational, but it's the culture. Winning is what defines greatness."
+        },
+        {
+          "id": "nba-finals-q4",
+          "question": "What is the Larry O'Brien trophy?",
+          "options": [
+            "An MVP award",
+            "The official NBA championship trophy",
+            "A college basketball award",
+            "A lifetime achievement award"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Larry O'Brien trophy is the hardware. Every Finals-winning team gets it. Along with it come the championship rings for each player."
+        },
+        {
+          "id": "nba-finals-q5",
+          "question": "Why is the 2016 Finals (Warriors vs. Cavs) so iconic?",
+          "options": [
+            "It was boring",
+            "The Warriors had a 3-1 lead and lost; LeBron's defense and Kyrie's three won it\u2014legendary game 7",
+            "The Warriors won by 50",
+            "It had no drama"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Cavs coming back from 3-1 down is one of sports' greatest moments. LeBron's blocks, Kyrie's dagger three\u2014that's Finals lore."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/07-trades-and-cap",
+      "questions": [
+        {
+          "id": "nba-cap-q1",
+          "question": "What is the 'salary cap'?",
+          "options": [
+            "A hat that costs money",
+            "The maximum amount teams can spend on player salaries per season",
+            "The highest a single player can earn",
+            "A penalty"
+          ],
+          "correctIndex": 1,
+          "explanation": "The salary cap (around $140 million in 2025-26) prevents rich teams from just buying championships. It forces strategic choices."
+        },
+        {
+          "id": "nba-cap-q2",
+          "question": "What is an 'unrestricted free agent'?",
+          "options": [
+            "A player who can't be signed",
+            "A player with 7+ years in the league who can sign with any team",
+            "A player drafted in the first round",
+            "A rookie"
+          ],
+          "correctIndex": 1,
+          "explanation": "UFAs have player power. They can shop around and sign with whoever offers the best deal. That's when stars move teams."
+        },
+        {
+          "id": "nba-cap-q3",
+          "question": "When superstars 'take less money' to team up, what are they betting on?",
+          "options": [
+            "They're making a mistake",
+            "That winning together (and getting rings) is worth the salary cut",
+            "They're leaving the league",
+            "They want to lose"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stars like Durant joining Warriors for less money gamble that winning together gets them legacy and rings. It's a calculated bet."
+        },
+        {
+          "id": "nba-cap-q4",
+          "question": "What is the 'luxury tax' in the NBA?",
+          "options": [
+            "A tax on expensive sneakers",
+            "A penalty teams pay if they go over the salary cap",
+            "A fine for losing",
+            "A reward for winning"
+          ],
+          "correctIndex": 1,
+          "explanation": "Go over the cap by too much and you pay a luxury tax (penalty dollars). Rich teams in big markets can absorb it; smaller markets can't."
+        },
+        {
+          "id": "nba-cap-q5",
+          "question": "Why would the Thunder or Spurs be considered 'amazing' at the draft while other teams struggle?",
+          "options": [
+            "They have more money",
+            "They consistently find talent and develop young players into stars",
+            "Luck is involved, nothing else",
+            "They're not actually better at drafting"
+          ],
+          "correctIndex": 1,
+          "explanation": "Some franchises have better scouting, development, and culture. Thunder and Spurs turn draft picks into All-Stars. That's championship building."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/08-watch-like-a-pro",
+      "questions": [
+        {
+          "id": "nba-watch-q1",
+          "question": "What is the most important thing to notice about five-on-five matchups?",
+          "options": [
+            "The scoreboard",
+            "The crowd noise",
+            "Which player has a favorable matchup and can be attacked",
+            "The uniforms"
+          ],
+          "correctIndex": 2,
+          "explanation": "Games are often decided by one mismatch. A weak defender gets hunted all night. Pros notice who's being targeted and why."
+        },
+        {
+          "id": "nba-watch-q2",
+          "question": "What does watching 'off-ball' mean?",
+          "options": [
+            "Ignoring the game",
+            "Watching players without the ball and how they move to create space",
+            "Watching outside the stadium",
+            "Not paying attention"
+          ],
+          "correctIndex": 1,
+          "explanation": "Off-ball movement creates offense. Watch players cut, set screens, relocate for threes. That's where the best basketball happens."
+        },
+        {
+          "id": "nba-watch-q3",
+          "question": "Why does 'pace of play' matter?",
+          "options": [
+            "It doesn't",
+            "Fast pace favors athletic teams; slow pace favors half-court specialists",
+            "All teams play the same speed",
+            "It's not controllable"
+          ],
+          "correctIndex": 1,
+          "explanation": "If your team plays slower half-court but the opponent pushes pace, you're getting out-paced. Controlling tempo is a strategy."
+        },
+        {
+          "id": "nba-watch-q4",
+          "question": "What is 'rim protection' and why does it matter?",
+          "options": [
+            "Protecting the rim from weather",
+            "A defender's ability to contest shots near the basket",
+            "A rule violation",
+            "Not important"
+          ],
+          "correctIndex": 1,
+          "explanation": "Great rim protectors (like Victor Wembanyama) make it harder to score in the paint. That's the foundation of good defense."
+        },
+        {
+          "id": "nba-watch-q5",
+          "question": "Why would you pick one player to follow for an entire quarter?",
+          "options": [
+            "You're bored",
+            "You'll see how they move, fight for space, and execute\u2014the character development of basketball",
+            "It's a rule",
+            "You shouldn't"
+          ],
+          "correctIndex": 1,
+          "explanation": "Following one player reveals so much: positioning, effort, off-ball intelligence. That's how you see basketball in HD instead of chaos."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/01-the-w-overview",
+      "questions": [
+        {
+          "id": "wnba-over-q1",
+          "question": "What does 'the W' stand for?",
+          "options": [
+            "Women's World Basketball",
+            "Women's National Basketball Association",
+            "Western Conference",
+            "Weekly basketball"
+          ],
+          "correctIndex": 1,
+          "explanation": "The WNBA\u2014Women's National Basketball Association. 'The W' is the affectionate name used by players, fans, and media. It's the real thing."
+        },
+        {
+          "id": "wnba-over-q2",
+          "question": "How many teams are in the WNBA in 2026?",
+          "options": [
+            "10 teams",
+            "12 teams",
+            "15 teams",
+            "20 teams"
+          ],
+          "correctIndex": 2,
+          "explanation": "15 teams in 2026, including two expansion teams (Toronto Tempo and Portland Fire) that just launched. The league is growing."
+        },
+        {
+          "id": "wnba-over-q3",
+          "question": "When does the WNBA regular season run?",
+          "options": [
+            "January-March",
+            "June-August",
+            "May-September",
+            "October-December"
+          ],
+          "correctIndex": 2,
+          "explanation": "The regular season runs May 16 through September. Teams play 40 games, then the top 8 make the playoffs."
+        },
+        {
+          "id": "wnba-over-q4",
+          "question": "Why is 2026 considered a historic WNBA season?",
+          "options": [
+            "The league is being cancelled",
+            "Caitlin Clark entered in 2025 and the talent pool is stacked\u2014star power at peak",
+            "It's the league's first year",
+            "No reason"
+          ],
+          "correctIndex": 1,
+          "explanation": "Caitlin Clark (generational scorer) plays alongside four-time MVP A'ja Wilson, rising stars, and elite talent. It's the most star-studded season ever."
+        },
+        {
+          "id": "wnba-over-q5",
+          "question": "Is the WNBA a 'development league' for the NBA?",
+          "options": [
+            "Yes, it's where players get ready for the NBA",
+            "No, it's the top professional home for the best female basketball players in the world",
+            "Yes, but only informally",
+            "Nobody knows"
+          ],
+          "correctIndex": 1,
+          "explanation": "The WNBA is the destination, not a pipeline. It's the top professional league for elite female players. That's the official position."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/02-rules-vs-nba",
+      "questions": [
+        {
+          "id": "wnba-rules-q1",
+          "question": "Is the WNBA 3-point line the same distance as the NBA's?",
+          "options": [
+            "Yes, exactly the same",
+            "No, the WNBA line is closer\u2014about 1.25 feet closer at the wings",
+            "No, the WNBA line is farther",
+            "The difference doesn't matter"
+          ],
+          "correctIndex": 1,
+          "explanation": "The closer 3-point line fundamentally changes spacing, offensive strategy, and ball movement. It makes perimeter play and passing more critical."
+        },
+        {
+          "id": "wnba-rules-q2",
+          "question": "How many minutes are in a WNBA game?",
+          "options": [
+            "48 minutes like the NBA",
+            "36 minutes",
+            "40 minutes (four 10-minute quarters)",
+            "44 minutes"
+          ],
+          "correctIndex": 2,
+          "explanation": "WNBA games are 40 minutes total. Shorter means less foul trouble, faster pace, and more intensity per possession."
+        },
+        {
+          "id": "wnba-rules-q3",
+          "question": "Are flagrant fouls called more or less strictly in the WNBA than the NBA?",
+          "options": [
+            "Same strictness",
+            "More strictly\u2014loose-ball physicality gets whistled in the W",
+            "Less strictly",
+            "Never called"
+          ],
+          "correctIndex": 1,
+          "explanation": "The WNBA cracks down on physical play more. Combined with the shorter clock, this rewards efficiency, teamwork, and clean fundamentals."
+        },
+        {
+          "id": "wnba-rules-q4",
+          "question": "What is different about defensive 3-second violations in the WNBA?",
+          "options": [
+            "They're enforced strictly",
+            "The WNBA eliminated the strict defensive 3-in-the-key rule",
+            "There's a 5-second rule instead",
+            "Nothing is different"
+          ],
+          "correctIndex": 1,
+          "explanation": "Without the strict 3-second violation, centers and forwards can camp the paint longer. That's why rebounding and post-play are more prominent in the W."
+        },
+        {
+          "id": "wnba-rules-q5",
+          "question": "How would an NBA team's offense change if they suddenly played by WNBA rules?",
+          "options": [
+            "It wouldn't change at all",
+            "The closer 3-point line and stricter fouls would reward ball movement and shooting over iso-ball",
+            "They'd score more",
+            "They'd score less"
+          ],
+          "correctIndex": 1,
+          "explanation": "The rulebook pushes toward possession basketball\u2014more spacing, more movement, less muscle-through-it play. Efficient teams dominate the W."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/03-positions-and-style",
+      "questions": [
+        {
+          "id": "wnba-pos-q1",
+          "question": "What is the 'playstyle' of the WNBA compared to the NBA?",
+          "options": [
+            "Slower and more physical",
+            "Smaller lineups, more perimeter play, more ball movement, position-less basketball",
+            "More iso-ball",
+            "Exactly the same"
+          ],
+          "correctIndex": 1,
+          "explanation": "The W emphasizes skill, spacing, footwork, and IQ over size. It's guard-friendly, perimeter-friendly basketball."
+        },
+        {
+          "id": "wnba-pos-q2",
+          "question": "Is position-less basketball more or less common in the WNBA than the NBA?",
+          "options": [
+            "Less common in the W",
+            "More common\u2014the W values skill over size more aggressively",
+            "Equal in both leagues",
+            "Doesn't exist in the W"
+          ],
+          "correctIndex": 1,
+          "explanation": "The WNBA skews smaller and more skilled. A 6'2\" forward might guard a 6'4\" power forward because of feet and discipline, not height."
+        },
+        {
+          "id": "wnba-pos-q3",
+          "question": "Who exemplifies the WNBA's emphasis on skill and spacing?",
+          "options": [
+            "Sabrina Ionescu",
+            "A defensive specialist",
+            "A traditional post player",
+            "A rookie"
+          ],
+          "correctIndex": 0,
+          "explanation": "Sabrina Ionescu is a 6'2\" guard who shoots 35+ foot threes, runs the offense with precision, and exemplifies skill-first basketball."
+        },
+        {
+          "id": "wnba-pos-q4",
+          "question": "What is a 'stretch forward' or 'stretch center'?",
+          "options": [
+            "Doing stretching exercises",
+            "A big who can shoot from beyond the 3-point line",
+            "A forward who stretches the offense",
+            "A position that doesn't exist"
+          ],
+          "correctIndex": 1,
+          "explanation": "Stretch bigs are crucial in the W. They open up spacing and force defenses to adjust. Being a big who can't shoot is increasingly untenable."
+        },
+        {
+          "id": "wnba-pos-q5",
+          "question": "Why does the W reward 'switch-heavy' defense more than traditional post defense?",
+          "options": [
+            "It's easier to teach",
+            "The spacing and smaller lineups require footwork and IQ, not just size and strength",
+            "Safeties can't exist",
+            "It doesn't"
+          ],
+          "correctIndex": 1,
+          "explanation": "With spread-out offenses and emphasis on shooting, switching (staying with whoever ends up in front of you) requires better discipline and footwork than traditional post-up defense."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/04-stars-to-know",
+      "questions": [
+        {
+          "id": "wnba-stars-q1",
+          "question": "How many MVP awards does A'ja Wilson have?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correctIndex": 3,
+          "explanation": "A'ja Wilson (Las Vegas Aces) has 4 MVP awards. She's elite on both offense and defense\u2014the model of a two-way star."
+        },
+        {
+          "id": "wnba-stars-q2",
+          "question": "Why is Caitlin Clark considered a 'generational' player?",
+          "options": [
+            "She's very tall",
+            "She's a guard with a three-level scoring game, 40+ foot range, and entered as the #1 pick from Iowa",
+            "She's the only player who shoots threes",
+            "She's not particularly special"
+          ],
+          "correctIndex": 1,
+          "explanation": "Caitlin is a generational scorer with elite range. She's the leading scorer in the league as a 2025 rookie\u2014that's rare air."
+        },
+        {
+          "id": "wnba-stars-q3",
+          "question": "What makes Angel Reese special as a defender and teammate?",
+          "options": [
+            "She's the tallest player",
+            "She's a dominant rebounder and defender who makes teammates better through infectious energy",
+            "She doesn't play defense",
+            "She's not good"
+          ],
+          "correctIndex": 1,
+          "explanation": "Angel is a 6'3\" power forward who is an absolute monster on the glass and defensive. Her energy is infectious."
+        },
+        {
+          "id": "wnba-stars-q4",
+          "question": "Which of these is NOT mentioned as a top 2026 WNBA star?",
+          "options": [
+            "A'ja Wilson",
+            "Caitlin Clark",
+            "Sabrina Ionescu",
+            "Michael Jordan"
+          ],
+          "correctIndex": 3,
+          "explanation": "Michael Jordan is a basketball legend but not a 2026 WNBA star. A'ja, Caitlin, and Sabrina are the current stars dominating the league."
+        },
+        {
+          "id": "wnba-stars-q5",
+          "question": "What is Unrivaled and why is Napheesa Collier significant for starting it?",
+          "options": [
+            "A social media app",
+            "A 3-on-3 off-season league that co-founder Napheesa created to keep stars paid year-round",
+            "A documentary",
+            "A new position"
+          ],
+          "correctIndex": 1,
+          "explanation": "Unrivaled is a game-changer\u2014WNBA stars can now play off-season, earn money, and stay game-ready. Napheesa is a co-founder and two-way star."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/05-the-season",
+      "questions": [
+        {
+          "id": "wnba-seas-q1",
+          "question": "How many games do WNBA teams play in the regular season?",
+          "options": [
+            "30 games",
+            "40 games",
+            "50 games",
+            "82 games"
+          ],
+          "correctIndex": 1,
+          "explanation": "The WNBA regular season is 40 games (May-early September). Fewer games = every loss matters more. It's compressed and intense."
+        },
+        {
+          "id": "wnba-seas-q2",
+          "question": "What is the 'Commissioner's Cup'?",
+          "options": [
+            "An award for the coach",
+            "A mid-season tournament with prize money and fan involvement",
+            "The championship trophy",
+            "A penalty"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Commissioner's Cup is a mid-season tournament that gives teams extra incentive and prize money. It's become a big deal."
+        },
+        {
+          "id": "wnba-seas-q3",
+          "question": "How many teams make the WNBA playoffs?",
+          "options": [
+            "4 teams",
+            "6 teams",
+            "8 teams",
+            "10 teams"
+          ],
+          "correctIndex": 2,
+          "explanation": "Top 8 teams make it. No conference split\u2014it's a pure standings race. Being 8th is brutal because you start in the hardest playoff spot."
+        },
+        {
+          "id": "wnba-seas-q4",
+          "question": "Is there a playoff bye in the WNBA like there is in the NBA?",
+          "options": [
+            "Yes, the #1 seed gets a bye",
+            "Yes, seeds 1 and 2 get a bye",
+            "No, all 8 teams play in round one",
+            "Only the #1 seed plays"
+          ],
+          "correctIndex": 0,
+          "explanation": "The #1 seed gets a bye and plays in the second round while seeds 3-8 battle. It's a huge advantage."
+        },
+        {
+          "id": "wnba-seas-q5",
+          "question": "What format is the WNBA Finals?",
+          "options": [
+            "Best-of-3",
+            "Best-of-5",
+            "Best-of-7",
+            "One-game playoff"
+          ],
+          "correctIndex": 1,
+          "explanation": "The Finals are best-of-5, played in late September or early October. First team to 3 wins is champion. It's electric and decisive."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/06-pipeline-and-unrivaled",
+      "questions": [
+        {
+          "id": "wnba-pipe-q1",
+          "question": "Which college programs are traditional powerhouses that send players to the WNBA?",
+          "options": [
+            "Duke, UNC, Kansas",
+            "Iowa, UConn, Stanford",
+            "All programs equally",
+            "No college pipeline exists"
+          ],
+          "correctIndex": 1,
+          "explanation": "Iowa, UConn, and Stanford consistently send multiple players to the league. Caitlin Clark came from Iowa. Paige from UConn. That's your pipeline."
+        },
+        {
+          "id": "wnba-pipe-q2",
+          "question": "When is the WNBA Draft held each year?",
+          "options": [
+            "January",
+            "April",
+            "July",
+            "October"
+          ],
+          "correctIndex": 1,
+          "explanation": "The draft is in April, a few weeks before the season starts. Top college players are scouted obsessively. It's where the league's future comes from."
+        },
+        {
+          "id": "wnba-pipe-q3",
+          "question": "What is Unrivaled and when does it play?",
+          "options": [
+            "A college league, plays during school year",
+            "A 3-on-3 off-season league (November-March) founded by WNBA stars",
+            "A summer league",
+            "A defunct league"
+          ],
+          "correctIndex": 1,
+          "explanation": "Unrivaled is where WNBA stars play off-season. It's smaller courts, 3-on-3, faster games. It keeps players paid and game-ready."
+        },
+        {
+          "id": "wnba-pipe-q4",
+          "question": "Why would a WNBA star choose Unrivaled over playing internationally in the off-season?",
+          "options": [
+            "International leagues are banned",
+            "They can stay home, build brand, earn money, and play elite hoops",
+            "Unrivaled pays less",
+            "They don't choose it"
+          ],
+          "correctIndex": 1,
+          "explanation": "Historically, WNBA stars played overseas off-season. Unrivaled changes that calculus\u2014they stay home, stay in the US market, earn good money."
+        },
+        {
+          "id": "wnba-pipe-q5",
+          "question": "What is the basketball calendar now for elite women's players?",
+          "options": [
+            "Only May-September WNBA",
+            "WNBA (May-Sept) + Unrivaled (Nov-March) + Rest",
+            "Only international play",
+            "No off-season"
+          ],
+          "correctIndex": 1,
+          "explanation": "It's year-round now: WNBA regular season (May-Sept), Finals (Sept-Oct), Unrivaled (Nov-March), Draft prep (April). The W is a career."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "euphoria/01-football",
+      "questions": [
+        {
+          "id": "euph-nfl-q1",
+          "question": "According to the Euphoria framing, who is the 'Cassie' of the offense?",
+          "options": [
+            "The running back",
+            "The quarterback\u2014the face of the show, camera-loved, critiqued every Monday",
+            "The receiver",
+            "The coach"
+          ],
+          "correctIndex": 1,
+          "explanation": "The QB is the Cassie\u2014the protagonist who drives every play. When the team wins, they're a genius. When they lose, they're a tragedy."
+        },
+        {
+          "id": "euph-nfl-q2",
+          "question": "What role do the offensive linemen play in the Euphoria metaphor?",
+          "options": [
+            "They're the stars",
+            "They're the Faye\u2014five enormous people whose job is protection, loyal, undersold, noticed when something goes wrong",
+            "They're defenders",
+            "They're not mentioned"
+          ],
+          "correctIndex": 1,
+          "explanation": "The O-line is the Faye\u2014pillars of the production. Invisible when working, blamed when they fail. That's loyalty and undersale in one."
+        },
+        {
+          "id": "euph-nfl-q3",
+          "question": "How long does the QB have to act on the snap before defenders reach him?",
+          "options": [
+            "10 seconds",
+            "3 seconds",
+            "30 seconds",
+            "No time limit"
+          ],
+          "correctIndex": 1,
+          "explanation": "Three seconds. That's the pocket window. Receivers run routes, the QB reads, and chaos erupts. It's all contained in three seconds of drama."
+        },
+        {
+          "id": "euph-nfl-q4",
+          "question": "How many total plays happen per game, roughly?",
+          "options": [
+            "20-30 plays",
+            "60-70 plays",
+            "100+ plays",
+            "10 plays"
+          ],
+          "correctIndex": 1,
+          "explanation": "60-70 plays per game. Each is a three-second short film. Multiply that by timeouts, commercials, and slow-mo replays and you get a three-hour episode."
+        },
+        {
+          "id": "euph-nfl-q5",
+          "question": "In the Euphoria framing, what does the 'red zone' represent?",
+          "options": [
+            "The danger zone where air gets thin",
+            "The area where cameras zoom in and defenses tighten\u2014the show's most-watched scenes",
+            "The area where the most penalties occur",
+            "Just a scoreboard graphic"
+          ],
+          "correctIndex": 1,
+          "explanation": "The red zone is the story's most-climactic area. Every play matters. The camera finds it. The drama is maximum. That's where the art happens."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "euphoria/02-basketball",
+      "questions": [
+        {
+          "id": "euph-nba-q1",
+          "question": "According to the Euphoria framing, who is the 'Maddy' of basketball?",
+          "options": [
+            "The shooting guard",
+            "The point guard\u2014the protagonist who brings the ball up, calls the play, makes decisions, is fast and sharp",
+            "The center",
+            "The coach"
+          ],
+          "correctIndex": 1,
+          "explanation": "The PG is the Maddy\u2014the protagonist. Steph Curry, SGA, Jalen Brunson\u2014these are main-character energy in concentrated form."
+        },
+        {
+          "id": "euph-nba-q2",
+          "question": "What makes basketball different from football in the Euphoria framing?",
+          "options": [
+            "Football is faster",
+            "Basketball is a continuous take with no huddles; football is cut to cut",
+            "They're filmed the same way",
+            "Basketball is slower"
+          ],
+          "correctIndex": 1,
+          "explanation": "Football cuts between plays. Basketball is one long dance scene\u2014continuous, no breaks, everything happening at once. That's the core difference."
+        },
+        {
+          "id": "euph-nba-q3",
+          "question": "How much time does the offense have to shoot in the NBA shot clock?",
+          "options": [
+            "30 seconds",
+            "24 seconds",
+            "15 seconds",
+            "No limit"
+          ],
+          "correctIndex": 1,
+          "explanation": "24 seconds. That's why basketball never feels slow\u2014the clock keeps moving, the pace is relentless, it's all momentum and flow."
+        },
+        {
+          "id": "euph-nba-q4",
+          "question": "What is the 'step-back three' in Euphoria terms?",
+          "options": [
+            "A normal shot",
+            "Maximum drama\u2014the camera-ready shot where the shooter creates space and launches from distance",
+            "A foul",
+            "A basic layup"
+          ],
+          "correctIndex": 1,
+          "explanation": "The step-back three is the Euphoria moment\u2014slow-mo, high drama, main-character energy. Everyone knows what it means when it goes in."
+        },
+        {
+          "id": "euph-nba-q5",
+          "question": "Why is off-ball movement the most important thing to watch according to the lesson?",
+          "options": [
+            "It's the most boring aspect",
+            "The best basketball happens off the ball\u2014cuts, screens, movement\u2014not in the possession itself",
+            "Off-ball doesn't matter",
+            "The ball is always the focus"
+          ],
+          "correctIndex": 1,
+          "explanation": "Watch the four players without the ball. That's where the dance happens. The shot at the end is just punctuation\u2014the sentence was written off-ball."
+        }
+      ]
+    }
+  ]
+}

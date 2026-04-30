@@ -4,6 +4,7 @@ import { getOpenAI, MODELS } from '@/lib/openai';
 import { buildSystemPrompt, buildModesSystemPrompt, buildModesSystemPromptWithLive, type Mode } from '@/lib/context';
 import { isValidLens, DEFAULT_LENS_ID } from '@/lib/lens';
 import { findDemoAnswer, demoFallback, streamDemoAnswer } from '@/lib/demo-responses';
+import { getLessonChatContext } from '@/lib/learn-content';
 
 // Use Node runtime so we can read process.env reliably and short-circuit
 // without an OpenAI key. Edge runtime works once the key is set.
@@ -45,6 +46,11 @@ const Schema = z.object({
   lens: z.string().optional(),
   dramaMode: z.boolean().optional(),
   modes: z.array(z.enum(['drama', 'on_field', 'learn'])).optional(),
+  // Learn tab — when the user opens chat from inside a lesson, pass the lesson
+  // slug so Goldie can answer questions grounded in that specific lesson's content.
+  lessonContext: z.object({
+    lessonSlug: z.string(),
+  }).optional(),
 });
 
 /**
@@ -133,13 +139,23 @@ export async function POST(req: NextRequest) {
   // Live-aware variant prepends today's date + ESPN headlines + active games so
   // the model isn't stuck in 2023. ESPN-fetch failures fall back to the sync
   // version automatically — chat never breaks if ESPN is down.
-  const systemPrompt = await buildModesSystemPromptWithLive({
+  let systemPrompt = await buildModesSystemPromptWithLive({
     modes: activeModes,
     userMessage: last.content,
     league: body.league ?? 'both',
     displayName: body.displayName,
     euphoriaLensEnabled: !!body.euphoriaLensEnabled,
   });
+
+  // If the user is asking from inside a Learn lesson, append the lesson's full
+  // content to the system prompt so Goldie can answer with confidence about
+  // anything in that lesson. Falls through silently if slug doesn't match.
+  if (body.lessonContext?.lessonSlug) {
+    const lessonCtx = getLessonChatContext(body.lessonContext.lessonSlug);
+    if (lessonCtx) {
+      systemPrompt = `${systemPrompt}\n\n────────────────────────────────────\n${lessonCtx}`;
+    }
+  }
 
   const completion = await getOpenAI().chat.completions.create({
     model: MODELS.CHAT,

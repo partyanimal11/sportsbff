@@ -1,0 +1,520 @@
+{
+  "decks": [
+    {
+      "lessonSlug": "euphoria/01-football",
+      "cards": [
+        {
+          "front": "Snap",
+          "back": "The moment the ball is hiked from the center to the quarterback. The play officially begins. Everything before is just choreography."
+        },
+        {
+          "front": "Audible",
+          "back": "When the quarterback changes the play at the line of scrimmage based on what they see. Usually shouted. Usually cinematic. Usually a single word with hidden meaning."
+        },
+        {
+          "front": "Pocket",
+          "back": "The space the offensive line creates around the quarterback. As long as the pocket holds, the QB has time. When the pocket collapses, it's over."
+        },
+        {
+          "front": "Red zone",
+          "back": "The 20 yards before the end zone. Where the air gets thin. Every play is bigger here. Cameras zoom in. Defenses tighten. The show's most-watched scenes happen here."
+        },
+        {
+          "front": "Two-minute drill",
+          "back": "The offense's last-act mode at the end of the half \u2014 fast, no-huddle, every second matters. Pure protagonist energy. The thing you screenshot."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "euphoria/02-basketball",
+      "cards": [
+        {
+          "front": "Pick-and-roll",
+          "back": "The most common play in basketball. One player sets a screen for the ball-handler, then 'rolls' toward the basket. Creates a 2-on-1 advantage. Watch for it on every other possession."
+        },
+        {
+          "front": "Step-back three",
+          "back": "A jumper where the shooter creates space by stepping AWAY from the defender before shooting. Maximum drama. Often the camera-ready shot of the night."
+        },
+        {
+          "front": "Iso",
+          "back": "Short for isolation. One offensive player goes 1-on-1 against one defender. Teammates clear out and watch. Pure character-moment basketball \u2014 main-character energy in concentrated form."
+        },
+        {
+          "front": "Clutch time",
+          "back": "Last 5 minutes of a game with a margin of 5 points or fewer. Where legends are made or unmade. The MVP conversation lives here."
+        },
+        {
+          "front": "And-one",
+          "back": "When you score AND get fouled in the same play. You get the basket plus a free throw. Maximum hype moment \u2014 players always shout something at the bench afterward."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/01-the-rules",
+      "cards": [
+        {
+          "front": "Travel",
+          "back": "Taking more than two steps without dribbling. You'll hear the whistle and see players furious because they swear they didn't move."
+        },
+        {
+          "front": "Double dribble",
+          "back": "Dribbling with both hands at once or bouncing the ball, picking it up, then dribbling again. Turnover."
+        },
+        {
+          "front": "Three-point line",
+          "back": "The arc about 23 feet from the basket. Anything behind it = 3 points. It's closer at the corners."
+        },
+        {
+          "front": "Free throw line",
+          "back": "The 15-foot line where players shoot free throws. Undefended, so it's basically a guaranteed point (in theory)."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/02-positions",
+      "cards": [
+        {
+          "front": "Stretch four/five",
+          "back": "A power forward or center who can shoot three-pointers. This forces defenses to spread out."
+        },
+        {
+          "front": "Playmaking wing",
+          "back": "A small or power forward who's also comfortable running the offense\u2014passing, creating, not just scoring."
+        },
+        {
+          "front": "Paint",
+          "back": "The rectangular area under the basket. The center traditionally owns this area."
+        },
+        {
+          "front": "Rim protector",
+          "back": "A defender (usually center) who specializes in blocking shots and making it hard to score near the basket."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/03-offense",
+      "cards": [
+        {
+          "front": "Pick-and-roll",
+          "back": "One player screens for the ball-handler, then either pops out for a jump shot or rolls to the basket for a layup. The fundamental offensive weapon."
+        },
+        {
+          "front": "Isolation (iso)",
+          "back": "One player vs. one defender in a cleared-out area. High-risk, high-reward."
+        },
+        {
+          "front": "Screen (or pick)",
+          "back": "A legal block set by an offensive player to free up a teammate."
+        },
+        {
+          "front": "Transition",
+          "back": "The fast-break moment when a team gets the ball and is moving toward the other end before the defense sets up."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/04-defense",
+      "cards": [
+        {
+          "front": "Man-to-man defense",
+          "back": "Each defender is responsible for guarding one offensive player all over the court."
+        },
+        {
+          "front": "Zone defense",
+          "back": "Defenders protect an area of the court (like the top or paint) rather than a specific player."
+        },
+        {
+          "front": "Switch",
+          "back": "When defenders exchange assignments, usually on a pick-and-roll, to prevent easy scoring opportunities."
+        },
+        {
+          "front": "Help defense (or 'help')",
+          "back": "When a defender leaves their player to help a teammate who's being beaten, then rotates back."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/05-the-season",
+      "cards": [
+        {
+          "front": "Play-in tournament",
+          "back": "A bracket system where seeds 7\u201310 fight for the final playoff spots. Added in 2020-21 to make the stretch run more exciting."
+        },
+        {
+          "front": "Best-of-7",
+          "back": "First team to win 4 games advances. A series can end in 4, 5, 6, or 7 games."
+        },
+        {
+          "front": "Seed",
+          "back": "Your playoff ranking based on regular-season record. 1 seed is the best in your conference, 8 is the lowest that makes the playoffs."
+        },
+        {
+          "front": "Tank",
+          "back": "Intentionally lose games late in a season to secure a better draft pick. Controversial but technically allowed."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/06-the-finals",
+      "cards": [
+        {
+          "front": "Championship ring",
+          "back": "A physical ring awarded to every player, coach, and staff member on a Finals-winning team. A status symbol for the rest of your career."
+        },
+        {
+          "front": "Finals MVP",
+          "back": "The best player in the Finals series. Usually the leading scorer but can go to clutch defenders or facilitators."
+        },
+        {
+          "front": "Larry O'Brien trophy",
+          "back": "The official trophy awarded to the NBA champion. Named after a former NBA commissioner."
+        },
+        {
+          "front": "Dynasty",
+          "back": "A team that wins multiple championships in consecutive years (like the Warriors 2015\u20132019 or Bulls 1996\u20131998)."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/07-trades-and-cap",
+      "cards": [
+        {
+          "front": "Salary cap",
+          "back": "The maximum amount a team can spend on player salaries per season. Creates competitive balance."
+        },
+        {
+          "front": "Unrestricted free agent (UFA)",
+          "back": "A player who can sign with any team. Usually requires 7 years in the league. Free agency is when these players move."
+        },
+        {
+          "front": "Max contract",
+          "back": "The highest salary a team can offer a player. Usually $250+ million over 5 years for a true star."
+        },
+        {
+          "front": "Trade deadline",
+          "back": "Late February cutoff after which teams can no longer acquire new players for that season."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nba/08-watch-like-a-pro",
+      "cards": [
+        {
+          "front": "Sag defense",
+          "back": "When a defender leaves their player to help elsewhere, trusting that the unguarded player won't make a shot."
+        },
+        {
+          "front": "Pace of play",
+          "back": "How fast or slow a team plays. High pace = more shots and points. Low pace = deliberate, grind-it-out basketball."
+        },
+        {
+          "front": "Off-ball movement",
+          "back": "What a player does without the basketball. Cuts, screens, relocations, spacing. Critical to good offense."
+        },
+        {
+          "front": "Rim protection",
+          "back": "A defender's ability to contest or block shots near the basket. Foundation of good defense."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/01-the-rules",
+      "cards": [
+        {
+          "front": "Quarterback (QB)",
+          "back": "The guy who throws the ball. The most important player on the field. Also the one in the commercials."
+        },
+        {
+          "front": "Touchdown",
+          "back": "Six points. Get the ball into the opposing end zone."
+        },
+        {
+          "front": "Field goal",
+          "back": "Three points. A long kick through the uprights when the offense stalls."
+        },
+        {
+          "front": "Punt",
+          "back": "On 4th down, when the offense gives up the drive, they kick the ball downfield to the other team to make their next drive longer."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/02-positions-on-the-field",
+      "cards": [
+        {
+          "front": "Quarterback (QB)",
+          "back": "The ball-thrower and de facto field general of the offense. Throws, hands off, makes pre-snap calls, and is responsible for directing the play."
+        },
+        {
+          "front": "Offensive Line (OL)",
+          "back": "Five blockers (center, guards, tackles) who protect the QB and create running paths. The foundation of every successful offense."
+        },
+        {
+          "front": "Linebacker (LB)",
+          "back": "A hybrid defender who lines up behind the defensive line. Can rush forward, cover receivers, and diagnose plays in real-time."
+        },
+        {
+          "front": "Cornerback (CB)",
+          "back": "A defensive back who covers receivers one-on-one, usually on the outside of the field. Often the fastest defenders on the field."
+        },
+        {
+          "front": "Safety (S)",
+          "back": "A defensive back who plays deep and helps over the top. Can cover multiple receivers or blitz the QB as a secondary rush option."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/03-reading-the-score",
+      "cards": [
+        {
+          "front": "Touchdown",
+          "back": "Ball reaches the end zone. Worth 6 points, plus the chance for 1-2 bonus points."
+        },
+        {
+          "front": "Down",
+          "back": "One of four chances the offense gets to advance the ball at least 10 yards. Failing on fourth down turns the ball over to the defense."
+        },
+        {
+          "front": "Red Zone",
+          "back": "The offensive half of the field, roughly the opponent's last 20 yards. Scoring is much easier from here."
+        },
+        {
+          "front": "Field Goal",
+          "back": "A kick through the uprights from anywhere on the field. Worth 3 points and a key scoring option when the end zone is out of reach."
+        },
+        {
+          "front": "Extra Point (PAT)",
+          "back": "The one-point kick after a touchdown, from 15 yards away. Most teams take the easy 1 point rather than risk going for 2."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/04-offense-101",
+      "cards": [
+        {
+          "front": "Audible",
+          "back": "Changing the play at the line of scrimmage after reading the defense. The QB yells a new play, and the offense adjusts in real-time."
+        },
+        {
+          "front": "Pocket",
+          "back": "The protected area created by the offensive line around the QB. Usually lasts about 3 seconds before defenders break through."
+        },
+        {
+          "front": "Sack",
+          "back": "When a defender tackles the QB behind the line of scrimmage. Counts as a loss of yards and a negative play for the offense."
+        },
+        {
+          "front": "Scramble",
+          "back": "When the QB leaves the pocket and runs around (usually avoiding pressure) to extend the play or find an open receiver."
+        },
+        {
+          "front": "Interception",
+          "back": "When a defender catches the ball instead of the intended receiver. Turns the ball over and usually flips field position in favor of the defense."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/05-defense-101",
+      "cards": [
+        {
+          "front": "3-4 Front",
+          "back": "Three defensive linemen and four linebackers. More flexible for pass rush but can be vulnerable to runs up the middle."
+        },
+        {
+          "front": "4-3 Front",
+          "back": "Four defensive linemen and three linebackers. Better at stopping the run and maintaining gaps."
+        },
+        {
+          "front": "Blitz",
+          "back": "When the defense sends more defenders than the offense has blockers, forcing quick decisions or sacks. Usually a high-risk, high-reward gamble."
+        },
+        {
+          "front": "Disguise",
+          "back": "When the defense lines up one way but shifts into another formation right before the snap, trying to confuse the offense's blocking assignments."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/06-special-teams",
+      "cards": [
+        {
+          "front": "Kicker",
+          "back": "The specialist who handles field goals (3 points) and extra points (1-2 points). One of the most pressure-packed jobs in sports."
+        },
+        {
+          "front": "Punter",
+          "back": "The specialist who kicks the ball away on fourth down. Good punters pin teams deep in their own territory; bad punters flip field position."
+        },
+        {
+          "front": "Fair Catch",
+          "back": "A signal (hand raised above the head) that the returner won't advance the ball but also won't be hit. Used when the returner can't break free."
+        },
+        {
+          "front": "Coffin Corner Kick",
+          "back": "When a punter lands the ball near the sideline and opponent's end zone, forcing tough field position without a touchback."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/07-the-season",
+      "cards": [
+        {
+          "front": "Division",
+          "back": "A group of four teams in the same conference and region. Rivals play each other twice a year. Winning your division usually gets you into the playoffs."
+        },
+        {
+          "front": "Seed",
+          "back": "A ranking that determines playoff position. The #1 seed (best record in the conference) gets the easiest playoff path. The #7 seed (worst record that made playoffs) has the hardest."
+        },
+        {
+          "front": "Playoff",
+          "back": "A single-elimination tournament where 14 teams (7 from each conference) compete for the Super Bowl. Lose once and you're out."
+        },
+        {
+          "front": "Bye Week",
+          "back": "A free week off in the playoffs, given to the #1 seed in each conference. Huge advantage\u2014rest, healing, preparation."
+        },
+        {
+          "front": "Super Bowl",
+          "back": "The championship game between the AFC and NFC champions. Played on the first Sunday in February. The biggest sporting event of the year."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "nfl/08-watch-like-a-pro",
+      "cards": [
+        {
+          "front": "Pre-snap Read",
+          "back": "Analyzing the defense's alignment before the ball is snapped to predict what coverage or blitz is coming. The QB does it in seconds; fans can learn to spot patterns."
+        },
+        {
+          "front": "Gap",
+          "back": "The space between offensive linemen. Running backs read gaps and cut where blockers have created holes. Defenders are assigned to gaps to maintain the line."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/01-the-w-overview",
+      "cards": [
+        {
+          "front": "The W",
+          "back": "Casual, affectionate name for the WNBA. Used by players, fans, and media. It's not slang \u2014 it's the real thing."
+        },
+        {
+          "front": "WNBA",
+          "back": "Women's National Basketball Association. Founded in 1996, 15 teams in 2026, the top professional league for women's hoops."
+        },
+        {
+          "front": "Regular season",
+          "back": "The 40-game slate from May through September where all teams compete to earn playoff positioning."
+        },
+        {
+          "front": "Playoffs",
+          "back": "The knockout tournament where the top 8 teams compete for the championship, typically starting in late August."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/02-rules-vs-nba",
+      "cards": [
+        {
+          "front": "3-point line",
+          "back": "The line beyond which a made basket counts as 3 points. The W's line is closer than the NBA's, changing the entire offensive landscape."
+        },
+        {
+          "front": "Flagrant foul",
+          "back": "Excessive or violent contact. In the W, flagrant fouls result in free throws and possession, and two flagrant fouls get you ejected."
+        },
+        {
+          "front": "Foul out",
+          "back": "Accumulating 6 personal fouls removes a player from the game. In a 40-minute game, foul trouble hits faster than the NBA."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/03-positions-and-style",
+      "cards": [
+        {
+          "front": "Position-less basketball",
+          "back": "Using players based on skill and matchup rather than traditional position size. In the W, a guard might play forward, and a center might shoot threes."
+        },
+        {
+          "front": "Stretch forward/center",
+          "back": "A big player who can shoot from beyond the 3-point line, opening up spacing and forcing defenses to adjust."
+        },
+        {
+          "front": "Switch-heavy defense",
+          "back": "Defending by swapping matchups on screens instead of fighting through them. Requires IQ and footwork, not just size."
+        },
+        {
+          "front": "Pick-and-roll",
+          "back": "An offensive play where one player (usually a guard) uses a teammate's screen to get open, then either drives or passes. The most common offensive set in basketball."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/04-stars-to-know",
+      "cards": [
+        {
+          "front": "MVP",
+          "back": "Most Valuable Player. The award given to the best overall player in the regular season. A'ja Wilson has won it four times."
+        },
+        {
+          "front": "Generational player",
+          "back": "A player who appears once per era and changes the game \u2014 someone like Caitlin Clark, who comes along rarely."
+        },
+        {
+          "front": "Two-way player",
+          "back": "A player who is elite on both offense and defense. A'ja Wilson and Napheesa Collier are textbook two-way stars."
+        },
+        {
+          "front": "Lob-catcher",
+          "back": "A player (usually a center or power forward) who finishes alley-oop passes with dunks or close-range finishes. Cameron Brink is a natural."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/05-the-season",
+      "cards": [
+        {
+          "front": "Regular season",
+          "back": "The 40-game slate where all teams compete for playoff positioning. Runs May-early September."
+        },
+        {
+          "front": "Commissioner's Cup",
+          "back": "A mid-season tournament within the regular season that gives extra incentive and prize money. Fans and league play a role in determining winners."
+        },
+        {
+          "front": "Playoff seeding",
+          "back": "The rankings of the top 8 teams. Seed 1 plays the highest remaining seed, etc. No conference split in the W \u2014 it's pure standings."
+        },
+        {
+          "front": "Finals",
+          "back": "The championship series between the two best teams remaining after the playoffs. Usually best-of-5, played in late September."
+        }
+      ]
+    },
+    {
+      "lessonSlug": "wnba/06-pipeline-and-unrivaled",
+      "cards": [
+        {
+          "front": "WNBA Draft",
+          "back": "Annual event in April where teams select college players to join the league. Top college stars are highly scouted."
+        },
+        {
+          "front": "Draft lottery",
+          "back": "The system that determines which of the non-playoff teams gets the first pick. Weighted toward the worst team, but with randomness to discourage tanking."
+        },
+        {
+          "front": "Unrivaled",
+          "back": "A 3-on-3 off-season league co-founded by WNBA stars like Napheesa Collier. Runs November-March and pays players to stay game-ready."
+        },
+        {
+          "front": "Off-season",
+          "back": "The months when the WNBA isn't playing (October-April). Players traditionally played overseas or rested; now many play Unrivaled."
+        }
+      ]
+    }
+  ]
+}
