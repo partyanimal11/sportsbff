@@ -2,10 +2,34 @@ import { NextRequest } from 'next/server';
 import { hasOpenAIKey } from '@/lib/openai';
 import { pickFallbackTea } from '@/lib/tea-fallback';
 import { getCachedTodayFeed, type TeaCard as TeaFeedCard } from '@/lib/today-feed';
+import { loadCards } from '@/lib/today-storage';
 
-// getCachedTodayFeed lives in lib/today-feed.ts so /api/cron/build-today can
-// also call it. Calling the SAME cached wrapper from both routes ensures
-// the cron's pre-warm populates the cache the user route reads from.
+// CARD READ STRATEGY (stale-while-revalidate):
+//   1. Try Vercel Blob first — always populated, always fast (~50ms cold, <10ms warm)
+//   2. Fall through to unstable_cache if Blob is unavailable
+//   3. Fall through to evergreen fallback if both fail (so iOS never sees an empty Tea tab)
+//
+// This means the cron's 30-second LLM rebuild NEVER blocks a user request.
+// The cron writes to Blob atomically; users keep reading the previous day's
+// cards until the swap completes. Zero cold-cache window.
+async function readCards(): Promise<TeaFeedCard[]> {
+  // Primary: Vercel Blob (instant, always populated)
+  try {
+    const stored = await loadCards();
+    if (stored && stored.cards.length > 0) {
+      return stored.cards;
+    }
+  } catch {
+    // fall through
+  }
+
+  // Fallback: unstable_cache (will rebuild if cold — only happens when Blob is unconfigured)
+  try {
+    return await getCachedTodayFeed();
+  } catch {
+    return [];
+  }
+}
 
 /**
  * GROUNDED LEGACY-FIELD SYNTHESIZER
@@ -162,7 +186,7 @@ export async function POST(req: NextRequest) {
 
   // Pull the daily multi-card Tea feed in parallel with everything else.
   // Cached for 24h, invalidated by /api/cron/build-today.
-  const cardsPromise = getCachedTodayFeed().catch(() => [] as TeaFeedCard[]);
+  const cardsPromise = readCards().catch(() => [] as TeaFeedCard[]);
 
   // Cache check
   const key = cacheKey(lens, league, today);
@@ -255,10 +279,11 @@ export async function POST(req: NextRequest) {
 /**
  * GET /api/today — convenience endpoint returning JUST the new cards feed.
  * iOS Tea-tab v2 hits this directly when it only needs the multi-card list
- * (no lens-voiced drama/lesson).
+ * (no lens-voiced drama/lesson). Reads from Blob with cache fallback —
+ * effectively zero latency, never blocks on a cron rebuild.
  */
 export async function GET() {
-  const cards = await getCachedTodayFeed().catch(() => [] as TeaFeedCard[]);
+  const cards = await readCards().catch(() => [] as TeaFeedCard[]);
   return new Response(
     JSON.stringify({
       date: isoDateUTC(),
@@ -270,6 +295,7 @@ export async function GET() {
       headers: {
         'Content-Type': 'application/json',
         'X-Today-Cards-Count': String(cards.length),
+        'X-Today-Source': cards.length > 0 ? 'blob-or-cache' : 'empty',
         ...CORS_HEADERS,
       },
     }

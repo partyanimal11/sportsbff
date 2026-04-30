@@ -15,7 +15,8 @@
  */
 import { NextRequest, NextResponse } from 'next/server';
 import { revalidateTag } from 'next/cache';
-import { getCachedTodayFeed } from '@/lib/today-feed';
+import { buildTodayFeed, getCachedTodayFeed } from '@/lib/today-feed';
+import { saveCards } from '@/lib/today-storage';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -37,20 +38,40 @@ export async function GET(req: NextRequest) {
 
   const startedAt = Date.now();
 
-  // Step 1: invalidate the cache
-  revalidateTag('today-feed');
-
-  // Step 2: pre-warm via the CACHED wrapper so the result actually lands
-  // in unstable_cache's data store. Calling buildTodayFeed() directly
-  // would rebuild the cards but skip the cache write — meaning the next
-  // user request would still pay the 20-second LLM rebuild cost. This
-  // line is the difference between "cron worked but iOS times out" and
-  // "cron worked and iOS gets cached cards instantly."
+  // STALE-WHILE-REVALIDATE FLOW:
+  //   1. Build fresh cards via raw buildTodayFeed (~30 sec)
+  //   2. Atomically swap them into Vercel Blob storage
+  //   3. Bust the unstable_cache so next /api/today read picks up the new blob
+  //
+  // While this cron is running, /api/today keeps serving WHATEVER IS CURRENTLY
+  // IN THE BLOB (yesterday's cards). Users see no cold-cache window. Once the
+  // blob swap completes, the next read picks up the new cards instantly.
   let cardCount = 0;
   let buildError: string | null = null;
+  let blobUrl: string | null = null;
+  let usedFallback = false;
+
   try {
-    const cards = await getCachedTodayFeed();
+    const cards = await buildTodayFeed();
     cardCount = cards.length;
+
+    if (cards.length > 0) {
+      // Atomic swap: write new cards to blob (overwrites previous)
+      const result = await saveCards(cards);
+      blobUrl = result?.url ?? null;
+    }
+
+    // Bust the unstable_cache fallback layer too, so it stays in sync
+    // with the blob for any code path that reads it.
+    revalidateTag('today-feed');
+
+    // Pre-warm the unstable_cache fallback with the same cards (so if blob
+    // is unavailable for some reason, the cache still has fresh data)
+    try {
+      await getCachedTodayFeed();
+    } catch {
+      usedFallback = true;
+    }
   } catch (err) {
     buildError = String(err).slice(0, 200);
   }
@@ -59,10 +80,11 @@ export async function GET(req: NextRequest) {
 
   return NextResponse.json({
     ok: true,
-    invalidatedTag: 'today-feed',
     rebuiltCards: cardCount,
+    blobUrl,
     elapsedMs,
     buildError,
+    usedFallback,
     timestamp: new Date().toISOString(),
   });
 }
