@@ -302,14 +302,10 @@ export const PLAYER_SOCIAL: Record<string, PlayerSocial> = {
   'shakira-austin': { instagram: 'shakira.austin' },
   'stefanie-dolson': { instagram: 'bigmamastef' },
   'natasha-cloud': { instagram: 't_cloud9', twitter: 'T_Cloud4' },
-  'courtney-williams': { instagram: 'cocowilliams_' },
   'kate-martin': { instagram: 'katemartin20_' },
   'jewell-loyd': { instagram: 'jewellloyd', twitter: 'jewellloyd' },
   'dominique-malonga': { instagram: 'dominiquemalonga' },
   'flaujae-johnson': { instagram: 'flaujae', twitter: 'flaujae' },
-  'kahleah-copper': { instagram: 'kahleah', twitter: 'kahleahcopper' },
-  'kelsey-mitchell': { instagram: 'kelmitchell5' },
-  'lexie-hull': { instagram: 'lexiehulll' },
   'naz-hillmon': { instagram: 'nazhillmon' },
   'temi-fagbenle': { instagram: 'queentemi' },
   'monique-billings': { instagram: 'mobillings_' },
@@ -321,7 +317,6 @@ export const PLAYER_SOCIAL: Record<string, PlayerSocial> = {
   'jaime-jaquez-jr': { instagram: 'jaimejaquezjr' },
   'bilal-coulibaly': { instagram: 'bcoulibaly_' },
   'kon-knueppel': { instagram: 'konknueppel' },
-  'cason-wallace': { instagram: 'caesar.wallace' },
   'vj-edgecombe': { instagram: 'vjedgecombe' },
 };
 
