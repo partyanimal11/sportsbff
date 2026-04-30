@@ -16,8 +16,10 @@
 
 const ESPN_NBA_NEWS = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=10';
 const ESPN_NFL_NEWS = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/news?limit=10';
+const ESPN_WNBA_NEWS = 'https://site.api.espn.com/apis/site/v2/sports/basketball/wnba/news?limit=10';
 const ESPN_NBA_SCOREBOARD = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard';
 const ESPN_NFL_SCOREBOARD = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard';
+const ESPN_WNBA_SCOREBOARD = 'https://site.api.espn.com/apis/site/v2/sports/basketball/wnba/scoreboard';
 
 /** Cache freshness — 1 hour for headlines, 5 minutes for live scores. */
 const HEADLINE_TTL = 60 * 60;
@@ -62,8 +64,8 @@ export function getTodayContext(): string {
   return `Today is ${longDate} (${iso}). Day of week: ${dow}.`;
 }
 
-/** Determine the active NBA + NFL season phase based on calendar month. */
-export function getSeasonPhase(): { nba: string; nfl: string } {
+/** Determine the active NBA + NFL + WNBA season phase based on calendar month. */
+export function getSeasonPhase(): { nba: string; nfl: string; wnba: string } {
   const month = new Date().getUTCMonth() + 1; // 1-12
   let nba: string;
   if (month >= 4 && month <= 6) nba = '2025-26 NBA Playoffs underway (Conference Finals through Finals)';
@@ -78,7 +80,16 @@ export function getSeasonPhase(): { nba: string; nfl: string } {
   else if (month >= 9 && month <= 12) nfl = '2025 NFL regular season in full swing';
   else nfl = 'NFL season transition';
 
-  return { nba, nfl };
+  // WNBA season runs ~mid-May through October. Playoffs Sept-Oct.
+  let wnba: string;
+  if (month === 4) wnba = '2026 WNBA preseason / season opener May 16. Trade season just wrapped.';
+  else if (month >= 5 && month <= 7) wnba = '2026 WNBA regular season — All-Star break in mid-July';
+  else if (month === 8) wnba = '2026 WNBA regular season stretch run — playoff race tightening';
+  else if (month === 9) wnba = '2026 WNBA Playoffs underway';
+  else if (month === 10) wnba = '2026 WNBA Finals (early Oct)';
+  else wnba = '2026 WNBA offseason — players overseas (Unrivaled league, EuroLeague), free agency, draft April';
+
+  return { nba, nfl, wnba };
 }
 
 /* ──────────────────────────────────────────────────────────────────────── */
@@ -117,19 +128,28 @@ async function fetchScoreboard(url: string): Promise<ESPNEvent[]> {
  * Designed to be ~250-400 tokens — small enough to inject on every chat
  * call without blowing up cost.
  */
-export async function buildLiveContext({ league = 'both' }: { league?: 'nfl' | 'nba' | 'both' } = {}): Promise<string> {
+export async function buildLiveContext({ league = 'all' }: { league?: 'nfl' | 'nba' | 'wnba' | 'both' | 'all' } = {}): Promise<string> {
   const today = getTodayContext();
   const phase = getSeasonPhase();
 
+  // 'both' is a legacy value for NBA + NFL only (no WNBA). 'all' includes WNBA.
+  const wantNba = league === 'nba' || league === 'both' || league === 'all';
+  const wantNfl = league === 'nfl' || league === 'both' || league === 'all';
+  const wantWnba = league === 'wnba' || league === 'all';
+
   // Parallel fetch — headlines + scores for whichever league(s) the user cares about
   const fetches: Promise<{ key: string; data: ESPNArticle[] | ESPNEvent[] }>[] = [];
-  if (league === 'nba' || league === 'both') {
+  if (wantNba) {
     fetches.push(fetchNews(ESPN_NBA_NEWS).then((d) => ({ key: 'nbaNews', data: d })));
     fetches.push(fetchScoreboard(ESPN_NBA_SCOREBOARD).then((d) => ({ key: 'nbaGames', data: d })));
   }
-  if (league === 'nfl' || league === 'both') {
+  if (wantNfl) {
     fetches.push(fetchNews(ESPN_NFL_NEWS).then((d) => ({ key: 'nflNews', data: d })));
     fetches.push(fetchScoreboard(ESPN_NFL_SCOREBOARD).then((d) => ({ key: 'nflGames', data: d })));
+  }
+  if (wantWnba) {
+    fetches.push(fetchNews(ESPN_WNBA_NEWS).then((d) => ({ key: 'wnbaNews', data: d })));
+    fetches.push(fetchScoreboard(ESPN_WNBA_SCOREBOARD).then((d) => ({ key: 'wnbaGames', data: d })));
   }
 
   const results = await Promise.all(fetches);
@@ -140,8 +160,9 @@ export async function buildLiveContext({ league = 'both' }: { league?: 'nfl' | '
     '',
     'CURRENT SEASON STATUS:',
   ];
-  if (league === 'nba' || league === 'both') lines.push(`  • NBA: ${phase.nba}`);
-  if (league === 'nfl' || league === 'both') lines.push(`  • NFL: ${phase.nfl}`);
+  if (wantNba) lines.push(`  • NBA: ${phase.nba}`);
+  if (wantNfl) lines.push(`  • NFL: ${phase.nfl}`);
+  if (wantWnba) lines.push(`  • WNBA: ${phase.wnba}`);
 
   // ── NBA HEADLINES ────────────────────────────────────────────────────────
   if ((league === 'nba' || league === 'both') && lookup.nbaNews) {
@@ -158,7 +179,7 @@ export async function buildLiveContext({ league = 'both' }: { league?: 'nfl' | '
   }
 
   // ── NFL HEADLINES ────────────────────────────────────────────────────────
-  if ((league === 'nfl' || league === 'both') && lookup.nflNews) {
+  if (wantNfl && lookup.nflNews) {
     const articles = (lookup.nflNews as ESPNArticle[]).slice(0, 8);
     if (articles.length) {
       lines.push('', 'TOP NFL HEADLINES (live, today):');
@@ -171,8 +192,22 @@ export async function buildLiveContext({ league = 'both' }: { league?: 'nfl' | '
     }
   }
 
+  // ── WNBA HEADLINES ───────────────────────────────────────────────────────
+  if (wantWnba && lookup.wnbaNews) {
+    const articles = (lookup.wnbaNews as ESPNArticle[]).slice(0, 8);
+    if (articles.length) {
+      lines.push('', 'TOP WNBA HEADLINES (live, today):');
+      for (const a of articles) {
+        const head = a.headline?.trim();
+        if (!head) continue;
+        const date = a.published ? a.published.slice(0, 10) : '';
+        lines.push(`  • ${head}${date ? ` (${date})` : ''}`);
+      }
+    }
+  }
+
   // ── TODAY'S GAMES (NBA) ──────────────────────────────────────────────────
-  if ((league === 'nba' || league === 'both') && lookup.nbaGames) {
+  if (wantNba && lookup.nbaGames) {
     const events = lookup.nbaGames as ESPNEvent[];
     if (events.length) {
       lines.push('', "TODAY'S NBA GAMES:");
@@ -189,10 +224,27 @@ export async function buildLiveContext({ league = 'both' }: { league?: 'nfl' | '
   }
 
   // ── TODAY'S GAMES (NFL) ──────────────────────────────────────────────────
-  if ((league === 'nfl' || league === 'both') && lookup.nflGames) {
+  if (wantNfl && lookup.nflGames) {
     const events = lookup.nflGames as ESPNEvent[];
     if (events.length) {
       lines.push('', "TODAY'S NFL GAMES:");
+      for (const e of events.slice(0, 8)) {
+        const matchup = e.shortName ?? e.name ?? '';
+        const status = e.status?.type?.shortDetail ?? '';
+        const comps = e.competitions?.[0]?.competitors ?? [];
+        const scoreStr = comps.length === 2 && (comps[0].score || comps[1].score)
+          ? ` (${comps[0].team?.abbreviation} ${comps[0].score} – ${comps[1].team?.abbreviation} ${comps[1].score})`
+          : '';
+        lines.push(`  • ${matchup}${scoreStr} — ${status}`);
+      }
+    }
+  }
+
+  // ── TODAY'S GAMES (WNBA) ─────────────────────────────────────────────────
+  if (wantWnba && lookup.wnbaGames) {
+    const events = lookup.wnbaGames as ESPNEvent[];
+    if (events.length) {
+      lines.push('', "TODAY'S WNBA GAMES:");
       for (const e of events.slice(0, 8)) {
         const matchup = e.shortName ?? e.name ?? '';
         const status = e.status?.type?.shortDetail ?? '';

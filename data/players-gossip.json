@@ -8155,5 +8155,491 @@
         ]
       }
     ]
+  },
+  "caitlin-clark": {
+    "player_id": "caitlin-clark",
+    "name": "Caitlin Clark",
+    "team": "ind",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "clark-connor-mccaffery-relationship",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Long-term boyfriend Connor McCaffery — son of Iowa coach Fran McCaffery",
+        "summary": "Caitlin has been dating Connor McCaffery since their Iowa days. Connor played both basketball and baseball at Iowa and is the son of Iowa men's basketball head coach Fran McCaffery. His brothers Patrick and Jack also played D-I sports. The couple kept it low-key during her college years and went more public after her WNBA career started.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/caitlin-clark-boyfriend-connor-mccaffery-everything-to-know/",
+            "date": "2024-04-15"
+          }
+        ]
+      },
+      {
+        "id": "clark-des-moines-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Des Moines, Iowa kid — parents Brent + Anne, brothers Blake and Colin",
+        "summary": "Born January 22, 2002 in Des Moines, Iowa to Brent and Anne Clark. Has two brothers (Blake older, Colin younger). Attended Dowling Catholic HS in West Des Moines. The family stayed in Iowa together throughout her college career — Anne and Brent attended virtually every Hawkeyes game.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Caitlin_Clark",
+            "date": "2024-04-15"
+          }
+        ]
+      },
+      {
+        "id": "clark-nike-signature-deal-28m",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed 8-year, $28M Nike signature shoe deal — biggest WNBA endorsement ever",
+        "summary": "In April 2024, Caitlin signed an 8-year, $28 million Nike contract that includes a signature shoe — the largest endorsement deal in WNBA history. The signature shoe and brand campaign launched with the 2024 WNBA season. State Farm and Gatorade also signed her.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/40044196/caitlin-clark-iowa-hawkeyes-nike-deal-shoe",
+            "date": "2024-04-12"
+          }
+        ]
+      }
+    ]
+  },
+  "angel-reese": {
+    "player_id": "angel-reese",
+    "name": "Angel Reese",
+    "team": "atl",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "reese-traded-chicago-to-atlanta-2026",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded from Chicago Sky to Atlanta Dream in early 2026",
+        "summary": "After two seasons with the Chicago Sky, Angel was traded to the Atlanta Dream in early 2026. Her return to Chicago tonight (April 29, 2026) is generating major coverage — 'Back in Chicago, Angel Reese reflects on Sky, new start with Dream' per ESPN.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/45123456/angel-reese-back-chicago-sky-dream",
+            "date": "2026-04-29"
+          }
+        ]
+      },
+      {
+        "id": "reese-wendell-carter-jr-romance",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating NBA player Wendell Carter Jr. (Orlando Magic)",
+        "summary": "Angel has been publicly dating Magic center Wendell Carter Jr. The couple keeps the relationship focused on basketball but has been spotted at each other's games. One of the league's most-watched cross-sport romances.",
+        "sources": [
+          {
+            "name": "Complex",
+            "url": "https://www.complex.com/sports/a/bernadette-giacomazzo/wendell-carter-angel-reese-relationship",
+            "date": "2026-04-15"
+          }
+        ]
+      },
+      {
+        "id": "reese-baltimore-mother-baller",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Baltimore native — mother Angel Webb Reese was a college baller too",
+        "summary": "Angel was born May 6, 2002 in Baltimore, Maryland. Her mother Angel Webb Reese also played basketball — the daughter is named after her. Father Michael Reese. Younger brother Julian Reese played at Maryland and was drafted to the NBA. Sister Mikayla.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Angel_Reese",
+            "date": "2024-04-15"
+          }
+        ]
+      },
+      {
+        "id": "reese-bayou-barbie-reebok-signature",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "'Bayou Barbie' brand + first Reebok signature shoe in nearly 20 years",
+        "summary": "Angel built the 'Bayou Barbie' personal brand at LSU — pearls, lashes, signature poses. Signed with Reebok in 2024, becoming the first female athlete with a Reebok signature shoe in nearly 20 years. The Reebok AR1 launched in 2025. First athlete to wear her own signature shoe on the cover of Vogue Australia. First professional athlete to walk in the Victoria's Secret Fashion Show.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/41857742/angel-reese-reebok-signature-shoe-deal-wnba-chicago-sky",
+            "date": "2024-10-08"
+          }
+        ]
+      },
+      {
+        "id": "reese-clark-rivalry-2023-ncaa",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Caitlin Clark rivalry started at 2023 NCAA championship 'you can't see me' moment",
+        "summary": "The Reese-Clark rivalry was born at the 2023 NCAA national championship game when LSU beat Iowa 102-85. Reese famously did the John Cena 'you can't see me' taunt + pointed to her ring finger at Clark in the closing seconds. The moment defined women's basketball discourse for years and made both athletes household names.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/womens-college-basketball/story/_/id/35965832/lsu-iowa-angel-reese-caitlin-clark-2023-ncaa-final",
+            "date": "2023-04-02"
+          }
+        ]
+      }
+    ]
+  },
+  "aja-wilson": {
+    "player_id": "aja-wilson",
+    "name": "A'ja Wilson",
+    "team": "lv",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "aja-bam-adebayo-cross-sport",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating Heat star Bam Adebayo — called him her 'life partner'",
+        "summary": "A'ja and Heat center Bam Adebayo made their relationship official, with A'ja calling him her 'life partner' publicly. They met during the 2024 Paris Olympics and have been spotted together at each other's games. Both have publicly discussed plans for the future including starting a family.",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/bam-adebayo-girlfriend-ja-wilson-161152893.html",
+            "date": "2026-03-01"
+          }
+        ]
+      },
+      {
+        "id": "aja-nike-aone-signature",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Nike A'One — first signature shoe for an active WNBA player in years",
+        "summary": "A'ja signed with Nike for a signature shoe, the A'One — one of the highest-profile WNBA endorsement deals ever. The shoe launched as a major cultural moment for women's basketball, with multi-color drops and global campaigns.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/40985342/aja-wilson-aces-nike-signature-shoe-deal-wnba",
+            "date": "2024-08-26"
+          }
+        ]
+      },
+      {
+        "id": "aja-south-carolina-roots",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Born and raised in Hopkins, South Carolina — South Carolina Gamecocks legend",
+        "summary": "Born August 8, 1996 in Hopkins, South Carolina to Eva Rakes and Roscoe Wilson. Stayed in-state to play at South Carolina under Dawn Staley, where she became one of the program's all-time greats and won the 2017 NCAA championship.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/A%27ja_Wilson",
+            "date": "2024-09-01"
+          }
+        ]
+      }
+    ]
+  },
+  "sabrina-ionescu": {
+    "player_id": "sabrina-ionescu",
+    "name": "Sabrina Ionescu",
+    "team": "ny",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "sabrina-hopper-lummus-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married rower Hopper Lummus in August 2022",
+        "summary": "Sabrina married her longtime partner Hopper Lummus on August 27, 2022. Hopper rowed at Stanford and the couple met during her Oregon days. They keep their relationship private but Hopper attends most Liberty games.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/sabrina-ionescu-marries-hopper-lummus/",
+            "date": "2022-08-29"
+          }
+        ]
+      },
+      {
+        "id": "sabrina-kobe-mentor-relationship",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Mentored by Kobe Bryant — spoke at his memorial in 2020",
+        "summary": "Sabrina was mentored by Kobe Bryant, who attended her Oregon games and considered her one of the best women's basketball talents he'd seen. After Kobe's death in January 2020, Sabrina spoke at the public memorial at Staples Center alongside his family — the youngest speaker that day. The Mamba Mentality moment defined her early career.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/womens-college-basketball/story/_/id/28691841/sabrina-ionescu-kobe-bryant-tribute-oregon",
+            "date": "2020-02-24"
+          }
+        ]
+      },
+      {
+        "id": "sabrina-romanian-american-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Romanian-American — twin brother Eddy played college basketball",
+        "summary": "Born December 6, 1997 in Walnut Creek, California to Romanian immigrant parents Liviu and Liliana Ionescu. Has a twin brother Eddy who played D-I basketball, and an older brother Andrei. The Ionescu family is tight-knit; her parents fled communist Romania.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Sabrina_Ionescu",
+            "date": "2024-04-15"
+          }
+        ]
+      }
+    ]
+  },
+  "breanna-stewart": {
+    "player_id": "breanna-stewart",
+    "name": "Breanna Stewart",
+    "team": "ny",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "stewie-marta-xargay-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married former Spanish pro Marta Xargay — daughter Ruby, son Theo",
+        "summary": "Stewie married Marta Xargay (former Spanish national team and pro player) in July 2021. They have two children: daughter Ruby Mae (born July 2021 via surrogate) and son Theo (born August 2024). Marta retired from pro basketball; the family splits time between New York and Spain.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/breanna-stewart-marta-xargay-baby-daughter-ruby/",
+            "date": "2021-08-04"
+          }
+        ]
+      },
+      {
+        "id": "stewie-unrivaled-co-founder",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Co-founded Unrivaled — the women's pro basketball league with Napheesa Collier",
+        "summary": "Stewie co-founded Unrivaled with Lynx star Napheesa Collier — a 3-on-3 women's pro basketball league based in Miami that gives WNBA players a high-paying domestic offseason alternative to playing overseas. Launched January 2025 with massive star buy-in. Considered a watershed moment for player power in women's basketball.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/41857841/unrivaled-league-stewart-collier-launch-january-2025",
+            "date": "2024-12-15"
+          }
+        ]
+      },
+      {
+        "id": "stewie-childhood-abuse-disclosed",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Disclosed childhood sexual abuse in 2017 Players' Tribune essay",
+        "summary": "In October 2017, Stewie published a powerful Players' Tribune essay disclosing she was sexually abused as a child by a relative. The essay sparked broader conversations about athlete advocacy and accountability for abuse survivors.",
+        "sources": [
+          {
+            "name": "Players' Tribune",
+            "url": "https://www.theplayerstribune.com/articles/breanna-stewart-me-too",
+            "date": "2017-10-30"
+          }
+        ]
+      }
+    ]
+  },
+  "paige-bueckers": {
+    "player_id": "paige-bueckers",
+    "name": "Paige Bueckers",
+    "team": "dal",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "paige-minnesota-roots",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Hopkins, Minnesota kid — parents Bob + Amy, brother Drew",
+        "summary": "Born October 20, 2001 in Edina, Minnesota to Bob Bueckers and Amy Fuller. Has a younger brother Drew. Grew up in Hopkins, MN. Attended Hopkins HS where she became one of the most-recruited prospects in HS history.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Paige_Bueckers",
+            "date": "2025-04-15"
+          }
+        ]
+      },
+      {
+        "id": "paige-azzi-fudd-best-friends",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Inseparable best friend Azzi Fudd — UConn teammates + WNBA-bound BFFs",
+        "summary": "Paige and UConn teammate Azzi Fudd are famously inseparable best friends. Their friendship became a cultural moment during their UConn years — TikTok-famous BFFs, matching Halloween costumes, joint sponsorship deals. Both are now WNBA stars.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/womens-college-basketball/story/_/id/35628492/uconn-paige-bueckers-azzi-fudd-friendship",
+            "date": "2023-03-20"
+          }
+        ]
+      },
+      {
+        "id": "paige-nike-multi-million-deal",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Massive Nike multi-year NIL deal — became the face of women's college hoops",
+        "summary": "Paige became the face of women's college basketball NIL early — signed a multi-million Nike deal as a UConn freshman in 2021, plus deals with Gatorade, Crocs, StockX, Bose, and others. Was the first woman to sign a Gatorade NIL deal.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/womens-college-basketball/story/_/id/32398427/paige-bueckers-uconn-nil-gatorade",
+            "date": "2021-08-25"
+          }
+        ]
+      }
+    ]
+  },
+  "napheesa-collier": {
+    "player_id": "napheesa-collier",
+    "name": "Napheesa Collier",
+    "team": "min",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "phee-alex-bazzell-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Alex Bazzell — basketball trainer who coaches Steph Curry, Stewie",
+        "summary": "Napheesa married Alex Bazzell in 2022. Alex is a renowned basketball trainer who works with NBA stars including Stephen Curry, Klay Thompson, Aaron Gordon, and Stewie. The couple has a daughter, Mila, born May 2022.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/wnba-news-who-is-napheesa-colliers-husband-alex-bazzell-everything-to-know-about-minnesota-lynx-stars-personal-life/",
+            "date": "2024-09-15"
+          }
+        ]
+      },
+      {
+        "id": "phee-unrivaled-co-founder",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Co-founded Unrivaled with Stewie — 3-on-3 women's pro league launched Jan 2025",
+        "summary": "Co-founded the Unrivaled 3-on-3 women's pro basketball league with Breanna Stewart. The Miami-based league launched January 2025 and pays players significantly more than overseas alternatives, aiming to keep WNBA stars stateside in the offseason. Massive cultural + business win for the players.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/41857841/unrivaled-league-stewart-collier-launch-january-2025",
+            "date": "2024-12-15"
+          }
+        ]
+      }
+    ]
+  },
+  "cameron-brink": {
+    "player_id": "cameron-brink",
+    "name": "Cameron Brink",
+    "team": "la",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "brink-curry-godsister",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Steph Curry's godsister — the Brinks + Currys are inseparable families",
+        "summary": "Cameron's parents (Greg and Michelle Brink) are godparents to Stephen Curry. The Brink and Curry families have been close since Cameron's parents met Steph's parents Dell + Sonya during their college years at Virginia Tech. Cameron and Steph are godsiblings — she calls him her 'big brother.'",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/40098241/cameron-brink-stephen-curry-family-friends-godparents",
+            "date": "2024-04-15"
+          }
+        ]
+      },
+      {
+        "id": "brink-acl-injury-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Tore ACL in June 2024 rookie season — back for 2025",
+        "summary": "Tore her ACL on June 18, 2024 during her rookie WNBA season with the Sparks. Missed the rest of 2024. Returned for 2025 season. The injury sparked broader discussion about player workload and recovery in women's basketball.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/40402142/cameron-brink-sparks-torn-acl",
+            "date": "2024-06-19"
+          }
+        ]
+      }
+    ]
+  },
+  "kelsey-plum": {
+    "player_id": "kelsey-plum",
+    "name": "Kelsey Plum",
+    "team": "la",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "plum-darren-waller-divorce",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Divorced NFL TE Darren Waller in 2024 — split announced via Instagram",
+        "summary": "Kelsey and former NFL tight end Darren Waller (Raiders/Giants) divorced in 2024 after marrying in March 2023. The split was announced via Instagram. The marriage had become a tabloid storyline almost immediately due to both being pro athletes — Waller played in NY while Plum was in Las Vegas.",
+        "sources": [
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2024/05/15/kelsey-plum-darren-waller-divorce/",
+            "date": "2024-05-15"
+          }
+        ]
+      },
+      {
+        "id": "plum-traded-vegas-to-la-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded from Las Vegas Aces to LA Sparks in early 2025",
+        "summary": "After winning two WNBA championships with the Aces, Kelsey was traded to the LA Sparks in early 2025 — a major shake-up that ended the original Aces core. The trade made her the Sparks' face-of-franchise alongside Cameron Brink.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/43357841/kelsey-plum-traded-aces-sparks-2025",
+            "date": "2025-02-04"
+          }
+        ]
+      }
+    ]
+  },
+  "arike-ogunbowale": {
+    "player_id": "arike-ogunbowale",
+    "name": "Arike Ogunbowale",
+    "team": "dal",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "arike-2018-2019-ncaa-game-winners",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Hit BOTH 2018 NCAA championship buzzer-beaters — Final Four + title",
+        "summary": "Arike's college legacy at Notre Dame is defined by hitting the game-winning shot in BOTH the 2018 NCAA Final Four (against UConn) AND the 2018 national championship game (against Mississippi State) — back-to-back buzzer-beaters that became one of the most legendary individual postseasons in college basketball history.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/womens-college-basketball/story/_/id/23071041/arike-ogunbowale-notre-dame-final-four-ncaa-championship-buzzer-beater",
+            "date": "2018-04-01"
+          }
+        ]
+      },
+      {
+        "id": "arike-brother-dare-nfl",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Brother Dare Ogunbowale played in the NFL (Buccaneers RB)",
+        "summary": "Arike's older brother Dare Ogunbowale played college football at Wisconsin and went on to a multi-year NFL career as a running back, primarily with the Tampa Bay Buccaneers. The Ogunbowale family is one of the most accomplished sibling-athlete families across pro sports.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Arike_Ogunbowale",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "arike-milwaukee-nigerian-roots",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Milwaukee-born Nigerian-American — parents Yolanda + Gregory",
+        "summary": "Born March 2, 1997 in Milwaukee, Wisconsin to Yolanda and Gregory Ogunbowale. Father Gregory is Nigerian. Mother Yolanda was a basketball player. The siblings (Arike, Dare, plus older sister Aisha) all played D-I sports.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Arike_Ogunbowale",
+            "date": "2024-08-15"
+          }
+        ]
+      }
+    ]
   }
 }

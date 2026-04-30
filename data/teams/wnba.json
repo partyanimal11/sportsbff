@@ -1,0 +1,122 @@
+[
+  {
+    "id": "atl",
+    "league": "wnba",
+    "name": "Dream",
+    "city": "Atlanta",
+    "conference": "Eastern",
+    "signature": "Angel Reese homecoming era — traded from Chicago, now leading the Dream."
+  },
+  {
+    "id": "chi",
+    "league": "wnba",
+    "name": "Sky",
+    "city": "Chicago",
+    "conference": "Eastern",
+    "signature": "Post-Angel rebuild. The Reese era ended; new identity coming."
+  },
+  {
+    "id": "con",
+    "league": "wnba",
+    "name": "Sun",
+    "city": "Connecticut",
+    "conference": "Eastern",
+    "signature": "Mohegan Sun Arena vibe. DeWanna Bonner, scrappy but small-market."
+  },
+  {
+    "id": "dal",
+    "league": "wnba",
+    "name": "Wings",
+    "city": "Dallas",
+    "conference": "Western",
+    "signature": "Paige Bueckers + Arike Ogunbowale = best backcourt in the W."
+  },
+  {
+    "id": "gs",
+    "league": "wnba",
+    "name": "Valkyries",
+    "city": "Golden State",
+    "conference": "Western",
+    "signature": "2025 expansion team. Bay Area culture, immediate sellouts at Chase Center."
+  },
+  {
+    "id": "ind",
+    "league": "wnba",
+    "name": "Fever",
+    "city": "Indiana",
+    "conference": "Eastern",
+    "signature": "Caitlin Clark's team. Single-handedly tripled WNBA TV ratings."
+  },
+  {
+    "id": "lv",
+    "league": "wnba",
+    "name": "Aces",
+    "city": "Las Vegas",
+    "conference": "Western",
+    "signature": "A'ja Wilson + Becky Hammon's dynasty. Back-to-back champions energy."
+  },
+  {
+    "id": "la",
+    "league": "wnba",
+    "name": "Sparks",
+    "city": "Los Angeles",
+    "conference": "Western",
+    "signature": "Cameron Brink + Kelsey Plum + Rickea Jackson — the rebuild looks fun."
+  },
+  {
+    "id": "min",
+    "league": "wnba",
+    "name": "Lynx",
+    "city": "Minnesota",
+    "conference": "Western",
+    "signature": "Napheesa Collier era. Cheryl Reeve coaching legend status."
+  },
+  {
+    "id": "ny",
+    "league": "wnba",
+    "name": "Liberty",
+    "city": "New York",
+    "conference": "Eastern",
+    "signature": "Sabrina + Stewie + Jonquel = reigning superteam. Barclays ownership pressure."
+  },
+  {
+    "id": "phx",
+    "league": "wnba",
+    "name": "Mercury",
+    "city": "Phoenix",
+    "conference": "Western",
+    "signature": "Post-Diana Taurasi era. Brittney Griner's chapter closing."
+  },
+  {
+    "id": "por",
+    "league": "wnba",
+    "name": "Fire",
+    "city": "Portland",
+    "conference": "Western",
+    "signature": "2026 expansion team. Pacific Northwest hoops obsession reborn."
+  },
+  {
+    "id": "sea",
+    "league": "wnba",
+    "name": "Storm",
+    "city": "Seattle",
+    "conference": "Western",
+    "signature": "Sue Bird's legacy franchise. Skylar Diggins-Smith era."
+  },
+  {
+    "id": "tor",
+    "league": "wnba",
+    "name": "Tempo",
+    "city": "Toronto",
+    "conference": "Eastern",
+    "signature": "2026 expansion. Canada's first WNBA team — instant cultural moment."
+  },
+  {
+    "id": "wsh",
+    "league": "wnba",
+    "name": "Mystics",
+    "city": "Washington",
+    "conference": "Eastern",
+    "signature": "Elena Delle Donne legacy team. Building around young core."
+  }
+]

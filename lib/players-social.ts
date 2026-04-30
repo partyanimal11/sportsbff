@@ -114,6 +114,19 @@ export const PLAYER_SOCIAL: Record<string, PlayerSocial> = {
   'cooper-flagg': { instagram: 'cooperflagg', twitter: 'CooperFlagg' },
   'reed-sheppard': { instagram: 'reedsheppard', twitter: 'ReedSheppard' },
   'stephon-castle': { instagram: 'stephoncastle', twitter: 'StephonCastle' },
+
+  // ── WNBA marquee ──
+  'caitlin-clark': { instagram: 'caitlinclark22', twitter: 'CaitlinClark22' },
+  'angel-reese': { instagram: 'angelreese5', twitter: 'Reese10Angel' },
+  'aja-wilson': { instagram: 'aja22wilson', twitter: '_ajawilson22' },
+  'sabrina-ionescu': { instagram: 'sabrina_i20', twitter: 'sabrina_i20' },
+  'breanna-stewart': { instagram: 'breannastewart', twitter: 'breannastewart' },
+  'paige-bueckers': { instagram: 'paigebueckers1', twitter: 'paigebueckers1' },
+  'napheesa-collier': { instagram: 'phee_24', twitter: 'PheeCollier' },
+  'cameron-brink': { instagram: 'cameronbrink22', twitter: 'cameronbrink22' },
+  'kelsey-plum': { instagram: 'kelseyplum10', twitter: 'Kelseyplum10' },
+  'arike-ogunbowale': { instagram: 'ariko24', twitter: 'Arike_O' },
+
   // round 4 — coaches
   'andy-reid': { instagram: 'coach_andy_reid' },
   'sean-mcvay': { instagram: 'sean_mcvay', twitter: 'seanmcvay' },
