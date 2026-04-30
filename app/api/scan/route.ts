@@ -1,7 +1,39 @@
 import { NextRequest } from 'next/server';
 import { getOpenAI, MODELS, hasOpenAIKey } from '@/lib/openai';
 import gossipData from '@/data/players-gossip.json';
+import rostersData from '@/data/rosters.json';
 import { rosterLookup } from '@/lib/roster-lookup';
+
+/**
+ * Build a fast index: player_id → { league, team, jersey } from rosters.json.
+ * Used to verify vision's claimed player against their ACTUAL current roster
+ * entry. If vision says "SGA #1 Nuggets" but rosters has "SGA #2 Thunder",
+ * vision invented the number/team to match a face it guessed wrong → reject.
+ */
+type RosterIndex = Record<string, { league: string; team: string; jersey: string; pos: string }>;
+const ROSTER_INDEX: RosterIndex = (() => {
+  const idx: RosterIndex = {};
+  const rosters = (rostersData as { rosters: Record<string, { id: string; jersey: string; pos: string }[]> }).rosters;
+  for (const [key, list] of Object.entries(rosters)) {
+    const [league, team] = key.split('/');
+    for (const p of list) {
+      // First write wins — if a player appears on multiple rosters (rare; usually a stale entry),
+      // the first one is the canonical current team
+      if (!idx[p.id]) idx[p.id] = { league, team, jersey: p.jersey, pos: p.pos };
+    }
+  }
+  return idx;
+})();
+
+/**
+ * Quality gate: confidence threshold. Vision returns a self-rated 0.0-1.0
+ * confidence. Below this, we override to Unknown rather than ship a wrong ID.
+ *
+ * 0.85 chosen after the MPJ → SGA misfire (vision overconfident on similar
+ * faces). The legacy threshold was 0.60 which let too many marginal calls
+ * through. 0.85 + the roster cross-check below = far fewer wrong IDs.
+ */
+const CONFIDENCE_FLOOR = 0.85;
 
 type GossipSource = { name: string; url: string; date: string };
 type GossipItem = {
@@ -449,9 +481,62 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
     const raw = completion.choices[0]?.message?.content ?? '{}';
     const parsed = JSON.parse(raw) as ScanResult;
 
-    // ROSTER-LOOKUP RECOVERY: vision returned Unknown but read team + number?
-    // Salvage the scan via our roster index. This is what saves Caitlin Clark when
-    // vision sees "FEVER + 22" but can't ID her face.
+    // ════════════════════════════════════════════════════════════════════
+    // QUALITY GATE 1 — CONFIDENCE FLOOR
+    // ════════════════════════════════════════════════════════════════════
+    // Vision is overconfident on similar faces (MPJ → SGA, etc.). If self-
+    // reported confidence is below the floor, override to Unknown rather
+    // than ship a wrong ID. Roster recovery still runs against the team +
+    // number signals, so we may still recover a valid result.
+    let qualityGate: 'passed' | 'low_confidence' | 'roster_mismatch' = 'passed';
+    if (
+      parsed.player_name &&
+      parsed.player_name !== 'Unknown' &&
+      typeof parsed.confidence === 'number' &&
+      parsed.confidence < CONFIDENCE_FLOOR
+    ) {
+      qualityGate = 'low_confidence';
+      parsed.player_name = 'Unknown';
+    }
+
+    // ════════════════════════════════════════════════════════════════════
+    // QUALITY GATE 2 — ROSTER CROSS-CHECK
+    // ════════════════════════════════════════════════════════════════════
+    // If vision claims a player AND a jersey number, verify both against our
+    // 3,646-player roster index. If the player exists in our DB and their
+    // ACTUAL jersey number doesn't match what vision returned, vision likely
+    // invented the number to match a hallucinated face. Override to Unknown.
+    if (
+      parsed.player_name &&
+      parsed.player_name !== 'Unknown' &&
+      parsed.number &&
+      parsed.number > 0
+    ) {
+      const playerSlug = parsed.player_name
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
+      const rosterEntry = ROSTER_INDEX[playerSlug];
+      if (rosterEntry) {
+        const rosterNum = (rosterEntry.jersey || '').replace(/^0+/, '') || '0';
+        const visionNum = String(parsed.number).replace(/^0+/, '') || '0';
+        if (rosterNum !== visionNum) {
+          // The vision-claimed player doesn't actually wear that number.
+          // Strong evidence vision hallucinated. Reject.
+          qualityGate = 'roster_mismatch';
+          parsed.player_name = 'Unknown';
+        }
+      }
+    }
+
+    // ════════════════════════════════════════════════════════════════════
+    // ROSTER-LOOKUP RECOVERY (fallback)
+    // ════════════════════════════════════════════════════════════════════
+    // If vision returned Unknown (or we just downgraded to Unknown above)
+    // but read team + number off the jersey, try to resolve via our roster
+    // index. This is what saves Caitlin Clark when vision sees "FEVER + 22"
+    // but can't ID her face. Now also rescues cases where we rejected a
+    // hallucinated face but the jersey signals were actually clean.
     let recoveryFired: 'none' | 'recovered' | 'no_match' = 'none';
     if (parsed.player_name === 'Unknown' || !parsed.player_name) {
       recoveryFired = 'no_match';
@@ -464,6 +549,15 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
         parsed.blurb = `${recovered.name} — based on the jersey signals.`;
         recoveryFired = 'recovered';
       }
+    }
+
+    // After all gates: if still Unknown, ensure clean Unknown response shape
+    if (parsed.player_name === 'Unknown') {
+      parsed.number = 0;
+      parsed.position = 'Unknown';
+      parsed.team = 'Unknown';
+      parsed.confidence = 0;
+      parsed.blurb = "I couldn't quite ID this one — try a clearer crop on the jersey or a different angle.";
     }
 
     // OVERRIDE drama with curated, sourced gossip from the database when we have it.
@@ -491,6 +585,7 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
       headers: {
         'Content-Type': 'application/json',
         'X-Scan-Recovery': recoveryFired,
+        'X-Scan-Quality-Gate': qualityGate,
         'X-Scan-Vision-Team': String(parsed.team || '').slice(0, 60),
         'X-Scan-Vision-Number': String(parsed.number ?? ''),
         ...CORS_HEADERS,
