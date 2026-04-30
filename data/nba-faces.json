@@ -1,0 +1,4848 @@
+{
+  "generated": "2026-04-30",
+  "count": 538,
+  "players": {
+    "nickeil-alexander-walker": {
+      "id": "nickeil-alexander-walker",
+      "name": "Nickeil Alexander-Walker",
+      "team": "atl",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "4278039",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278039.png"
+    },
+    "tony-bradley": {
+      "id": "tony-bradley",
+      "name": "Tony Bradley",
+      "team": "atl",
+      "jersey": "13",
+      "pos": "C",
+      "espnId": "4065673",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065673.png"
+    },
+    "dyson-daniels": {
+      "id": "dyson-daniels",
+      "name": "Dyson Daniels",
+      "team": "atl",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4869342",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4869342.png"
+    },
+    "rayj-dennis": {
+      "id": "rayj-dennis",
+      "name": "RayJ Dennis",
+      "team": "atl",
+      "jersey": "00",
+      "pos": "G",
+      "espnId": "4431941",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431941.png"
+    },
+    "keshon-gilbert": {
+      "id": "keshon-gilbert",
+      "name": "Keshon Gilbert",
+      "team": "atl",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "4585618",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4585618.png"
+    },
+    "mouhamed-gueye": {
+      "id": "mouhamed-gueye",
+      "name": "Mouhamed Gueye",
+      "team": "atl",
+      "jersey": "18",
+      "pos": "F",
+      "espnId": "4712863",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4712863.png"
+    },
+    "buddy-hield": {
+      "id": "buddy-hield",
+      "name": "Buddy Hield",
+      "team": "atl",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "2990984",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990984.png"
+    },
+    "caleb-houstan": {
+      "id": "caleb-houstan",
+      "name": "Caleb Houstan",
+      "team": "atl",
+      "jersey": "33",
+      "pos": "G",
+      "espnId": "4433623",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433623.png"
+    },
+    "jalen-johnson": {
+      "id": "jalen-johnson",
+      "name": "Jalen Johnson",
+      "team": "atl",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "4701230",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701230.png"
+    },
+    "corey-kispert": {
+      "id": "corey-kispert",
+      "name": "Corey Kispert",
+      "team": "atl",
+      "jersey": "24",
+      "pos": "F",
+      "espnId": "4280151",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4280151.png"
+    },
+    "christian-koloko": {
+      "id": "christian-koloko",
+      "name": "Christian Koloko",
+      "team": "atl",
+      "jersey": "35",
+      "pos": "C",
+      "espnId": "4431778",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431778.png"
+    },
+    "jonathan-kuminga": {
+      "id": "jonathan-kuminga",
+      "name": "Jonathan Kuminga",
+      "team": "atl",
+      "jersey": "0",
+      "pos": "F",
+      "espnId": "4433247",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433247.png"
+    },
+    "jock-landale": {
+      "id": "jock-landale",
+      "name": "Jock Landale",
+      "team": "atl",
+      "jersey": "31",
+      "pos": "C",
+      "espnId": "3146557",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3146557.png"
+    },
+    "cj-mccollum": {
+      "id": "cj-mccollum",
+      "name": "CJ McCollum",
+      "team": "atl",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "2490149",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2490149.png"
+    },
+    "asa-newell": {
+      "id": "asa-newell",
+      "name": "Asa Newell",
+      "team": "atl",
+      "jersey": "14",
+      "pos": "F",
+      "espnId": "4873201",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4873201.png"
+    },
+    "onyeka-okongwu": {
+      "id": "onyeka-okongwu",
+      "name": "Onyeka Okongwu",
+      "team": "atl",
+      "jersey": "17",
+      "pos": "F",
+      "espnId": "4431680",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431680.png"
+    },
+    "zaccharie-risacher": {
+      "id": "zaccharie-risacher",
+      "name": "Zaccharie Risacher",
+      "team": "atl",
+      "jersey": "10",
+      "pos": "F",
+      "espnId": "5211175",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5211175.png"
+    },
+    "gabe-vincent": {
+      "id": "gabe-vincent",
+      "name": "Gabe Vincent",
+      "team": "atl",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "3137259",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3137259.png"
+    },
+    "keaton-wallace": {
+      "id": "keaton-wallace",
+      "name": "Keaton Wallace",
+      "team": "atl",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4279118",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4279118.png"
+    },
+    "dalano-banton": {
+      "id": "dalano-banton",
+      "name": "Dalano Banton",
+      "team": "bos",
+      "jersey": "45",
+      "pos": "F",
+      "espnId": "4397885",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397885.png"
+    },
+    "jaylen-brown": {
+      "id": "jaylen-brown",
+      "name": "Jaylen Brown",
+      "team": "bos",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "3917376",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3917376.png"
+    },
+    "luka-garza": {
+      "id": "luka-garza",
+      "name": "Luka Garza",
+      "team": "bos",
+      "jersey": "52",
+      "pos": "C",
+      "espnId": "4277951",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277951.png"
+    },
+    "hugo-gonzalez": {
+      "id": "hugo-gonzalez",
+      "name": "Hugo Gonzalez",
+      "team": "bos",
+      "jersey": "28",
+      "pos": "G",
+      "espnId": "5175647",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175647.png"
+    },
+    "ron-harper-jr": {
+      "id": "ron-harper-jr",
+      "name": "Ron Harper Jr.",
+      "team": "bos",
+      "jersey": "13",
+      "pos": "G",
+      "espnId": "4397251",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397251.png"
+    },
+    "sam-hauser": {
+      "id": "sam-hauser",
+      "name": "Sam Hauser",
+      "team": "bos",
+      "jersey": "30",
+      "pos": "F",
+      "espnId": "4065804",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065804.png"
+    },
+    "payton-pritchard": {
+      "id": "payton-pritchard",
+      "name": "Payton Pritchard",
+      "team": "bos",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "4066354",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066354.png"
+    },
+    "neemias-queta": {
+      "id": "neemias-queta",
+      "name": "Neemias Queta",
+      "team": "bos",
+      "jersey": "88",
+      "pos": "C",
+      "espnId": "4397424",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397424.png"
+    },
+    "baylor-scheierman": {
+      "id": "baylor-scheierman",
+      "name": "Baylor Scheierman",
+      "team": "bos",
+      "jersey": "55",
+      "pos": "G",
+      "espnId": "4593841",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593841.png"
+    },
+    "max-shulga": {
+      "id": "max-shulga",
+      "name": "Max Shulga",
+      "team": "bos",
+      "jersey": "44",
+      "pos": "G",
+      "espnId": "4701992",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701992.png"
+    },
+    "jayson-tatum": {
+      "id": "jayson-tatum",
+      "name": "Jayson Tatum",
+      "team": "bos",
+      "jersey": "0",
+      "pos": "F",
+      "espnId": "4065648",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065648.png"
+    },
+    "john-tonje": {
+      "id": "john-tonje",
+      "name": "John Tonje",
+      "team": "bos",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "4593043",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593043.png"
+    },
+    "nikola-vucevic": {
+      "id": "nikola-vucevic",
+      "name": "Nikola Vucevic",
+      "team": "bos",
+      "jersey": "4",
+      "pos": "C",
+      "espnId": "6478",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6478.png"
+    },
+    "jordan-walsh": {
+      "id": "jordan-walsh",
+      "name": "Jordan Walsh",
+      "team": "bos",
+      "jersey": "27",
+      "pos": "G",
+      "espnId": "4683689",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683689.png"
+    },
+    "derrick-white": {
+      "id": "derrick-white",
+      "name": "Derrick White",
+      "team": "bos",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "3078576",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3078576.png"
+    },
+    "amari-williams": {
+      "id": "amari-williams",
+      "name": "Amari Williams",
+      "team": "bos",
+      "jersey": "77",
+      "pos": "F",
+      "espnId": "4702745",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702745.png"
+    },
+    "ochai-agbaji": {
+      "id": "ochai-agbaji",
+      "name": "Ochai Agbaji",
+      "team": "bkn",
+      "jersey": "30",
+      "pos": "G",
+      "espnId": "4397018",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397018.png"
+    },
+    "nic-claxton": {
+      "id": "nic-claxton",
+      "name": "Nic Claxton",
+      "team": "bkn",
+      "jersey": "33",
+      "pos": "C",
+      "espnId": "4278067",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278067.png"
+    },
+    "noah-clowney": {
+      "id": "noah-clowney",
+      "name": "Noah Clowney",
+      "team": "bkn",
+      "jersey": "21",
+      "pos": "F",
+      "espnId": "4712896",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4712896.png"
+    },
+    "egor-demin": {
+      "id": "egor-demin",
+      "name": "Egor Demin",
+      "team": "bkn",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "5175643",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5175643.png"
+    },
+    "tyson-etienne": {
+      "id": "tyson-etienne",
+      "name": "Tyson Etienne",
+      "team": "bkn",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "4432887",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432887.png"
+    },
+    "chaney-johnson": {
+      "id": "chaney-johnson",
+      "name": "Chaney Johnson",
+      "team": "bkn",
+      "jersey": "31",
+      "pos": "F",
+      "espnId": "5174655",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5174655.png"
+    },
+    "e-j-liddell": {
+      "id": "e-j-liddell",
+      "name": "E.J. Liddell",
+      "team": "bkn",
+      "jersey": "9",
+      "pos": "F",
+      "espnId": "4432821",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432821.png"
+    },
+    "terance-mann": {
+      "id": "terance-mann",
+      "name": "Terance Mann",
+      "team": "bkn",
+      "jersey": "14",
+      "pos": "G",
+      "espnId": "3907823",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907823.png"
+    },
+    "josh-minott": {
+      "id": "josh-minott",
+      "name": "Josh Minott",
+      "team": "bkn",
+      "jersey": "00",
+      "pos": "F",
+      "espnId": "4687718",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4687718.png"
+    },
+    "michael-porter-jr": {
+      "id": "michael-porter-jr",
+      "name": "Michael Porter Jr.",
+      "team": "bkn",
+      "jersey": "17",
+      "pos": "F",
+      "espnId": "4278104",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278104.png"
+    },
+    "drake-powell": {
+      "id": "drake-powell",
+      "name": "Drake Powell",
+      "team": "bkn",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "5037873",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5037873.png"
+    },
+    "ben-saraf": {
+      "id": "ben-saraf",
+      "name": "Ben Saraf",
+      "team": "bkn",
+      "jersey": "77",
+      "pos": "G",
+      "espnId": "5242502",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5242502.png"
+    },
+    "trevon-scott": {
+      "id": "trevon-scott",
+      "name": "Trevon Scott",
+      "team": "bkn",
+      "jersey": "13",
+      "pos": "F",
+      "espnId": "3934620",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934620.png"
+    },
+    "dayron-sharpe": {
+      "id": "dayron-sharpe",
+      "name": "Day'Ron Sharpe",
+      "team": "bkn",
+      "jersey": "20",
+      "pos": "C",
+      "espnId": "4432194",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432194.png"
+    },
+    "malachi-smith": {
+      "id": "malachi-smith",
+      "name": "Malachi Smith",
+      "team": "bkn",
+      "jersey": "18",
+      "pos": "G",
+      "espnId": "4397784",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397784.png"
+    },
+    "nolan-traore": {
+      "id": "nolan-traore",
+      "name": "Nolan Traore",
+      "team": "bkn",
+      "jersey": "88",
+      "pos": "G",
+      "espnId": "5279130",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279130.png"
+    },
+    "ziaire-williams": {
+      "id": "ziaire-williams",
+      "name": "Ziaire Williams",
+      "team": "bkn",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "4433137",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433137.png"
+    },
+    "jalen-wilson": {
+      "id": "jalen-wilson",
+      "name": "Jalen Wilson",
+      "team": "bkn",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "4431714",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431714.png"
+    },
+    "danny-wolf": {
+      "id": "danny-wolf",
+      "name": "Danny Wolf",
+      "team": "bkn",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "5107173",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107173.png"
+    },
+    "lamelo-ball": {
+      "id": "lamelo-ball",
+      "name": "LaMelo Ball",
+      "team": "cha",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "4432816",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432816.png"
+    },
+    "miles-bridges": {
+      "id": "miles-bridges",
+      "name": "Miles Bridges",
+      "team": "cha",
+      "jersey": "0",
+      "pos": "F",
+      "espnId": "4066383",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066383.png"
+    },
+    "pat-connaughton": {
+      "id": "pat-connaughton",
+      "name": "Pat Connaughton",
+      "team": "cha",
+      "jersey": "21",
+      "pos": "G",
+      "espnId": "2578239",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2578239.png"
+    },
+    "moussa-diabate": {
+      "id": "moussa-diabate",
+      "name": "Moussa Diabate",
+      "team": "cha",
+      "jersey": "14",
+      "pos": "F",
+      "espnId": "4433249",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433249.png"
+    },
+    "tosan-evbuomwan": {
+      "id": "tosan-evbuomwan",
+      "name": "Tosan Evbuomwan",
+      "team": "cha",
+      "jersey": "20",
+      "pos": "F",
+      "espnId": "4597865",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4597865.png"
+    },
+    "josh-green": {
+      "id": "josh-green",
+      "name": "Josh Green",
+      "team": "cha",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "4432811",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432811.png"
+    },
+    "pj-hall": {
+      "id": "pj-hall",
+      "name": "PJ Hall",
+      "team": "cha",
+      "jersey": "16",
+      "pos": "C",
+      "espnId": "4701225",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701225.png"
+    },
+    "sion-james": {
+      "id": "sion-james",
+      "name": "Sion James",
+      "team": "cha",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4602025",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4602025.png"
+    },
+    "ryan-kalkbrenner": {
+      "id": "ryan-kalkbrenner",
+      "name": "Ryan Kalkbrenner",
+      "team": "cha",
+      "jersey": "11",
+      "pos": "C",
+      "espnId": "4576060",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4576060.png"
+    },
+    "kon-knueppel": {
+      "id": "kon-knueppel",
+      "name": "Kon Knueppel",
+      "team": "cha",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "5061575",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5061575.png"
+    },
+    "tre-mann": {
+      "id": "tre-mann",
+      "name": "Tre Mann",
+      "team": "cha",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4432819",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432819.png"
+    },
+    "liam-mcneeley": {
+      "id": "liam-mcneeley",
+      "name": "Liam McNeeley",
+      "team": "cha",
+      "jersey": "33",
+      "pos": "G",
+      "espnId": "5239590",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5239590.png"
+    },
+    "brandon-miller": {
+      "id": "brandon-miller",
+      "name": "Brandon Miller",
+      "team": "cha",
+      "jersey": "24",
+      "pos": "F",
+      "espnId": "4433287",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433287.png"
+    },
+    "antonio-reeves": {
+      "id": "antonio-reeves",
+      "name": "Antonio Reeves",
+      "team": "cha",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "4592686",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592686.png"
+    },
+    "tidjane-salaun": {
+      "id": "tidjane-salaun",
+      "name": "Tidjane Salaun",
+      "team": "cha",
+      "jersey": "31",
+      "pos": "F",
+      "espnId": "5211176",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5211176.png"
+    },
+    "xavier-tillman": {
+      "id": "xavier-tillman",
+      "name": "Xavier Tillman",
+      "team": "cha",
+      "jersey": "26",
+      "pos": "F",
+      "espnId": "4277964",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277964.png"
+    },
+    "coby-white": {
+      "id": "coby-white",
+      "name": "Coby White",
+      "team": "cha",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4395651",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395651.png"
+    },
+    "grant-williams": {
+      "id": "grant-williams",
+      "name": "Grant Williams",
+      "team": "cha",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "4066218",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066218.png"
+    },
+    "matas-buzelis": {
+      "id": "matas-buzelis",
+      "name": "Matas Buzelis",
+      "team": "chi",
+      "jersey": "14",
+      "pos": "F",
+      "espnId": "4711294",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4711294.png"
+    },
+    "zach-collins": {
+      "id": "zach-collins",
+      "name": "Zach Collins",
+      "team": "chi",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "4066650",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066650.png"
+    },
+    "rob-dillingham": {
+      "id": "rob-dillingham",
+      "name": "Rob Dillingham",
+      "team": "chi",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "4684275",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684275.png"
+    },
+    "noa-essengue": {
+      "id": "noa-essengue",
+      "name": "Noa Essengue",
+      "team": "chi",
+      "jersey": "24",
+      "pos": "F",
+      "espnId": "5242496",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5242496.png"
+    },
+    "josh-giddey": {
+      "id": "josh-giddey",
+      "name": "Josh Giddey",
+      "team": "chi",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4871145",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4871145.png"
+    },
+    "mouhamadou-gueye": {
+      "id": "mouhamadou-gueye",
+      "name": "Mouhamadou Gueye",
+      "team": "chi",
+      "jersey": "16",
+      "pos": "F",
+      "espnId": "4592933",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592933.png"
+    },
+    "tre-jones": {
+      "id": "tre-jones",
+      "name": "Tre Jones",
+      "team": "chi",
+      "jersey": "30",
+      "pos": "G",
+      "espnId": "4395626",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395626.png"
+    },
+    "yuki-kawamura": {
+      "id": "yuki-kawamura",
+      "name": "Yuki Kawamura",
+      "team": "chi",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "5159895",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5159895.png"
+    },
+    "mac-mcclung": {
+      "id": "mac-mcclung",
+      "name": "Mac McClung",
+      "team": "chi",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4397071",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397071.png"
+    },
+    "leonard-miller": {
+      "id": "leonard-miller",
+      "name": "Leonard Miller",
+      "team": "chi",
+      "jersey": "11",
+      "pos": "F",
+      "espnId": "5044385",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5044385.png"
+    },
+    "isaac-okoro": {
+      "id": "isaac-okoro",
+      "name": "Isaac Okoro",
+      "team": "chi",
+      "jersey": "35",
+      "pos": "F",
+      "espnId": "4432822",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432822.png"
+    },
+    "lachlan-olbrich": {
+      "id": "lachlan-olbrich",
+      "name": "Lachlan Olbrich",
+      "team": "chi",
+      "jersey": "47",
+      "pos": "C",
+      "espnId": "5107156",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107156.png"
+    },
+    "nick-richards": {
+      "id": "nick-richards",
+      "name": "Nick Richards",
+      "team": "chi",
+      "jersey": "13",
+      "pos": "C",
+      "espnId": "4278076",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278076.png"
+    },
+    "collin-sexton": {
+      "id": "collin-sexton",
+      "name": "Collin Sexton",
+      "team": "chi",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4277811",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277811.png"
+    },
+    "anfernee-simons": {
+      "id": "anfernee-simons",
+      "name": "Anfernee Simons",
+      "team": "chi",
+      "jersey": "22",
+      "pos": "G",
+      "espnId": "4351851",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4351851.png"
+    },
+    "jalen-smith": {
+      "id": "jalen-smith",
+      "name": "Jalen Smith",
+      "team": "chi",
+      "jersey": "25",
+      "pos": "F",
+      "espnId": "4397189",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397189.png"
+    },
+    "patrick-williams": {
+      "id": "patrick-williams",
+      "name": "Patrick Williams",
+      "team": "chi",
+      "jersey": "44",
+      "pos": "F",
+      "espnId": "4431687",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431687.png"
+    },
+    "guerschon-yabusele": {
+      "id": "guerschon-yabusele",
+      "name": "Guerschon Yabusele",
+      "team": "chi",
+      "jersey": "28",
+      "pos": "F",
+      "espnId": "4017844",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4017844.png"
+    },
+    "jarrett-allen": {
+      "id": "jarrett-allen",
+      "name": "Jarrett Allen",
+      "team": "cle",
+      "jersey": "31",
+      "pos": "C",
+      "espnId": "4066328",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066328.png"
+    },
+    "thomas-bryant": {
+      "id": "thomas-bryant",
+      "name": "Thomas Bryant",
+      "team": "cle",
+      "jersey": "3",
+      "pos": "C",
+      "espnId": "3934723",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934723.png"
+    },
+    "keon-ellis": {
+      "id": "keon-ellis",
+      "name": "Keon Ellis",
+      "team": "cle",
+      "jersey": "14",
+      "pos": "G",
+      "espnId": "4702177",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702177.png"
+    },
+    "tristan-enaruna": {
+      "id": "tristan-enaruna",
+      "name": "Tristan Enaruna",
+      "team": "cle",
+      "jersey": "21",
+      "pos": "F",
+      "espnId": "4431734",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431734.png"
+    },
+    "james-harden": {
+      "id": "james-harden",
+      "name": "James Harden",
+      "team": "cle",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "3992",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3992.png"
+    },
+    "sam-merrill": {
+      "id": "sam-merrill",
+      "name": "Sam Merrill",
+      "team": "cle",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4066757",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066757.png"
+    },
+    "riley-minix": {
+      "id": "riley-minix",
+      "name": "Riley Minix",
+      "team": "cle",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "5177362",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5177362.png"
+    },
+    "donovan-mitchell": {
+      "id": "donovan-mitchell",
+      "name": "Donovan Mitchell",
+      "team": "cle",
+      "jersey": "45",
+      "pos": "G",
+      "espnId": "3908809",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3908809.png"
+    },
+    "evan-mobley": {
+      "id": "evan-mobley",
+      "name": "Evan Mobley",
+      "team": "cle",
+      "jersey": "4",
+      "pos": "C",
+      "espnId": "4432158",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432158.png"
+    },
+    "larry-nance-jr": {
+      "id": "larry-nance-jr",
+      "name": "Larry Nance Jr.",
+      "team": "cle",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "2580365",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2580365.png"
+    },
+    "craig-porter-jr": {
+      "id": "craig-porter-jr",
+      "name": "Craig Porter Jr.",
+      "team": "cle",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "4701233",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701233.png"
+    },
+    "tyrese-proctor": {
+      "id": "tyrese-proctor",
+      "name": "Tyrese Proctor",
+      "team": "cle",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "5023693",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5023693.png"
+    },
+    "olivier-sarr": {
+      "id": "olivier-sarr",
+      "name": "Olivier Sarr",
+      "team": "cle",
+      "jersey": "33",
+      "pos": "F",
+      "espnId": "4278046",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278046.png"
+    },
+    "dennis-schroder": {
+      "id": "dennis-schroder",
+      "name": "Dennis Schroder",
+      "team": "cle",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "3032979",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3032979.png"
+    },
+    "max-strus": {
+      "id": "max-strus",
+      "name": "Max Strus",
+      "team": "cle",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4065778",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065778.png"
+    },
+    "naeqwan-tomlin": {
+      "id": "naeqwan-tomlin",
+      "name": "Nae'Qwan Tomlin",
+      "team": "cle",
+      "jersey": "35",
+      "pos": "F",
+      "espnId": "5106268",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106268.png"
+    },
+    "jaylon-tyson": {
+      "id": "jaylon-tyson",
+      "name": "Jaylon Tyson",
+      "team": "cle",
+      "jersey": "20",
+      "pos": "G",
+      "espnId": "4683747",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683747.png"
+    },
+    "dean-wade": {
+      "id": "dean-wade",
+      "name": "Dean Wade",
+      "team": "cle",
+      "jersey": "32",
+      "pos": "F",
+      "espnId": "3912848",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3912848.png"
+    },
+    "marvin-bagley-iii": {
+      "id": "marvin-bagley-iii",
+      "name": "Marvin Bagley III",
+      "team": "dal",
+      "jersey": "35",
+      "pos": "F",
+      "espnId": "4277848",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277848.png"
+    },
+    "max-christie": {
+      "id": "max-christie",
+      "name": "Max Christie",
+      "team": "dal",
+      "jersey": "00",
+      "pos": "G",
+      "espnId": "4432582",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432582.png"
+    },
+    "moussa-cisse": {
+      "id": "moussa-cisse",
+      "name": "Moussa Cisse",
+      "team": "dal",
+      "jersey": "30",
+      "pos": "C",
+      "espnId": "4701208",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701208.png"
+    },
+    "cooper-flagg": {
+      "id": "cooper-flagg",
+      "name": "Cooper Flagg",
+      "team": "dal",
+      "jersey": "32",
+      "pos": "F",
+      "espnId": "5041939",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5041939.png"
+    },
+    "daniel-gafford": {
+      "id": "daniel-gafford",
+      "name": "Daniel Gafford",
+      "team": "dal",
+      "jersey": "21",
+      "pos": "F",
+      "espnId": "4278049",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278049.png"
+    },
+    "kyrie-irving": {
+      "id": "kyrie-irving",
+      "name": "Kyrie Irving",
+      "team": "dal",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "6442",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6442.png"
+    },
+    "aj-johnson": {
+      "id": "aj-johnson",
+      "name": "AJ Johnson",
+      "team": "dal",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "5170947",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5170947.png"
+    },
+    "dereck-lively-ii": {
+      "id": "dereck-lively-ii",
+      "name": "Dereck Lively II",
+      "team": "dal",
+      "jersey": "2",
+      "pos": "C",
+      "espnId": "4683688",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683688.png"
+    },
+    "naji-marshall": {
+      "id": "naji-marshall",
+      "name": "Naji Marshall",
+      "team": "dal",
+      "jersey": "13",
+      "pos": "F",
+      "espnId": "4278594",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278594.png"
+    },
+    "caleb-martin": {
+      "id": "caleb-martin",
+      "name": "Caleb Martin",
+      "team": "dal",
+      "jersey": "16",
+      "pos": "F",
+      "espnId": "3138160",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3138160.png"
+    },
+    "khris-middleton": {
+      "id": "khris-middleton",
+      "name": "Khris Middleton",
+      "team": "dal",
+      "jersey": "20",
+      "pos": "F",
+      "espnId": "6609",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6609.png"
+    },
+    "ryan-nembhard": {
+      "id": "ryan-nembhard",
+      "name": "Ryan Nembhard",
+      "team": "dal",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "4433629",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433629.png"
+    },
+    "john-poulakidas": {
+      "id": "john-poulakidas",
+      "name": "John Poulakidas",
+      "team": "dal",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "4898238",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4898238.png"
+    },
+    "dwight-powell": {
+      "id": "dwight-powell",
+      "name": "Dwight Powell",
+      "team": "dal",
+      "jersey": "7",
+      "pos": "F",
+      "espnId": "2531367",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2531367.png"
+    },
+    "tyler-smith": {
+      "id": "tyler-smith",
+      "name": "Tyler Smith",
+      "team": "dal",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "5167876",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5167876.png"
+    },
+    "klay-thompson": {
+      "id": "klay-thompson",
+      "name": "Klay Thompson",
+      "team": "dal",
+      "jersey": "31",
+      "pos": "G",
+      "espnId": "6475",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6475.png"
+    },
+    "p-j-washington": {
+      "id": "p-j-washington",
+      "name": "P.J. Washington",
+      "team": "dal",
+      "jersey": "25",
+      "pos": "F",
+      "espnId": "4278078",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278078.png"
+    },
+    "brandon-williams": {
+      "id": "brandon-williams",
+      "name": "Brandon Williams",
+      "team": "dal",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "4397040",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397040.png"
+    },
+    "christian-braun": {
+      "id": "christian-braun",
+      "name": "Christian Braun",
+      "team": "den",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "4431767",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431767.png"
+    },
+    "bruce-brown": {
+      "id": "bruce-brown",
+      "name": "Bruce Brown",
+      "team": "den",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "4065670",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065670.png"
+    },
+    "aaron-gordon": {
+      "id": "aaron-gordon",
+      "name": "Aaron Gordon",
+      "team": "den",
+      "jersey": "32",
+      "pos": "F",
+      "espnId": "3064290",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064290.png"
+    },
+    "tim-hardaway-jr": {
+      "id": "tim-hardaway-jr",
+      "name": "Tim Hardaway Jr.",
+      "team": "den",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "2528210",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2528210.png"
+    },
+    "daron-holmes-ii": {
+      "id": "daron-holmes-ii",
+      "name": "DaRon Holmes II",
+      "team": "den",
+      "jersey": "14",
+      "pos": "F",
+      "espnId": "4433607",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433607.png"
+    },
+    "cameron-johnson": {
+      "id": "cameron-johnson",
+      "name": "Cameron Johnson",
+      "team": "den",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "3138196",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3138196.png"
+    },
+    "nikola-jokic": {
+      "id": "nikola-jokic",
+      "name": "Nikola Jokic",
+      "team": "den",
+      "jersey": "15",
+      "pos": "C",
+      "espnId": "3112335",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3112335.png"
+    },
+    "curtis-jones": {
+      "id": "curtis-jones",
+      "name": "Curtis Jones",
+      "team": "den",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "4898369",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4898369.png"
+    },
+    "spencer-jones": {
+      "id": "spencer-jones",
+      "name": "Spencer Jones",
+      "team": "den",
+      "jersey": "21",
+      "pos": "F",
+      "espnId": "4592427",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592427.png"
+    },
+    "tyus-jones": {
+      "id": "tyus-jones",
+      "name": "Tyus Jones",
+      "team": "den",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "3135046",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3135046.png"
+    },
+    "jamal-murray": {
+      "id": "jamal-murray",
+      "name": "Jamal Murray",
+      "team": "den",
+      "jersey": "27",
+      "pos": "G",
+      "espnId": "3936299",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3936299.png"
+    },
+    "zeke-nnaji": {
+      "id": "zeke-nnaji",
+      "name": "Zeke Nnaji",
+      "team": "den",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "4431690",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431690.png"
+    },
+    "jalen-pickett": {
+      "id": "jalen-pickett",
+      "name": "Jalen Pickett",
+      "team": "den",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "4398390",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4398390.png"
+    },
+    "david-roddy": {
+      "id": "david-roddy",
+      "name": "David Roddy",
+      "team": "den",
+      "jersey": "45",
+      "pos": "F",
+      "espnId": "4593041",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593041.png"
+    },
+    "kj-simpson": {
+      "id": "kj-simpson",
+      "name": "KJ Simpson",
+      "team": "den",
+      "jersey": "25",
+      "pos": "G",
+      "espnId": "4683834",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683834.png"
+    },
+    "julian-strawther": {
+      "id": "julian-strawther",
+      "name": "Julian Strawther",
+      "team": "den",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4432181",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432181.png"
+    },
+    "jonas-valanciunas": {
+      "id": "jonas-valanciunas",
+      "name": "Jonas Valanciunas",
+      "team": "den",
+      "jersey": "17",
+      "pos": "C",
+      "espnId": "6477",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6477.png"
+    },
+    "peyton-watson": {
+      "id": "peyton-watson",
+      "name": "Peyton Watson",
+      "team": "den",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "4576087",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4576087.png"
+    },
+    "cade-cunningham": {
+      "id": "cade-cunningham",
+      "name": "Cade Cunningham",
+      "team": "det",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4432166",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432166.png"
+    },
+    "jalen-duren": {
+      "id": "jalen-duren",
+      "name": "Jalen Duren",
+      "team": "det",
+      "jersey": "0",
+      "pos": "C",
+      "espnId": "4433621",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433621.png"
+    },
+    "javonte-green": {
+      "id": "javonte-green",
+      "name": "Javonte Green",
+      "team": "det",
+      "jersey": "31",
+      "pos": "G",
+      "espnId": "2596112",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2596112.png"
+    },
+    "tobias-harris": {
+      "id": "tobias-harris",
+      "name": "Tobias Harris",
+      "team": "det",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "6440",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6440.png"
+    },
+    "ronald-holland-ii": {
+      "id": "ronald-holland-ii",
+      "name": "Ronald Holland II",
+      "team": "det",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "4683771",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683771.png"
+    },
+    "kevin-huerter": {
+      "id": "kevin-huerter",
+      "name": "Kevin Huerter",
+      "team": "det",
+      "jersey": "27",
+      "pos": "G",
+      "espnId": "4066372",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066372.png"
+    },
+    "daniss-jenkins": {
+      "id": "daniss-jenkins",
+      "name": "Daniss Jenkins",
+      "team": "det",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "5107199",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107199.png"
+    },
+    "isaac-jones": {
+      "id": "isaac-jones",
+      "name": "Isaac Jones",
+      "team": "det",
+      "jersey": "3",
+      "pos": "C",
+      "espnId": "5107818",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107818.png"
+    },
+    "chaz-lanier": {
+      "id": "chaz-lanier",
+      "name": "Chaz Lanier",
+      "team": "det",
+      "jersey": "20",
+      "pos": "G",
+      "espnId": "4700852",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4700852.png"
+    },
+    "caris-levert": {
+      "id": "caris-levert",
+      "name": "Caris LeVert",
+      "team": "det",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "2991043",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991043.png"
+    },
+    "wendell-moore-jr": {
+      "id": "wendell-moore-jr",
+      "name": "Wendell Moore Jr.",
+      "team": "det",
+      "jersey": "14",
+      "pos": "F",
+      "espnId": "4592187",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592187.png"
+    },
+    "paul-reed": {
+      "id": "paul-reed",
+      "name": "Paul Reed",
+      "team": "det",
+      "jersey": "7",
+      "pos": "F",
+      "espnId": "4278562",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278562.png"
+    },
+    "duncan-robinson": {
+      "id": "duncan-robinson",
+      "name": "Duncan Robinson",
+      "team": "det",
+      "jersey": "55",
+      "pos": "F",
+      "espnId": "3157465",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3157465.png"
+    },
+    "marcus-sasser": {
+      "id": "marcus-sasser",
+      "name": "Marcus Sasser",
+      "team": "det",
+      "jersey": "25",
+      "pos": "G",
+      "espnId": "4432107",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432107.png"
+    },
+    "tolu-smith": {
+      "id": "tolu-smith",
+      "name": "Tolu Smith",
+      "team": "det",
+      "jersey": "35",
+      "pos": "F",
+      "espnId": "4397882",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397882.png"
+    },
+    "isaiah-stewart": {
+      "id": "isaiah-stewart",
+      "name": "Isaiah Stewart",
+      "team": "det",
+      "jersey": "28",
+      "pos": "F",
+      "espnId": "4432810",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432810.png"
+    },
+    "ausar-thompson": {
+      "id": "ausar-thompson",
+      "name": "Ausar Thompson",
+      "team": "det",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "4684742",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684742.png"
+    },
+    "charles-bassey": {
+      "id": "charles-bassey",
+      "name": "Charles Bassey",
+      "team": "gs",
+      "jersey": "28",
+      "pos": "C",
+      "espnId": "4397886",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397886.png"
+    },
+    "jimmy-butler-iii": {
+      "id": "jimmy-butler-iii",
+      "name": "Jimmy Butler III",
+      "team": "gs",
+      "jersey": "10",
+      "pos": "F",
+      "espnId": "6430",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6430.png"
+    },
+    "lj-cryer": {
+      "id": "lj-cryer",
+      "name": "LJ Cryer",
+      "team": "gs",
+      "jersey": "18",
+      "pos": "G",
+      "espnId": "4433149",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433149.png"
+    },
+    "seth-curry": {
+      "id": "seth-curry",
+      "name": "Seth Curry",
+      "team": "gs",
+      "jersey": "31",
+      "pos": "G",
+      "espnId": "2326307",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2326307.png"
+    },
+    "stephen-curry": {
+      "id": "stephen-curry",
+      "name": "Stephen Curry",
+      "team": "gs",
+      "jersey": "30",
+      "pos": "G",
+      "espnId": "3975",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3975.png"
+    },
+    "draymond-green": {
+      "id": "draymond-green",
+      "name": "Draymond Green",
+      "team": "gs",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "6589",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6589.png"
+    },
+    "al-horford": {
+      "id": "al-horford",
+      "name": "Al Horford",
+      "team": "gs",
+      "jersey": "20",
+      "pos": "C",
+      "espnId": "3213",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3213.png"
+    },
+    "malevy-leons": {
+      "id": "malevy-leons",
+      "name": "Malevy Leons",
+      "team": "gs",
+      "jersey": "33",
+      "pos": "F",
+      "espnId": "4897449",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4897449.png"
+    },
+    "deanthony-melton": {
+      "id": "deanthony-melton",
+      "name": "De'Anthony Melton",
+      "team": "gs",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "4066436",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066436.png"
+    },
+    "moses-moody": {
+      "id": "moses-moody",
+      "name": "Moses Moody",
+      "team": "gs",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4432171",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432171.png"
+    },
+    "gary-payton-ii": {
+      "id": "gary-payton-ii",
+      "name": "Gary Payton II",
+      "team": "gs",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "3134903",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134903.png"
+    },
+    "brandin-podziemski": {
+      "id": "brandin-podziemski",
+      "name": "Brandin Podziemski",
+      "team": "gs",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4709138",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4709138.png"
+    },
+    "kristaps-porzingis": {
+      "id": "kristaps-porzingis",
+      "name": "Kristaps Porzingis",
+      "team": "gs",
+      "jersey": "7",
+      "pos": "C",
+      "espnId": "3102531",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102531.png"
+    },
+    "quinten-post": {
+      "id": "quinten-post",
+      "name": "Quinten Post",
+      "team": "gs",
+      "jersey": "21",
+      "pos": "C",
+      "espnId": "4593016",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593016.png"
+    },
+    "will-richard": {
+      "id": "will-richard",
+      "name": "Will Richard",
+      "team": "gs",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4897262",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4897262.png"
+    },
+    "gui-santos": {
+      "id": "gui-santos",
+      "name": "Gui Santos",
+      "team": "gs",
+      "jersey": "15",
+      "pos": "F",
+      "espnId": "4997536",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997536.png"
+    },
+    "pat-spencer": {
+      "id": "pat-spencer",
+      "name": "Pat Spencer",
+      "team": "gs",
+      "jersey": "61",
+      "pos": "G",
+      "espnId": "4592714",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592714.png"
+    },
+    "nate-williams": {
+      "id": "nate-williams",
+      "name": "Nate Williams",
+      "team": "gs",
+      "jersey": "19",
+      "pos": "G",
+      "espnId": "4397821",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397821.png"
+    },
+    "omer-yurtseven": {
+      "id": "omer-yurtseven",
+      "name": "Omer Yurtseven",
+      "team": "gs",
+      "jersey": "77",
+      "pos": "C",
+      "espnId": "3074213",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3074213.png"
+    },
+    "steven-adams": {
+      "id": "steven-adams",
+      "name": "Steven Adams",
+      "team": "hou",
+      "jersey": "12",
+      "pos": "C",
+      "espnId": "2991235",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991235.png"
+    },
+    "clint-capela": {
+      "id": "clint-capela",
+      "name": "Clint Capela",
+      "team": "hou",
+      "jersey": "30",
+      "pos": "C",
+      "espnId": "3102529",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102529.png"
+    },
+    "isaiah-crawford": {
+      "id": "isaiah-crawford",
+      "name": "Isaiah Crawford",
+      "team": "hou",
+      "jersey": "27",
+      "pos": "F",
+      "espnId": "4592857",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592857.png"
+    },
+    "jd-davison": {
+      "id": "jd-davison",
+      "name": "JD Davison",
+      "team": "hou",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4576085",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4576085.png"
+    },
+    "kevin-durant": {
+      "id": "kevin-durant",
+      "name": "Kevin Durant",
+      "team": "hou",
+      "jersey": "7",
+      "pos": "F",
+      "espnId": "3202",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3202.png"
+    },
+    "tari-eason": {
+      "id": "tari-eason",
+      "name": "Tari Eason",
+      "team": "hou",
+      "jersey": "17",
+      "pos": "F",
+      "espnId": "4433192",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433192.png"
+    },
+    "dorian-finney-smith": {
+      "id": "dorian-finney-smith",
+      "name": "Dorian Finney-Smith",
+      "team": "hou",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "2578185",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2578185.png"
+    },
+    "jeff-green": {
+      "id": "jeff-green",
+      "name": "Jeff Green",
+      "team": "hou",
+      "jersey": "32",
+      "pos": "F",
+      "espnId": "3209",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3209.png"
+    },
+    "aaron-holiday": {
+      "id": "aaron-holiday",
+      "name": "Aaron Holiday",
+      "team": "hou",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "3922230",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3922230.png"
+    },
+    "tristen-newton": {
+      "id": "tristen-newton",
+      "name": "Tristen Newton",
+      "team": "hou",
+      "jersey": "13",
+      "pos": "G",
+      "espnId": "4592965",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592965.png"
+    },
+    "josh-okogie": {
+      "id": "josh-okogie",
+      "name": "Josh Okogie",
+      "team": "hou",
+      "jersey": "20",
+      "pos": "G",
+      "espnId": "4065663",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065663.png"
+    },
+    "alperen-sengun": {
+      "id": "alperen-sengun",
+      "name": "Alperen Sengun",
+      "team": "hou",
+      "jersey": "28",
+      "pos": "C",
+      "espnId": "4871144",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4871144.png"
+    },
+    "reed-sheppard": {
+      "id": "reed-sheppard",
+      "name": "Reed Sheppard",
+      "team": "hou",
+      "jersey": "15",
+      "pos": "G",
+      "espnId": "4711272",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4711272.png"
+    },
+    "jabari-smith-jr": {
+      "id": "jabari-smith-jr",
+      "name": "Jabari Smith Jr.",
+      "team": "hou",
+      "jersey": "10",
+      "pos": "F",
+      "espnId": "4432639",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432639.png"
+    },
+    "jaesean-tate": {
+      "id": "jaesean-tate",
+      "name": "Jae'Sean Tate",
+      "team": "hou",
+      "jersey": "8",
+      "pos": "F",
+      "espnId": "3136777",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136777.png"
+    },
+    "amen-thompson": {
+      "id": "amen-thompson",
+      "name": "Amen Thompson",
+      "team": "hou",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "4684740",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684740.png"
+    },
+    "fred-vanvleet": {
+      "id": "fred-vanvleet",
+      "name": "Fred VanVleet",
+      "team": "hou",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "2991230",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991230.png"
+    },
+    "kobe-brown": {
+      "id": "kobe-brown",
+      "name": "Kobe Brown",
+      "team": "ind",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "4431752",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431752.png"
+    },
+    "johnny-furphy": {
+      "id": "johnny-furphy",
+      "name": "Johnny Furphy",
+      "team": "ind",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "5157066",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5157066.png"
+    },
+    "tyrese-haliburton": {
+      "id": "tyrese-haliburton",
+      "name": "Tyrese Haliburton",
+      "team": "ind",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "4396993",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396993.png"
+    },
+    "jay-huff": {
+      "id": "jay-huff",
+      "name": "Jay Huff",
+      "team": "ind",
+      "jersey": "32",
+      "pos": "C",
+      "espnId": "4065731",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065731.png"
+    },
+    "quenton-jackson": {
+      "id": "quenton-jackson",
+      "name": "Quenton Jackson",
+      "team": "ind",
+      "jersey": "29",
+      "pos": "G",
+      "espnId": "4592829",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592829.png"
+    },
+    "kam-jones": {
+      "id": "kam-jones",
+      "name": "Kam Jones",
+      "team": "ind",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "4697268",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4697268.png"
+    },
+    "t-j-mcconnell": {
+      "id": "t-j-mcconnell",
+      "name": "T.J. McConnell",
+      "team": "ind",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "2530530",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2530530.png"
+    },
+    "andrew-nembhard": {
+      "id": "andrew-nembhard",
+      "name": "Andrew Nembhard",
+      "team": "ind",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4395712",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395712.png"
+    },
+    "aaron-nesmith": {
+      "id": "aaron-nesmith",
+      "name": "Aaron Nesmith",
+      "team": "ind",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4396909",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396909.png"
+    },
+    "taelon-peter": {
+      "id": "taelon-peter",
+      "name": "Taelon Peter",
+      "team": "ind",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4703421",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4703421.png"
+    },
+    "micah-potter": {
+      "id": "micah-potter",
+      "name": "Micah Potter",
+      "team": "ind",
+      "jersey": "11",
+      "pos": "C",
+      "espnId": "4066399",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066399.png"
+    },
+    "ben-sheppard": {
+      "id": "ben-sheppard",
+      "name": "Ben Sheppard",
+      "team": "ind",
+      "jersey": "26",
+      "pos": "G",
+      "espnId": "4433076",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433076.png"
+    },
+    "pascal-siakam": {
+      "id": "pascal-siakam",
+      "name": "Pascal Siakam",
+      "team": "ind",
+      "jersey": "43",
+      "pos": "F",
+      "espnId": "3149673",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3149673.png"
+    },
+    "jalen-slawson": {
+      "id": "jalen-slawson",
+      "name": "Jalen Slawson",
+      "team": "ind",
+      "jersey": "18",
+      "pos": "F",
+      "espnId": "4398207",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4398207.png"
+    },
+    "ethan-thompson": {
+      "id": "ethan-thompson",
+      "name": "Ethan Thompson",
+      "team": "ind",
+      "jersey": "55",
+      "pos": "G",
+      "espnId": "4278516",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278516.png"
+    },
+    "obi-toppin": {
+      "id": "obi-toppin",
+      "name": "Obi Toppin",
+      "team": "ind",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "4278355",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278355.png"
+    },
+    "jarace-walker": {
+      "id": "jarace-walker",
+      "name": "Jarace Walker",
+      "team": "ind",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "5106060",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106060.png"
+    },
+    "ivica-zubac": {
+      "id": "ivica-zubac",
+      "name": "Ivica Zubac",
+      "team": "ind",
+      "jersey": "40",
+      "pos": "C",
+      "espnId": "4017837",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4017837.png"
+    },
+    "nicolas-batum": {
+      "id": "nicolas-batum",
+      "name": "Nicolas Batum",
+      "team": "lac",
+      "jersey": "33",
+      "pos": "F",
+      "espnId": "3416",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3416.png"
+    },
+    "bradley-beal": {
+      "id": "bradley-beal",
+      "name": "Bradley Beal",
+      "team": "lac",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "6580",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6580.png"
+    },
+    "bogdan-bogdanovic": {
+      "id": "bogdan-bogdanovic",
+      "name": "Bogdan Bogdanovic",
+      "team": "lac",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "3037789",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3037789.png"
+    },
+    "cam-christie": {
+      "id": "cam-christie",
+      "name": "Cam Christie",
+      "team": "lac",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "4845363",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4845363.png"
+    },
+    "john-collins": {
+      "id": "john-collins",
+      "name": "John Collins",
+      "team": "lac",
+      "jersey": "20",
+      "pos": "F",
+      "espnId": "3908845",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3908845.png"
+    },
+    "kris-dunn": {
+      "id": "kris-dunn",
+      "name": "Kris Dunn",
+      "team": "lac",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "2991139",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991139.png"
+    },
+    "darius-garland": {
+      "id": "darius-garland",
+      "name": "Darius Garland",
+      "team": "lac",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "4396907",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396907.png"
+    },
+    "isaiah-jackson": {
+      "id": "isaiah-jackson",
+      "name": "Isaiah Jackson",
+      "team": "lac",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "4432170",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432170.png"
+    },
+    "derrick-jones-jr": {
+      "id": "derrick-jones-jr",
+      "name": "Derrick Jones Jr.",
+      "team": "lac",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "3936099",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3936099.png"
+    },
+    "kawhi-leonard": {
+      "id": "kawhi-leonard",
+      "name": "Kawhi Leonard",
+      "team": "lac",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "6450",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6450.png"
+    },
+    "brook-lopez": {
+      "id": "brook-lopez",
+      "name": "Brook Lopez",
+      "team": "lac",
+      "jersey": "11",
+      "pos": "C",
+      "espnId": "3448",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3448.png"
+    },
+    "bennedict-mathurin": {
+      "id": "bennedict-mathurin",
+      "name": "Bennedict Mathurin",
+      "team": "lac",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "4683634",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683634.png"
+    },
+    "jordan-miller": {
+      "id": "jordan-miller",
+      "name": "Jordan Miller",
+      "team": "lac",
+      "jersey": "22",
+      "pos": "G",
+      "espnId": "4396818",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396818.png"
+    },
+    "yanic-konan-niederhauser": {
+      "id": "yanic-konan-niederhauser",
+      "name": "Yanic Konan Niederhauser",
+      "team": "lac",
+      "jersey": "14",
+      "pos": "C",
+      "espnId": "5108024",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5108024.png"
+    },
+    "norchad-omier": {
+      "id": "norchad-omier",
+      "name": "Norchad Omier",
+      "team": "lac",
+      "jersey": "55",
+      "pos": "F",
+      "espnId": "4702134",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702134.png"
+    },
+    "sean-pedulla": {
+      "id": "sean-pedulla",
+      "name": "Sean Pedulla",
+      "team": "lac",
+      "jersey": "00",
+      "pos": "G",
+      "espnId": "4709131",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4709131.png"
+    },
+    "kobe-sanders": {
+      "id": "kobe-sanders",
+      "name": "Kobe Sanders",
+      "team": "lac",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4702352",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702352.png"
+    },
+    "tyty-washington-jr": {
+      "id": "tyty-washington-jr",
+      "name": "TyTy Washington Jr.",
+      "team": "lac",
+      "jersey": "15",
+      "pos": "G",
+      "espnId": "4683749",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683749.png"
+    },
+    "deandre-ayton": {
+      "id": "deandre-ayton",
+      "name": "Deandre Ayton",
+      "team": "lal",
+      "jersey": "5",
+      "pos": "C",
+      "espnId": "4278129",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278129.png"
+    },
+    "luka-doncic": {
+      "id": "luka-doncic",
+      "name": "Luka Doncic",
+      "team": "lal",
+      "jersey": "77",
+      "pos": "G",
+      "espnId": "3945274",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3945274.png"
+    },
+    "rui-hachimura": {
+      "id": "rui-hachimura",
+      "name": "Rui Hachimura",
+      "team": "lal",
+      "jersey": "28",
+      "pos": "F",
+      "espnId": "4066648",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066648.png"
+    },
+    "jaxson-hayes": {
+      "id": "jaxson-hayes",
+      "name": "Jaxson Hayes",
+      "team": "lal",
+      "jersey": "11",
+      "pos": "C",
+      "espnId": "4397077",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397077.png"
+    },
+    "bronny-james": {
+      "id": "bronny-james",
+      "name": "Bronny James",
+      "team": "lal",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "4683774",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683774.png"
+    },
+    "lebron-james": {
+      "id": "lebron-james",
+      "name": "LeBron James",
+      "team": "lal",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "1966",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1966.png"
+    },
+    "luke-kennard": {
+      "id": "luke-kennard",
+      "name": "Luke Kennard",
+      "team": "lal",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "3913174",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3913174.png"
+    },
+    "maxi-kleber": {
+      "id": "maxi-kleber",
+      "name": "Maxi Kleber",
+      "team": "lal",
+      "jersey": "14",
+      "pos": "F",
+      "espnId": "2960236",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2960236.png"
+    },
+    "dalton-knecht": {
+      "id": "dalton-knecht",
+      "name": "Dalton Knecht",
+      "team": "lal",
+      "jersey": "4",
+      "pos": "F",
+      "espnId": "4897943",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4897943.png"
+    },
+    "jake-laravia": {
+      "id": "jake-laravia",
+      "name": "Jake LaRavia",
+      "team": "lal",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "4592691",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592691.png"
+    },
+    "chris-manon": {
+      "id": "chris-manon",
+      "name": "Chris Manon",
+      "team": "lal",
+      "jersey": "30",
+      "pos": "G",
+      "espnId": "4702972",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702972.png"
+    },
+    "austin-reaves": {
+      "id": "austin-reaves",
+      "name": "Austin Reaves",
+      "team": "lal",
+      "jersey": "15",
+      "pos": "G",
+      "espnId": "4066457",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066457.png"
+    },
+    "marcus-smart": {
+      "id": "marcus-smart",
+      "name": "Marcus Smart",
+      "team": "lal",
+      "jersey": "36",
+      "pos": "G",
+      "espnId": "2990992",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990992.png"
+    },
+    "nick-smith-jr": {
+      "id": "nick-smith-jr",
+      "name": "Nick Smith Jr.",
+      "team": "lal",
+      "jersey": "20",
+      "pos": "G",
+      "espnId": "4683686",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683686.png"
+    },
+    "adou-thiero": {
+      "id": "adou-thiero",
+      "name": "Adou Thiero",
+      "team": "lal",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "5060631",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5060631.png"
+    },
+    "drew-timme": {
+      "id": "drew-timme",
+      "name": "Drew Timme",
+      "team": "lal",
+      "jersey": "17",
+      "pos": "F",
+      "espnId": "4431695",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431695.png"
+    },
+    "jarred-vanderbilt": {
+      "id": "jarred-vanderbilt",
+      "name": "Jarred Vanderbilt",
+      "team": "lal",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "4278077",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278077.png"
+    },
+    "santi-aldama": {
+      "id": "santi-aldama",
+      "name": "Santi Aldama",
+      "team": "mem",
+      "jersey": "7",
+      "pos": "F",
+      "espnId": "4593125",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593125.png"
+    },
+    "adama-bal": {
+      "id": "adama-bal",
+      "name": "Adama Bal",
+      "team": "mem",
+      "jersey": "72",
+      "pos": "G",
+      "espnId": "4896365",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4896365.png"
+    },
+    "kentavious-caldwell-pope": {
+      "id": "kentavious-caldwell-pope",
+      "name": "Kentavious Caldwell-Pope",
+      "team": "mem",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "2581018",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2581018.png"
+    },
+    "brandon-clarke": {
+      "id": "brandon-clarke",
+      "name": "Brandon Clarke",
+      "team": "mem",
+      "jersey": "15",
+      "pos": "F",
+      "espnId": "3906665",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3906665.png"
+    },
+    "walter-clayton-jr": {
+      "id": "walter-clayton-jr",
+      "name": "Walter Clayton Jr.",
+      "team": "mem",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4896372",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4896372.png"
+    },
+    "cedric-coward": {
+      "id": "cedric-coward",
+      "name": "Cedric Coward",
+      "team": "mem",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "4903027",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4903027.png"
+    },
+    "zach-edey": {
+      "id": "zach-edey",
+      "name": "Zach Edey",
+      "team": "mem",
+      "jersey": "14",
+      "pos": "C",
+      "espnId": "4600663",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4600663.png"
+    },
+    "taj-gibson": {
+      "id": "taj-gibson",
+      "name": "Taj Gibson",
+      "team": "mem",
+      "jersey": "67",
+      "pos": "F",
+      "espnId": "3986",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3986.png"
+    },
+    "taylor-hendricks": {
+      "id": "taylor-hendricks",
+      "name": "Taylor Hendricks",
+      "team": "mem",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "4684806",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684806.png"
+    },
+    "gg-jackson": {
+      "id": "gg-jackson",
+      "name": "GG Jackson",
+      "team": "mem",
+      "jersey": "45",
+      "pos": "F",
+      "espnId": "5105550",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105550.png"
+    },
+    "ty-jerome": {
+      "id": "ty-jerome",
+      "name": "Ty Jerome",
+      "team": "mem",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4065733",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065733.png"
+    },
+    "jahmai-mashack": {
+      "id": "jahmai-mashack",
+      "name": "Jahmai Mashack",
+      "team": "mem",
+      "jersey": "21",
+      "pos": "G",
+      "espnId": "4683934",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683934.png"
+    },
+    "ja-morant": {
+      "id": "ja-morant",
+      "name": "Ja Morant",
+      "team": "mem",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "4279888",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4279888.png"
+    },
+    "toby-okani": {
+      "id": "toby-okani",
+      "name": "Toby Okani",
+      "team": "mem",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "4700873",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4700873.png"
+    },
+    "scotty-pippen-jr": {
+      "id": "scotty-pippen-jr",
+      "name": "Scotty Pippen Jr.",
+      "team": "mem",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "4431785",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431785.png"
+    },
+    "olivier-maxence-prosper": {
+      "id": "olivier-maxence-prosper",
+      "name": "Olivier-Maxence Prosper",
+      "team": "mem",
+      "jersey": "18",
+      "pos": "F",
+      "espnId": "4595400",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4595400.png"
+    },
+    "rayan-rupert": {
+      "id": "rayan-rupert",
+      "name": "Rayan Rupert",
+      "team": "mem",
+      "jersey": "21",
+      "pos": "G",
+      "espnId": "5099752",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5099752.png"
+    },
+    "javon-small": {
+      "id": "javon-small",
+      "name": "Javon Small",
+      "team": "mem",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "4781746",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4781746.png"
+    },
+    "cam-spencer": {
+      "id": "cam-spencer",
+      "name": "Cam Spencer",
+      "team": "mem",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "4433083",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433083.png"
+    },
+    "jaylen-wells": {
+      "id": "jaylen-wells",
+      "name": "Jaylen Wells",
+      "team": "mem",
+      "jersey": "0",
+      "pos": "F",
+      "espnId": "5112087",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5112087.png"
+    },
+    "dariq-whitehead": {
+      "id": "dariq-whitehead",
+      "name": "Dariq Whitehead",
+      "team": "mem",
+      "jersey": "0",
+      "pos": "F",
+      "espnId": "4432735",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432735.png"
+    },
+    "lucas-williamson": {
+      "id": "lucas-williamson",
+      "name": "Lucas Williamson",
+      "team": "mem",
+      "jersey": "55",
+      "pos": "G",
+      "espnId": "4279147",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4279147.png"
+    },
+    "bam-adebayo": {
+      "id": "bam-adebayo",
+      "name": "Bam Adebayo",
+      "team": "mia",
+      "jersey": "13",
+      "pos": "C",
+      "espnId": "4066261",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066261.png"
+    },
+    "simone-fontecchio": {
+      "id": "simone-fontecchio",
+      "name": "Simone Fontecchio",
+      "team": "mia",
+      "jersey": "0",
+      "pos": "F",
+      "espnId": "3899664",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3899664.png"
+    },
+    "myron-gardner": {
+      "id": "myron-gardner",
+      "name": "Myron Gardner",
+      "team": "mia",
+      "jersey": "15",
+      "pos": "F",
+      "espnId": "4431772",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431772.png"
+    },
+    "vladislav-goldin": {
+      "id": "vladislav-goldin",
+      "name": "Vladislav Goldin",
+      "team": "mia",
+      "jersey": "50",
+      "pos": "C",
+      "espnId": "4700818",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4700818.png"
+    },
+    "tyler-herro": {
+      "id": "tyler-herro",
+      "name": "Tyler Herro",
+      "team": "mia",
+      "jersey": "14",
+      "pos": "G",
+      "espnId": "4395725",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395725.png"
+    },
+    "kasparas-jakucionis": {
+      "id": "kasparas-jakucionis",
+      "name": "Kasparas Jakucionis",
+      "team": "mia",
+      "jersey": "25",
+      "pos": "G",
+      "espnId": "5214640",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5214640.png"
+    },
+    "jaime-jaquez-jr": {
+      "id": "jaime-jaquez-jr",
+      "name": "Jaime Jaquez Jr.",
+      "team": "mia",
+      "jersey": "11",
+      "pos": "F",
+      "espnId": "4432848",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432848.png"
+    },
+    "keshad-johnson": {
+      "id": "keshad-johnson",
+      "name": "Keshad Johnson",
+      "team": "mia",
+      "jersey": "16",
+      "pos": "F",
+      "espnId": "4431786",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431786.png"
+    },
+    "nikola-jovic": {
+      "id": "nikola-jovic",
+      "name": "Nikola Jovic",
+      "team": "mia",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "4997528",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997528.png"
+    },
+    "trevor-keels": {
+      "id": "trevor-keels",
+      "name": "Trevor Keels",
+      "team": "mia",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "4432645",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432645.png"
+    },
+    "pelle-larsson": {
+      "id": "pelle-larsson",
+      "name": "Pelle Larsson",
+      "team": "mia",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "4601025",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4601025.png"
+    },
+    "davion-mitchell": {
+      "id": "davion-mitchell",
+      "name": "Davion Mitchell",
+      "team": "mia",
+      "jersey": "45",
+      "pos": "G",
+      "espnId": "4278053",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278053.png"
+    },
+    "norman-powell": {
+      "id": "norman-powell",
+      "name": "Norman Powell",
+      "team": "mia",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "2595516",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2595516.png"
+    },
+    "dru-smith": {
+      "id": "dru-smith",
+      "name": "Dru Smith",
+      "team": "mia",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "4066993",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066993.png"
+    },
+    "kelel-ware": {
+      "id": "kelel-ware",
+      "name": "Kel'el Ware",
+      "team": "mia",
+      "jersey": "7",
+      "pos": "C",
+      "espnId": "5105623",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105623.png"
+    },
+    "andrew-wiggins": {
+      "id": "andrew-wiggins",
+      "name": "Andrew Wiggins",
+      "team": "mia",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "3059319",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3059319.png"
+    },
+    "jahmir-young": {
+      "id": "jahmir-young",
+      "name": "Jahmir Young",
+      "team": "mia",
+      "jersey": "17",
+      "pos": "G",
+      "espnId": "4433133",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433133.png"
+    },
+    "alex-antetokounmpo": {
+      "id": "alex-antetokounmpo",
+      "name": "Alex Antetokounmpo",
+      "team": "mil",
+      "jersey": "29",
+      "pos": "F",
+      "espnId": "4432452",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432452.png"
+    },
+    "giannis-antetokounmpo": {
+      "id": "giannis-antetokounmpo",
+      "name": "Giannis Antetokounmpo",
+      "team": "mil",
+      "jersey": "34",
+      "pos": "F",
+      "espnId": "3032977",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3032977.png"
+    },
+    "thanasis-antetokounmpo": {
+      "id": "thanasis-antetokounmpo",
+      "name": "Thanasis Antetokounmpo",
+      "team": "mil",
+      "jersey": "43",
+      "pos": "F",
+      "espnId": "3102533",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102533.png"
+    },
+    "ousmane-dieng": {
+      "id": "ousmane-dieng",
+      "name": "Ousmane Dieng",
+      "team": "mil",
+      "jersey": "21",
+      "pos": "F",
+      "espnId": "4997526",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997526.png"
+    },
+    "aj-green": {
+      "id": "aj-green",
+      "name": "AJ Green",
+      "team": "mil",
+      "jersey": "20",
+      "pos": "G",
+      "espnId": "4397475",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397475.png"
+    },
+    "gary-harris": {
+      "id": "gary-harris",
+      "name": "Gary Harris",
+      "team": "mil",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "2999547",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2999547.png"
+    },
+    "andre-jackson-jr": {
+      "id": "andre-jackson-jr",
+      "name": "Andre Jackson Jr.",
+      "team": "mil",
+      "jersey": "44",
+      "pos": "G",
+      "espnId": "4432190",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432190.png"
+    },
+    "kyle-kuzma": {
+      "id": "kyle-kuzma",
+      "name": "Kyle Kuzma",
+      "team": "mil",
+      "jersey": "18",
+      "pos": "F",
+      "espnId": "3134907",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134907.png"
+    },
+    "pete-nance": {
+      "id": "pete-nance",
+      "name": "Pete Nance",
+      "team": "mil",
+      "jersey": "35",
+      "pos": "F",
+      "espnId": "4397233",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397233.png"
+    },
+    "kevin-porter-jr": {
+      "id": "kevin-porter-jr",
+      "name": "Kevin Porter Jr.",
+      "team": "mil",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "4397140",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397140.png"
+    },
+    "bobby-portis": {
+      "id": "bobby-portis",
+      "name": "Bobby Portis",
+      "team": "mil",
+      "jersey": "9",
+      "pos": "F",
+      "espnId": "3064482",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064482.png"
+    },
+    "taurean-prince": {
+      "id": "taurean-prince",
+      "name": "Taurean Prince",
+      "team": "mil",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "2990962",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2990962.png"
+    },
+    "ryan-rollins": {
+      "id": "ryan-rollins",
+      "name": "Ryan Rollins",
+      "team": "mil",
+      "jersey": "13",
+      "pos": "G",
+      "espnId": "4591725",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4591725.png"
+    },
+    "cormac-ryan": {
+      "id": "cormac-ryan",
+      "name": "Cormac Ryan",
+      "team": "mil",
+      "jersey": "30",
+      "pos": "G",
+      "espnId": "4397114",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397114.png"
+    },
+    "jericho-sims": {
+      "id": "jericho-sims",
+      "name": "Jericho Sims",
+      "team": "mil",
+      "jersey": "00",
+      "pos": "C",
+      "espnId": "4277922",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277922.png"
+    },
+    "gary-trent-jr": {
+      "id": "gary-trent-jr",
+      "name": "Gary Trent Jr.",
+      "team": "mil",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4277843",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277843.png"
+    },
+    "myles-turner": {
+      "id": "myles-turner",
+      "name": "Myles Turner",
+      "team": "mil",
+      "jersey": "3",
+      "pos": "C",
+      "espnId": "3133628",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133628.png"
+    },
+    "kyle-anderson": {
+      "id": "kyle-anderson",
+      "name": "Kyle Anderson",
+      "team": "min",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "2993874",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2993874.png"
+    },
+    "joan-beringer": {
+      "id": "joan-beringer",
+      "name": "Joan Beringer",
+      "team": "min",
+      "jersey": "19",
+      "pos": "F",
+      "espnId": "5279133",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5279133.png"
+    },
+    "jaylen-clark": {
+      "id": "jaylen-clark",
+      "name": "Jaylen Clark",
+      "team": "min",
+      "jersey": "22",
+      "pos": "G",
+      "espnId": "4432247",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432247.png"
+    },
+    "mike-conley": {
+      "id": "mike-conley",
+      "name": "Mike Conley",
+      "team": "min",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "3195",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3195.png"
+    },
+    "donte-divincenzo": {
+      "id": "donte-divincenzo",
+      "name": "Donte DiVincenzo",
+      "team": "min",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "3934673",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934673.png"
+    },
+    "ayo-dosunmu": {
+      "id": "ayo-dosunmu",
+      "name": "Ayo Dosunmu",
+      "team": "min",
+      "jersey": "13",
+      "pos": "G",
+      "espnId": "4397002",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397002.png"
+    },
+    "anthony-edwards": {
+      "id": "anthony-edwards",
+      "name": "Anthony Edwards",
+      "team": "min",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4594268",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4594268.png"
+    },
+    "enrique-freeman": {
+      "id": "enrique-freeman",
+      "name": "Enrique Freeman",
+      "team": "min",
+      "jersey": "25",
+      "pos": "F",
+      "espnId": "4592699",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592699.png"
+    },
+    "rudy-gobert": {
+      "id": "rudy-gobert",
+      "name": "Rudy Gobert",
+      "team": "min",
+      "jersey": "27",
+      "pos": "C",
+      "espnId": "3032976",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3032976.png"
+    },
+    "bones-hyland": {
+      "id": "bones-hyland",
+      "name": "Bones Hyland",
+      "team": "min",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "4592492",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592492.png"
+    },
+    "joe-ingles": {
+      "id": "joe-ingles",
+      "name": "Joe Ingles",
+      "team": "min",
+      "jersey": "7",
+      "pos": "F",
+      "espnId": "2968436",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2968436.png"
+    },
+    "jaden-mcdaniels": {
+      "id": "jaden-mcdaniels",
+      "name": "Jaden McDaniels",
+      "team": "min",
+      "jersey": "3",
+      "pos": "F",
+      "espnId": "4431671",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431671.png"
+    },
+    "julian-phillips": {
+      "id": "julian-phillips",
+      "name": "Julian Phillips",
+      "team": "min",
+      "jersey": "4",
+      "pos": "F",
+      "espnId": "5105553",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105553.png"
+    },
+    "zyon-pullin": {
+      "id": "zyon-pullin",
+      "name": "Zyon Pullin",
+      "team": "min",
+      "jersey": "15",
+      "pos": "G",
+      "espnId": "4592979",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592979.png"
+    },
+    "julius-randle": {
+      "id": "julius-randle",
+      "name": "Julius Randle",
+      "team": "min",
+      "jersey": "30",
+      "pos": "F",
+      "espnId": "3064514",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064514.png"
+    },
+    "naz-reid": {
+      "id": "naz-reid",
+      "name": "Naz Reid",
+      "team": "min",
+      "jersey": "11",
+      "pos": "C",
+      "espnId": "4396971",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396971.png"
+    },
+    "terrence-shannon-jr": {
+      "id": "terrence-shannon-jr",
+      "name": "Terrence Shannon Jr.",
+      "team": "min",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "4432847",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432847.png"
+    },
+    "rocco-zikarsky": {
+      "id": "rocco-zikarsky",
+      "name": "Rocco Zikarsky",
+      "team": "min",
+      "jersey": "44",
+      "pos": "C",
+      "espnId": "5157587",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5157587.png"
+    },
+    "trey-alexander": {
+      "id": "trey-alexander",
+      "name": "Trey Alexander",
+      "team": "no",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4433268",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433268.png"
+    },
+    "saddiq-bey": {
+      "id": "saddiq-bey",
+      "name": "Saddiq Bey",
+      "team": "no",
+      "jersey": "41",
+      "pos": "G",
+      "espnId": "4397136",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397136.png"
+    },
+    "hunter-dickinson": {
+      "id": "hunter-dickinson",
+      "name": "Hunter Dickinson",
+      "team": "no",
+      "jersey": "4",
+      "pos": "C",
+      "espnId": "4432180",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432180.png"
+    },
+    "jeremiah-fears": {
+      "id": "jeremiah-fears",
+      "name": "Jeremiah Fears",
+      "team": "no",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "5144091",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5144091.png"
+    },
+    "jordan-hawkins": {
+      "id": "jordan-hawkins",
+      "name": "Jordan Hawkins",
+      "team": "no",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "4683750",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683750.png"
+    },
+    "herbert-jones": {
+      "id": "herbert-jones",
+      "name": "Herbert Jones",
+      "team": "no",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "4277813",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277813.png"
+    },
+    "deandre-jordan": {
+      "id": "deandre-jordan",
+      "name": "DeAndre Jordan",
+      "team": "no",
+      "jersey": "6",
+      "pos": "C",
+      "espnId": "3442",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3442.png"
+    },
+    "kevon-looney": {
+      "id": "kevon-looney",
+      "name": "Kevon Looney",
+      "team": "no",
+      "jersey": "55",
+      "pos": "F",
+      "espnId": "3155535",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3155535.png"
+    },
+    "karlo-matkovic": {
+      "id": "karlo-matkovic",
+      "name": "Karlo Matkovic",
+      "team": "no",
+      "jersey": "17",
+      "pos": "F",
+      "espnId": "4997538",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997538.png"
+    },
+    "bryce-mcgowens": {
+      "id": "bryce-mcgowens",
+      "name": "Bryce McGowens",
+      "team": "no",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "4576086",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4576086.png"
+    },
+    "yves-missi": {
+      "id": "yves-missi",
+      "name": "Yves Missi",
+      "team": "no",
+      "jersey": "21",
+      "pos": "C",
+      "espnId": "5061589",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5061589.png"
+    },
+    "trey-murphy-iii": {
+      "id": "trey-murphy-iii",
+      "name": "Trey Murphy III",
+      "team": "no",
+      "jersey": "25",
+      "pos": "F",
+      "espnId": "4397688",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397688.png"
+    },
+    "dejounte-murray": {
+      "id": "dejounte-murray",
+      "name": "Dejounte Murray",
+      "team": "no",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "3907497",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907497.png"
+    },
+    "josh-oduro": {
+      "id": "josh-oduro",
+      "name": "Josh Oduro",
+      "team": "no",
+      "jersey": "13",
+      "pos": "C",
+      "espnId": "4432068",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432068.png"
+    },
+    "micah-peavy": {
+      "id": "micah-peavy",
+      "name": "Micah Peavy",
+      "team": "no",
+      "jersey": "14",
+      "pos": "G",
+      "espnId": "4432185",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432185.png"
+    },
+    "jordan-poole": {
+      "id": "jordan-poole",
+      "name": "Jordan Poole",
+      "team": "no",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4277956",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277956.png"
+    },
+    "derik-queen": {
+      "id": "derik-queen",
+      "name": "Derik Queen",
+      "team": "no",
+      "jersey": "22",
+      "pos": "C",
+      "espnId": "4869780",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4869780.png"
+    },
+    "zion-williamson": {
+      "id": "zion-williamson",
+      "name": "Zion Williamson",
+      "team": "no",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "4395628",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395628.png"
+    },
+    "jose-alvarado": {
+      "id": "jose-alvarado",
+      "name": "Jose Alvarado",
+      "team": "ny",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4277869",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277869.png"
+    },
+    "og-anunoby": {
+      "id": "og-anunoby",
+      "name": "OG Anunoby",
+      "team": "ny",
+      "jersey": "8",
+      "pos": "F",
+      "espnId": "3934719",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934719.png"
+    },
+    "mikal-bridges": {
+      "id": "mikal-bridges",
+      "name": "Mikal Bridges",
+      "team": "ny",
+      "jersey": "25",
+      "pos": "G",
+      "espnId": "3147657",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3147657.png"
+    },
+    "jalen-brunson": {
+      "id": "jalen-brunson",
+      "name": "Jalen Brunson",
+      "team": "ny",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "3934672",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934672.png"
+    },
+    "jordan-clarkson": {
+      "id": "jordan-clarkson",
+      "name": "Jordan Clarkson",
+      "team": "ny",
+      "jersey": "00",
+      "pos": "G",
+      "espnId": "2528426",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2528426.png"
+    },
+    "pacome-dadiet": {
+      "id": "pacome-dadiet",
+      "name": "Pacome Dadiet",
+      "team": "ny",
+      "jersey": "4",
+      "pos": "F",
+      "espnId": "5211983",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5211983.png"
+    },
+    "mohamed-diawara": {
+      "id": "mohamed-diawara",
+      "name": "Mohamed Diawara",
+      "team": "ny",
+      "jersey": "51",
+      "pos": "F",
+      "espnId": "5289900",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5289900.png"
+    },
+    "josh-hart": {
+      "id": "josh-hart",
+      "name": "Josh Hart",
+      "team": "ny",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "3062679",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3062679.png"
+    },
+    "ariel-hukporti": {
+      "id": "ariel-hukporti",
+      "name": "Ariel Hukporti",
+      "team": "ny",
+      "jersey": "55",
+      "pos": "C",
+      "espnId": "4871141",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4871141.png"
+    },
+    "trey-jemison-iii": {
+      "id": "trey-jemison-iii",
+      "name": "Trey Jemison III",
+      "team": "ny",
+      "jersey": "50",
+      "pos": "F",
+      "espnId": "4395623",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395623.png"
+    },
+    "dillon-jones": {
+      "id": "dillon-jones",
+      "name": "Dillon Jones",
+      "team": "ny",
+      "jersey": "33",
+      "pos": "F",
+      "espnId": "4702159",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702159.png"
+    },
+    "tyler-kolek": {
+      "id": "tyler-kolek",
+      "name": "Tyler Kolek",
+      "team": "ny",
+      "jersey": "13",
+      "pos": "G",
+      "espnId": "4433225",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433225.png"
+    },
+    "miles-mcbride": {
+      "id": "miles-mcbride",
+      "name": "Miles McBride",
+      "team": "ny",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4431823",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431823.png"
+    },
+    "kevin-mccullar-jr": {
+      "id": "kevin-mccullar-jr",
+      "name": "Kevin McCullar Jr.",
+      "team": "ny",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "4411057",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4411057.png"
+    },
+    "mitchell-robinson": {
+      "id": "mitchell-robinson",
+      "name": "Mitchell Robinson",
+      "team": "ny",
+      "jersey": "23",
+      "pos": "C",
+      "espnId": "4351852",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4351852.png"
+    },
+    "landry-shamet": {
+      "id": "landry-shamet",
+      "name": "Landry Shamet",
+      "team": "ny",
+      "jersey": "44",
+      "pos": "G",
+      "espnId": "3914044",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3914044.png"
+    },
+    "jeremy-sochan": {
+      "id": "jeremy-sochan",
+      "name": "Jeremy Sochan",
+      "team": "ny",
+      "jersey": "20",
+      "pos": "F",
+      "espnId": "4610139",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4610139.png"
+    },
+    "karl-anthony-towns": {
+      "id": "karl-anthony-towns",
+      "name": "Karl-Anthony Towns",
+      "team": "ny",
+      "jersey": "32",
+      "pos": "C",
+      "espnId": "3136195",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136195.png"
+    },
+    "brooks-barnhizer": {
+      "id": "brooks-barnhizer",
+      "name": "Brooks Barnhizer",
+      "team": "okc",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "4684208",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684208.png"
+    },
+    "branden-carlson": {
+      "id": "branden-carlson",
+      "name": "Branden Carlson",
+      "team": "okc",
+      "jersey": "15",
+      "pos": "C",
+      "espnId": "4592435",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592435.png"
+    },
+    "alex-caruso": {
+      "id": "alex-caruso",
+      "name": "Alex Caruso",
+      "team": "okc",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "2991350",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991350.png"
+    },
+    "luguentz-dort": {
+      "id": "luguentz-dort",
+      "name": "Luguentz Dort",
+      "team": "okc",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4397020",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397020.png"
+    },
+    "shai-gilgeous-alexander": {
+      "id": "shai-gilgeous-alexander",
+      "name": "Shai Gilgeous-Alexander",
+      "team": "okc",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4278073",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278073.png"
+    },
+    "isaiah-hartenstein": {
+      "id": "isaiah-hartenstein",
+      "name": "Isaiah Hartenstein",
+      "team": "okc",
+      "jersey": "55",
+      "pos": "C",
+      "espnId": "4222252",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4222252.png"
+    },
+    "chet-holmgren": {
+      "id": "chet-holmgren",
+      "name": "Chet Holmgren",
+      "team": "okc",
+      "jersey": "7",
+      "pos": "C",
+      "espnId": "4433255",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433255.png"
+    },
+    "isaiah-joe": {
+      "id": "isaiah-joe",
+      "name": "Isaiah Joe",
+      "team": "okc",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "4395702",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395702.png"
+    },
+    "jared-mccain": {
+      "id": "jared-mccain",
+      "name": "Jared McCain",
+      "team": "okc",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4683778",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683778.png"
+    },
+    "ajay-mitchell": {
+      "id": "ajay-mitchell",
+      "name": "Ajay Mitchell",
+      "team": "okc",
+      "jersey": "25",
+      "pos": "G",
+      "espnId": "4900671",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4900671.png"
+    },
+    "payton-sandfort": {
+      "id": "payton-sandfort",
+      "name": "Payton Sandfort",
+      "team": "okc",
+      "jersey": "14",
+      "pos": "F",
+      "espnId": "4697270",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4697270.png"
+    },
+    "thomas-sorber": {
+      "id": "thomas-sorber",
+      "name": "Thomas Sorber",
+      "team": "okc",
+      "jersey": "12",
+      "pos": "C",
+      "espnId": "5061603",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5061603.png"
+    },
+    "nikola-topic": {
+      "id": "nikola-topic",
+      "name": "Nikola Topic",
+      "team": "okc",
+      "jersey": "44",
+      "pos": "G",
+      "espnId": "5159925",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5159925.png"
+    },
+    "cason-wallace": {
+      "id": "cason-wallace",
+      "name": "Cason Wallace",
+      "team": "okc",
+      "jersey": "22",
+      "pos": "G",
+      "espnId": "4683692",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683692.png"
+    },
+    "aaron-wiggins": {
+      "id": "aaron-wiggins",
+      "name": "Aaron Wiggins",
+      "team": "okc",
+      "jersey": "21",
+      "pos": "G",
+      "espnId": "4397183",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397183.png"
+    },
+    "jalen-williams": {
+      "id": "jalen-williams",
+      "name": "Jalen Williams",
+      "team": "okc",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "4593803",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593803.png"
+    },
+    "jaylin-williams": {
+      "id": "jaylin-williams",
+      "name": "Jaylin Williams",
+      "team": "okc",
+      "jersey": "6",
+      "pos": "F",
+      "espnId": "4432823",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432823.png"
+    },
+    "kenrich-williams": {
+      "id": "kenrich-williams",
+      "name": "Kenrich Williams",
+      "team": "okc",
+      "jersey": "34",
+      "pos": "G",
+      "espnId": "3133626",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133626.png"
+    },
+    "paolo-banchero": {
+      "id": "paolo-banchero",
+      "name": "Paolo Banchero",
+      "team": "orl",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "4432573",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432573.png"
+    },
+    "desmond-bane": {
+      "id": "desmond-bane",
+      "name": "Desmond Bane",
+      "team": "orl",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4066320",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066320.png"
+    },
+    "goga-bitadze": {
+      "id": "goga-bitadze",
+      "name": "Goga Bitadze",
+      "team": "orl",
+      "jersey": "35",
+      "pos": "C",
+      "espnId": "4348700",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4348700.png"
+    },
+    "anthony-black": {
+      "id": "anthony-black",
+      "name": "Anthony Black",
+      "team": "orl",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "4712849",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4712849.png"
+    },
+    "jamal-cain": {
+      "id": "jamal-cain",
+      "name": "Jamal Cain",
+      "team": "orl",
+      "jersey": "8",
+      "pos": "F",
+      "espnId": "4278572",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278572.png"
+    },
+    "jevon-carter": {
+      "id": "jevon-carter",
+      "name": "Jevon Carter",
+      "team": "orl",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "3133635",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133635.png"
+    },
+    "wendell-carter-jr": {
+      "id": "wendell-carter-jr",
+      "name": "Wendell Carter Jr.",
+      "team": "orl",
+      "jersey": "34",
+      "pos": "C",
+      "espnId": "4277847",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277847.png"
+    },
+    "colin-castleton": {
+      "id": "colin-castleton",
+      "name": "Colin Castleton",
+      "team": "orl",
+      "jersey": "14",
+      "pos": "C",
+      "espnId": "4397204",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397204.png"
+    },
+    "tristan-da-silva": {
+      "id": "tristan-da-silva",
+      "name": "Tristan da Silva",
+      "team": "orl",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "4702382",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702382.png"
+    },
+    "jett-howard": {
+      "id": "jett-howard",
+      "name": "Jett Howard",
+      "team": "orl",
+      "jersey": "13",
+      "pos": "G",
+      "espnId": "5105806",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105806.png"
+    },
+    "jonathan-isaac": {
+      "id": "jonathan-isaac",
+      "name": "Jonathan Isaac",
+      "team": "orl",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "4065654",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065654.png"
+    },
+    "alex-morales": {
+      "id": "alex-morales",
+      "name": "Alex Morales",
+      "team": "orl",
+      "jersey": "30",
+      "pos": "G",
+      "espnId": "4593034",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593034.png"
+    },
+    "noah-penda": {
+      "id": "noah-penda",
+      "name": "Noah Penda",
+      "team": "orl",
+      "jersey": "93",
+      "pos": "F",
+      "espnId": "5214637",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5214637.png"
+    },
+    "jase-richardson": {
+      "id": "jase-richardson",
+      "name": "Jase Richardson",
+      "team": "orl",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "5239561",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5239561.png"
+    },
+    "jalen-suggs": {
+      "id": "jalen-suggs",
+      "name": "Jalen Suggs",
+      "team": "orl",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4432165",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432165.png"
+    },
+    "franz-wagner": {
+      "id": "franz-wagner",
+      "name": "Franz Wagner",
+      "team": "orl",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "4566434",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4566434.png"
+    },
+    "moritz-wagner": {
+      "id": "moritz-wagner",
+      "name": "Moritz Wagner",
+      "team": "orl",
+      "jersey": "21",
+      "pos": "F",
+      "espnId": "3150844",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3150844.png"
+    },
+    "dominick-barlow": {
+      "id": "dominick-barlow",
+      "name": "Dominick Barlow",
+      "team": "phi",
+      "jersey": "25",
+      "pos": "F",
+      "espnId": "4870562",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4870562.png"
+    },
+    "marjon-beauchamp": {
+      "id": "marjon-beauchamp",
+      "name": "MarJon Beauchamp",
+      "team": "phi",
+      "jersey": "16",
+      "pos": "F",
+      "espnId": "4432179",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432179.png"
+    },
+    "adem-bona": {
+      "id": "adem-bona",
+      "name": "Adem Bona",
+      "team": "phi",
+      "jersey": "30",
+      "pos": "C",
+      "espnId": "5105637",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105637.png"
+    },
+    "johni-broome": {
+      "id": "johni-broome",
+      "name": "Johni Broome",
+      "team": "phi",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "4433569",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433569.png"
+    },
+    "andre-drummond": {
+      "id": "andre-drummond",
+      "name": "Andre Drummond",
+      "team": "phi",
+      "jersey": "1",
+      "pos": "C",
+      "espnId": "6585",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6585.png"
+    },
+    "vj-edgecombe": {
+      "id": "vj-edgecombe",
+      "name": "VJ Edgecombe",
+      "team": "phi",
+      "jersey": "77",
+      "pos": "G",
+      "espnId": "5124612",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5124612.png"
+    },
+    "justin-edwards": {
+      "id": "justin-edwards",
+      "name": "Justin Edwards",
+      "team": "phi",
+      "jersey": "11",
+      "pos": "F",
+      "espnId": "4711297",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4711297.png"
+    },
+    "joel-embiid": {
+      "id": "joel-embiid",
+      "name": "Joel Embiid",
+      "team": "phi",
+      "jersey": "21",
+      "pos": "C",
+      "espnId": "3059318",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3059318.png"
+    },
+    "paul-george": {
+      "id": "paul-george",
+      "name": "Paul George",
+      "team": "phi",
+      "jersey": "8",
+      "pos": "F",
+      "espnId": "4251",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4251.png"
+    },
+    "quentin-grimes": {
+      "id": "quentin-grimes",
+      "name": "Quentin Grimes",
+      "team": "phi",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4397014",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397014.png"
+    },
+    "kyle-lowry": {
+      "id": "kyle-lowry",
+      "name": "Kyle Lowry",
+      "team": "phi",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "3012",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3012.png"
+    },
+    "tyrese-martin": {
+      "id": "tyrese-martin",
+      "name": "Tyrese Martin",
+      "team": "phi",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4397179",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397179.png"
+    },
+    "tyrese-maxey": {
+      "id": "tyrese-maxey",
+      "name": "Tyrese Maxey",
+      "team": "phi",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "4431678",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431678.png"
+    },
+    "kelly-oubre-jr": {
+      "id": "kelly-oubre-jr",
+      "name": "Kelly Oubre Jr.",
+      "team": "phi",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "3133603",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133603.png"
+    },
+    "dalen-terry": {
+      "id": "dalen-terry",
+      "name": "Dalen Terry",
+      "team": "phi",
+      "jersey": "14",
+      "pos": "F",
+      "espnId": "4433159",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433159.png"
+    },
+    "jabari-walker": {
+      "id": "jabari-walker",
+      "name": "Jabari Walker",
+      "team": "phi",
+      "jersey": "33",
+      "pos": "F",
+      "espnId": "4432446",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432446.png"
+    },
+    "trendon-watford": {
+      "id": "trendon-watford",
+      "name": "Trendon Watford",
+      "team": "phi",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "4431675",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431675.png"
+    },
+    "grayson-allen": {
+      "id": "grayson-allen",
+      "name": "Grayson Allen",
+      "team": "phx",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "3135045",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3135045.png"
+    },
+    "devin-booker": {
+      "id": "devin-booker",
+      "name": "Devin Booker",
+      "team": "phx",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "3136193",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136193.png"
+    },
+    "jamaree-bouyea": {
+      "id": "jamaree-bouyea",
+      "name": "Jamaree Bouyea",
+      "team": "phx",
+      "jersey": "17",
+      "pos": "G",
+      "espnId": "4280245",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4280245.png"
+    },
+    "koby-brea": {
+      "id": "koby-brea",
+      "name": "Koby Brea",
+      "team": "phx",
+      "jersey": "14",
+      "pos": "G",
+      "espnId": "4591259",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4591259.png"
+    },
+    "dillon-brooks": {
+      "id": "dillon-brooks",
+      "name": "Dillon Brooks",
+      "team": "phx",
+      "jersey": "3",
+      "pos": "F",
+      "espnId": "3155526",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3155526.png"
+    },
+    "amir-coffey": {
+      "id": "amir-coffey",
+      "name": "Amir Coffey",
+      "team": "phx",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4066387",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066387.png"
+    },
+    "ryan-dunn": {
+      "id": "ryan-dunn",
+      "name": "Ryan Dunn",
+      "team": "phx",
+      "jersey": "0",
+      "pos": "F",
+      "espnId": "4888725",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4888725.png"
+    },
+    "rasheer-fleming": {
+      "id": "rasheer-fleming",
+      "name": "Rasheer Fleming",
+      "team": "phx",
+      "jersey": "20",
+      "pos": "F",
+      "espnId": "5105977",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105977.png"
+    },
+    "collin-gillespie": {
+      "id": "collin-gillespie",
+      "name": "Collin Gillespie",
+      "team": "phx",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "4278585",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278585.png"
+    },
+    "jordan-goodwin": {
+      "id": "jordan-goodwin",
+      "name": "Jordan Goodwin",
+      "team": "phx",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4278402",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278402.png"
+    },
+    "jalen-green": {
+      "id": "jalen-green",
+      "name": "Jalen Green",
+      "team": "phx",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4437244",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4437244.png"
+    },
+    "haywood-highsmith": {
+      "id": "haywood-highsmith",
+      "name": "Haywood Highsmith",
+      "team": "phx",
+      "jersey": "7",
+      "pos": "F",
+      "espnId": "4291678",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4291678.png"
+    },
+    "cj-huntley": {
+      "id": "cj-huntley",
+      "name": "CJ Huntley",
+      "team": "phx",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "4702602",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702602.png"
+    },
+    "oso-ighodaro": {
+      "id": "oso-ighodaro",
+      "name": "Oso Ighodaro",
+      "team": "phx",
+      "jersey": "11",
+      "pos": "F",
+      "espnId": "4601023",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4601023.png"
+    },
+    "isaiah-livers": {
+      "id": "isaiah-livers",
+      "name": "Isaiah Livers",
+      "team": "phx",
+      "jersey": "18",
+      "pos": "F",
+      "espnId": "4277957",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277957.png"
+    },
+    "khaman-maluach": {
+      "id": "khaman-maluach",
+      "name": "Khaman Maluach",
+      "team": "phx",
+      "jersey": "10",
+      "pos": "C",
+      "espnId": "5203685",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5203685.png"
+    },
+    "royce-oneale": {
+      "id": "royce-oneale",
+      "name": "Royce O'Neale",
+      "team": "phx",
+      "jersey": "00",
+      "pos": "F",
+      "espnId": "2583632",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2583632.png"
+    },
+    "mark-williams": {
+      "id": "mark-williams",
+      "name": "Mark Williams",
+      "team": "phx",
+      "jersey": "15",
+      "pos": "C",
+      "espnId": "4701232",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4701232.png"
+    },
+    "deni-avdija": {
+      "id": "deni-avdija",
+      "name": "Deni Avdija",
+      "team": "por",
+      "jersey": "8",
+      "pos": "F",
+      "espnId": "4683021",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683021.png"
+    },
+    "toumani-camara": {
+      "id": "toumani-camara",
+      "name": "Toumani Camara",
+      "team": "por",
+      "jersey": "33",
+      "pos": "F",
+      "espnId": "4431736",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431736.png"
+    },
+    "sidy-cissoko": {
+      "id": "sidy-cissoko",
+      "name": "Sidy Cissoko",
+      "team": "por",
+      "jersey": "91",
+      "pos": "G",
+      "espnId": "5081727",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5081727.png"
+    },
+    "donovan-clingan": {
+      "id": "donovan-clingan",
+      "name": "Donovan Clingan",
+      "team": "por",
+      "jersey": "23",
+      "pos": "C",
+      "espnId": "5105565",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105565.png"
+    },
+    "jerami-grant": {
+      "id": "jerami-grant",
+      "name": "Jerami Grant",
+      "team": "por",
+      "jersey": "9",
+      "pos": "F",
+      "espnId": "2991070",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2991070.png"
+    },
+    "yang-hansen": {
+      "id": "yang-hansen",
+      "name": "Yang Hansen",
+      "team": "por",
+      "jersey": "16",
+      "pos": "C",
+      "espnId": "5217746",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5217746.png"
+    },
+    "scoot-henderson": {
+      "id": "scoot-henderson",
+      "name": "Scoot Henderson",
+      "team": "por",
+      "jersey": "00",
+      "pos": "G",
+      "espnId": "4683678",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683678.png"
+    },
+    "jrue-holiday": {
+      "id": "jrue-holiday",
+      "name": "Jrue Holiday",
+      "team": "por",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "3995",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3995.png"
+    },
+    "jayson-kent": {
+      "id": "jayson-kent",
+      "name": "Jayson Kent",
+      "team": "por",
+      "jersey": "29",
+      "pos": "G",
+      "espnId": "4703889",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4703889.png"
+    },
+    "vit-krejci": {
+      "id": "vit-krejci",
+      "name": "Vit Krejci",
+      "team": "por",
+      "jersey": "27",
+      "pos": "G",
+      "espnId": "4578893",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4578893.png"
+    },
+    "damian-lillard": {
+      "id": "damian-lillard",
+      "name": "Damian Lillard",
+      "team": "por",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "6606",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6606.png"
+    },
+    "caleb-love": {
+      "id": "caleb-love",
+      "name": "Caleb Love",
+      "team": "por",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4433144",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433144.png"
+    },
+    "kris-murray": {
+      "id": "kris-murray",
+      "name": "Kris Murray",
+      "team": "por",
+      "jersey": "24",
+      "pos": "F",
+      "espnId": "4594326",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4594326.png"
+    },
+    "shaedon-sharpe": {
+      "id": "shaedon-sharpe",
+      "name": "Shaedon Sharpe",
+      "team": "por",
+      "jersey": "17",
+      "pos": "G",
+      "espnId": "4914336",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4914336.png"
+    },
+    "matisse-thybulle": {
+      "id": "matisse-thybulle",
+      "name": "Matisse Thybulle",
+      "team": "por",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "3907498",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3907498.png"
+    },
+    "blake-wesley": {
+      "id": "blake-wesley",
+      "name": "Blake Wesley",
+      "team": "por",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "4683935",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683935.png"
+    },
+    "robert-williams-iii": {
+      "id": "robert-williams-iii",
+      "name": "Robert Williams III",
+      "team": "por",
+      "jersey": "35",
+      "pos": "C",
+      "espnId": "4066211",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066211.png"
+    },
+    "chris-youngblood": {
+      "id": "chris-youngblood",
+      "name": "Chris Youngblood",
+      "team": "por",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "4706557",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4706557.png"
+    },
+    "harrison-barnes": {
+      "id": "harrison-barnes",
+      "name": "Harrison Barnes",
+      "team": "sa",
+      "jersey": "40",
+      "pos": "F",
+      "espnId": "6578",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6578.png"
+    },
+    "bismack-biyombo": {
+      "id": "bismack-biyombo",
+      "name": "Bismack Biyombo",
+      "team": "sa",
+      "jersey": "18",
+      "pos": "C",
+      "espnId": "6427",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6427.png"
+    },
+    "carter-bryant": {
+      "id": "carter-bryant",
+      "name": "Carter Bryant",
+      "team": "sa",
+      "jersey": "11",
+      "pos": "F",
+      "espnId": "5061568",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5061568.png"
+    },
+    "stephon-castle": {
+      "id": "stephon-castle",
+      "name": "Stephon Castle",
+      "team": "sa",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4845367",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4845367.png"
+    },
+    "julian-champagnie": {
+      "id": "julian-champagnie",
+      "name": "Julian Champagnie",
+      "team": "sa",
+      "jersey": "30",
+      "pos": "F",
+      "espnId": "4592479",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4592479.png"
+    },
+    "deaaron-fox": {
+      "id": "deaaron-fox",
+      "name": "De'Aaron Fox",
+      "team": "sa",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4066259",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066259.png"
+    },
+    "dylan-harper": {
+      "id": "dylan-harper",
+      "name": "Dylan Harper",
+      "team": "sa",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "5037871",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5037871.png"
+    },
+    "harrison-ingram": {
+      "id": "harrison-ingram",
+      "name": "Harrison Ingram",
+      "team": "sa",
+      "jersey": "55",
+      "pos": "F",
+      "espnId": "4433618",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433618.png"
+    },
+    "keldon-johnson": {
+      "id": "keldon-johnson",
+      "name": "Keldon Johnson",
+      "team": "sa",
+      "jersey": "3",
+      "pos": "F",
+      "espnId": "4395723",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395723.png"
+    },
+    "david-jones-garcia": {
+      "id": "david-jones-garcia",
+      "name": "David Jones Garcia",
+      "team": "sa",
+      "jersey": "25",
+      "pos": "F",
+      "espnId": "4713010",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4713010.png"
+    },
+    "luke-kornet": {
+      "id": "luke-kornet",
+      "name": "Luke Kornet",
+      "team": "sa",
+      "jersey": "7",
+      "pos": "C",
+      "espnId": "3064560",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064560.png"
+    },
+    "jordan-mclaughlin": {
+      "id": "jordan-mclaughlin",
+      "name": "Jordan McLaughlin",
+      "team": "sa",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "3134916",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134916.png"
+    },
+    "emanuel-miller": {
+      "id": "emanuel-miller",
+      "name": "Emanuel Miller",
+      "team": "sa",
+      "jersey": "14",
+      "pos": "F",
+      "espnId": "4432872",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432872.png"
+    },
+    "kelly-olynyk": {
+      "id": "kelly-olynyk",
+      "name": "Kelly Olynyk",
+      "team": "sa",
+      "jersey": "8",
+      "pos": "F",
+      "espnId": "2489663",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2489663.png"
+    },
+    "mason-plumlee": {
+      "id": "mason-plumlee",
+      "name": "Mason Plumlee",
+      "team": "sa",
+      "jersey": "45",
+      "pos": "C",
+      "espnId": "2488653",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2488653.png"
+    },
+    "devin-vassell": {
+      "id": "devin-vassell",
+      "name": "Devin Vassell",
+      "team": "sa",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "4395630",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395630.png"
+    },
+    "lindy-waters-iii": {
+      "id": "lindy-waters-iii",
+      "name": "Lindy Waters III",
+      "team": "sa",
+      "jersey": "43",
+      "pos": "F",
+      "espnId": "4066317",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066317.png"
+    },
+    "victor-wembanyama": {
+      "id": "victor-wembanyama",
+      "name": "Victor Wembanyama",
+      "team": "sa",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "5104157",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5104157.png"
+    },
+    "precious-achiuwa": {
+      "id": "precious-achiuwa",
+      "name": "Precious Achiuwa",
+      "team": "sac",
+      "jersey": "9",
+      "pos": "PF",
+      "espnId": "4431679",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431679.png"
+    },
+    "patrick-baldwin-jr": {
+      "id": "patrick-baldwin-jr",
+      "name": "Patrick Baldwin Jr.",
+      "team": "sac",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4433246",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433246.png"
+    },
+    "dylan-cardwell": {
+      "id": "dylan-cardwell",
+      "name": "Dylan Cardwell",
+      "team": "sac",
+      "jersey": "32",
+      "pos": "C",
+      "espnId": "4433174",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433174.png"
+    },
+    "devin-carter": {
+      "id": "devin-carter",
+      "name": "Devin Carter",
+      "team": "sac",
+      "jersey": "22",
+      "pos": "G",
+      "espnId": "4433188",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433188.png"
+    },
+    "nique-clifford": {
+      "id": "nique-clifford",
+      "name": "Nique Clifford",
+      "team": "sac",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4702384",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702384.png"
+    },
+    "demar-derozan": {
+      "id": "demar-derozan",
+      "name": "DeMar DeRozan",
+      "team": "sac",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "3978",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3978.png"
+    },
+    "drew-eubanks": {
+      "id": "drew-eubanks",
+      "name": "Drew Eubanks",
+      "team": "sac",
+      "jersey": "19",
+      "pos": "F",
+      "espnId": "3914285",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3914285.png"
+    },
+    "killian-hayes": {
+      "id": "killian-hayes",
+      "name": "Killian Hayes",
+      "team": "sac",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4683024",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683024.png"
+    },
+    "deandre-hunter": {
+      "id": "deandre-hunter",
+      "name": "De'Andre Hunter",
+      "team": "sac",
+      "jersey": "15",
+      "pos": "F",
+      "espnId": "4065732",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4065732.png"
+    },
+    "zach-lavine": {
+      "id": "zach-lavine",
+      "name": "Zach LaVine",
+      "team": "sac",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "3064440",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3064440.png"
+    },
+    "doug-mcdermott": {
+      "id": "doug-mcdermott",
+      "name": "Doug McDermott",
+      "team": "sac",
+      "jersey": "7",
+      "pos": "F",
+      "espnId": "2528588",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2528588.png"
+    },
+    "malik-monk": {
+      "id": "malik-monk",
+      "name": "Malik Monk",
+      "team": "sac",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "4066262",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066262.png"
+    },
+    "keegan-murray": {
+      "id": "keegan-murray",
+      "name": "Keegan Murray",
+      "team": "sac",
+      "jersey": "13",
+      "pos": "F",
+      "espnId": "4594327",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4594327.png"
+    },
+    "daeqwon-plowden": {
+      "id": "daeqwon-plowden",
+      "name": "Daeqwon Plowden",
+      "team": "sac",
+      "jersey": "29",
+      "pos": "G",
+      "espnId": "4279318",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4279318.png"
+    },
+    "maxime-raynaud": {
+      "id": "maxime-raynaud",
+      "name": "Maxime Raynaud",
+      "team": "sac",
+      "jersey": "42",
+      "pos": "C",
+      "espnId": "4898371",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4898371.png"
+    },
+    "domantas-sabonis": {
+      "id": "domantas-sabonis",
+      "name": "Domantas Sabonis",
+      "team": "sac",
+      "jersey": "11",
+      "pos": "F",
+      "espnId": "3155942",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3155942.png"
+    },
+    "isaiah-stevens": {
+      "id": "isaiah-stevens",
+      "name": "Isaiah Stevens",
+      "team": "sac",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "4432117",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432117.png"
+    },
+    "russell-westbrook": {
+      "id": "russell-westbrook",
+      "name": "Russell Westbrook",
+      "team": "sac",
+      "jersey": "18",
+      "pos": "G",
+      "espnId": "3468",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3468.png"
+    },
+    "scottie-barnes": {
+      "id": "scottie-barnes",
+      "name": "Scottie Barnes",
+      "team": "tor",
+      "jersey": "4",
+      "pos": "F",
+      "espnId": "4433134",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433134.png"
+    },
+    "rj-barrett": {
+      "id": "rj-barrett",
+      "name": "RJ Barrett",
+      "team": "tor",
+      "jersey": "9",
+      "pos": "F",
+      "espnId": "4395625",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395625.png"
+    },
+    "jamison-battle": {
+      "id": "jamison-battle",
+      "name": "Jamison Battle",
+      "team": "tor",
+      "jersey": "77",
+      "pos": "F",
+      "espnId": "4431893",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431893.png"
+    },
+    "gradey-dick": {
+      "id": "gradey-dick",
+      "name": "Gradey Dick",
+      "team": "tor",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "5106258",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5106258.png"
+    },
+    "chucky-hepburn": {
+      "id": "chucky-hepburn",
+      "name": "Chucky Hepburn",
+      "team": "tor",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "4590360",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4590360.png"
+    },
+    "brandon-ingram": {
+      "id": "brandon-ingram",
+      "name": "Brandon Ingram",
+      "team": "tor",
+      "jersey": "3",
+      "pos": "F",
+      "espnId": "3913176",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3913176.png"
+    },
+    "trayce-jackson-davis": {
+      "id": "trayce-jackson-davis",
+      "name": "Trayce Jackson-Davis",
+      "team": "tor",
+      "jersey": "32",
+      "pos": "F",
+      "espnId": "4431684",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431684.png"
+    },
+    "a-j-lawson": {
+      "id": "a-j-lawson",
+      "name": "A.J. Lawson",
+      "team": "tor",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "4067017",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4067017.png"
+    },
+    "sandro-mamukelashvili": {
+      "id": "sandro-mamukelashvili",
+      "name": "Sandro Mamukelashvili",
+      "team": "tor",
+      "jersey": "54",
+      "pos": "F",
+      "espnId": "4278580",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278580.png"
+    },
+    "alijah-martin": {
+      "id": "alijah-martin",
+      "name": "Alijah Martin",
+      "team": "tor",
+      "jersey": "55",
+      "pos": "G",
+      "espnId": "4702656",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4702656.png"
+    },
+    "jonathan-mogbo": {
+      "id": "jonathan-mogbo",
+      "name": "Jonathan Mogbo",
+      "team": "tor",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "5107897",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5107897.png"
+    },
+    "collin-murray-boyles": {
+      "id": "collin-murray-boyles",
+      "name": "Collin Murray-Boyles",
+      "team": "tor",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "5093267",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5093267.png"
+    },
+    "jakob-poeltl": {
+      "id": "jakob-poeltl",
+      "name": "Jakob Poeltl",
+      "team": "tor",
+      "jersey": "19",
+      "pos": "C",
+      "espnId": "3134908",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134908.png"
+    },
+    "immanuel-quickley": {
+      "id": "immanuel-quickley",
+      "name": "Immanuel Quickley",
+      "team": "tor",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4395724",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395724.png"
+    },
+    "jamal-shead": {
+      "id": "jamal-shead",
+      "name": "Jamal Shead",
+      "team": "tor",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4432241",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432241.png"
+    },
+    "garrett-temple": {
+      "id": "garrett-temple",
+      "name": "Garrett Temple",
+      "team": "tor",
+      "jersey": "17",
+      "pos": "G",
+      "espnId": "4023",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4023.png"
+    },
+    "jakobe-walter": {
+      "id": "jakobe-walter",
+      "name": "Ja'Kobe Walter",
+      "team": "tor",
+      "jersey": "14",
+      "pos": "G",
+      "espnId": "4684272",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684272.png"
+    },
+    "ace-bailey": {
+      "id": "ace-bailey",
+      "name": "Ace Bailey",
+      "team": "utah",
+      "jersey": "19",
+      "pos": "G",
+      "espnId": "4873138",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4873138.png"
+    },
+    "kennedy-chandler": {
+      "id": "kennedy-chandler",
+      "name": "Kennedy Chandler",
+      "team": "utah",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "4432646",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432646.png"
+    },
+    "isaiah-collier": {
+      "id": "isaiah-collier",
+      "name": "Isaiah Collier",
+      "team": "utah",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "4683766",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683766.png"
+    },
+    "kyle-filipowski": {
+      "id": "kyle-filipowski",
+      "name": "Kyle Filipowski",
+      "team": "utah",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "4684793",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4684793.png"
+    },
+    "keyonte-george": {
+      "id": "keyonte-george",
+      "name": "Keyonte George",
+      "team": "utah",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4433627",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433627.png"
+    },
+    "hayden-gray": {
+      "id": "hayden-gray",
+      "name": "Hayden Gray",
+      "team": "utah",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "5176420",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5176420.png"
+    },
+    "elijah-harkless": {
+      "id": "elijah-harkless",
+      "name": "Elijah Harkless",
+      "team": "utah",
+      "jersey": "16",
+      "pos": "G",
+      "espnId": "4397449",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397449.png"
+    },
+    "blake-hinson": {
+      "id": "blake-hinson",
+      "name": "Blake Hinson",
+      "team": "utah",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "4396963",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4396963.png"
+    },
+    "jaren-jackson-jr": {
+      "id": "jaren-jackson-jr",
+      "name": "Jaren Jackson Jr.",
+      "team": "utah",
+      "jersey": "20",
+      "pos": "F",
+      "espnId": "4277961",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277961.png"
+    },
+    "walker-kessler": {
+      "id": "walker-kessler",
+      "name": "Walker Kessler",
+      "team": "utah",
+      "jersey": "24",
+      "pos": "C",
+      "espnId": "4433136",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4433136.png"
+    },
+    "john-konchar": {
+      "id": "john-konchar",
+      "name": "John Konchar",
+      "team": "utah",
+      "jersey": "55",
+      "pos": "G",
+      "espnId": "3134932",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3134932.png"
+    },
+    "kevin-love": {
+      "id": "kevin-love",
+      "name": "Kevin Love",
+      "team": "utah",
+      "jersey": "42",
+      "pos": "F",
+      "espnId": "3449",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3449.png"
+    },
+    "lauri-markkanen": {
+      "id": "lauri-markkanen",
+      "name": "Lauri Markkanen",
+      "team": "utah",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "4066336",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066336.png"
+    },
+    "bez-mbeng": {
+      "id": "bez-mbeng",
+      "name": "Bez Mbeng",
+      "team": "utah",
+      "jersey": "21",
+      "pos": "G",
+      "espnId": "4898237",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4898237.png"
+    },
+    "svi-mykhailiuk": {
+      "id": "svi-mykhailiuk",
+      "name": "Svi Mykhailiuk",
+      "team": "utah",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "3133602",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133602.png"
+    },
+    "jusuf-nurkic": {
+      "id": "jusuf-nurkic",
+      "name": "Jusuf Nurkic",
+      "team": "utah",
+      "jersey": "30",
+      "pos": "C",
+      "espnId": "3102530",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3102530.png"
+    },
+    "brice-sensabaugh": {
+      "id": "brice-sensabaugh",
+      "name": "Brice Sensabaugh",
+      "team": "utah",
+      "jersey": "28",
+      "pos": "F",
+      "espnId": "5105839",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105839.png"
+    },
+    "oscar-tshiebwe": {
+      "id": "oscar-tshiebwe",
+      "name": "Oscar Tshiebwe",
+      "team": "utah",
+      "jersey": "34",
+      "pos": "C",
+      "espnId": "4432827",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432827.png"
+    },
+    "cody-williams": {
+      "id": "cody-williams",
+      "name": "Cody Williams",
+      "team": "utah",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "4895758",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4895758.png"
+    },
+    "leaky-black": {
+      "id": "leaky-black",
+      "name": "Leaky Black",
+      "team": "wsh",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "4395650",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4395650.png"
+    },
+    "bub-carrington": {
+      "id": "bub-carrington",
+      "name": "Bub Carrington",
+      "team": "wsh",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "4845374",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4845374.png"
+    },
+    "justin-champagnie": {
+      "id": "justin-champagnie",
+      "name": "Justin Champagnie",
+      "team": "wsh",
+      "jersey": "9",
+      "pos": "F",
+      "espnId": "4432907",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432907.png"
+    },
+    "sharife-cooper": {
+      "id": "sharife-cooper",
+      "name": "Sharife Cooper",
+      "team": "wsh",
+      "jersey": "13",
+      "pos": "G",
+      "espnId": "4432173",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432173.png"
+    },
+    "bilal-coulibaly": {
+      "id": "bilal-coulibaly",
+      "name": "Bilal Coulibaly",
+      "team": "wsh",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "5104155",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5104155.png"
+    },
+    "anthony-davis": {
+      "id": "anthony-davis",
+      "name": "Anthony Davis",
+      "team": "wsh",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "6583",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6583.png"
+    },
+    "kyshawn-george": {
+      "id": "kyshawn-george",
+      "name": "Kyshawn George",
+      "team": "wsh",
+      "jersey": "18",
+      "pos": "F",
+      "espnId": "5174563",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5174563.png"
+    },
+    "anthony-gill": {
+      "id": "anthony-gill",
+      "name": "Anthony Gill",
+      "team": "wsh",
+      "jersey": "16",
+      "pos": "F",
+      "espnId": "2581184",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/2581184.png"
+    },
+    "jaden-hardy": {
+      "id": "jaden-hardy",
+      "name": "Jaden Hardy",
+      "team": "wsh",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "4868423",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4868423.png"
+    },
+    "tre-johnson": {
+      "id": "tre-johnson",
+      "name": "Tre Johnson",
+      "team": "wsh",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "5238230",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5238230.png"
+    },
+    "julian-reese": {
+      "id": "julian-reese",
+      "name": "Julian Reese",
+      "team": "wsh",
+      "jersey": "15",
+      "pos": "F",
+      "espnId": "4683742",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683742.png"
+    },
+    "will-riley": {
+      "id": "will-riley",
+      "name": "Will Riley",
+      "team": "wsh",
+      "jersey": "27",
+      "pos": "G",
+      "espnId": "5144126",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5144126.png"
+    },
+    "dangelo-russell": {
+      "id": "dangelo-russell",
+      "name": "D'Angelo Russell",
+      "team": "wsh",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "3136776",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136776.png"
+    },
+    "alex-sarr": {
+      "id": "alex-sarr",
+      "name": "Alex Sarr",
+      "team": "wsh",
+      "jersey": "20",
+      "pos": "C",
+      "espnId": "5160992",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5160992.png"
+    },
+    "tristan-vukcevic": {
+      "id": "tristan-vukcevic",
+      "name": "Tristan Vukcevic",
+      "team": "wsh",
+      "jersey": "00",
+      "pos": "F",
+      "espnId": "4997537",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4997537.png"
+    },
+    "jamir-watkins": {
+      "id": "jamir-watkins",
+      "name": "Jamir Watkins",
+      "team": "wsh",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4606840",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4606840.png"
+    },
+    "cam-whitmore": {
+      "id": "cam-whitmore",
+      "name": "Cam Whitmore",
+      "team": "wsh",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "5105592",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5105592.png"
+    },
+    "trae-young": {
+      "id": "trae-young",
+      "name": "Trae Young",
+      "team": "wsh",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4277905",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277905.png"
+    }
+  }
+}

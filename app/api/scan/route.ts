@@ -3,6 +3,11 @@ import { getOpenAI, MODELS, hasOpenAIKey } from '@/lib/openai';
 import gossipData from '@/data/players-gossip.json';
 import rostersData from '@/data/rosters.json';
 import { rosterLookup } from '@/lib/roster-lookup';
+import {
+  verifyAgainstCandidates,
+  getNbaFaceEntry,
+  findCandidatesByTeamAndNumber,
+} from '@/lib/face-match';
 
 /**
  * Build a fast index: player_id → { league, team, jersey } from rosters.json.
@@ -34,6 +39,34 @@ const ROSTER_INDEX: RosterIndex = (() => {
  * through. 0.85 + the roster cross-check below = far fewer wrong IDs.
  */
 const CONFIDENCE_FLOOR = 0.85;
+
+/**
+ * Map a team string returned by GPT-4o vision (e.g. "Oklahoma City Thunder",
+ * "LA Lakers", "Brooklyn Nets") to our 3-letter team code (e.g. "okc", "lal",
+ * "bkn") used in rosters.json. Falls back to lowercased input if no match.
+ */
+const TEAM_NAME_TO_CODE: Record<string, string> = {
+  'atlanta hawks':'atl','boston celtics':'bos','brooklyn nets':'bkn','charlotte hornets':'cha',
+  'chicago bulls':'chi','cleveland cavaliers':'cle','dallas mavericks':'dal','denver nuggets':'den',
+  'detroit pistons':'det','golden state warriors':'gs','houston rockets':'hou','indiana pacers':'ind',
+  'la clippers':'lac','los angeles clippers':'lac','la lakers':'lal','los angeles lakers':'lal',
+  'memphis grizzlies':'mem','miami heat':'mia','milwaukee bucks':'mil','minnesota timberwolves':'min',
+  'new orleans pelicans':'no','new york knicks':'ny','oklahoma city thunder':'okc','orlando magic':'orl',
+  'philadelphia 76ers':'phi','philadelphia sixers':'phi','phoenix suns':'phx',
+  'portland trail blazers':'por','san antonio spurs':'sa','sacramento kings':'sac',
+  'toronto raptors':'tor','utah jazz':'utah','washington wizards':'wsh',
+};
+function extractTeamCode(visionTeam?: string | null): string | null {
+  if (!visionTeam) return null;
+  const lower = visionTeam.toLowerCase().trim();
+  if (TEAM_NAME_TO_CODE[lower]) return TEAM_NAME_TO_CODE[lower];
+  // Try matching individual tokens against team names
+  for (const [name, code] of Object.entries(TEAM_NAME_TO_CODE)) {
+    if (lower.includes(name) || name.includes(lower)) return code;
+  }
+  return null;
+}
+
 
 type GossipSource = { name: string; url: string; date: string };
 type GossipItem = {
@@ -346,6 +379,8 @@ export async function POST(req: NextRequest) {
 
   // ─────────────────────────────────────────────────────────
   // Vision call — return structured JSON player identification
+  // (Face-match verification runs AFTER vision returns its claim,
+  //  using vision's team/number to narrow candidates.)
   // ─────────────────────────────────────────────────────────
 
   // Build the system prompt — different shape based on whether modes were requested
@@ -482,6 +517,78 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
     const parsed = JSON.parse(raw) as ScanResult;
 
     // ════════════════════════════════════════════════════════════════════
+    // FACE-MATCH VERIFICATION (NBA only, via apna-mart/face-match)
+    // ════════════════════════════════════════════════════════════════════
+    // After vision returns, build a candidate list:
+    //   1. Vision's claimed player (if in our NBA index)
+    //   2. Players matching vision's team + jersey number from the roster
+    // Then run face-match against each candidate's ESPN headshot in parallel.
+    // Highest similarity > 0.65 wins. If nothing clears the bar, vision was
+    // probably wrong → downgrade to Unknown.
+    //
+    // Only fires when REPLICATE_API_TOKEN is set. Silent no-op otherwise so
+    // existing scans keep working.
+    let faceVerification: 'skipped' | 'no_candidates' | 'no_match' | 'verified' = 'skipped';
+    let faceMatchId: string | null = null;
+    let faceMatchSim = 0;
+
+    if (process.env.REPLICATE_API_TOKEN && parsed.player_name && parsed.player_name !== 'Unknown') {
+      try {
+        const userImageDataUri = `data:image/jpeg;base64,${imageBase64}`;
+
+        // Build candidate set (deduped)
+        const candidateMap = new Map<string, ReturnType<typeof getNbaFaceEntry>>();
+        const visionSlug = parsed.player_name
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-|-$/g, '');
+        const visionCandidate = getNbaFaceEntry(visionSlug);
+        if (visionCandidate) candidateMap.set(visionSlug, visionCandidate);
+
+        // Pull team token from vision's team string (e.g. "Oklahoma City Thunder" → "okc")
+        // by checking against each NBA team's full name fragments via existing rosterLookup
+        // helper. For this v1 we just match on the raw team string against face-index entries.
+        const teamCandidates = findCandidatesByTeamAndNumber(
+          extractTeamCode(parsed.team),
+          parsed.number
+        );
+        for (const c of teamCandidates) {
+          if (!candidateMap.has(c.id)) candidateMap.set(c.id, c);
+        }
+
+        const candidates = Array.from(candidateMap.values()).filter(
+          (c): c is NonNullable<typeof c> => Boolean(c)
+        );
+
+        if (candidates.length === 0) {
+          faceVerification = 'no_candidates';
+        } else {
+          const result = await verifyAgainstCandidates(userImageDataUri, candidates, 0.65);
+          if (result.bestMatch) {
+            faceMatchId = result.bestMatch.entry.id;
+            faceMatchSim = result.bestMatch.similarity;
+            faceVerification = 'verified';
+            // Override vision's claim with face-match winner
+            const gossipPlayer = GOSSIP[faceMatchId];
+            if (gossipPlayer) {
+              parsed.player_name = gossipPlayer.name;
+            } else {
+              parsed.player_name = result.bestMatch.entry.name;
+            }
+            parsed.confidence = Math.max(parsed.confidence ?? 0, faceMatchSim);
+          } else {
+            // No candidate cleared the threshold → vision likely hallucinated.
+            // Downgrade to Unknown so the recovery / quality gates take over.
+            faceVerification = 'no_match';
+            parsed.player_name = 'Unknown';
+          }
+        }
+      } catch {
+        // Silent — face verification is additive
+      }
+    }
+
+    // ════════════════════════════════════════════════════════════════════
     // QUALITY GATE 1 — CONFIDENCE FLOOR
     // ════════════════════════════════════════════════════════════════════
     // Vision is overconfident on similar faces (MPJ → SGA, etc.). If self-
@@ -586,6 +693,8 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
         'Content-Type': 'application/json',
         'X-Scan-Recovery': recoveryFired,
         'X-Scan-Quality-Gate': qualityGate,
+        'X-Scan-Face-Verify': faceVerification,
+        'X-Scan-Face-Match': faceMatchId ? `${faceMatchId}@${faceMatchSim.toFixed(3)}` : 'none',
         'X-Scan-Vision-Team': String(parsed.team || '').slice(0, 60),
         'X-Scan-Vision-Number': String(parsed.number ?? ''),
         ...CORS_HEADERS,
