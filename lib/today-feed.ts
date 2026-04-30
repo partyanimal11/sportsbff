@@ -312,14 +312,31 @@ LEGAL RULES (NON-NEGOTIABLE)
 - "Reported" tier needs a real outlet citation in the body
 
 ────────────────────────────────────
-QUALITY BAR — TWO CHECKS BEFORE EVERY CARD
+QUALITY BAR — THREE CHECKS BEFORE EVERY CARD
 ────────────────────────────────────
 
-For each card you finalize, run BOTH checks:
+For each card you finalize, run ALL THREE checks:
 
-**Check 1 — VOICE check:** "Would this run in Page Six? Would Deuxmoi repost it? Would TMZ headline it?" If no to all three, you're writing an AI cliché. Rewrite it.
+**Check 1 — REWRITE check (MANDATORY):**
+Compare your output headline to the input ESPN headline you started with. If they're more than 50% the same words, you HAVEN'T done your job. ESPN headlines are sports-beat-reporting flat ("Why Stephen A. calls Draymond's comments 'foul'"). Yours need to be Page-Six-shaped ("Draymond just blamed Steve Kerr for his career — Stephen A. is having absolutely none of it").
 
-**Check 2 — GROUNDING check:** Read every specific claim in your body. For each one, ask: "Did the input headline or description literally say this?" If no, REMOVE that claim. Even if it sounds plausible. Even if you remember it from training. If the input doesn't say it, it's invented.
+If your output is just a slightly-shorter version of the ESPN headline → REWRITE it again with the setup-punchline shape. Use the cheeky-verb library. Add a wink. Make it sound like a friend texting, not a beat reporter.
+
+CONCRETE TEST: read your headline aloud. If it sounds like ESPN's website, it's wrong. If it sounds like a Page Six column item, it's right.
+
+Common slip-throughs to FIX:
+  ❌ "Why Stephen A. calls Draymond's comments about Steve Kerr 'foul'"
+     ✓ "Draymond just blamed Steve Kerr for his career — Stephen A. is having absolutely none of it"
+  ❌ "Kevin Durant will miss Game 6 against the Lakers due to injury"
+     ✓ "KD's ankle says no for Game 6 — the Rockets walk into the Lakers without him"
+  ❌ "Back in Chicago, Angel Reese reflects on Sky, new start with Dream"
+     ✓ "Angel Reese came home to Chicago — and the room was heavier than she expected"
+  ❌ "Charles Barkley is worried about LeBron wearing down"
+     ✓ "Chuck has thoughts on LeBron's gas tank — and the Lakers' window is the subtext"
+
+**Check 2 — VOICE check:** "Would this run in Page Six? Would Deuxmoi repost it? Would TMZ headline it?" If no to all three, you're writing an AI cliché. Rewrite it.
+
+**Check 3 — GROUNDING check:** Read every specific claim in your body. For each one, ask: "Did the input headline or description literally say this?" If no, REMOVE that claim. Even if it sounds plausible. Even if you remember it from training. If the input doesn't say it, it's invented.
 
 Examples of invented details to STRIP:
   • "...ahead of tonight's game vs. the Lakers" (unless input mentions Lakers)
@@ -327,9 +344,11 @@ Examples of invented details to STRIP:
   • "...the locker room reportedly tense" (unless input says so)
   • "...amid trade rumors" (unless input mentions trade rumors)
 
-If after stripping invented details the body is too thin to ship, SKIP the card. Quality > quantity. 5 well-grounded cards beats 12 padded ones.
+The two rules work together: REWRITE the wording (voice/shape), but DON'T INVENT the facts. You can keep the same news and dramatically change the framing — the headline above ("KD's ankle says no for Game 6") uses ONLY facts from "KD will miss Game 6 of Lakers-Rockets due to injury" but reframes it in voice.
 
-Return ONLY a JSON object: { "cards": [ ...4-12 card objects, prioritizing accuracy over count... ] }
+If after applying all three checks the card is too thin to ship, SKIP it. Quality > quantity. 5 well-rewritten cards beats 12 ESPN-pass-throughs.
+
+Return ONLY a JSON object: { "cards": [ ...4-12 card objects, prioritizing voice-rewrite + accuracy... ] }
 No commentary outside the JSON.`;
 
 async function rewriteWithLLM(
@@ -351,16 +370,22 @@ async function rewriteWithLLM(
   const userMessage = `Here are today's candidate headlines (with player hints where we matched them to our DB):\n\n${JSON.stringify(compact, null, 2)}\n\nPick the 8-12 gossipiest, return as JSON.`;
 
   const completion = await getOpenAI().chat.completions.create({
-    model: MODELS.MINI,
+    // Bumped from MINI (gpt-4o-mini) to CHAT (gpt-4o) for voice-instruction
+    // fidelity. Mini was producing ~50% ESPN-pass-through headlines because it
+    // played it safe under the strict grounding rule. Full 4o follows tone
+    // direction much more reliably. Cost goes from ~$0.005/day to ~$0.05/day —
+    // still well under $20/year, totally worth it for consistent voice.
+    model: MODELS.CHAT,
     response_format: { type: 'json_object' },
     messages: [
       { role: 'system', content: TEA_VOICE_SYSTEM_PROMPT },
       { role: 'user', content: userMessage },
     ],
     max_tokens: 3000,
-    // Lower temp = stick to the input facts. Was 0.6, dropped to 0.3 after
-    // hallucination report (LLM invented "Wemby played the Lakers" detail
-    // not in the source headline). Brand promise: never invent. Always cite.
+    // Lower temp = stick to the input facts. The grounding rule + temp 0.3
+    // prevents fabrication ("Wemby played the Lakers" type errors). The
+    // voice rewrite still happens — the model just stays grounded while
+    // doing it.
     temperature: 0.3,
   });
 
