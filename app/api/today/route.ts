@@ -1,23 +1,11 @@
 import { NextRequest } from 'next/server';
-import { unstable_cache } from 'next/cache';
 import { hasOpenAIKey } from '@/lib/openai';
 import { pickFallbackTea } from '@/lib/tea-fallback';
-import { buildTodayFeed, type TeaCard as TeaFeedCard } from '@/lib/today-feed';
+import { getCachedTodayFeed, type TeaCard as TeaFeedCard } from '@/lib/today-feed';
 
-/**
- * Cached daily Tea feed builder. Wraps buildTodayFeed() so the LLM rewrite
- * pass runs at most once per day. The /api/cron/build-today endpoint
- * invalidates this via revalidateTag('today-feed').
- *
- * Falls through gracefully if the build returns nothing — the existing
- * lens-voiced single-card payload still ships, so the iOS app never
- * sees an empty Tea tab.
- */
-const getCachedTodayFeed = unstable_cache(
-  async (): Promise<TeaFeedCard[]> => buildTodayFeed(),
-  ['today-feed'],
-  { revalidate: 86400, tags: ['today-feed'] }
-);
+// getCachedTodayFeed lives in lib/today-feed.ts so /api/cron/build-today can
+// also call it. Calling the SAME cached wrapper from both routes ensures
+// the cron's pre-warm populates the cache the user route reads from.
 
 /**
  * GROUNDED LEGACY-FIELD SYNTHESIZER

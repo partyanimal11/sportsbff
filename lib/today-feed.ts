@@ -10,12 +10,15 @@
  *      sportsBFF voice, classify tier/category, return 8-12 cards.
  *   4. Validate, dedupe, return.
  *
- * Caching: caller wraps with unstable_cache; we don't cache here.
+ * Caching: getCachedTodayFeed() exported below wraps buildTodayFeed
+ * with Next.js's unstable_cache. Both /api/today and /api/cron/build-today
+ * call the cached version so the cron actually populates the cache.
  *
  * Failure mode: if any step fails we return whatever we have. The
  * /api/today endpoint has its own evergreen fallback.
  */
 import { getOpenAI, MODELS, hasOpenAIKey } from '@/lib/openai';
+import { unstable_cache } from 'next/cache';
 import gossipData from '@/data/players-gossip.json';
 
 const ESPN_NBA_NEWS = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=20';
@@ -431,7 +434,9 @@ async function rewriteWithLLM(
 /* ────────────────────────────────────────────────────────────────────────── */
 
 /**
- * Main entry point. Caller should wrap with unstable_cache for daily caching.
+ * Main entry point. Pulls headlines, runs the LLM rewrite, returns cards.
+ * Most callers should use `getCachedTodayFeed()` below instead of this raw function
+ * so the result lands in the daily cache.
  */
 export async function buildTodayFeed(): Promise<TeaCard[]> {
   const candidates = await gatherCandidates();
@@ -444,3 +449,18 @@ export async function buildTodayFeed(): Promise<TeaCard[]> {
     return [];
   }
 }
+
+/**
+ * Cached version of buildTodayFeed. Wraps with Next.js's data cache, tagged
+ * 'today-feed' so the cron's revalidateTag('today-feed') invalidates it.
+ *
+ * Both /api/today (POST + GET) and /api/cron/build-today (the daily 7am ET
+ * trigger) call this, so the cron's pre-warm actually fills the cache —
+ * meaning the first user request after the cron is a cache hit, not a
+ * 20-second LLM rebuild.
+ */
+export const getCachedTodayFeed = unstable_cache(
+  async (): Promise<TeaCard[]> => buildTodayFeed(),
+  ['today-feed'],
+  { revalidate: 86400, tags: ['today-feed'] }
+);
