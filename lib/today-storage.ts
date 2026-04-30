@@ -53,13 +53,14 @@ export async function saveCards(cards: TeaCard[]): Promise<{ url: string } | nul
     count: cards.length,
   };
 
-  // Best-effort cleanup: list any stale duplicates before writing
+  // Cleanup pass: delete any existing blobs at this path (including the
+  // current one) before writing. Necessary because put() with a fixed
+  // pathname will reject if the blob already exists in older Blob SDK
+  // versions, and the delete-before-put pattern is portable.
   try {
     const existing = await list({ prefix: BLOB_PATH });
     for (const blob of existing.blobs) {
-      if (blob.pathname !== BLOB_PATH) {
-        await del(blob.url).catch(() => undefined);
-      }
+      await del(blob.url).catch(() => undefined);
     }
   } catch {
     // ignore — we'll still try to write
