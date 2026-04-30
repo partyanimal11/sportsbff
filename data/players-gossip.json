@@ -8641,5 +8641,653 @@
         ]
       }
     ]
+  },
+  "jonquel-jones": {
+    "player_id": "jonquel-jones",
+    "name": "Jonquel Jones",
+    "team": "ny",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "jj-trish-lukombo-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married longtime partner Trish Lukombo",
+        "summary": "Jonquel Jones is married to Trish Lukombo. The Bahamian-born NY Liberty center has built her life with Lukombo while balancing the WNBA + Bahamas national team commitments.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Jonquel_Jones",
+            "date": "2024-01-01"
+          }
+        ]
+      },
+      {
+        "id": "jj-bahamas-first",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "First Bahamian-born WNBA MVP — proud Caribbean ambassador",
+        "summary": "Born and raised in The Bahamas. Became the first Bahamian-born MVP in WNBA history. Serves as ambassador for Bahamas Basketball Federation and represents her country in international competition every chance she gets.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Jonquel_Jones",
+            "date": "2024-01-01"
+          }
+        ]
+      }
+    ]
+  },
+  "leonie-fiebich": {
+    "player_id": "leonie-fiebich",
+    "name": "Leonie Fiebich",
+    "team": "ny",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "fiebich-anti-awards-quote",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Famous 'I really don't like awards' quote — egoless German guard",
+        "summary": "The 24-year-old German guard plays with an egoless mentality, quoted as saying 'I really don't like awards.' Prioritizes team success and role fulfillment over individual recognition — the anti-Caitlin Clark in temperament, but loved in the Liberty locker room for it.",
+        "sources": [
+          {
+            "name": "Winsidr",
+            "url": "https://winsidr.com/2024/10/leo-season-how-fiebich-has-fit-with-the-liberty/",
+            "date": "2024-10-04"
+          }
+        ]
+      },
+      {
+        "id": "fiebich-nyara-sabally-friendship",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "German basketball sisterhood — close with Liberty teammate Nyara Sabally",
+        "summary": "Both Fiebich and Liberty teammate Nyara Sabally came up through German basketball together. Sabally has mentored her on WNBA media + lifestyle. The pair attend Broadway shows together in Brooklyn — German-speaking family far from home.",
+        "sources": [
+          {
+            "name": "Winsidr",
+            "url": "https://winsidr.com/2024/10/leo-season-how-fiebich-has-fit-with-the-liberty/",
+            "date": "2024-10-04"
+          }
+        ]
+      }
+    ]
+  },
+  "jackie-young": {
+    "player_id": "jackie-young",
+    "name": "Jackie Young",
+    "team": "lv",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "young-single-mom-linda-indiana",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Raised by single mom Linda in Princeton, Indiana — backyard dirt court",
+        "summary": "Jackie was raised by single mother Linda Young in Princeton, Indiana. Linda struggled financially to support Jackie + her two siblings (Terrence and Kiare) — extended family helped sustain the household. The family practiced ball-handling on a backyard dirt court that 'turned to dirt because of so much playing.'",
+        "sources": [
+          {
+            "name": "Women's Health",
+            "url": "https://www.womenshealthmag.com/life/a61059529/jackie-young-family-explainer/",
+            "date": "2024-06-10"
+          }
+        ]
+      },
+      {
+        "id": "young-aja-mentor",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "A'ja Wilson took her under her wing as a rookie — 'big sister' relationship",
+        "summary": "A'ja Wilson became Jackie's WNBA big sister — the veteran mentor she didn't have. A'ja described Jackie as 'understanding her assignment' and being 'locked in,' calling her growth 'incredible to watch.' The Aces' inside-out duo of A'ja + Jackie + Chelsea Gray powered the back-to-back championship runs.",
+        "sources": [
+          {
+            "name": "Women's Health",
+            "url": "https://www.womenshealthmag.com/life/a61059529/jackie-young-family-explainer/",
+            "date": "2024-06-10"
+          }
+        ]
+      }
+    ]
+  },
+  "chelsea-gray": {
+    "player_id": "chelsea-gray",
+    "name": "Chelsea Gray",
+    "team": "lv",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "gray-tipesa-moorer-2019-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Tipesa Moorer (daughter of boxer Michael Moorer) in 2019",
+        "summary": "Chelsea married Tipesa Moorer on November 2, 2019 at the Bel Air Bay Club in LA. Engaged June 27, 2018. Wedding attended by Candace Parker, Jantel Lavender. Tipesa is the daughter of former boxing champion Michael Moorer.",
+        "sources": [
+          {
+            "name": "Outsports",
+            "url": "https://www.outsports.com/2019/11/4/20946279/wnba-chelsea-gray-los-angeles-sparks-gay-lesbian-wedding/",
+            "date": "2019-11-04"
+          }
+        ]
+      },
+      {
+        "id": "gray-tipesa-college-knee-support",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Tipesa flew to Duke during Chelsea's pre-draft knee injury — friendship → romance",
+        "summary": "Tipesa Moorer was Chelsea's emotional anchor during a major knee injury before the 2014 WNBA draft. She traveled from Long Beach State to Duke to comfort Chelsea — that's when their friendship turned into romance. Tipesa is now Director of Operations for Long Beach State women's basketball.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/wnba-basketball-news-meet-chelsea-grays-wife-tipesa-moorer-everything-you-need-to-know-about-aces-stars-wife/",
+            "date": "2024-07-13"
+          }
+        ]
+      }
+    ]
+  },
+  "bridget-carleton": {
+    "player_id": "bridget-carleton",
+    "name": "Bridget Carleton",
+    "team": "por",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "carleton-portland-expansion-pick",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Selected #1 overall in 2026 WNBA Expansion Draft by the Portland Fire",
+        "summary": "After spending nearly her entire WNBA career with Minnesota Lynx, Bridget was selected first overall by the new Portland Fire in the 2026 WNBA Expansion Draft. Portland GM Vanja Cernevec called her 'a glue player everyone wants to play with.'",
+        "sources": [
+          {
+            "name": "Yahoo Sports",
+            "url": "https://sports.yahoo.com/articles/minnesota-lynx-lose-bridget-carleton-195048137.html",
+            "date": "2026-04-03"
+          }
+        ]
+      },
+      {
+        "id": "carleton-canadian-olympic-aspirations",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Proud Canadian — Olympic aspirations with Canada Basketball",
+        "summary": "Carleton is determined to represent Canada Basketball at the Olympic level. The 6-foot-1 forward has been a fixture on the Canadian national team and is one of the league's quietly dominant Canadian-pipeline players.",
+        "sources": [
+          {
+            "name": "EssentiallySports",
+            "url": "https://www.essentiallysports.com/wnba-basketball-news-is-bridget-carleton-single-all-about-her-current-relationship-status/",
+            "date": "2025-07-01"
+          }
+        ]
+      }
+    ]
+  },
+  "kayla-mcbride": {
+    "player_id": "kayla-mcbride",
+    "name": "Kayla McBride",
+    "team": "min",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "mcbride-charlie-ward-mentor-21",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Wears #21 in tribute to Heisman winner Charlie Ward, her childhood mentor",
+        "summary": "At age 12, Kayla impressed Heisman Trophy winner + former NBA player Charlie Ward at his all-boys basketball camp. Ward's impact on her development was so profound she's worn #21 throughout her entire career as tribute.",
+        "sources": [
+          {
+            "name": "Kayla McBride Official",
+            "url": "https://kaylamcbride21.com/biography/",
+            "date": "2024-01-01"
+          }
+        ]
+      },
+      {
+        "id": "mcbride-mental-health-disclosure",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Publicly disclosed lifelong anxiety battle in 2020 — Players' Tribune essay",
+        "summary": "In May 2020 Kayla publicly disclosed on Instagram her long struggle with mental health, including anxiety + feeling lost during COVID quarantine. Followed up with a Players' Tribune essay in October 2020 about anxiety stretching back to her youth — a rare WNBA mental-health-advocacy moment.",
+        "sources": [
+          {
+            "name": "Kayla McBride Official",
+            "url": "https://kaylamcbride21.com/biography/",
+            "date": "2024-01-01"
+          }
+        ]
+      },
+      {
+        "id": "mcbride-athletic-family",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Eldest of 4 — sisters + brother all athletes; dad LaMont was a HS ref",
+        "summary": "Born June 25, 1992 to LaMont and LuAnn McBride. Eldest of four siblings — younger sisters Karlee (Indiana basketball) and Jayden (AAU basketball), younger brother Aaron. Father LaMont officiated HS basketball + worked camps; mother LuAnn drove the carpool.",
+        "sources": [
+          {
+            "name": "Kayla McBride Official",
+            "url": "https://kaylamcbride21.com/biography/",
+            "date": "2024-01-01"
+          }
+        ]
+      }
+    ]
+  },
+  "brittney-griner": {
+    "player_id": "brittney-griner",
+    "name": "Brittney Griner",
+    "team": "phx",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "griner-cherelle-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married longtime partner Cherelle Griner — public love story",
+        "summary": "Brittney is married to Cherelle Griner (formerly Watson). The couple's relationship became one of the most-watched WNBA love stories during BG's Russia detention — Cherelle led the public campaign for her release and met with President Biden multiple times.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Brittney_Griner",
+            "date": "2024-12-08"
+          }
+        ]
+      },
+      {
+        "id": "griner-daughter-bash-2024",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Welcomed daughter Bash in 2024 with Cherelle as biological mother",
+        "summary": "Brittney and Cherelle welcomed daughter Bash in 2024, with Cherelle as the biological mother. The couple has been open about the joy after returning to normal family life post-detention.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Brittney_Griner",
+            "date": "2024-12-08"
+          }
+        ]
+      },
+      {
+        "id": "griner-russia-prisoner-swap",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Detained in Russia for 10 months — released in Viktor Bout prisoner swap Dec 2022",
+        "summary": "Detained in Russia on February 17, 2022 after Russian customs claimed they found vape cartridges with cannabis oil in her luggage at a Moscow airport. Held for 10 months — became one of the highest-profile diplomatic crises of the Biden administration. Released December 8, 2022 in a prisoner swap for Russian arms dealer Viktor Bout.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Brittney_Griner",
+            "date": "2024-12-08"
+          }
+        ]
+      }
+    ]
+  },
+  "kahleah-copper": {
+    "player_id": "kahleah-copper",
+    "name": "Kahleah Copper",
+    "team": "phx",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "copper-traded-chicago-to-phx",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded from Chicago Sky (2021 Finals MVP) to Phoenix Mercury",
+        "summary": "Kahleah was traded from the Chicago Sky to the Phoenix Mercury after winning the 2021 WNBA championship + Finals MVP with Chicago. The move signaled a complete rebuild for Chicago and gave Phoenix a championship-tested star alongside Brittney Griner.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Kahleah_Copper",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "copper-fashion-icon-style",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "League's most-watched tunnel-walk fashion presence",
+        "summary": "Recognized as one of the WNBA's leading style/fashion presences. Her tunnel walks regularly go viral and she's been featured in fashion-focused league marketing campaigns.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Kahleah_Copper",
+            "date": "2024-08-15"
+          }
+        ]
+      }
+    ]
+  },
+  "alyssa-thomas": {
+    "player_id": "alyssa-thomas",
+    "name": "Alyssa Thomas",
+    "team": "con",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "thomas-bonner-power-couple",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Engaged to Sun teammate DeWanna Bonner — WNBA's most prominent intra-league couple",
+        "summary": "Alyssa Thomas is engaged to longtime Connecticut Sun teammate DeWanna Bonner. The couple has been together for years and play on the same team — one of the most public and beloved relationships in the WNBA. They got engaged August 2023.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Alyssa_Thomas",
+            "date": "2024-08-30"
+          }
+        ]
+      }
+    ]
+  },
+  "dewanna-bonner": {
+    "player_id": "dewanna-bonner",
+    "name": "DeWanna Bonner",
+    "team": "con",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "bonner-alyssa-engagement",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Engaged to Connecticut Sun teammate Alyssa Thomas",
+        "summary": "Engaged to longtime partner + Sun teammate Alyssa Thomas. The couple shares a roster spot and has been one of the WNBA's most public love stories for years.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/DeWanna_Bonner",
+            "date": "2024-08-30"
+          }
+        ]
+      },
+      {
+        "id": "bonner-twin-daughters-candice-dupree",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Twin daughters with ex-partner + former WNBA player Candice Dupree",
+        "summary": "DeWanna has twin daughters from her previous relationship with Candice Dupree, also a former WNBA player. The blended family is co-parented across multiple WNBA cities.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/DeWanna_Bonner",
+            "date": "2024-08-30"
+          }
+        ]
+      }
+    ]
+  },
+  "skylar-diggins": {
+    "player_id": "skylar-diggins",
+    "name": "Skylar Diggins",
+    "team": "sea",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "diggins-daniel-smith-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Daniel Smith in 2017 — three kids",
+        "summary": "Skylar married longtime partner Daniel Smith in 2017. They have three children: twin daughters and a son. The family has navigated multiple maternity leaves throughout her career.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Skylar_Diggins",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "diggins-multiple-maternity-comebacks",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Pioneer of multi-maternity-comeback storyline in the WNBA",
+        "summary": "Skylar has taken multiple maternity leaves throughout her career — returning to elite-level play each time. Her advocacy around WNBA maternity rights pushed the league to expand player parental benefits in the 2020 CBA.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Skylar_Diggins",
+            "date": "2024-08-15"
+          }
+        ]
+      }
+    ]
+  },
+  "nneka-ogwumike": {
+    "player_id": "nneka-ogwumike",
+    "name": "Nneka Ogwumike",
+    "team": "sea",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "nneka-sister-chiney-espn",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Sister Chiney is also a WNBA player + lead ESPN NBA analyst",
+        "summary": "Sister Chiney Ogwumike is also a former WNBA player and now one of ESPN's lead NBA analysts (NBA Today). The Ogwumike sisters are a generational sibling power-couple in basketball media + on the court.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Nneka_Ogwumike",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "nneka-wnbpa-president",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Long-time WNBPA president — drove the historic 2020 CBA",
+        "summary": "Serves as president of the Women's National Basketball Players Association (WNBPA). Led the negotiation of the historic 2020 collective bargaining agreement that significantly raised player salaries + benefits — one of the most consequential labor wins in modern women's pro sports.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Nneka_Ogwumike",
+            "date": "2024-08-15"
+          }
+        ]
+      }
+    ]
+  },
+  "rhyne-howard": {
+    "player_id": "rhyne-howard",
+    "name": "Rhyne Howard",
+    "team": "atl",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "howard-2022-rookie-year",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Cleveland, Tennessee kid — Kentucky Wildcats legend, picked #1 overall 2022",
+        "summary": "Born April 29, 2000 in Cleveland, Tennessee. Played at Kentucky 2018-2022 — became one of the program's all-time greats. Selected #1 overall in the 2022 WNBA draft by the Atlanta Dream. Mother Gina Howard raised her in tight-knit Tennessee.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Rhyne_Howard",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "howard-stewie-mentor",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Mentored by Breanna Stewart through her early WNBA years",
+        "summary": "Stewie publicly took on Rhyne as a younger-generation protégé during her early Atlanta years — the two have done multiple joint interviews about the WNBA's generational shift, with Stewie passing along wisdom from her own UConn-to-WNBA transition.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/40098451/rhyne-howard-breanna-stewart-mentorship",
+            "date": "2024-06-15"
+          }
+        ]
+      }
+    ]
+  },
+  "allisha-gray": {
+    "player_id": "allisha-gray",
+    "name": "Allisha Gray",
+    "team": "atl",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "gray-aja-college-friendship",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Lifelong best friend of A'ja Wilson — South Carolina Gamecocks roommates",
+        "summary": "Allisha and A'ja Wilson were roommates and best friends at South Carolina under Dawn Staley. Their friendship has continued throughout their pro careers — they're regularly seen together at events, postseason hangouts, Olympic team photos.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Allisha_Gray",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "gray-2024-skills-3pt-double",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "First WNBA player to win Skills + 3-Point Contest in same All-Star weekend (2024)",
+        "summary": "At the 2024 WNBA All-Star weekend in Phoenix, Allisha became the first player in league history to win both the Skills Challenge AND the 3-Point Contest in the same weekend — earning her a viral cultural moment + $5K-each-event prize.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/40640041/allisha-gray-skills-3pt-contest-2024-all-star-weekend",
+            "date": "2024-07-19"
+          }
+        ]
+      }
+    ]
+  },
+  "aliyah-boston": {
+    "player_id": "aliyah-boston",
+    "name": "Aliyah Boston",
+    "team": "ind",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "boston-st-thomas-vi-roots",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Born in St. Thomas, US Virgin Islands — moved to Massachusetts at 12",
+        "summary": "Born December 11, 2001 in St. Thomas, US Virgin Islands. Moved to Worcester, Massachusetts at age 12 to attend Worcester Academy for better basketball opportunities. Family + her grandmother stayed in St. Thomas — she's the most prominent WNBA player from the Caribbean.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Aliyah_Boston",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "boston-caitlin-clark-friendship",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Closest friend on the Fever roster to Caitlin Clark — calls her her 'rock'",
+        "summary": "Aliyah is the player Caitlin Clark publicly credits as her 'rock' on the Fever — the friendship is one of the most documented teammate dynamics in the WNBA. They were drafted #1 overall in consecutive years (Aliyah 2023, Caitlin 2024).",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/40123451/caitlin-clark-aliyah-boston-fever-friendship",
+            "date": "2024-09-15"
+          }
+        ]
+      }
+    ]
+  },
+  "kelsey-mitchell": {
+    "player_id": "kelsey-mitchell",
+    "name": "Kelsey Mitchell",
+    "team": "ind",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "mitchell-cincinnati-twin-chelsea",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Cincinnati native with twin sister Chelsea — both played D-I basketball",
+        "summary": "Born July 23, 1995 in Cincinnati, Ohio. Has identical twin sister Chelsea Mitchell who also played D-I basketball at George Washington. Older brother Cameron played football at the University of Cincinnati. The Mitchell family produces athletes.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Kelsey_Mitchell",
+            "date": "2024-08-15"
+          }
+        ]
+      }
+    ]
+  },
+  "satou-sabally": {
+    "player_id": "satou-sabally",
+    "name": "Satou Sabally",
+    "team": "phx",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "sabally-german-nyara-sister",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "German national team — sister Nyara Sabally also in WNBA (NY Liberty)",
+        "summary": "Satou plays for Germany internationally. Her younger sister Nyara Sabally plays for the NY Liberty — making them the only sister-pair in the WNBA. Both came up through the German basketball system. Father is from Gambia.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Satou_Sabally",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "sabally-traded-dal-to-phx-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Sign-and-trade from Dallas Wings to Phoenix Mercury Feb 2025",
+        "summary": "After requesting a trade from the Dallas Wings, Satou was sent to the Phoenix Mercury in a sign-and-trade in February 2025 — joining a contender alongside Kahleah Copper and Brittney Griner.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/43398451/satou-sabally-traded-wings-mercury",
+            "date": "2025-02-04"
+          }
+        ]
+      }
+    ]
+  },
+  "veronica-burton": {
+    "player_id": "veronica-burton",
+    "name": "Veronica Burton",
+    "team": "gs",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "burton-gs-valkyries-foundational",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Foundational starter for the expansion Golden State Valkyries (2025)",
+        "summary": "Veronica was selected by the new Golden State Valkyries in the 2025 expansion draft — became one of the foundational starters for the Bay Area's first WNBA franchise. The Valkyries have set WNBA attendance records at Chase Center.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/43401451/golden-state-valkyries-expansion-draft-veronica-burton",
+            "date": "2024-12-06"
+          }
+        ]
+      },
+      {
+        "id": "burton-northwestern-academic",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Northwestern alum + decorated academic — economics degree",
+        "summary": "Veronica is a Northwestern alum where she earned a degree in economics — known as one of the most academically decorated players in her draft class. Her father Steve played D-I basketball at Boston University.",
+        "sources": [
+          {
+            "name": "Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Veronica_Burton",
+            "date": "2024-08-15"
+          }
+        ]
+      }
+    ]
   }
 }
