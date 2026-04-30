@@ -1,6 +1,7 @@
 import { NextRequest } from 'next/server';
 import { getOpenAI, MODELS, hasOpenAIKey } from '@/lib/openai';
 import gossipData from '@/data/players-gossip.json';
+import { rosterLookup } from '@/lib/roster-lookup';
 
 type GossipSource = { name: string; url: string; date: string };
 type GossipItem = {
@@ -20,6 +21,49 @@ type GossipPlayer = {
 };
 const GOSSIP: Record<string, GossipPlayer> = gossipData as Record<string, GossipPlayer>;
 const DRAMA_CATEGORIES = new Set(['romance', 'family', 'legal', 'culture', 'off_field']);
+
+/**
+ * RECOVERY: when vision returns Unknown but says it read team + number off the jersey,
+ * try to resolve the player from our roster index. Vision often correctly reads "INDIANA
+ * FEVER" + "22" off a back-of-jersey shot but doesn't connect it to Caitlin Clark
+ * (especially newer players whose face it hasn't strongly memorized).
+ *
+ * Walks each whitespace-separated token in the team string against our jersey-text
+ * alias map, picks the token that returns the fewest candidates (most specific), and
+ * filters to the matching jersey number. Returns the candidate if and only if the
+ * lookup narrows to exactly one player.
+ */
+function recoverFromVisionTextSignals(
+  visionTeam: string | undefined,
+  visionNumber: number | string | undefined,
+): { name: string; team: string; league: string; position: string; jerseyNumber: string } | null {
+  if (!visionTeam || visionNumber == null) return null;
+  const numStr = String(visionNumber).trim();
+  if (!numStr || numStr === '0') return null;
+
+  const tokens = visionTeam
+    .toUpperCase()
+    .split(/[^A-Z0-9]+/)
+    .filter((t) => t.length >= 3);
+
+  let best: ReturnType<typeof rosterLookup>['candidates'] | null = null;
+  for (const token of tokens) {
+    const { candidates } = rosterLookup({ teamHint: token, number: numStr });
+    if (candidates.length === 0) continue;
+    if (!best || candidates.length < best.length) best = candidates;
+    if (best.length === 1) break;
+  }
+
+  if (!best || best.length !== 1) return null;
+  const c = best[0];
+  return {
+    name: c.name,
+    team: c.team,
+    league: c.league,
+    position: c.position,
+    jerseyNumber: c.jerseyNumber,
+  };
+}
 
 /** Convert a player name to slug-id format and look up gossip. Tries exact + partial match. */
 function lookupGossipByName(playerName: string): GossipPlayer | null {
@@ -405,6 +449,23 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
     const raw = completion.choices[0]?.message?.content ?? '{}';
     const parsed = JSON.parse(raw) as ScanResult;
 
+    // ROSTER-LOOKUP RECOVERY: vision returned Unknown but read team + number?
+    // Salvage the scan via our roster index. This is what saves Caitlin Clark when
+    // vision sees "FEVER + 22" but can't ID her face.
+    let recoveryFired: 'none' | 'recovered' | 'no_match' = 'none';
+    if (parsed.player_name === 'Unknown' || !parsed.player_name) {
+      recoveryFired = 'no_match';
+      const recovered = recoverFromVisionTextSignals(parsed.team, parsed.number);
+      if (recovered) {
+        parsed.player_name = recovered.name;
+        parsed.position = recovered.position || parsed.position;
+        parsed.number = Number(recovered.jerseyNumber) || parsed.number;
+        parsed.confidence = 0.85;
+        parsed.blurb = `${recovered.name} — based on the jersey signals.`;
+        recoveryFired = 'recovered';
+      }
+    }
+
     // OVERRIDE drama with curated, sourced gossip from the database when we have it.
     // The vision model often invents sports-stat content as "drama"; the curated DB is
     // off-court only with real citations. Database wins over vision for drama claims.
@@ -427,7 +488,13 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
 
     return new Response(JSON.stringify(parsed), {
       status: 200,
-      headers: { 'Content-Type': 'application/json', ...CORS_HEADERS },
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Scan-Recovery': recoveryFired,
+        'X-Scan-Vision-Team': String(parsed.team || '').slice(0, 60),
+        'X-Scan-Vision-Number': String(parsed.number ?? ''),
+        ...CORS_HEADERS,
+      },
     });
   } catch (err) {
     // Vision failed (rate limit, JSON parse, network). Return an Unknown response
