@@ -357,10 +357,38 @@ export async function POST(req: NextRequest) {
   }
 
   // ─────────────────────────────────────────────────────────
-  // No API key → return a rich pre-authored sample
+  // No API key → return Unknown (NOT a fake sample).
+  //
+  // Bug fix 2026-05-01: previously fell through to nextSample() on missing
+  // key. Because Vercel cold-starts reset _sampleIndex to 0 every time, the
+  // first sample in the array (Travis Kelce) was returned for *every* scan
+  // when the key was missing in production — giving users a confidently
+  // wrong, real-player answer regardless of what they actually scanned
+  // (e.g. Miles Bridges → "Travis Kelce").
+  //
+  // Better failure mode: return Unknown with a clear status header so the
+  // problem is visible. Demo samples are still reachable via ?sample=… for
+  // intentional testing only.
   // ─────────────────────────────────────────────────────────
   if (!hasOpenAIKey()) {
-    return returnSample(nextSample());
+    return new Response(
+      JSON.stringify({
+        player_name: 'Unknown',
+        number: 0,
+        position: 'Unknown',
+        team: 'Unknown',
+        jersey_color: 'white',
+        blurb: "Scan is offline right now — try again in a moment.",
+      } satisfies ScanResult),
+      {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Scan-Mode': 'no_key',
+          ...CORS_HEADERS,
+        },
+      },
+    );
   }
 
   let imageBase64: string | null = null;
@@ -691,6 +719,7 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
       status: 200,
       headers: {
         'Content-Type': 'application/json',
+        'X-Scan-Mode': 'vision',
         'X-Scan-Recovery': recoveryFired,
         'X-Scan-Quality-Gate': qualityGate,
         'X-Scan-Face-Verify': faceVerification,
@@ -717,6 +746,7 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
         status: 200,
         headers: {
           'Content-Type': 'application/json',
+          'X-Scan-Mode': 'vision_error',
           'X-Scan-Vision-Error': String(err).slice(0, 80),
           ...CORS_HEADERS,
         },
