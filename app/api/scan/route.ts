@@ -549,6 +549,16 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
     const raw = completion.choices[0]?.message?.content ?? '{}';
     const parsed = JSON.parse(raw) as ScanResult;
 
+    // Snapshot of what vision said BEFORE any gates fire — for diagnostics.
+    // Headers below report this so we can see whether failures are vision
+    // refusing to commit vs. our gates rejecting a vision answer.
+    const visionRaw = {
+      player_name: parsed.player_name ?? 'Unknown',
+      team: parsed.team ?? 'Unknown',
+      number: parsed.number ?? 0,
+      confidence: typeof parsed.confidence === 'number' ? parsed.confidence : 0,
+    };
+
     // ════════════════════════════════════════════════════════════════════
     // FACE-MATCH VERIFICATION (NBA only, via apna-mart/face-match)
     // ════════════════════════════════════════════════════════════════════
@@ -735,8 +745,10 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
         'X-Scan-Roster-Check': rosterCheck,
         'X-Scan-Face-Verify': faceVerification,
         'X-Scan-Face-Match': faceMatchId ? `${faceMatchId}@${faceMatchSim.toFixed(3)}` : 'none',
-        'X-Scan-Vision-Team': String(parsed.team || '').slice(0, 60),
-        'X-Scan-Vision-Number': String(parsed.number ?? ''),
+        'X-Scan-Vision-Player': String(visionRaw.player_name).slice(0, 60),
+        'X-Scan-Vision-Confidence': visionRaw.confidence.toFixed(2),
+        'X-Scan-Vision-Team': String(visionRaw.team).slice(0, 60),
+        'X-Scan-Vision-Number': String(visionRaw.number),
         ...CORS_HEADERS,
       },
     });
