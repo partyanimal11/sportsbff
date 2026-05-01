@@ -607,7 +607,14 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
     //
     // When it runs, only verifies vision's named candidate (1 Replicate
     // call instead of up to 4) — that's enough to catch hallucinations.
-    let faceVerification: 'skipped' | 'no_candidates' | 'no_match' | 'verified' = 'skipped';
+    //
+    // Failure modes (matter a lot — see 2026-05-01 perf incident):
+    //   - similarity ≥ 0.65  →  verified, ship it
+    //   - similarity < 0.65  →  Replicate explicitly rejected, kill to Unknown
+    //   - Replicate timeout/error → couldn't verify, KEEP vision's answer
+    //                                (don't kill correct IDs because Replicate
+    //                                 had a cold start)
+    let faceVerification: 'skipped' | 'no_candidates' | 'no_match' | 'verified' | 'unverifiable' = 'skipped';
     let faceMatchId: string | null = null;
     let faceMatchSim = 0;
 
@@ -647,12 +654,24 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
             }
             parsed.confidence = Math.max(parsed.confidence ?? 0, faceMatchSim);
           } else {
-            faceVerification = 'no_match';
-            parsed.player_name = 'Unknown';
+            // Distinguish two failure modes:
+            //   - All scored candidates returned similarity 0 → Replicate
+            //     errored/timed out, we couldn't verify. Keep vision's answer.
+            //   - At least one candidate scored > 0 but below threshold →
+            //     Replicate compared and explicitly rejected. Kill to Unknown.
+            const explicitlyRejected = result.scored.some((s) => s.similarity > 0);
+            if (explicitlyRejected) {
+              faceVerification = 'no_match';
+              parsed.player_name = 'Unknown';
+            } else {
+              // Couldn't verify — but vision's answer is still our best guess.
+              faceVerification = 'unverifiable';
+            }
           }
         }
       } catch {
-        // Silent — face verification is additive
+        // Silent — face verification is additive. Keep vision's answer.
+        faceVerification = 'unverifiable';
       }
     }
 

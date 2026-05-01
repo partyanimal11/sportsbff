@@ -201,10 +201,13 @@ export async function compareFaces(
     };
 
     let output = data.output;
-    // Poll if not done synchronously
+    // Poll if not done synchronously. Capped tight (8s total) — beyond that
+    // Replicate is cold-starting and we'd rather ship vision's answer than
+    // hang the whole scan. The route treats null as "couldn't verify, but
+    // don't kill the result" so the user still sees a useful response.
     if (data.status !== 'succeeded' && data.id) {
       const pollUrl = `${REPLICATE_API}/${data.id}`;
-      for (let i = 0; i < 25; i++) {
+      for (let i = 0; i < 8; i++) {
         await new Promise((r) => setTimeout(r, 1000));
         const pollRes = await fetch(pollUrl, { headers: { Authorization: `Bearer ${token}` } });
         if (!pollRes.ok) continue;
