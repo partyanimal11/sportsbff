@@ -20,7 +20,7 @@
  * Used by /api/scan internally and externally for debugging.
  */
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyAgainstCandidates, getNbaFaceEntry } from '@/lib/face-match';
+import { verifyAgainstCandidates, getNbaFaceEntry, debugCompareFaces } from '@/lib/face-match';
 
 export const runtime = 'nodejs';
 export const maxDuration = 60;
@@ -77,6 +77,29 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       { error: 'No candidates provided. Pass `candidates: ["lebron-james", ...]`' },
       { status: 400, headers: CORS_HEADERS }
+    );
+  }
+
+  // Debug mode — return raw Replicate output for the first candidate
+  // so we can diagnose response shape mismatches.
+  const url = new URL(req.url);
+  if (url.searchParams.get('debug') === '1') {
+    const firstId = candidatePlayerIds[0];
+    const entry = getNbaFaceEntry(firstId);
+    if (!entry?.headshot) {
+      return NextResponse.json(
+        { error: 'First candidate has no headshot' },
+        { status: 400, headers: CORS_HEADERS }
+      );
+    }
+    const debug = await debugCompareFaces(imageInput, entry.headshot);
+    return NextResponse.json(
+      {
+        debug: true,
+        candidate: { id: entry.id, name: entry.name, headshot: entry.headshot },
+        replicateRaw: debug,
+      },
+      { headers: CORS_HEADERS }
     );
   }
 

@@ -108,6 +108,53 @@ export type FaceMatchResult = {
  * Failure mode: silent. Caller treats null as "no useful signal" and
  * falls through to other identification paths.
  */
+/**
+ * DEBUG VERSION — returns the raw Replicate response for diagnosis.
+ * Used by /api/scan/face-match?debug=1 only.
+ */
+export async function debugCompareFaces(
+  image1: string,
+  image2: string
+): Promise<unknown> {
+  const token = process.env.REPLICATE_API_TOKEN;
+  if (!token) return { error: 'no-token', tokenSet: false };
+
+  const modelId = DEFAULT_MODEL;
+  const isVersionPinned = modelId.includes(':');
+  const body: Record<string, unknown> = { input: { image1, image2 } };
+  if (isVersionPinned) body.version = modelId.split(':')[1];
+
+  const url = isVersionPinned
+    ? REPLICATE_API
+    : `https://api.replicate.com/v1/models/${modelId}/predictions`;
+
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+        Prefer: 'wait',
+      },
+      body: JSON.stringify(body),
+    });
+    const text = await res.text();
+    let parsed: unknown = null;
+    try { parsed = JSON.parse(text); } catch { /* keep text */ }
+    return {
+      url,
+      modelId,
+      isVersionPinned,
+      requestBody: body,
+      replicateStatus: res.status,
+      replicateOk: res.ok,
+      replicateBody: parsed ?? text.slice(0, 500),
+    };
+  } catch (err) {
+    return { error: String(err) };
+  }
+}
+
 export async function compareFaces(
   image1: string,
   image2: string
