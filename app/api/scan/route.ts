@@ -617,30 +617,20 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
     }
 
     // ════════════════════════════════════════════════════════════════════
-    // QUALITY GATE 1 — CONFIDENCE FLOOR
+    // QUALITY GATES — roster cross-check first, then confidence floor
     // ════════════════════════════════════════════════════════════════════
-    // Vision is overconfident on similar faces (MPJ → SGA, etc.). If self-
-    // reported confidence is below the floor, override to Unknown rather
-    // than ship a wrong ID. Roster recovery still runs against the team +
-    // number signals, so we may still recover a valid result.
-    let qualityGate: 'passed' | 'low_confidence' | 'roster_mismatch' = 'passed';
-    if (
-      parsed.player_name &&
-      parsed.player_name !== 'Unknown' &&
-      typeof parsed.confidence === 'number' &&
-      parsed.confidence < CONFIDENCE_FLOOR
-    ) {
-      qualityGate = 'low_confidence';
-      parsed.player_name = 'Unknown';
-    }
+    // 2026-05-01: previously the confidence floor (0.85) fired BEFORE the
+    // roster check, killing correct moderate-confidence IDs (e.g. Miles
+    // Bridges at conf 0.78, even though he genuinely wears #0 for the
+    // Hornets and the roster would have confirmed). The fix: run the
+    // roster cross-check first. If roster CONFIRMS the player+number,
+    // vision was right — ship it regardless of self-reported confidence.
+    // If roster MISMATCHES, vision hallucinated — kill it. Only fall back
+    // to the confidence floor when the roster has no opinion (player not
+    // in our DB, or no jersey number returned).
+    let qualityGate: 'passed' | 'low_confidence' | 'roster_mismatch' | 'roster_confirmed' = 'passed';
+    let rosterCheck: 'confirmed' | 'mismatch' | 'no_data' = 'no_data';
 
-    // ════════════════════════════════════════════════════════════════════
-    // QUALITY GATE 2 — ROSTER CROSS-CHECK
-    // ════════════════════════════════════════════════════════════════════
-    // If vision claims a player AND a jersey number, verify both against our
-    // 3,646-player roster index. If the player exists in our DB and their
-    // ACTUAL jersey number doesn't match what vision returned, vision likely
-    // invented the number to match a hallucinated face. Override to Unknown.
     if (
       parsed.player_name &&
       parsed.player_name !== 'Unknown' &&
@@ -655,13 +645,28 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
       if (rosterEntry) {
         const rosterNum = (rosterEntry.jersey || '').replace(/^0+/, '') || '0';
         const visionNum = String(parsed.number).replace(/^0+/, '') || '0';
-        if (rosterNum !== visionNum) {
-          // The vision-claimed player doesn't actually wear that number.
-          // Strong evidence vision hallucinated. Reject.
-          qualityGate = 'roster_mismatch';
-          parsed.player_name = 'Unknown';
-        }
+        rosterCheck = rosterNum === visionNum ? 'confirmed' : 'mismatch';
       }
+    }
+
+    if (rosterCheck === 'mismatch') {
+      // Vision-claimed player doesn't wear that number — hallucination.
+      qualityGate = 'roster_mismatch';
+      parsed.player_name = 'Unknown';
+    } else if (rosterCheck === 'confirmed') {
+      // Roster verifies the ID — trust it. Roster is harder evidence
+      // than vision's self-rated confidence.
+      qualityGate = 'roster_confirmed';
+      parsed.confidence = Math.max(parsed.confidence ?? 0, 0.9);
+    } else if (
+      parsed.player_name &&
+      parsed.player_name !== 'Unknown' &&
+      typeof parsed.confidence === 'number' &&
+      parsed.confidence < CONFIDENCE_FLOOR
+    ) {
+      // No roster data and low confidence — likely a hallucination.
+      qualityGate = 'low_confidence';
+      parsed.player_name = 'Unknown';
     }
 
     // ════════════════════════════════════════════════════════════════════
@@ -722,6 +727,7 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
         'X-Scan-Mode': 'vision',
         'X-Scan-Recovery': recoveryFired,
         'X-Scan-Quality-Gate': qualityGate,
+        'X-Scan-Roster-Check': rosterCheck,
         'X-Scan-Face-Verify': faceVerification,
         'X-Scan-Face-Match': faceMatchId ? `${faceMatchId}@${faceMatchSim.toFixed(3)}` : 'none',
         'X-Scan-Vision-Team': String(parsed.team || '').slice(0, 60),
