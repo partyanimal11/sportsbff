@@ -163,8 +163,14 @@ export async function compareFaces(
   if (!token) return null;
 
   try {
-    // Use Replicate's sync mode (Prefer: wait) — keeps connection open up to ~60s
-    // for the prediction to finish. Saves us a poll loop.
+    // 2026-05-01 perf: previously the initial fetch used `Prefer: wait` which
+    // tells Replicate to hold the connection up to 60s for cold-start
+    // predictions. That tanked our /api/scan response time when the model
+    // was idle. Now we kick off ASYNC (no Prefer header) so the create
+    // request returns in ~1s, then poll for up to 8 attempts.
+    //
+    // Total latency budget for face-match: ~1s create + ~8s poll = 9s max.
+    // Even on a cold-start day we won't exceed 10s.
     const modelId = DEFAULT_MODEL;
     const isVersionPinned = modelId.includes(':');
 
@@ -173,24 +179,30 @@ export async function compareFaces(
     };
     if (isVersionPinned) {
       body.version = modelId.split(':')[1];
-    } else {
-      // No version pinned → use the model name; Replicate resolves to latest
-      // (Note: this requires a slightly different endpoint shape — `models/<name>/predictions`)
     }
 
     const url = isVersionPinned
       ? REPLICATE_API
       : `https://api.replicate.com/v1/models/${modelId}/predictions`;
 
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json',
-        Prefer: 'wait',
-      },
-      body: JSON.stringify(body),
-    });
+    // AbortController gates the create request — even DNS / TLS / Replicate
+    // throttling won't hang the function past 4s.
+    const createCtrl = new AbortController();
+    const createTimer = setTimeout(() => createCtrl.abort(), 4_000);
+    let res: Response;
+    try {
+      res = await fetch(url, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(body),
+        signal: createCtrl.signal,
+      });
+    } finally {
+      clearTimeout(createTimer);
+    }
 
     if (!res.ok) return null;
     const data = (await res.json()) as {
@@ -209,7 +221,20 @@ export async function compareFaces(
       const pollUrl = `${REPLICATE_API}/${data.id}`;
       for (let i = 0; i < 8; i++) {
         await new Promise((r) => setTimeout(r, 1000));
-        const pollRes = await fetch(pollUrl, { headers: { Authorization: `Bearer ${token}` } });
+        // Per-poll abort guard — each individual poll can't hang past 2s.
+        const pollCtrl = new AbortController();
+        const pollTimer = setTimeout(() => pollCtrl.abort(), 2_000);
+        let pollRes: Response;
+        try {
+          pollRes = await fetch(pollUrl, {
+            headers: { Authorization: `Bearer ${token}` },
+            signal: pollCtrl.signal,
+          });
+        } catch {
+          clearTimeout(pollTimer);
+          continue;
+        }
+        clearTimeout(pollTimer);
         if (!pollRes.ok) continue;
         const pollData = (await pollRes.json()) as { status?: string; output?: unknown };
         if (pollData.status === 'succeeded') {
