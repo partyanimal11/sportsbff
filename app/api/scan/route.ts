@@ -179,6 +179,12 @@ function getOnFieldItems(player: GossipPlayer): GossipItem[] {
  */
 
 export const runtime = 'nodejs';
+// 2026-05-01 fix: scan was getting killed at Vercel's default function timeout
+// (10s Hobby / 15s Pro) mid-flight, causing client-side 60s curl hangs. Vision
+// can be 4-8s and face-match 5-15s on top, so the function legitimately needs
+// up to 30s. Set explicit maxDuration so the function completes instead of
+// being killed mid-response.
+export const maxDuration = 30;
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
