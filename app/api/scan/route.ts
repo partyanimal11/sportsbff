@@ -560,48 +560,70 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
     };
 
     // ════════════════════════════════════════════════════════════════════
-    // FACE-MATCH VERIFICATION (NBA only, via apna-mart/face-match)
+    // FAST-PATH ROSTER CHECK (free, ~0ms — runs before Replicate)
     // ════════════════════════════════════════════════════════════════════
-    // After vision returns, build a candidate list:
-    //   1. Vision's claimed player (if in our NBA index)
-    //   2. Players matching vision's team + jersey number from the roster
-    // Then run face-match against each candidate's ESPN headshot in parallel.
-    // Highest similarity > 0.65 wins. If nothing clears the bar, vision was
-    // probably wrong → downgrade to Unknown.
+    // 2026-05-01 perf: previously face-match (5-15s) ALWAYS ran when vision
+    // returned a player. But if our 3,646-player roster confirms vision's
+    // claim (right player + right jersey number), we already KNOW it's right
+    // — running Replicate just to confirm a known-good answer wastes 5-15s.
     //
-    // Only fires when REPLICATE_API_TOKEN is set. Silent no-op otherwise so
-    // existing scans keep working.
+    // Order now: roster check FIRST (in-memory, instant). If confirmed, ship
+    // it and skip Replicate. Only run face-match when roster has no opinion
+    // (player not in our DB, or no jersey number from vision) — exactly the
+    // cases where we actually need Replicate's help to verify.
+    let rosterFastPath: 'confirmed' | 'mismatch' | 'no_data' = 'no_data';
+    if (
+      parsed.player_name &&
+      parsed.player_name !== 'Unknown' &&
+      parsed.number &&
+      parsed.number > 0
+    ) {
+      const slug = parsed.player_name
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
+      const rosterEntry = ROSTER_INDEX[slug];
+      if (rosterEntry) {
+        const rNum = (rosterEntry.jersey || '').replace(/^0+/, '') || '0';
+        const vNum = String(parsed.number).replace(/^0+/, '') || '0';
+        rosterFastPath = rNum === vNum ? 'confirmed' : 'mismatch';
+      }
+    }
+
+    // ════════════════════════════════════════════════════════════════════
+    // FACE-MATCH VERIFICATION (skipped when roster fast-path already won)
+    // ════════════════════════════════════════════════════════════════════
+    // Only runs when:
+    //   - Replicate token is set
+    //   - Vision returned a real player_name (not Unknown)
+    //   - Roster fast-path didn't confirm (i.e. player not in DB, or no
+    //     jersey number, or roster says player wears a different number)
+    //
+    // When it runs, only verifies vision's named candidate (1 Replicate
+    // call instead of up to 4) — that's enough to catch hallucinations.
     let faceVerification: 'skipped' | 'no_candidates' | 'no_match' | 'verified' = 'skipped';
     let faceMatchId: string | null = null;
     let faceMatchSim = 0;
 
-    if (process.env.REPLICATE_API_TOKEN && parsed.player_name && parsed.player_name !== 'Unknown') {
+    const shouldRunFaceMatch =
+      process.env.REPLICATE_API_TOKEN &&
+      parsed.player_name &&
+      parsed.player_name !== 'Unknown' &&
+      rosterFastPath !== 'confirmed';
+
+    if (shouldRunFaceMatch) {
       try {
         const userImageDataUri = `data:image/jpeg;base64,${imageBase64}`;
-
-        // Build candidate set (deduped)
-        const candidateMap = new Map<string, ReturnType<typeof getNbaFaceEntry>>();
         const visionSlug = parsed.player_name
           .toLowerCase()
           .replace(/[^a-z0-9]+/g, '-')
           .replace(/^-|-$/g, '');
         const visionCandidate = getNbaFaceEntry(visionSlug);
-        if (visionCandidate) candidateMap.set(visionSlug, visionCandidate);
 
-        // Pull team token from vision's team string (e.g. "Oklahoma City Thunder" → "okc")
-        // by checking against each NBA team's full name fragments via existing rosterLookup
-        // helper. For this v1 we just match on the raw team string against face-index entries.
-        const teamCandidates = findCandidatesByTeamAndNumber(
-          extractTeamCode(parsed.team),
-          parsed.number
-        );
-        for (const c of teamCandidates) {
-          if (!candidateMap.has(c.id)) candidateMap.set(c.id, c);
-        }
-
-        const candidates = Array.from(candidateMap.values()).filter(
-          (c): c is NonNullable<typeof c> => Boolean(c)
-        );
+        // Single-candidate verification — much faster than the old 4-candidate
+        // sweep. The roster check above already handles the "vision named the
+        // wrong player" case; face-match just confirms the named one is real.
+        const candidates = visionCandidate ? [visionCandidate] : [];
 
         if (candidates.length === 0) {
           faceVerification = 'no_candidates';
@@ -611,7 +633,6 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
             faceMatchId = result.bestMatch.entry.id;
             faceMatchSim = result.bestMatch.similarity;
             faceVerification = 'verified';
-            // Override vision's claim with face-match winner
             const gossipPlayer = GOSSIP[faceMatchId];
             if (gossipPlayer) {
               parsed.player_name = gossipPlayer.name;
@@ -620,8 +641,6 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
             }
             parsed.confidence = Math.max(parsed.confidence ?? 0, faceMatchSim);
           } else {
-            // No candidate cleared the threshold → vision likely hallucinated.
-            // Downgrade to Unknown so the recovery / quality gates take over.
             faceVerification = 'no_match';
             parsed.player_name = 'Unknown';
           }
