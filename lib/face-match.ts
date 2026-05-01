@@ -225,10 +225,23 @@ export async function compareFaces(
 }
 
 /**
- * The output shape of apna-mart/face-match isn't perfectly documented (the
- * Replicate page shows an empty Output schema). It returns an object with
- * fields like `similarity_score`, `match`, `confidence`. We try multiple
- * field names to be safe.
+ * Parse Replicate's apna-mart/face-match output. The model returns something like:
+ *   {
+ *     "similarity": { "cosine": 1, "euclidean": 1, "percentage": 100, "score": 1 },
+ *     "is_match": true,
+ *     "threshold_used": 0.63,
+ *     "confidence": "Very high confidence match",
+ *     ...
+ *   }
+ *
+ * 2026-05-01 fix: previously we only checked `typeof o.similarity === 'number'`.
+ * The model returns it as a NESTED OBJECT, so the type check failed silently
+ * and we returned null even on perfect matches. Result: every Miles-Bridges-
+ * tier ID got rejected because we couldn't read the answer.
+ *
+ * Now: unwrap nested similarity objects (cosine / score / percentage / euclidean),
+ * trust the model's own `is_match` boolean if present, fall back to common
+ * flat-number key names for safety on other models.
  */
 function parseSimilarity(output: unknown): FaceMatchResult | null {
   if (output == null) return null;
@@ -238,35 +251,51 @@ function parseSimilarity(output: unknown): FaceMatchResult | null {
     return { similarity: output, matched: output >= 0.65 };
   }
 
-  if (typeof output === 'object') {
-    const o = output as Record<string, unknown>;
+  if (typeof output !== 'object') return null;
+  const o = output as Record<string, unknown>;
 
-    // Try common similarity-score key names
-    const simKeys = [
-      'similarity_score',
-      'similarity',
-      'score',
-      'face_similarity',
-      'cosine_similarity',
-      'distance', // careful — distance is INVERSE of similarity
-    ];
-    for (const k of simKeys) {
-      const v = o[k];
-      if (typeof v === 'number') {
-        const sim = k === 'distance' ? 1 - v : v;
-        const matchKey = o.match ?? o.matched ?? o.is_match;
-        const matched =
-          typeof matchKey === 'boolean' ? matchKey : sim >= 0.65;
-        return { similarity: sim, matched };
-      }
+  // Step 1: try to extract a numeric similarity, including from a nested object.
+  let sim: number | null = null;
+
+  const simRaw = o.similarity_score ?? o.similarity ?? o.score ?? o.face_similarity ?? o.cosine_similarity;
+  if (typeof simRaw === 'number') {
+    sim = simRaw;
+  } else if (simRaw && typeof simRaw === 'object') {
+    // apna-mart/face-match shape: { cosine, euclidean, percentage, score }
+    const inner = simRaw as Record<string, unknown>;
+    const candidates = [inner.cosine, inner.score, inner.euclidean];
+    for (const c of candidates) {
+      if (typeof c === 'number') { sim = c; break; }
     }
-
-    // Sometimes the result is nested
-    if ('result' in o) return parseSimilarity(o.result);
-    if ('output' in o) return parseSimilarity(o.output);
+    // Last resort: percentage (0-100) → normalize to 0-1
+    if (sim == null && typeof inner.percentage === 'number') {
+      sim = inner.percentage > 1 ? inner.percentage / 100 : inner.percentage;
+    }
   }
 
-  return null;
+  // Distance is INVERSE of similarity — only use as last resort
+  if (sim == null && typeof o.distance === 'number') {
+    sim = 1 - (o.distance as number);
+  }
+
+  // Step 2: figure out match decision. The model's own boolean wins if present.
+  const explicitMatch = o.is_match ?? o.matched ?? o.match;
+  let matched: boolean;
+  if (typeof explicitMatch === 'boolean') {
+    matched = explicitMatch;
+    // If we have an explicit match boolean but no numeric similarity yet, treat
+    // matched=true as similarity≥1 so downstream sort + threshold work.
+    if (sim == null) sim = matched ? 1 : 0;
+  } else if (sim != null) {
+    matched = sim >= 0.65;
+  } else {
+    // Try recursing into nested result/output wrappers
+    if ('result' in o) return parseSimilarity(o.result);
+    if ('output' in o) return parseSimilarity(o.output);
+    return null;
+  }
+
+  return { similarity: sim, matched };
 }
 
 /* ─────────────────────────── verification flow ──────────────────────────── */
