@@ -32,13 +32,17 @@ const ROSTER_INDEX: RosterIndex = (() => {
 
 /**
  * Quality gate: confidence threshold. Vision returns a self-rated 0.0-1.0
- * confidence. Below this, we override to Unknown rather than ship a wrong ID.
+ * confidence. Below this, we override to Unknown — but ONLY when the
+ * roster cross-check hasn't confirmed the player.
  *
- * 0.85 chosen after the MPJ → SGA misfire (vision overconfident on similar
- * faces). The legacy threshold was 0.60 which let too many marginal calls
- * through. 0.85 + the roster cross-check below = far fewer wrong IDs.
+ * 0.65 chosen 2026-05-01: previously 0.85 (set after MPJ → SGA misfire), which
+ * killed correct mid-confidence face-only IDs (e.g. Miles Bridges from a
+ * headshot, returning vision conf 0.78). Now that roster cross-check runs
+ * BEFORE the floor, the floor only fires when there's no roster data to
+ * verify against. Lowering to 0.65 lets confident face-only IDs through
+ * for non-superstars, while still blocking obvious garbage (< 0.65).
  */
-const CONFIDENCE_FLOOR = 0.85;
+const CONFIDENCE_FLOOR = 0.65;
 
 /**
  * Map a team string returned by GPT-4o vision (e.g. "Oklahoma City Thunder",
@@ -416,7 +420,7 @@ export async function POST(req: NextRequest) {
 
 THREE SIGNALS — these are the ONLY reliable ones. Collect every signal you can read, then commit only when they CORROBORATE each other.
 
-1. FACE — Recognize the face from your training. You've seen millions of photos of every active NFL + NBA + WNBA player. For top-tier stars (Mahomes, LeBron, Curry, Kelce, Wemby, SGA, Booker, Brunson, Luka, Ja, Tatum, KD, Zion, Caleb Williams, CJ Stroud, Burrow, Allen, Jefferson, Hill, Anthony Edwards, Jalen Hurts, plus WNBA-tier Caitlin Clark, Angel Reese, A'ja Wilson, Sabrina Ionescu, Breanna Stewart, Paige Bueckers, Napheesa Collier, Cameron Brink, Kelsey Plum, Arike Ogunbowale, etc.) the face IS reliable — they're some of the most-photographed people on Earth. Use it confidently when the face is clearly visible and front- or three-quarter-facing.
+1. FACE — Recognize the face from your training. You've seen millions of photos of every active NFL + NBA + WNBA player. The face IS the strongest single signal for any player you confidently recognize — not just the top-15 superstars. If you can identify the face with reasonable certainty (mid-tier rotation player, established starter, recognizable veteran), commit. We have downstream verification (face-similarity matching against ESPN headshots, roster cross-check) that catches hallucinations, so a moderately-confident face ID will get validated or rejected automatically. Returning Unknown when you'd actually recognize the face is a missed catch.
 
 2. TEAM NAME ON JERSEY — Read the LITERAL TEXT printed on the jersey or warmup. NFL away jerseys say "BRONCOS" / "EAGLES" / "CHIEFS" across the chest. NBA jerseys say "LAKERS" / "WARRIORS" / "BOSTON" / "MIAMI" / "BROOKLYN". WNBA jerseys say "FEVER" / "DREAM" / "ACES" / "LIBERTY" / "SPARKS" / "LYNX" / "MERCURY" / "STORM" / "WINGS" / "SKY" / "MYSTICS" / "SUN" / "VALKYRIES" / "TEMPO" / "FIRE". This is the team identifier — read the text, do not infer from colors. Many alternate / throwback / city-edition jerseys swap the team's normal palette entirely (cream Lakers, white Chiefs, all-black 49ers, royal-blue Mavs, etc.) so colors LIE. The lettering on the jersey does not lie.
 
@@ -428,18 +432,19 @@ DO NOT use these as identification signals (they're too noisy):
 - "Athletic vibe" or guessing a famous person because the photo "feels NFL"
 
 THE CORROBORATION RULE:
-- Commit confidently when ≥2 of {face, team name, jersey number} AGREE on the same player.
-- Commit confidently when face alone is one of the top-15 most-photographed athletes (LeBron / Curry / Mahomes / Kelce / Wemby tier) AND nothing in the image CONTRADICTS that ID. A clear front-facing LeBron press-conference shot with no jersey visible is still LeBron.
+- Commit when face alone identifies any active player you recognize (any tier, not just superstars). Downstream face-similarity matching + roster cross-check will validate or reject — you don't need to be the only line of defense.
+- Commit confidently (high confidence ≥ 0.85) when ≥2 of {face, team name, jersey number} AGREE on the same player.
+- Commit moderately (0.65 - 0.84) when only the face is recognized clearly with no contradicting signals.
 - DO NOT COMMIT when signals CONFLICT. (e.g. face vibes "Mahomes" but the jersey says "SUNS" → return Unknown. The conflict means you guessed face wrong.)
-- DO NOT COMMIT when you have 0 signals beyond "athletic vibe."
+- DO NOT COMMIT when you have 0 signals — face is unrecognizable AND no jersey text AND no jersey number AND not even a generic athletic context.
 - Same image, scanned twice, must produce the same answer. If you'd answer differently on a hypothetical retry, you're guessing — return Unknown.
 
 NEVER substitute a famous-athlete answer just because the photo "feels NFL" or the user probably wants a hit. Wrong IDs destroy user trust. Unknown is strictly better than a wrong guess.
 
 Output a "confidence" field 0.0-1.0 reflecting your real certainty:
-- 0.90-1.00 = ≥2 signals agree, or face is unmistakable top-15-photographed tier
-- 0.75-0.89 = one strong signal, no conflicts
-- 0.60-0.74 = best guess from limited evidence — iOS will hedge with "looks like…"
+- 0.90-1.00 = ≥2 signals agree, OR face is an unmistakable superstar (LeBron / Curry / Mahomes tier)
+- 0.75-0.89 = face alone for any clearly-recognized active player, no conflicts
+- 0.60-0.74 = best guess from limited evidence — frontend will hedge with "looks like…"
 - < 0.60 = return Unknown instead
 
 ONLY return Unknown when:
