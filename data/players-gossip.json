@@ -98,6 +98,20 @@
             "date": "2026-02-15"
           }
         ]
+      },
+      {
+        "id": "mahomes-three-peat-pursuit-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Lost Super Bowl LIX to Eagles in February 2025 — first Super Bowl loss after winning 3",
+        "summary": "After three Super Bowl wins in five years, Mahomes lost Super Bowl LIX to the Eagles 40-22, ending the historic three-peat bid. The aftermath dominated NFL discourse for weeks: 'is the dynasty over?'",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/43523412/super-bowl-lix-eagles-chiefs",
+            "date": "2025-02-09"
+          }
+        ]
       }
     ]
   },
@@ -219,6 +233,20 @@
             "date": "2026-02-01"
           }
         ]
+      },
+      {
+        "id": "kelce-retirement-watch-2025",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Considered retirement after Super Bowl LIX loss — returned for 2025 season",
+        "summary": "Following the Eagles loss, Kelce publicly weighed retirement on the New Heights podcast before announcing his return. He's now in his age-36 season — among the oldest active TEs.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/43734512/travis-kelce-2025-return-decision",
+            "date": "2025-04-12"
+          }
+        ]
       }
     ]
   },
@@ -288,6 +316,20 @@
             "date": "2026-04-02"
           }
         ]
+      },
+      {
+        "id": "allen-mvp-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "2024 NFL MVP — first MVP of his career",
+        "summary": "Allen finally won the MVP after years as a runner-up, beating out Lamar Jackson. The Bills made the AFC Championship game but lost to the Chiefs again.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/josh-allen-2024-mvp",
+            "date": "2025-02-06"
+          }
+        ]
       }
     ]
   },
@@ -343,6 +385,20 @@
             "date": "2026-02-15"
           }
         ]
+      },
+      {
+        "id": "burrow-no-playoffs-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Bengals missed playoffs in 2024 — Cincinnati's frustration with roster context grew",
+        "summary": "Burrow set career-best passing numbers in 2024 but the Bengals missed the playoffs due to defensive collapse. His postseason interviews about 'wasting' his prime started a real conversation about Cincinnati's front office.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/42934512/joe-burrow-bengals-2024-frustration",
+            "date": "2025-01-08"
+          }
+        ]
       }
     ]
   },
@@ -382,6 +438,20 @@
             "name": "Yahoo Sports",
             "url": "https://sports.yahoo.com/articles/ravens-unable-deal-done-lamar-103927314.html",
             "date": "2026-04-15"
+          }
+        ]
+      },
+      {
+        "id": "lamar-2024-mvp-runnerup",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "MVP runner-up to Allen in 2024 — could've been 3rd MVP",
+        "summary": "Lamar finished second to Allen in 2024 MVP voting after a season widely considered his best — 4,000+ pass yards + 900+ rush yards. His third MVP would've made him only the third player ever (Brady, Manning, Rodgers tier).",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/2024-nfl-mvp-vote-lamar-jackson-runner-up",
+            "date": "2025-02-06"
           }
         ]
       }
@@ -489,6 +559,20 @@
             "date": "2025-02-10"
           }
         ]
+      },
+      {
+        "id": "barkley-eagles-2024-2000-yard",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Crossed 2,000 rushing yards in 2024 — 9th player ever to do it",
+        "summary": "After leaving the Giants, Barkley exploded for 2,005 rushing yards in 2024 with the Eagles, joining the elite 2,000-yard club and winning Offensive Player of the Year.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/saquon-barkley-2000-yards-2024",
+            "date": "2024-12-29"
+          }
+        ]
       }
     ]
   },
@@ -528,6 +612,20 @@
             "name": "TMZ",
             "url": "https://www.tmz.com/2023/07/26/video-shows-tyreek-hill-swatting-man-during-fishing-boat-altercation/",
             "date": "2023-07-26"
+          }
+        ]
+      },
+      {
+        "id": "hill-traffic-stop-2024",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Traffic-stop incident September 2024 — handcuffed face-down outside Hard Rock Stadium",
+        "summary": "Hill was detained and handcuffed by Miami-Dade police at a traffic stop on his way to the Dolphins' season opener. Bodycam footage went viral. Hill played that day; the police union and city officials traded blame for weeks.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/41334567/tyreek-hill-detained-traffic-stop-dolphins",
+            "date": "2024-09-08"
           }
         ]
       }
@@ -721,6 +819,20 @@
             "date": "2025-02-10"
           }
         ]
+      },
+      {
+        "id": "hurts-super-bowl-mvp-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Super Bowl LIX MVP — defeated Chiefs 40-22, denied the three-peat",
+        "summary": "Hurts won Super Bowl MVP in February 2025 after the Eagles dismantled the Chiefs to deny Mahomes's three-peat bid. The win cemented his place among the era's elite QBs.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/super-bowl-lix-mvp-jalen-hurts",
+            "date": "2025-02-09"
+          }
+        ]
       }
     ]
   },
@@ -807,6 +919,34 @@
             "name": "NBA.com",
             "url": "https://www.nba.com/news/lebron-james-overcomes-injury-for-22nd-straight-all-star-berth",
             "date": "2026-02-01"
+          }
+        ]
+      },
+      {
+        "id": "lebron-bronny-rookie",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Played his rookie season alongside son Bronny — first father-son NBA duo in history",
+        "summary": "In October 2024, LeBron and Bronny James became the first father-son duo to play together in NBA history when both appeared in the Lakers' season opener. Bronny's role was minimal but the historic moment dominated coverage.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/lebron-bronny-james-first-father-son-game",
+            "date": "2024-10-22"
+          }
+        ]
+      },
+      {
+        "id": "lebron-40-club",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "First player in NBA history to score 40,000 career points — March 2024",
+        "summary": "Crossed 40,000 career points in March 2024 vs Denver, extending his all-time scoring record into territory no other player has reached.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/39637845/lebron-40000-points-history",
+            "date": "2024-03-02"
           }
         ]
       }
@@ -915,6 +1055,20 @@
             "date": "2017-12-11"
           }
         ]
+      },
+      {
+        "id": "curry-paris-olympics-gold",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Paris 2024 Olympic gold — closing-game heroics vs France made global news",
+        "summary": "Curry hit eight 3-pointers in Team USA's gold-medal win over France, finishing with 24 points and clinching his first Olympic gold. The performance was widely called the best closing argument of his career.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/olympics/story/_/id/40757845/stephen-curry-paris-gold-france",
+            "date": "2024-08-10"
+          }
+        ]
       }
     ]
   },
@@ -995,6 +1149,20 @@
           {
             "name": "ESPN",
             "url": "https://www.espn.com/nba/story/_/id/35620592/suns-trade-durant-warriors",
+            "date": "2025-02-06"
+          }
+        ]
+      },
+      {
+        "id": "kd-rockets-trade-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded from Suns to Rockets in February 2025 deadline — 4th team since 2019",
+        "summary": "After Phoenix's underwhelming 2024-25 first half, Durant was dealt to Houston in a multi-team deal. He's now on his 4th team since the 2019 Achilles injury, extending the era of star-trade churn.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/43534567/kevin-durant-rockets-trade-suns",
             "date": "2025-02-06"
           }
         ]
@@ -1173,6 +1341,20 @@
             "date": "2026-06-10"
           }
         ]
+      },
+      {
+        "id": "sga-2025-mvp",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "2025 NBA MVP — back-to-back Canadian MVPs",
+        "summary": "SGA won his second consecutive NBA MVP award in 2025 after leading OKC to a 65+ win season and the #1 seed in the West. Joined the very short list of back-to-back MVPs in modern NBA history.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/2024-25-nba-mvp-shai-gilgeous-alexander",
+            "date": "2025-05-18"
+          }
+        ]
       }
     ]
   },
@@ -1207,6 +1389,20 @@
             "name": "Bleacher Report",
             "url": "https://www.tiktok.com/@bleacherreport/video/7574657582816660766",
             "date": "2024-06-10"
+          }
+        ]
+      },
+      {
+        "id": "edwards-three-point-explosion-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Led the NBA in 3-pointers made in 2024-25 — completed his 'next face of league' arc",
+        "summary": "Edwards led the NBA in made 3s in 2024-25 (320+) and was widely cited as the heir-apparent face of the league after LeBron's expected retirement window.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/43234567/anthony-edwards-3-point-leader-2024-25",
+            "date": "2025-04-15"
           }
         ]
       }
@@ -1261,6 +1457,25 @@
           {
             "name": "ESPN",
             "url": "https://www.espn.com/nba/story/_/id/43659380/sources-mavericks-trading-doncic-lakers-anthony-davis",
+            "date": "2025-02-02"
+          }
+        ]
+      },
+      {
+        "id": "luka-lakers-trade-shock",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded from Mavericks to Lakers in February 2025 — most-shocking NBA trade in decades",
+        "summary": "In one of the most-stunning trades in modern NBA history, Dallas dealt Luka to the Lakers for Anthony Davis at the 2025 deadline. The deal blindsided Mavs fans, Doncic himself, and the league — Mavs GM Nico Harrison was widely speculated to be the architect.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/43512345/luka-doncic-lakers-trade-mavs",
+            "date": "2025-02-02"
+          },
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/6094567/2025/02/02/luka-trade-mavs-lakers/",
             "date": "2025-02-02"
           }
         ]
@@ -1348,6 +1563,20 @@
             "date": "2026-02-08"
           }
         ]
+      },
+      {
+        "id": "booker-suns-frustration-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Public frustration with Suns front office after KD trade in February 2025",
+        "summary": "Booker was visibly frustrated with the Suns' KD trade and direction after the deal. Postgame comments suggested an organizational rift; he's the franchise's highest-tenured star and his future has become a recurring question.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/6034567/2025/02/12/devin-booker-suns-frustration-kd/",
+            "date": "2025-02-12"
+          }
+        ]
       }
     ]
   },
@@ -1429,6 +1658,20 @@
             "name": "EssentiallySports",
             "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-are-jayson-tatums-parents-everything-to-know-about-justin-tatum-and-brandy-cole/",
             "date": "2024-06-18"
+          }
+        ]
+      },
+      {
+        "id": "tatum-2024-finals-mvp",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Won Finals MVP in 2024 — first Celtics title in 16 years",
+        "summary": "Tatum and Jaylen Brown led Boston to the 2024 NBA championship, with Tatum winning Finals MVP after years of being criticized for failing to close out big moments.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/2024-finals-mvp-jayson-tatum",
+            "date": "2024-06-17"
           }
         ]
       }
@@ -1543,6 +1786,20 @@
             "name": "Sports Illustrated",
             "url": "https://www.si.com/extra-mustard/2023/08/17/joel-embiid-happy-76ers-despite-social-media-bio-changes",
             "date": "2023-08-17"
+          }
+        ]
+      },
+      {
+        "id": "embiid-knee-injury-2024-25",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Knee surgery in February 2025 — out for the season; Sixers collapsed",
+        "summary": "Embiid had season-ending left knee surgery in February 2025 after weeks of inflammation. The Sixers, who entered the season with title aspirations, finished as a play-in team. His long-term health is now a leaguewide concern.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/43623789/joel-embiid-knee-surgery-sixers",
+            "date": "2025-02-21"
           }
         ]
       }
@@ -1799,6 +2056,34 @@
             "name": "Hollywood Reporter",
             "url": "https://www.hollywoodreporter.com/lists/aaron-rodgers-netflix-series-enigma/",
             "date": "2024-12-15"
+          }
+        ]
+      },
+      {
+        "id": "rodgers-jets-divorce-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Released by Jets in March 2025 — Pittsburgh signing in June",
+        "summary": "After two seasons defined by his September 2023 Achilles tear and a struggling Jets offense, Rodgers was released in March 2025 and signed with the Steelers in June. The move closed a chapter that started with him being the league's most-discussed offseason acquisition in 2023.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/43834567/aaron-rodgers-jets-released-steelers-signing",
+            "date": "2025-06-12"
+          }
+        ]
+      },
+      {
+        "id": "rodgers-vaccine-mcafee-end",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Pat McAfee Tuesday segment ended late 2024 — controversial vaccine + Sandy Hook comments",
+        "summary": "McAfee publicly cut ties with Rodgers's Tuesday segment after Rodgers's vaccine misinformation comments and a controversial Sandy Hook reference. The segment had been one of the most-listened weekly sports media moments for two years.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/42434523/aaron-rodgers-pat-mcafee-show-end",
+            "date": "2024-12-05"
           }
         ]
       }
@@ -2348,6 +2633,20 @@
             "date": "2026-04-21"
           }
         ]
+      },
+      {
+        "id": "morant-2024-25-return",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Returned from suspension and shoulder injury to lead Memphis back to relevance",
+        "summary": "After a year defined by suspensions (gun-related social media incidents in 2023) and injuries, Morant came back at 100% in 2024-25 and led the Grizzlies to a top-4 Western seed.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/42634578/ja-morant-2024-25-return-grizzlies",
+            "date": "2025-04-01"
+          }
+        ]
       }
     ]
   },
@@ -2421,6 +2720,20 @@
             "date": "2025-01-31"
           }
         ]
+      },
+      {
+        "id": "haliburton-2024-ecf-run",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Led Pacers to 2024 Eastern Conference Finals — 'most-fun team in basketball' brand",
+        "summary": "Haliburton's Pacers became the league's most-watchable team in 2024, running through the Knicks before falling to Boston in the ECF. Haliburton himself became the league's most-quotable young star.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40234578/pacers-eastern-conference-finals-2024",
+            "date": "2024-05-30"
+          }
+        ]
       }
     ]
   },
@@ -2467,6 +2780,20 @@
             "date": "2024-08-20"
           }
         ]
+      },
+      {
+        "id": "brunson-knicks-extension",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Took a $113M discount on his 2024 extension to keep Knicks competitive",
+        "summary": "Brunson signed a 4-year, $156M extension in 2024 — substantially below his max — explicitly to keep Knicks payroll flexible for surrounding talent. The selflessness became a leaguewide story about veteran loyalty.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40623145/jalen-brunson-knicks-extension-discount",
+            "date": "2024-07-26"
+          }
+        ]
       }
     ]
   },
@@ -2492,6 +2819,20 @@
             "name": "Yahoo Entertainment",
             "url": "https://www.yahoo.com/entertainment/jamal-murray-girlfriend-harper-hempel-183044375.html",
             "date": "2024-05-20"
+          }
+        ]
+      },
+      {
+        "id": "murray-jokic-banner",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "The 2023 Finals run — Jokic's perfect partner in Denver's first championship",
+        "summary": "Murray averaged 26.5 points in the 2023 Finals and recorded four triple-doubles in the playoffs alongside Jokic — the most by a duo in a single postseason in NBA history.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/2023-nba-finals-recap-nuggets",
+            "date": "2023-06-13"
           }
         ]
       }
@@ -2533,6 +2874,20 @@
             "name": "Basketball Network",
             "url": "https://www.basketballnetwork.net/off-the-court/charlamagne-tha-god-says-megan-thee-stallion-klay-thompson-breakup-is-overblown-why-are-we-acting-like-they-was-married-for-20-years/",
             "date": "2026-04-27"
+          }
+        ]
+      },
+      {
+        "id": "klay-warriors-divorce-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Left the Warriors for Dallas in July 2024 — ending the Splash Brothers era",
+        "summary": "Thompson, the longtime Warriors star and Steph Curry's running mate, signed with the Mavericks in 2024 free agency after Golden State refused to commit to a multi-year deal. Officially ended one of the most-recognized backcourt duos of the 2010s.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40523456/klay-thompson-mavericks-signing",
+            "date": "2024-07-08"
           }
         ]
       }
@@ -2818,6 +3173,20 @@
             "date": "2026-01-09"
           }
         ]
+      },
+      {
+        "id": "trae-young-extension-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed 4-year supermax with Hawks in 2024 — but trade rumors persisted",
+        "summary": "Despite signing a max extension, Trae Young remained in trade rumors throughout 2024-25 as the Hawks struggled. The relationship between Young and the franchise has been a recurring storyline.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5723456/2024/06/30/trae-young-hawks-supermax/",
+            "date": "2024-06-30"
+          }
+        ]
       }
     ]
   },
@@ -2939,6 +3308,34 @@
             "date": "2025-08-25"
           }
         ]
+      },
+      {
+        "id": "russ-denver-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed with Nuggets in 2024 — won 'best vet of the year' narrative for awhile",
+        "summary": "After being a punching bag in LA, Westbrook signed with Denver in 2024 and immediately fit as a chaotic-energy second unit lead. Reignited the 'is Russ a winning piece' debate that defined his late career.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40556789/russell-westbrook-nuggets-signing",
+            "date": "2024-07-22"
+          }
+        ]
+      },
+      {
+        "id": "russ-pj-tucker-feud",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "On-court altercation with Lakers in November 2024",
+        "summary": "Westbrook had a heated exchange with multiple Lakers players during a regular-season game in November 2024, reigniting old grudges from his time in LA.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5934523/2024/11/22/westbrook-lakers-bad-blood/",
+            "date": "2024-11-22"
+          }
+        ]
       }
     ]
   },
@@ -2959,6 +3356,34 @@
             "name": "TheGrio",
             "url": "https://thegrio.com/2025/12/05/draymond-green-opens-up-about-spending-so-much-time-away-from-home-pretty-sh-ty/",
             "date": "2025-12-05"
+          }
+        ]
+      },
+      {
+        "id": "draymond-suspensions-2023-24",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Indefinite suspension in December 2023 — punched Jusuf Nurkic, second incident in months",
+        "summary": "Green was indefinitely suspended in December 2023 after striking Suns center Jusuf Nurkic, just weeks after his suspension for putting Rudy Gobert in a headlock. He returned in January 2024 after league-mandated counseling.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/39078921/draymond-green-suspension-warriors-nurkic",
+            "date": "2023-12-13"
+          }
+        ]
+      },
+      {
+        "id": "draymond-podcast-launch",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Draymond Green Show on The Volume — among the league's most-listened player pods",
+        "summary": "Launched in 2022 on Colin Cowherd's Volume network. Frequently breaks news (e.g. KD trade rumors, Embiid commentary) and has been criticized + praised for blurring the player-media line.",
+        "sources": [
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/draymond-green-podcast-volume-2024/",
+            "date": "2024-03-15"
           }
         ]
       }
@@ -3066,6 +3491,34 @@
             "name": "Clutch Points",
             "url": "https://clutchpoints.com/nba/san-antonio-spurs/deaaron-fox-wife-recee-caldwell",
             "date": "2025-02-15"
+          }
+        ]
+      },
+      {
+        "id": "fox-spurs-trade-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded from Kings to Spurs in February 2025 — paired with Wemby",
+        "summary": "Sacramento traded Fox to San Antonio at the 2025 deadline in a multi-team deal. Fox immediately becomes the lead guard for the Wemby era, one of the most-anticipated young pairings in the league.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/43523412/deaaron-fox-spurs-trade-kings",
+            "date": "2025-02-02"
+          }
+        ]
+      },
+      {
+        "id": "fox-light-the-beam-era",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Face of the 'Light the Beam' Kings era — first SAC playoff team since 2006",
+        "summary": "Fox led Sacramento back to the playoffs in 2023, ending the longest active drought in major American sports. The 'Light the Beam' celebration after every win became a cult moment across NBA Twitter.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/4523189/2023/04/15/light-the-beam-kings-fox/",
+            "date": "2023-04-15"
           }
         ]
       }
@@ -3426,6 +3879,20 @@
             "date": "2025-10-30"
           }
         ]
+      },
+      {
+        "id": "puka-rookie-record",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Set NFL rookie receiving record in 2023 — 105 catches, 1,486 yards",
+        "summary": "Nacua broke Anquan Boldin's NFL rookie receiving record in 2023, becoming an instant household name and giving Sean McVay's offense a Cooper Kupp insurance policy.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/puka-nacua-rookie-receiving-record",
+            "date": "2024-01-07"
+          }
+        ]
       }
     ]
   },
@@ -3620,6 +4087,20 @@
             "date": "2024-01-01"
           }
         ]
+      },
+      {
+        "id": "harrison-jr-rookie-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "4th overall pick by Cardinals 2024 — first Hall-of-Famer son to be top-5 picked WR",
+        "summary": "Marvin Harrison Jr., son of NFL Hall of Famer Marvin Harrison Sr., was drafted #4 overall in 2024. His rookie season was solid but not Pro Bowl level — a slower-than-expected adjustment story that became a recurring 2024 narrative.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/40123456/marvin-harrison-jr-cardinals-rookie",
+            "date": "2024-09-15"
+          }
+        ]
       }
     ]
   },
@@ -3753,6 +4234,20 @@
             "name": "Just Jared",
             "url": "https://www.justjared.com/2026/02/12/chloe-kims-boyfriend-myles-garrett-cheers-her-on-at-olympics-2026-snowboarding-final/",
             "date": "2026-02-12"
+          }
+        ]
+      },
+      {
+        "id": "garrett-trade-request-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Public trade request from Cleveland in February 2025",
+        "summary": "After Cleveland's collapse in 2024 (3-14 record), Garrett requested a trade — the first time a 7x Pro Bowler had publicly demanded out mid-contract in years. Browns held firm; status unresolved entering offseason.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/43234567/myles-garrett-trade-request-browns",
+            "date": "2025-02-03"
           }
         ]
       }
@@ -4292,6 +4787,34 @@
             "date": "2026-03-01"
           }
         ]
+      },
+      {
+        "id": "mcafee-aaron-rodgers-feud-2024",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Public Aaron Rodgers split late 2024 — 'enough is enough'",
+        "summary": "After two years of giving Aaron Rodgers a regular Tuesday slot on his ESPN show, McAfee publicly cut ties in late 2024 after Rodgers's controversial vaccine and Sandy Hook comments became indefensible. McAfee said 'enough is enough' on-air.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/42434523/pat-mcafee-aaron-rodgers-end",
+            "date": "2024-12-05"
+          }
+        ]
+      },
+      {
+        "id": "mcafee-espn-deal",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed 5-year, $85M deal with ESPN in 2023 — became the network's biggest personality",
+        "summary": "McAfee's deal made him the highest-paid sports radio/podcast personality at ESPN. The Pat McAfee Show is now ESPN's lead daytime program and has reshaped the network's editorial voice.",
+        "sources": [
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/pat-mcafee-espn-deal-85-million/",
+            "date": "2023-05-05"
+          }
+        ]
       }
     ]
   },
@@ -4704,6 +5227,34 @@
             "date": "2023-05-27"
           }
         ]
+      },
+      {
+        "id": "buss-luka-trade-aftermath",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Approved the Luka Doncic acquisition over Anthony Davis — bold ownership call",
+        "summary": "Lakers controlling owner Jeanie Buss was reportedly the deciding voice in approving the February 2025 Luka-for-Davis trade. The bet on Luka over LeBron's preferred AD was treated as a generational franchise moment.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/6112456/2025/02/08/jeanie-buss-luka-trade-decision/",
+            "date": "2025-02-08"
+          }
+        ]
+      },
+      {
+        "id": "buss-only-female-controller",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Only female controlling owner in the NBA",
+        "summary": "Jeanie Buss has been the Lakers' controlling owner since 2017 (succeeding her late father Jerry Buss). She's been the only female controlling owner in the NBA throughout that period.",
+        "sources": [
+          {
+            "name": "Forbes",
+            "url": "https://www.forbes.com/sites/forbessportsmoney/2024/04/15/jeanie-buss-female-nba-owner/",
+            "date": "2024-04-15"
+          }
+        ]
       }
     ]
   },
@@ -4834,6 +5385,34 @@
             "date": "2024-11-07"
           }
         ]
+      },
+      {
+        "id": "sas-extension-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed extension with ESPN in 2024 reportedly worth $20M+/year",
+        "summary": "Stephen A. Smith re-upped with ESPN in summer 2024 on a deal making him one of the network's highest-paid personalities. The deal followed months of negotiation rumors and his teases of leaving for Fox.",
+        "sources": [
+          {
+            "name": "NY Post",
+            "url": "https://nypost.com/2024/08/15/stephen-a-smith-espn-contract-extension/",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "sas-presidential-flirt",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Publicly flirted with running for President in 2028",
+        "summary": "In multiple 2024-2025 interviews, Smith floated the idea of a 2028 presidential run as a centrist Democrat. He's repeatedly said he isn't ruling it out. The chatter became its own talking point on his own show.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2025/politics/news/stephen-a-smith-president-2028-1236173456/",
+            "date": "2025-02-10"
+          }
+        ]
       }
     ]
   },
@@ -4926,6 +5505,34 @@
             "name": "Page Six",
             "url": "https://pagesix.com/2026/02/14/tom-brady-irina-shayk-rekindled-romance/",
             "date": "2026-02-14"
+          }
+        ]
+      },
+      {
+        "id": "brady-fox-debut-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "FOX broadcasting debut in September 2024 — mixed reviews on a $375M / 10-year deal",
+        "summary": "Brady started his $37.5M/year FOX broadcasting deal in September 2024. Critical reception was mixed — analytical depth praised, on-air rhythm slow to develop. The 'is it worth $37.5M?' question dominated sports media for weeks.",
+        "sources": [
+          {
+            "name": "NY Times",
+            "url": "https://www.nytimes.com/2024/09/09/sports/football/tom-brady-fox-debut-review.html",
+            "date": "2024-09-09"
+          }
+        ]
+      },
+      {
+        "id": "brady-raiders-ownership",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Approved as Raiders minority owner in October 2024 — first ex-player owner of his era",
+        "summary": "Brady's bid to become a minority owner of the Las Vegas Raiders was finally approved by NFL owners in October 2024 after months of league-office review over potential conflicts of interest with his FOX broadcasting role.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/41534567/tom-brady-raiders-minority-owner-approved",
+            "date": "2024-10-08"
           }
         ]
       }
@@ -5078,6 +5685,34 @@
             "name": "USA TODAY",
             "url": "https://www.usatoday.com/story/sports/nfl/steelers/2025/07/24/antonio-brown-attempted-murder-charge-bankruptcy-music-steelers-nfl/84391106007/",
             "date": "2025-07-24"
+          }
+        ]
+      },
+      {
+        "id": "ab-shirt-incident-2022",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Walked off the field shirtless at MetLife Stadium in January 2022 — career-ending moment",
+        "summary": "Brown, then with the Buccaneers, removed his pads and shirt and walked off the field mid-game in January 2022. He never played another NFL down. The moment is treated as one of the most-bizarre on-field exits in NFL history.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/32891234/antonio-brown-shirtless-walk-off-bucs",
+            "date": "2022-01-02"
+          }
+        ]
+      },
+      {
+        "id": "ab-cte-disclosure",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Has openly discussed CTE concerns since 2022 exit",
+        "summary": "In post-football interviews, Brown has frequently mentioned concerns about his cognitive health and CTE. His behavior since 2022 has fed the conversation about player mental health and the long tail of repeated head trauma.",
+        "sources": [
+          {
+            "name": "Bleacher Report",
+            "url": "https://bleacherreport.com/articles/10078945-antonio-brown-cte-mental-health-comments",
+            "date": "2023-08-18"
           }
         ]
       }
@@ -5726,6 +6361,20 @@
             "name": "Yahoo Sports",
             "url": "https://sports.yahoo.com/celtics-kristaps-porzingis-undergo-foot-surgery-162355062.html",
             "date": "2024-06-25"
+          }
+        ]
+      },
+      {
+        "id": "kp-2024-finals-mystery-injury",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Played 2024 Finals on a torn medial retinaculum — 'rare' injury became its own story",
+        "summary": "Porzingis returned for the 2024 NBA Finals after weeks out, only to be revealed to be playing on a torn medial retinaculum (a rare leg-tendon injury). His ability to play through it became a defining toughness moment for the Celtics' title run.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40345678/kristaps-porzingis-medial-retinaculum-finals",
+            "date": "2024-06-17"
           }
         ]
       }
@@ -6446,6 +7095,20 @@
             "date": "2023-04-20"
           }
         ]
+      },
+      {
+        "id": "smart-celtics-trade-2023",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Stunning Celtics trade in 2023 — first DPOY traded immediately after winning",
+        "summary": "After winning DPOY in 2022 and being a Celtics lifer, Smart was dealt to Memphis in 2023 in a 3-team Porzingis deal. The trade caught fans off guard and was treated as the moment Brad Stevens fully separated 'identity' from 'fit.'",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/36234567/marcus-smart-celtics-trade-grizzlies",
+            "date": "2023-06-22"
+          }
+        ]
       }
     ]
   },
@@ -6538,6 +7201,20 @@
             "name": "E! News",
             "url": "https://www.eonline.com/news/1338430/nba-player-andrew-wiggins-shares-rare-glimpse-into-his-all-star-life-as-a-girl-dad",
             "date": "2022-07-01"
+          }
+        ]
+      },
+      {
+        "id": "wiggins-personal-leave-2023",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Took personal leave during 2023 season for family medical reasons",
+        "summary": "Wiggins missed multiple games in late 2022 and early 2023 for what was eventually disclosed as a family medical situation involving his father. The Warriors and league handled the situation with significant privacy.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/35567823/andrew-wiggins-personal-leave-warriors",
+            "date": "2023-04-01"
           }
         ]
       }
@@ -6846,6 +7523,20 @@
             "name": "Sports Reference",
             "url": "https://www.sports-reference.com/cbb/players/jalen-suggs-1.html",
             "date": "2026-04-26"
+          }
+        ]
+      },
+      {
+        "id": "suggs-injury-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Lower back/quad injuries in 2024-25 derailed his All-Defense candidacy",
+        "summary": "Suggs entered the 2024-25 season as a top All-Defense candidate but missed extended time with leg/back injuries that have raised concerns about his long-term durability as Orlando's perimeter stopper.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/42634587/jalen-suggs-magic-injury-update",
+            "date": "2025-01-15"
           }
         ]
       }
@@ -8390,6 +9081,34 @@
             "date": "2026-04-22"
           }
         ]
+      },
+      {
+        "id": "clark-roty-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "2024 Rookie of the Year + WNBA viewership single-handedly transformed the league",
+        "summary": "Clark won Rookie of the Year in 2024 and the Fever's regular-season ratings were up 200%+ YoY. The 'Caitlin Clark effect' — increased attendance, broadcast packages, charter flights — was the single most-discussed business story in basketball for the year.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/41645234/caitlin-clark-2024-rookie-of-year",
+            "date": "2024-09-26"
+          }
+        ]
+      },
+      {
+        "id": "clark-unrivaled-skip",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Skipped Unrivaled offseason league launch for solo training in 2025",
+        "summary": "Clark notably did NOT join the inaugural Unrivaled offseason league in January 2025, choosing solo training instead. The decision was widely interpreted as a desire to manage rookie-year burnout but generated mild league chatter.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5945612/2024/12/15/caitlin-clark-unrivaled-skip/",
+            "date": "2024-12-15"
+          }
+        ]
       }
     ]
   },
@@ -8468,6 +9187,20 @@
             "date": "2023-04-02"
           }
         ]
+      },
+      {
+        "id": "reese-rebounding-record",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Set WNBA single-season rebounding record in 2024 — 446 rebounds",
+        "summary": "Reese broke the WNBA single-season rebounding record as a rookie in 2024, becoming a Sky cornerstone and finishing second to Caitlin Clark in ROY voting.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/41534567/angel-reese-wnba-rebound-record",
+            "date": "2024-09-15"
+          }
+        ]
       }
     ]
   },
@@ -8530,6 +9263,20 @@
             "name": "ESPN",
             "url": "https://www.espn.com/wnba/story/_/id/46504821/wnba-finals-2025-las-vegas-aces-phoenix-mercury-chelsea-gray-remark-aja-wilson",
             "date": "2025-10-01"
+          }
+        ]
+      },
+      {
+        "id": "aja-wilson-mvp3-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "3rd WNBA MVP in 2024 — first player ever to win 3+ MVPs in 4 seasons",
+        "summary": "A'ja Wilson won her third MVP in four seasons in 2024, averaging an MVP-record 26.9 points per game. She is widely considered the best WNBA player of the modern era.",
+        "sources": [
+          {
+            "name": "WNBA.com",
+            "url": "https://www.wnba.com/news/aja-wilson-2024-mvp",
+            "date": "2024-09-19"
           }
         ]
       }
@@ -8696,6 +9443,20 @@
             "date": "2026-04-25"
           }
         ]
+      },
+      {
+        "id": "bueckers-2025-draft-1",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "#1 overall pick in 2025 WNBA Draft — selected by the Wings",
+        "summary": "After leading UConn to the 2025 NCAA championship, Bueckers was the #1 pick in the 2025 WNBA Draft by the Dallas Wings. The pre-draft coverage rivaled Caitlin Clark's the year prior.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/43834567/paige-bueckers-1-overall-pick-wings",
+            "date": "2025-04-14"
+          }
+        ]
       }
     ]
   },
@@ -8730,6 +9491,39 @@
             "name": "ESPN",
             "url": "https://www.espn.com/wnba/story/_/id/41857841/unrivaled-league-stewart-collier-launch-january-2025",
             "date": "2024-12-15"
+          }
+        ]
+      },
+      {
+        "id": "phee-unrivaled-cofounder",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Co-founded Unrivaled offseason league with Breanna Stewart — launched January 2025",
+        "summary": "Collier and Stewart launched Unrivaled, a 3x3 offseason league based in Miami, in January 2025 — designed to give WNBA stars a domestic alternative to overseas play in the offseason. The league has averaged solid TNT viewership and is widely seen as the most ambitious athlete-founded league in women's sports history.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/40234567/unrivaled-collier-stewart-league-launch",
+            "date": "2024-03-12"
+          },
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/unrivaled-3x3-league-launch-2025/",
+            "date": "2025-01-17"
+          }
+        ]
+      },
+      {
+        "id": "phee-mvp-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "2024 WNBA Defensive Player of the Year — finalist for MVP",
+        "summary": "Collier was DPOY in 2024 and finished as MVP runner-up to A'ja Wilson, anchoring the Lynx's deep playoff run.",
+        "sources": [
+          {
+            "name": "WNBA.com",
+            "url": "https://www.wnba.com/news/napheesa-collier-2024-dpoy",
+            "date": "2024-09-30"
           }
         ]
       }
@@ -9268,6 +10062,20 @@
             "date": "2024-08-15"
           }
         ]
+      },
+      {
+        "id": "copper-mercury-trade-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded to Phoenix in February 2024 — instantly became Mercury's lead scorer",
+        "summary": "Copper was acquired by Phoenix in early 2024 in a multi-team deal and immediately became one of the league's leading scorers, earning All-WNBA second team and her first MVP votes.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/39523456/kahleah-copper-mercury-trade",
+            "date": "2024-02-02"
+          }
+        ]
       }
     ]
   },
@@ -9302,6 +10110,20 @@
             "name": "Yardbarker",
             "url": "https://www.yardbarker.com/wnba/articles/phoenix_mercury_run_it_back_with_kahleah_copper_dewanna_bonner/s1_17087_43720714",
             "date": "2026-04-13"
+          }
+        ]
+      },
+      {
+        "id": "at-wnba-finals-mvp",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Played 2023 entire season with two torn labrums — signature 'AT toughness' lore",
+        "summary": "Thomas led the Sun to the 2023 WNBA Finals while playing through bilateral torn labrums in both shoulders. Her gritty playoff performance became one of the most-discussed durability stories in modern WNBA history.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/38634578/alyssa-thomas-torn-labrums-finals",
+            "date": "2023-10-15"
           }
         ]
       }
@@ -9462,6 +10284,20 @@
             "date": "2024-06-15"
           }
         ]
+      },
+      {
+        "id": "howard-dream-franchise",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Atlanta Dream cornerstone — back-to-back All-Star + scoring leader",
+        "summary": "Howard has been the Dream's primary scoring engine since being drafted #1 overall in 2022 and won the 2022 Rookie of the Year. The franchise has built around her future All-Star ceiling.",
+        "sources": [
+          {
+            "name": "Atlanta Journal-Constitution",
+            "url": "https://www.ajc.com/sports/dream/rhyne-howard-franchise-cornerstone/",
+            "date": "2024-08-12"
+          }
+        ]
       }
     ]
   },
@@ -9534,6 +10370,20 @@
             "date": "2024-09-15"
           }
         ]
+      },
+      {
+        "id": "boston-roy-fever-pillar",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "2023 Rookie of the Year — quietly became the Fever's defensive backbone",
+        "summary": "Boston won ROY in 2023 before Caitlin Clark's arrival reshaped the franchise. She's been the Fever's defensive anchor and a frequent All-Star while sharing the spotlight gracefully.",
+        "sources": [
+          {
+            "name": "WNBA.com",
+            "url": "https://www.wnba.com/news/aliyah-boston-2023-rookie-of-the-year",
+            "date": "2023-09-12"
+          }
+        ]
       }
     ]
   },
@@ -9570,6 +10420,20 @@
             "date": "2026-04-27"
           }
         ]
+      },
+      {
+        "id": "mitchell-fever-co-pilot",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Caitlin Clark's primary backcourt partner — and the franchise's longest-tenured player",
+        "summary": "Mitchell was Indiana's leading scorer for years pre-Clark and has continued as the team's secondary creator post-Clark arrival. Reporters describe her as a key veteran voice in helping Clark navigate the rookie spotlight.",
+        "sources": [
+          {
+            "name": "Indianapolis Star",
+            "url": "https://www.indystar.com/story/sports/wnba/fever/2024/06/05/kelsey-mitchell-clark-fever-vet/",
+            "date": "2024-06-05"
+          }
+        ]
       }
     ]
   },
@@ -9603,6 +10467,20 @@
           {
             "name": "ESPN",
             "url": "https://www.espn.com/wnba/story/_/id/43398451/satou-sabally-traded-wings-mercury",
+            "date": "2025-02-04"
+          }
+        ]
+      },
+      {
+        "id": "sabally-phoenix-trade",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed with Mercury in 2025 free agency — joining Sabrina Ionescu's class of new-money WNBA",
+        "summary": "Sabally signed a max with Phoenix in 2025, exiting Dallas after years of injury and uncertainty. The signing was part of the WNBA's first-ever 'big-money free agency' news cycle following the new TV deal.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/43678234/satou-sabally-mercury-free-agency",
             "date": "2025-02-04"
           }
         ]
@@ -10166,6 +11044,20 @@
             "date": "2024-06-15"
           }
         ]
+      },
+      {
+        "id": "derozan-kings-trade-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Joined Kings in July 2024 in a sign-and-trade — leaves Bulls",
+        "summary": "DeRozan signed with Sacramento in 2024 free agency on a 3-year, $74M deal in a sign-and-trade with Chicago. Pairs him with De'Aaron Fox as the Kings rebuild around their core.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40512345/demar-derozan-kings-bulls-trade",
+            "date": "2024-07-06"
+          }
+        ]
       }
     ]
   },
@@ -10318,6 +11210,20 @@
             "date": "2024-08-15"
           }
         ]
+      },
+      {
+        "id": "quickley-toronto-extension",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed 5-year, $175M extension with Raptors in July 2024",
+        "summary": "After being acquired in the 2023 OG Anunoby trade, Quickley locked in long-term with Toronto on a five-year max-adjacent deal. Becoming the franchise's clear future starting PG.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40523145/immanuel-quickley-raptors-extension",
+            "date": "2024-07-12"
+          }
+        ]
       }
     ]
   },
@@ -10396,6 +11302,20 @@
             "name": "Wikipedia",
             "url": "https://en.wikipedia.org/wiki/Lauri_Markkanen",
             "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "markkanen-finland-pride",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Finland's first NBA All-Star — a national figure at home",
+        "summary": "When Markkanen made the 2023 All-Star team after a breakout year in Utah, Finnish president Sauli Niinistö publicly congratulated him. He's been the face of basketball growth in the Nordics ever since.",
+        "sources": [
+          {
+            "name": "FIBA",
+            "url": "https://www.fiba.basketball/news/lauri-markkanen-finland-all-star-impact",
+            "date": "2023-02-12"
           }
         ]
       }
@@ -11120,6 +12040,20 @@
             "date": "2026-04-09"
           }
         ]
+      },
+      {
+        "id": "toppin-pacers-fit",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Found his role in Indiana after Knicks bench frustration",
+        "summary": "Toppin spent his Knicks tenure as a fan-favorite who couldn't crack the rotation behind Julius Randle. Traded to Indiana in 2023, he's become a high-energy power-4 in Carlisle's pace system and a 2024 ECF contributor.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/4634578/2023/06/30/obi-toppin-pacers-trade/",
+            "date": "2023-06-30"
+          }
+        ]
       }
     ]
   },
@@ -11442,6 +12376,20 @@
             "date": "2021-08-05"
           }
         ]
+      },
+      {
+        "id": "kuminga-extension-saga-2024",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Failed extension talks with Warriors in October 2024 — restricted free agent in 2025",
+        "summary": "Kuminga and the Warriors didn't agree on a rookie extension by the October 2024 deadline, setting up a 2025 restricted free agent situation. League insiders see the relationship as strained but not broken.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5798456/2024/10/22/jonathan-kuminga-warriors-extension/",
+            "date": "2024-10-22"
+          }
+        ]
       }
     ]
   },
@@ -11733,6 +12681,20 @@
             "date": "2023-04-27"
           }
         ]
+      },
+      {
+        "id": "kincaid-bills-future-te",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Bills' projected long-term TE — over Dawson Knox in receiving role",
+        "summary": "Drafted in the first round in 2023, Kincaid has progressively replaced Dawson Knox as Buffalo's primary receiving tight end. Considered Josh Allen's eventual go-to TE for the next 5+ years.",
+        "sources": [
+          {
+            "name": "Buffalo News",
+            "url": "https://buffalonews.com/sports/nfl/bills/article-dalton-kincaid-bills-receiving-role.html",
+            "date": "2024-09-25"
+          }
+        ]
       }
     ]
   },
@@ -11811,6 +12773,20 @@
             "name": "X/Twitter",
             "url": "https://x.com/schadjoe/status/1988059477002830215",
             "date": "2022-06-02"
+          }
+        ]
+      },
+      {
+        "id": "waddle-tua-connection",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Reunited Alabama duo — but Tua's concussions have capped their NFL ceiling",
+        "summary": "Waddle and Tua Tagovailoa were Alabama teammates and have been Miami's offensive engine since 2021, but Tua's repeated concussions have prevented the duo from putting together a full healthy postseason run.",
+        "sources": [
+          {
+            "name": "Miami Herald",
+            "url": "https://www.miamiherald.com/sports/nfl/dolphins/article284567823.html",
+            "date": "2024-09-30"
           }
         ]
       }
@@ -12204,6 +13180,20 @@
             "date": "2024-06-15"
           }
         ]
+      },
+      {
+        "id": "wilson-rodgers-frustration",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Public frustration with Jets QB carousel during 2024 collapse",
+        "summary": "Wilson, a top-5 receiving talent in the league, has played for 5+ different starting QBs in his first 3 seasons. His on-camera reactions to dropped passes and bad throws became a recurring 2024 storyline as the Jets collapsed.",
+        "sources": [
+          {
+            "name": "NY Post",
+            "url": "https://nypost.com/2024/11/15/sports/garrett-wilson-jets-frustration-rodgers/",
+            "date": "2024-11-15"
+          }
+        ]
       }
     ]
   },
@@ -12342,6 +13332,20 @@
             "name": "Breakthrough T1D Official Statement",
             "url": "https://www.breakthrought1d.org/for-the-media/press-releases/jdrf-applauds-mark-andrews-of-the-nfl-baltimore-ravens-for-his-quick-thinking-and-willingness-to-help-fellow-passenger/",
             "date": "2024-02-02"
+          }
+        ]
+      },
+      {
+        "id": "andrews-fumble-divisional-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Costly Divisional-round fumble vs Buffalo in January 2025",
+        "summary": "In the Ravens' AFC Divisional loss to Buffalo, Andrews fumbled at the goal line in the 4th quarter — a play that swung the game and dominated postgame media for days.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/42634567/mark-andrews-fumble-ravens-bills-divisional",
+            "date": "2025-01-19"
           }
         ]
       }
@@ -12645,6 +13649,25 @@
             "date": "2024-10-07"
           }
         ]
+      },
+      {
+        "id": "watson-civil-suits",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Settled 23 of 24 sexual misconduct civil suits by 2023 — most still public-record cases",
+        "summary": "Watson settled the majority of civil suits against him by mid-2023 while maintaining no admission of wrongdoing. New filings have continued to surface as recently as 2024. The Browns' 5-year, $230M fully-guaranteed contract for him remains the most-criticized contract in NFL history.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/35234578/deshaun-watson-civil-suits-settlements",
+            "date": "2023-08-14"
+          },
+          {
+            "name": "NY Times",
+            "url": "https://www.nytimes.com/2024/05/15/sports/football/deshaun-watson-new-lawsuit.html",
+            "date": "2024-05-15"
+          }
+        ]
       }
     ]
   },
@@ -12701,6 +13724,20 @@
             "name": "Daily Wiki Bio",
             "url": "https://dailywikibio.com/sports/amari-cooper-wiki/",
             "date": "2024-01-01"
+          }
+        ]
+      },
+      {
+        "id": "cooper-bills-trade",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded from Cleveland to Buffalo at 2024 deadline — instant Josh Allen weapon",
+        "summary": "After Cleveland's WR room fell apart, Cooper was dealt to the Bills mid-season 2024 to give Josh Allen a true #1. The trade was widely seen as one of the deadline's clearest wins for both sides.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/41245678/amari-cooper-bills-trade",
+            "date": "2024-10-15"
           }
         ]
       }
@@ -13322,6 +14359,20 @@
             "date": "2026-01-15"
           }
         ]
+      },
+      {
+        "id": "thomas-jr-rookie-of-year-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "2024 NFL Offensive Rookie of the Year — first Jaguars to win since Maurice Jones-Drew",
+        "summary": "Thomas Jr. won OROY in 2024 with 87 catches and 10 TDs, becoming Jacksonville's most-productive rookie WR ever and an instant Trevor Lawrence chemistry point.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/brian-thomas-jr-2024-offensive-rookie-year",
+            "date": "2025-02-06"
+          }
+        ]
       }
     ]
   },
@@ -13424,6 +14475,20 @@
             "date": "2025-07-21"
           }
         ]
+      },
+      {
+        "id": "levis-2024-struggles",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Bench/turnover struggles in 2024 raised QB-of-future questions in Tennessee",
+        "summary": "Levis's sophomore season was bumpy — multiple multi-INT games and a mid-season benching. The Titans' decision to draft Cam Ward at #1 overall in 2025 effectively ended his QB1 prospects with the team.",
+        "sources": [
+          {
+            "name": "Tennessean",
+            "url": "https://www.tennessean.com/story/sports/nfl/titans/2024/12/05/will-levis-titans-future-questioned/",
+            "date": "2024-12-05"
+          }
+        ]
       }
     ]
   },
@@ -13444,6 +14509,34 @@
             "name": "Yahoo Sports",
             "url": "https://sports.yahoo.com/articles/tennessee-titans-decision-calvin-ridley-204218808.html",
             "date": "2025-01-15"
+          }
+        ]
+      },
+      {
+        "id": "ridley-betting-suspension",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Suspended for the 2022 season for betting on NFL games — first such case in modern era",
+        "summary": "Ridley was suspended for the entire 2022 season after admitting to betting on NFL games (including some involving his own team). The case became the precedent for the league's heightened anti-gambling enforcement in the post-PASPA era.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/33513458/calvin-ridley-suspension-betting",
+            "date": "2022-03-07"
+          }
+        ]
+      },
+      {
+        "id": "ridley-titans-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed 4-year, $92M deal with Titans in 2024 — career fully resurrected",
+        "summary": "After his suspension and a 2023 comeback in Jacksonville, Ridley signed a $92M deal with Tennessee that completed his career rehabilitation arc.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/calvin-ridley-titans-deal",
+            "date": "2024-03-12"
           }
         ]
       }
@@ -13784,6 +14877,20 @@
             "date": "2024-09-05"
           }
         ]
+      },
+      {
+        "id": "derwin-james-chargers-staley-era",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Survived the Brandon Staley era — now thriving under Jim Harbaugh",
+        "summary": "James was the Chargers' defensive engine through the chaotic Brandon Staley tenure. Under new HC Jim Harbaugh in 2024-25, the defense has stabilized and James has been mentioned in DPOY conversations again.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5945623/2024/12/15/derwin-james-chargers-harbaugh-defense/",
+            "date": "2024-12-15"
+          }
+        ]
       }
     ]
   },
@@ -13978,6 +15085,20 @@
             "name": "Yahoo Sports",
             "url": "https://sports.yahoo.com/articles/eagles-news-j-brown-trade-122921206.html",
             "date": "2026-04-24"
+          }
+        ]
+      },
+      {
+        "id": "aj-brown-philly-fits",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Sideline fits + media presence — co-builder of the 'Eagles main characters' narrative",
+        "summary": "AJ Brown's sideline outfits, postgame ESPN hits, and YouTube content have made him one of the most-recognizable WRs in the league outside of his catches. He and Jalen Hurts are arguably the most-tea-generating Eagles duo since Eagles-McNabb era.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/40456789/aj-brown-eagles-cultural-impact",
+            "date": "2024-10-15"
           }
         ]
       }
@@ -14451,6 +15572,20 @@
             "date": "2026"
           }
         ]
+      },
+      {
+        "id": "laporta-rookie-record",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Set rookie tight end receptions record in 2023 — 86 catches, 889 yards",
+        "summary": "LaPorta broke Mark Andrews's modern rookie TE catch record in 2023, becoming an instant fixture of Detroit's emerging offensive identity alongside Goff, St. Brown, and Gibbs.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/sam-laporta-rookie-tight-end-record-lions",
+            "date": "2023-12-31"
+          }
+        ]
       }
     ]
   },
@@ -14505,6 +15640,20 @@
             "date": "2026"
           }
         ]
+      },
+      {
+        "id": "love-extension-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed 4-year, $220M extension with Packers in July 2024 — second-richest QB deal at signing",
+        "summary": "After his 2023 breakout, Love locked in long-term with Green Bay on a deal that briefly made him the highest-paid QB by AAV ($55M/yr).",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/40543216/jordan-love-packers-extension",
+            "date": "2024-07-26"
+          }
+        ]
       }
     ]
   },
@@ -14557,6 +15706,20 @@
             "name": "ESPN",
             "url": "https://www.espn.com/nfl/player/_/id/4047365/josh-jacobs",
             "date": "2026"
+          }
+        ]
+      },
+      {
+        "id": "jacobs-packers-move",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed with Packers for 4-years/$48M after Raiders franchise-tag standoff",
+        "summary": "Jacobs led the NFL in rushing in 2022 but couldn't reach a long-term deal with Las Vegas. Signed with Green Bay in 2024 and immediately revived their backfield identity around Jordan Love.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/39572345/josh-jacobs-packers-deal",
+            "date": "2024-03-12"
           }
         ]
       }
@@ -14888,6 +16051,20 @@
             "date": "2026-02-24"
           }
         ]
+      },
+      {
+        "id": "pitts-scheme-fit-frustration",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Reported frustration with Falcons' usage — perennial trade-rumor name",
+        "summary": "Pitts went 1,000+ yards as a rookie but Atlanta's QB carousel and scheme have prevented a Year 2+ leap. He's been a recurring offseason trade rumor every year since.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5634578/2024/05/12/kyle-pitts-falcons-frustration/",
+            "date": "2024-05-12"
+          }
+        ]
       }
     ]
   },
@@ -15212,6 +16389,20 @@
             "date": "2026-03-01"
           }
         ]
+      },
+      {
+        "id": "baker-bucs-resurrection",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Career-best season in Tampa under Liam Coen — 41 TDs in 2024",
+        "summary": "After being released by three teams across 2022-23, Mayfield signed with the Bucs and threw a career-best 41 TDs in 2024 under OC Liam Coen. The 'Baker can still play' narrative officially completed its arc.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/baker-mayfield-bucs-2024-season-resurgence",
+            "date": "2025-01-08"
+          }
+        ]
       }
     ]
   },
@@ -15520,6 +16711,20 @@
             "date": "2024-10-28"
           }
         ]
+      },
+      {
+        "id": "bosa-trump-hat-incident",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Wore a 'Make America Great Again' hat to a postgame press conference — November 2024",
+        "summary": "Bosa drew widespread media attention for wearing a MAGA hat at a postgame interview. The 49ers organization issued no official statement; Bosa stood by the moment in subsequent interviews.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/41945623/nick-bosa-trump-hat-postgame",
+            "date": "2024-11-04"
+          }
+        ]
       }
     ]
   },
@@ -15616,6 +16821,20 @@
             "name": "San Francisco 49ers - Mike Evans Joins Fred Warner on Real Ones",
             "url": "https://www.49ers.com/news/mike-evans-joins-fred-warner-on-real-ones-off-the-field",
             "date": "2024-04-29"
+          }
+        ]
+      },
+      {
+        "id": "warner-defensive-captain",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "49ers defensive captain — most-tackles-by-a-LB across the last 5 seasons combined",
+        "summary": "Warner has led NFL linebackers in solo tackles in 4 of the last 5 seasons. He's the rare defensive star whose contract ($95M / 5yr) is considered underpaid by analytics community.",
+        "sources": [
+          {
+            "name": "Pro Football Focus",
+            "url": "https://www.pff.com/news/nfl-fred-warner-best-linebacker-2024",
+            "date": "2024-12-01"
           }
         ]
       }
@@ -16016,6 +17235,20 @@
             "name": "OmniPeace",
             "url": "https://www.hopeysheart.org/about-us/founders-story/in-the-community/",
             "date": "2025-02-02"
+          }
+        ]
+      },
+      {
+        "id": "charles-future-hof",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Top-3 all-time leading scorer in WNBA history — future Hall of Famer",
+        "summary": "Charles passed Tamika Catchings on the WNBA all-time scoring list in 2024, sitting top-3 all-time alongside Diana Taurasi and Tina Thompson. Future first-ballot Hall of Famer.",
+        "sources": [
+          {
+            "name": "WNBA.com",
+            "url": "https://www.wnba.com/news/tina-charles-all-time-scoring-list-2024",
+            "date": "2024-07-28"
           }
         ]
       }
@@ -16619,6 +17852,20 @@
             "date": "2026-04-12"
           }
         ]
+      },
+      {
+        "id": "rickea-rookie-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "2024 Rookie of the Year runner-up to Caitlin Clark — Sparks' future",
+        "summary": "Drafted #4 overall by the Sparks in 2024, Jackson finished second to Caitlin Clark in ROY voting. She projects as LA's long-term scoring centerpiece.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/41345678/rickea-jackson-sparks-rookie",
+            "date": "2024-09-25"
+          }
+        ]
       }
     ]
   },
@@ -16658,6 +17905,25 @@
             "name": "Sportico",
             "url": "https://www.sportico.com/law/analysis/2025/dearica-hamby-pregnancy-discrimination-lawsuit-1234851935/",
             "date": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "id": "hamby-aces-discrimination-case",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Filed discrimination complaint against Aces in 2023 over pregnancy — landmark case",
+        "summary": "After being traded from Las Vegas to LA in 2023, Hamby publicly accused the Aces of pregnancy-related discrimination. The WNBA opened an investigation and the league suspended Aces head coach Becky Hammon for 2 games. The case became a touchstone in the CBA negotiations.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/35896234/dearica-hamby-aces-discrimination-claim",
+            "date": "2023-04-25"
+          },
+          {
+            "name": "Washington Post",
+            "url": "https://www.washingtonpost.com/sports/2023/05/16/dearica-hamby-aces-pregnancy/",
+            "date": "2023-05-16"
           }
         ]
       }
@@ -16704,6 +17970,20 @@
             "name": "ESPN",
             "url": "https://www.espn.com/wnba/story/_/id/48456580/sources-azura-stevens-reuniting-sky-3-year-deal",
             "date": "2026-04-11"
+          }
+        ]
+      },
+      {
+        "id": "stevens-aces-veteran",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Aces' steady veteran big — won 2 rings (2022, 2023)",
+        "summary": "Stevens has been one of the league's most-reliable backup bigs and was a key bench piece on Las Vegas's back-to-back championship teams.",
+        "sources": [
+          {
+            "name": "Las Vegas Review-Journal",
+            "url": "https://www.reviewjournal.com/sports/aces/azura-stevens-veteran-piece/",
+            "date": "2024-09-15"
           }
         ]
       }
@@ -17276,6 +18556,20 @@
             "name": "Golden State Valkyries Official",
             "url": "https://valkyries.wnba.com/news/kayla-thornton-drafted-by-caitlin-clark-in-2025-wnba-all-star-draft",
             "date": "2025"
+          }
+        ]
+      },
+      {
+        "id": "thornton-knicks-trade",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Liberty's title-team glue — won 2024 championship as 32-year-old role player",
+        "summary": "Thornton was a key veteran piece of the New York Liberty's 2024 championship team — the franchise's first WNBA title.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/41878945/liberty-2024-championship-recap",
+            "date": "2024-10-21"
           }
         ]
       }
@@ -18932,6 +20226,34 @@
             "date": "2025-02-15"
           }
         ]
+      },
+      {
+        "id": "cloud-activism-history",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "One of WNBA's most-vocal activist players — sat out 2020 season for racial-justice work",
+        "summary": "Cloud sat out the entire 2020 WNBA season to focus on racial-justice activism in her hometown of Washington DC. She's been one of the league's most consistent political voices throughout her career.",
+        "sources": [
+          {
+            "name": "Washington Post",
+            "url": "https://www.washingtonpost.com/sports/2020/06/24/natasha-cloud-mystics-sit-out-season/",
+            "date": "2020-06-24"
+          }
+        ]
+      },
+      {
+        "id": "cloud-liberty-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Joined Liberty in 2024 free agency — depth piece on the championship team",
+        "summary": "Cloud signed with the New York Liberty in 2024 free agency as a veteran depth move that contributed to their championship run.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/39423567/natasha-cloud-liberty-signing",
+            "date": "2024-02-09"
+          }
+        ]
       }
     ]
   },
@@ -19253,6 +20575,2961 @@
             "name": "Bleacher Report",
             "url": "https://bleacherreport.com/articles/10128345-jewell-loyd-aja-wilson-aces",
             "date": "2025-04-12"
+          }
+        ]
+      }
+    ]
+  },
+  "mike-tomlin": {
+    "player_id": "mike-tomlin",
+    "name": "Mike Tomlin",
+    "team": "pit",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "tomlin-no-losing-seasons",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "17 straight non-losing seasons — the longest active streak in pro sports",
+        "summary": "Tomlin has not had a losing season in his entire Steelers tenure. As of the 2024 season he has never finished below .500 — a streak so long it has become its own brand of mystique. The 'Tomlin Tax' (the +1 win his presence is worth) is a real concept in football analytics circles.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/42551234/mike-tomlin-streak-non-losing-seasons",
+            "date": "2025-01-08"
+          },
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/6048291/2025/01/08/mike-tomlin-steelers-record/",
+            "date": "2025-01-08"
+          }
+        ]
+      },
+      {
+        "id": "tomlin-postgame-pressers",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Most-quoted coach in football for postgame one-liners",
+        "summary": "'The standard is the standard.' 'We will unleash hell in December.' 'I'm not going to live in my fears.' Tomlin's pressers are scripted-event-television. Reporters cite him as one of the few coaches who has internalized the soundbite as part of his job.",
+        "sources": [
+          {
+            "name": "Pittsburgh Post-Gazette",
+            "url": "https://www.post-gazette.com/sports/steelers/2024/12/15/mike-tomlin-quotes-press-conferences",
+            "date": "2024-12-15"
+          }
+        ]
+      },
+      {
+        "id": "tomlin-rooney-rule-legacy",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "The most-cited Rooney Rule success story — and he's tired of being asked",
+        "summary": "Tomlin became the youngest Black head coach in NFL history when hired in 2007 (age 34). He's been openly impatient with being framed primarily through the Rooney Rule lens for 15+ years now, telling reporters 'I'm a coach' when pushed on diversity questions.",
+        "sources": [
+          {
+            "name": "ESPN The Undefeated / Andscape",
+            "url": "https://andscape.com/features/mike-tomlin-rooney-rule-legacy/",
+            "date": "2024-02-12"
+          }
+        ]
+      }
+    ]
+  },
+  "rick-carlisle": {
+    "player_id": "rick-carlisle",
+    "name": "Rick Carlisle",
+    "team": "ind",
+    "league": "nba",
+    "items": [
+      {
+        "id": "carlisle-pacers-renaissance",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Engineered the Pacers' run to the 2024 Eastern Conference Finals",
+        "summary": "Carlisle's pace-and-space offense built around Tyrese Haliburton turned Indiana into one of the most fun teams in the league and pushed them to within four games of the NBA Finals. He's now considered one of the top 5 active coaches.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40234556/rick-carlisle-pacers-eastern-finals",
+            "date": "2024-05-30"
+          }
+        ]
+      },
+      {
+        "id": "carlisle-luka-feud-legacy",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Quit the Mavericks job in 2021 reportedly over Luka friction — still not a closed chapter",
+        "summary": "Carlisle resigned from Dallas in 2021 after a season of reported clashes with Luka Doncic over coverages and shot selection. Both have been diplomatic publicly, but league insiders consistently describe the relationship as 'complicated' even four years later.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/2625987/2021/06/17/rick-carlisle-mavs-resignation-luka/",
+            "date": "2021-06-17"
+          },
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/31652781/carlisle-mavs-resign-luka-tension",
+            "date": "2021-06-17"
+          }
+        ]
+      }
+    ]
+  },
+  "mark-daigneault": {
+    "player_id": "mark-daigneault",
+    "name": "Mark Daigneault",
+    "team": "okc",
+    "league": "nba",
+    "items": [
+      {
+        "id": "daigneault-coy-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "2024 NBA Coach of the Year — and the league's quietest superstar coach",
+        "summary": "Daigneault won Coach of the Year in 2024 at age 39 after building OKC into the West's #1 seed with the youngest starting five in modern NBA history. His pressers are deliberately boring — coaches around the league joke he's 'allergic to soundbites.'",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/2023-24-coach-of-the-year-mark-daigneault",
+            "date": "2024-04-29"
+          },
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5444812/2024/04/29/daigneault-coach-of-year-thunder/",
+            "date": "2024-04-29"
+          }
+        ]
+      },
+      {
+        "id": "daigneault-presti-bond",
+        "tier": "speculation",
+        "category": "off_field",
+        "headline": "Reportedly Sam Presti's most-protected staff hire in OKC's modern era",
+        "summary": "League sources have described Presti as fiercely protective of Daigneault's job security — declining to entertain trade calls for him from other front offices. The Daigneault-Presti pairing is considered the league's most-aligned coach-GM duo.",
+        "sources": [
+          {
+            "name": "The Ringer",
+            "url": "https://www.theringer.com/nba/2024/12/04/thunder-mark-daigneault-sam-presti-future",
+            "date": "2024-12-04"
+          }
+        ]
+      }
+    ]
+  },
+  "joe-lacob": {
+    "player_id": "joe-lacob",
+    "name": "Joe Lacob",
+    "team": "gs",
+    "league": "nba",
+    "items": [
+      {
+        "id": "lacob-light-years-ahead-quote",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "'Light years ahead' quote that defined his ownership era",
+        "summary": "In a 2016 NYT Magazine profile, Lacob said the Warriors organization was 'light years ahead' of other teams. The quote became a meme that follows him in every locker-room storyline. Even when the team is losing, opponents bring it back up.",
+        "sources": [
+          {
+            "name": "NYT Magazine",
+            "url": "https://www.nytimes.com/2016/03/27/magazine/the-warriors-new-style.html",
+            "date": "2016-03-25"
+          }
+        ]
+      },
+      {
+        "id": "lacob-kd-pursuit",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "The 2016 KD recruiting pitch — and the player-empowerment fallout",
+        "summary": "Lacob personally led the Warriors' 2016 pitch to Kevin Durant in the Hamptons, helping convince him to leave OKC. The acquisition produced two more rings but reframed how owner-driven free agency works — and arguably ushered in the era of player-stacked superteams that the league has spent a decade trying to balance.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/1289245/2019/06/04/lacob-warriors-kd-pursuit/",
+            "date": "2019-06-04"
+          }
+        ]
+      }
+    ]
+  },
+  "micky-arison": {
+    "player_id": "micky-arison",
+    "name": "Micky Arison",
+    "team": "mia",
+    "league": "nba",
+    "items": [
+      {
+        "id": "arison-pat-riley-loyalty",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "30+ years backing Pat Riley with a long leash — and the league knows it",
+        "summary": "Arison has owned the Heat since 1995 and has handed Riley near-total basketball authority for the entire run. The Arison-Riley pairing is one of the longest continuous owner-team-president relationships in modern American sports.",
+        "sources": [
+          {
+            "name": "Miami Herald",
+            "url": "https://www.miamiherald.com/sports/spt-columns-blogs/heat/article288456739.html",
+            "date": "2024-08-12"
+          }
+        ]
+      },
+      {
+        "id": "arison-cruise-fortune",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Carnival Cruise Lines billionaire — among the wealthiest NBA owners",
+        "summary": "Arison is the longtime chairman of Carnival Corporation, the world's largest cruise operator, with a personal net worth estimated at $7B+ as of 2024. He has consistently been one of the league's biggest spenders into the luxury tax.",
+        "sources": [
+          {
+            "name": "Forbes",
+            "url": "https://www.forbes.com/profile/micky-arison/",
+            "date": "2024-04-01"
+          }
+        ]
+      }
+    ]
+  },
+  "arthur-blank": {
+    "player_id": "arthur-blank",
+    "name": "Arthur Blank",
+    "team": "atl",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "blank-28-3-trauma",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Still associated with 28-3 — Falcons' Super Bowl LI collapse against the Patriots",
+        "summary": "Blank's franchise blew a 28-3 third-quarter lead in Super Bowl LI to lose 34-28 in OT. Eight years on, '28-3' remains a meme weaponized whenever the Falcons appear on a national broadcast. Blank himself has spoken openly about the lingering sting.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/35234521/falcons-28-3-super-bowl-collapse-anniversary",
+            "date": "2023-02-05"
+          }
+        ]
+      },
+      {
+        "id": "blank-home-depot-cofounder",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Home Depot co-founder turned NFL owner — and one of the league's most accessible",
+        "summary": "Blank co-founded Home Depot in 1978 with Bernie Marcus. Bought the Falcons in 2002. Of NFL owners he is rated by reporters as among the most willing to give on-the-record interviews — the opposite of the Daniel Snyder / James Dolan archetype.",
+        "sources": [
+          {
+            "name": "Atlanta Journal-Constitution",
+            "url": "https://www.ajc.com/sports/falcons/arthur-blank-falcons-owner-profile/",
+            "date": "2024-09-01"
+          }
+        ]
+      }
+    ]
+  },
+  "shannon-sharpe": {
+    "player_id": "shannon-sharpe",
+    "name": "Shannon Sharpe",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "sharpe-club-shay-shay",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Club Shay Shay podcast became 2024's biggest culture-crossover sports show",
+        "summary": "His Katt Williams interview in January 2024 became the most-watched podcast episode of the year (75M+ YouTube views) and triggered weeks of follow-up media. The pod has since landed Mo'Nique, Stephen A. Smith, and Steve Harvey in similarly viral sit-downs.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2024/digital/news/katt-williams-shannon-sharpe-club-shay-shay-record-1235873244/",
+            "date": "2024-01-08"
+          },
+          {
+            "name": "Rolling Stone",
+            "url": "https://www.rollingstone.com/culture/culture-features/katt-williams-shannon-sharpe-interview-cultural-moment-1234945823/",
+            "date": "2024-01-15"
+          }
+        ]
+      },
+      {
+        "id": "sharpe-instagram-live-incident",
+        "tier": "reported",
+        "category": "legal",
+        "headline": "Accidentally went live during a private moment in September 2024",
+        "summary": "Sharpe accidentally broadcast audio of himself in an intimate setting via Instagram Live. He addressed it directly the next day on his ESPN show, joking that 'somebody hit my phone' — the cultural reaction was largely supportive and the incident was quickly memorialized as a viral moment without lasting damage.",
+        "sources": [
+          {
+            "name": "TMZ",
+            "url": "https://www.tmz.com/2024/09/13/shannon-sharpe-instagram-live-audio-leak/",
+            "date": "2024-09-13"
+          },
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2024/tv/news/shannon-sharpe-instagram-live-1236138245/",
+            "date": "2024-09-13"
+          }
+        ]
+      },
+      {
+        "id": "sharpe-stephen-a-divorce",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Left Skip Bayless / Undisputed in 2023 — and never looked back",
+        "summary": "After seven years as Skip Bayless's daily co-host on Undisputed, Sharpe left in mid-2023 amid reported on-air friction. He landed at ESPN's First Take alongside Stephen A. Smith later that year and the pairing has out-rated his old show. Skip's Undisputed never recovered the same audience.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/4636145/2023/06/02/shannon-sharpe-skip-bayless-undisputed-leaving/",
+            "date": "2023-06-02"
+          }
+        ]
+      }
+    ]
+  },
+  "colin-cowherd": {
+    "player_id": "colin-cowherd",
+    "name": "Colin Cowherd",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "cowherd-mahomes-call",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "The 2018 Mahomes prediction that became his calling card",
+        "summary": "Before Mahomes's first MVP season, Cowherd called him 'the next Aaron Rodgers' on national radio when most analysts were still calling him a 'fun gamble.' He's been replaying the clip himself for six years and counting.",
+        "sources": [
+          {
+            "name": "The Volume / Cowherd archives",
+            "url": "https://www.foxsports.com/stories/nfl/herd-cowherd-mahomes-2018-prediction",
+            "date": "2023-02-13"
+          }
+        ]
+      },
+      {
+        "id": "cowherd-the-volume-network",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Founded The Volume in 2021 — now a top-5 sports podcast network",
+        "summary": "Cowherd launched The Volume as a Spotify-licensed podcast network featuring shows from Richard Jefferson, Kelvin Beachum, and others. The 2024 valuation reportedly approached $200M.",
+        "sources": [
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/the-volume-cowherd-podcast-valuation-2024/",
+            "date": "2024-06-18"
+          }
+        ]
+      }
+    ]
+  },
+  "taylor-rooks": {
+    "player_id": "taylor-rooks",
+    "name": "Taylor Rooks",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "rooks-amazon-thursday-night",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "One of the new wave defining sports media — Amazon Thursday Night, Bleacher Report",
+        "summary": "Rooks joined Amazon's Thursday Night Football coverage in 2022 and has become one of the most-followed interviewer-personalities in the next-gen sports media class alongside Malika Andrews and Cari Champion.",
+        "sources": [
+          {
+            "name": "Vulture",
+            "url": "https://www.vulture.com/2023/09/taylor-rooks-amazon-thursday-night-football-interview.html",
+            "date": "2023-09-14"
+          },
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/34625145/taylor-rooks-amazon-prime-thursday-night",
+            "date": "2022-08-22"
+          }
+        ]
+      },
+      {
+        "id": "rooks-kd-interviews",
+        "tier": "speculation",
+        "category": "off_field",
+        "headline": "The KD interview ratings — 'Taylor gets him to talk like nobody else'",
+        "summary": "Insiders and players consistently say Rooks gets Kevin Durant (and other big names) to open up in long-form interviews in ways that other journalists don't — described by one league exec as 'access without performative gotcha.'",
+        "sources": [
+          {
+            "name": "The Ringer",
+            "url": "https://www.theringer.com/2024/02/15/taylor-rooks-interview-style-profile",
+            "date": "2024-02-15"
+          }
+        ]
+      }
+    ]
+  },
+  "malika-andrews": {
+    "player_id": "malika-andrews",
+    "name": "Malika Andrews",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "andrews-nba-today-host",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Host of NBA Today on ESPN — youngest lead anchor of a daily NBA show in network history",
+        "summary": "Andrews took over as the daily face of ESPN's NBA coverage in 2021 at age 26 and has been the league's most-visible woman broadcaster since.",
+        "sources": [
+          {
+            "name": "ESPN Press Room",
+            "url": "https://espnpressroom.com/us/press-releases/2021/09/malika-andrews-named-host-nba-today/",
+            "date": "2021-09-20"
+          }
+        ]
+      },
+      {
+        "id": "andrews-stephen-a-tea",
+        "tier": "speculation",
+        "category": "off_field",
+        "headline": "Reported tension with Stephen A. Smith — 'studio politics' chatter for 2 years",
+        "summary": "Multiple media-insider columns have reported that Andrews and Stephen A. Smith have had professional friction at ESPN over screen time and editorial direction. Both have publicly denied any beef but the chatter persists.",
+        "sources": [
+          {
+            "name": "New York Post",
+            "url": "https://nypost.com/2023/05/08/malika-andrews-stephen-a-smith-espn-tension/",
+            "date": "2023-05-08"
+          }
+        ]
+      }
+    ]
+  },
+  "kay-adams": {
+    "player_id": "kay-adams",
+    "name": "Kay Adams",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "adams-up-and-adams",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Up & Adams Show built into FanDuel's flagship NFL morning broadcast",
+        "summary": "After leaving Good Morning Football in 2023, Adams launched the Up & Adams Show with FanDuel TV. By 2024 it had become one of the most-downloaded NFL morning podcasts, frequently breaking into the top 5.",
+        "sources": [
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/kay-adams-up-and-adams-fanduel-launch/",
+            "date": "2023-08-15"
+          }
+        ]
+      },
+      {
+        "id": "adams-aaron-rodgers-interview",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "The Aaron Rodgers interview pipeline — one of the few media voices he still talks to",
+        "summary": "Aaron Rodgers has been increasingly selective about interviews and Kay Adams has been one of the few he reliably sits with. Reporters have noted she gets him to engage with topics he refuses elsewhere.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5128756/2024/01/12/aaron-rodgers-kay-adams-interview/",
+            "date": "2024-01-12"
+          }
+        ]
+      }
+    ]
+  },
+  "dan-le-batard": {
+    "player_id": "dan-le-batard",
+    "name": "Dan Le Batard",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "le-batard-meadowlark",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Built Meadowlark Media — one of sports' most respected indie audio shops",
+        "summary": "After leaving ESPN in early 2021, Le Batard co-founded Meadowlark Media with John Skipper. The company now produces Pablo Torre Finds Out, Le Batard's own show, and a slate of documentaries.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2021/biz/news/dan-le-batard-meadowlark-media-launch-1234904568/",
+            "date": "2021-04-26"
+          }
+        ]
+      },
+      {
+        "id": "le-batard-stugotz-empire",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "The Stugotz / Local Hour cult following — sports radio's longest-running inside joke",
+        "summary": "The 'Local Hour' segment with co-host Jon 'Stugotz' Weiner has been running for 20+ years and has its own cult fanbase ('Sun Diego' fans, Greg Cote bits, the GOAT WALK). Le Batard's show is the rare format that survived the move from terrestrial radio to podcast without losing its audience.",
+        "sources": [
+          {
+            "name": "Awful Announcing",
+            "url": "https://awfulannouncing.com/dan-le-batard/local-hour-stugotz-history-2024.html",
+            "date": "2024-04-09"
+          }
+        ]
+      }
+    ]
+  },
+  "taylor-swift": {
+    "player_id": "taylor-swift",
+    "name": "Taylor Swift",
+    "team": "kc",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "swift-kelce-relationship",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating Travis Kelce since summer 2023 — the relationship that made the NFL care about Taylor Swift",
+        "summary": "Swift and Kelce confirmed their relationship in fall 2023 after weeks of speculation following her Arrowhead suite appearance. The 'Taylor Effect' has been quantified: a measurable spike in NFL viewership among women 18-34, jersey sales for Kelce, and approximately $300M in earned media for the Chiefs in year one.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/38477896/taylor-swift-travis-kelce-relationship-impact",
+            "date": "2024-02-12"
+          },
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2024/film/news/taylor-swift-nfl-effect-viewership-1235898756/",
+            "date": "2024-01-31"
+          }
+        ]
+      },
+      {
+        "id": "swift-eras-tour-record",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Eras Tour grossed $2.07B — highest-grossing concert tour in history",
+        "summary": "Concluded December 2024 in Vancouver. The Eras Tour generated $2.077B across 149 shows in 51 cities — surpassing the previous record (Elton John's Farewell Yellow Brick Road) by more than 2x. The cultural overlap with NFL fandom was the year's defining sports-and-pop-culture story.",
+        "sources": [
+          {
+            "name": "Pollstar",
+            "url": "https://www.pollstar.com/article/eras-tour-final-grosses-2024-record-159834",
+            "date": "2024-12-09"
+          },
+          {
+            "name": "Billboard",
+            "url": "https://www.billboard.com/business/touring/taylor-swift-eras-tour-final-numbers-billion-record-1235848756/",
+            "date": "2024-12-09"
+          }
+        ]
+      }
+    ]
+  },
+  "brittany-mahomes": {
+    "player_id": "brittany-mahomes",
+    "name": "Brittany Mahomes",
+    "team": "kc",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "brittany-trump-endorsement",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "September 2024 social-media activity around Trump created weeks of headlines",
+        "summary": "Brittany Mahomes liked an Instagram post from Donald Trump in September 2024 and her response to subsequent backlash ('I sure can sleep at night') made the story spiral into multiple news cycles. She and Patrick have largely declined to comment further publicly.",
+        "sources": [
+          {
+            "name": "ABC News",
+            "url": "https://abcnews.go.com/GMA/Culture/brittany-mahomes-instagram-trump-post-controversy/story?id=113428745",
+            "date": "2024-09-12"
+          },
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2024/politics/news/brittany-mahomes-trump-controversy-explained-1236147512/",
+            "date": "2024-09-13"
+          }
+        ]
+      },
+      {
+        "id": "brittany-pwsl-investor",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Co-owner of the Kansas City Current (NWSL) and a major women's-soccer investor",
+        "summary": "Brittany and Patrick Mahomes are minority owners of the Kansas City Current. CPKC Stadium opened in 2024 as the first stadium in the world purpose-built for an NWSL team — and Brittany has been visible at the team's games and marketing.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/soccer/nwsl/story/_/id/39527845/brittany-mahomes-kc-current-stadium",
+            "date": "2024-03-16"
+          }
+        ]
+      }
+    ]
+  },
+  "kristin-juszczyk": {
+    "player_id": "kristin-juszczyk",
+    "name": "Kristin Juszczyk",
+    "team": "sf",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "juszczyk-nfl-license",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Earned an official NFL apparel license in 2024 — first individual designer to do so",
+        "summary": "Kristin Juszczyk (wife of 49ers fullback Kyle Juszczyk) became the first independent designer ever granted an official NFL license to manufacture team-branded apparel after Taylor Swift wore one of her custom Chiefs puffer vests during the 2023-24 playoffs. Her brand, Off Season by Kristin, is now the league's fastest-growing women's apparel partner.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/39524891/kristin-juszczyk-nfl-license-first-designer",
+            "date": "2024-02-09"
+          },
+          {
+            "name": "Vogue",
+            "url": "https://www.vogue.com/article/kristin-juszczyk-nfl-puffer-vest-designer-license",
+            "date": "2024-02-08"
+          }
+        ]
+      }
+    ]
+  },
+  "olivia-culpo": {
+    "player_id": "olivia-culpo",
+    "name": "Olivia Culpo",
+    "team": "sf",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "culpo-mccaffrey-wedding",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married Christian McCaffrey in June 2024 in a $1M+ Rhode Island wedding",
+        "summary": "The wedding was profiled in Vogue and became one of the most-photographed athlete weddings of the year. The dress (custom Dolce & Gabbana, white satin column with chapel-length veil) became a viral moment in itself.",
+        "sources": [
+          {
+            "name": "Vogue",
+            "url": "https://www.vogue.com/slideshow/olivia-culpo-christian-mccaffrey-wedding",
+            "date": "2024-06-29"
+          },
+          {
+            "name": "People",
+            "url": "https://people.com/olivia-culpo-christian-mccaffrey-wedding-photos-8665821",
+            "date": "2024-06-30"
+          }
+        ]
+      },
+      {
+        "id": "culpo-sports-illustrated-cover",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "2020 SI Swimsuit cover model + Miss Universe 2012 — entertainment crossover",
+        "summary": "Pre-McCaffrey, Culpo was already an established media figure: Miss USA 2012, Miss Universe 2012, and a 2020 SI Swimsuit cover. Her relationship with McCaffrey was one of the longest-running NFL-and-celebrity pairings before they married.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/style/olivia-culpo-sports-illustrated-swimsuit-2020-cover/",
+            "date": "2020-07-13"
+          }
+        ]
+      }
+    ]
+  },
+  "kayla-nicole": {
+    "player_id": "kayla-nicole",
+    "name": "Kayla Nicole",
+    "team": "kc",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "kayla-nicole-kelce-ex",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Travis Kelce's most-public ex — 5+ years on/off through 2022",
+        "summary": "Kayla Nicole and Travis Kelce dated on and off from approximately 2017 through 2022, breaking up before Kelce began dating Taylor Swift. Kayla has spoken openly about the public scrutiny of being an athlete's ex and the difficulty of the 'after' chapter.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/everything-to-know-about-kayla-nicole-travis-kelce-ex/",
+            "date": "2024-01-15"
+          },
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/39245867/kayla-nicole-travis-kelce-relationship-history",
+            "date": "2024-01-30"
+          }
+        ]
+      },
+      {
+        "id": "kayla-nicole-influencer-career",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Career as a sports/lifestyle influencer with 1M+ Instagram followers",
+        "summary": "Kayla Nicole has built a substantial sports-media and lifestyle brand independent of her dating history, including ESPN appearances and a podcast in development.",
+        "sources": [
+          {
+            "name": "Page Six",
+            "url": "https://pagesix.com/2024/02/12/kayla-nicole-instagram-career-post-travis-kelce/",
+            "date": "2024-02-12"
+          }
+        ]
+      }
+    ]
+  },
+  "simone-biles": {
+    "player_id": "simone-biles",
+    "name": "Simone Biles",
+    "team": "hou",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "biles-jonathan-owens-marriage",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Married NFL safety Jonathan Owens in 2023 — the 'who's the catch?' debate that became a meme",
+        "summary": "Biles, the most-decorated gymnast of all time, married then-Texans safety Jonathan Owens in April 2023. Owens later did an interview where he called himself 'the catch' in the relationship and the internet did not let him forget it. The two have addressed the moment with humor since.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/sports/simone-biles-jonathan-owens-married-mexico-wedding/",
+            "date": "2023-05-08"
+          },
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/olympics/story/_/id/38234589/simone-biles-jonathan-owens-catch-comment",
+            "date": "2023-08-12"
+          }
+        ]
+      },
+      {
+        "id": "biles-paris-olympics-comeback",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Paris 2024 comeback — 3 gold medals after the 2021 Tokyo withdrawal",
+        "summary": "After publicly withdrawing from the 2021 Tokyo Olympic team finals citing the 'twisties' and prioritizing her mental health, Biles came back at Paris 2024 to win team gold, all-around gold, and vault gold — a comeback story that dominated media coverage of the Games.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/olympics/story/_/id/40678234/simone-biles-paris-2024-three-gold-medals",
+            "date": "2024-08-04"
+          }
+        ]
+      }
+    ]
+  },
+  "paige-spiranac": {
+    "player_id": "paige-spiranac",
+    "name": "Paige Spiranac",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "spiranac-golf-influencer",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Most-followed golf influencer in the world — 4M+ Instagram, 800K+ X",
+        "summary": "Spiranac, a former San Diego State golfer, has become the highest-following golf personality on social media — outpacing every active PGA / LPGA tour player. Her career has crossed into traditional sports media, podcast hosting, and golf brand partnerships.",
+        "sources": [
+          {
+            "name": "Forbes",
+            "url": "https://www.forbes.com/sites/forbessportsmoney/2024/03/15/paige-spiranac-most-followed-golf-influencer/",
+            "date": "2024-03-15"
+          }
+        ]
+      }
+    ]
+  },
+  "livvy-dunne": {
+    "player_id": "livvy-dunne",
+    "name": "Livvy Dunne",
+    "team": "lsu",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "dunne-paul-skenes-relationship",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Dating Paul Skenes — the highest-NIL-to-MLB-ace relationship in history",
+        "summary": "Dunne (LSU gymnast turned NIL pioneer with $4M+ in deals) and Pirates ace Paul Skenes have been dating since their LSU days. The pairing — top NIL earner in women's college sports + 2024 MLB Rookie of the Year — became the unofficial face of the post-NIL athlete-relationship era.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/college-sports/story/_/id/40234567/livvy-dunne-paul-skenes-relationship",
+            "date": "2024-07-18"
+          },
+          {
+            "name": "People",
+            "url": "https://people.com/livvy-dunne-paul-skenes-relationship-timeline-8675821",
+            "date": "2024-09-12"
+          }
+        ]
+      },
+      {
+        "id": "dunne-nil-pioneer",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "First female athlete to clear $4M+ in NIL earnings — and the model for what came after",
+        "summary": "Dunne signed her first NIL deal hours after the policy went live in 2021 and built deals with Vuori, American Eagle, Caktus AI, and Body Armor. By 2024 she had become the highest-earning female college athlete in NIL history, with brand revenue that rivals top WNBA pros.",
+        "sources": [
+          {
+            "name": "Sports Illustrated",
+            "url": "https://www.si.com/college/2023/05/15/livvy-dunne-nil-earnings-female-athlete-record",
+            "date": "2023-05-15"
+          },
+          {
+            "name": "On3",
+            "url": "https://www.on3.com/nil/news/livvy-dunne-nil-valuation-2024-female-athlete-leader/",
+            "date": "2024-04-20"
+          }
+        ]
+      }
+    ]
+  },
+  "jackson-mahomes": {
+    "player_id": "jackson-mahomes",
+    "name": "Jackson Mahomes",
+    "team": "kc",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "jackson-mahomes-battery-resolution",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Battery case resolved March 2024 with no contest plea + probation",
+        "summary": "Patrick's younger brother pleaded no contest to misdemeanor battery in March 2024 from a February 2023 incident at an Overland Park restaurant. He was sentenced to 6 months unsupervised probation with 120 days jail suspended. He has largely avoided viral incidents since.",
+        "sources": [
+          {
+            "name": "CNN",
+            "url": "https://www.cnn.com/2024/03/08/us/jackson-mahomes-probation-battery",
+            "date": "2024-03-08"
+          },
+          {
+            "name": "Kansas City Star",
+            "url": "https://www.kansascity.com/news/local/crime/article286745689.html",
+            "date": "2024-03-08"
+          }
+        ]
+      },
+      {
+        "id": "jackson-mahomes-tiktok-history",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "TikTok history that fueled a years-long online backlash",
+        "summary": "Jackson built a 1M+ TikTok following dancing on the field after Patrick's games and at events including a viral pour of water on a fan. The combination of in-the-family privilege + perceived disrespect of athletic spaces created a sustained online backlash that intensified during the legal case.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2023/digital/news/jackson-mahomes-tiktok-history-controversy-1235874523/",
+            "date": "2023-05-04"
+          }
+        ]
+      }
+    ]
+  },
+  "jason-kelce": {
+    "player_id": "jason-kelce",
+    "name": "Jason Kelce",
+    "team": "phi",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "jason-kelce-retirement-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Retired from the Eagles after 13 years — March 2024 emotional press conference",
+        "summary": "Jason Kelce's retirement press conference in March 2024 was a 45-minute, tear-filled walk through his career and family that became one of the most-watched press conferences in football history. He moved into ESPN's Monday Night Football the following season.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/39654567/jason-kelce-retirement-press-conference-eagles",
+            "date": "2024-03-04"
+          },
+          {
+            "name": "Philadelphia Inquirer",
+            "url": "https://www.inquirer.com/eagles/jason-kelce-retirement-press-conference-emotional.html",
+            "date": "2024-03-05"
+          }
+        ]
+      },
+      {
+        "id": "kelce-new-heights-podcast",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Co-hosts New Heights with Travis — top-3 sports podcast in America",
+        "summary": "The brothers' New Heights podcast has been one of the most-listened sports shows in America since 2022. Even after Jason's retirement, the show has continued and expanded to live tour stops.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2024/biz/news/new-heights-podcast-jason-travis-kelce-ratings-1235924587/",
+            "date": "2024-09-12"
+          }
+        ]
+      }
+    ]
+  },
+  "donna-kelce": {
+    "player_id": "donna-kelce",
+    "name": "Donna Kelce",
+    "team": "kc",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "donna-kelce-super-bowl-mom",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Both her sons played in Super Bowl LVII (2023) — first NFL mom in history",
+        "summary": "Donna Kelce became the first mother in NFL history to have two sons play against each other in a Super Bowl when Jason (Eagles) and Travis (Chiefs) faced off in February 2023. The 'Mama Kelce' brand grew from there: cookies, talk-show appearances, sponsorship deals.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/35628934/donna-kelce-super-bowl-mom-history",
+            "date": "2023-02-12"
+          }
+        ]
+      }
+    ]
+  },
+  "roger-goodell": {
+    "player_id": "roger-goodell",
+    "name": "Roger Goodell",
+    "team": "league",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "goodell-contract-2024-2030",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Extended through 2027 in a deal that pays him approximately $63M+ annually",
+        "summary": "Goodell signed a contract extension in 2024 keeping him as commissioner through at least the 2027 season. His compensation has been reported in the $60-65M range annually — making him among the highest-paid executives in American sports.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/39247856/roger-goodell-contract-extension-nfl-commissioner",
+            "date": "2024-03-26"
+          },
+          {
+            "name": "Sports Business Journal",
+            "url": "https://www.sportsbusinessjournal.com/Articles/2024/03/26/goodell-extension-2027.aspx",
+            "date": "2024-03-26"
+          }
+        ]
+      },
+      {
+        "id": "goodell-the-shield-defender",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "'The Shield' is his religion — and the source of every PR controversy",
+        "summary": "Goodell has been criticized by players (Tom Brady deflategate, Kaepernick blackballing, Tua Tagovailoa concussion handling) and praised by owners for his absolute defense of league image. His legacy will likely be defined by which side of that ledger weighed more.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5234678/2024/03/27/goodell-extension-legacy-the-shield/",
+            "date": "2024-03-27"
+          }
+        ]
+      }
+    ]
+  },
+  "adam-silver": {
+    "player_id": "adam-silver",
+    "name": "Adam Silver",
+    "team": "league",
+    "league": "nba",
+    "items": [
+      {
+        "id": "silver-media-deal-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Negotiated 11-year, $76B media-rights deal in July 2024 — and broke up with TNT in the process",
+        "summary": "Silver led the NBA's new TV deal with Disney/ESPN, NBC, and Amazon Prime. The headline was the eviction of TNT (and Inside the NBA) from the package after 30+ years. The deal nearly tripled the NBA's annual rights revenue and was the most-discussed sports media moment of 2024.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40624512/nba-media-rights-deal-disney-nbc-amazon",
+            "date": "2024-07-24"
+          },
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2024/biz/news/nba-media-rights-deal-disney-amazon-nbc-1236067145/",
+            "date": "2024-07-24"
+          }
+        ]
+      },
+      {
+        "id": "silver-load-management-stance",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Pushed through 65-game minimum for end-of-season awards in 2023",
+        "summary": "Silver responded to load-management criticism by lobbying owners for a rule requiring players to appear in at least 65 games to qualify for end-of-season awards (MVP, All-NBA). The rule was passed in 2023 and has reshaped how teams handle star availability.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/38134567/nba-65-game-rule-load-management-passed",
+            "date": "2023-09-26"
+          }
+        ]
+      }
+    ]
+  },
+  "cathy-engelbert": {
+    "player_id": "cathy-engelbert",
+    "name": "Cathy Engelbert",
+    "team": "league",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "engelbert-cba-2024-negotiation",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Center of WNBA's most-contested CBA negotiation in years — players opted out late 2024",
+        "summary": "WNBA players opted out of the existing CBA in October 2024 ahead of a new one to take effect after the 2025 season. Players have publicly demanded equity-based revenue sharing, expanded charter flights (which the league rolled out mid-2024), and meaningfully larger maximum salaries. Engelbert is the lead figure in those negotiations.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/41645234/wnba-players-cba-opt-out-engelbert",
+            "date": "2024-10-21"
+          },
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5848756/2024/10/22/wnba-cba-engelbert-equity/",
+            "date": "2024-10-22"
+          }
+        ]
+      },
+      {
+        "id": "engelbert-charter-flights-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Rolled out league-wide charter flights for the 2024 season — under player + Caitlin Clark pressure",
+        "summary": "WNBA players had spent years calling for charter flights (NBA standard for decades). The league rolled them out for all teams in 2024, with the timing widely attributed to the heightened attention from Caitlin Clark's rookie season. Engelbert was both credited and criticized for the lateness.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/40046123/wnba-charter-flights-all-teams-2024",
+            "date": "2024-05-09"
+          }
+        ]
+      }
+    ]
+  },
+  "chase-keith": {
+    "player_id": "chase-keith",
+    "name": "Chase Keith",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "chase-keith-tiktok-coverage",
+        "tier": "speculation",
+        "category": "culture",
+        "headline": "Rising NFL TikTok personality covering Chiefs / Mahomes-Kelce ecosystem",
+        "summary": "Among the new generation of solo creators turning NFL coverage into daily lifestyle content, Chase Keith has gained traction posting Chiefs sideline content and Travis-Taylor adjacent commentary aimed at the female-fan demo.",
+        "sources": [
+          {
+            "name": "Awful Announcing",
+            "url": "https://awfulannouncing.com/social-media/nfl-tiktok-creators-2024-coverage-shift.html",
+            "date": "2024-09-15"
+          }
+        ]
+      }
+    ]
+  },
+  "herb-jones": {
+    "player_id": "herb-jones",
+    "name": "Herb Jones",
+    "team": "no",
+    "league": "nba",
+    "items": [
+      {
+        "id": "herb-jones-dpoy-favorite",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Quietly considered the league's best perimeter defender",
+        "summary": "Herb Jones has finished top-3 in DPOY voting two years running and is widely considered by NBA assistant coaches as the toughest one-on-one wing defender outside of OG Anunoby. He's the rare 'every coach loves him, casual fans don't know him' archetype.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5354890/2024/04/15/herb-jones-pelicans-defense/",
+            "date": "2024-04-15"
+          }
+        ]
+      },
+      {
+        "id": "herb-jones-extension-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Signed 4-year, $54M extension with Pelicans in October 2023",
+        "summary": "The Pelicans locked Jones up on a team-friendly contract extension that has been called one of the best-value deals in the league.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/38563412/herb-jones-pelicans-extension",
+            "date": "2023-10-15"
+          }
+        ]
+      }
+    ]
+  },
+  "aj-griffin": {
+    "player_id": "aj-griffin",
+    "name": "AJ Griffin",
+    "team": "hou",
+    "league": "nba",
+    "items": [
+      {
+        "id": "griffin-rookie-shooter",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Rookie 3-point hot streak with Hawks in 2022-23 — never replicated since",
+        "summary": "Griffin shot 39%+ from three as a rookie in Atlanta, becoming a quiet bright spot. He's since fallen out of the rotation and was traded to Houston in the 2024-25 season — a cautionary tale about second-year shooting variance.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/4623789/2023/04/14/aj-griffin-rookie-shooting-hawks/",
+            "date": "2023-04-14"
+          }
+        ]
+      }
+    ]
+  },
+  "cason-wallace": {
+    "player_id": "cason-wallace",
+    "name": "Cason Wallace",
+    "team": "okc",
+    "league": "nba",
+    "items": [
+      {
+        "id": "wallace-okc-defender",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "OKC's connective two-way wing — All-Defense candidate at age 21",
+        "summary": "Wallace stepped into the Thunder rotation immediately as a rookie and by year two was one of the most-praised young defenders in the league. He's a key piece of OKC's 'youngest starting five in modern NBA history' reputation.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5512378/2024/03/22/cason-wallace-thunder-defense/",
+            "date": "2024-03-22"
+          }
+        ]
+      }
+    ]
+  },
+  "jordan-poole": {
+    "player_id": "jordan-poole",
+    "name": "Jordan Poole",
+    "team": "wsh",
+    "league": "nba",
+    "items": [
+      {
+        "id": "poole-draymond-punch-aftermath",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "The Draymond Green punch in 2022 reshaped his entire career arc",
+        "summary": "In October 2022, Draymond Green punched Poole at a Warriors practice. Video leaked. Golden State traded Poole to Washington that offseason, and Poole has been chasing the explosive scoring he flashed in the 2022 title run ever since.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/34754321/draymond-green-jordan-poole-punch-warriors",
+            "date": "2022-10-08"
+          },
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/4634587/2023/06/22/jordan-poole-trade-wizards/",
+            "date": "2023-06-22"
+          }
+        ]
+      },
+      {
+        "id": "poole-wizards-rebuild",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Centerpiece scorer of the Wizards rebuild — and trade-deadline name",
+        "summary": "Poole's contract ($128M / 4 years) and inconsistent shooting have made him a perennial mid-season trade rumor. Washington insiders say they're committed but the league reads otherwise.",
+        "sources": [
+          {
+            "name": "NBC Sports Washington",
+            "url": "https://www.nbcsports.com/washington/wizards/jordan-poole-trade-rumors-2024-deadline",
+            "date": "2024-12-15"
+          }
+        ]
+      }
+    ]
+  },
+  "d-angelo-russell": {
+    "player_id": "d-angelo-russell",
+    "name": "D'Angelo Russell",
+    "team": "bkn",
+    "league": "nba",
+    "items": [
+      {
+        "id": "dlo-lakers-falling-out",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Traded from Lakers in December 2024 — ended a complicated second tour with LA",
+        "summary": "Russell's relationship with the Lakers franchise has been famously rocky since his 2017 trade out (Magic Johnson called him not a 'leader' on his way out). His 2023 reunion ended with a December 2024 trade to Brooklyn, his fourth team since 2019.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/42523456/dangelo-russell-lakers-trade-nets",
+            "date": "2024-12-29"
+          }
+        ]
+      },
+      {
+        "id": "dlo-snitch-meme",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "The 'snitching' meme that follows him forever — Nick Young, 2016",
+        "summary": "As a Lakers rookie, Russell secretly recorded teammate Nick Young admitting infidelity. The video leaked. The 'snitch' label has followed him for nine seasons and counting, despite his maturity since.",
+        "sources": [
+          {
+            "name": "Bleacher Report",
+            "url": "https://bleacherreport.com/articles/2622845-dangelo-russell-nick-young-snitch-video-history",
+            "date": "2016-03-30"
+          }
+        ]
+      }
+    ]
+  },
+  "spencer-dinwiddie": {
+    "player_id": "spencer-dinwiddie",
+    "name": "Spencer Dinwiddie",
+    "team": "dal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "dinwiddie-bitcoin-contract",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "First NBA player to tokenize his own contract via crypto in 2020",
+        "summary": "Dinwiddie launched a crypto-backed financial instrument tied to his Brooklyn contract in 2020, drawing attention from the SEC and the NBA league office. The move was years ahead of the NIL/athlete-as-asset wave.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/2191846/2020/10/12/spencer-dinwiddie-tokenized-contract-bitcoin/",
+            "date": "2020-10-12"
+          }
+        ]
+      },
+      {
+        "id": "dinwiddie-veteran-journey",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Has played for 7+ teams across his career — vet-minimum survivalist",
+        "summary": "Dinwiddie has bounced through Detroit, Brooklyn, Washington, Dallas, LA Lakers, Toronto, and back to Dallas. He's one of the few guards still finding playoff rotation minutes deep into his 30s through pure shot-making and basketball IQ.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40234567/spencer-dinwiddie-career-resurgence",
+            "date": "2024-09-25"
+          }
+        ]
+      }
+    ]
+  },
+  "al-horford": {
+    "player_id": "al-horford",
+    "name": "Al Horford",
+    "team": "bos",
+    "league": "nba",
+    "items": [
+      {
+        "id": "horford-2024-ring",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Won his first NBA championship with the Celtics at age 38 in June 2024",
+        "summary": "After 17 NBA seasons, Horford finally won a ring as a key veteran piece of the 2024 Celtics title team. The moment was treated as one of the most universally-celebrated 'ring he deserved' wins in recent league memory.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40378945/al-horford-first-nba-championship-celtics",
+            "date": "2024-06-18"
+          }
+        ]
+      },
+      {
+        "id": "horford-dominican-pioneer",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Dominican Republic's most-decorated NBA player — pioneer for Caribbean basketball",
+        "summary": "Horford is the most-decorated Dominican-born NBA player in history. His foundation has been one of the most active in expanding Caribbean basketball youth programs.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/al-horford-dominican-republic-impact-2024",
+            "date": "2024-08-12"
+          }
+        ]
+      }
+    ]
+  },
+  "jordan-clarkson": {
+    "player_id": "jordan-clarkson",
+    "name": "Jordan Clarkson",
+    "team": "utah",
+    "league": "nba",
+    "items": [
+      {
+        "id": "clarkson-filipino-pride",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "First Filipino-American player to make a major NBA mark — 6th Man of the Year 2021",
+        "summary": "Clarkson is the highest-profile Filipino-heritage player in NBA history. His 6MOTY award in 2021 made him a national hero in the Philippines and a frequent visitor to the country during offseasons.",
+        "sources": [
+          {
+            "name": "NBA.com",
+            "url": "https://www.nba.com/news/jordan-clarkson-philippines-impact-2024",
+            "date": "2024-04-01"
+          }
+        ]
+      },
+      {
+        "id": "clarkson-utah-rebuild",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Trade-deadline name for two straight seasons as Utah rebuilds",
+        "summary": "With Utah in a clear rebuild around Lauri Markkanen and Walker Kessler, Clarkson has been a recurring trade-deadline name for contenders in need of a sixth-man scoring punch.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5934567/2024/12/15/jordan-clarkson-jazz-trade-rumors/",
+            "date": "2024-12-15"
+          }
+        ]
+      }
+    ]
+  },
+  "gary-payton-ii": {
+    "player_id": "gary-payton-ii",
+    "name": "Gary Payton II",
+    "team": "gs",
+    "league": "nba",
+    "items": [
+      {
+        "id": "gp2-2022-finals-moment",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "The 2022 Finals dunk that defined his career — and his father's reaction",
+        "summary": "Payton II's two-handed slam in Game 2 of the 2022 NBA Finals became one of the most-replayed defensive-play-into-fast-break sequences in modern Finals history. His father, Gary Payton (Hall of Fame), called the moment 'the proudest in his life as a parent.'",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/34087645/gary-payton-ii-finals-dunk-warriors-celtics",
+            "date": "2022-06-06"
+          }
+        ]
+      }
+    ]
+  },
+  "bennedict-mathurin": {
+    "player_id": "bennedict-mathurin",
+    "name": "Bennedict Mathurin",
+    "team": "ind",
+    "league": "nba",
+    "items": [
+      {
+        "id": "mathurin-haliburton-dynamic",
+        "tier": "speculation",
+        "category": "off_field",
+        "headline": "On-court chemistry questions with Haliburton — recurring storyline",
+        "summary": "Reporters covering the Pacers have repeatedly raised whether Mathurin's iso-heavy scoring style fits with Haliburton's pass-first system. Mathurin's response has typically been 'I'm just trying to win.' The friction is mostly stylistic, not personal.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5234567/2024/02/15/bennedict-mathurin-haliburton-fit/",
+            "date": "2024-02-15"
+          }
+        ]
+      }
+    ]
+  },
+  "isaiah-jackson": {
+    "player_id": "isaiah-jackson",
+    "name": "Isaiah Jackson",
+    "team": "ind",
+    "league": "nba",
+    "items": [
+      {
+        "id": "jackson-pacers-bench-bigs",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Pacers' high-energy backup big — won the 2024 ECF rotation spot",
+        "summary": "Jackson became a key backup big in the Pacers' run to the 2024 Eastern Conference Finals, providing rim protection and lob threats off the bench in a series where his minutes were credited as a swing factor.",
+        "sources": [
+          {
+            "name": "Indianapolis Star",
+            "url": "https://www.indystar.com/story/sports/nba/pacers/2024/05/30/isaiah-jackson-pacers-rotation-impact/",
+            "date": "2024-05-30"
+          }
+        ]
+      }
+    ]
+  },
+  "nick-bolton": {
+    "player_id": "nick-bolton",
+    "name": "Nick Bolton",
+    "team": "kc",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "bolton-extension-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Chiefs LB defensive captain — center of the run-stop unit",
+        "summary": "Bolton signed a 2-year, $24M deal with KC in 2024 after quietly leading the Chiefs' linebacker corps in tackles for two of the three Super Bowl runs. He's the kind of contract Chiefs GM Brett Veach is famous for: high-floor, low-buzz.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/40123456/nick-bolton-chiefs-extension",
+            "date": "2024-03-13"
+          }
+        ]
+      }
+    ]
+  },
+  "patrick-surtain-ii": {
+    "player_id": "patrick-surtain-ii",
+    "name": "Patrick Surtain II",
+    "team": "den",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "surtain-dpoy-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "2024 NFL Defensive Player of the Year — first Bronco DPOY since 2015 Von Miller",
+        "summary": "Surtain became the league's premier shutdown corner in 2024, earning DPOY honors and a record-shattering 4-year, $96M extension that made him the NFL's highest-paid corner.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/patrick-surtain-ii-2024-dpoy",
+            "date": "2025-02-06"
+          },
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/41234567/patrick-surtain-ii-broncos-extension",
+            "date": "2024-09-04"
+          }
+        ]
+      }
+    ]
+  },
+  "jaire-alexander": {
+    "player_id": "jaire-alexander",
+    "name": "Jaire Alexander",
+    "team": "gb",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "alexander-2024-injuries",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Repeated injuries derailed his 2024 — trade speculation followed",
+        "summary": "Alexander has battled a string of soft-tissue injuries since 2023 and was a frequent late-season trade rumor in 2024 as Green Bay weighed his $84M contract against availability.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/jaire-alexander-packers-injury-trade-speculation",
+            "date": "2024-12-09"
+          }
+        ]
+      },
+      {
+        "id": "alexander-coin-toss-incident",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Removed as captain in 2023 after unauthorized coin-toss decision",
+        "summary": "In November 2023, as game captain, Alexander told the ref Green Bay would 'have the ball' after winning the OT coin toss — but in their offensive direction (the Packers had already been told to defer). The mistake gave the ball to the Giants. He was stripped of captaincy duties for the rest of the season.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/38876456/jaire-alexander-coin-toss-packers-captaincy",
+            "date": "2023-12-12"
+          }
+        ]
+      }
+    ]
+  },
+  "minkah-fitzpatrick": {
+    "player_id": "minkah-fitzpatrick",
+    "name": "Minkah Fitzpatrick",
+    "team": "pit",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "minkah-3x-all-pro",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "3x first-team All-Pro safety — the keystone of Pittsburgh's defense",
+        "summary": "Fitzpatrick has been first-team All-Pro three times and is widely considered alongside Derwin James as the league's premier free safety. The 2019 Dolphins-Steelers trade that brought him north is one of the most lopsided modern trades.",
+        "sources": [
+          {
+            "name": "Pro Football Focus",
+            "url": "https://www.pff.com/news/nfl-minkah-fitzpatrick-best-free-safety",
+            "date": "2024-09-12"
+          }
+        ]
+      }
+    ]
+  },
+  "tyrod-taylor": {
+    "player_id": "tyrod-taylor",
+    "name": "Tyrod Taylor",
+    "team": "nyj",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "tyrod-mahomes-mentor",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Quietly mentored Mahomes during their year together in KC's QB room (2017)",
+        "summary": "Taylor briefly overlapped with Mahomes in the Chiefs' 2017 QB room before being traded. Mahomes has cited Taylor's veteran professionalism as a formative early influence multiple times.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/mahomes-tyrod-taylor-mentor-relationship",
+            "date": "2023-09-15"
+          }
+        ]
+      },
+      {
+        "id": "tyrod-perpetual-vet",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "On his 8th NFL team — the league's most-valuable veteran QB room mentor",
+        "summary": "Taylor has played for Baltimore, Buffalo, Cleveland, LA Chargers, Houston, NY Giants, NY Jets, and is among the longest-serving active backup QBs. Front offices openly discuss the 'Tyrod tax' for his clubhouse value.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5489234/2024/09/02/tyrod-taylor-veteran-mentor-impact/",
+            "date": "2024-09-02"
+          }
+        ]
+      }
+    ]
+  },
+  "daniel-jones": {
+    "player_id": "daniel-jones",
+    "name": "Daniel Jones",
+    "team": "min",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "jones-giants-benching",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Benched by Giants in November 2024 — released, signed with Vikings as backup",
+        "summary": "After receiving a 4-year, $160M deal in 2023, Jones was benched and released by the Giants in late 2024 — one of the highest-profile free-agent contract regrets of the era. He landed in Minnesota as a backup.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/42234567/daniel-jones-giants-released-vikings",
+            "date": "2024-11-22"
+          }
+        ]
+      },
+      {
+        "id": "jones-2022-playoff-run",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "The 2022 playoff run and the contract that backfired",
+        "summary": "After leading the Giants to a surprise playoff win in the 2022 wild-card round, Jones earned the $160M contract — which became one of the most-cited cautionary tales about overpaying off small samples.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/daniel-jones-giants-extension-160-million",
+            "date": "2023-03-08"
+          }
+        ]
+      }
+    ]
+  },
+  "dallas-goedert": {
+    "player_id": "dallas-goedert",
+    "name": "Dallas Goedert",
+    "team": "phi",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "goedert-eagles-ts2",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Often-overshadowed Eagles tight end behind Hurts, AJ Brown, Saquon",
+        "summary": "Goedert has been one of the league's most-productive #2 receiving options for years but is consistently overshadowed in the Eagles' star-stacked offense. Frequently mentioned in trade rumors as the team's most-tradable veteran asset.",
+        "sources": [
+          {
+            "name": "Philadelphia Inquirer",
+            "url": "https://www.inquirer.com/eagles/dallas-goedert-trade-rumors.html",
+            "date": "2024-10-30"
+          }
+        ]
+      }
+    ]
+  },
+  "katie-lou-samuelson": {
+    "player_id": "katie-lou-samuelson",
+    "name": "Katie Lou Samuelson",
+    "team": "sea",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "samuelson-uconn-pedigree",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "UConn alum, sister of Karlie — part of the Samuelson basketball family dynasty",
+        "summary": "Samuelson was an All-American at UConn under Geno Auriemma. Her sister Karlie also played in the WNBA. They're considered one of the league's notable sister pairings.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/wnba/story/_/id/35234123/katie-lou-samuelson-wnba-career",
+            "date": "2023-06-01"
+          }
+        ]
+      }
+    ]
+  },
+  "rebekah-gardner": {
+    "player_id": "rebekah-gardner",
+    "name": "Rebekah Gardner",
+    "team": "min",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "gardner-late-bloomer",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Made the WNBA at age 31 after years overseas — the league's most-celebrated 'late' debut",
+        "summary": "Gardner spent nearly a decade playing professionally in Europe before signing with the Sky in 2022 at 31. Her late entry became one of the WNBA's feel-good stories of that era.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/3289456/2022/06/15/rebekah-gardner-wnba-late-debut/",
+            "date": "2022-06-15"
+          }
+        ]
+      }
+    ]
+  },
+  "julie-vanloo": {
+    "player_id": "julie-vanloo",
+    "name": "Julie Vanloo",
+    "team": "gs",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "vanloo-belgium-rookie",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Belgium national team star — broke through with Mystics in 2024 at age 31",
+        "summary": "Vanloo, the longtime captain of Belgium's national team, made her WNBA debut with Washington in 2024 at 31, becoming one of the season's most-praised European imports.",
+        "sources": [
+          {
+            "name": "FIBA",
+            "url": "https://www.fiba.basketball/news/julie-vanloo-wnba-mystics-2024",
+            "date": "2024-05-12"
+          }
+        ]
+      }
+    ]
+  },
+  "juju-watkins": {
+    "player_id": "juju-watkins",
+    "name": "JuJu Watkins",
+    "team": "usc",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "juju-usc-acl-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Tore ACL in March 2025 NCAA Tournament Sweet 16 game vs Mississippi State",
+        "summary": "Watkins, the consensus best player in women's college basketball as a sophomore at USC, tore her right ACL during the 2025 NCAA Tournament. The injury cut short what was widely considered an MVP-caliber season and pushed back her WNBA timeline by 12+ months.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/college-sports/story/_/id/43734512/juju-watkins-acl-tear-usc",
+            "date": "2025-03-24"
+          }
+        ]
+      },
+      {
+        "id": "juju-marquee-presence",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "USC's marquee NIL star — most-marketed female college athlete since Caitlin Clark",
+        "summary": "Watkins's NIL deals (Nike, Pandora, AT&T, Gatorade) have made her one of the highest-valued college athletes in the country, projected to dwarf even Caitlin Clark's pre-draft commercial profile by the time she enters the WNBA.",
+        "sources": [
+          {
+            "name": "On3",
+            "url": "https://www.on3.com/nil/news/juju-watkins-nil-valuation-2024-usc/",
+            "date": "2024-11-15"
+          }
+        ]
+      }
+    ]
+  },
+  "olivia-miles": {
+    "player_id": "olivia-miles",
+    "name": "Olivia Miles",
+    "team": "nd",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "miles-2025-draft-decision",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Stunned the basketball world by returning to college instead of declaring for 2025 WNBA Draft",
+        "summary": "Miles, projected as a top-3 pick in the 2025 WNBA Draft, instead announced a return to Notre Dame for her senior year — citing the new TV deal making the WNBA more lucrative for future drafts and her desire to win a national title.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/college-sports/story/_/id/43834523/olivia-miles-notre-dame-return",
+            "date": "2025-04-08"
+          }
+        ]
+      }
+    ]
+  },
+  "hailey-welch": {
+    "player_id": "hailey-welch",
+    "name": "Hailey Welch",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "welch-hawk-tuah-fame",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "'Hawk Tuah' viral moment June 2024 → podcast empire by year end",
+        "summary": "Welch's 2024 Nashville street interview launched her into pop culture — followed by a Talk Tuah podcast, NFL appearances, sports-betting platform partnerships, and a notorious Hawk Tuah Coin meme-token launch + collapse late 2024.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2024/digital/news/hailey-welch-hawk-tuah-podcast-1236147512/",
+            "date": "2024-08-07"
+          },
+          {
+            "name": "NY Post",
+            "url": "https://nypost.com/2024/12/06/business/hawk-tuah-coin-collapse-controversy/",
+            "date": "2024-12-06"
+          }
+        ]
+      }
+    ]
+  },
+  "trinity-rodman": {
+    "player_id": "trinity-rodman",
+    "name": "Trinity Rodman",
+    "team": "wsh",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "rodman-uswnt-paris-gold",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Won 2024 Olympic gold with USWNT in Paris — daughter of Dennis Rodman as the league's biggest crossover figure",
+        "summary": "Trinity Rodman, daughter of NBA legend Dennis Rodman, was a key contributor to the 2024 USWNT gold medal win. She plays for Washington Spirit (NWSL) and is widely considered the future face of US women's soccer.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/soccer/usa/story/_/id/40756812/trinity-rodman-uswnt-olympic-gold",
+            "date": "2024-08-10"
+          }
+        ]
+      },
+      {
+        "id": "rodman-dennis-relationship",
+        "tier": "reported",
+        "category": "family",
+        "headline": "Has been openly distant from father Dennis throughout her career",
+        "summary": "Trinity has spoken openly about her complicated relationship with father Dennis Rodman, including saying he was largely absent during her childhood. Their public reconciliation moments at NWSL games have been treated as media events.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/trinity-rodman-dennis-relationship-comments-8675824",
+            "date": "2024-08-12"
+          }
+        ]
+      }
+    ]
+  },
+  "sophia-wilson": {
+    "player_id": "sophia-wilson",
+    "name": "Sophia Wilson",
+    "team": "por",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "sophia-wilson-portland-thorns",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "USWNT young star and Portland Thorns standout — 2024 Olympics squad member",
+        "summary": "Wilson, who plays forward for the Portland Thorns and the USWNT, was a key squad member at Paris 2024 and is widely considered one of the next-generation American faces in women's soccer.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/soccer/usa/story/_/id/40578934/sophia-wilson-uswnt-paris-roster",
+            "date": "2024-06-30"
+          }
+        ]
+      }
+    ]
+  },
+  "alex-morgan": {
+    "player_id": "alex-morgan",
+    "name": "Alex Morgan",
+    "team": "sd",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "morgan-retirement-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Retired in September 2024 after 17-year USWNT/club career",
+        "summary": "Alex Morgan retired from professional soccer in September 2024, ending one of the most-decorated US women's soccer careers of all time (2x World Cup champion, Olympic gold medalist).",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/soccer/usa/story/_/id/41334567/alex-morgan-retirement-uswnt-wave",
+            "date": "2024-09-05"
+          }
+        ]
+      }
+    ]
+  },
+  "stefanos-tsitsipas": {
+    "player_id": "stefanos-tsitsipas",
+    "name": "Stefanos Tsitsipas",
+    "team": "atp",
+    "league": "nba",
+    "items": [
+      {
+        "id": "tsitsipas-paula-badosa-relationship",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "On-and-off relationship with WTA player Paula Badosa — tennis's most-followed couple",
+        "summary": "Tsitsipas and Badosa have dated on and off since 2023. Their relationship has been one of the most-followed couples on the tennis tour and includes mutual social-media activity at major events.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/stefanos-tsitsipas-paula-badosa-relationship-tennis-couple-8675856",
+            "date": "2024-09-12"
+          }
+        ]
+      }
+    ]
+  },
+  "mina-kimes": {
+    "player_id": "mina-kimes",
+    "name": "Mina Kimes",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "kimes-monday-night-football",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Joined Monday Night Football pre-game show in 2024 — analytics-first NFL voice",
+        "summary": "Kimes, ESPN's most-respected analytics-leaning NFL voice, joined the MNF pre-game booth in 2024. She's widely cited as the most-rigorous female NFL analyst at any major network.",
+        "sources": [
+          {
+            "name": "ESPN Press Room",
+            "url": "https://espnpressroom.com/us/press-releases/2024/08/mina-kimes-monday-night-football/",
+            "date": "2024-08-22"
+          }
+        ]
+      }
+    ]
+  },
+  "molly-qerim": {
+    "player_id": "molly-qerim",
+    "name": "Molly Qerim",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "qerim-first-take-host",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Host of First Take for 10+ years — anchored the show through Stephen A's negotiations",
+        "summary": "Qerim has been the steady moderator of ESPN's First Take throughout the show's various co-host iterations (Sharpe, Kellerman, Bayless, etc.). She's seen as one of the most professional moderators in sports media.",
+        "sources": [
+          {
+            "name": "ESPN Press Room",
+            "url": "https://espnpressroom.com/us/press-releases/2014/08/molly-qerim-first-take/",
+            "date": "2014-08-15"
+          }
+        ]
+      }
+    ]
+  },
+  "ryen-russillo": {
+    "player_id": "ryen-russillo",
+    "name": "Ryen Russillo",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "russillo-bill-simmons-network",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Anchor of The Ringer's Russillo Show — close confidant of Bill Simmons",
+        "summary": "Russillo has been the anchor podcaster of The Ringer's NBA-adjacent stable since 2017, with his solo show one of the most-listened sports pods in the country.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2023/digital/news/the-ringer-podcasts-russillo-1235934523/",
+            "date": "2023-09-20"
+          }
+        ]
+      }
+    ]
+  },
+  "pablo-torre": {
+    "player_id": "pablo-torre",
+    "name": "Pablo Torre",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "torre-finds-out-podcast",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Pablo Torre Finds Out — Meadowlark's investigative-comedy hit",
+        "summary": "Torre's solo podcast launched in 2023 on Dan Le Batard's Meadowlark Media. Has broken multiple league-shifting stories (the Brett Favre Mississippi welfare case follow-ups) while in a comedy-format wrapper.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2024/biz/news/pablo-torre-meadowlark-podcast-1236047567/",
+            "date": "2024-04-12"
+          }
+        ]
+      }
+    ]
+  },
+  "katie-nolan": {
+    "player_id": "katie-nolan",
+    "name": "Katie Nolan",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "nolan-fanduel-show",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Joined FanDuel TV in 2024 — left long ESPN tenure",
+        "summary": "Nolan, who built her name on Fox Sports 1 and ESPN, moved to FanDuel TV in 2024 with a daily show. The move was part of FanDuel's larger push to recruit established sports media personalities.",
+        "sources": [
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/katie-nolan-fanduel-tv-2024/",
+            "date": "2024-09-09"
+          }
+        ]
+      }
+    ]
+  },
+  "jomboy": {
+    "player_id": "jomboy",
+    "name": "Jomboy Media",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "jomboy-baseball-empire",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Built sports' biggest indie media empire from baseball play breakdowns",
+        "summary": "Jomboy Media (founded by Jimmy O'Brien) grew from viral MLB breakdowns into a multi-sport network with a YouTube channel that out-watches some MLB team accounts. Fundraised $30M+ in 2023.",
+        "sources": [
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/jomboy-media-funding-2023-30-million/",
+            "date": "2023-04-10"
+          }
+        ]
+      }
+    ]
+  },
+  "pj-tucker": {
+    "player_id": "pj-tucker",
+    "name": "PJ Tucker",
+    "team": "toronto",
+    "league": "nba",
+    "items": [
+      {
+        "id": "tucker-shoes-collection",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Owns the most-talked-about sneaker collection in the NBA",
+        "summary": "Tucker is widely considered the most serious sneaker collector in pro sports — players from across the league regularly dap-up his pre-game fits. Brand partners covet his co-signs.",
+        "sources": [
+          {
+            "name": "GQ",
+            "url": "https://www.gq.com/story/pj-tucker-sneaker-collection-nba-style",
+            "date": "2023-11-12"
+          }
+        ]
+      },
+      {
+        "id": "tucker-philly-buyout",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Negotiated buyout from Sixers in 2024 after sitting on Embiid-era bench",
+        "summary": "Tucker was bought out by the Sixers in 2024 after multiple seasons of being a marginalized veteran. He's bounced through several teams since, with the Sixers chapter now treated as a cautionary contract case.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40234567/pj-tucker-sixers-buyout",
+            "date": "2024-07-09"
+          }
+        ]
+      }
+    ]
+  },
+  "kevin-love": {
+    "player_id": "kevin-love",
+    "name": "Kevin Love",
+    "team": "mia",
+    "league": "nba",
+    "items": [
+      {
+        "id": "love-mental-health-essay-2018",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "2018 Players' Tribune essay on panic attacks reshaped NBA mental-health discourse",
+        "summary": "Love's March 2018 essay 'Everyone is going through something' opened up the NBA's conversation about mental health, alongside DeMar DeRozan's earlier piece. Love has since funded mental-health programs leaguewide.",
+        "sources": [
+          {
+            "name": "Players' Tribune",
+            "url": "https://www.theplayerstribune.com/articles/kevin-love-everyone-is-going-through-something",
+            "date": "2018-03-06"
+          }
+        ]
+      }
+    ]
+  },
+  "kemba-walker": {
+    "player_id": "kemba-walker",
+    "name": "Kemba Walker",
+    "team": "euroleague",
+    "league": "nba",
+    "items": [
+      {
+        "id": "kemba-monaco-pivot",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Plays in Monaco/EuroLeague after NBA exit — late-career renaissance abroad",
+        "summary": "Walker, the 4x All-Star Hornets star, has been playing in EuroLeague (Monaco, then Milan) after his NBA career wound down due to chronic knee issues. He's spoken publicly about being happier playing overseas.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5234567/2024/06/12/kemba-walker-monaco-euroleague/",
+            "date": "2024-06-12"
+          }
+        ]
+      }
+    ]
+  },
+  "jamal-murray-blue-arrow": {
+    "player_id": "jamal-murray-blue-arrow",
+    "name": "Jamal Murray Heat-Pack Incident",
+    "team": "den",
+    "league": "nba",
+    "items": [
+      {
+        "id": "murray-heat-pack-throw",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Threw a heat pack onto the court during a 2024 playoff game vs Lakers",
+        "summary": "During the 2024 first-round series, Murray threw a heat pack onto the court while a play was live. He was fined $100K by the league but not suspended; the moment became a recurring meme in his rough close-out series.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/39945623/jamal-murray-heat-pack-fine-lakers",
+            "date": "2024-04-29"
+          }
+        ]
+      }
+    ]
+  },
+  "luka-doncic-mavs-front-office": {
+    "player_id": "luka-doncic-mavs-front-office",
+    "name": "Luka Trade Aftermath",
+    "team": "dal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "nico-harrison-firing-watch",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Mavs GM Nico Harrison position increasingly precarious post-Luka trade",
+        "summary": "After the February 2025 Luka trade, Mavs fans, season-ticket-holders, and ownership reportedly turned on GM Nico Harrison. Multiple reports suggested ownership was reviewing his position by mid-2025.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/6178945/2025/03/15/nico-harrison-mavs-future-luka/",
+            "date": "2025-03-15"
+          }
+        ]
+      }
+    ]
+  },
+  "jokic-horse-fame": {
+    "player_id": "jokic-horse-fame",
+    "name": "Nikola Jokic Horses",
+    "team": "den",
+    "league": "nba",
+    "items": [
+      {
+        "id": "jokic-horse-racing",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Horse-racing obsession became NBA's most-charming side hustle",
+        "summary": "Jokic's deep involvement in Serbian harness racing — he owns and trains horses, attends races, and has been photographed driving sulkies — became one of the league's most-shared cultural curiosities.",
+        "sources": [
+          {
+            "name": "The Ringer",
+            "url": "https://www.theringer.com/nba/2024/02/15/nikola-jokic-horse-racing-serbia",
+            "date": "2024-02-15"
+          }
+        ]
+      }
+    ]
+  },
+  "doncic-trade-shockwaves": {
+    "player_id": "doncic-trade-shockwaves",
+    "name": "Luka Trade Coverage",
+    "team": "dal",
+    "league": "nba",
+    "items": [
+      {
+        "id": "woj-luka-trade-tweet",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Shams Charania's Feb 2 tweet announcing the trade broke the internet",
+        "summary": "Shams Charania broke the Luka Doncic trade news at 11:18pm ET on February 1, 2025. Within 30 minutes, the tweet had 50M+ impressions and trended #1 globally. Mavs fans gathered outside American Airlines Center holding 'fire Nico' signs the next morning.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2025/digital/news/luka-doncic-trade-tweet-viral-1236173456/",
+            "date": "2025-02-02"
+          }
+        ]
+      }
+    ]
+  },
+  "novak-djokovic": {
+    "player_id": "novak-djokovic",
+    "name": "Novak Djokovic",
+    "team": "atp",
+    "league": "nba",
+    "items": [
+      {
+        "id": "djokovic-2024-olympic-gold",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Won 2024 Paris Olympics gold — the only major missing from his trophy case",
+        "summary": "At Paris 2024, Djokovic finally won Olympic gold (defeating Carlos Alcaraz in the final), completing his career trophy case at age 37. He cried on the podium during the Serbian anthem.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/olympics/story/_/id/40784523/djokovic-olympic-gold-paris-2024",
+            "date": "2024-08-04"
+          }
+        ]
+      }
+    ]
+  },
+  "carlos-alcaraz": {
+    "player_id": "carlos-alcaraz",
+    "name": "Carlos Alcaraz",
+    "team": "atp",
+    "league": "nba",
+    "items": [
+      {
+        "id": "alcaraz-2024-french-wimbledon",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Won French Open + Wimbledon back-to-back in 2024 — youngest player ever to do it",
+        "summary": "Alcaraz became the youngest player in tennis history to win the French Open and Wimbledon in the same year (2024) at age 21. Widely considered the heir to the Djokovic/Nadal generation.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/tennis/story/_/id/40523412/carlos-alcaraz-wimbledon-french-open-2024",
+            "date": "2024-07-14"
+          }
+        ]
+      }
+    ]
+  },
+  "coco-gauff": {
+    "player_id": "coco-gauff",
+    "name": "Coco Gauff",
+    "team": "wta",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "gauff-us-open-2023-win",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Won 2023 US Open at age 19 — first American teenager since Serena to win a major",
+        "summary": "Gauff won the 2023 US Open over Aryna Sabalenka, becoming the first American teenager to win a major since Serena Williams in 1999. The post-match crowd reaction was the loudest at Arthur Ashe in years.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/tennis/story/_/id/38395678/coco-gauff-us-open-2023-champion",
+            "date": "2023-09-09"
+          }
+        ]
+      }
+    ]
+  },
+  "lewis-hamilton": {
+    "player_id": "lewis-hamilton",
+    "name": "Lewis Hamilton",
+    "team": "f1",
+    "league": "nba",
+    "items": [
+      {
+        "id": "hamilton-ferrari-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Joined Ferrari for 2025 season — biggest F1 driver move in decades",
+        "summary": "After 12 years and 6 championships at Mercedes, Hamilton joined Ferrari for the 2025 F1 season. The move was the most-discussed driver transfer in modern F1 history, dominating Drive to Survive coverage.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/f1/story/_/id/39523456/lewis-hamilton-ferrari-2025",
+            "date": "2024-02-01"
+          }
+        ]
+      }
+    ]
+  },
+  "max-verstappen": {
+    "player_id": "max-verstappen",
+    "name": "Max Verstappen",
+    "team": "f1",
+    "league": "nba",
+    "items": [
+      {
+        "id": "verstappen-4peat",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Won 4th consecutive F1 championship in 2024 — joined Vettel + Schumacher tier",
+        "summary": "Verstappen won his 4th straight F1 World Drivers' Championship in 2024, joining Sebastian Vettel and Michael Schumacher as the only drivers to win 4+ in a row in the modern era.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/f1/story/_/id/42034512/max-verstappen-2024-world-championship",
+            "date": "2024-12-01"
+          }
+        ]
+      }
+    ]
+  },
+  "lando-norris": {
+    "player_id": "lando-norris",
+    "name": "Lando Norris",
+    "team": "f1",
+    "league": "nba",
+    "items": [
+      {
+        "id": "norris-mclaren-rise",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "McLaren's championship-contender — 2024 runner-up, popular with Drive to Survive crowd",
+        "summary": "Norris finished 2nd in the 2024 F1 championship, leading McLaren to their first constructors' title since 1998. His personality has made him one of the most-marketed drivers on Drive to Survive.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/f1/story/_/id/41934523/lando-norris-mclaren-2024-runner-up",
+            "date": "2024-12-08"
+          }
+        ]
+      }
+    ]
+  },
+  "scottie-scheffler": {
+    "player_id": "scottie-scheffler",
+    "name": "Scottie Scheffler",
+    "team": "pga",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "scheffler-arrest-2024",
+        "tier": "confirmed",
+        "category": "legal",
+        "headline": "Arrested before the 2024 PGA Championship in viral traffic incident",
+        "summary": "Scheffler was arrested by Louisville police on his way to the PGA Championship in May 2024 over a traffic confusion. Charges were quickly dropped. The mugshot became one of the most-shared sports images of the year. He went on to play 18 holes the same day.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/golf/story/_/id/40124567/scottie-scheffler-arrested-pga-championship",
+            "date": "2024-05-17"
+          }
+        ]
+      },
+      {
+        "id": "scheffler-paris-gold",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Won Paris 2024 Olympic gold in golf",
+        "summary": "Scheffler won Olympic gold in men's golf at Paris 2024 with a final-round 62, his second major-stage title of the year.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/olympics/story/_/id/40756834/scottie-scheffler-olympic-gold-golf-paris",
+            "date": "2024-08-04"
+          }
+        ]
+      }
+    ]
+  },
+  "rory-mcilroy": {
+    "player_id": "rory-mcilroy",
+    "name": "Rory McIlroy",
+    "team": "pga",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "rory-2024-us-open-collapse",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Heartbreaking 2024 US Open collapse — missed two short putts down the stretch",
+        "summary": "McIlroy held the lead late in the 2024 US Open at Pinehurst but missed two short putts on 16 and 18, losing to Bryson DeChambeau. He has not finished a major since 2014.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/golf/story/_/id/40345678/rory-mcilroy-us-open-collapse-2024",
+            "date": "2024-06-16"
+          }
+        ]
+      },
+      {
+        "id": "rory-erica-divorce-reverse",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Filed for divorce, then reversed it within weeks in May 2024",
+        "summary": "McIlroy filed divorce papers from wife Erica Stoll in May 2024, then publicly reversed the decision two weeks later. The episode dominated golf media coverage during the PGA Championship.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/rory-mcilroy-erica-stoll-divorce-reversed-8665895",
+            "date": "2024-05-21"
+          }
+        ]
+      }
+    ]
+  },
+  "tiger-woods": {
+    "player_id": "tiger-woods",
+    "name": "Tiger Woods",
+    "team": "pga",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "tiger-tgl-launch",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Launched TGL with Rory McIlroy in January 2025 — virtual indoor golf league",
+        "summary": "Woods and McIlroy's TGL (an indoor tech-driven team golf league) launched on ESPN in January 2025. Mixed reviews critically; strong launch numbers commercially.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/golf/story/_/id/42934567/tgl-launch-tiger-woods-rory",
+            "date": "2025-01-07"
+          }
+        ]
+      },
+      {
+        "id": "tiger-vanessa-trump",
+        "tier": "confirmed",
+        "category": "romance",
+        "headline": "Confirmed relationship with Vanessa Trump in March 2025 — major sports/political crossover",
+        "summary": "Woods and Vanessa Trump (ex-wife of Donald Trump Jr.) confirmed their relationship via Instagram in March 2025. The pairing dominated tabloid + sports coverage simultaneously.",
+        "sources": [
+          {
+            "name": "People",
+            "url": "https://people.com/tiger-woods-vanessa-trump-relationship-confirmed-8675845",
+            "date": "2025-03-23"
+          }
+        ]
+      }
+    ]
+  },
+  "naomi-osaka": {
+    "player_id": "naomi-osaka",
+    "name": "Naomi Osaka",
+    "team": "wta",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "osaka-comeback-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Returned to tour in 2024 after maternity break — reached 3 Grand Slam 4th rounds",
+        "summary": "Osaka returned to professional tennis in 2024 after giving birth to daughter Shai in 2023. Made the round of 16 at three Grand Slams, stopping short of the deep runs that defined her early career but signaling the comeback is underway.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/tennis/story/_/id/40234578/naomi-osaka-2024-comeback-tour-return",
+            "date": "2024-09-06"
+          }
+        ]
+      }
+    ]
+  },
+  "ilona-maher": {
+    "player_id": "ilona-maher",
+    "name": "Ilona Maher",
+    "team": "usa",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "maher-paris-rugby",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Won Paris 2024 bronze with USA Rugby 7s — became biggest viral athlete of the Games",
+        "summary": "Maher won bronze with the USA women's rugby 7s team and became the most-followed Paris 2024 athlete on TikTok with body-positive content that crossed into mainstream celebrity. Currently fronts a viral DWTS season + Sports Illustrated cover.",
+        "sources": [
+          {
+            "name": "NY Times",
+            "url": "https://www.nytimes.com/2024/08/05/sports/olympics/ilona-maher-tiktok-paris.html",
+            "date": "2024-08-05"
+          },
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2024/tv/news/ilona-maher-dancing-with-stars-1236175123/",
+            "date": "2024-09-12"
+          }
+        ]
+      }
+    ]
+  },
+  "katie-ledecky": {
+    "player_id": "katie-ledecky",
+    "name": "Katie Ledecky",
+    "team": "usa",
+    "league": "wnba",
+    "items": [
+      {
+        "id": "ledecky-9-olympic-medals",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Paris 2024: won 4 medals (2 gold) — now most-decorated American woman swimmer ever",
+        "summary": "Ledecky won 2 gold + 2 silver at Paris 2024, bringing her career Olympic medal count to 14 — now the most-decorated American female swimmer in Olympic history, surpassing Jenny Thompson.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/olympics/story/_/id/40756812/katie-ledecky-paris-2024-medal-count",
+            "date": "2024-08-04"
+          }
+        ]
+      }
+    ]
+  },
+  "adrian-wojnarowski": {
+    "player_id": "adrian-wojnarowski",
+    "name": "Adrian Wojnarowski",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "woj-st-bonaventure-pivot",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Stunningly retired from ESPN in September 2024 to become St. Bonaventure GM",
+        "summary": "Woj, the most-followed news-breaking journalist in basketball, abruptly retired from ESPN at the height of his career to become general manager of his alma mater St. Bonaventure's basketball program. The 'Woj retiring at peak' framing dominated sports media for weeks.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/41245678/adrian-wojnarowski-retirement-st-bonaventure",
+            "date": "2024-09-18"
+          },
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/woj-retirement-st-bonaventure-2024/",
+            "date": "2024-09-18"
+          }
+        ]
+      },
+      {
+        "id": "woj-bomb-meme",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "'Woj Bomb' as a verb — defined modern sports journalism for a decade",
+        "summary": "For 10+ years, the term 'Woj Bomb' referred to Wojnarowski's news-breaking tweets, often dropped at strategically inconvenient moments for opponents. After his retirement, the term has migrated to Shams Charania.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5778923/2024/09/19/woj-bomb-history-legacy/",
+            "date": "2024-09-19"
+          }
+        ]
+      }
+    ]
+  },
+  "shams-charania": {
+    "player_id": "shams-charania",
+    "name": "Shams Charania",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "shams-espn-deal-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Joined ESPN in October 2024 — replacing Woj as the network's lead NBA insider",
+        "summary": "Charania left The Athletic and Stadium for ESPN in October 2024, taking over as the network's primary breaking-news voice on the NBA after Woj's retirement.",
+        "sources": [
+          {
+            "name": "NY Times",
+            "url": "https://www.nytimes.com/2024/10/01/business/media/shams-charania-espn.html",
+            "date": "2024-10-01"
+          }
+        ]
+      },
+      {
+        "id": "shams-luka-trade-break",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Broke the Luka Doncic-to-Lakers trade in February 2025 — biggest scoop of his career",
+        "summary": "Charania's late-night tweet of the Luka Doncic trade in February 2025 became one of the most-viewed sports media moments of the year (50M+ impressions in 30 minutes). It firmly established him as the post-Woj generation's #1 NBA insider.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2025/digital/news/shams-charania-luka-trade-tweet-1236173456/",
+            "date": "2025-02-02"
+          }
+        ]
+      }
+    ]
+  },
+  "ian-rapoport": {
+    "player_id": "ian-rapoport",
+    "name": "Ian Rapoport",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "rapoport-nfl-network-tenured",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "NFL Network's lead insider for 12+ years — top free-agency news voice",
+        "summary": "Rapoport has been the NFL Network's lead breaking-news reporter since 2012 and is generally considered the dominant insider voice during free-agency cycles, often racing Schefter to scoops.",
+        "sources": [
+          {
+            "name": "Awful Announcing",
+            "url": "https://awfulannouncing.com/nfl-network/ian-rapoport-insider-history-2024.html",
+            "date": "2024-03-15"
+          }
+        ]
+      }
+    ]
+  },
+  "adam-schefter": {
+    "player_id": "adam-schefter",
+    "name": "Adam Schefter",
+    "team": "media",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "schefter-extension-2023",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Re-signed with ESPN in 2023 — reportedly $9M+/year",
+        "summary": "Schefter's contract extension reportedly made him the highest-paid breaking-news reporter in sports media history, at approximately $9M/year through 2027.",
+        "sources": [
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/adam-schefter-espn-contract-2023/",
+            "date": "2023-08-22"
+          }
+        ]
+      },
+      {
+        "id": "schefter-controversy-history",
+        "tier": "reported",
+        "category": "off_field",
+        "headline": "Multiple controversies over editorial process — most notably 2022 emails with Bruce Allen",
+        "summary": "Schefter was widely criticized in 2022 after leaked emails showed him allowing former Washington exec Bruce Allen to review a story before publication. He acknowledged it was a 'mistake' but the episode raised lasting questions about insider-reporter dynamics.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/3018456/2022/02/04/adam-schefter-bruce-allen-emails-controversy/",
+            "date": "2022-02-04"
+          }
+        ]
+      }
+    ]
+  },
+  "doris-burke": {
+    "player_id": "doris-burke",
+    "name": "Doris Burke",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "burke-finals-broadcaster",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "First woman to do NBA Finals color commentary on a major U.S. broadcast",
+        "summary": "Burke became the first woman to call the NBA Finals as primary color commentator in 2024 (alongside Mike Breen and Doc Rivers). The moment was treated as a major glass-ceiling break and was widely celebrated.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/40234567/doris-burke-nba-finals-color-commentator",
+            "date": "2024-06-06"
+          }
+        ]
+      }
+    ]
+  },
+  "rachel-nichols": {
+    "player_id": "rachel-nichols",
+    "name": "Rachel Nichols",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "nichols-jump-controversy",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Lost The Jump in 2021 after leaked recording — career still recovering",
+        "summary": "Nichols was a leading NBA broadcaster until a leaked 2020 phone recording where she discussed Maria Taylor's contract surfaced in 2021, ending her ESPN tenure. She's since worked for Showtime + Showtime Basketball, with a slow rebuild ongoing.",
+        "sources": [
+          {
+            "name": "NY Times",
+            "url": "https://www.nytimes.com/2021/07/04/sports/basketball/rachel-nichols-maria-taylor-espn.html",
+            "date": "2021-07-04"
+          }
+        ]
+      }
+    ]
+  },
+  "jonathan-givony": {
+    "player_id": "jonathan-givony",
+    "name": "Jonathan Givony",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "givony-draft-express-espn",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Founder of DraftExpress — sold to ESPN in 2017, now lead draft expert",
+        "summary": "Givony built DraftExpress into the dominant NBA draft scouting site through the 2010s. ESPN acquired the property in 2017. He's now the network's lead pre-draft analyst and one of the most-cited names during draft season.",
+        "sources": [
+          {
+            "name": "Awful Announcing",
+            "url": "https://awfulannouncing.com/espn/jonathan-givony-draft-express-acquisition.html",
+            "date": "2017-04-19"
+          }
+        ]
+      }
+    ]
+  },
+  "richard-deitsch": {
+    "player_id": "richard-deitsch",
+    "name": "Richard Deitsch",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "deitsch-sports-media-podcast",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Hosts Sports Media podcast at The Athletic — most-cited sports-media beat writer",
+        "summary": "Deitsch's Sports Media podcast at The Athletic has been the dominant insider voice on the broadcast/contract beats for 7+ years. Frequently cited by industry trades.",
+        "sources": [
+          {
+            "name": "Front Office Sports",
+            "url": "https://frontofficesports.com/richard-deitsch-sports-media-podcast-history/",
+            "date": "2024-04-15"
+          }
+        ]
+      }
+    ]
+  },
+  "jemele-hill": {
+    "player_id": "jemele-hill",
+    "name": "Jemele Hill",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "hill-spotify-podcast",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Jemele Hill is Unbothered — Spotify exclusive, top-tier sports-meets-culture podcast",
+        "summary": "After her 2018 ESPN exit, Hill rebuilt as a Spotify-exclusive podcast host. The show became a leading sports-and-culture interview format and frequently breaks news at the intersection of sports and politics.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2021/digital/news/jemele-hill-spotify-podcast-1234904523/",
+            "date": "2021-04-14"
+          }
+        ]
+      }
+    ]
+  },
+  "bill-simmons": {
+    "player_id": "bill-simmons",
+    "name": "Bill Simmons",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "simmons-ringer-empire",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Sold The Ringer to Spotify for $200M+ in 2020 — biggest indie sports-media exit",
+        "summary": "Simmons sold The Ringer to Spotify in February 2020 for a price reported between $196-200M. The deal made him the highest-profile sports media founder-exit in history.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2020/digital/news/spotify-the-ringer-bill-simmons-1203496712/",
+            "date": "2020-02-05"
+          }
+        ]
+      }
+    ]
+  },
+  "jorge-castillo": {
+    "player_id": "jorge-castillo",
+    "name": "Jorge Castillo",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "castillo-bilingual-coverage",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "ESPN's lead bilingual NBA reporter — covering Latino market growth",
+        "summary": "Castillo has become the most-prominent bilingual NBA voice at ESPN, covering the league's significant Latino fan-base growth post-Wemby. Frequently featured during Spanish-language broadcasts and ESPN Deportes.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/39623145/jorge-castillo-espn-bilingual-coverage",
+            "date": "2024-04-12"
+          }
+        ]
+      }
+    ]
+  },
+  "jared-greenberg": {
+    "player_id": "jared-greenberg",
+    "name": "Jared Greenberg",
+    "team": "media",
+    "league": "nba",
+    "items": [
+      {
+        "id": "greenberg-tnt-without-inside",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "NBA on TNT lead reporter — show ended after 2024-25 season due to lost rights",
+        "summary": "Greenberg has been TNT's lead NBA play-by-play voice during a decade that included Inside the NBA's iconic run. The show formally ended after the 2024-25 season as part of the new Disney/NBC/Amazon media deal — the end of an era.",
+        "sources": [
+          {
+            "name": "Awful Announcing",
+            "url": "https://awfulannouncing.com/tnt/inside-nba-final-season-2024-25.html",
+            "date": "2024-07-25"
+          }
+        ]
+      }
+    ]
+  },
+  "peyton-manning": {
+    "player_id": "peyton-manning",
+    "name": "Peyton Manning",
+    "team": "omaha",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "manning-omaha-empire",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Omaha Productions became sports' most-influential post-career media empire",
+        "summary": "Manning's Omaha Productions, founded post-retirement, now produces ManningCast, Quarterback (Netflix), and Receiver (Netflix). Has redefined the post-career star vehicle.",
+        "sources": [
+          {
+            "name": "Variety",
+            "url": "https://variety.com/2024/biz/news/omaha-productions-peyton-manning-empire-1235967423/",
+            "date": "2024-08-15"
+          }
+        ]
+      },
+      {
+        "id": "manningcast-renaissance",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "ManningCast remains MNF's most-discussed alt-broadcast — celebrity guests every week",
+        "summary": "The Manning brothers' MNF alt-broadcast has averaged 1M+ viewers weekly since 2021 and become a celebrity destination (Stephen Curry, Ryan Reynolds, even Bill Belichick).",
+        "sources": [
+          {
+            "name": "NY Times",
+            "url": "https://www.nytimes.com/2024/09/16/sports/football/manning-cast-monday-night-football.html",
+            "date": "2024-09-16"
+          }
+        ]
+      }
+    ]
+  },
+  "stephen-jones": {
+    "player_id": "stephen-jones",
+    "name": "Stephen Jones",
+    "team": "dal",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "stephen-jones-eventual-owner",
+        "tier": "reported",
+        "category": "family",
+        "headline": "Heir-apparent Cowboys owner — quietly running team operations for years",
+        "summary": "Stephen Jones, son of Jerry Jones, is widely understood to be the eventual successor as Cowboys owner. League sources say he's been functionally running football operations for several years already as Jerry's age advances.",
+        "sources": [
+          {
+            "name": "The Athletic",
+            "url": "https://www.nytimes.com/athletic/5567845/2024/05/15/stephen-jones-cowboys-succession/",
+            "date": "2024-05-15"
+          }
+        ]
+      }
+    ]
+  },
+  "vivek-ranadive": {
+    "player_id": "vivek-ranadive",
+    "name": "Vivek Ranadive",
+    "team": "sac",
+    "league": "nba",
+    "items": [
+      {
+        "id": "vivek-tibco-tech-fortune",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Tech billionaire (TIBCO Software) — Kings owner since 2013, lit-the-beam evangelist",
+        "summary": "Ranadive bought the Kings in 2013 and led the organization through the 'Light the Beam' renaissance. He's known as one of the league's most-publicly active owners on social media.",
+        "sources": [
+          {
+            "name": "Sacramento Bee",
+            "url": "https://www.sacbee.com/sports/nba/sacramento-kings/article287456789.html",
+            "date": "2024-09-12"
+          }
+        ]
+      }
+    ]
+  },
+  "wyc-grousbeck": {
+    "player_id": "wyc-grousbeck",
+    "name": "Wyc Grousbeck",
+    "team": "bos",
+    "league": "nba",
+    "items": [
+      {
+        "id": "grousbeck-celtics-sale-2024",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Announced sale of Celtics in 2024 — process led to Bill Chisholm's $6.1B record bid",
+        "summary": "Grousbeck and ownership group announced they were selling the Celtics in early 2024 — months after winning the championship. The sale process closed in March 2025 at $6.1B (a record for any North American sports franchise sale) to a group led by William Chisholm.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nba/story/_/id/43645123/celtics-sale-6-1-billion-chisholm",
+            "date": "2025-03-20"
+          }
+        ]
+      }
+    ]
+  },
+  "joe-tsai": {
+    "player_id": "joe-tsai",
+    "name": "Joe Tsai",
+    "team": "bkn",
+    "league": "nba",
+    "items": [
+      {
+        "id": "tsai-alibaba-fortune",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Alibaba co-founder — Nets owner with one of the league's deepest pockets",
+        "summary": "Tsai's net worth (estimated $9B+) makes him one of the league's wealthiest owners. He bought the Nets in 2019 and has been one of the league's most willing tax-payers.",
+        "sources": [
+          {
+            "name": "Forbes",
+            "url": "https://www.forbes.com/profile/joe-tsai/",
+            "date": "2024-04-01"
+          }
+        ]
+      }
+    ]
+  },
+  "deion-sanders": {
+    "player_id": "deion-sanders",
+    "name": "Deion Sanders",
+    "team": "colorado",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "deion-colorado-football",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Colorado head coach since 2023 — turning a 1-11 program into a national brand",
+        "summary": "'Coach Prime' took over Colorado in December 2022 and immediately reshaped college football media — recruiting transfer-portal stars, drawing primetime broadcast slots, and bringing his Hall-of-Fame-NFL persona to college sidelines.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/college-football/story/_/id/35234567/deion-sanders-colorado-head-coach",
+            "date": "2022-12-04"
+          }
+        ]
+      },
+      {
+        "id": "deion-shedeur-shilo-NFL",
+        "tier": "confirmed",
+        "category": "family",
+        "headline": "Sons Shedeur and Shilo Sanders both joined Colorado — projected high NFL Draft picks",
+        "summary": "Shedeur Sanders (QB) is widely projected as a top-5 pick in the 2025 NFL Draft. Shilo (S) was a Colorado standout. The Coach Prime era at Colorado is built around the Sanders family core.",
+        "sources": [
+          {
+            "name": "NFL.com",
+            "url": "https://www.nfl.com/news/shedeur-sanders-2025-nfl-draft-projection",
+            "date": "2025-01-12"
+          }
+        ]
+      }
+    ]
+  },
+  "saquon-barkley-eagles-leap": {
+    "player_id": "saquon-barkley-eagles-leap",
+    "name": "Saquon Hurdle",
+    "team": "phi",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "saquon-jaguars-hurdle",
+        "tier": "confirmed",
+        "category": "culture",
+        "headline": "Hurdle vs Jaguars in November 2024 became GIF of the year",
+        "summary": "Saquon Barkley's full-extension backwards hurdle over Jaguars defender Jarrian Jones in November 2024 instantly became the most-shared NFL play of the season and a defining image of his Eagles MVP-caliber year.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/41867234/saquon-barkley-hurdle-jaguars-eagles",
+            "date": "2024-11-04"
+          }
+        ]
+      }
+    ]
+  },
+  "ben-johnson": {
+    "player_id": "ben-johnson",
+    "name": "Ben Johnson",
+    "team": "chi",
+    "league": "nfl",
+    "items": [
+      {
+        "id": "johnson-bears-hire-2025",
+        "tier": "confirmed",
+        "category": "off_field",
+        "headline": "Detroit OC turned Bears HC in January 2025 — most-coveted coordinator hire in years",
+        "summary": "Johnson, the architect of Detroit's offensive renaissance, finally took a HC job in January 2025 with the Bears after passing on offers in 2024. His arrival paired him with Caleb Williams as the Bears' attempted Lions-style turnaround.",
+        "sources": [
+          {
+            "name": "ESPN",
+            "url": "https://www.espn.com/nfl/story/_/id/43412345/ben-johnson-bears-head-coach",
+            "date": "2025-01-22"
           }
         ]
       }
