@@ -20,6 +20,7 @@
 import nbaFacesData from '@/data/nba-faces.json';
 import nflFacesData from '@/data/nfl-faces.json';
 import wnbaFacesData from '@/data/wnba-faces.json';
+import celebFacesData from '@/data/celeb-faces.json';
 
 const REPLICATE_API = 'https://api.replicate.com/v1/predictions';
 
@@ -37,8 +38,15 @@ const DEFAULT_MODEL =
 
 /**
  * A face-index entry is identical across leagues — the same shape backs
- * NBA, NFL, and WNBA. We track which league via a separate `league` field
- * we add when reading from the per-league JSON files.
+ * NBA, NFL, WNBA, and the celeb/retired/broadcaster index. We track which
+ * "league" via a separate field we add when reading from the per-league
+ * JSON files.
+ *
+ * The 'celebs' bucket covers retired stars, current broadcasters, owners,
+ * and adjacent figures (Carmelo, Shaq, Stephen A, Bill Belichick, Lewis
+ * Hamilton, Tiger Woods, etc.) so that pregame / sideline / commentary
+ * scans can still ID a face even though the person isn't on an active
+ * roster.
  */
 export type FaceEntry = {
   id: string;
@@ -48,7 +56,9 @@ export type FaceEntry = {
   pos: string;
   espnId?: number | string;
   headshot: string | null;
-  league: 'nba' | 'nfl' | 'wnba';
+  league: 'nba' | 'nfl' | 'wnba' | 'celebs';
+  /** Optional category tag for the celebs bucket (e.g. "celeb-retired-broadcaster"). */
+  category?: string;
 };
 
 /** Backwards-compat alias — older callers imported NbaFaceEntry. Same shape now. */
@@ -69,16 +79,23 @@ const WNBA_FACES: Record<string, FaceEntry> = Object.fromEntries(
     ([k, v]) => [k, { ...v, league: 'wnba' as const }],
   ),
 );
+const CELEB_FACES: Record<string, FaceEntry> = Object.fromEntries(
+  Object.entries(
+    (celebFacesData as { players: Record<string, Omit<FaceEntry, 'league'>> }).players,
+  ).map(([k, v]) => [k, { ...v, league: 'celebs' as const }]),
+);
 
-const ALL_FACES: Record<string, FaceEntry> = { ...NFL_FACES, ...WNBA_FACES, ...NBA_FACES };
-// NBA spread last so on slug collisions (rare cross-league name dupes) NBA wins.
-// In practice, IDs are slugified full names so collisions only happen when the
-// same person plays in two leagues — which doesn't actually occur with our data.
+// Active rosters spread last so on slug collisions (rare cross-league name
+// dupes) the active player wins. The celeb index gets spread first so e.g.
+// "deion-sanders" (active Colorado coach) is overridden by no NFL roster
+// entry — Deion isn't on an NFL roster so the celeb entry stays.
+const ALL_FACES: Record<string, FaceEntry> = { ...CELEB_FACES, ...NFL_FACES, ...WNBA_FACES, ...NBA_FACES };
 
 const FACES_BY_LEAGUE = {
   nba: NBA_FACES,
   nfl: NFL_FACES,
   wnba: WNBA_FACES,
+  celebs: CELEB_FACES,
 } as const;
 
 /* ─────────────────────────── helpers ────────────────────────────────────── */
@@ -99,7 +116,7 @@ export function getFaceEntry(playerId: string): FaceEntry | null {
  */
 export function getFaceEntryByLeague(
   playerId: string,
-  league: 'nba' | 'nfl' | 'wnba',
+  league: 'nba' | 'nfl' | 'wnba' | 'celebs',
 ): FaceEntry | null {
   return FACES_BY_LEAGUE[league]?.[playerId] ?? null;
 }

@@ -444,7 +444,15 @@ export async function POST(req: NextRequest) {
 
 THREE SIGNALS — these are the ONLY reliable ones. Collect every signal you can read, then commit only when they CORROBORATE each other.
 
-1. FACE — Recognize the face from your training. You've seen millions of photos of every active NFL + NBA + WNBA player. The face IS the strongest single signal for any player you confidently recognize — not just the top-15 superstars. If you can identify the face with reasonable certainty (mid-tier rotation player, established starter, recognizable veteran), commit. We have downstream verification (face-similarity matching against ESPN headshots, roster cross-check) that catches hallucinations, so a moderately-confident face ID will get validated or rejected automatically. Returning Unknown when you'd actually recognize the face is a missed catch.
+1. FACE — Recognize the face from your training. You've seen millions of photos of every active NFL + NBA + WNBA player AND retired stars AND current broadcasters. The face IS the strongest single signal for any face you confidently recognize. Three explicit cases the prompt previously under-served:
+
+   (a) **Pregame / warmup shots** — players in suits, t-shirts, hoodies, walking in, on the bench, in the tunnel. NO jersey visible. If you recognize the face confidently as an active player, COMMIT. The whole point of the app is to ID them in this exact moment.
+
+   (b) **Retired stars & broadcasters** — Carmelo Anthony, Shaq, Charles Barkley, Kenny Smith, Reggie Miller, Tom Brady (now FOX), Tony Romo (CBS), Stephen A. Smith, Pat McAfee, Doris Burke, Mike Breen, Bill Belichick (now Carolina), Peyton + Eli Manning (Omaha), Magic Johnson, Dwyane Wade, JJ Redick (now Lakers HC), Erin Andrews, Kirk Herbstreit, etc. These appear on TV constantly. If you recognize the face, COMMIT — even though they're not on a current roster.
+
+   (c) **Owners & coaches on the sideline** — Jerry Jones, Mark Cuban, James Dolan, Steve Kerr, Erik Spoelstra, etc. Same rule: recognize the face, commit.
+
+We have downstream verification (face-similarity matching against ESPN headshots, roster cross-check) that catches hallucinations, so a moderately-confident face ID will get validated or rejected automatically. Returning Unknown when you'd actually recognize the face is a missed catch.
 
 2. TEAM NAME ON JERSEY — Read the LITERAL TEXT printed on the jersey or warmup. NFL away jerseys say "BRONCOS" / "EAGLES" / "CHIEFS" across the chest. NBA jerseys say "LAKERS" / "WARRIORS" / "BOSTON" / "MIAMI" / "BROOKLYN". WNBA jerseys say "FEVER" / "DREAM" / "ACES" / "LIBERTY" / "SPARKS" / "LYNX" / "MERCURY" / "STORM" / "WINGS" / "SKY" / "MYSTICS" / "SUN" / "VALKYRIES" / "TEMPO" / "FIRE". This is the team identifier — read the text, do not infer from colors. Many alternate / throwback / city-edition jerseys swap the team's normal palette entirely (cream Lakers, white Chiefs, all-black 49ers, royal-blue Mavs, etc.) so colors LIE. The lettering on the jersey does not lie.
 
@@ -477,6 +485,13 @@ ONLY return Unknown when:
 - No jersey number readable
 
 If you can read the team name but not the specific player, return Unknown rather than guessing the team's most-famous star.
+
+For retired stars / broadcasters / coaches / owners, set `position` to their CURRENT role:
+- Retired playing → e.g. "NBA Retired / Inside the NBA Analyst" (Shaq)
+- Currently broadcasting → e.g. "FOX Lead Color Commentator" (Tom Brady)
+- Coach → e.g. "Lakers Head Coach" (JJ Redick)
+- Owner → e.g. "Cowboys Owner" (Jerry Jones)
+And set `team` to their current affiliation ("FOX", "ESPN", "Lakers", "Cowboys", etc.) NOT their old playing team.
 
 Unknown response shape (use sparingly):
 {"player_name":"Unknown","number":0,"position":"Unknown","team":"Unknown","jersey_color":"white","blurb":"I couldn't quite ID this one — try a clearer crop on the jersey or a different angle."}

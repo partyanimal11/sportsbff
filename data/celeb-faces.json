@@ -1,0 +1,988 @@
+{
+  "generated_at": "2026-05-04",
+  "source": "Hand-curated retired stars + active broadcasters + adjacent figures",
+  "league": "celebs",
+  "note": "These are NOT active roster players. They appear on TV in commentary, sidelines, suite cameos, postgame interviews, and pregame broadcasts. Their headshots are best-effort (ESPN where available, otherwise Wikipedia article URLs as placeholders).",
+  "players": {
+    "carmelo-anthony": {
+      "id": "carmelo-anthony",
+      "name": "Carmelo Anthony",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / Analyst",
+      "espnId": "1975",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1975.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "shaquille-o-neal": {
+      "id": "shaquille-o-neal",
+      "name": "Shaquille O'Neal",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / Inside the NBA",
+      "espnId": "838",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/838.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "kenny-smith": {
+      "id": "kenny-smith",
+      "name": "Kenny Smith",
+      "team": "nba",
+      "jersey": "",
+      "pos": "Inside the NBA",
+      "espnId": "121",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/121.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "charles-barkley": {
+      "id": "charles-barkley",
+      "name": "Charles Barkley",
+      "team": "nba",
+      "jersey": "",
+      "pos": "Inside the NBA",
+      "espnId": "65",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/65.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "reggie-miller": {
+      "id": "reggie-miller",
+      "name": "Reggie Miller",
+      "team": "nba",
+      "jersey": "",
+      "pos": "TNT NBA Color",
+      "espnId": "683",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/683.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "dwyane-wade": {
+      "id": "dwyane-wade",
+      "name": "Dwyane Wade",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / Owner",
+      "espnId": "1722",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1722.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "chris-bosh": {
+      "id": "chris-bosh",
+      "name": "Chris Bosh",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / Analyst",
+      "espnId": "1731",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1731.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "tony-parker": {
+      "id": "tony-parker",
+      "name": "Tony Parker",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / Owner",
+      "espnId": "1015",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1015.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "tim-duncan": {
+      "id": "tim-duncan",
+      "name": "Tim Duncan",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired",
+      "espnId": "1025",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1025.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "manu-ginobili": {
+      "id": "manu-ginobili",
+      "name": "Manu Ginobili",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired",
+      "espnId": "1007",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1007.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "vince-carter": {
+      "id": "vince-carter",
+      "name": "Vince Carter",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / ESPN Analyst",
+      "espnId": "1731",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1731.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "paul-pierce": {
+      "id": "paul-pierce",
+      "name": "Paul Pierce",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / Analyst",
+      "espnId": "215",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/215.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "kevin-garnett": {
+      "id": "kevin-garnett",
+      "name": "Kevin Garnett",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired",
+      "espnId": "434",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/434.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "ray-allen": {
+      "id": "ray-allen",
+      "name": "Ray Allen",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired",
+      "espnId": "171",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/171.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "allen-iverson": {
+      "id": "allen-iverson",
+      "name": "Allen Iverson",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired",
+      "espnId": "213",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/213.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "tracy-mcgrady": {
+      "id": "tracy-mcgrady",
+      "name": "Tracy McGrady",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / Analyst",
+      "espnId": "600",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/600.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "grant-hill": {
+      "id": "grant-hill",
+      "name": "Grant Hill",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / TNT",
+      "espnId": "373",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/373.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "chris-webber": {
+      "id": "chris-webber",
+      "name": "Chris Webber",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / Analyst",
+      "espnId": "1056",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1056.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "kobe-bryant": {
+      "id": "kobe-bryant",
+      "name": "Kobe Bryant",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired (deceased)",
+      "espnId": "110",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/110.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "magic-johnson": {
+      "id": "magic-johnson",
+      "name": "Magic Johnson",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / Owner",
+      "espnId": "91",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/91.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "larry-bird": {
+      "id": "larry-bird",
+      "name": "Larry Bird",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired",
+      "espnId": "50",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/50.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "dirk-nowitzki": {
+      "id": "dirk-nowitzki",
+      "name": "Dirk Nowitzki",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired",
+      "espnId": "1717",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1717.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "pau-gasol": {
+      "id": "pau-gasol",
+      "name": "Pau Gasol",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired",
+      "espnId": "923",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/923.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "jj-redick": {
+      "id": "jj-redick",
+      "name": "JJ Redick",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / Lakers HC",
+      "espnId": "3024",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3024.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "steve-nash": {
+      "id": "steve-nash",
+      "name": "Steve Nash",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Retired / Coach",
+      "espnId": "711",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/711.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "tom-brady": {
+      "id": "tom-brady",
+      "name": "Tom Brady",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / FOX Lead",
+      "espnId": "2330",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2330.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "peyton-manning": {
+      "id": "peyton-manning",
+      "name": "Peyton Manning",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / Omaha",
+      "espnId": "1428",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/1428.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "eli-manning": {
+      "id": "eli-manning",
+      "name": "Eli Manning",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / ManningCast",
+      "espnId": "5526",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/5526.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "tony-romo": {
+      "id": "tony-romo",
+      "name": "Tony Romo",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / CBS Lead",
+      "espnId": "5536",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/5536.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "troy-aikman": {
+      "id": "troy-aikman",
+      "name": "Troy Aikman",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / ESPN MNF",
+      "espnId": "9",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/9.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "drew-brees": {
+      "id": "drew-brees",
+      "name": "Drew Brees",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired",
+      "espnId": "2580",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/2580.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "aaron-rodgers": {
+      "id": "aaron-rodgers",
+      "name": "Aaron Rodgers",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Active (Steelers)",
+      "espnId": "8439",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/8439.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "patrick-willis": {
+      "id": "patrick-willis",
+      "name": "Patrick Willis",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / Hall",
+      "espnId": "11432",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/11432.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "champ-bailey": {
+      "id": "champ-bailey",
+      "name": "Champ Bailey",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / Hall",
+      "espnId": "1001",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/1001.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "charles-woodson": {
+      "id": "charles-woodson",
+      "name": "Charles Woodson",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / FOX",
+      "espnId": "1145",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/1145.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "brett-favre": {
+      "id": "brett-favre",
+      "name": "Brett Favre",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired",
+      "espnId": "1232",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/1232.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "michael-strahan": {
+      "id": "michael-strahan",
+      "name": "Michael Strahan",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / FOX",
+      "espnId": "1009",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/1009.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "terry-bradshaw": {
+      "id": "terry-bradshaw",
+      "name": "Terry Bradshaw",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / FOX",
+      "espnId": "0",
+      "headshot": "https://en.wikipedia.org/wiki/tbradshaw",
+      "category": "celeb-retired-broadcaster"
+    },
+    "howie-long": {
+      "id": "howie-long",
+      "name": "Howie Long",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / FOX NFL Sunday",
+      "espnId": "0",
+      "headshot": "https://en.wikipedia.org/wiki/hlong",
+      "category": "celeb-retired-broadcaster"
+    },
+    "jimmy-johnson": {
+      "id": "jimmy-johnson",
+      "name": "Jimmy Johnson",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired Coach / FOX",
+      "espnId": "0",
+      "headshot": "https://en.wikipedia.org/wiki/jjohnson",
+      "category": "celeb-retired-broadcaster"
+    },
+    "curt-menefee": {
+      "id": "curt-menefee",
+      "name": "Curt Menefee",
+      "team": "media",
+      "jersey": "",
+      "pos": "FOX NFL Sunday Host",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Curt_Menefee",
+      "category": "celeb-retired-broadcaster"
+    },
+    "erin-andrews": {
+      "id": "erin-andrews",
+      "name": "Erin Andrews",
+      "team": "media",
+      "jersey": "",
+      "pos": "FOX NFL Sideline",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Erin_Andrews",
+      "category": "celeb-retired-broadcaster"
+    },
+    "joe-buck": {
+      "id": "joe-buck",
+      "name": "Joe Buck",
+      "team": "media",
+      "jersey": "",
+      "pos": "ESPN MNF Play-by-Play",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Joe_Buck",
+      "category": "celeb-retired-broadcaster"
+    },
+    "al-michaels": {
+      "id": "al-michaels",
+      "name": "Al Michaels",
+      "team": "media",
+      "jersey": "",
+      "pos": "Amazon TNF Play-by-Play",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Al_Michaels",
+      "category": "celeb-retired-broadcaster"
+    },
+    "kirk-herbstreit": {
+      "id": "kirk-herbstreit",
+      "name": "Kirk Herbstreit",
+      "team": "media",
+      "jersey": "",
+      "pos": "ESPN/ABC College + Amazon TNF",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Kirk_Herbstreit",
+      "category": "celeb-retired-broadcaster"
+    },
+    "mike-tirico": {
+      "id": "mike-tirico",
+      "name": "Mike Tirico",
+      "team": "media",
+      "jersey": "",
+      "pos": "NBC NFL / NBC Olympics Lead",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Mike_Tirico",
+      "category": "celeb-retired-broadcaster"
+    },
+    "cris-collinsworth": {
+      "id": "cris-collinsworth",
+      "name": "Cris Collinsworth",
+      "team": "media",
+      "jersey": "",
+      "pos": "NBC SNF",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Cris_Collinsworth",
+      "category": "celeb-retired-broadcaster"
+    },
+    "greg-olsen": {
+      "id": "greg-olsen",
+      "name": "Greg Olsen",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired / FOX Color",
+      "espnId": "11220",
+      "headshot": "https://a.espncdn.com/i/headshots/nfl/players/full/11220.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "greg-gumbel": {
+      "id": "greg-gumbel",
+      "name": "Greg Gumbel",
+      "team": "media",
+      "jersey": "",
+      "pos": "CBS NFL",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Greg_Gumbel",
+      "category": "celeb-retired-broadcaster"
+    },
+    "suzy-kolber": {
+      "id": "suzy-kolber",
+      "name": "Suzy Kolber",
+      "team": "media",
+      "jersey": "",
+      "pos": "NFL ESPN",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Suzy_Kolber",
+      "category": "celeb-retired-broadcaster"
+    },
+    "sue-bird": {
+      "id": "sue-bird",
+      "name": "Sue Bird",
+      "team": "wnba",
+      "jersey": "",
+      "pos": "WNBA Retired / Analyst",
+      "espnId": "1067",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/1067.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "diana-taurasi": {
+      "id": "diana-taurasi",
+      "name": "Diana Taurasi",
+      "team": "wnba",
+      "jersey": "",
+      "pos": "WNBA Retired",
+      "espnId": "1068",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/1068.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "candace-parker": {
+      "id": "candace-parker",
+      "name": "Candace Parker",
+      "team": "wnba",
+      "jersey": "",
+      "pos": "WNBA Retired / TNT Analyst",
+      "espnId": "917",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/917.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "maya-moore": {
+      "id": "maya-moore",
+      "name": "Maya Moore",
+      "team": "wnba",
+      "jersey": "",
+      "pos": "WNBA Retired / Activist",
+      "espnId": "1066",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/1066.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "lisa-leslie": {
+      "id": "lisa-leslie",
+      "name": "Lisa Leslie",
+      "team": "wnba",
+      "jersey": "",
+      "pos": "WNBA Retired",
+      "espnId": "23",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/23.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "sheryl-swoopes": {
+      "id": "sheryl-swoopes",
+      "name": "Sheryl Swoopes",
+      "team": "wnba",
+      "jersey": "",
+      "pos": "WNBA Retired",
+      "espnId": "24",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/24.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "bill-belichick": {
+      "id": "bill-belichick",
+      "name": "Bill Belichick",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired Coach / North Carolina HC",
+      "espnId": "0",
+      "headshot": "https://en.wikipedia.org/wiki/bbelichick",
+      "category": "celeb-retired-broadcaster"
+    },
+    "pete-carroll": {
+      "id": "pete-carroll",
+      "name": "Pete Carroll",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "NFL Retired Coach / Raiders HC",
+      "espnId": "0",
+      "headshot": "https://en.wikipedia.org/wiki/pcarroll",
+      "category": "celeb-retired-broadcaster"
+    },
+    "steve-spagnuolo": {
+      "id": "steve-spagnuolo",
+      "name": "Steve Spagnuolo",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "Chiefs DC",
+      "espnId": "0",
+      "headshot": "https://en.wikipedia.org/wiki/sspags",
+      "category": "celeb-retired-broadcaster"
+    },
+    "wash-wilson": {
+      "id": "wash-wilson",
+      "name": "Wash Wilson",
+      "team": "wnba",
+      "jersey": "",
+      "pos": "WNBA Coach",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Cheryl_Reeve",
+      "category": "celeb-retired-broadcaster"
+    },
+    "jerry-jones": {
+      "id": "jerry-jones",
+      "name": "Jerry Jones",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "Cowboys Owner",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Jerry_Jones",
+      "category": "celeb-retired-broadcaster"
+    },
+    "mark-cuban": {
+      "id": "mark-cuban",
+      "name": "Mark Cuban",
+      "team": "nba",
+      "jersey": "",
+      "pos": "Mavs Former Owner",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Mark_Cuban",
+      "category": "celeb-retired-broadcaster"
+    },
+    "james-dolan": {
+      "id": "james-dolan",
+      "name": "James Dolan",
+      "team": "nba",
+      "jersey": "",
+      "pos": "Knicks Owner",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/James_L._Dolan",
+      "category": "celeb-retired-broadcaster"
+    },
+    "robert-kraft": {
+      "id": "robert-kraft",
+      "name": "Robert Kraft",
+      "team": "nfl",
+      "jersey": "",
+      "pos": "Patriots Owner",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Robert_Kraft",
+      "category": "celeb-retired-broadcaster"
+    },
+    "joe-lacob": {
+      "id": "joe-lacob",
+      "name": "Joe Lacob",
+      "team": "nba",
+      "jersey": "",
+      "pos": "Warriors Owner",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Joe_Lacob",
+      "category": "celeb-retired-broadcaster"
+    },
+    "mike-breen": {
+      "id": "mike-breen",
+      "name": "Mike Breen",
+      "team": "media",
+      "jersey": "",
+      "pos": "ABC/ESPN NBA Lead",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Mike_Breen",
+      "category": "celeb-retired-broadcaster"
+    },
+    "doris-burke": {
+      "id": "doris-burke",
+      "name": "Doris Burke",
+      "team": "media",
+      "jersey": "",
+      "pos": "NBA Color Commentator",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Doris_Burke",
+      "category": "celeb-retired-broadcaster"
+    },
+    "stan-van-gundy": {
+      "id": "stan-van-gundy",
+      "name": "Stan Van Gundy",
+      "team": "media",
+      "jersey": "",
+      "pos": "NBA Coach / Analyst",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Stan_Van_Gundy",
+      "category": "celeb-retired-broadcaster"
+    },
+    "jeff-van-gundy": {
+      "id": "jeff-van-gundy",
+      "name": "Jeff Van Gundy",
+      "team": "media",
+      "jersey": "",
+      "pos": "NBA Coach / Analyst",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Jeff_Van_Gundy",
+      "category": "celeb-retired-broadcaster"
+    },
+    "mark-jackson": {
+      "id": "mark-jackson",
+      "name": "Mark Jackson",
+      "team": "nba",
+      "jersey": "",
+      "pos": "NBA Coach / ESPN Analyst",
+      "espnId": "1230",
+      "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1230.png",
+      "category": "celeb-retired-broadcaster"
+    },
+    "kevin-harlan": {
+      "id": "kevin-harlan",
+      "name": "Kevin Harlan",
+      "team": "media",
+      "jersey": "",
+      "pos": "TNT/ESPN",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Kevin_Harlan",
+      "category": "celeb-retired-broadcaster"
+    },
+    "stephen-a-smith": {
+      "id": "stephen-a-smith",
+      "name": "Stephen A. Smith",
+      "team": "media",
+      "jersey": "",
+      "pos": "ESPN First Take",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Stephen_A._Smith",
+      "category": "celeb-retired-broadcaster"
+    },
+    "pat-mcafee": {
+      "id": "pat-mcafee",
+      "name": "Pat McAfee",
+      "team": "media",
+      "jersey": "",
+      "pos": "ESPN Pat McAfee Show",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Pat_McAfee",
+      "category": "celeb-retired-broadcaster"
+    },
+    "shannon-sharpe": {
+      "id": "shannon-sharpe",
+      "name": "Shannon Sharpe",
+      "team": "media",
+      "jersey": "",
+      "pos": "ESPN First Take",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Shannon_Sharpe",
+      "category": "celeb-retired-broadcaster"
+    },
+    "skip-bayless": {
+      "id": "skip-bayless",
+      "name": "Skip Bayless",
+      "team": "media",
+      "jersey": "",
+      "pos": "FS1 Undisputed",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Skip_Bayless",
+      "category": "celeb-retired-broadcaster"
+    },
+    "colin-cowherd": {
+      "id": "colin-cowherd",
+      "name": "Colin Cowherd",
+      "team": "media",
+      "jersey": "",
+      "pos": "FS1 Herd / The Volume",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Colin_Cowherd",
+      "category": "celeb-retired-broadcaster"
+    },
+    "malika-andrews": {
+      "id": "malika-andrews",
+      "name": "Malika Andrews",
+      "team": "media",
+      "jersey": "",
+      "pos": "ESPN NBA Today Host",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Malika_Andrews",
+      "category": "celeb-retired-broadcaster"
+    },
+    "taylor-rooks": {
+      "id": "taylor-rooks",
+      "name": "Taylor Rooks",
+      "team": "media",
+      "jersey": "",
+      "pos": "Amazon TNF / Bleacher Report",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Taylor_Rooks",
+      "category": "celeb-retired-broadcaster"
+    },
+    "kay-adams": {
+      "id": "kay-adams",
+      "name": "Kay Adams",
+      "team": "media",
+      "jersey": "",
+      "pos": "FanDuel Up & Adams",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Kay_Adams",
+      "category": "celeb-retired-broadcaster"
+    },
+    "mina-kimes": {
+      "id": "mina-kimes",
+      "name": "Mina Kimes",
+      "team": "media",
+      "jersey": "",
+      "pos": "ESPN MNF Pre-game",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Mina_Kimes",
+      "category": "celeb-retired-broadcaster"
+    },
+    "molly-qerim": {
+      "id": "molly-qerim",
+      "name": "Molly Qerim",
+      "team": "media",
+      "jersey": "",
+      "pos": "ESPN First Take Host",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Molly_Qerim",
+      "category": "celeb-retired-broadcaster"
+    },
+    "erin-burnett": {
+      "id": "erin-burnett",
+      "name": "Erin Burnett",
+      "team": "media",
+      "jersey": "",
+      "pos": "Tennis CNN — adjacent",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Erin_Burnett",
+      "category": "celeb-retired-broadcaster"
+    },
+    "maria-taylor": {
+      "id": "maria-taylor",
+      "name": "Maria Taylor",
+      "team": "media",
+      "jersey": "",
+      "pos": "NBC Football Night in America",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Maria_Taylor_(broadcaster)",
+      "category": "celeb-retired-broadcaster"
+    },
+    "lewis-hamilton": {
+      "id": "lewis-hamilton",
+      "name": "Lewis Hamilton",
+      "team": "f1",
+      "jersey": "",
+      "pos": "F1 Driver",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+      "category": "celeb-retired-broadcaster"
+    },
+    "max-verstappen": {
+      "id": "max-verstappen",
+      "name": "Max Verstappen",
+      "team": "f1",
+      "jersey": "",
+      "pos": "F1 Driver",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Max_Verstappen",
+      "category": "celeb-retired-broadcaster"
+    },
+    "tiger-woods": {
+      "id": "tiger-woods",
+      "name": "Tiger Woods",
+      "team": "golf",
+      "jersey": "",
+      "pos": "Golf",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Tiger_Woods",
+      "category": "celeb-retired-broadcaster"
+    },
+    "rory-mcilroy": {
+      "id": "rory-mcilroy",
+      "name": "Rory McIlroy",
+      "team": "golf",
+      "jersey": "",
+      "pos": "Golf",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Rory_McIlroy",
+      "category": "celeb-retired-broadcaster"
+    },
+    "scottie-scheffler": {
+      "id": "scottie-scheffler",
+      "name": "Scottie Scheffler",
+      "team": "golf",
+      "jersey": "",
+      "pos": "Golf",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Scottie_Scheffler",
+      "category": "celeb-retired-broadcaster"
+    },
+    "coco-gauff": {
+      "id": "coco-gauff",
+      "name": "Coco Gauff",
+      "team": "tennis",
+      "jersey": "",
+      "pos": "WTA",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Coco_Gauff",
+      "category": "celeb-retired-broadcaster"
+    },
+    "carlos-alcaraz": {
+      "id": "carlos-alcaraz",
+      "name": "Carlos Alcaraz",
+      "team": "tennis",
+      "jersey": "",
+      "pos": "ATP",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Carlos_Alcaraz",
+      "category": "celeb-retired-broadcaster"
+    },
+    "novak-djokovic": {
+      "id": "novak-djokovic",
+      "name": "Novak Djokovic",
+      "team": "tennis",
+      "jersey": "",
+      "pos": "ATP",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Novak_Djokovic",
+      "category": "celeb-retired-broadcaster"
+    },
+    "naomi-osaka": {
+      "id": "naomi-osaka",
+      "name": "Naomi Osaka",
+      "team": "tennis",
+      "jersey": "",
+      "pos": "WTA",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Naomi_Osaka",
+      "category": "celeb-retired-broadcaster"
+    },
+    "serena-williams": {
+      "id": "serena-williams",
+      "name": "Serena Williams",
+      "team": "tennis",
+      "jersey": "",
+      "pos": "WTA Retired",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Serena_Williams",
+      "category": "celeb-retired-broadcaster"
+    },
+    "trinity-rodman": {
+      "id": "trinity-rodman",
+      "name": "Trinity Rodman",
+      "team": "soccer",
+      "jersey": "",
+      "pos": "USWNT",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Trinity_Rodman",
+      "category": "celeb-retired-broadcaster"
+    },
+    "sophia-wilson": {
+      "id": "sophia-wilson",
+      "name": "Sophia Wilson",
+      "team": "soccer",
+      "jersey": "",
+      "pos": "USWNT",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Sophia_Smith",
+      "category": "celeb-retired-broadcaster"
+    },
+    "megan-rapinoe": {
+      "id": "megan-rapinoe",
+      "name": "Megan Rapinoe",
+      "team": "soccer",
+      "jersey": "",
+      "pos": "USWNT Retired",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Megan_Rapinoe",
+      "category": "celeb-retired-broadcaster"
+    },
+    "alex-morgan": {
+      "id": "alex-morgan",
+      "name": "Alex Morgan",
+      "team": "soccer",
+      "jersey": "",
+      "pos": "USWNT Retired",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Alex_Morgan",
+      "category": "celeb-retired-broadcaster"
+    },
+    "christian-pulisic": {
+      "id": "christian-pulisic",
+      "name": "Christian Pulisic",
+      "team": "soccer",
+      "jersey": "",
+      "pos": "USMNT",
+      "espnId": "",
+      "headshot": "https://en.wikipedia.org/wiki/Christian_Pulisic",
+      "category": "celeb-retired-broadcaster"
+    }
+  }
+}
