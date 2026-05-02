@@ -5,7 +5,7 @@ import rostersData from '@/data/rosters.json';
 import { rosterLookup } from '@/lib/roster-lookup';
 import {
   verifyAgainstCandidates,
-  getNbaFaceEntry,
+  getFaceEntry,
   findCandidatesByTeamAndNumber,
 } from '@/lib/face-match';
 
@@ -46,10 +46,13 @@ const CONFIDENCE_FLOOR = 0.65;
 
 /**
  * Map a team string returned by GPT-4o vision (e.g. "Oklahoma City Thunder",
- * "LA Lakers", "Brooklyn Nets") to our 3-letter team code (e.g. "okc", "lal",
- * "bkn") used in rosters.json. Falls back to lowercased input if no match.
+ * "LA Lakers", "Kansas City Chiefs", "Indiana Fever") to our short team code
+ * used across rosters.json + face indexes. Falls back to null if no match.
+ *
+ * Covers: NBA (30), NFL (32), WNBA (15) — 77 team mappings total.
  */
 const TEAM_NAME_TO_CODE: Record<string, string> = {
+  // ───── NBA (30) ─────
   'atlanta hawks':'atl','boston celtics':'bos','brooklyn nets':'bkn','charlotte hornets':'cha',
   'chicago bulls':'chi','cleveland cavaliers':'cle','dallas mavericks':'dal','denver nuggets':'den',
   'detroit pistons':'det','golden state warriors':'gs','houston rockets':'hou','indiana pacers':'ind',
@@ -59,6 +62,21 @@ const TEAM_NAME_TO_CODE: Record<string, string> = {
   'philadelphia 76ers':'phi','philadelphia sixers':'phi','phoenix suns':'phx',
   'portland trail blazers':'por','san antonio spurs':'sa','sacramento kings':'sac',
   'toronto raptors':'tor','utah jazz':'utah','washington wizards':'wsh',
+  // ───── NFL (32) ─────
+  'arizona cardinals':'ari','atlanta falcons':'atl','baltimore ravens':'bal','buffalo bills':'buf',
+  'carolina panthers':'car','chicago bears':'chi','cincinnati bengals':'cin','cleveland browns':'cle',
+  'dallas cowboys':'dal','denver broncos':'den','detroit lions':'det','green bay packers':'gb',
+  'houston texans':'hou','indianapolis colts':'ind','jacksonville jaguars':'jax','kansas city chiefs':'kc',
+  'las vegas raiders':'lv','los angeles chargers':'lac','la chargers':'lac',
+  'los angeles rams':'lar','la rams':'lar','miami dolphins':'mia','minnesota vikings':'min',
+  'new england patriots':'ne','new orleans saints':'no','new york giants':'nyg','new york jets':'nyj',
+  'philadelphia eagles':'phi','pittsburgh steelers':'pit','san francisco 49ers':'sf','seattle seahawks':'sea',
+  'tampa bay buccaneers':'tb','tennessee titans':'ten','washington commanders':'wsh',
+  // ───── WNBA (15) ─────
+  'atlanta dream':'atl','chicago sky':'chi','connecticut sun':'con','dallas wings':'dal',
+  'golden state valkyries':'gs','indiana fever':'ind','los angeles sparks':'la','la sparks':'la',
+  'las vegas aces':'lv','minnesota lynx':'min','new york liberty':'ny','phoenix mercury':'phx',
+  'portland fire':'por','seattle storm':'sea','toronto tempo':'tor','washington mystics':'wsh',
 };
 function extractTeamCode(visionTeam?: string | null): string | null {
   if (!visionTeam) return null;
@@ -631,7 +649,7 @@ Apply GOLDEN RULE at every level: if you don't know specific drama for this play
           .toLowerCase()
           .replace(/[^a-z0-9]+/g, '-')
           .replace(/^-|-$/g, '');
-        const visionCandidate = getNbaFaceEntry(visionSlug);
+        const visionCandidate = getFaceEntry(visionSlug);
 
         // Single-candidate verification — much faster than the old 4-candidate
         // sweep. The roster check above already handles the "vision named the

@@ -18,6 +18,8 @@
  */
 
 import nbaFacesData from '@/data/nba-faces.json';
+import nflFacesData from '@/data/nfl-faces.json';
+import wnbaFacesData from '@/data/wnba-faces.json';
 
 const REPLICATE_API = 'https://api.replicate.com/v1/predictions';
 
@@ -33,7 +35,12 @@ const REPLICATE_API = 'https://api.replicate.com/v1/predictions';
 const DEFAULT_MODEL =
   process.env.REPLICATE_FACE_MODEL ?? 'apna-mart/face-match';
 
-type NbaFaceEntry = {
+/**
+ * A face-index entry is identical across leagues — the same shape backs
+ * NBA, NFL, and WNBA. We track which league via a separate `league` field
+ * we add when reading from the per-league JSON files.
+ */
+export type FaceEntry = {
   id: string;
   name: string;
   team: string;
@@ -41,38 +48,89 @@ type NbaFaceEntry = {
   pos: string;
   espnId?: number | string;
   headshot: string | null;
+  league: 'nba' | 'nfl' | 'wnba';
 };
 
-const NBA_FACES: Record<string, NbaFaceEntry> = (nbaFacesData as { players: Record<string, NbaFaceEntry> }).players;
+/** Backwards-compat alias — older callers imported NbaFaceEntry. Same shape now. */
+export type NbaFaceEntry = FaceEntry;
+
+const NBA_FACES: Record<string, FaceEntry> = Object.fromEntries(
+  Object.entries((nbaFacesData as { players: Record<string, Omit<FaceEntry, 'league'>> }).players).map(
+    ([k, v]) => [k, { ...v, league: 'nba' as const }],
+  ),
+);
+const NFL_FACES: Record<string, FaceEntry> = Object.fromEntries(
+  Object.entries((nflFacesData as { players: Record<string, Omit<FaceEntry, 'league'>> }).players).map(
+    ([k, v]) => [k, { ...v, league: 'nfl' as const }],
+  ),
+);
+const WNBA_FACES: Record<string, FaceEntry> = Object.fromEntries(
+  Object.entries((wnbaFacesData as { players: Record<string, Omit<FaceEntry, 'league'>> }).players).map(
+    ([k, v]) => [k, { ...v, league: 'wnba' as const }],
+  ),
+);
+
+const ALL_FACES: Record<string, FaceEntry> = { ...NFL_FACES, ...WNBA_FACES, ...NBA_FACES };
+// NBA spread last so on slug collisions (rare cross-league name dupes) NBA wins.
+// In practice, IDs are slugified full names so collisions only happen when the
+// same person plays in two leagues — which doesn't actually occur with our data.
+
+const FACES_BY_LEAGUE = {
+  nba: NBA_FACES,
+  nfl: NFL_FACES,
+  wnba: WNBA_FACES,
+} as const;
 
 /* ─────────────────────────── helpers ────────────────────────────────────── */
 
-/** Look up a player's headshot URL by their slug-id. Returns null if not in our index. */
+/** Look up a player's headshot URL by their slug-id, across all three leagues. */
+export function getHeadshot(playerId: string): string | null {
+  return ALL_FACES[playerId]?.headshot ?? null;
+}
+
+/** Cross-league face entry lookup. */
+export function getFaceEntry(playerId: string): FaceEntry | null {
+  return ALL_FACES[playerId] ?? null;
+}
+
+/**
+ * Look up a face entry restricted to a specific league. Use when you have a
+ * league hint from vision and want to avoid cross-league collisions.
+ */
+export function getFaceEntryByLeague(
+  playerId: string,
+  league: 'nba' | 'nfl' | 'wnba',
+): FaceEntry | null {
+  return FACES_BY_LEAGUE[league]?.[playerId] ?? null;
+}
+
+/* ─── Backwards-compat: old call-sites used getNbaHeadshot / getNbaFaceEntry ─ */
+/** @deprecated Use getHeadshot — works for all leagues. */
 export function getNbaHeadshot(playerId: string): string | null {
   return NBA_FACES[playerId]?.headshot ?? null;
 }
-
-/** Get the full NBA face entry for a player. */
-export function getNbaFaceEntry(playerId: string): NbaFaceEntry | null {
+/** @deprecated Use getFaceEntry — works for all leagues. */
+export function getNbaFaceEntry(playerId: string): FaceEntry | null {
   return NBA_FACES[playerId] ?? null;
 }
 
 /**
- * Find candidate NBA players by team + jersey number. Used to build the
- * candidate set BEFORE running face match (so we don't compare against all 538).
+ * Find candidate players by team + jersey number across all leagues.
+ * Pass `league` to scope to a single league; otherwise searches all three.
  */
 export function findCandidatesByTeamAndNumber(
   team?: string | null,
-  jerseyNumber?: string | number | null
-): NbaFaceEntry[] {
+  jerseyNumber?: string | number | null,
+  league?: 'nba' | 'nfl' | 'wnba',
+): FaceEntry[] {
   if (!team && !jerseyNumber) return [];
   const teamLower = (team ?? '').toLowerCase();
   const num = jerseyNumber == null ? '' : String(jerseyNumber).replace(/^0+/, '') || '0';
 
-  const out: NbaFaceEntry[] = [];
-  for (const entry of Object.values(NBA_FACES)) {
+  const source = league ? FACES_BY_LEAGUE[league] : ALL_FACES;
+  const out: FaceEntry[] = [];
+  for (const entry of Object.values(source)) {
     if (teamLower) {
-      // Match on team code OR full team name in case vision returns "Lakers" vs "lal"
       const entryTeam = entry.team.toLowerCase();
       if (!teamLower.includes(entryTeam) && entryTeam !== teamLower) continue;
     }

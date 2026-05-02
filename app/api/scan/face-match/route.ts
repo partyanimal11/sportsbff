@@ -20,7 +20,7 @@
  * Used by /api/scan internally and externally for debugging.
  */
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyAgainstCandidates, getNbaFaceEntry, debugCompareFaces } from '@/lib/face-match';
+import { verifyAgainstCandidates, getFaceEntry, debugCompareFaces } from '@/lib/face-match';
 
 export const runtime = 'nodejs';
 export const maxDuration = 60;
@@ -85,7 +85,7 @@ export async function POST(req: NextRequest) {
   const url = new URL(req.url);
   if (url.searchParams.get('debug') === '1') {
     const firstId = candidatePlayerIds[0];
-    const entry = getNbaFaceEntry(firstId);
+    const entry = getFaceEntry(firstId);
     if (!entry?.headshot) {
       return NextResponse.json(
         { error: 'First candidate has no headshot' },
@@ -104,12 +104,12 @@ export async function POST(req: NextRequest) {
   }
 
   const candidates = candidatePlayerIds
-    .map((id) => getNbaFaceEntry(id))
+    .map((id) => getFaceEntry(id))
     .filter((c): c is NonNullable<typeof c> => Boolean(c));
 
   if (candidates.length === 0) {
     return NextResponse.json(
-      { error: 'None of the provided candidate IDs found in NBA face index' },
+      { error: 'None of the provided candidate IDs found in face index (NBA/NFL/WNBA)' },
       { status: 404, headers: CORS_HEADERS }
     );
   }

@@ -1,0 +1,2383 @@
+{
+  "generated_at": "2026-05-02",
+  "source": "ESPN site API",
+  "league": "wnba",
+  "players": {
+    "isobel-borlase": {
+      "id": "isobel-borlase",
+      "name": "Isobel Borlase",
+      "team": "atl",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "5208983",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5208983.png"
+    },
+    "jordin-canada": {
+      "id": "jordin-canada",
+      "name": "Jordin Canada",
+      "team": "atl",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "3142250",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3142250.png"
+    },
+    "maite-cazorla": {
+      "id": "maite-cazorla",
+      "name": "Maite Cazorla",
+      "team": "atl",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "3907713",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3907713.png"
+    },
+    "bella-fontleroy": {
+      "id": "bella-fontleroy",
+      "name": "Bella Fontleroy",
+      "team": "atl",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "5106147",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5106147.png"
+    },
+    "allisha-gray": {
+      "id": "allisha-gray",
+      "name": "Allisha Gray",
+      "team": "atl",
+      "jersey": "15",
+      "pos": "G",
+      "espnId": "3058901",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3058901.png"
+    },
+    "naz-hillmon": {
+      "id": "naz-hillmon",
+      "name": "Naz Hillmon",
+      "team": "atl",
+      "jersey": "00",
+      "pos": "F",
+      "espnId": "4398915",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398915.png"
+    },
+    "rhyne-howard": {
+      "id": "rhyne-howard",
+      "name": "Rhyne Howard",
+      "team": "atl",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "4398674",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398674.png"
+    },
+    "brionna-jones": {
+      "id": "brionna-jones",
+      "name": "Brionna Jones",
+      "team": "atl",
+      "jersey": "24",
+      "pos": "F",
+      "espnId": "3058895",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3058895.png"
+    },
+    "stephanie-jones": {
+      "id": "stephanie-jones",
+      "name": "Stephanie Jones",
+      "team": "atl",
+      "jersey": "24",
+      "pos": "F",
+      "espnId": "4065785",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4065785.png"
+    },
+    "sika-kone": {
+      "id": "sika-kone",
+      "name": "Sika Kone",
+      "team": "atl",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "5017721",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5017721.png"
+    },
+    "indya-nivar": {
+      "id": "indya-nivar",
+      "name": "Indya Nivar",
+      "team": "atl",
+      "jersey": "21",
+      "pos": "G",
+      "espnId": "5105740",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5105740.png"
+    },
+    "madina-okot": {
+      "id": "madina-okot",
+      "name": "Madina Okot",
+      "team": "atl",
+      "jersey": "11",
+      "pos": "C",
+      "espnId": "5108587",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5108587.png"
+    },
+    "te-hina-paopao": {
+      "id": "te-hina-paopao",
+      "name": "Te-Hina Paopao",
+      "team": "atl",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4433431",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433431.png"
+    },
+    "laila-phelia": {
+      "id": "laila-phelia",
+      "name": "Laila Phelia",
+      "team": "atl",
+      "jersey": "6",
+      "pos": "G",
+      "espnId": "4433541",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433541.png"
+    },
+    "kejia-ran": {
+      "id": "kejia-ran",
+      "name": "Kejia Ran",
+      "team": "atl",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "5345332",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345332.png"
+    },
+    "angel-reese": {
+      "id": "angel-reese",
+      "name": "Angel Reese",
+      "team": "atl",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "4433402",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433402.png"
+    },
+    "paige-robinson": {
+      "id": "paige-robinson",
+      "name": "Paige Robinson",
+      "team": "atl",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "5109176",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5109176.png"
+    },
+    "taylor-thierry": {
+      "id": "taylor-thierry",
+      "name": "Taylor Thierry",
+      "team": "atl",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "4898400",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4898400.png"
+    },
+    "sacha-washington": {
+      "id": "sacha-washington",
+      "name": "Sacha Washington",
+      "team": "atl",
+      "jersey": "35",
+      "pos": "F",
+      "espnId": "4433999",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433999.png"
+    },
+    "holly-winterburn": {
+      "id": "holly-winterburn",
+      "name": "Holly Winterburn",
+      "team": "atl",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "4433690",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433690.png"
+    },
+    "rachel-banham": {
+      "id": "rachel-banham",
+      "name": "Rachel Banham",
+      "team": "chi",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "2566186",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2566186.png"
+    },
+    "kamilla-cardoso": {
+      "id": "kamilla-cardoso",
+      "name": "Kamilla Cardoso",
+      "team": "chi",
+      "jersey": "10",
+      "pos": "C",
+      "espnId": "4433405",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433405.png"
+    },
+    "dijonai-carrington": {
+      "id": "dijonai-carrington",
+      "name": "DiJonai Carrington",
+      "team": "chi",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4066548",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4066548.png"
+    },
+    "aicha-coulibaly": {
+      "id": "aicha-coulibaly",
+      "name": "Aicha Coulibaly",
+      "team": "chi",
+      "jersey": "35",
+      "pos": "G",
+      "espnId": "4433433",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433433.png"
+    },
+    "skylar-diggins": {
+      "id": "skylar-diggins",
+      "name": "Skylar Diggins",
+      "team": "chi",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "2491205",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2491205.png"
+    },
+    "rickea-jackson": {
+      "id": "rickea-jackson",
+      "name": "Rickea Jackson",
+      "team": "chi",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "4433630",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433630.png"
+    },
+    "gabriela-jaquez": {
+      "id": "gabriela-jaquez",
+      "name": "Gabriela Jaquez",
+      "team": "chi",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "4858656",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4858656.png"
+    },
+    "latasha-lattimore": {
+      "id": "latasha-lattimore",
+      "name": "Latasha Lattimore",
+      "team": "chi",
+      "jersey": "8",
+      "pos": "F",
+      "espnId": "4433517",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433517.png"
+    },
+    "tonie-morgan": {
+      "id": "tonie-morgan",
+      "name": "Tonie Morgan",
+      "team": "chi",
+      "jersey": "6",
+      "pos": "G",
+      "espnId": "4565515",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4565515.png"
+    },
+    "jacy-sheldon": {
+      "id": "jacy-sheldon",
+      "name": "Jacy Sheldon",
+      "team": "chi",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "4432865",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4432865.png"
+    },
+    "azura-stevens": {
+      "id": "azura-stevens",
+      "name": "Azura Stevens",
+      "team": "chi",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "3142010",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3142010.png"
+    },
+    "sydney-taylor": {
+      "id": "sydney-taylor",
+      "name": "Sydney Taylor",
+      "team": "chi",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "4594786",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4594786.png"
+    },
+    "hailey-van-lith": {
+      "id": "hailey-van-lith",
+      "name": "Hailey Van Lith",
+      "team": "chi",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4433412",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433412.png"
+    },
+    "courtney-vandersloot": {
+      "id": "courtney-vandersloot",
+      "name": "Courtney Vandersloot",
+      "team": "chi",
+      "jersey": "22",
+      "pos": "G",
+      "espnId": "981",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/981.png"
+    },
+    "maddy-westbeld": {
+      "id": "maddy-westbeld",
+      "name": "Maddy Westbeld",
+      "team": "chi",
+      "jersey": "21",
+      "pos": "F",
+      "espnId": "4433424",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433424.png"
+    },
+    "elizabeth-williams": {
+      "id": "elizabeth-williams",
+      "name": "Elizabeth Williams",
+      "team": "chi",
+      "jersey": "1",
+      "pos": "C",
+      "espnId": "2566081",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2566081.png"
+    },
+    "nell-angloma": {
+      "id": "nell-angloma",
+      "name": "Nell Angloma",
+      "team": "con",
+      "jersey": "33",
+      "pos": "F",
+      "espnId": "5345319",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345319.png"
+    },
+    "raegan-beers": {
+      "id": "raegan-beers",
+      "name": "Raegan Beers",
+      "team": "con",
+      "jersey": "15",
+      "pos": "C",
+      "espnId": "5105732",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5105732.png"
+    },
+    "taylor-bigby": {
+      "id": "taylor-bigby",
+      "name": "Taylor Bigby",
+      "team": "con",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4433798",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433798.png"
+    },
+    "kennedy-burke": {
+      "id": "kennedy-burke",
+      "name": "Kennedy Burke",
+      "team": "con",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "3922628",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3922628.png"
+    },
+    "aaliyah-edwards": {
+      "id": "aaliyah-edwards",
+      "name": "Aaliyah Edwards",
+      "team": "con",
+      "jersey": "8",
+      "pos": "F",
+      "espnId": "4433408",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433408.png"
+    },
+    "brittney-griner": {
+      "id": "brittney-griner",
+      "name": "Brittney Griner",
+      "team": "con",
+      "jersey": "42",
+      "pos": "C",
+      "espnId": "2490553",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2490553.png"
+    },
+    "madison-hayes": {
+      "id": "madison-hayes",
+      "name": "Madison Hayes",
+      "team": "con",
+      "jersey": "14",
+      "pos": "G",
+      "espnId": "4433413",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433413.png"
+    },
+    "gianna-kneepkens": {
+      "id": "gianna-kneepkens",
+      "name": "Gianna Kneepkens",
+      "team": "con",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4898898",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4898898.png"
+    },
+    "leila-lacan": {
+      "id": "leila-lacan",
+      "name": "Leila Lacan",
+      "team": "con",
+      "jersey": "47",
+      "pos": "G",
+      "espnId": "5208981",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5208981.png"
+    },
+    "charlisse-leger-walker": {
+      "id": "charlisse-leger-walker",
+      "name": "Charlisse Leger-Walker",
+      "team": "con",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4703609",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4703609.png"
+    },
+    "diamond-miller": {
+      "id": "diamond-miller",
+      "name": "Diamond Miller",
+      "team": "con",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "4433635",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433635.png"
+    },
+    "aneesah-morrow": {
+      "id": "aneesah-morrow",
+      "name": "Aneesah Morrow",
+      "team": "con",
+      "jersey": "24",
+      "pos": "F",
+      "espnId": "4684384",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4684384.png"
+    },
+    "olivia-nelson-ododa": {
+      "id": "olivia-nelson-ododa",
+      "name": "Olivia Nelson-Ododa",
+      "team": "con",
+      "jersey": "10",
+      "pos": "C",
+      "espnId": "4398966",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398966.png"
+    },
+    "kyla-oldacre": {
+      "id": "kyla-oldacre",
+      "name": "Kyla Oldacre",
+      "team": "con",
+      "jersey": "00",
+      "pos": "C",
+      "espnId": "4682860",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4682860.png"
+    },
+    "shey-peddy": {
+      "id": "shey-peddy",
+      "name": "Shey Peddy",
+      "team": "con",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "1107",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/1107.png"
+    },
+    "saniya-rivers": {
+      "id": "saniya-rivers",
+      "name": "Saniya Rivers",
+      "team": "con",
+      "jersey": "22",
+      "pos": "G",
+      "espnId": "4433514",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433514.png"
+    },
+    "mamignan-toure": {
+      "id": "mamignan-toure",
+      "name": "Mamignan Toure",
+      "team": "con",
+      "jersey": "28",
+      "pos": "G",
+      "espnId": "5279789",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5279789.png"
+    },
+    "harmoni-turner": {
+      "id": "harmoni-turner",
+      "name": "Harmoni Turner",
+      "team": "con",
+      "jersey": "14",
+      "pos": "G",
+      "espnId": "4899316",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4899316.png"
+    },
+    "lindsay-allen": {
+      "id": "lindsay-allen",
+      "name": "Lindsay Allen",
+      "team": "dal",
+      "jersey": "15",
+      "pos": "G",
+      "espnId": "3058908",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3058908.png"
+    },
+    "grace-berger": {
+      "id": "grace-berger",
+      "name": "Grace Berger",
+      "team": "dal",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "4398899",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398899.png"
+    },
+    "paige-bueckers": {
+      "id": "paige-bueckers",
+      "name": "Paige Bueckers",
+      "team": "dal",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4433730",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433730.png"
+    },
+    "alysha-clark": {
+      "id": "alysha-clark",
+      "name": "Alysha Clark",
+      "team": "dal",
+      "jersey": "32",
+      "pos": "F",
+      "espnId": "924",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/924.png"
+    },
+    "dulcy-fankam-mendjiadeu": {
+      "id": "dulcy-fankam-mendjiadeu",
+      "name": "Dulcy Fankam Mendjiadeu",
+      "team": "dal",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "4594527",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4594527.png"
+    },
+    "azzi-fudd": {
+      "id": "azzi-fudd",
+      "name": "Azzi Fudd",
+      "team": "dal",
+      "jersey": "35",
+      "pos": "G",
+      "espnId": "4433790",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433790.png"
+    },
+    "aziaha-james": {
+      "id": "aziaha-james",
+      "name": "Aziaha James",
+      "team": "dal",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "4433807",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433807.png"
+    },
+    "awak-kuier": {
+      "id": "awak-kuier",
+      "name": "Awak Kuier",
+      "team": "dal",
+      "jersey": "28",
+      "pos": "F",
+      "espnId": "4790266",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4790266.png"
+    },
+    "rayah-marshall": {
+      "id": "rayah-marshall",
+      "name": "Rayah Marshall",
+      "team": "dal",
+      "jersey": "13",
+      "pos": "C",
+      "espnId": "4433792",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433792.png"
+    },
+    "arike-ogunbowale": {
+      "id": "arike-ogunbowale",
+      "name": "Arike Ogunbowale",
+      "team": "dal",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "3904577",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3904577.png"
+    },
+    "amy-okonkwo": {
+      "id": "amy-okonkwo",
+      "name": "Amy Okonkwo",
+      "team": "dal",
+      "jersey": "0",
+      "pos": "F",
+      "espnId": "3142242",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3142242.png"
+    },
+    "jj-quinerly": {
+      "id": "jj-quinerly",
+      "name": "JJ Quinerly",
+      "team": "dal",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "4434015",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4434015.png"
+    },
+    "maddy-siegrist": {
+      "id": "maddy-siegrist",
+      "name": "Maddy Siegrist",
+      "team": "dal",
+      "jersey": "20",
+      "pos": "F",
+      "espnId": "4399415",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4399415.png"
+    },
+    "odyssey-sims": {
+      "id": "odyssey-sims",
+      "name": "Odyssey Sims",
+      "team": "dal",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "2529047",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2529047.png"
+    },
+    "alanna-smith": {
+      "id": "alanna-smith",
+      "name": "Alanna Smith",
+      "team": "dal",
+      "jersey": "8",
+      "pos": "F",
+      "espnId": "3913881",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3913881.png"
+    },
+    "costanza-verona": {
+      "id": "costanza-verona",
+      "name": "Costanza Verona",
+      "team": "dal",
+      "jersey": "",
+      "pos": "F",
+      "espnId": "5345473",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345473.png"
+    },
+    "li-yueru": {
+      "id": "li-yueru",
+      "name": "Li Yueru",
+      "team": "dal",
+      "jersey": "28",
+      "pos": "C",
+      "espnId": "4336633",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4336633.png"
+    },
+    "laeticia-amihere": {
+      "id": "laeticia-amihere",
+      "name": "Laeticia Amihere",
+      "team": "gs",
+      "jersey": "3",
+      "pos": "F",
+      "espnId": "4432834",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4432834.png"
+    },
+    "veronica-burton": {
+      "id": "veronica-burton",
+      "name": "Veronica Burton",
+      "team": "gs",
+      "jersey": "22",
+      "pos": "G",
+      "espnId": "4398935",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398935.png"
+    },
+    "kaila-charles": {
+      "id": "kaila-charles",
+      "name": "Kaila Charles",
+      "team": "gs",
+      "jersey": "6",
+      "pos": "G",
+      "espnId": "4065780",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4065780.png"
+    },
+    "kaitlyn-chen": {
+      "id": "kaitlyn-chen",
+      "name": "Kaitlyn Chen",
+      "team": "gs",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "4899328",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4899328.png"
+    },
+    "mariella-fasoula": {
+      "id": "mariella-fasoula",
+      "name": "Mariella Fasoula",
+      "team": "gs",
+      "jersey": "34",
+      "pos": "C",
+      "espnId": "3904479",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3904479.png"
+    },
+    "tiffany-hayes": {
+      "id": "tiffany-hayes",
+      "name": "Tiffany Hayes",
+      "team": "gs",
+      "jersey": "15",
+      "pos": "G",
+      "espnId": "1054",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/1054.png"
+    },
+    "ashlon-jackson": {
+      "id": "ashlon-jackson",
+      "name": "Ashlon Jackson",
+      "team": "gs",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "5106232",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5106232.png"
+    },
+    "juste-jocyte": {
+      "id": "juste-jocyte",
+      "name": "Juste Jocyte",
+      "team": "gs",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "5277552",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5277552.png"
+    },
+    "kate-martin": {
+      "id": "kate-martin",
+      "name": "Kate Martin",
+      "team": "gs",
+      "jersey": "20",
+      "pos": "G",
+      "espnId": "4398907",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398907.png"
+    },
+    "ndjakalenga-mwenentanda": {
+      "id": "ndjakalenga-mwenentanda",
+      "name": "Ndjakalenga Mwenentanda",
+      "team": "gs",
+      "jersey": "32",
+      "pos": "G",
+      "espnId": "5106170",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5106170.png"
+    },
+    "cate-reese": {
+      "id": "cate-reese",
+      "name": "Cate Reese",
+      "team": "gs",
+      "jersey": "35",
+      "pos": "F",
+      "espnId": "4398698",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398698.png"
+    },
+    "iliana-rupert": {
+      "id": "iliana-rupert",
+      "name": "Iliana Rupert",
+      "team": "gs",
+      "jersey": "12",
+      "pos": "C",
+      "espnId": "4790263",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4790263.png"
+    },
+    "janelle-salaun": {
+      "id": "janelle-salaun",
+      "name": "Janelle Salaun",
+      "team": "gs",
+      "jersey": "13",
+      "pos": "F",
+      "espnId": "4790264",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4790264.png"
+    },
+    "miela-sowah": {
+      "id": "miela-sowah",
+      "name": "Miela Sowah",
+      "team": "gs",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "4398577",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398577.png"
+    },
+    "kiah-stokes": {
+      "id": "kiah-stokes",
+      "name": "Kiah Stokes",
+      "team": "gs",
+      "jersey": "41",
+      "pos": "C",
+      "espnId": "2590093",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2590093.png"
+    },
+    "marta-suarez": {
+      "id": "marta-suarez",
+      "name": "Marta Suarez",
+      "team": "gs",
+      "jersey": "77",
+      "pos": "F",
+      "espnId": "4704594",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4704594.png"
+    },
+    "kokoro-tanaka": {
+      "id": "kokoro-tanaka",
+      "name": "Kokoro Tanaka",
+      "team": "gs",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "5345336",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345336.png"
+    },
+    "kayla-thornton": {
+      "id": "kayla-thornton",
+      "name": "Kayla Thornton",
+      "team": "gs",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "2529622",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2529622.png"
+    },
+    "gabby-williams": {
+      "id": "gabby-williams",
+      "name": "Gabby Williams",
+      "team": "gs",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "3142328",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3142328.png"
+    },
+    "cecilia-zandalasini": {
+      "id": "cecilia-zandalasini",
+      "name": "Cecilia Zandalasini",
+      "team": "gs",
+      "jersey": "24",
+      "pos": "F",
+      "espnId": "4257500",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4257500.png"
+    },
+    "monique-billings": {
+      "id": "monique-billings",
+      "name": "Monique Billings",
+      "team": "ind",
+      "jersey": "25",
+      "pos": "F",
+      "espnId": "3142255",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3142255.png"
+    },
+    "aliyah-boston": {
+      "id": "aliyah-boston",
+      "name": "Aliyah Boston",
+      "team": "ind",
+      "jersey": "7",
+      "pos": "F",
+      "espnId": "4432831",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4432831.png"
+    },
+    "caitlin-clark": {
+      "id": "caitlin-clark",
+      "name": "Caitlin Clark",
+      "team": "ind",
+      "jersey": "22",
+      "pos": "G",
+      "espnId": "4433403",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433403.png"
+    },
+    "sophie-cunningham": {
+      "id": "sophie-cunningham",
+      "name": "Sophie Cunningham",
+      "team": "ind",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "3907781",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3907781.png"
+    },
+    "damiris-dantas": {
+      "id": "damiris-dantas",
+      "name": "Damiris Dantas",
+      "team": "ind",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "2955898",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2955898.png"
+    },
+    "tyasha-harris": {
+      "id": "tyasha-harris",
+      "name": "Tyasha Harris",
+      "team": "ind",
+      "jersey": "52",
+      "pos": "G",
+      "espnId": "4065760",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4065760.png"
+    },
+    "myisha-hines-allen": {
+      "id": "myisha-hines-allen",
+      "name": "Myisha Hines-Allen",
+      "team": "ind",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "3142055",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3142055.png"
+    },
+    "lexie-hull": {
+      "id": "lexie-hull",
+      "name": "Lexie Hull",
+      "team": "ind",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "4398829",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398829.png"
+    },
+    "raven-johnson": {
+      "id": "raven-johnson",
+      "name": "Raven Johnson",
+      "team": "ind",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4433797",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433797.png"
+    },
+    "megan-mcconnell": {
+      "id": "megan-mcconnell",
+      "name": "Megan McConnell",
+      "team": "ind",
+      "jersey": "16",
+      "pos": "G",
+      "espnId": "4433510",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433510.png"
+    },
+    "kelsey-mitchell": {
+      "id": "kelsey-mitchell",
+      "name": "Kelsey Mitchell",
+      "team": "ind",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "3142191",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3142191.png"
+    },
+    "justine-pissott": {
+      "id": "justine-pissott",
+      "name": "Justine Pissott",
+      "team": "ind",
+      "jersey": "13",
+      "pos": "G",
+      "espnId": "4682855",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4682855.png"
+    },
+    "jessica-timmons": {
+      "id": "jessica-timmons",
+      "name": "Jessica Timmons",
+      "team": "ind",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4433811",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433811.png"
+    },
+    "makayla-timpson": {
+      "id": "makayla-timpson",
+      "name": "Makayla Timpson",
+      "team": "ind",
+      "jersey": "21",
+      "pos": "F",
+      "espnId": "4433546",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433546.png"
+    },
+    "kayana-traylor": {
+      "id": "kayana-traylor",
+      "name": "Kayana Traylor",
+      "team": "ind",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4398947",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398947.png"
+    },
+    "shatori-walker-kimbrough": {
+      "id": "shatori-walker-kimbrough",
+      "name": "Shatori Walker-Kimbrough",
+      "team": "ind",
+      "jersey": "32",
+      "pos": "G",
+      "espnId": "3058893",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3058893.png"
+    },
+    "ariel-atkins": {
+      "id": "ariel-atkins",
+      "name": "Ariel Atkins",
+      "team": "la",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "3146151",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3146151.png"
+    },
+    "cameron-brink": {
+      "id": "cameron-brink",
+      "name": "Cameron Brink",
+      "team": "la",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "4433404",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433404.png"
+    },
+    "rae-burrell": {
+      "id": "rae-burrell",
+      "name": "Rae Burrell",
+      "team": "la",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "4398764",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398764.png"
+    },
+    "emma-cannon": {
+      "id": "emma-cannon",
+      "name": "Emma Cannon",
+      "team": "la",
+      "jersey": "32",
+      "pos": "F",
+      "espnId": "2284331",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2284331.png"
+    },
+    "sania-feagin": {
+      "id": "sania-feagin",
+      "name": "Sania Feagin",
+      "team": "la",
+      "jersey": "20",
+      "pos": "F",
+      "espnId": "4433795",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433795.png"
+    },
+    "chance-gray": {
+      "id": "chance-gray",
+      "name": "Chance Gray",
+      "team": "la",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "5105729",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5105729.png"
+    },
+    "dearica-hamby": {
+      "id": "dearica-hamby",
+      "name": "Dearica Hamby",
+      "team": "la",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "2566106",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2566106.png"
+    },
+    "ta-niya-latson": {
+      "id": "ta-niya-latson",
+      "name": "Ta'Niya Latson",
+      "team": "la",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "4609797",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4609797.png"
+    },
+    "nneka-ogwumike": {
+      "id": "nneka-ogwumike",
+      "name": "Nneka Ogwumike",
+      "team": "la",
+      "jersey": "30",
+      "pos": "F",
+      "espnId": "1068",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/1068.png"
+    },
+    "jihyun-park": {
+      "id": "jihyun-park",
+      "name": "Jihyun Park",
+      "team": "la",
+      "jersey": "6",
+      "pos": "G",
+      "espnId": "4874375",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4874375.png"
+    },
+    "kelsey-plum": {
+      "id": "kelsey-plum",
+      "name": "Kelsey Plum",
+      "team": "la",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "3065570",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3065570.png"
+    },
+    "sevgi-uzun": {
+      "id": "sevgi-uzun",
+      "name": "Sevgi Uzun",
+      "team": "la",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "5209660",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5209660.png"
+    },
+    "julie-vanloo": {
+      "id": "julie-vanloo",
+      "name": "Julie Vanloo",
+      "team": "la",
+      "jersey": "35",
+      "pos": "G",
+      "espnId": "2566110",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2566110.png"
+    },
+    "erica-wheeler": {
+      "id": "erica-wheeler",
+      "name": "Erica Wheeler",
+      "team": "la",
+      "jersey": "17",
+      "pos": "G",
+      "espnId": "2491214",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2491214.png"
+    },
+    "laura-ziegler": {
+      "id": "laura-ziegler",
+      "name": "Laura Ziegler",
+      "team": "la",
+      "jersey": "4",
+      "pos": "F",
+      "espnId": "5107515",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5107515.png"
+    },
+    "janiah-barker": {
+      "id": "janiah-barker",
+      "name": "Janiah Barker",
+      "team": "lv",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "4565501",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4565501.png"
+    },
+    "kierstan-bell": {
+      "id": "kierstan-bell",
+      "name": "Kierstan Bell",
+      "team": "lv",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "4433633",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433633.png"
+    },
+    "chennedy-carter": {
+      "id": "chennedy-carter",
+      "name": "Chennedy Carter",
+      "team": "lv",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4280892",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4280892.png"
+    },
+    "dana-evans": {
+      "id": "dana-evans",
+      "name": "Dana Evans",
+      "team": "lv",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "4281190",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4281190.png"
+    },
+    "chelsea-gray": {
+      "id": "chelsea-gray",
+      "name": "Chelsea Gray",
+      "team": "lv",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "2529122",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2529122.png"
+    },
+    "jewell-loyd": {
+      "id": "jewell-loyd",
+      "name": "Jewell Loyd",
+      "team": "lv",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "2987869",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2987869.png"
+    },
+    "jordan-obi": {
+      "id": "jordan-obi",
+      "name": "Jordan Obi",
+      "team": "lv",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4705226",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4705226.png"
+    },
+    "cheyenne-parker-tyus": {
+      "id": "cheyenne-parker-tyus",
+      "name": "Cheyenne Parker-Tyus",
+      "team": "lv",
+      "jersey": "32",
+      "pos": "F",
+      "espnId": "2529458",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2529458.png"
+    },
+    "nalyssa-smith": {
+      "id": "nalyssa-smith",
+      "name": "NaLyssa Smith",
+      "team": "lv",
+      "jersey": "3",
+      "pos": "F",
+      "espnId": "4398776",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398776.png"
+    },
+    "stephanie-talbot": {
+      "id": "stephanie-talbot",
+      "name": "Stephanie Talbot",
+      "team": "lv",
+      "jersey": "7",
+      "pos": "F",
+      "espnId": "3099736",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3099736.png"
+    },
+    "brianna-turner": {
+      "id": "brianna-turner",
+      "name": "Brianna Turner",
+      "team": "lv",
+      "jersey": "21",
+      "pos": "F",
+      "espnId": "3142086",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3142086.png"
+    },
+    "a-ja-wilson": {
+      "id": "a-ja-wilson",
+      "name": "A'ja Wilson",
+      "team": "lv",
+      "jersey": "22",
+      "pos": "C",
+      "espnId": "3149391",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3149391.png"
+    },
+    "jackie-young": {
+      "id": "jackie-young",
+      "name": "Jackie Young",
+      "team": "lv",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "4065870",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4065870.png"
+    },
+    "emma-cechova": {
+      "id": "emma-cechova",
+      "name": "Emma Cechova",
+      "team": "min",
+      "jersey": "22",
+      "pos": "F",
+      "espnId": "5345322",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345322.png"
+    },
+    "nia-coffey": {
+      "id": "nia-coffey",
+      "name": "Nia Coffey",
+      "team": "min",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "3054590",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3054590.png"
+    },
+    "napheesa-collier": {
+      "id": "napheesa-collier",
+      "name": "Napheesa Collier",
+      "team": "min",
+      "jersey": "24",
+      "pos": "F",
+      "espnId": "3917450",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3917450.png"
+    },
+    "antonia-delaere": {
+      "id": "antonia-delaere",
+      "name": "Antonia Delaere",
+      "team": "min",
+      "jersey": "8",
+      "pos": "F",
+      "espnId": "4873358",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4873358.png"
+    },
+    "aubrey-griffin": {
+      "id": "aubrey-griffin",
+      "name": "Aubrey Griffin",
+      "team": "min",
+      "jersey": "44",
+      "pos": "F",
+      "espnId": "4432844",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4432844.png"
+    },
+    "eliska-hamzova": {
+      "id": "eliska-hamzova",
+      "name": "Eliska Hamzova",
+      "team": "min",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "5345478",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345478.png"
+    },
+    "natasha-howard": {
+      "id": "natasha-howard",
+      "name": "Natasha Howard",
+      "team": "min",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "2529130",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2529130.png"
+    },
+    "dorka-juhasz": {
+      "id": "dorka-juhasz",
+      "name": "Dorka Juhasz",
+      "team": "min",
+      "jersey": "14",
+      "pos": "F",
+      "espnId": "4398938",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398938.png"
+    },
+    "liatu-king": {
+      "id": "liatu-king",
+      "name": "Liatu King",
+      "team": "min",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "4596309",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4596309.png"
+    },
+    "anastasiia-olairi-kosu": {
+      "id": "anastasiia-olairi-kosu",
+      "name": "Anastasiia Olairi Kosu",
+      "team": "min",
+      "jersey": "7",
+      "pos": "F",
+      "espnId": "5278237",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5278237.png"
+    },
+    "jade-masogayo": {
+      "id": "jade-masogayo",
+      "name": "Jade Masogayo",
+      "team": "min",
+      "jersey": "15",
+      "pos": "F",
+      "espnId": "5109356",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5109356.png"
+    },
+    "kayla-mcbride": {
+      "id": "kayla-mcbride",
+      "name": "Kayla McBride",
+      "team": "min",
+      "jersey": "21",
+      "pos": "G",
+      "espnId": "2529205",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2529205.png"
+    },
+    "olivia-miles": {
+      "id": "olivia-miles",
+      "name": "Olivia Miles",
+      "team": "min",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4433791",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433791.png"
+    },
+    "saylor-poffenbarger": {
+      "id": "saylor-poffenbarger",
+      "name": "Saylor Poffenbarger",
+      "team": "min",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "4433542",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433542.png"
+    },
+    "reigan-richardson": {
+      "id": "reigan-richardson",
+      "name": "Reigan Richardson",
+      "team": "min",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4433543",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433543.png"
+    },
+    "jaylyn-sherrod": {
+      "id": "jaylyn-sherrod",
+      "name": "Jaylyn Sherrod",
+      "team": "min",
+      "jersey": "00",
+      "pos": "G",
+      "espnId": "4433386",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433386.png"
+    },
+    "lani-white": {
+      "id": "lani-white",
+      "name": "Lani White",
+      "team": "min",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "5105748",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5105748.png"
+    },
+    "courtney-williams": {
+      "id": "courtney-williams",
+      "name": "Courtney Williams",
+      "team": "min",
+      "jersey": "10",
+      "pos": "G",
+      "espnId": "2987891",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2987891.png"
+    },
+    "rebecca-allen": {
+      "id": "rebecca-allen",
+      "name": "Rebecca Allen",
+      "team": "ny",
+      "jersey": "9",
+      "pos": "G",
+      "espnId": "3102133",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3102133.png"
+    },
+    "pauline-astier": {
+      "id": "pauline-astier",
+      "name": "Pauline Astier",
+      "team": "ny",
+      "jersey": "18",
+      "pos": "G",
+      "espnId": "5345320",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345320.png"
+    },
+    "raquel-carrera": {
+      "id": "raquel-carrera",
+      "name": "Raquel Carrera",
+      "team": "ny",
+      "jersey": "14",
+      "pos": "C",
+      "espnId": "4790258",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4790258.png"
+    },
+    "derin-erdogan": {
+      "id": "derin-erdogan",
+      "name": "Derin Erdogan",
+      "team": "ny",
+      "jersey": "17",
+      "pos": "G",
+      "espnId": "4703579",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4703579.png"
+    },
+    "marine-fauthoux": {
+      "id": "marine-fauthoux",
+      "name": "Marine Fauthoux",
+      "team": "ny",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4790260",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4790260.png"
+    },
+    "leonie-fiebich": {
+      "id": "leonie-fiebich",
+      "name": "Leonie Fiebich",
+      "team": "ny",
+      "jersey": "13",
+      "pos": "F",
+      "espnId": "4683006",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4683006.png"
+    },
+    "alex-fowler": {
+      "id": "alex-fowler",
+      "name": "Alex Fowler",
+      "team": "ny",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "4595823",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4595823.png"
+    },
+    "rebekah-gardner": {
+      "id": "rebekah-gardner",
+      "name": "Rebekah Gardner",
+      "team": "ny",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "2327695",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2327695.png"
+    },
+    "sabrina-ionescu": {
+      "id": "sabrina-ionescu",
+      "name": "Sabrina Ionescu",
+      "team": "ny",
+      "jersey": "20",
+      "pos": "G",
+      "espnId": "4066533",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4066533.png"
+    },
+    "marine-johannes": {
+      "id": "marine-johannes",
+      "name": "Marine Johannes",
+      "team": "ny",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4038379",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4038379.png"
+    },
+    "jonquel-jones": {
+      "id": "jonquel-jones",
+      "name": "Jonquel Jones",
+      "team": "ny",
+      "jersey": "35",
+      "pos": "C",
+      "espnId": "2999101",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2999101.png"
+    },
+    "betnijah-laney-hamilton": {
+      "id": "betnijah-laney-hamilton",
+      "name": "Betnijah Laney-Hamilton",
+      "team": "ny",
+      "jersey": "44",
+      "pos": "F",
+      "espnId": "2593770",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2593770.png"
+    },
+    "anneli-maley": {
+      "id": "anneli-maley",
+      "name": "Anneli Maley",
+      "team": "ny",
+      "jersey": "42",
+      "pos": "F",
+      "espnId": "4281930",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4281930.png"
+    },
+    "ugonne-onyiah": {
+      "id": "ugonne-onyiah",
+      "name": "Ugonne Onyiah",
+      "team": "ny",
+      "jersey": "5",
+      "pos": "C",
+      "espnId": "4433744",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433744.png"
+    },
+    "manuela-puoch": {
+      "id": "manuela-puoch",
+      "name": "Manuela Puoch",
+      "team": "ny",
+      "jersey": "",
+      "pos": "F",
+      "espnId": "5345331",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345331.png"
+    },
+    "didi-richards": {
+      "id": "didi-richards",
+      "name": "DiDi Richards",
+      "team": "ny",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "4281253",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4281253.png"
+    },
+    "satou-sabally": {
+      "id": "satou-sabally",
+      "name": "Satou Sabally",
+      "team": "ny",
+      "jersey": "0",
+      "pos": "F",
+      "espnId": "4281929",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4281929.png"
+    },
+    "annika-soltau": {
+      "id": "annika-soltau",
+      "name": "Annika Soltau",
+      "team": "ny",
+      "jersey": "",
+      "pos": "F",
+      "espnId": "5278238",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5278238.png"
+    },
+    "breanna-stewart": {
+      "id": "breanna-stewart",
+      "name": "Breanna Stewart",
+      "team": "ny",
+      "jersey": "30",
+      "pos": "F",
+      "espnId": "2998928",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2998928.png"
+    },
+    "han-xu": {
+      "id": "han-xu",
+      "name": "Han Xu",
+      "team": "ny",
+      "jersey": "21",
+      "pos": "C",
+      "espnId": "4337216",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4337216.png"
+    },
+    "monique-akoa-makani": {
+      "id": "monique-akoa-makani",
+      "name": "Monique Akoa Makani",
+      "team": "phx",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "5274110",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5274110.png"
+    },
+    "jillian-alleyne": {
+      "id": "jillian-alleyne",
+      "name": "Jillian Alleyne",
+      "team": "phx",
+      "jersey": "28",
+      "pos": "F",
+      "espnId": "2984730",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2984730.png"
+    },
+    "valeriane-ayayi": {
+      "id": "valeriane-ayayi",
+      "name": "Valeriane Ayayi",
+      "team": "phx",
+      "jersey": "11",
+      "pos": "F",
+      "espnId": "3919496",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3919496.png"
+    },
+    "dewanna-bonner": {
+      "id": "dewanna-bonner",
+      "name": "DeWanna Bonner",
+      "team": "phx",
+      "jersey": "24",
+      "pos": "F",
+      "espnId": "869",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/869.png"
+    },
+    "noemie-brochant": {
+      "id": "noemie-brochant",
+      "name": "Noemie Brochant",
+      "team": "phx",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "5345524",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345524.png"
+    },
+    "sha-carter": {
+      "id": "sha-carter",
+      "name": "Sha Carter",
+      "team": "phx",
+      "jersey": "20",
+      "pos": "G",
+      "espnId": "5107404",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5107404.png"
+    },
+    "shay-ciezki": {
+      "id": "shay-ciezki",
+      "name": "Shay Ciezki",
+      "team": "phx",
+      "jersey": "5",
+      "pos": "G",
+      "espnId": "4688629",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4688629.png"
+    },
+    "kahleah-copper": {
+      "id": "kahleah-copper",
+      "name": "Kahleah Copper",
+      "team": "phx",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "2998938",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2998938.png"
+    },
+    "kara-dunn": {
+      "id": "kara-dunn",
+      "name": "Kara Dunn",
+      "team": "phx",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "4698730",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4698730.png"
+    },
+    "lauren-jensen": {
+      "id": "lauren-jensen",
+      "name": "Lauren Jensen",
+      "team": "phx",
+      "jersey": "15",
+      "pos": "G",
+      "espnId": "4597505",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4597505.png"
+    },
+    "lee-seul-kang": {
+      "id": "lee-seul-kang",
+      "name": "Lee-Seul Kang",
+      "team": "phx",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4667986",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4667986.png"
+    },
+    "kyara-linskens": {
+      "id": "kyara-linskens",
+      "name": "Kyara Linskens",
+      "team": "phx",
+      "jersey": "31",
+      "pos": "F",
+      "espnId": "4873359",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4873359.png"
+    },
+    "natasha-mack": {
+      "id": "natasha-mack",
+      "name": "Natasha Mack",
+      "team": "phx",
+      "jersey": "4",
+      "pos": "F",
+      "espnId": "4068042",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4068042.png"
+    },
+    "morgan-maly": {
+      "id": "morgan-maly",
+      "name": "Morgan Maly",
+      "team": "phx",
+      "jersey": "30",
+      "pos": "G",
+      "espnId": "4599199",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4599199.png"
+    },
+    "jovana-nogic": {
+      "id": "jovana-nogic",
+      "name": "Jovana Nogic",
+      "team": "phx",
+      "jersey": "29",
+      "pos": "G",
+      "espnId": "3906769",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3906769.png"
+    },
+    "ines-pitarch-granel": {
+      "id": "ines-pitarch-granel",
+      "name": "Ines Pitarch-Granel",
+      "team": "phx",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "5345330",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345330.png"
+    },
+    "ashten-prechtel": {
+      "id": "ashten-prechtel",
+      "name": "Ashten Prechtel",
+      "team": "phx",
+      "jersey": "10",
+      "pos": "C",
+      "espnId": "4433634",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433634.png"
+    },
+    "eszter-ratkai": {
+      "id": "eszter-ratkai",
+      "name": "Eszter Ratkai",
+      "team": "phx",
+      "jersey": "0",
+      "pos": "G",
+      "espnId": "5345523",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345523.png"
+    },
+    "alyssa-thomas": {
+      "id": "alyssa-thomas",
+      "name": "Alyssa Thomas",
+      "team": "phx",
+      "jersey": "25",
+      "pos": "F",
+      "espnId": "2529140",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2529140.png"
+    },
+    "kathryn-westbeld": {
+      "id": "kathryn-westbeld",
+      "name": "Kathryn Westbeld",
+      "team": "phx",
+      "jersey": "9",
+      "pos": "F",
+      "espnId": "3142087",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3142087.png"
+    },
+    "sami-whitcomb": {
+      "id": "sami-whitcomb",
+      "name": "Sami Whitcomb",
+      "team": "phx",
+      "jersey": "33",
+      "pos": "G",
+      "espnId": "887",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/887.png"
+    },
+    "kiana-williams": {
+      "id": "kiana-williams",
+      "name": "Kiana Williams",
+      "team": "phx",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4282168",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4282168.png"
+    },
+    "sarah-ashlee-barker": {
+      "id": "sarah-ashlee-barker",
+      "name": "Sarah Ashlee Barker",
+      "team": "por",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "4703794",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4703794.png"
+    },
+    "chloe-bibby": {
+      "id": "chloe-bibby",
+      "name": "Chloe Bibby",
+      "team": "por",
+      "jersey": "",
+      "pos": "F",
+      "espnId": "4280877",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4280877.png"
+    },
+    "frieda-b-hner": {
+      "id": "frieda-b-hner",
+      "name": "Frieda B\u00fchner",
+      "team": "por",
+      "jersey": "",
+      "pos": "F",
+      "espnId": "5105406",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5105406.png"
+    },
+    "maya-caldwell": {
+      "id": "maya-caldwell",
+      "name": "Maya Caldwell",
+      "team": "por",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "4280850",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4280850.png"
+    },
+    "bridget-carleton": {
+      "id": "bridget-carleton",
+      "name": "Bridget Carleton",
+      "team": "por",
+      "jersey": "",
+      "pos": "F",
+      "espnId": "3906972",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3906972.png"
+    },
+    "emily-engstler": {
+      "id": "emily-engstler",
+      "name": "Emily Engstler",
+      "team": "por",
+      "jersey": "",
+      "pos": "F",
+      "espnId": "4398729",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398729.png"
+    },
+    "luisa-geiselsoder": {
+      "id": "luisa-geiselsoder",
+      "name": "Luisa Geiselsoder",
+      "team": "por",
+      "jersey": "",
+      "pos": "C",
+      "espnId": "4682797",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4682797.png"
+    },
+    "megan-gustafson": {
+      "id": "megan-gustafson",
+      "name": "Megan Gustafson",
+      "team": "por",
+      "jersey": "17",
+      "pos": "C",
+      "espnId": "3934218",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3934218.png"
+    },
+    "jordan-harrison": {
+      "id": "jordan-harrison",
+      "name": "Jordan Harrison",
+      "team": "por",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "5108051",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5108051.png"
+    },
+    "haley-jones": {
+      "id": "haley-jones",
+      "name": "Haley Jones",
+      "team": "por",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "4595910",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4595910.png"
+    },
+    "carla-leite": {
+      "id": "carla-leite",
+      "name": "Carla Leite",
+      "team": "por",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "5208982",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5208982.png"
+    },
+    "iyana-martin": {
+      "id": "iyana-martin",
+      "name": "Iyana Martin",
+      "team": "por",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "5345329",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345329.png"
+    },
+    "nika-muhl": {
+      "id": "nika-muhl",
+      "name": "Nika Muhl",
+      "team": "por",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "4433468",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433468.png"
+    },
+    "teja-oblak": {
+      "id": "teja-oblak",
+      "name": "Teja Oblak",
+      "team": "por",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "5346554",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5346554.png"
+    },
+    "nyadiew-puoch": {
+      "id": "nyadiew-puoch",
+      "name": "Nyadiew Puoch",
+      "team": "por",
+      "jersey": "",
+      "pos": "F",
+      "espnId": "5209202",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5209202.png"
+    },
+    "karlie-samuelson": {
+      "id": "karlie-samuelson",
+      "name": "Karlie Samuelson",
+      "team": "por",
+      "jersey": "44",
+      "pos": "G",
+      "espnId": "3056730",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3056730.png"
+    },
+    "kamiah-smalls": {
+      "id": "kamiah-smalls",
+      "name": "Kamiah Smalls",
+      "team": "por",
+      "jersey": "1",
+      "pos": "F",
+      "espnId": "4068346",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4068346.png"
+    },
+    "sug-sutton": {
+      "id": "sug-sutton",
+      "name": "Sug Sutton",
+      "team": "por",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "4068159",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4068159.png"
+    },
+    "serah-williams": {
+      "id": "serah-williams",
+      "name": "Serah Williams",
+      "team": "por",
+      "jersey": "",
+      "pos": "C",
+      "espnId": "5108550",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5108550.png"
+    },
+    "lexie-brown": {
+      "id": "lexie-brown",
+      "name": "Lexie Brown",
+      "team": "sea",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "3058892",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3058892.png"
+    },
+    "jaelyn-brown": {
+      "id": "jaelyn-brown",
+      "name": "Jaelyn Brown",
+      "team": "sea",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "4066527",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4066527.png"
+    },
+    "zia-cooke": {
+      "id": "zia-cooke",
+      "name": "Zia Cooke",
+      "team": "sea",
+      "jersey": "7",
+      "pos": "G",
+      "espnId": "4432832",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4432832.png"
+    },
+    "rennia-davis": {
+      "id": "rennia-davis",
+      "name": "Rennia Davis",
+      "team": "sea",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "4280888",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4280888.png"
+    },
+    "stefanie-dolson": {
+      "id": "stefanie-dolson",
+      "name": "Stefanie Dolson",
+      "team": "sea",
+      "jersey": "",
+      "pos": "C",
+      "espnId": "2529183",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2529183.png"
+    },
+    "awa-fam": {
+      "id": "awa-fam",
+      "name": "Awa Fam",
+      "team": "sea",
+      "jersey": "",
+      "pos": "C",
+      "espnId": "5345325",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345325.png"
+    },
+    "natisha-hiedeman": {
+      "id": "natisha-hiedeman",
+      "name": "Natisha Hiedeman",
+      "team": "sea",
+      "jersey": "2",
+      "pos": "G",
+      "espnId": "3906753",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3906753.png"
+    },
+    "mackenzie-holmes": {
+      "id": "mackenzie-holmes",
+      "name": "Mackenzie Holmes",
+      "team": "sea",
+      "jersey": "54",
+      "pos": "F",
+      "espnId": "4433643",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433643.png"
+    },
+    "jordan-horston": {
+      "id": "jordan-horston",
+      "name": "Jordan Horston",
+      "team": "sea",
+      "jersey": "23",
+      "pos": "G",
+      "espnId": "4432830",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4432830.png"
+    },
+    "flau-jae-johnson": {
+      "id": "flau-jae-johnson",
+      "name": "Flau'jae Johnson",
+      "team": "sea",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "4698736",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4698736.png"
+    },
+    "ezi-magbegor": {
+      "id": "ezi-magbegor",
+      "name": "Ezi Magbegor",
+      "team": "sea",
+      "jersey": "13",
+      "pos": "F",
+      "espnId": "4420318",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4420318.png"
+    },
+    "taina-mair": {
+      "id": "taina-mair",
+      "name": "Taina Mair",
+      "team": "sea",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "5106222",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5106222.png"
+    },
+    "dominique-malonga": {
+      "id": "dominique-malonga",
+      "name": "Dominique Malonga",
+      "team": "sea",
+      "jersey": "14",
+      "pos": "C",
+      "espnId": "5220150",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5220150.png"
+    },
+    "jade-melbourne": {
+      "id": "jade-melbourne",
+      "name": "Jade Melbourne",
+      "team": "sea",
+      "jersey": "",
+      "pos": "G",
+      "espnId": "5017726",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5017726.png"
+    },
+    "katie-lou-samuelson": {
+      "id": "katie-lou-samuelson",
+      "name": "Katie Lou Samuelson",
+      "team": "sea",
+      "jersey": "33",
+      "pos": "F",
+      "espnId": "3917453",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3917453.png"
+    },
+    "grace-vanslooten": {
+      "id": "grace-vanslooten",
+      "name": "Grace VanSlooten",
+      "team": "sea",
+      "jersey": "",
+      "pos": "F",
+      "espnId": "5105731",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5105731.png"
+    },
+    "julie-allemand": {
+      "id": "julie-allemand",
+      "name": "Julie Allemand",
+      "team": "tor",
+      "jersey": "22",
+      "pos": "G",
+      "espnId": "4001679",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4001679.png"
+    },
+    "elizabeth-balogun": {
+      "id": "elizabeth-balogun",
+      "name": "Elizabeth Balogun",
+      "team": "tor",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "4398589",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398589.png"
+    },
+    "maria-conde": {
+      "id": "maria-conde",
+      "name": "Maria Conde",
+      "team": "tor",
+      "jersey": "10",
+      "pos": "F",
+      "espnId": "3910470",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3910470.png"
+    },
+    "charlise-dunn": {
+      "id": "charlise-dunn",
+      "name": "Charlise Dunn",
+      "team": "tor",
+      "jersey": "",
+      "pos": "F",
+      "espnId": "5107752",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5107752.png"
+    },
+    "temi-fagbenle": {
+      "id": "temi-fagbenle",
+      "name": "Temi Fagbenle",
+      "team": "tor",
+      "jersey": "14",
+      "pos": "C",
+      "espnId": "2569044",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2569044.png"
+    },
+    "isabelle-harrison": {
+      "id": "isabelle-harrison",
+      "name": "Isabelle Harrison",
+      "team": "tor",
+      "jersey": "21",
+      "pos": "F",
+      "espnId": "2566453",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2566453.png"
+    },
+    "lexi-held": {
+      "id": "lexi-held",
+      "name": "Lexi Held",
+      "team": "tor",
+      "jersey": "12",
+      "pos": "G",
+      "espnId": "4399342",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4399342.png"
+    },
+    "laura-juskaite": {
+      "id": "laura-juskaite",
+      "name": "Laura Juskaite",
+      "team": "tor",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "5345444",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345444.png"
+    },
+    "teonni-key": {
+      "id": "teonni-key",
+      "name": "Teonni Key",
+      "team": "tor",
+      "jersey": "0",
+      "pos": "F",
+      "espnId": "4434020",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4434020.png"
+    },
+    "kitija-laksa": {
+      "id": "kitija-laksa",
+      "name": "Kitija Laksa",
+      "team": "tor",
+      "jersey": "33",
+      "pos": "G",
+      "espnId": "3920741",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3920741.png"
+    },
+    "marina-mabrey": {
+      "id": "marina-mabrey",
+      "name": "Marina Mabrey",
+      "team": "tor",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "3904576",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3904576.png"
+    },
+    "nikolina-milic": {
+      "id": "nikolina-milic",
+      "name": "Nikolina Milic",
+      "team": "tor",
+      "jersey": "31",
+      "pos": "F",
+      "espnId": "4874475",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4874475.png"
+    },
+    "kia-nurse": {
+      "id": "kia-nurse",
+      "name": "Kia Nurse",
+      "team": "tor",
+      "jersey": "11",
+      "pos": "G",
+      "espnId": "3142327",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/3142327.png"
+    },
+    "aaliyah-nye": {
+      "id": "aaliyah-nye",
+      "name": "Aaliyah Nye",
+      "team": "tor",
+      "jersey": "13",
+      "pos": "G",
+      "espnId": "4597509",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4597509.png"
+    },
+    "kiki-rice": {
+      "id": "kiki-rice",
+      "name": "Kiki Rice",
+      "team": "tor",
+      "jersey": "1",
+      "pos": "G",
+      "espnId": "4565505",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4565505.png"
+    },
+    "nyara-sabally": {
+      "id": "nyara-sabally",
+      "name": "Nyara Sabally",
+      "team": "tor",
+      "jersey": "8",
+      "pos": "C",
+      "espnId": "4398768",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398768.png"
+    },
+    "saffron-shiels": {
+      "id": "saffron-shiels",
+      "name": "Saffron Shiels",
+      "team": "tor",
+      "jersey": "",
+      "pos": "C",
+      "espnId": "5345334",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5345334.png"
+    },
+    "brittney-sykes": {
+      "id": "brittney-sykes",
+      "name": "Brittney Sykes",
+      "team": "tor",
+      "jersey": "20",
+      "pos": "G",
+      "espnId": "2988756",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/2988756.png"
+    },
+    "georgia-amoore": {
+      "id": "georgia-amoore",
+      "name": "Georgia Amoore",
+      "team": "wsh",
+      "jersey": "8",
+      "pos": "G",
+      "espnId": "4704180",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4704180.png"
+    },
+    "shakira-austin": {
+      "id": "shakira-austin",
+      "name": "Shakira Austin",
+      "team": "wsh",
+      "jersey": "0",
+      "pos": "F",
+      "espnId": "4398911",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4398911.png"
+    },
+    "lauren-betts": {
+      "id": "lauren-betts",
+      "name": "Lauren Betts",
+      "team": "wsh",
+      "jersey": "51",
+      "pos": "C",
+      "espnId": "5105737",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5105737.png"
+    },
+    "sonia-citron": {
+      "id": "sonia-citron",
+      "name": "Sonia Citron",
+      "team": "wsh",
+      "jersey": "22",
+      "pos": "G",
+      "espnId": "4433524",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433524.png"
+    },
+    "angela-dugalic": {
+      "id": "angela-dugalic",
+      "name": "Angela Dugalic",
+      "team": "wsh",
+      "jersey": "32",
+      "pos": "F",
+      "espnId": "4433411",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433411.png"
+    },
+    "rori-harmon": {
+      "id": "rori-harmon",
+      "name": "Rori Harmon",
+      "team": "wsh",
+      "jersey": "3",
+      "pos": "G",
+      "espnId": "4433523",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433523.png"
+    },
+    "nyla-harris": {
+      "id": "nyla-harris",
+      "name": "Nyla Harris",
+      "team": "wsh",
+      "jersey": "2",
+      "pos": "F",
+      "espnId": "4565510",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4565510.png"
+    },
+    "kiki-iriafen": {
+      "id": "kiki-iriafen",
+      "name": "Kiki Iriafen",
+      "team": "wsh",
+      "jersey": "44",
+      "pos": "F",
+      "espnId": "4898384",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4898384.png"
+    },
+    "christeen-iwuala": {
+      "id": "christeen-iwuala",
+      "name": "Christeen Iwuala",
+      "team": "wsh",
+      "jersey": "7",
+      "pos": "F",
+      "espnId": "4682992",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4682992.png"
+    },
+    "darianna-littlepage-buggs": {
+      "id": "darianna-littlepage-buggs",
+      "name": "Darianna Littlepage-Buggs",
+      "team": "wsh",
+      "jersey": "5",
+      "pos": "F",
+      "espnId": "5106145",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5106145.png"
+    },
+    "cotie-mcmahon": {
+      "id": "cotie-mcmahon",
+      "name": "Cotie McMahon",
+      "team": "wsh",
+      "jersey": "23",
+      "pos": "F",
+      "espnId": "4583144",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4583144.png"
+    },
+    "lucy-olsen": {
+      "id": "lucy-olsen",
+      "name": "Lucy Olsen",
+      "team": "wsh",
+      "jersey": "33",
+      "pos": "G",
+      "espnId": "4433815",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433815.png"
+    },
+    "michaela-onyenwere": {
+      "id": "michaela-onyenwere",
+      "name": "Michaela Onyenwere",
+      "team": "wsh",
+      "jersey": "12",
+      "pos": "F",
+      "espnId": "4282173",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4282173.png"
+    },
+    "cassandre-prosper": {
+      "id": "cassandre-prosper",
+      "name": "Cassandre Prosper",
+      "team": "wsh",
+      "jersey": "18",
+      "pos": "G",
+      "espnId": "5122345",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5122345.png"
+    },
+    "madison-scott": {
+      "id": "madison-scott",
+      "name": "Madison Scott",
+      "team": "wsh",
+      "jersey": "24",
+      "pos": "G",
+      "espnId": "4433416",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/4433416.png"
+    },
+    "alex-wilson": {
+      "id": "alex-wilson",
+      "name": "Alex Wilson",
+      "team": "wsh",
+      "jersey": "4",
+      "pos": "G",
+      "espnId": "5278157",
+      "headshot": "https://a.espncdn.com/i/headshots/wnba/players/full/5278157.png"
+    }
+  }
+}

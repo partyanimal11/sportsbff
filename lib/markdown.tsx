@@ -8,8 +8,19 @@ import { usePlayerOverlay } from './player-overlay-context';
 /**
  * Tiny markdown renderer for chat messages.
  * Handles: **bold**, *italic*, line breaks, bullet lists, inline code.
- * Bonus: detects known player names and links them to /player/[slug].
+ *
+ * 2026-05-02 v1: player-name auto-linking is DISABLED. Aaron's directive:
+ * "right now its kind of all over the place, linking random words- we can
+ * make v.1 super simple wrapper." The auto-linker was matching common words
+ * that happen to be player surnames (Bell, Hill, Wood, etc.) and turning
+ * chat replies into a sea of orange underlines. Player profile pages are
+ * still reachable via /player/[slug] and from scan-result follow-ups.
+ *
+ * Set ENABLE_PLAYER_AUTOLINK = true to bring it back when we have a smarter
+ * matcher (e.g. only linking inside `[Name](slug)` markdown anchors instead
+ * of full-text scanning).
  */
+const ENABLE_PLAYER_AUTOLINK = false;
 
 // Pre-compute the player name lookup table (longest names first so multi-word
 // names like "Patrick Mahomes" win over "Mahomes" alone).
@@ -122,6 +133,10 @@ function renderInline(text: string, openOverlay: ((slug: string) => void) | null
  *  - a Link to /player/[slug] (everywhere else)
  */
 function linkifyPlayers(text: string, nextKey: () => number, openOverlay: ((slug: string) => void) | null): React.ReactNode {
+  // v1 simple-wrapper: skip auto-linking entirely. Just emit the text.
+  // (See ENABLE_PLAYER_AUTOLINK comment at top of file.)
+  if (!ENABLE_PLAYER_AUTOLINK) return text;
+
   const out: React.ReactNode[] = [];
   let cursor = 0;
   while (cursor < text.length) {
