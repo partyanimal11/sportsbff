@@ -2,35 +2,53 @@
  * POST /api/scan/game
  *
  * Game-scan / scoreboard recognition. User points their phone at a TV
- * scorebug; we extract team codes + scores + clock, then return the FULL
- * active rosters of both teams so they can tap any player to learn them.
+ * scorebug; we extract team codes + scores + clock, then return everything
+ * needed to watch this game like an informed fan: matchup, both rosters with
+ * per-player tea, plain-English game state explainer, and the top tea cards
+ * for the matchup overall.
+ *
+ * THIS IS THE V1 HERO ENDPOINT. After legal review of face-recognition
+ * exposure (see TEA_APP_TECHNICAL_HANDOFF.md), scoreboard scan replaces
+ * face scan as the primary scan flow — it sidesteps biometric law entirely
+ * (it's just OCR on a graphic), is more reliable, and gives a richer answer.
  *
  * Request: multipart/form-data with field `image` = JPEG/PNG bytes.
  *
- * Response shape:
+ * Response shape (matched / happy path):
  * {
- *   "league": "nba" | "nfl" | "wnba" | "unknown",
+ *   "league": "nba" | "nfl" | "wnba",
  *   "matchup": {
  *     "home": { "team": "PHI", "name": "Philadelphia 76ers", "score": 102 },
- *     "away": { "team": "MIA", "name": "Miami Heat", "score": 98 },
- *     "clock": "4Q 2:14",
- *     "period": 4
+ *     "away": { "team": "MIA", "name": "Miami Heat",        "score": 98 },
+ *     "clock": "2:14", "period": 4, "period_label": "4Q"
  *   },
  *   "rosters": {
- *     "home": [ { "id", "name", "jersey", "pos", "headshot" } ],
+ *     "home": [{ id, name, jersey, pos, headshot, tea: [...], hasTea }],
  *     "away": [ ... ]
  *   },
- *   "blurb": "Sixers up 4 in the closing minutes — Embiid + Maxey carrying."
+ *   "blurb": "Sixers up 4 in the closing minutes — Embiid + Maxey carrying.",
+ *   "explainer": {
+ *     "whats_happening": "Sixers up 4, 4Q · 2:14 left.",
+ *     "rules_explainer": "Basketball games are 4 quarters... Under 3 minutes left — crunch time...",
+ *     "close_game": true
+ *   },
+ *   "matchup_tea": [   // top 5 tier-sorted tea cards across both rosters
+ *     { player_id, player_name, team, headshot, tier, category, headline, summary, source }
+ *   ],
+ *   "stats": { home_roster_size, away_roster_size, total_tea_items, ... }
  * }
  *
- * If we can't read a scorebug confidently, returns:
- * { "error": "no_scoreboard", "message": "Couldn't read a scoreboard..." }
+ * Error shapes (all 200 OK with error field for graceful client handling):
+ *   { "error": "no_scoreboard" | "unknown_teams" | "vision_error" | "no_key", "message": "..." }
  *
  * 2026-05-04: scaffolded as the "I'm at the bar, what's the lineup" feature.
+ * 2026-05-05: extended with per-player tea + rules explainer + matchup_tea
+ *             after pivoting away from face scan to scoreboard-first.
  */
 import { NextRequest } from 'next/server';
 import { getOpenAI, MODELS, hasOpenAIKey } from '@/lib/openai';
 import rostersData from '@/data/rosters.json';
+import gossipData from '@/data/players-gossip.json';
 import { getFaceEntry } from '@/lib/face-match';
 
 export const runtime = 'nodejs';
@@ -51,6 +69,52 @@ export async function OPTIONS() {
 type RosterPlayer = { id: string; jersey: string; pos: string };
 type RostersFile = { rosters: Record<string, RosterPlayer[]> };
 const ROSTERS = (rostersData as RostersFile).rosters;
+
+type GossipSource = { name: string; url: string; date: string };
+type GossipItem = {
+  id: string;
+  tier: 'confirmed' | 'reported' | 'speculation' | 'rumor';
+  category: string;
+  headline: string;
+  summary: string;
+  sources: GossipSource[];
+};
+type GossipPlayer = {
+  player_id: string;
+  name: string;
+  team: string;
+  league: string;
+  items: GossipItem[];
+};
+const GOSSIP: Record<string, GossipPlayer> = gossipData as Record<string, GossipPlayer>;
+
+/**
+ * Pick the top N tea items for a player, preferring higher-tier (confirmed >
+ * reported > speculation > rumor). Used to surface the most-defensible
+ * drama on each roster card.
+ */
+const TIER_RANK: Record<string, number> = { confirmed: 4, reported: 3, speculation: 2, rumor: 1 };
+function pickTopTea(items: GossipItem[], n: number): GossipItem[] {
+  return [...items]
+    .sort((a, b) => (TIER_RANK[b.tier] || 0) - (TIER_RANK[a.tier] || 0))
+    .slice(0, n);
+}
+
+/**
+ * Slug → display name fallback when the player isn't in the gossip DB.
+ * Roster has e.g. id "patrick-mahomes" but no full-name field; capitalize
+ * each token. Suffixes like "ii"/"iii"/"jr" get uppercased properly.
+ */
+function nameFromSlug(slug: string): string {
+  return slug
+    .split('-')
+    .map((s) => {
+      if (s === 'ii' || s === 'iii' || s === 'iv') return s.toUpperCase();
+      if (s === 'jr' || s === 'sr') return s.charAt(0).toUpperCase() + s.slice(1) + '.';
+      return s.charAt(0).toUpperCase() + s.slice(1);
+    })
+    .join(' ');
+}
 
 /**
  * Map the team name + 3-letter abbrev that vision returns to our short
@@ -156,25 +220,119 @@ function lookupTeam(input?: string | null): { league: string; code: string; full
 }
 
 /**
- * Enrich a roster with face headshots when available (cross-checks our
- * face indexes by player ID slug).
+ * Enrich a roster with face headshots + per-player tea snippets. Each player
+ * comes back with up to 2 top-tier tea items pulled from the gossip DB so the
+ * client can render drama-tagged player cards directly without a follow-up
+ * API call. Players not in the gossip DB just get an empty `tea` array.
  */
 function enrichRoster(league: string, teamCode: string) {
   const key = `${league}/${teamCode}`;
   const players = ROSTERS[key] ?? [];
   return players.map((p) => {
     const face = getFaceEntry(p.id);
+    const gossip = GOSSIP[p.id];
+    const teaItems = gossip ? pickTopTea(gossip.items, 2) : [];
     return {
       id: p.id,
-      name: p.id
-        .split('-')
-        .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
-        .join(' '),
+      name: gossip?.name || nameFromSlug(p.id),
       jersey: p.jersey,
       pos: p.pos,
       headshot: face?.headshot ?? null,
+      tea: teaItems.map((it) => ({
+        tier: it.tier,
+        category: it.category,
+        headline: it.headline,
+        summary: it.summary.length > 200 ? it.summary.slice(0, 197) + '...' : it.summary,
+        // Truncate sources to first one for compactness; client can fetch full /api/player/[id] for more
+        source: it.sources[0]
+          ? { name: it.sources[0].name, url: it.sources[0].url, date: it.sources[0].date }
+          : null,
+      })),
+      hasTea: teaItems.length > 0,
     };
   });
+}
+
+/**
+ * Decode the current game state ("4Q 2:14", "Q3 8:45", etc.) into a plain-
+ * English description. Pure function — no LLM, no cost, no latency.
+ */
+function explainGameState(
+  league: string,
+  period: number,
+  periodLabel: string,
+  clock: string,
+  homeScore: number,
+  awayScore: number,
+  homeName: string,
+  awayName: string,
+): { whats_happening: string; rules_explainer: string; close_game: boolean } {
+  const gap = Math.abs(homeScore - awayScore);
+  const closeGame = gap <= 5;
+  const winning = homeScore > awayScore ? homeName : awayName;
+  const losing = homeScore > awayScore ? awayName : homeName;
+
+  // Period semantics differ by league
+  const isFinalQuarter =
+    (league === 'nba' && period >= 4) ||
+    (league === 'wnba' && period >= 4) ||
+    (league === 'nfl' && period >= 4);
+
+  // Build "what's happening" — short narrative
+  const periodPretty = periodLabel || (period > 0 ? `Q${period}` : '');
+  let happening: string;
+  if (gap === 0) {
+    happening = `Tied at ${homeScore}, ${periodPretty}${clock ? ` · ${clock} left` : ''}.`;
+  } else {
+    happening = `${winning} up ${gap}, ${periodPretty}${clock ? ` · ${clock} left` : ''}.`;
+  }
+
+  // Build rules explainer — what does this state actually mean?
+  const ex: string[] = [];
+  if (league === 'nba' || league === 'wnba') {
+    const totalQ = 4;
+    if (period && period <= totalQ) {
+      ex.push(`Basketball games are ${totalQ} quarters of ${league === 'nba' ? '12' : '10'} minutes each.`);
+    }
+    if (isFinalQuarter && clock) {
+      const [m] = clock.split(':');
+      const minLeft = parseInt(m, 10);
+      if (!isNaN(minLeft)) {
+        if (minLeft <= 2) ex.push(`Under ${minLeft + 1} minutes left — this is "crunch time," every possession matters.`);
+        else if (minLeft <= 6) ex.push(`Final stretch of the game. Coaches start managing fouls + timeouts.`);
+      }
+    }
+    if (closeGame && isFinalQuarter) {
+      ex.push(`Within ${gap} points in the 4th quarter — one good run can flip it.`);
+    } else if (gap >= 20) {
+      ex.push(`${gap}-point gap. Likely a "garbage time" stretch — bench players in.`);
+    }
+  } else if (league === 'nfl') {
+    if (period && period <= 4) {
+      ex.push(`Football is 4 quarters of 15 minutes each. Halftime is between Q2 and Q3.`);
+    }
+    if (period === 4 && clock) {
+      const [m] = clock.split(':');
+      const minLeft = parseInt(m, 10);
+      if (!isNaN(minLeft) && minLeft <= 2) {
+        ex.push(`Under 2 minutes left — the "two-minute warning" stops the clock automatically.`);
+      } else if (!isNaN(minLeft) && minLeft <= 5) {
+        ex.push(`Under 5 minutes — leading team will try to "run out the clock" with running plays.`);
+      }
+    }
+    if (closeGame && period >= 4) {
+      ex.push(`${gap}-point gap in the 4th — one touchdown drive can change everything.`);
+    }
+    if (period >= 5) {
+      ex.push(`Overtime. NFL OT rules: 10 minutes, both teams get a possession unless first team scores TD.`);
+    }
+  }
+
+  return {
+    whats_happening: happening,
+    rules_explainer: ex.join(' ') || `${periodPretty}${clock ? `, ${clock} left` : ''} in ${league.toUpperCase()} action.`,
+    close_game: closeGame,
+  };
 }
 
 const SYSTEM_PROMPT = `You are sportsBFF's scoreboard analyst. Read the on-screen scorebug and return a structured matchup.
@@ -308,9 +466,58 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Pull rosters
+  // Pull rosters with per-player tea snippets
   const homeRoster = enrichRoster(league, home.code);
   const awayRoster = enrichRoster(league, away.code);
+
+  // Decode current game state into plain English
+  const explainer = explainGameState(
+    league,
+    parsed.period,
+    parsed.period_label,
+    parsed.clock,
+    parsed.home_score,
+    parsed.away_score,
+    home.full,
+    away.full,
+  );
+
+  // Surface "the tea" for THIS matchup — collect all players with tea, sort
+  // by tier rank, take the top N. This is what the watch-along result card
+  // headlines: "what should I know about this game right now."
+  type TeaCard = {
+    player_id: string;
+    player_name: string;
+    team: string;
+    headshot: string | null;
+    tier: string;
+    category: string;
+    headline: string;
+    summary: string;
+    source: { name: string; url: string; date: string } | null;
+  };
+  const matchupTea: TeaCard[] = [];
+  for (const side of ['home', 'away'] as const) {
+    const roster = side === 'home' ? homeRoster : awayRoster;
+    const teamCode = side === 'home' ? home.code.toUpperCase() : away.code.toUpperCase();
+    for (const p of roster) {
+      for (const t of p.tea) {
+        matchupTea.push({
+          player_id: p.id,
+          player_name: p.name,
+          team: teamCode,
+          headshot: p.headshot,
+          tier: t.tier,
+          category: t.category,
+          headline: t.headline,
+          summary: t.summary,
+          source: t.source,
+        });
+      }
+    }
+  }
+  matchupTea.sort((a, b) => (TIER_RANK[b.tier] || 0) - (TIER_RANK[a.tier] || 0));
+  const topMatchupTea = matchupTea.slice(0, 5);
 
   return new Response(
     JSON.stringify({
@@ -323,7 +530,24 @@ export async function POST(req: NextRequest) {
         period_label: parsed.period_label,
       },
       rosters: { home: homeRoster, away: awayRoster },
+      // What's happening, in 1-2 sentences (vision-generated)
       blurb: parsed.blurb,
+      // Plain-English game state explainer (deterministic, no LLM cost)
+      explainer: {
+        whats_happening: explainer.whats_happening,
+        rules_explainer: explainer.rules_explainer,
+        close_game: explainer.close_game,
+      },
+      // Top 5 tea cards for this matchup — "what to talk about while watching"
+      matchup_tea: topMatchupTea,
+      // Counts for client decisions
+      stats: {
+        home_roster_size: homeRoster.length,
+        away_roster_size: awayRoster.length,
+        home_players_with_tea: homeRoster.filter((p) => p.hasTea).length,
+        away_players_with_tea: awayRoster.filter((p) => p.hasTea).length,
+        total_tea_items: matchupTea.length,
+      },
     }),
     {
       status: 200,

@@ -186,7 +186,7 @@ function Hero() {
             </p>
 
             <p className="mt-5 text-[16px] sm:text-[17px] text-ink-soft leading-relaxed max-w-md">
-              Scan any TV or image to learn <strong className="text-ink">the players, the rules, and the storylines.</strong> Flip Tea'd Up on for the gossip.
+              Point your camera at the scorebug. Get <strong className="text-ink">the matchup, the players, the rules, and the tea</strong> — explained however you need to follow along.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3 items-center">
@@ -253,7 +253,7 @@ function Hero() {
             </div>
 
             <div className="font-script text-magenta-dusty text-[14px] sm:text-[15px] rotate-[-2deg] text-center mt-6">
-              scan any player → get the {demoTeaUp ? 'tea' : 'breakdown'} ✏
+              scan the scorebug → get the {demoTeaUp ? 'tea' : 'breakdown'} ✏
             </div>
           </div>
         </div>
@@ -500,10 +500,10 @@ function ScanScene() {
             ① Scan
           </div>
           <h2 className="font-display text-[32px] sm:text-[44px] md:text-[52px] font-bold text-green leading-[1.04] tracking-tight">
-            Point your camera at any TV, scan a screenshot, snap a poster — works on all things sports.
+            Point at the scorebug. Get everything you need to follow along.
           </h2>
           <p className="mt-5 font-display italic text-[22px] sm:text-[26px] md:text-[30px] font-medium text-tangerine leading-tight tracking-tight">
-            Every player decoded in seconds.
+            The matchup, the rosters, the rules, the tea — one tap.
           </p>
         </div>
 
@@ -611,8 +611,8 @@ function ScanIdleMockup() {
           </div>
         </div>
         <div className="mt-4 text-center">
-          <div className="font-display font-bold text-[16px] text-green leading-tight">Scan a player.</div>
-          <div className="text-[12px] text-ink-soft mt-1 italic">Get the tea.</div>
+          <div className="font-display font-bold text-[16px] text-green leading-tight">Scan the score.</div>
+          <div className="text-[12px] text-ink-soft mt-1 italic">Get everything.</div>
         </div>
       </div>
       <style jsx>{`
