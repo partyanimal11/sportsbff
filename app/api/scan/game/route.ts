@@ -121,11 +121,25 @@ function nameFromSlug(slug: string): string {
  * Map the team name + 3-letter abbrev that vision returns to our short
  * roster code. Vision outputs vary: "PHI", "76ers", "Sixers", "Philadelphia",
  * "Philadelphia 76ers", or even broadcast scorebug forms like "PHILA".
+ *
+ * 2026-05-05: refactored to per-league lookup. Many 3-letter abbrevs are
+ * shared across leagues (PHI = NBA 76ers + NFL Eagles; ATL = Hawks +
+ * Falcons + Dream; CHI = Bulls + Bears + Sky; LAC = Clippers + Chargers).
+ * Previously the last-registered league won, which broke abbrev-only NBA
+ * scorebugs like "BOS 102 PHI 98" (mapped PHI → NFL Eagles → cross_league
+ * error). Now we register every (league, alias) pair separately and the
+ * lookup function prefers the leagueHint passed by vision.
  */
-const NAME_TO_CODE: Record<string, { league: string; code: string; full: string }> = {};
+type TeamInfo = { league: string; code: string; full: string };
+const NAME_TO_CODES: Record<string, TeamInfo[]> = {};
 function reg(league: string, code: string, full: string, ...aliases: string[]) {
   for (const a of [code, full, ...aliases]) {
-    NAME_TO_CODE[a.toLowerCase()] = { league, code, full };
+    const key = a.toLowerCase();
+    if (!NAME_TO_CODES[key]) NAME_TO_CODES[key] = [];
+    // Don't register the same (league, code) twice
+    if (!NAME_TO_CODES[key].some((t) => t.league === league && t.code === code)) {
+      NAME_TO_CODES[key].push({ league, code, full });
+    }
   }
 }
 // NBA 30
@@ -209,15 +223,58 @@ reg('wnba', 'sea', 'Seattle Storm', 'storm');
 reg('wnba', 'tor', 'Toronto Tempo', 'tempo');
 reg('wnba', 'wsh', 'Washington Mystics', 'mystics');
 
-function lookupTeam(input?: string | null): { league: string; code: string; full: string } | null {
+/**
+ * Look up a team by vision's reported name/abbrev. Prefers `leagueHint`
+ * (vision's reported league) when an abbrev is shared across leagues.
+ *
+ * Examples of shared abbrevs:
+ *   PHI → NBA 76ers OR NFL Eagles
+ *   ATL → NBA Hawks OR NFL Falcons OR WNBA Dream
+ *   CHI → NBA Bulls OR NFL Bears OR WNBA Sky
+ *   LAC → NBA Clippers OR NFL Chargers
+ *   MIA → NBA Heat OR NFL Dolphins
+ *   IND → NBA Pacers OR NFL Colts OR WNBA Fever
+ *   MIN → NBA Wolves OR NFL Vikings OR WNBA Lynx
+ *   NO  → NBA Pelicans OR NFL Saints
+ *   NY  → NBA Knicks OR WNBA Liberty
+ *   DAL → NBA Mavs OR NFL Cowboys OR WNBA Wings
+ */
+function lookupTeam(
+  input: string | null | undefined,
+  leagueHint?: string | null,
+): TeamInfo | null {
   if (!input) return null;
   const k = input.toLowerCase().trim();
-  if (NAME_TO_CODE[k]) return NAME_TO_CODE[k];
-  // Substring fallback
-  for (const [name, info] of Object.entries(NAME_TO_CODE)) {
-    if (name.length >= 3 && (k.includes(name) || name.includes(k))) return info;
+  const hint = (leagueHint ?? '').toLowerCase().trim();
+
+  function preferByLeague(matches: TeamInfo[]): TeamInfo | null {
+    if (matches.length === 0) return null;
+    if (matches.length === 1) return matches[0];
+    if (hint) {
+      const m = matches.find((t) => t.league === hint);
+      if (m) return m;
+    }
+    // No league hint or no match — fall back to first registered (NBA usually,
+    // since NBA is registered first in this file)
+    return matches[0];
   }
-  return null;
+
+  // 1. Direct hit
+  if (NAME_TO_CODES[k]) {
+    return preferByLeague(NAME_TO_CODES[k]);
+  }
+  // 2. Substring fallback — find all aliases that contain or are contained by input
+  const fuzzyMatches: TeamInfo[] = [];
+  for (const [name, infos] of Object.entries(NAME_TO_CODES)) {
+    if (name.length >= 3 && (k.includes(name) || name.includes(k))) {
+      for (const info of infos) {
+        if (!fuzzyMatches.some((m) => m.league === info.league && m.code === info.code)) {
+          fuzzyMatches.push(info);
+        }
+      }
+    }
+  }
+  return preferByLeague(fuzzyMatches);
 }
 
 /**
@@ -340,6 +397,31 @@ const SYSTEM_PROMPT = `You are sportsBFF's scoreboard analyst. Read the on-scree
 
 A "scorebug" is the small overlay graphic that broadcasts use to display the current score, team logos, time/clock, and quarter/period of a live game. They appear on the corner of TV broadcasts of NFL, NBA, and WNBA games.
 
+LENIENT READING — commit on partial scorebugs:
+Most TV scorebugs only show 3-letter team abbrevs ("BOS", "PHI", "MIA", "KC", "NYK"), team logos, and scores. They often DON'T spell out full team names. That's fine — return the abbrev as you see it. Examples:
+  - "BOS 102 PHI 98 4Q 2:14" → home_team: "PHI", away_team: "BOS", scores 98 / 102, league: "nba" (basketball context)
+  - "KC 24 DAL 17" with NFL field visible → home_team: depends on layout, league: "nfl"
+  - "IND 60 CHI 55" with WNBA court markings → league: "wnba"
+
+DETERMINING LEAGUE — critical:
+You MUST return a league. Use these signals in order:
+  1. Court / field visible: hardwood + 3-pt arc = nba/wnba; football field = nfl
+  2. Score patterns: NFL scores in 7s/3s/multiples (7, 14, 17, 24); NBA scores 80-130; WNBA scores 60-100
+  3. Period labels: "Q1-Q4" or "1H/2H" = NFL or college; quarter numbers + "min:sec" clock with sub-15-min = NBA/WNBA
+  4. Visible logos / team colors / arena
+  5. Player jerseys (basketball jerseys vs football pads)
+If genuinely unclear, prefer "nba" as the most-common live broadcast.
+
+DO commit on:
+  - Just abbrevs + scores (no clock visible) → set clock: ""
+  - Just team logos + scores (you can identify the teams from the logos)
+  - Halftime / final / pregame scorebugs (set clock: "" or period_label: "Halftime"/"Final")
+  - Scoreboards from highlights / replays (still readable as scorebugs)
+
+DO NOT commit (return is_scoreboard: false) only when:
+  - The image is clearly a regular photo (no scorebug overlay at all)
+  - You can't read ANY teams or scores
+
 Return JSON with this exact shape:
 {
   "is_scoreboard": true | false,        // true if you can read a scorebug, false otherwise
@@ -440,9 +522,10 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Resolve teams
-  const home = lookupTeam(parsed.home_team);
-  const away = lookupTeam(parsed.away_team);
+  // Resolve teams — pass vision's league hint so PHI/ATL/CHI etc. resolve
+  // to the right league instead of whichever was registered last.
+  const home = lookupTeam(parsed.home_team, parsed.league);
+  const away = lookupTeam(parsed.away_team, parsed.league);
 
   if (!home || !away) {
     return new Response(

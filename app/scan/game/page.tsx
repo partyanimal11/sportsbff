@@ -12,7 +12,7 @@
  * project_session_2026_05_05_scorebug_pivot.md).
  */
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
 /* ─────────────────── types (mirror /api/scan/game) ─────────────────── */
@@ -133,8 +133,9 @@ export default function GameScanPage() {
       <Header />
 
       {!result && !loading && (
-        <Hero
-          onPick={() => fileRef.current?.click()}
+        <ScanCamera
+          onCapture={handleFile}
+          onPickFromLibrary={() => fileRef.current?.click()}
           error={error}
           onRetry={() => setError(null)}
         />
@@ -148,7 +149,6 @@ export default function GameScanPage() {
         ref={fileRef}
         type="file"
         accept="image/*"
-        capture="environment"
         className="hidden"
         onChange={(e) => {
           const f = e.target.files?.[0];
@@ -193,54 +193,220 @@ function Header() {
   );
 }
 
-/* ─────────────────── hero / upload ─────────────────── */
-function Hero({
-  onPick,
+/* ─────────────────── live camera viewfinder ─────────────────── */
+function ScanCamera({
+  onCapture,
+  onPickFromLibrary,
   error,
   onRetry,
 }: {
-  onPick: () => void;
+  onCapture: (file: File) => void;
+  onPickFromLibrary: () => void;
   error: string | null;
   onRetry: () => void;
 }) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const streamRef = useRef<MediaStream | null>(null);
+  const [cameraState, setCameraState] = useState<'idle' | 'requesting' | 'live' | 'denied' | 'unavailable'>('idle');
+  const [cameraError, setCameraError] = useState<string | null>(null);
+
+  // Start the camera. Async so we can await getUserMedia.
+  async function startCamera() {
+    setCameraState('requesting');
+    setCameraError(null);
+    try {
+      if (!navigator.mediaDevices?.getUserMedia) {
+        setCameraState('unavailable');
+        setCameraError('Your browser doesn\'t support live camera access. Use the upload option below.');
+        return;
+      }
+      const stream = await navigator.mediaDevices.getUserMedia({
+        video: {
+          facingMode: { ideal: 'environment' }, // back camera on phones
+          width: { ideal: 1280 },
+          height: { ideal: 720 },
+        },
+        audio: false,
+      });
+      streamRef.current = stream;
+      if (videoRef.current) {
+        videoRef.current.srcObject = stream;
+        await videoRef.current.play();
+      }
+      setCameraState('live');
+    } catch (err) {
+      const msg = String(err);
+      if (msg.includes('NotAllowedError') || msg.includes('Permission')) {
+        setCameraState('denied');
+        setCameraError('Camera permission denied. Use the upload option below or change permissions in browser settings.');
+      } else if (msg.includes('NotFoundError') || msg.includes('NotReadableError')) {
+        setCameraState('unavailable');
+        setCameraError('No camera found. Use the upload option below.');
+      } else {
+        setCameraState('unavailable');
+        setCameraError(`Camera couldn't start: ${msg.slice(0, 80)}. Use upload below.`);
+      }
+    }
+  }
+
+  // Stop the stream when the component unmounts or camera state goes back to idle
+  useEffect(() => {
+    return () => {
+      if (streamRef.current) {
+        streamRef.current.getTracks().forEach((t) => t.stop());
+        streamRef.current = null;
+      }
+    };
+  }, []);
+
+  // Capture a still frame from the video and pass it up
+  function captureFrame() {
+    if (!videoRef.current || !streamRef.current) return;
+    const video = videoRef.current;
+    const canvas = document.createElement('canvas');
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    canvas.toBlob(
+      (blob) => {
+        if (!blob) return;
+        const file = new File([blob], `scan-${Date.now()}.jpg`, { type: 'image/jpeg' });
+        // Stop the camera stream — we have what we need
+        if (streamRef.current) {
+          streamRef.current.getTracks().forEach((t) => t.stop());
+          streamRef.current = null;
+        }
+        setCameraState('idle');
+        onCapture(file);
+      },
+      'image/jpeg',
+      0.85,
+    );
+  }
+
   return (
-    <section className="px-4 sm:px-6 pt-8 pb-16 max-w-3xl mx-auto">
+    <section className="px-4 sm:px-6 pt-6 pb-16 max-w-3xl mx-auto">
+      {/* Hero copy */}
       <div className="text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[var(--hairline)] text-[11px] text-ink-soft mb-5 shadow-sm">
           <span className="w-1.5 h-1.5 rounded-full bg-tangerine animate-pulse" />
           Live demo · works during any game
         </div>
-        <h1 className="font-display text-[44px] sm:text-[60px] md:text-[72px] font-bold text-green leading-[0.92] tracking-tight">
+        <h1 className="font-display text-[40px] sm:text-[56px] md:text-[68px] font-bold text-green leading-[0.92] tracking-tight">
           Watching sports?
           <br />
           <span className="italic font-medium text-tangerine">Point your phone.</span>
         </h1>
-        <p className="mt-6 text-[17px] sm:text-[18px] text-ink-soft leading-relaxed max-w-lg mx-auto">
-          Scan the TV during any live <strong className="text-ink">NFL, NBA, or WNBA</strong> game. Get the score, the lineups, the rules, and <strong className="text-ink">the tea</strong> on every player on the floor — explained for whatever you don't know.
+        <p className="mt-5 text-[16px] sm:text-[17px] text-ink-soft leading-relaxed max-w-lg mx-auto">
+          Scan the TV during any live <strong className="text-ink">NFL, NBA, or WNBA</strong> game. Get the score, the lineups, the rules, and <strong className="text-ink">the tea</strong> on every player on the floor.
         </p>
       </div>
 
-      {/* Upload card */}
-      <div
-        className="mt-10 mx-auto max-w-md rounded-3xl bg-cream-warm/40 border-2 border-dashed border-[var(--hairline)] p-8 text-center cursor-pointer hover:border-tangerine/60 hover:bg-tangerine/5 transition"
-        onClick={onPick}
-      >
-        <div className="mx-auto w-16 h-16 rounded-2xl bg-tangerine flex items-center justify-center mb-4 shadow-[0_8px_22px_-8px_rgba(255,107,61,0.5)]">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-            <circle cx="12" cy="13" r="4" />
-          </svg>
-        </div>
-        <div className="font-display font-bold text-[19px] text-green leading-tight">
-          Snap the TV (or pick a screenshot)
-        </div>
-        <div className="mt-1.5 text-[12.5px] text-ink-soft italic">
-          Frame the corner scorebug. We'll handle the rest.
-        </div>
-        <div className="mt-5 inline-flex items-center justify-center bg-tangerine text-white font-semibold rounded-full px-6 py-2.5 text-[13.5px] hover:bg-tangerine-dark transition">
-          Open camera →
-        </div>
+      {/* Camera viewfinder OR start-camera prompt */}
+      <div className="mt-8 mx-auto max-w-md">
+        {cameraState === 'idle' && (
+          <div
+            className="relative rounded-3xl overflow-hidden bg-green/95 aspect-[9/12] flex flex-col items-center justify-center text-center cursor-pointer group shadow-[0_24px_48px_-16px_rgba(13,45,36,0.18)]"
+            onClick={startCamera}
+          >
+            {/* Corner brackets */}
+            <div className="absolute top-4 left-4 w-8 h-8 border-t-[3px] border-l-[3px] border-tangerine rounded-tl" />
+            <div className="absolute top-4 right-4 w-8 h-8 border-t-[3px] border-r-[3px] border-tangerine rounded-tr" />
+            <div className="absolute bottom-4 left-4 w-8 h-8 border-b-[3px] border-l-[3px] border-tangerine rounded-bl" />
+            <div className="absolute bottom-4 right-4 w-8 h-8 border-b-[3px] border-r-[3px] border-tangerine rounded-br" />
+            {/* Camera icon + tap-to-start */}
+            <div className="w-20 h-20 rounded-full bg-tangerine flex items-center justify-center mb-5 shadow-[0_8px_28px_-6px_rgba(255,107,61,0.6)] group-hover:scale-105 transition">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                <circle cx="12" cy="13" r="4" />
+              </svg>
+            </div>
+            <div className="font-display font-bold text-white text-[20px] leading-tight px-6">
+              Tap to start camera
+            </div>
+            <div className="mt-2 text-[12.5px] text-white/70 italic px-8">
+              Point at the scorebug on your TV
+            </div>
+          </div>
+        )}
+
+        {cameraState === 'requesting' && (
+          <div className="rounded-3xl bg-cream-warm border border-[var(--hairline)] aspect-[9/12] flex items-center justify-center text-center px-8">
+            <div>
+              <div className="inline-block w-8 h-8 border-2 border-tangerine border-t-transparent rounded-full animate-spin mb-3" />
+              <div className="text-[14px] text-ink-soft">Allow camera access in the prompt…</div>
+            </div>
+          </div>
+        )}
+
+        {cameraState === 'live' && (
+          <div className="relative">
+            <div className="relative rounded-3xl overflow-hidden bg-black aspect-[9/12] shadow-[0_24px_48px_-16px_rgba(13,45,36,0.25)]">
+              <video
+                ref={videoRef}
+                autoPlay
+                playsInline
+                muted
+                className="w-full h-full object-cover"
+              />
+              {/* Corner brackets */}
+              <div className="absolute top-4 left-4 w-10 h-10 border-t-[3px] border-l-[3px] border-tangerine rounded-tl pointer-events-none" />
+              <div className="absolute top-4 right-4 w-10 h-10 border-t-[3px] border-r-[3px] border-tangerine rounded-tr pointer-events-none" />
+              <div className="absolute bottom-4 left-4 w-10 h-10 border-b-[3px] border-l-[3px] border-tangerine rounded-bl pointer-events-none" />
+              <div className="absolute bottom-4 right-4 w-10 h-10 border-b-[3px] border-r-[3px] border-tangerine rounded-br pointer-events-none" />
+              {/* Animated scan line */}
+              <div
+                className="absolute left-4 right-4 h-0.5 bg-tangerine shadow-[0_0_12px_rgba(255,107,61,0.7)] pointer-events-none"
+                style={{ animation: 'scanline 2s ease-in-out infinite' }}
+              />
+              {/* Helper text overlay */}
+              <div className="absolute top-16 left-0 right-0 text-center pointer-events-none">
+                <div className="inline-flex items-center px-3 py-1 rounded-full bg-black/50 text-white/90 text-[11px] font-mono backdrop-blur">
+                  Frame the scorebug
+                </div>
+              </div>
+            </div>
+            {/* Shutter button */}
+            <div className="mt-6 flex flex-col items-center">
+              <button
+                onClick={captureFrame}
+                aria-label="Capture"
+                className="w-20 h-20 rounded-full bg-tangerine border-4 border-white shadow-[0_8px_28px_-6px_rgba(255,107,61,0.6)] hover:scale-105 active:scale-95 transition"
+              >
+                <span className="block w-full h-full rounded-full ring-2 ring-tangerine ring-offset-2" />
+              </button>
+              <div className="mt-3 text-[12px] text-ink-soft italic">Tap to scan</div>
+            </div>
+          </div>
+        )}
+
+        {(cameraState === 'denied' || cameraState === 'unavailable') && (
+          <div className="rounded-3xl bg-cream-warm border border-[var(--hairline)] p-6 text-center">
+            <div className="font-display font-bold text-[15px] text-green mb-2">Camera unavailable</div>
+            <div className="text-[13px] text-ink-soft leading-relaxed mb-4">{cameraError}</div>
+            <button
+              onClick={onPickFromLibrary}
+              className="inline-flex items-center bg-tangerine text-white font-semibold rounded-full px-6 py-2.5 text-[13.5px] hover:bg-tangerine-dark transition"
+            >
+              Pick a screenshot →
+            </button>
+          </div>
+        )}
       </div>
+
+      {/* Pick-from-library backup link (always visible when camera is idle/live) */}
+      {(cameraState === 'idle' || cameraState === 'live') && (
+        <div className="mt-4 text-center">
+          <button
+            onClick={onPickFromLibrary}
+            className="text-[13px] text-ink-soft hover:text-ink underline underline-offset-2"
+          >
+            or pick a screenshot from your library
+          </button>
+        </div>
+      )}
 
       {error && (
         <div className="mt-6 mx-auto max-w-md rounded-2xl bg-burgundy/5 border border-burgundy/30 p-4 text-center">
@@ -270,6 +436,15 @@ function Hero({
           The smart-friend mode for watching sports. No box scores. No analytics. Just what's happening + who's on the floor + what you'd want to gossip about.
         </p>
       </div>
+
+      <style jsx>{`
+        @keyframes scanline {
+          0% { top: 16px; opacity: 0; }
+          15% { opacity: 1; }
+          85% { opacity: 1; }
+          100% { top: calc(100% - 18px); opacity: 0; }
+        }
+      `}</style>
     </section>
   );
 }
