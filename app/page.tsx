@@ -91,7 +91,7 @@ function Nav() {
           SPORTS<span className="text-tangerine">★</span>BFF
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-[13px] text-ink-soft">
-          <Link href="/scan" className="hover:text-ink transition">Scan</Link>
+          <Link href="/scan/game" className="hover:text-ink transition">Scan</Link>
           <Link href="/chat" className="hover:text-ink transition">Chat</Link>
           <Link href="/tea" className="hover:text-ink transition">Today</Link>
           <Link href="/learn" className="hover:text-ink transition">Learn</Link>
@@ -186,7 +186,7 @@ function Hero() {
             </p>
 
             <p className="mt-5 text-[16px] sm:text-[17px] text-ink-soft leading-relaxed max-w-md">
-              Point your camera at the scorebug. Get <strong className="text-ink">the matchup, the players, the rules, and the tea</strong> — explained however you need to follow along.
+              Watching a game? Point your phone at the TV. <strong className="text-ink">Score, lineups, rules, and the tea on every player</strong> — explained for whatever you don't know.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3 items-center">
@@ -197,7 +197,7 @@ function Hero() {
                 Get started — free →
               </Link>
               <Link
-                href="/scan"
+                href="/scan/game"
                 className="inline-flex items-center gap-2 bg-white text-green font-semibold rounded-full px-6 py-3 text-[14.5px] border border-[var(--hairline)] hover:border-tangerine hover:text-tangerine transition"
               >
                 Try the scan →
@@ -569,7 +569,7 @@ function ScanScene() {
         </div>
 
         <div className="mt-12 text-center">
-          <Link href="/scan" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
+          <Link href="/scan/game" className="inline-flex items-center gap-1.5 text-[14px] font-semibold text-tangerine hover:underline">
             Try the scan now →
           </Link>
         </div>
@@ -1347,7 +1347,7 @@ function Footer() {
             <div className="font-display italic text-xs text-white/60 mt-1">your sports BFF</div>
           </div>
           <div className="flex items-center gap-6 text-[12px] text-white/70">
-            <Link href="/scan" className="hover:text-white transition">Scan</Link>
+            <Link href="/scan/game" className="hover:text-white transition">Scan</Link>
             <Link href="/chat" className="hover:text-white transition">Chat</Link>
             <Link href="/tea" className="hover:text-white transition">Today</Link>
             <Link href="/learn" className="hover:text-white transition">Learn</Link>

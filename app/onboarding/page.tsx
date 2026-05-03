@@ -24,7 +24,7 @@ export default function OnboardingPage() {
       onboardedAt: new Date().toISOString(),
       firstSeenAt: new Date().toISOString(),
     });
-    router.push('/scan');
+    router.push('/scan/game');
   }
 
   return (

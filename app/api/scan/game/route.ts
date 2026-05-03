@@ -50,6 +50,7 @@ import { getOpenAI, MODELS, hasOpenAIKey } from '@/lib/openai';
 import rostersData from '@/data/rosters.json';
 import gossipData from '@/data/players-gossip.json';
 import { getFaceEntry } from '@/lib/face-match';
+import { getTodaysGames, findGameByTeams, type League, type LiveGame } from '@/lib/live-games';
 
 export const runtime = 'nodejs';
 // Vision call + roster lookup. Keep budget below Vercel ceiling.
@@ -466,18 +467,60 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  // ════════════════════════════════════════════════════════════════════
+  // ESPN LIVE-GAME LOOKUP — ground vision's read in real authoritative data
+  // ════════════════════════════════════════════════════════════════════
+  // Vision OCR can be fuzzy (digits mis-read, wrong period, sloppy abbrev).
+  // ESPN knows for a fact what's playing right now. If a matching live game
+  // is found, we override vision's score/clock with ESPN's correct values
+  // and surface the broadcast network in the result.
+  //
+  // Fails open: if ESPN is down or no match is found, we use vision's read
+  // unchanged. Adds at most ~4s latency thanks to AbortController in the
+  // helper (and 30s in-memory cache for repeat scans within the window).
+  let liveGame: LiveGame | null = null;
+  try {
+    const todays = await getTodaysGames(league as League);
+    liveGame = findGameByTeams(todays, home.full, away.full);
+  } catch {
+    // Silent — live-game lookup is additive, never blocks
+  }
+
+  // Authoritative scores: prefer ESPN if we matched a live game IN PROGRESS or FINAL
+  // (scheduled games haven't started so no scores yet)
+  const useEspnScores = liveGame && (liveGame.status === 'in_progress' || liveGame.status === 'final');
+  // Vision's home/away assignment may not match ESPN's — re-orient using team codes
+  let espnHomeForUs = liveGame?.home;
+  let espnAwayForUs = liveGame?.away;
+  if (liveGame) {
+    // If our "home" is ESPN's away, swap
+    if (
+      home.code === liveGame.away.code ||
+      away.code === liveGame.home.code
+    ) {
+      espnHomeForUs = liveGame.away;
+      espnAwayForUs = liveGame.home;
+    }
+  }
+  const finalHomeScore = useEspnScores && espnHomeForUs ? espnHomeForUs.score : parsed.home_score;
+  const finalAwayScore = useEspnScores && espnAwayForUs ? espnAwayForUs.score : parsed.away_score;
+  const finalClock = useEspnScores && liveGame?.clock ? liveGame.clock : parsed.clock;
+  const finalPeriod = useEspnScores && liveGame?.period ? liveGame.period : parsed.period;
+  const finalPeriodLabel =
+    useEspnScores && liveGame?.periodLabel ? liveGame.periodLabel : parsed.period_label;
+
   // Pull rosters with per-player tea snippets
   const homeRoster = enrichRoster(league, home.code);
   const awayRoster = enrichRoster(league, away.code);
 
-  // Decode current game state into plain English
+  // Decode current game state into plain English (use authoritative ESPN data when present)
   const explainer = explainGameState(
     league,
-    parsed.period,
-    parsed.period_label,
-    parsed.clock,
-    parsed.home_score,
-    parsed.away_score,
+    finalPeriod,
+    finalPeriodLabel,
+    finalClock,
+    finalHomeScore,
+    finalAwayScore,
     home.full,
     away.full,
   );
@@ -523,12 +566,24 @@ export async function POST(req: NextRequest) {
     JSON.stringify({
       league,
       matchup: {
-        home: { team: home.code.toUpperCase(), name: home.full, score: parsed.home_score },
-        away: { team: away.code.toUpperCase(), name: away.full, score: parsed.away_score },
-        clock: parsed.clock,
-        period: parsed.period,
-        period_label: parsed.period_label,
+        home: { team: home.code.toUpperCase(), name: home.full, score: finalHomeScore },
+        away: { team: away.code.toUpperCase(), name: away.full, score: finalAwayScore },
+        clock: finalClock,
+        period: finalPeriod,
+        period_label: finalPeriodLabel,
       },
+      // ESPN authoritative data — present when we matched a real live game
+      live_game: liveGame
+        ? {
+            espn_id: liveGame.espnId,
+            status: liveGame.status, // 'in_progress' | 'scheduled' | 'final' | 'postponed' | 'unknown'
+            status_label: liveGame.statusLabel, // "In Progress", "Final", etc.
+            broadcasts: liveGame.broadcasts, // ["NBC", "Peacock"]
+            start_time: liveGame.startTime, // ISO date
+            // Note: 'verified' = vision's read matched a real game; this is the trust signal
+            verified: true,
+          }
+        : { verified: false },
       rosters: { home: homeRoster, away: awayRoster },
       // What's happening, in 1-2 sentences (vision-generated)
       blurb: parsed.blurb,
@@ -557,6 +612,8 @@ export async function POST(req: NextRequest) {
         'X-Game-League': league,
         'X-Game-Home': home.code,
         'X-Game-Away': away.code,
+        'X-Game-Live-Verified': liveGame ? 'true' : 'false',
+        'X-Game-Live-Status': liveGame?.status ?? 'none',
         ...CORS_HEADERS,
       },
     },

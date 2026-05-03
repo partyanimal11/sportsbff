@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from 'next';
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
-  title: "sportsBFF — Your sports BFF.",
+  title: "sportsBFF — Watching sports? Point your phone.",
   description:
-    "sportsBFF is the friend who knows every player. Scan a player, get the rules + the storylines. Flip Tea'd Up on for the gossip — confirmed, reported, never guessed. NFL + NBA, no gatekeeping.",
+    "Scan the TV during any live NFL, NBA, or WNBA game. sportsBFF gives you the score, the lineups, the rules in plain English, and the tea on every player on the floor — explained for whatever you don't know. Sourced, never guessed.",
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
