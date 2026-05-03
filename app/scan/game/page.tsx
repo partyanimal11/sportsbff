@@ -24,6 +24,16 @@ type TeaSnippet = {
   summary: string;
   source: TeaSource | null;
 };
+type Partner = {
+  name: string;
+  relationship: string;            // "wife" | "girlfriend" | "fiancee" | "single" | etc
+  since: string | null;
+  ig_handle: string | null;
+  ig_url: string | null;
+  known_for: string | null;
+  tier: 'confirmed' | 'reported' | 'speculation' | 'rumor';
+  source: { name: string; url: string; date: string };
+};
 type Player = {
   id: string;
   name: string;
@@ -32,6 +42,8 @@ type Player = {
   headshot: string | null;
   tea: TeaSnippet[];
   hasTea: boolean;
+  partner: Partner | null;
+  hasPartner: boolean;
 };
 type TeaCard = {
   player_id: string;
@@ -73,6 +85,8 @@ type GameScanResponse = {
     away_roster_size: number;
     home_players_with_tea: number;
     away_players_with_tea: number;
+    home_players_with_partner?: number;
+    away_players_with_partner?: number;
     total_tea_items: number;
   };
 };
@@ -464,6 +478,93 @@ function ScanCamera({
         }
       `}</style>
     </section>
+  );
+}
+
+/**
+ * PartnerCard — the WAG / SO sidecar shown inline when a player row is expanded.
+ * Highlights: partner name, relationship label, IG link, "known for" caption,
+ * tier pill + source citation. Generic for any league.
+ */
+function PartnerCard({ partner, playerName }: { partner: Partner; playerName: string }) {
+  const tier = TIER[partner.tier];
+  const isSingle = partner.relationship === 'single';
+  const initials = partner.name
+    .split(/\s+/)
+    .map((s) => s[0])
+    .join('')
+    .slice(0, 2)
+    .toUpperCase();
+  const relLabel: Record<string, string> = {
+    wife: 'WIFE',
+    husband: 'HUSBAND',
+    fiancee: 'FIANCÉE',
+    fiance: 'FIANCÉ',
+    girlfriend: 'GIRLFRIEND',
+    boyfriend: 'BOYFRIEND',
+    partner: 'PARTNER',
+    'long-term partner': 'LONG-TERM PARTNER',
+    single: 'CURRENTLY SINGLE',
+  };
+  return (
+    <div className="bg-white rounded-2xl border border-[var(--hairline)] p-3.5 shadow-[0_2px_8px_-4px_rgba(13,45,36,0.06)]">
+      <div className="flex items-center gap-2 mb-2.5">
+        <span className="text-[9px] font-bold tracking-[0.18em] uppercase text-magenta">
+          ✿ {relLabel[partner.relationship] || 'PARTNER'}
+        </span>
+        <span
+          className="ml-auto inline-flex items-center px-2 py-0.5 rounded-full text-[9px] font-semibold uppercase tracking-wider"
+          style={{ background: tier.bg, color: tier.fg }}
+        >
+          {tier.label}
+        </span>
+      </div>
+      <div className="flex items-start gap-3">
+        {/* Avatar placeholder — initials in a soft pink circle */}
+        <div
+          className="shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-display font-bold text-[14px] text-magenta"
+          style={{ background: 'linear-gradient(135deg, #FCE4EC, #F4B6C2)' }}
+        >
+          {isSingle ? '◯' : initials}
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="font-display font-bold text-[15px] text-green leading-tight">
+            {partner.name}
+          </div>
+          {partner.known_for && (
+            <p className="mt-0.5 text-[12.5px] text-ink-soft leading-snug">{partner.known_for}</p>
+          )}
+          {partner.ig_url && (
+            <a
+              href={partner.ig_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1.5 inline-flex items-center gap-1 text-[12px] font-semibold text-magenta hover:underline"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <span aria-hidden>📸</span>
+              <span>@{partner.ig_handle}</span>
+            </a>
+          )}
+          {partner.since && !isSingle && (
+            <div className="mt-1 text-[10.5px] text-muted">since {partner.since}</div>
+          )}
+          <div className="mt-1.5 text-[10px] text-muted italic">
+            via{' '}
+            <a
+              href={partner.source.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-magenta hover:underline not-italic"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {partner.source.name}
+            </a>{' '}
+            · {partner.source.date}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -1040,9 +1141,10 @@ function RosterSection({
                     <polyline points="6 9 12 15 18 9" />
                   </svg>
                 </button>
-                {/* Inline expanded view — full tea */}
+                {/* Inline expanded view — full tea + partner */}
                 {isExpanded && (
                   <div className="px-5 pb-4 pt-1 bg-cream-warm/40 border-t border-[var(--hairline)]/50 space-y-3">
+                    {p.partner && <PartnerCard partner={p.partner} playerName={p.name} />}
                     {p.hasTea ? (
                       p.tea.map((t, i) => {
                         const tier = TIER[t.tier];

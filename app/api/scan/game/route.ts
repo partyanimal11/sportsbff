@@ -49,6 +49,7 @@ import { NextRequest } from 'next/server';
 import { getOpenAI, MODELS, hasOpenAIKey } from '@/lib/openai';
 import rostersData from '@/data/rosters.json';
 import gossipData from '@/data/players-gossip.json';
+import wagsData from '@/data/player-wags.json';
 import { getFaceEntry } from '@/lib/face-match';
 import { getTodaysGames, findGameByTeams, type League, type LiveGame } from '@/lib/live-games';
 
@@ -88,6 +89,20 @@ type GossipPlayer = {
   items: GossipItem[];
 };
 const GOSSIP: Record<string, GossipPlayer> = gossipData as Record<string, GossipPlayer>;
+
+// WAG / partner tree — per-player current confirmed partner with IG link.
+// Surfaced inline when user taps a player row in the roster.
+type Wag = {
+  name: string;
+  relationship: 'wife' | 'husband' | 'fiancee' | 'fiance' | 'girlfriend' | 'boyfriend' | 'partner' | 'long-term partner' | 'single';
+  since?: string;
+  ig_handle?: string | null;
+  ig_url?: string | null;
+  known_for?: string;
+  tier: 'confirmed' | 'reported' | 'speculation' | 'rumor';
+  source: { name: string; url: string; date: string };
+};
+const WAGS: Record<string, Wag> = (wagsData as { wags: Record<string, Wag> }).wags;
 
 /**
  * Pick the top N tea items for a player, preferring higher-tier (confirmed >
@@ -278,10 +293,14 @@ function lookupTeam(
 }
 
 /**
- * Enrich a roster with face headshots + per-player tea snippets. Each player
- * comes back with up to 2 top-tier tea items pulled from the gossip DB so the
- * client can render drama-tagged player cards directly without a follow-up
- * API call. Players not in the gossip DB just get an empty `tea` array.
+ * Enrich a roster with face headshots + per-player tea snippets + partner.
+ * Each player comes back with:
+ *   - tea: up to 2 top-tier tea items from the gossip DB
+ *   - partner: current WAG/SO with IG link if available (null if not in db)
+ *   - hasTea / hasPartner booleans for client filter UI
+ *
+ * The client can render drama-tagged + partner-aware player cards directly
+ * without follow-up API calls.
  */
 function enrichRoster(league: string, teamCode: string) {
   const key = `${league}/${teamCode}`;
@@ -289,6 +308,7 @@ function enrichRoster(league: string, teamCode: string) {
   return players.map((p) => {
     const face = getFaceEntry(p.id);
     const gossip = GOSSIP[p.id];
+    const wag = WAGS[p.id];
     const teaItems = gossip ? pickTopTea(gossip.items, 2) : [];
     return {
       id: p.id,
@@ -307,6 +327,19 @@ function enrichRoster(league: string, teamCode: string) {
           : null,
       })),
       hasTea: teaItems.length > 0,
+      partner: wag
+        ? {
+            name: wag.name,
+            relationship: wag.relationship,
+            since: wag.since ?? null,
+            ig_handle: wag.ig_handle ?? null,
+            ig_url: wag.ig_url ?? null,
+            known_for: wag.known_for ?? null,
+            tier: wag.tier,
+            source: wag.source,
+          }
+        : null,
+      hasPartner: Boolean(wag),
     };
   });
 }
@@ -723,6 +756,8 @@ export async function POST(req: NextRequest) {
         away_roster_size: awayRoster.length,
         home_players_with_tea: homeRoster.filter((p) => p.hasTea).length,
         away_players_with_tea: awayRoster.filter((p) => p.hasTea).length,
+        home_players_with_partner: homeRoster.filter((p) => p.hasPartner).length,
+        away_players_with_partner: awayRoster.filter((p) => p.hasPartner).length,
         total_tea_items: matchupTea.length,
       },
     }),

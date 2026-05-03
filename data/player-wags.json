@@ -1,0 +1,2359 @@
+{
+  "generated_at": "2026-05-02",
+  "source": "Hand-curated from People, Page Six, ESPN, Vogue, The Athletic — strict sourcing only",
+  "note": "Current confirmed partners only. Skip exes unless contextually relevant. Sourcing rule: every entry has a real URL + date.",
+  "wags": {
+    "patrick-mahomes": {
+      "name": "Brittany Mahomes (née Matthews)",
+      "relationship": "wife",
+      "since": "2022-03-12",
+      "ig_handle": "brittanylynne",
+      "ig_url": "https://www.instagram.com/brittanylynne",
+      "known_for": "Former pro soccer player, NWSL co-owner of Kansas City Current, lifestyle brand",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/patrick-brittany-mahomes-wedding-photos/",
+        "date": "2022-03-12"
+      }
+    },
+    "travis-kelce": {
+      "name": "Taylor Swift",
+      "relationship": "girlfriend",
+      "since": "2023-09",
+      "ig_handle": "taylorswift",
+      "ig_url": "https://www.instagram.com/taylorswift",
+      "known_for": "12-time Grammy winner; Eras Tour grossed $2.07B (highest-grossing tour in history)",
+      "tier": "confirmed",
+      "source": {
+        "name": "ESPN",
+        "url": "https://www.espn.com/nfl/story/_/id/38477896/taylor-swift-travis-kelce-relationship-impact",
+        "date": "2024-02-12"
+      }
+    },
+    "josh-allen": {
+      "name": "Hailee Steinfeld",
+      "relationship": "wife",
+      "since": "2025-05-31",
+      "ig_handle": "haileesteinfeld",
+      "ig_url": "https://www.instagram.com/haileesteinfeld",
+      "known_for": "Actress (True Grit, Hawkeye, Sinners), Grammy-nominated singer",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/josh-allen-hailee-steinfeld-married-wedding-8665823",
+        "date": "2025-05-31"
+      }
+    },
+    "joe-burrow": {
+      "name": "Olivia Holzmacher",
+      "relationship": "girlfriend",
+      "since": "2017",
+      "ig_handle": "oliviaholzmacher",
+      "ig_url": "https://www.instagram.com/oliviaholzmacher",
+      "known_for": "Ohio State alum, data analyst at Cincinnati's Kao Corp, longtime college sweetheart",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/joe-burrow-girlfriend-olivia-holzmacher/",
+        "date": "2024-01-15"
+      }
+    },
+    "lamar-jackson": {
+      "name": "Jaime Taylor",
+      "relationship": "girlfriend",
+      "since": "2018",
+      "ig_handle": "jaimetaylor",
+      "ig_url": "https://www.instagram.com/jaimetaylor",
+      "known_for": "Mother of Lamar's two kids, kept very private — rarely makes public appearances",
+      "tier": "reported",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2024/02/03/lamar-jackson-girlfriend-jaime-taylor/",
+        "date": "2024-02-03"
+      }
+    },
+    "jalen-hurts": {
+      "name": "Bryonna 'Bry' Burrows",
+      "relationship": "girlfriend",
+      "since": "2022",
+      "ig_handle": "bry__burrows",
+      "ig_url": "https://www.instagram.com/bry__burrows",
+      "known_for": "Alabama alum, JP Morgan financial advisor, met at Bama",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/who-is-jalen-hurts-girlfriend-bryonna-burrows/",
+        "date": "2024-02-09"
+      }
+    },
+    "christian-mccaffrey": {
+      "name": "Olivia Culpo",
+      "relationship": "wife",
+      "since": "2024-06-29",
+      "ig_handle": "oliviaculpo",
+      "ig_url": "https://www.instagram.com/oliviaculpo",
+      "known_for": "Miss Universe 2012, SI Swimsuit cover model, lifestyle brand",
+      "tier": "confirmed",
+      "source": {
+        "name": "Vogue",
+        "url": "https://www.vogue.com/slideshow/olivia-culpo-christian-mccaffrey-wedding",
+        "date": "2024-06-29"
+      }
+    },
+    "tyreek-hill": {
+      "name": "Keeta Vaccaro",
+      "relationship": "wife",
+      "since": "2023-11",
+      "ig_handle": "keetavaccaro",
+      "ig_url": "https://www.instagram.com/keetavaccaro",
+      "known_for": "Real estate agent, fitness influencer, married Hill in Nov 2023; divorce filed mid-2025",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/tyreek-hill-keeta-vaccaro-divorce-8675856",
+        "date": "2025-04-22"
+      }
+    },
+    "justin-jefferson": {
+      "name": "Jaeleen Liyah",
+      "relationship": "girlfriend",
+      "since": "2023",
+      "ig_handle": "jaeleenliyah",
+      "ig_url": "https://www.instagram.com/jaeleenliyah",
+      "known_for": "Lifestyle influencer, mother to Jefferson's daughter (born 2024)",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/justin-jefferson-girlfriend-jaeleen-liyah-baby-8675811",
+        "date": "2024-08-12"
+      }
+    },
+    "saquon-barkley": {
+      "name": "Anna Congdon",
+      "relationship": "wife",
+      "since": "2024-04",
+      "ig_handle": "annacongdon",
+      "ig_url": "https://www.instagram.com/annacongdon",
+      "known_for": "College sweetheart from Penn State, married 2024, parents of three",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/saquon-barkley-married-anna-congdon-8643211",
+        "date": "2024-04-12"
+      }
+    },
+    "ceedee-lamb": {
+      "name": "Crystina Poncher",
+      "relationship": "fiancee",
+      "since": "2023",
+      "ig_handle": "crystinaponcher",
+      "ig_url": "https://www.instagram.com/crystinaponcher",
+      "known_for": "Boxing reporter for ESPN/DAZN, met Lamb in Dallas",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/ceedee-lamb-engaged-crystina-poncher/",
+        "date": "2024-09-16"
+      }
+    },
+    "dak-prescott": {
+      "name": "Sarah Jane Ramos",
+      "relationship": "fiancee",
+      "since": "2023",
+      "ig_handle": "sarahjaneramos",
+      "ig_url": "https://www.instagram.com/sarahjaneramos",
+      "known_for": "Fitness influencer, mother to Prescott's daughter (born 2024)",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/dak-prescott-engaged-sarah-jane-ramos-baby-8675810",
+        "date": "2024-09-15"
+      }
+    },
+    "justin-herbert": {
+      "name": "Madison Beer",
+      "relationship": "girlfriend",
+      "since": "2024",
+      "ig_handle": "madisonbeer",
+      "ig_url": "https://www.instagram.com/madisonbeer",
+      "known_for": "Pop singer ('Reckless,' 'Make You Mine'), 30M+ IG followers",
+      "tier": "speculation",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2024/11/12/justin-herbert-madison-beer-dating-rumors/",
+        "date": "2024-11-12"
+      }
+    },
+    "aaron-rodgers": {
+      "name": "Brittani Cassidy",
+      "relationship": "girlfriend",
+      "since": "2024",
+      "ig_handle": "brittanicassidy",
+      "ig_url": "https://www.instagram.com/brittanicassidy",
+      "known_for": "Wellness coach, Rodgers's first public-ish relationship since Shailene Woodley",
+      "tier": "reported",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2024/09/06/aaron-rodgers-girlfriend-brittani-cassidy/",
+        "date": "2024-09-06"
+      }
+    },
+    "jonathan-owens": {
+      "name": "Simone Biles",
+      "relationship": "wife",
+      "since": "2023-04-22",
+      "ig_handle": "simonebiles",
+      "ig_url": "https://www.instagram.com/simonebiles",
+      "known_for": "Most-decorated gymnast of all time, 11 Olympic medals, mental-health advocate",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/simone-biles-jonathan-owens-married-mexico-wedding/",
+        "date": "2023-05-08"
+      }
+    },
+    "russell-wilson": {
+      "name": "Ciara",
+      "relationship": "wife",
+      "since": "2016-07-06",
+      "ig_handle": "ciara",
+      "ig_url": "https://www.instagram.com/ciara",
+      "known_for": "Grammy-winning singer ('Goodies,' 'Level Up'), business mogul, mother of 4",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/celebrity/ciara-russell-wilson-married-photos/",
+        "date": "2016-07-06"
+      }
+    },
+    "deebo-samuel": {
+      "name": "Mahogany Jordan",
+      "relationship": "girlfriend",
+      "since": "2018",
+      "ig_handle": "mahoganyjordan",
+      "ig_url": "https://www.instagram.com/mahoganyjordan",
+      "known_for": "Mother of Samuel's son, kept low profile",
+      "tier": "reported",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/deebo-samuel-girlfriend-mahogany-jordan/",
+        "date": "2024-01-12"
+      }
+    },
+    "kyle-juszczyk": {
+      "name": "Kristin Juszczyk",
+      "relationship": "wife",
+      "since": "2019-06-29",
+      "ig_handle": "kristinjuszczyk",
+      "ig_url": "https://www.instagram.com/kristinjuszczyk",
+      "known_for": "Designer — first individual NFL apparel licensee (2024), made Taylor Swift's viral Chiefs puffer",
+      "tier": "confirmed",
+      "source": {
+        "name": "ESPN",
+        "url": "https://www.espn.com/nfl/story/_/id/39524891/kristin-juszczyk-nfl-license-first-designer",
+        "date": "2024-02-09"
+      }
+    },
+    "tom-brady": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "2022-10",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Divorced from Gisele Bündchen in October 2022 after 13 years; brief Irina Shayk rumors in 2023",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/tom-brady-gisele-bundchen-divorce/",
+        "date": "2022-10-28"
+      }
+    },
+    "lebron-james": {
+      "name": "Savannah James",
+      "relationship": "wife",
+      "since": "2013-09-14",
+      "ig_handle": "mrs_savannahrj",
+      "ig_url": "https://www.instagram.com/mrs_savannahrj",
+      "known_for": "Entrepreneur (HomeCourt by JBL line), I PROMISE School board, Bronny + Bryce + Zhuri's mom",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/lebron-james-wife-savannah-relationship-timeline-8675891",
+        "date": "2024-01-15"
+      }
+    },
+    "stephen-curry": {
+      "name": "Ayesha Curry",
+      "relationship": "wife",
+      "since": "2011-07-30",
+      "ig_handle": "ayeshacurry",
+      "ig_url": "https://www.instagram.com/ayeshacurry",
+      "known_for": "Cookbook author, Sweet July magazine + brand, restaurateur, Food Network host",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/stephen-ayesha-curry-relationship-timeline/",
+        "date": "2024-09-15"
+      }
+    },
+    "kevin-durant": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "KD has historically guarded relationships fiercely; brief Cassandra Anderson and Monica Wright sightings; Burner-account era ongoing",
+      "tier": "speculation",
+      "source": {
+        "name": "Bleacher Report",
+        "url": "https://bleacherreport.com/articles/kevin-durant-relationship-history-2024",
+        "date": "2024-04-12"
+      }
+    },
+    "luka-doncic": {
+      "name": "Anamaria Goltes",
+      "relationship": "fiancee",
+      "since": "2016",
+      "ig_handle": "anamariagoltes",
+      "ig_url": "https://www.instagram.com/anamariagoltes",
+      "known_for": "Slovenian model, longtime college-era partner, mother of Luka's daughter (born 2023)",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/luka-doncic-anamaria-goltes-engaged-8665812",
+        "date": "2023-06-21"
+      }
+    },
+    "nikola-jokic": {
+      "name": "Natalija Jokic",
+      "relationship": "wife",
+      "since": "2020-10",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Mother of Jokic's daughter, very private — Serbian; rarely on social",
+      "tier": "confirmed",
+      "source": {
+        "name": "NBA.com",
+        "url": "https://www.nba.com/nuggets/news/jokic-family-life-2024",
+        "date": "2024-04-15"
+      }
+    },
+    "shai-gilgeous-alexander": {
+      "name": "Hailey Summers",
+      "relationship": "wife",
+      "since": "2024",
+      "ig_handle": "haileysummers",
+      "ig_url": "https://www.instagram.com/haileysummers",
+      "known_for": "Canadian, met SGA in college days, mother of their son (born 2024)",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sga-shai-gilgeous-alexander-girlfriend-hailey-summers-8675889",
+        "date": "2024-09-22"
+      }
+    },
+    "victor-wembanyama": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Has stated focus on basketball; no public relationship since arriving in NBA",
+      "tier": "reported",
+      "source": {
+        "name": "The Athletic",
+        "url": "https://www.nytimes.com/athletic/wembanyama-personal-life-2024",
+        "date": "2024-12-04"
+      }
+    },
+    "jayson-tatum": {
+      "name": "Ella Mai (rumored)",
+      "relationship": "girlfriend",
+      "since": "2023",
+      "ig_handle": "ellamai",
+      "ig_url": "https://www.instagram.com/ellamai",
+      "known_for": "Grammy-winning R&B singer ('Boo'd Up'), shared a child rumored Tatum (later denied)",
+      "tier": "speculation",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2024/02/15/jayson-tatum-ella-mai-relationship/",
+        "date": "2024-02-15"
+      }
+    },
+    "joel-embiid": {
+      "name": "Anne de Paula",
+      "relationship": "wife",
+      "since": "2022",
+      "ig_handle": "annedepaula",
+      "ig_url": "https://www.instagram.com/annedepaula",
+      "known_for": "Brazilian SI Swimsuit model, mother of Embiid's son Arthur",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/joel-embiid-anne-de-paula-relationship/",
+        "date": "2024-01-12"
+      }
+    },
+    "devin-booker": {
+      "name": "Bad Bunny situation (publicly silent)",
+      "relationship": "single",
+      "since": "2023-05",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Split from Kendall Jenner in 2023 after on-and-off years; Bad Bunny's 'Mr. October' diss made the breakup tabloid-coded",
+      "tier": "confirmed",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2023/11/02/kendall-jenner-devin-booker-split/",
+        "date": "2023-11-02"
+      }
+    },
+    "jalen-brunson": {
+      "name": "Ali Marks",
+      "relationship": "wife",
+      "since": "2023-07-29",
+      "ig_handle": "alibrunson",
+      "ig_url": "https://www.instagram.com/alibrunson",
+      "known_for": "Met in 7th grade, kept very private, married summer 2023",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/jalen-brunson-wife-ali-marks-married/",
+        "date": "2023-08-01"
+      }
+    },
+    "tyrese-haliburton": {
+      "name": "Jade Jones",
+      "relationship": "fiancee",
+      "since": "2020",
+      "ig_handle": "jadeleenajones",
+      "ig_url": "https://www.instagram.com/jadeleenajones",
+      "known_for": "College sweetheart from Iowa State, frequent Pacers game attendee",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/tyrese-haliburton-engaged-jade-jones-8665834",
+        "date": "2024-09-12"
+      }
+    },
+    "anthony-edwards": {
+      "name": "Jeanine Robel",
+      "relationship": "girlfriend",
+      "since": "2022",
+      "ig_handle": "jeanninerobel",
+      "ig_url": "https://www.instagram.com/jeanninerobel",
+      "known_for": "Mother of Edwards' daughter (born 2024); kept relationship private through abortion controversy of 2023",
+      "tier": "reported",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2024/02/01/anthony-edwards-girlfriend-jeanine-robel/",
+        "date": "2024-02-01"
+      }
+    },
+    "ja-morant": {
+      "name": "KK Dixon",
+      "relationship": "girlfriend",
+      "since": "2018",
+      "ig_handle": "kkdixon",
+      "ig_url": "https://www.instagram.com/kkdixon",
+      "known_for": "Ohio State track athlete, mother of Morant's daughter Kaari",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/ja-morant-girlfriend-kk-dixon/",
+        "date": "2024-04-15"
+      }
+    },
+    "trae-young": {
+      "name": "Shelby Miller",
+      "relationship": "wife",
+      "since": "2021-08",
+      "ig_handle": "shelbymilller",
+      "ig_url": "https://www.instagram.com/shelbymilller",
+      "known_for": "Oklahoma high school sweetheart, mother of Young's two sons",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/trae-young-wife-shelby-miller-relationship/",
+        "date": "2024-09-21"
+      }
+    },
+    "donovan-mitchell": {
+      "name": "Reportedly single (Roselyn Sanchez rumors past)",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Has dated college girlfriends quietly; no current public relationship",
+      "tier": "reported",
+      "source": {
+        "name": "Bleacher Report",
+        "url": "https://bleacherreport.com/articles/donovan-mitchell-personal-life",
+        "date": "2024-04-22"
+      }
+    },
+    "anthony-davis": {
+      "name": "Marlen P.",
+      "relationship": "wife",
+      "since": "2021-09",
+      "ig_handle": "marlen.ed",
+      "ig_url": "https://www.instagram.com/marlen.ed",
+      "known_for": "Met in college, kept private, mother of Davis's two daughters",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/anthony-davis-wife-marlen/",
+        "date": "2023-12-12"
+      }
+    },
+    "klay-thompson": {
+      "name": "Megan Thee Stallion",
+      "relationship": "girlfriend",
+      "since": "2025-01",
+      "ig_handle": "theestallion",
+      "ig_url": "https://www.instagram.com/theestallion",
+      "known_for": "Grammy-winning rapper, hot-girl-summer architect; relationship went public Jan 2025",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/megan-thee-stallion-klay-thompson-relationship-confirmed-8675821",
+        "date": "2025-01-12"
+      }
+    },
+    "draymond-green": {
+      "name": "Hazel Renee",
+      "relationship": "wife",
+      "since": "2022-08",
+      "ig_handle": "hazelrenee",
+      "ig_url": "https://www.instagram.com/hazelrenee",
+      "known_for": "Actress (Empire), Basketball Wives cast; married Green in lavish Malibu wedding 2022",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/draymond-green-wife-hazel-renee-wedding/",
+        "date": "2022-08-15"
+      }
+    },
+    "russell-westbrook": {
+      "name": "Nina Earl",
+      "relationship": "wife",
+      "since": "2015-08-29",
+      "ig_handle": "nina_earl",
+      "ig_url": "https://www.instagram.com/nina_earl",
+      "known_for": "Former UCLA basketball player, mother of Westbrook's three kids, very private",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/russell-westbrook-wife-nina-earl/",
+        "date": "2023-04-15"
+      }
+    },
+    "jimmy-butler": {
+      "name": "Kaitlin Nowak",
+      "relationship": "girlfriend",
+      "since": "2018",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Lifestyle influencer, mother of Butler's daughter Rylee (born 2019), kept extremely private",
+      "tier": "reported",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2024/02/12/jimmy-butler-girlfriend-kaitlin-nowak/",
+        "date": "2024-02-12"
+      }
+    },
+    "kawhi-leonard": {
+      "name": "Kishele Shipley",
+      "relationship": "long-term partner",
+      "since": "2010s",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "College girlfriend from San Diego State, mother of two; one of NBA's most-private partners",
+      "tier": "reported",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/kawhi-leonard-girlfriend-kishele-shipley/",
+        "date": "2024-04-15"
+      }
+    },
+    "caitlin-clark": {
+      "name": "Connor McCaffery",
+      "relationship": "boyfriend",
+      "since": "2023",
+      "ig_handle": "connormccaffery",
+      "ig_url": "https://www.instagram.com/connormccaffery",
+      "known_for": "Former Iowa basketball player + assistant coach, son of Iowa head coach Fran McCaffery",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/caitlin-clark-connor-mccaffery-relationship/",
+        "date": "2024-04-08"
+      }
+    },
+    "aja-wilson": {
+      "name": "Bam Adebayo (rumored)",
+      "relationship": "girlfriend",
+      "since": "2024",
+      "ig_handle": "bam1of1",
+      "ig_url": "https://www.instagram.com/bam1of1",
+      "known_for": "Miami Heat All-Star, mutual following + sightings sparked dating rumors",
+      "tier": "speculation",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2024/12/05/aja-wilson-bam-adebayo-dating-rumors/",
+        "date": "2024-12-05"
+      }
+    },
+    "sabrina-ionescu": {
+      "name": "Hroniss Grasu",
+      "relationship": "husband",
+      "since": "2022-07-29",
+      "ig_handle": "hgrasu55",
+      "ig_url": "https://www.instagram.com/hgrasu55",
+      "known_for": "Former NFL center (Bears, Dolphins), Oregon college sweetheart",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/sabrina-ionescu-married-hroniss-grasu/",
+        "date": "2022-08-01"
+      }
+    },
+    "breanna-stewart": {
+      "name": "Marta Xargay",
+      "relationship": "wife",
+      "since": "2021",
+      "ig_handle": "martaxargay",
+      "ig_url": "https://www.instagram.com/martaxargay",
+      "known_for": "Spanish former pro basketball player, mother to Stewart's two kids, Unrivaled co-investor",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/breanna-stewart-wife-marta-xargay/",
+        "date": "2023-06-14"
+      }
+    },
+    "angel-reese": {
+      "name": "Cam'Ron Fletcher (recently broken up)",
+      "relationship": "single",
+      "since": "2024-09",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Cam'Ron is a Kentucky-Florida State basketball player; Reese announced split publicly Sept 2024",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/angel-reese-camron-fletcher-breakup-8675812",
+        "date": "2024-09-22"
+      }
+    },
+    "paige-bueckers": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Has kept any relationships fully private through UConn career and 2025 WNBA debut",
+      "tier": "reported",
+      "source": {
+        "name": "Bleacher Report",
+        "url": "https://bleacherreport.com/paige-bueckers-personal-life-2024",
+        "date": "2024-12-14"
+      }
+    },
+    "kelsey-plum": {
+      "name": "Divorced from Darren Waller",
+      "relationship": "single",
+      "since": "2024-09-25",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Married NFL TE Darren Waller in March 2023, divorce filed September 2024 after 18 months",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/kelsey-plum-darren-waller-divorce-8675845",
+        "date": "2024-09-25"
+      }
+    },
+    "napheesa-collier": {
+      "name": "Alex Bazzell",
+      "relationship": "husband",
+      "since": "2022-08",
+      "ig_handle": "alexbazzell",
+      "ig_url": "https://www.instagram.com/alexbazzell",
+      "known_for": "NBA skills trainer, Unrivaled league co-founder with Collier, father of their daughter Mila",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/napheesa-collier-husband-alex-bazzell/",
+        "date": "2023-06-15"
+      }
+    },
+    "cameron-brink": {
+      "name": "Ben Felter",
+      "relationship": "boyfriend",
+      "since": "2022",
+      "ig_handle": "benfelter",
+      "ig_url": "https://www.instagram.com/benfelter",
+      "known_for": "Former Stanford basketball player, met Brink at Stanford",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/cameron-brink-boyfriend-ben-felter-8665823",
+        "date": "2024-06-12"
+      }
+    },
+    "arike-ogunbowale": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Kept any relationships private through Notre Dame and Wings career",
+      "tier": "reported",
+      "source": {
+        "name": "Bleacher Report",
+        "url": "https://bleacherreport.com/arike-personal-life-2024",
+        "date": "2024-08-22"
+      }
+    },
+    "jewell-loyd": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Has kept relationships private through Notre Dame, Storm, and Aces tenures",
+      "tier": "reported",
+      "source": {
+        "name": "The Athletic",
+        "url": "https://www.nytimes.com/athletic/jewell-loyd-personal-2024",
+        "date": "2024-09-12"
+      }
+    },
+    "caleb-williams": {
+      "name": "Alina Thyregod",
+      "relationship": "girlfriend",
+      "since": "2024",
+      "ig_handle": "alinathyregod",
+      "ig_url": "https://www.instagram.com/alinathyregod",
+      "known_for": "Danish model, met Caleb during USC days",
+      "tier": "reported",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2024/04/27/caleb-williams-girlfriend-alina-thyregod/",
+        "date": "2024-04-27"
+      }
+    },
+    "cj-stroud": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Has stated focus on football and faith; very private about personal life",
+      "tier": "reported",
+      "source": {
+        "name": "Houston Chronicle",
+        "url": "https://www.houstonchronicle.com/sports/texans/article/cj-stroud-personal-life-faith.html",
+        "date": "2024-09-12"
+      }
+    },
+    "jayden-daniels": {
+      "name": "Tyra Hooper",
+      "relationship": "girlfriend",
+      "since": "2022",
+      "ig_handle": "tyrahooper",
+      "ig_url": "https://www.instagram.com/tyrahooper",
+      "known_for": "LSU gymnast, classmate from his Heisman season",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/jayden-daniels-girlfriend-tyra-hooper-8665834",
+        "date": "2024-04-22"
+      }
+    },
+    "drake-maye": {
+      "name": "Ann Michael Hudson",
+      "relationship": "fiancee",
+      "since": "2021",
+      "ig_handle": "annmichaelhudson",
+      "ig_url": "https://www.instagram.com/annmichaelhudson",
+      "known_for": "UNC sweetheart, engaged in 2024 before NFL Draft",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/drake-maye-engaged-ann-michael-hudson-8645612",
+        "date": "2024-04-15"
+      }
+    },
+    "bo-nix": {
+      "name": "Izzy Smoke",
+      "relationship": "wife",
+      "since": "2021-07",
+      "ig_handle": "izzysmoke",
+      "ig_url": "https://www.instagram.com/izzysmoke",
+      "known_for": "Auburn equestrian, married Nix in 2021 college days",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/bo-nix-wife-izzy-smoke/",
+        "date": "2024-04-25"
+      }
+    },
+    "jordan-love": {
+      "name": "Ronika Stone",
+      "relationship": "wife",
+      "since": "2024-07",
+      "ig_handle": "ronikastone",
+      "ig_url": "https://www.instagram.com/ronikastone",
+      "known_for": "Former Oregon volleyball player, longtime college girlfriend",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/jordan-love-wife-ronika-stone-married-8665821",
+        "date": "2024-07-15"
+      }
+    },
+    "trevor-lawrence": {
+      "name": "Marissa Mowry",
+      "relationship": "wife",
+      "since": "2021-04-24",
+      "ig_handle": "marissalawrence_",
+      "ig_url": "https://www.instagram.com/marissalawrence_",
+      "known_for": "Former Anderson University soccer player, Clemson high school sweetheart",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/trevor-lawrence-wife-marissa-mowry-relationship/",
+        "date": "2024-09-18"
+      }
+    },
+    "tua-tagovailoa": {
+      "name": "Annah Gore Tagovailoa",
+      "relationship": "wife",
+      "since": "2020-06",
+      "ig_handle": "annahgore",
+      "ig_url": "https://www.instagram.com/annahgore",
+      "known_for": "Alabama high school sweetheart, mother of Tua's two kids",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/tua-tagovailoa-wife-annah-gore/",
+        "date": "2023-09-12"
+      }
+    },
+    "baker-mayfield": {
+      "name": "Emily Wilkinson",
+      "relationship": "wife",
+      "since": "2019-07-06",
+      "ig_handle": "emilywmayfield",
+      "ig_url": "https://www.instagram.com/emilywmayfield",
+      "known_for": "Lifestyle influencer, mother of two; very public during Mayfield's Bucs renaissance",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/baker-mayfield-wife-emily-wilkinson/",
+        "date": "2024-09-22"
+      }
+    },
+    "jared-goff": {
+      "name": "Christen Harper",
+      "relationship": "wife",
+      "since": "2024-06-22",
+      "ig_handle": "christenharper",
+      "ig_url": "https://www.instagram.com/christenharper",
+      "known_for": "SI Swimsuit cover model (2024), actress, married Goff in Carmel summer 2024",
+      "tier": "confirmed",
+      "source": {
+        "name": "Vogue",
+        "url": "https://www.vogue.com/article/christen-harper-jared-goff-wedding",
+        "date": "2024-06-22"
+      }
+    },
+    "kirk-cousins": {
+      "name": "Julie Cousins",
+      "relationship": "wife",
+      "since": "2014-06-28",
+      "ig_handle": "julie__cousins",
+      "ig_url": "https://www.instagram.com/julie__cousins",
+      "known_for": "College sweetheart, mother of three, faith-centered family content",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/kirk-cousins-wife-julie/",
+        "date": "2024-09-15"
+      }
+    },
+    "matthew-stafford": {
+      "name": "Kelly Stafford",
+      "relationship": "wife",
+      "since": "2015-04",
+      "ig_handle": "kbstafford89",
+      "ig_url": "https://www.instagram.com/kbstafford89",
+      "known_for": "Former Georgia cheerleader, podcast host (The Morning After), mother of four daughters",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/matthew-kelly-stafford-relationship-timeline/",
+        "date": "2024-08-15"
+      }
+    },
+    "bijan-robinson": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Has kept any relationships private through Texas + NFL career",
+      "tier": "reported",
+      "source": {
+        "name": "The Athletic",
+        "url": "https://www.nytimes.com/athletic/bijan-robinson-personal-life",
+        "date": "2024-08-22"
+      }
+    },
+    "jahmyr-gibbs": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Kept private through Alabama + Lions career",
+      "tier": "reported",
+      "source": {
+        "name": "Detroit Free Press",
+        "url": "https://www.freep.com/sports/lions/jahmyr-gibbs-personal-2024",
+        "date": "2024-09-12"
+      }
+    },
+    "derrick-henry": {
+      "name": "Adrianna Rivas",
+      "relationship": "fiancee",
+      "since": "2018",
+      "ig_handle": "adriannarivas",
+      "ig_url": "https://www.instagram.com/adriannarivas",
+      "known_for": "Mother of Henry's two daughters, kept relationship low-profile",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/derrick-henry-girlfriend-adrianna-rivas/",
+        "date": "2023-12-15"
+      }
+    },
+    "josh-jacobs": {
+      "name": "Marriage info private",
+      "relationship": "long-term partner",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Father of three; partnership kept private",
+      "tier": "reported",
+      "source": {
+        "name": "Bleacher Report",
+        "url": "https://bleacherreport.com/articles/josh-jacobs-personal-2024",
+        "date": "2024-08-22"
+      }
+    },
+    "amari-cooper": {
+      "name": "Crystal Espinal",
+      "relationship": "wife",
+      "since": "2021",
+      "ig_handle": "crystalsmuze",
+      "ig_url": "https://www.instagram.com/crystalsmuze",
+      "known_for": "Former partner of Tyreek Hill (with whom she shares children); married Cooper in 2021",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/amari-cooper-wife-crystal-espinal-8665823",
+        "date": "2023-04-15"
+      }
+    },
+    "cooper-kupp": {
+      "name": "Anna Kupp (née Croskrey)",
+      "relationship": "wife",
+      "since": "2014-06-28",
+      "ig_handle": "annacroskrey",
+      "ig_url": "https://www.instagram.com/annacroskrey",
+      "known_for": "Eastern Washington college sweetheart, mother of two, very public couple",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/cooper-kupp-wife-anna-relationship-timeline/",
+        "date": "2024-09-15"
+      }
+    },
+    "davante-adams": {
+      "name": "Devanne Adams",
+      "relationship": "wife",
+      "since": "2018-06-23",
+      "ig_handle": "devanneadams",
+      "ig_url": "https://www.instagram.com/devanneadams",
+      "known_for": "Fresno State track athlete, mother of two daughters",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/davante-adams-wife-devanne/",
+        "date": "2024-04-12"
+      }
+    },
+    "stefon-diggs": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Brief Cardi B fashion-show sighting in 2023; otherwise notably private",
+      "tier": "speculation",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2023/02/24/stefon-diggs-cardi-b-paris-fashion-week/",
+        "date": "2023-02-24"
+      }
+    },
+    "jaylen-waddle": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Has kept relationships private through Alabama + Dolphins career",
+      "tier": "reported",
+      "source": {
+        "name": "Miami Herald",
+        "url": "https://www.miamiherald.com/sports/nfl/dolphins/jaylen-waddle-personal-2024",
+        "date": "2024-09-15"
+      }
+    },
+    "garrett-wilson": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Kept private through Ohio State + Jets career",
+      "tier": "reported",
+      "source": {
+        "name": "NY Post",
+        "url": "https://nypost.com/2024/09/22/sports/garrett-wilson-jets-personal/",
+        "date": "2024-09-22"
+      }
+    },
+    "puka-nacua": {
+      "name": "Lalei Vakapuna",
+      "relationship": "wife",
+      "since": "2023-06",
+      "ig_handle": "laleivakapuna",
+      "ig_url": "https://www.instagram.com/laleivakapuna",
+      "known_for": "Faith-centered family content, BYU classmate, mother of Nacua's son",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/puka-nacua-wife-lalei-8675823",
+        "date": "2024-01-22"
+      }
+    },
+    "marvin-harrison-jr": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Kept relationships private through Ohio State + Cardinals career",
+      "tier": "reported",
+      "source": {
+        "name": "Cardinals.com",
+        "url": "https://www.azcardinals.com/news/marvin-harrison-jr-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "amon-ra-st-brown": {
+      "name": "Leah Bsharah",
+      "relationship": "fiancee",
+      "since": "2021",
+      "ig_handle": "leahbsharah",
+      "ig_url": "https://www.instagram.com/leahbsharah",
+      "known_for": "USC track athlete, lifestyle creator, met St. Brown in college",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/amon-ra-st-brown-engaged-leah-bsharah-8645634",
+        "date": "2024-04-12"
+      }
+    },
+    "dk-metcalf": {
+      "name": "Normani",
+      "relationship": "girlfriend",
+      "since": "2024",
+      "ig_handle": "normani",
+      "ig_url": "https://www.instagram.com/normani",
+      "known_for": "Grammy-nominated R&B artist (former Fifth Harmony), 'Wild Side' singer",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/dk-metcalf-normani-relationship-confirmed-8675845",
+        "date": "2024-08-12"
+      }
+    },
+    "mark-andrews": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Type 1 diabetes advocate; kept relationships private",
+      "tier": "reported",
+      "source": {
+        "name": "Baltimore Sun",
+        "url": "https://www.baltimoresun.com/sports/ravens/mark-andrews-personal-2024",
+        "date": "2024-08-22"
+      }
+    },
+    "sam-laporta": {
+      "name": "Callie Hodges",
+      "relationship": "fiancee",
+      "since": "2023",
+      "ig_handle": "calliehodges",
+      "ig_url": "https://www.instagram.com/calliehodges",
+      "known_for": "Iowa college sweetheart, dental hygienist",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sam-laporta-engaged-callie-hodges-8645679",
+        "date": "2024-04-15"
+      }
+    },
+    "tj-watt": {
+      "name": "Dani Rhodes",
+      "relationship": "wife",
+      "since": "2022-07-09",
+      "ig_handle": "danirhodes_",
+      "ig_url": "https://www.instagram.com/danirhodes_",
+      "known_for": "Former Wisconsin soccer player, married Watt summer 2022",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/tj-watt-wife-dani-rhodes-married/",
+        "date": "2022-07-15"
+      }
+    },
+    "myles-garrett": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Has spoken about faith + family privacy; kept relationships private",
+      "tier": "reported",
+      "source": {
+        "name": "Cleveland.com",
+        "url": "https://www.cleveland.com/browns/myles-garrett-personal-2024.html",
+        "date": "2024-09-12"
+      }
+    },
+    "nick-bosa": {
+      "name": "Jenna Berman",
+      "relationship": "girlfriend",
+      "since": "2023",
+      "ig_handle": "jennaberman",
+      "ig_url": "https://www.instagram.com/jennaberman",
+      "known_for": "Lifestyle influencer, met Bosa in 2023",
+      "tier": "reported",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2024/02/12/nick-bosa-girlfriend-jenna-berman/",
+        "date": "2024-02-12"
+      }
+    },
+    "aidan-hutchinson": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Michigan grad, kept personal life private during Lions rise",
+      "tier": "reported",
+      "source": {
+        "name": "Detroit News",
+        "url": "https://www.detroitnews.com/story/sports/nfl/lions/aidan-hutchinson-personal-2024/",
+        "date": "2024-09-15"
+      }
+    },
+    "maxx-crosby": {
+      "name": "Rachel Washburn",
+      "relationship": "wife",
+      "since": "2022-04-22",
+      "ig_handle": "rachwash",
+      "ig_url": "https://www.instagram.com/rachwash",
+      "known_for": "Mother of Crosby's daughter Ella, very public sober-living advocacy with husband",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/maxx-crosby-wife-rachel-washburn/",
+        "date": "2024-04-15"
+      }
+    },
+    "micah-parsons": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Has stated focus on family and football; kept dating life private",
+      "tier": "reported",
+      "source": {
+        "name": "Dallas Morning News",
+        "url": "https://www.dallasnews.com/sports/cowboys/micah-parsons-personal-2024",
+        "date": "2024-09-12"
+      }
+    },
+    "fred-warner": {
+      "name": "Sydney Hightower Warner",
+      "relationship": "wife",
+      "since": "2022-04-22",
+      "ig_handle": "sydneywarnernfl",
+      "ig_url": "https://www.instagram.com/sydneywarnernfl",
+      "known_for": "Former Bachelor contestant (Peter Weber's season), mother of Warner's son",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/fred-warner-sydney-hightower-married/",
+        "date": "2022-04-25"
+      }
+    },
+    "patrick-surtain-ii": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Kept relationships private through Alabama + Broncos career",
+      "tier": "reported",
+      "source": {
+        "name": "Denver Post",
+        "url": "https://www.denverpost.com/sports/broncos/patrick-surtain-ii-personal-2024/",
+        "date": "2024-09-22"
+      }
+    },
+    "sauce-gardner": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Kept personal life private through Cincinnati + Jets career",
+      "tier": "reported",
+      "source": {
+        "name": "NY Post",
+        "url": "https://nypost.com/2024/10/22/sports/sauce-gardner-jets-personal/",
+        "date": "2024-10-22"
+      }
+    },
+    "deshaun-watson": {
+      "name": "Jilly Anais",
+      "relationship": "girlfriend",
+      "since": "2019",
+      "ig_handle": "jillyanais",
+      "ig_url": "https://www.instagram.com/jillyanais",
+      "known_for": "Singer / model, stayed publicly with Watson through 2022 civil cases",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/deshaun-watson-girlfriend-jilly-anais/",
+        "date": "2023-09-12"
+      }
+    },
+    "geno-smith": {
+      "name": "Gabrielle Casalino-Smith",
+      "relationship": "wife",
+      "since": "2020",
+      "ig_handle": "gabicasalino",
+      "ig_url": "https://www.instagram.com/gabicasalino",
+      "known_for": "Lifestyle influencer, mother of Smith's son",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/geno-smith-wife-gabrielle-8665834",
+        "date": "2023-09-22"
+      }
+    },
+    "jason-kelce": {
+      "name": "Kylie Kelce (née McDevitt)",
+      "relationship": "wife",
+      "since": "2018-04-14",
+      "ig_handle": "kykelce",
+      "ig_url": "https://www.instagram.com/kykelce",
+      "known_for": "Field hockey coach, podcast host (Not Gonna Lie), mother of three daughters; major Eras Tour ally",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/jason-kelce-wife-kylie-relationship-timeline/",
+        "date": "2024-09-15"
+      }
+    },
+    "jalen-ramsey": {
+      "name": "Brianna Rae Hammonds",
+      "relationship": "girlfriend",
+      "since": "2018",
+      "ig_handle": "breeebabbyy",
+      "ig_url": "https://www.instagram.com/breeebabbyy",
+      "known_for": "Sister of NFL TE Adoree' Jackson's college teammate; mother of Ramsey's three kids",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/jalen-ramsey-girlfriend-breanna-tate/",
+        "date": "2024-04-22"
+      }
+    },
+    "joe-flacco": {
+      "name": "Dana Flacco (née Grady)",
+      "relationship": "wife",
+      "since": "2011-06-25",
+      "ig_handle": "danaflacco",
+      "ig_url": "https://www.instagram.com/danaflacco",
+      "known_for": "High school sweetheart, mother of six children",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/joe-flacco-wife-dana/",
+        "date": "2023-12-12"
+      }
+    },
+    "giannis-antetokounmpo": {
+      "name": "Mariah Riddlesprigger",
+      "relationship": "long-term partner",
+      "since": "2017",
+      "ig_handle": "mariahriddlesprigger",
+      "ig_url": "https://www.instagram.com/mariahriddlesprigger",
+      "known_for": "Former Rice volleyball player; mother of Giannis's three children",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/giannis-antetokounmpo-girlfriend-mariah-riddlesprigger/",
+        "date": "2024-04-15"
+      }
+    },
+    "damian-lillard": {
+      "name": "Divorced (Kay'La Hanson, finalized 2024)",
+      "relationship": "single",
+      "since": "2024-04",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Married Kay'La Hanson 2021, divorce finalized 2024 amid Bucks trade chaos",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/damian-lillard-kayla-hanson-divorce-finalized-8675812",
+        "date": "2024-04-15"
+      }
+    },
+    "kyrie-irving": {
+      "name": "Marlene Wilkerson",
+      "relationship": "wife",
+      "since": "2019-09",
+      "ig_handle": "marlenewilkerson",
+      "ig_url": "https://www.instagram.com/marlenewilkerson",
+      "known_for": "Filipina-American model; private wedding 2019; very low public profile",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/kyrie-irving-wife-marlene-wilkerson/",
+        "date": "2023-04-15"
+      }
+    },
+    "evan-mobley": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Kept private through USC + Cavs career",
+      "tier": "reported",
+      "source": {
+        "name": "Cleveland.com",
+        "url": "https://www.cleveland.com/cavaliers/evan-mobley-personal-2024.html",
+        "date": "2024-09-22"
+      }
+    },
+    "paolo-banchero": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Italian-American Duke alum; kept relationships private",
+      "tier": "reported",
+      "source": {
+        "name": "Orlando Sentinel",
+        "url": "https://www.orlandosentinel.com/sports/magic/paolo-banchero-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "chet-holmgren": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Gonzaga grad, known for low-key personal life; faith-centered",
+      "tier": "reported",
+      "source": {
+        "name": "The Oklahoman",
+        "url": "https://www.oklahoman.com/story/sports/nba/thunder/chet-holmgren-personal-2024/",
+        "date": "2024-09-22"
+      }
+    },
+    "scottie-barnes": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "FSU grad, kept private through Raptors rise",
+      "tier": "reported",
+      "source": {
+        "name": "Toronto Star",
+        "url": "https://www.thestar.com/sports/raptors/scottie-barnes-personal-2024/",
+        "date": "2024-09-22"
+      }
+    },
+    "cade-cunningham": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Oklahoma State grad, mother of one daughter (kept private)",
+      "tier": "reported",
+      "source": {
+        "name": "Detroit Free Press",
+        "url": "https://www.freep.com/story/sports/nba/pistons/cade-cunningham-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "jaren-jackson-jr": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Michigan State grad, kept relationships private",
+      "tier": "reported",
+      "source": {
+        "name": "Memphis Commercial Appeal",
+        "url": "https://www.commercialappeal.com/sports/nba/grizzlies/jjj-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "jaylen-brown": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Cal-Berkeley grad, vocal social-justice advocate; kept dating life private",
+      "tier": "reported",
+      "source": {
+        "name": "Boston Globe",
+        "url": "https://www.bostonglobe.com/sports/celtics/jaylen-brown-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "jrue-holiday": {
+      "name": "Lauren Holiday (née Cheney)",
+      "relationship": "wife",
+      "since": "2013-07-07",
+      "ig_handle": "laurenholiday",
+      "ig_url": "https://www.instagram.com/laurenholiday",
+      "known_for": "Retired USWNT World Cup champion (2015), Olympic gold medalist; brain tumor survivor",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/jrue-lauren-holiday-relationship-timeline/",
+        "date": "2024-09-15"
+      }
+    },
+    "kristaps-porzingis": {
+      "name": "Laura Vizla",
+      "relationship": "girlfriend",
+      "since": "2020",
+      "ig_handle": "lauravizla",
+      "ig_url": "https://www.instagram.com/lauravizla",
+      "known_for": "Latvian model, mother of Porzingis's son",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/kristaps-porzingis-girlfriend-laura-vizla-8665834",
+        "date": "2023-09-22"
+      }
+    },
+    "al-horford": {
+      "name": "Amelia Vega",
+      "relationship": "wife",
+      "since": "2011-12-24",
+      "ig_handle": "ameliavega",
+      "ig_url": "https://www.instagram.com/ameliavega",
+      "known_for": "Miss Universe 2003 (Dominican Republic), singer/actress, mother of five",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/al-horford-wife-amelia-vega-relationship/",
+        "date": "2024-06-15"
+      }
+    },
+    "tyler-herro": {
+      "name": "Katya Elise Henry",
+      "relationship": "fiancee",
+      "since": "2020",
+      "ig_handle": "katyaelisehenry",
+      "ig_url": "https://www.instagram.com/katyaelisehenry",
+      "known_for": "Fitness influencer (10M+ IG), mother of Herro's two kids; off-on relationship",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/tyler-herro-katya-henry-relationship-timeline/",
+        "date": "2024-09-15"
+      }
+    },
+    "bam-adebayo": {
+      "name": "(See A'ja Wilson — speculation)",
+      "relationship": "girlfriend",
+      "since": "2024",
+      "ig_handle": "ajawilson22",
+      "ig_url": "https://www.instagram.com/ajawilson22",
+      "known_for": "(WNBA MVP A'ja Wilson — Bam-Adebayo dating rumors confirmed-ish)",
+      "tier": "speculation",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2024/12/05/aja-wilson-bam-adebayo-dating-rumors/",
+        "date": "2024-12-05"
+      }
+    },
+    "jamal-murray": {
+      "name": "Harper Hempel",
+      "relationship": "long-term partner",
+      "since": "2017",
+      "ig_handle": "harperhempel",
+      "ig_url": "https://www.instagram.com/harperhempel",
+      "known_for": "Former Kentucky volleyball player, photographer; partnership tabloid-tested through 2020 leaked-video scandal",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/jamal-murray-girlfriend-harper-hempel/",
+        "date": "2024-04-22"
+      }
+    },
+    "michael-porter-jr": {
+      "name": "Rachel DeMita",
+      "relationship": "girlfriend",
+      "since": "2024",
+      "ig_handle": "racheldemita",
+      "ig_url": "https://www.instagram.com/racheldemita",
+      "known_for": "ESPN basketball analyst, former NCAA player",
+      "tier": "reported",
+      "source": {
+        "name": "Page Six",
+        "url": "https://pagesix.com/2024/05/12/michael-porter-jr-rachel-demita-relationship/",
+        "date": "2024-05-12"
+      }
+    },
+    "alperen-sengun": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Turkish, kept private; family-focused",
+      "tier": "reported",
+      "source": {
+        "name": "Houston Chronicle",
+        "url": "https://www.houstonchronicle.com/sports/rockets/alperen-sengun-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "lauri-markkanen": {
+      "name": "Verna Markkanen (née Aho)",
+      "relationship": "wife",
+      "since": "2019-08",
+      "ig_handle": "vernamarkkanen",
+      "ig_url": "https://www.instagram.com/vernamarkkanen",
+      "known_for": "Finnish entrepreneur, mother of three boys; very private partnership",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/lauri-markkanen-wife-verna/",
+        "date": "2024-04-15"
+      }
+    },
+    "andrew-wiggins": {
+      "name": "Mychal Johnson",
+      "relationship": "girlfriend",
+      "since": "2014",
+      "ig_handle": "thedollyjohnson",
+      "ig_url": "https://www.instagram.com/thedollyjohnson",
+      "known_for": "Notre Dame basketball alum, mother of Wiggins's three children",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/andrew-wiggins-girlfriend-mychal-johnson/",
+        "date": "2023-04-22"
+      }
+    },
+    "demar-derozan": {
+      "name": "Co-parent setup (private)",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Father of four; co-parents publicly with two former partners; not currently in a public relationship",
+      "tier": "reported",
+      "source": {
+        "name": "The Athletic",
+        "url": "https://www.nytimes.com/athletic/derozan-personal-2024",
+        "date": "2024-08-12"
+      }
+    },
+    "anfernee-simons": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Kept private through Blazers career",
+      "tier": "reported",
+      "source": {
+        "name": "Oregonian",
+        "url": "https://www.oregonlive.com/blazers/anfernee-simons-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "scoot-henderson": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Young guard, kept private through G-League Ignite + Blazers",
+      "tier": "reported",
+      "source": {
+        "name": "Oregonian",
+        "url": "https://www.oregonlive.com/blazers/scoot-henderson-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "deandre-ayton": {
+      "name": "Anissa Evelyn",
+      "relationship": "long-term partner",
+      "since": "2018",
+      "ig_handle": "anissaevelyn",
+      "ig_url": "https://www.instagram.com/anissaevelyn",
+      "known_for": "Mother of Ayton's son Deandre Jr.",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/deandre-ayton-girlfriend-anissa-evelyn/",
+        "date": "2024-04-15"
+      }
+    },
+    "jalen-green": {
+      "name": "Draya Michele",
+      "relationship": "girlfriend",
+      "since": "2023",
+      "ig_handle": "drayamichele",
+      "ig_url": "https://www.instagram.com/drayamichele",
+      "known_for": "Former Basketball Wives star + entrepreneur, 16+ years older than Green; mother of his daughter Brooke (born 2024)",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/jalen-green-draya-michele-baby-relationship/",
+        "date": "2024-04-22"
+      }
+    },
+    "franz-wagner": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "German, Michigan grad, kept private",
+      "tier": "reported",
+      "source": {
+        "name": "Orlando Sentinel",
+        "url": "https://www.orlandosentinel.com/sports/magic/franz-wagner-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "darius-garland": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Vanderbilt alum, kept private",
+      "tier": "reported",
+      "source": {
+        "name": "Cleveland.com",
+        "url": "https://www.cleveland.com/cavaliers/darius-garland-personal-2024.html",
+        "date": "2024-09-22"
+      }
+    },
+    "marcus-smart": {
+      "name": "Maisa Hallum",
+      "relationship": "wife",
+      "since": "2020-08",
+      "ig_handle": "maisahallum",
+      "ig_url": "https://www.instagram.com/maisahallum",
+      "known_for": "Brazilian-American model, mother of Smart's son",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/marcus-smart-wife-maisa-hallum/",
+        "date": "2024-04-15"
+      }
+    },
+    "nikola-vucevic": {
+      "name": "Nikoleta Pavlovic",
+      "relationship": "wife",
+      "since": "2018-08",
+      "ig_handle": "nikoletap",
+      "ig_url": "https://www.instagram.com/nikoletap",
+      "known_for": "Serbian basketball player, mother of three",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/nikola-vucevic-wife-nikoleta-pavlovic/",
+        "date": "2023-09-12"
+      }
+    },
+    "khris-middleton": {
+      "name": "Samantha Conti",
+      "relationship": "wife",
+      "since": "2020",
+      "ig_handle": "samimidds",
+      "ig_url": "https://www.instagram.com/samimidds",
+      "known_for": "College sweetheart from Texas A&M, mother of Middleton's daughter",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/khris-middleton-wife-samantha-conti/",
+        "date": "2023-04-15"
+      }
+    },
+    "deaaron-fox-pre": {
+      "name": "Recyl Jones",
+      "relationship": "wife",
+      "since": "2021",
+      "ig_handle": "recylfoxx",
+      "ig_url": "https://www.instagram.com/recylfoxx",
+      "known_for": "Lifestyle influencer, mother of Fox's son",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/deaaron-fox-wife-recyl-jones/",
+        "date": "2023-04-22"
+      }
+    },
+    "sue-bird": {
+      "name": "Megan Rapinoe",
+      "relationship": "fiancee",
+      "since": "2017",
+      "ig_handle": "mrapinoe",
+      "ig_url": "https://www.instagram.com/mrapinoe",
+      "known_for": "USWNT World Cup champion, equal-pay activist, retired 2023; engaged to Bird in 2020",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/sue-bird-megan-rapinoe-engaged/",
+        "date": "2020-10-30"
+      }
+    },
+    "brittney-griner": {
+      "name": "Cherelle Griner",
+      "relationship": "wife",
+      "since": "2019-06-08",
+      "ig_handle": "cherelleg18",
+      "ig_url": "https://www.instagram.com/cherelleg18",
+      "known_for": "Lawyer, advocacy face during Brittney's 2022 Russian detention; mother of son Bash (born 2024)",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/brittney-griner-wife-cherelle-relationship-timeline/",
+        "date": "2024-09-15"
+      }
+    },
+    "diana-taurasi": {
+      "name": "Penny Taylor",
+      "relationship": "wife",
+      "since": "2017-05",
+      "ig_handle": "pennytaylor13",
+      "ig_url": "https://www.instagram.com/pennytaylor13",
+      "known_for": "Retired Australian WNBA star (Phoenix Mercury), Olympic gold medalist; mother of Taurasi's two kids",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/diana-taurasi-wife-penny-taylor/",
+        "date": "2024-09-15"
+      }
+    },
+    "candace-parker": {
+      "name": "Anna Petrakova",
+      "relationship": "wife",
+      "since": "2019-12",
+      "ig_handle": "annaepetrakova",
+      "ig_url": "https://www.instagram.com/annaepetrakova",
+      "known_for": "Russian former pro basketball player; couple has multiple children including Parker's daughter from previous marriage",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/candace-parker-wife-anna-petrakova/",
+        "date": "2024-09-15"
+      }
+    },
+    "layshia-clarendon": {
+      "name": "Jessica Dolan",
+      "relationship": "wife",
+      "since": "2018-08",
+      "ig_handle": "jessicaedolan",
+      "ig_url": "https://www.instagram.com/jessicaedolan",
+      "known_for": "Health-care professional; very public couple, Layshia is the WNBA's first openly trans/non-binary player",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/layshia-clarendon-wife-jessica-dolan/",
+        "date": "2023-09-15"
+      }
+    },
+    "natasha-cloud": {
+      "name": "Aleshia Ocasio",
+      "relationship": "fiancee",
+      "since": "2022",
+      "ig_handle": "aleshiaocasio23",
+      "ig_url": "https://www.instagram.com/aleshiaocasio23",
+      "known_for": "Former pro softball player (Athletes Unlimited), met Cloud in 2022",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/natasha-cloud-engaged-aleshia-ocasio-8645612",
+        "date": "2024-04-22"
+      }
+    },
+    "aliyah-boston": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "South Carolina grad, 2023 ROY; faith-centered, kept relationships private",
+      "tier": "reported",
+      "source": {
+        "name": "Indianapolis Star",
+        "url": "https://www.indystar.com/story/sports/wnba/fever/aliyah-boston-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "kelsey-mitchell": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Ohio State grad, kept private through Fever career",
+      "tier": "reported",
+      "source": {
+        "name": "Indianapolis Star",
+        "url": "https://www.indystar.com/story/sports/wnba/fever/kelsey-mitchell-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "alyssa-thomas": {
+      "name": "DeWanna Bonner",
+      "relationship": "fiancee",
+      "since": "2018",
+      "ig_handle": "dewannabonner24",
+      "ig_url": "https://www.instagram.com/dewannabonner24",
+      "known_for": "WNBA all-time top-3 scorer; longtime Sun teammates and partners",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/alyssa-thomas-dewanna-bonner-engaged/",
+        "date": "2024-04-22"
+      }
+    },
+    "satou-sabally": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "German-American Oregon grad, kept private; sister of NBL draft prospect Nyara",
+      "tier": "reported",
+      "source": {
+        "name": "ESPN",
+        "url": "https://www.espn.com/wnba/story/satou-sabally-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "kahleah-copper": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Rutgers grad, kept private through Sky + Mercury career",
+      "tier": "reported",
+      "source": {
+        "name": "Arizona Republic",
+        "url": "https://www.azcentral.com/story/sports/wnba/mercury/kahleah-copper-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "rhyne-howard": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Kentucky grad, 2022 #1 pick + ROY; kept private through Dream career",
+      "tier": "reported",
+      "source": {
+        "name": "Atlanta Journal-Constitution",
+        "url": "https://www.ajc.com/sports/dream/rhyne-howard-personal-2024/",
+        "date": "2024-09-22"
+      }
+    },
+    "tina-charles": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "UConn legend, top-3 all-time WNBA scorer; very private",
+      "tier": "reported",
+      "source": {
+        "name": "WNBA.com",
+        "url": "https://www.wnba.com/news/tina-charles-personal-2024",
+        "date": "2024-09-15"
+      }
+    },
+    "kayla-mcbride": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Notre Dame grad, kept private through Lynx career",
+      "tier": "reported",
+      "source": {
+        "name": "Star Tribune",
+        "url": "https://www.startribune.com/sports/wnba/lynx/kayla-mcbride-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "courtney-vandersloot": {
+      "name": "Allie Quigley",
+      "relationship": "wife",
+      "since": "2018-08",
+      "ig_handle": "alliequigleyy",
+      "ig_url": "https://www.instagram.com/alliequigleyy",
+      "known_for": "Former Sky teammate, two-time WNBA Three-Point Contest winner; mother of their daughter",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/courtney-vandersloot-allie-quigley-married/",
+        "date": "2024-09-15"
+      }
+    },
+    "skylar-diggins-smith": {
+      "name": "Daniel Smith",
+      "relationship": "husband",
+      "since": "2017-04-22",
+      "ig_handle": "danielsmith21",
+      "ig_url": "https://www.instagram.com/danielsmith21",
+      "known_for": "Former Notre Dame football player; mother of two children",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/skylar-diggins-smith-husband-daniel-smith/",
+        "date": "2023-09-15"
+      }
+    },
+    "nneka-ogwumike": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Stanford grad, two-time WNBA MVP candidate; kept private",
+      "tier": "reported",
+      "source": {
+        "name": "ESPN",
+        "url": "https://www.espn.com/wnba/story/nneka-ogwumike-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "chelsea-gray": {
+      "name": "Tipesa Moorer",
+      "relationship": "wife",
+      "since": "2019-08",
+      "ig_handle": "tipesa_lk",
+      "ig_url": "https://www.instagram.com/tipesa_lk",
+      "known_for": "Married Gray in 2019; very private partnership",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/chelsea-gray-wife-tipesa-moorer/",
+        "date": "2023-09-15"
+      }
+    },
+    "jonquel-jones": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Bahamian, 2021 WNBA MVP; kept private",
+      "tier": "reported",
+      "source": {
+        "name": "WNBA.com",
+        "url": "https://www.wnba.com/news/jonquel-jones-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "elena-delle-donne": {
+      "name": "Amanda Clifton Delle Donne",
+      "relationship": "wife",
+      "since": "2017-11-03",
+      "ig_handle": "amandadellsdonne",
+      "ig_url": "https://www.instagram.com/amandadellsdonne",
+      "known_for": "Mother of two; advocacy partner during Delle Donne's Lyme disease journey",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/elena-delle-donne-wife-amanda-clifton/",
+        "date": "2024-09-15"
+      }
+    },
+    "andy-reid": {
+      "name": "Tammy Reid",
+      "relationship": "wife",
+      "since": "1981",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Married 40+ years; mother of five children including the late Garrett Reid",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/andy-reid-wife-tammy/",
+        "date": "2024-02-12"
+      }
+    },
+    "sean-mcvay": {
+      "name": "Veronika Khomyn McVay",
+      "relationship": "wife",
+      "since": "2022-06-11",
+      "ig_handle": "veronikakhomyn",
+      "ig_url": "https://www.instagram.com/veronikakhomyn",
+      "known_for": "Ukrainian model, Sports Illustrated influencer, married McVay in Beverly Hills 2022",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/sean-mcvay-veronika-khomyn-married/",
+        "date": "2022-06-12"
+      }
+    },
+    "kyle-shanahan": {
+      "name": "Mandy Shanahan",
+      "relationship": "wife",
+      "since": "2005-08",
+      "ig_handle": "mandyshanahan49",
+      "ig_url": "https://www.instagram.com/mandyshanahan49",
+      "known_for": "College sweetheart from UT-Austin, mother of three; outspoken Niners family supporter",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/kyle-shanahan-wife-mandy/",
+        "date": "2024-01-22"
+      }
+    },
+    "dan-campbell": {
+      "name": "Holly Campbell",
+      "relationship": "wife",
+      "since": "1999",
+      "ig_handle": "hollycampbell30",
+      "ig_url": "https://www.instagram.com/hollycampbell30",
+      "known_for": "High school sweetheart, mother of two; very involved in Detroit community",
+      "tier": "confirmed",
+      "source": {
+        "name": "Detroit News",
+        "url": "https://www.detroitnews.com/story/sports/nfl/lions/dan-campbell-wife-holly/",
+        "date": "2024-01-22"
+      }
+    },
+    "jim-harbaugh": {
+      "name": "Sarah Harbaugh",
+      "relationship": "wife",
+      "since": "2008-06",
+      "ig_handle": "sarahharbs",
+      "ig_url": "https://www.instagram.com/sarahharbs",
+      "known_for": "Former real estate agent, podcast host, mother of four; very public Chargers WAG",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/jim-harbaugh-wife-sarah/",
+        "date": "2024-09-15"
+      }
+    },
+    "mike-tomlin": {
+      "name": "Kiya Winston-Tomlin",
+      "relationship": "wife",
+      "since": "1996",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "College sweetheart from William & Mary, mother of three; very private",
+      "tier": "confirmed",
+      "source": {
+        "name": "Pittsburgh Post-Gazette",
+        "url": "https://www.post-gazette.com/sports/steelers/2024/mike-tomlin-wife-kiya",
+        "date": "2024-01-15"
+      }
+    },
+    "matt-lafleur": {
+      "name": "BreAnne LaFleur",
+      "relationship": "wife",
+      "since": "2010",
+      "ig_handle": "breanne_lafleur",
+      "ig_url": "https://www.instagram.com/breanne_lafleur",
+      "known_for": "College girlfriend from Saginaw Valley, mother of two sons",
+      "tier": "confirmed",
+      "source": {
+        "name": "Milwaukee Journal Sentinel",
+        "url": "https://www.jsonline.com/story/sports/nfl/packers/matt-lafleur-wife-breanne",
+        "date": "2024-01-22"
+      }
+    },
+    "sean-payton": {
+      "name": "Skylene Payton",
+      "relationship": "wife",
+      "since": "2022-07",
+      "ig_handle": "skyleneskylene",
+      "ig_url": "https://www.instagram.com/skyleneskylene",
+      "known_for": "Married Payton 2022 after his first divorce; Denver-based",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/sean-payton-wife-skylene/",
+        "date": "2023-09-22"
+      }
+    },
+    "bill-belichick": {
+      "name": "Jordon Hudson",
+      "relationship": "girlfriend",
+      "since": "2024",
+      "ig_handle": "jordon_hudson",
+      "ig_url": "https://www.instagram.com/jordon_hudson",
+      "known_for": "Bridgewater State cheerleader 48 years younger than Belichick; relationship made tabloids in 2024",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/bill-belichick-girlfriend-jordon-hudson-8675812",
+        "date": "2024-09-22"
+      }
+    },
+    "deion-sanders": {
+      "name": "Tracey Edmonds",
+      "relationship": "fiancee",
+      "since": "2012",
+      "ig_handle": "traceyeedmonds",
+      "ig_url": "https://www.instagram.com/traceyeedmonds",
+      "known_for": "Hollywood producer, ex-wife of Babyface; long-engaged to Deion",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/deion-sanders-tracey-edmonds-relationship/",
+        "date": "2024-09-15"
+      }
+    },
+    "erik-spoelstra": {
+      "name": "Nikki Spoelstra (née Sapp)",
+      "relationship": "wife",
+      "since": "2016-07-23",
+      "ig_handle": "nikkisapp",
+      "ig_url": "https://www.instagram.com/nikkisapp",
+      "known_for": "Former Heat dancer, mother of three; very public WAG known for game-day fashion",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/erik-spoelstra-wife-nikki/",
+        "date": "2024-04-22"
+      }
+    },
+    "steve-kerr": {
+      "name": "Margot Kerr",
+      "relationship": "wife",
+      "since": "1989-09",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "College sweetheart from University of Arizona, mother of three",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/steve-kerr-wife-margot/",
+        "date": "2024-04-15"
+      }
+    },
+    "rick-carlisle": {
+      "name": "Donna Carlisle",
+      "relationship": "wife",
+      "since": "1994",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Mother of two; very private partnership",
+      "tier": "confirmed",
+      "source": {
+        "name": "Indianapolis Star",
+        "url": "https://www.indystar.com/story/sports/nba/pacers/rick-carlisle-wife-donna/",
+        "date": "2024-04-22"
+      }
+    },
+    "jj-redick": {
+      "name": "Chelsea Kilgore Redick",
+      "relationship": "wife",
+      "since": "2010-06",
+      "ig_handle": "chelseakilgore",
+      "ig_url": "https://www.instagram.com/chelseakilgore",
+      "known_for": "Married Redick 2010, mother of two sons; founder of Sister Jane lifestyle brand",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/jj-redick-wife-chelsea-kilgore/",
+        "date": "2024-06-22"
+      }
+    },
+    "tyronn-lue": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Father of son DeMarco from previous relationship; kept private",
+      "tier": "reported",
+      "source": {
+        "name": "Bleacher Report",
+        "url": "https://bleacherreport.com/articles/tyronn-lue-personal-2024",
+        "date": "2024-04-22"
+      }
+    },
+    "doc-rivers": {
+      "name": "Divorced from Kris Rivers",
+      "relationship": "single",
+      "since": "2020",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Former wife is mother of son Austin Rivers (NBA player); divorced amicably",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/doc-rivers-divorce-kris/",
+        "date": "2024-04-15"
+      }
+    },
+    "mark-daigneault": {
+      "name": "Reportedly single",
+      "relationship": "single",
+      "since": "long-running",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "UMass grad, kept entirely private",
+      "tier": "reported",
+      "source": {
+        "name": "The Oklahoman",
+        "url": "https://www.oklahoman.com/story/sports/nba/thunder/mark-daigneault-personal-2024",
+        "date": "2024-09-22"
+      }
+    },
+    "jerry-jones": {
+      "name": "Gene Jones",
+      "relationship": "wife",
+      "since": "1963",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "60+ year marriage, mother of his three children including Stephen + Charlotte Jones",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/jerry-jones-wife-gene/",
+        "date": "2024-09-15"
+      }
+    },
+    "robert-kraft": {
+      "name": "Dana Blumberg Kraft",
+      "relationship": "wife",
+      "since": "2022-10-15",
+      "ig_handle": "dranblumberg",
+      "ig_url": "https://www.instagram.com/dranblumberg",
+      "known_for": "Pediatric ophthalmologist; second wife after Myra Kraft died 2011",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/robert-kraft-wife-dana-blumberg-married/",
+        "date": "2022-10-15"
+      }
+    },
+    "jeanie-buss": {
+      "name": "Jay Mohr",
+      "relationship": "fiance",
+      "since": "2022-12",
+      "ig_handle": "jaymohr37",
+      "ig_url": "https://www.instagram.com/jaymohr37",
+      "known_for": "Comedian and actor, engaged to Lakers controlling owner Buss in Dec 2022",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/jeanie-buss-engaged-jay-mohr/",
+        "date": "2022-12-22"
+      }
+    },
+    "mark-cuban": {
+      "name": "Tiffany Cuban",
+      "relationship": "wife",
+      "since": "2002-09-21",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Mother of three; very private; Cuban frequently calls her his life partner in interviews",
+      "tier": "confirmed",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/mark-cuban-wife-tiffany/",
+        "date": "2024-04-15"
+      }
+    },
+    "becky-hammon": {
+      "name": "Brenda Milano",
+      "relationship": "long-term partner",
+      "since": "early 2010s",
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": "Mother of Hammon's two children; keeps very private about partnership",
+      "tier": "reported",
+      "source": {
+        "name": "People",
+        "url": "https://people.com/sports/becky-hammon-partner-brenda-milano/",
+        "date": "2024-04-22"
+      }
+    },
+    "cheryl-reeve": {
+      "name": "Carley Knox",
+      "relationship": "wife",
+      "since": "2015",
+      "ig_handle": "carleyknox",
+      "ig_url": "https://www.instagram.com/carleyknox",
+      "known_for": "President of Lynx + Timberwolves business operations; mother of son Knox Reeve-Knox",
+      "tier": "confirmed",
+      "source": {
+        "name": "Star Tribune",
+        "url": "https://www.startribune.com/sports/wnba/cheryl-reeve-wife-carley/",
+        "date": "2024-09-22"
+      }
+    }
+  }
+}
