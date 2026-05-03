@@ -1,10 +1,10 @@
 {
   "generated_at": "2026-05-02",
-  "source": "Hand-curated from People, Page Six, ESPN, Vogue, The Athletic — strict sourcing only",
+  "source": "Hand-curated from People, Page Six, ESPN, Vogue, The Athletic \u2014 strict sourcing only",
   "note": "Current confirmed partners only. Skip exes unless contextually relevant. Sourcing rule: every entry has a real URL + date.",
   "wags": {
     "patrick-mahomes": {
-      "name": "Brittany Mahomes (née Matthews)",
+      "name": "Brittany Mahomes (n\u00e9e Matthews)",
       "relationship": "wife",
       "since": "2022-03-12",
       "ig_handle": "brittanylynne",
@@ -65,7 +65,7 @@
       "since": "2018",
       "ig_handle": "jaimetaylor",
       "ig_url": "https://www.instagram.com/jaimetaylor",
-      "known_for": "Mother of Lamar's two kids, kept very private — rarely makes public appearances",
+      "known_for": "Mother of Lamar's two kids, kept very private \u2014 rarely makes public appearances",
       "tier": "reported",
       "source": {
         "name": "Page Six",
@@ -247,7 +247,7 @@
       "since": "2019-06-29",
       "ig_handle": "kristinjuszczyk",
       "ig_url": "https://www.instagram.com/kristinjuszczyk",
-      "known_for": "Designer — first individual NFL apparel licensee (2024), made Taylor Swift's viral Chiefs puffer",
+      "known_for": "Designer \u2014 first individual NFL apparel licensee (2024), made Taylor Swift's viral Chiefs puffer",
       "tier": "confirmed",
       "source": {
         "name": "ESPN",
@@ -261,7 +261,7 @@
       "since": "2022-10",
       "ig_handle": null,
       "ig_url": null,
-      "known_for": "Divorced from Gisele Bündchen in October 2022 after 13 years; brief Irina Shayk rumors in 2023",
+      "known_for": "Divorced from Gisele B\u00fcndchen in October 2022 after 13 years; brief Irina Shayk rumors in 2023",
       "tier": "confirmed",
       "source": {
         "name": "People",
@@ -331,7 +331,7 @@
       "since": "2020-10",
       "ig_handle": null,
       "ig_url": null,
-      "known_for": "Mother of Jokic's daughter, very private — Serbian; rarely on social",
+      "known_for": "Mother of Jokic's daughter, very private \u2014 Serbian; rarely on social",
       "tier": "confirmed",
       "source": {
         "name": "NBA.com",
@@ -970,7 +970,7 @@
       }
     },
     "cooper-kupp": {
-      "name": "Anna Kupp (née Croskrey)",
+      "name": "Anna Kupp (n\u00e9e Croskrey)",
       "relationship": "wife",
       "since": "2014-06-28",
       "ig_handle": "annacroskrey",
@@ -1278,7 +1278,7 @@
       }
     },
     "jason-kelce": {
-      "name": "Kylie Kelce (née McDevitt)",
+      "name": "Kylie Kelce (n\u00e9e McDevitt)",
       "relationship": "wife",
       "since": "2018-04-14",
       "ig_handle": "kykelce",
@@ -1306,7 +1306,7 @@
       }
     },
     "joe-flacco": {
-      "name": "Dana Flacco (née Grady)",
+      "name": "Dana Flacco (n\u00e9e Grady)",
       "relationship": "wife",
       "since": "2011-06-25",
       "ig_handle": "danaflacco",
@@ -1460,7 +1460,7 @@
       }
     },
     "jrue-holiday": {
-      "name": "Lauren Holiday (née Cheney)",
+      "name": "Lauren Holiday (n\u00e9e Cheney)",
       "relationship": "wife",
       "since": "2013-07-07",
       "ig_handle": "laurenholiday",
@@ -1516,12 +1516,12 @@
       }
     },
     "bam-adebayo": {
-      "name": "(See A'ja Wilson — speculation)",
+      "name": "(See A'ja Wilson \u2014 speculation)",
       "relationship": "girlfriend",
       "since": "2024",
       "ig_handle": "ajawilson22",
       "ig_url": "https://www.instagram.com/ajawilson22",
-      "known_for": "(WNBA MVP A'ja Wilson — Bam-Adebayo dating rumors confirmed-ish)",
+      "known_for": "(WNBA MVP A'ja Wilson \u2014 Bam-Adebayo dating rumors confirmed-ish)",
       "tier": "speculation",
       "source": {
         "name": "Page Six",
@@ -1572,7 +1572,7 @@
       }
     },
     "lauri-markkanen": {
-      "name": "Verna Markkanen (née Aho)",
+      "name": "Verna Markkanen (n\u00e9e Aho)",
       "relationship": "wife",
       "since": "2019-08",
       "ig_handle": "vernamarkkanen",
@@ -2174,7 +2174,7 @@
       }
     },
     "erik-spoelstra": {
-      "name": "Nikki Spoelstra (née Sapp)",
+      "name": "Nikki Spoelstra (n\u00e9e Sapp)",
       "relationship": "wife",
       "since": "2016-07-23",
       "ig_handle": "nikkisapp",
@@ -2353,6 +2353,356 @@
         "name": "Star Tribune",
         "url": "https://www.startribune.com/sports/wnba/cheryl-reeve-wife-carley/",
         "date": "2024-09-22"
+      }
+    },
+    "pat-mcafee": {
+      "name": "Samantha McAfee (n\u00e9e Ludy)",
+      "relationship": "wife",
+      "since": "2020",
+      "ig_handle": "samanthamcafee",
+      "ig_url": "https://www.instagram.com/samanthamcafee",
+      "known_for": "Founder and CEO of Fur The Brand, animal rights activist",
+      "tier": "confirmed",
+      "source": {
+        "name": "Athlon Sports",
+        "url": "https://athlonsports.com/college-football/pat-mcafee-wife-girlfriend-kids-married-samantha-mcafee-espn-college-gameday",
+        "date": "2025-01-15"
+      }
+    },
+    "george-kittle": {
+      "name": "Claire Kittle (n\u00e9e Till)",
+      "relationship": "wife",
+      "since": "2019-04-09",
+      "ig_handle": "clairekittle",
+      "ig_url": "https://www.instagram.com/clairekittle",
+      "known_for": "Founder of HOSS Tailgate Tour, former Iowa women's basketball player",
+      "tier": "confirmed",
+      "source": {
+        "name": "Athlon Sports",
+        "url": "https://athlonsports.com/nfl/san-francisco-49ers/george-kittle-wife-claire-kittle-new-show",
+        "date": "2025-02-10"
+      }
+    },
+    "shannon-sharpe": {
+      "name": null,
+      "relationship": "private",
+      "since": null,
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": null,
+      "tier": "reported",
+      "source": {
+        "name": "Today.com",
+        "url": "https://www.today.com/popculture/shannon-sharpe-dating-history-rcna170845",
+        "date": "2025-02-01"
+      }
+    },
+    "james-cook": {
+      "name": "Bella Cvetanovski",
+      "relationship": "girlfriend",
+      "since": "2024-12",
+      "ig_handle": "bella.cvetanovski",
+      "ig_url": "https://www.instagram.com/bella.cvetanovski",
+      "known_for": "Detroit Lions cheerleader, former Detroit Pistons NBA dancer",
+      "tier": "reported",
+      "source": {
+        "name": "EssentiallySports",
+        "url": "https://www.essentiallysports.com/nfl-active-news-is-james-cook-dating-detroit-lions-cheerleader-bella-all-about-nfl-stars-rumored-girlfriend/",
+        "date": "2025-01-05"
+      }
+    },
+    "christian-wilkins": {
+      "name": "Livvie Caligiuri",
+      "relationship": "girlfriend",
+      "since": null,
+      "ig_handle": "livvie.caligiuri",
+      "ig_url": "https://www.instagram.com/livvie.caligiuri",
+      "known_for": "Former volleyball player, stylist at Aura Groupe Miami",
+      "tier": "reported",
+      "source": {
+        "name": "EssentiallySports",
+        "url": "https://www.essentiallysports.com/nfl-active-news-does-jared-verse-have-a-girlfriend-or-wife-all-about-nfl-stars-relationship-family-and-more/",
+        "date": "2025-01-10"
+      }
+    },
+    "brock-purdy": {
+      "name": "Jenna Purdy (n\u00e9e Brandt)",
+      "relationship": "wife",
+      "since": "2024-03-09",
+      "ig_handle": "jennabrandtpurdy",
+      "ig_url": "https://www.instagram.com/jennabrandtpurdy",
+      "known_for": "Iowa State alum, mother of daughter Millie (born July 2025)",
+      "tier": "confirmed",
+      "source": {
+        "name": "Athlon Sports",
+        "url": "https://athlonsports.com/nfl/san-francisco-49ers/49ers-seahawks-brock-purdy-married-wife-girlfriend-baby-photos-instagram-jenna-brandt",
+        "date": "2025-08-01"
+      }
+    },
+    "jared-verse": {
+      "name": null,
+      "relationship": "single",
+      "since": null,
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": null,
+      "tier": "reported",
+      "source": {
+        "name": "EssentiallySports",
+        "url": "https://www.essentiallysports.com/nfl-active-news-does-jared-verse-have-a-girlfriend-or-wife-all-about-nfl-stars-relationship-family-and-more/",
+        "date": "2025-01-10"
+      }
+    },
+    "tank-dell": {
+      "name": null,
+      "relationship": "private",
+      "since": null,
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": null,
+      "tier": "reported",
+      "source": {
+        "name": "NewsBreak",
+        "url": "https://www.newsbreak.com/news/3726669935097-houston-texans-wide-receiver-tank-dell-has-kept-his-personal-life-under-wraps-despite-rumors-about-a-potential-wife-or-girlfriend",
+        "date": "2025-01-01"
+      }
+    },
+    "rashee-rice": {
+      "name": "Dacoda Nichole Jones",
+      "relationship": "ex-girlfriend",
+      "since": null,
+      "ig_handle": "dacoda.jones",
+      "ig_url": "https://www.instagram.com/dacoda.jones",
+      "known_for": "Ex; mother of Rice's two sons; relationship ended July 2025",
+      "tier": "confirmed",
+      "source": {
+        "name": "ESPN",
+        "url": "https://www.espn.com/nfl/story/_/id/47967525/civil-lawsuit-filed-vs-chiefs-rashee-rice-alleges-assaults",
+        "date": "2025-08-15"
+      }
+    },
+    "trevon-diggs": {
+      "name": "Joie Chavis",
+      "relationship": "girlfriend",
+      "since": "2022",
+      "ig_handle": "joiechavis",
+      "ig_url": "https://www.instagram.com/joiechavis",
+      "known_for": "Influencer, model; mother of Diggs' daughter Harlo Rose (born Aug 2024)",
+      "tier": "reported",
+      "source": {
+        "name": "Yardbarker",
+        "url": "https://www.yardbarker.com/nfl/articles/trevon_diggs_expecting_third_child_with_influencer_girlfriend_joie_chavis/s1_17236_40113262",
+        "date": "2025-12-30"
+      }
+    },
+    "lamelo-ball": {
+      "name": "Ana Montana (Analicia Chaves)",
+      "relationship": "girlfriend",
+      "since": "2023-07",
+      "ig_handle": "ana_montana_",
+      "ig_url": "https://www.instagram.com/ana_montana_",
+      "known_for": "Model, actress, social media influencer; music video appearances",
+      "tier": "reported",
+      "source": {
+        "name": "Sportskeeda",
+        "url": "https://www.sportskeeda.com/basketball/lamelo-ball-girlfriend",
+        "date": "2025-04-10"
+      }
+    },
+    "aaron-gordon": {
+      "name": null,
+      "relationship": "single",
+      "since": null,
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": null,
+      "tier": "reported",
+      "source": {
+        "name": "EssentiallySports",
+        "url": "https://www.essentiallysports.com/nba-active-basketball-news-is-aaron-gordon-dating-someone-all-you-need-to-know-about-the-denver-nuggets-stars-relationship-status-past-flings-more/",
+        "date": "2025-02-01"
+      }
+    },
+    "rui-hachimura": {
+      "name": "Briana Delgado",
+      "relationship": "girlfriend",
+      "since": "2021",
+      "ig_handle": "brianadelgado_",
+      "ig_url": "https://www.instagram.com/brianadelgado_",
+      "known_for": "Fitness influencer, model; private relationship kept private",
+      "tier": "reported",
+      "source": {
+        "name": "Sportskeeda",
+        "url": "https://www.sportskeeda.com/basketball/rui-hachimura-girlfriend",
+        "date": "2025-01-15"
+      }
+    },
+    "deaaron-fox": {
+      "name": "Recee Fox (n\u00e9e Caldwell)",
+      "relationship": "wife",
+      "since": "2022-08",
+      "ig_handle": "reeceefox",
+      "ig_url": "https://www.instagram.com/reeceefox",
+      "known_for": "Former WNBA player; mother of Reign and Poppy; traded to Spurs 2025",
+      "tier": "confirmed",
+      "source": {
+        "name": "Andscape",
+        "url": "https://andscape.com/features/love-and-basketball-with-deaaron-and-recee-fox/",
+        "date": "2025-10-01"
+      }
+    },
+    "rudy-gobert": {
+      "name": "Julia Bonilla",
+      "relationship": "ex-girlfriend",
+      "since": null,
+      "ig_handle": "julia.bonilla_",
+      "ig_url": "https://www.instagram.com/julia.bonilla_",
+      "known_for": "French artistic director, podcast host (Journey); ex as of May 2025",
+      "tier": "confirmed",
+      "source": {
+        "name": "TMZ",
+        "url": "https://www.tmz.com/2025/05/16/rudy-gobert-breakup-julia-bonilla-move-out-of-home/",
+        "date": "2025-05-16"
+      }
+    },
+    "jalen-johnson": {
+      "name": null,
+      "relationship": "single",
+      "since": null,
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": null,
+      "tier": "reported",
+      "source": {
+        "name": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Jalen_Johnson",
+        "date": "2025-01-01"
+      }
+    },
+    "zach-lavine": {
+      "name": "Hunter LaVine (n\u00e9e Mar)",
+      "relationship": "wife",
+      "since": "2021-09",
+      "ig_handle": "hunterlavine",
+      "ig_url": "https://www.instagram.com/hunterlavine",
+      "known_for": "Former Seattle Redhawks soccer player, model, influencer",
+      "tier": "confirmed",
+      "source": {
+        "name": "EssentiallySports",
+        "url": "https://www.essentiallysports.com/nba-active-basketball-news-who-is-zach-lavines-wife-meeting-former-soccer-star-turned-influencer-married-to-the-bulls-star/",
+        "date": "2025-03-01"
+      }
+    },
+    "domantas-sabonis": {
+      "name": "Shashana Sabonis (n\u00e9e Rosen)",
+      "relationship": "wife",
+      "since": "2021-08-15",
+      "ig_handle": "shushsabonis",
+      "ig_url": "https://www.instagram.com/shushsabonis",
+      "known_for": "Model, dancer, co-founder The Movement - LA; mother of three",
+      "tier": "confirmed",
+      "source": {
+        "name": "Sportskeeda",
+        "url": "https://www.sportskeeda.com/basketball/domantas-sabonis-wife",
+        "date": "2025-01-15"
+      }
+    },
+    "donte-divincenzo": {
+      "name": "Morgan Calantoni",
+      "relationship": "girlfriend",
+      "since": "2017",
+      "ig_handle": "morganc.fit",
+      "ig_url": "https://www.instagram.com/morganc.fit",
+      "known_for": "Former Temple University cheerleader; mother of son Kai (2024)",
+      "tier": "reported",
+      "source": {
+        "name": "Yahoo Entertainment",
+        "url": "https://www.yahoo.com/entertainment/articles/who-is-donte-divincenzo-girlfriend-morgan-calantoni-084444589.html",
+        "date": "2025-01-20"
+      }
+    },
+    "obi-toppin": {
+      "name": "Magdalena Bellinger",
+      "relationship": "fiancee",
+      "since": "2020",
+      "ig_handle": "magdalena.bellinger",
+      "ig_url": "https://www.instagram.com/magdalena.bellinger",
+      "known_for": "Former George Mason soccer player; mother of Remi and Oziah; engaged Jan 2025",
+      "tier": "confirmed",
+      "source": {
+        "name": "Yahoo Sports",
+        "url": "https://sports.yahoo.com/just-meant-pacers-obi-toppin-211046680.html",
+        "date": "2025-01-15"
+      }
+    },
+    "bridget-carleton": {
+      "name": null,
+      "relationship": "single",
+      "since": null,
+      "ig_handle": null,
+      "ig_url": null,
+      "known_for": null,
+      "tier": "reported",
+      "source": {
+        "name": "EssentiallySports",
+        "url": "https://www.essentiallysports.com/wnba-basketball-news-is-bridget-carleton-single-all-about-her-current-relationship-status/",
+        "date": "2025-01-10"
+      }
+    },
+    "brittney-sykes": {
+      "name": "Morghan Medlock",
+      "relationship": "girlfriend",
+      "since": "2023-06",
+      "ig_handle": "morghanmedlock",
+      "ig_url": "https://www.instagram.com/morghanmedlock",
+      "known_for": "Former Baylor Lady Bears, chef, YouTuber; coordinates courtside fits",
+      "tier": "reported",
+      "source": {
+        "name": "EssentiallySports",
+        "url": "https://www.essentiallysports.com/wnba-basketball-news-who-is-brittney-sykes-partner-morghan-medlock-meet-former-baylor-lady-bear-star-turned-chef-and-youtuber/",
+        "date": "2025-01-15"
+      }
+    },
+    "marina-mabrey": {
+      "name": "Saniya Rivers",
+      "relationship": "girlfriend",
+      "since": "2025-07",
+      "ig_handle": "saniyariverst",
+      "ig_url": "https://www.instagram.com/saniyariverst",
+      "known_for": "WNBA player; hard-launched relationship July 2025; openly LGBTQ+",
+      "tier": "reported",
+      "source": {
+        "name": "Sportskeeda",
+        "url": "https://www.sportskeeda.com/basketball/news-i-left-everything-him-rudy-gobert-s-girlfriend-julia-bonilla-shares-heart-wrenching-statement-feeling-isolated-amid-breakup-rumors/",
+        "date": "2025-07-15"
+      }
+    },
+    "dewanna-bonner": {
+      "name": "Alyssa Thomas",
+      "relationship": "fiancee",
+      "since": "2020",
+      "ig_handle": "alyssathomas25",
+      "ig_url": "https://www.instagram.com/alyssathomas25",
+      "known_for": "WNBA All-Star, Connecticut Sun; proposed to Bonner at 2023 All-Star Game",
+      "tier": "confirmed",
+      "source": {
+        "name": "Sportskeeda",
+        "url": "https://www.sportskeeda.com/us/wnba/news-alyssa-thomas-fiancee-dewanna-bonner-intentions-dating-teammate-candice-dupree-split",
+        "date": "2025-08-15"
+      }
+    },
+    "allisha-gray": {
+      "name": "Tim Mangum Jr.",
+      "relationship": "fiancee",
+      "since": null,
+      "ig_handle": "timmangum_",
+      "ig_url": "https://www.instagram.com/timmangum_",
+      "known_for": "School psychologist; proposed Mar 29, 2025 with princess-cut diamond",
+      "tier": "confirmed",
+      "source": {
+        "name": "The Knot",
+        "url": "https://www.theknot.com/content/allisha-gray-relationship",
+        "date": "2025-03-30"
       }
     }
   }
