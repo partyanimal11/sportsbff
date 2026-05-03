@@ -520,74 +520,131 @@ Example transformation:
 `;
 
 export async function POST(req: NextRequest) {
-  if (!hasOpenAIKey()) {
-    return new Response(
-      JSON.stringify({ error: 'no_key', message: 'Scan is offline right now.' }),
-      { status: 200, headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } },
-    );
-  }
-
   // Parse query params — currently ?lens=euphoria for cinematic voice rewrite
   const url = new URL(req.url);
   const lens = (url.searchParams.get('lens') || '').toLowerCase();
   const euphoriaOn = lens === 'euphoria';
 
-  // Parse multipart image
-  let imageBase64: string | null = null;
-  try {
-    const form = await req.formData();
-    const file = form.get('image');
-    if (!(file instanceof Blob)) throw new Error('no image');
-    const bytes = new Uint8Array(await file.arrayBuffer());
-    imageBase64 = Buffer.from(bytes).toString('base64');
-  } catch {
-    return new Response(JSON.stringify({ error: 'invalid_image' }), {
-      status: 400,
-      headers: { 'Content-Type': 'application/json', ...CORS_HEADERS },
-    });
-  }
-
-  // Vision call to read scoreboard. Inject Euphoria voice override if requested.
-  const systemPrompt = SYSTEM_PROMPT + (euphoriaOn ? EUPHORIA_VOICE_OVERRIDE : '');
+  // ────────────────────────────────────────────────────────────────────
+  // DUAL-MODE INPUT — camera scan (multipart) OR manual matchup (JSON)
+  // ────────────────────────────────────────────────────────────────────
+  // SCAN mode: user pointed camera at TV scorebug → multipart image →
+  //   vision call → resolve teams → ESPN verify → return.
+  // SCOUT mode: user picked a game from the manual picker → JSON body
+  //   { league, home_team, away_team, lens? } → skip vision entirely
+  //   → resolve teams via lookup → ESPN verify → return.
+  //
+  // Both flows share the same downstream pipeline (rosters, tea, partners,
+  // explainer, matchup_tea) so the response shape is identical regardless
+  // of how the user arrived.
+  // ────────────────────────────────────────────────────────────────────
+  const contentType = req.headers.get('content-type') || '';
+  const isManualMode = contentType.includes('application/json');
 
   let parsed: VisionScore;
-  try {
-    const completion = await getOpenAI().chat.completions.create({
-      model: MODELS.VISION,
-      response_format: { type: 'json_object' },
-      messages: [
-        { role: 'system', content: systemPrompt },
-        {
-          role: 'user',
-          content: [
-            { type: 'text', text: 'Read this scoreboard.' },
-            { type: 'image_url', image_url: { url: `data:image/jpeg;base64,${imageBase64}` } },
-          ],
-        },
-      ],
-      // Bump max tokens to fit the new context paragraph + Euphoria voice (verbose)
-      max_tokens: euphoriaOn ? 800 : 600,
-      // Slightly higher temp for Euphoria so the prose doesn't feel robotic
-      temperature: euphoriaOn ? 0.6 : 0.1,
-      seed: 42,
-    });
-    const raw = completion.choices[0]?.message?.content ?? '{}';
-    parsed = JSON.parse(raw) as VisionScore;
-  } catch (err) {
-    return new Response(
-      JSON.stringify({ error: 'vision_error', message: String(err).slice(0, 100) }),
-      { status: 200, headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } },
-    );
-  }
+  let scanMode: 'scan' | 'scout' = 'scan';
 
-  if (!parsed.is_scoreboard) {
-    return new Response(
-      JSON.stringify({
-        error: 'no_scoreboard',
-        message: "Couldn't read a scoreboard in this image — try framing the corner scorebug more squarely.",
-      }),
-      { status: 200, headers: { 'Content-Type': 'application/json', 'X-Game-Mode': 'no_scoreboard', ...CORS_HEADERS } },
-    );
+  if (isManualMode) {
+    // ───────── SCOUT mode — manual matchup, skip vision ─────────
+    scanMode = 'scout';
+    let body: { league?: string; home_team?: string; away_team?: string; lens?: string };
+    try {
+      body = (await req.json()) as typeof body;
+    } catch {
+      return new Response(JSON.stringify({ error: 'invalid_json' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json', ...CORS_HEADERS },
+      });
+    }
+    if (!body.league || !body.home_team || !body.away_team) {
+      return new Response(
+        JSON.stringify({
+          error: 'missing_fields',
+          message: 'Scout mode requires league, home_team, away_team in JSON body.',
+        }),
+        { status: 400, headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } },
+      );
+    }
+    // Synthesize a VisionScore object so downstream pipeline doesn't need
+    // to know whether it came from vision or from a manual pick.
+    parsed = {
+      is_scoreboard: true,
+      league: body.league.toLowerCase(),
+      home_team: body.home_team,
+      away_team: body.away_team,
+      home_score: 0, // ESPN lookup will fill these in if game is live/final
+      away_score: 0,
+      clock: '',
+      period: 0,
+      period_label: '',
+      blurb: '', // Will be filled in below for SCOUT mode (no vision-generated)
+      context: '',
+    };
+  } else {
+    // ───────── SCAN mode — camera capture, vision call ─────────
+    if (!hasOpenAIKey()) {
+      return new Response(
+        JSON.stringify({ error: 'no_key', message: 'Scan is offline right now.' }),
+        { status: 200, headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } },
+      );
+    }
+
+    // Parse multipart image
+    let imageBase64: string | null = null;
+    try {
+      const form = await req.formData();
+      const file = form.get('image');
+      if (!(file instanceof Blob)) throw new Error('no image');
+      const bytes = new Uint8Array(await file.arrayBuffer());
+      imageBase64 = Buffer.from(bytes).toString('base64');
+    } catch {
+      return new Response(JSON.stringify({ error: 'invalid_image' }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json', ...CORS_HEADERS },
+      });
+    }
+
+    // Vision call to read scoreboard. Inject Euphoria voice override if requested.
+    const systemPrompt = SYSTEM_PROMPT + (euphoriaOn ? EUPHORIA_VOICE_OVERRIDE : '');
+
+    try {
+      const completion = await getOpenAI().chat.completions.create({
+        model: MODELS.VISION,
+        response_format: { type: 'json_object' },
+        messages: [
+          { role: 'system', content: systemPrompt },
+          {
+            role: 'user',
+            content: [
+              { type: 'text', text: 'Read this scoreboard.' },
+              { type: 'image_url', image_url: { url: `data:image/jpeg;base64,${imageBase64}` } },
+            ],
+          },
+        ],
+        // Bump max tokens to fit the new context paragraph + Euphoria voice (verbose)
+        max_tokens: euphoriaOn ? 800 : 600,
+        // Slightly higher temp for Euphoria so the prose doesn't feel robotic
+        temperature: euphoriaOn ? 0.6 : 0.1,
+        seed: 42,
+      });
+      const raw = completion.choices[0]?.message?.content ?? '{}';
+      parsed = JSON.parse(raw) as VisionScore;
+    } catch (err) {
+      return new Response(
+        JSON.stringify({ error: 'vision_error', message: String(err).slice(0, 100) }),
+        { status: 200, headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } },
+      );
+    }
+
+    if (!parsed.is_scoreboard) {
+      return new Response(
+        JSON.stringify({
+          error: 'no_scoreboard',
+          message: "Couldn't read a scoreboard in this image — try framing the corner scorebug more squarely.",
+        }),
+        { status: 200, headers: { 'Content-Type': 'application/json', 'X-Game-Mode': 'no_scoreboard', ...CORS_HEADERS } },
+      );
+    }
   }
 
   // Resolve teams — pass vision's league hint so PHI/ATL/CHI etc. resolve
@@ -659,6 +716,57 @@ export async function POST(req: NextRequest) {
   const finalPeriod = useEspnScores && liveGame?.period ? liveGame.period : parsed.period;
   const finalPeriodLabel =
     useEspnScores && liveGame?.periodLabel ? liveGame.periodLabel : parsed.period_label;
+
+  // ════════════════════════════════════════════════════════════════════
+  // SCOUT MODE — generate narrative since vision didn't run
+  // ════════════════════════════════════════════════════════════════════
+  // SCAN mode already has vision-generated blurb + context. SCOUT mode
+  // skipped vision so those fields are empty. Run a small GPT-4o-mini
+  // call here to generate matching narrative based on the matched game
+  // state (which now includes ESPN data when available). Cheap, fast,
+  // optional — fails open if OpenAI is down.
+  if (scanMode === 'scout' && hasOpenAIKey() && (!parsed.blurb || !parsed.context)) {
+    try {
+      const stateLabel =
+        liveGame?.status === 'in_progress'
+          ? `live (${finalPeriodLabel || 'Q?'} · ${finalClock || '?'})`
+          : liveGame?.status === 'final'
+            ? 'final'
+            : liveGame?.status === 'scheduled'
+              ? `scheduled (tip-off: ${liveGame.startTime ?? 'tonight'})`
+              : 'unknown state';
+      const narrativeSystem =
+        `You are sportsBFF's matchup analyst. Generate a 1-sentence "blurb" + 2-3 sentence "context" paragraph about this matchup. Game is in ${stateLabel}.\n\n` +
+        `Voice: warm, knowing, gossipy-but-clean. Like the smart friend whispering at the bar. PG-13. Never invent specific stats — speak in season-arc, rivalry, vibes terms.\n\n` +
+        (euphoriaOn
+          ? EUPHORIA_VOICE_OVERRIDE
+          : '') +
+        `\nReturn JSON: { "blurb": "...", "context": "..." }`;
+      const matchPrompt =
+        `${away.full} (away) at ${home.full} (home). ` +
+        (liveGame?.status === 'in_progress' || liveGame?.status === 'final'
+          ? `${finalAwayScore}-${finalHomeScore}.`
+          : 'Game has not started yet.') +
+        (liveGame?.broadcasts?.length ? ` On ${liveGame.broadcasts.slice(0, 2).join(' / ')}.` : '');
+      const narCompletion = await getOpenAI().chat.completions.create({
+        model: MODELS.MINI,
+        response_format: { type: 'json_object' },
+        messages: [
+          { role: 'system', content: narrativeSystem },
+          { role: 'user', content: matchPrompt },
+        ],
+        max_tokens: euphoriaOn ? 500 : 350,
+        temperature: euphoriaOn ? 0.6 : 0.4,
+        seed: 42,
+      });
+      const narRaw = narCompletion.choices[0]?.message?.content ?? '{}';
+      const nar = JSON.parse(narRaw) as { blurb?: string; context?: string };
+      if (nar.blurb) parsed.blurb = nar.blurb;
+      if (nar.context) parsed.context = nar.context;
+    } catch {
+      // Silent — narrative is additive
+    }
+  }
 
   // Pull rosters with per-player tea snippets
   const homeRoster = enrichRoster(league, home.code);
@@ -742,6 +850,8 @@ export async function POST(req: NextRequest) {
       context: parsed.context || '',
       // Active lens for the prose (default = sportsBFF voice, optional = euphoria)
       lens: euphoriaOn ? 'euphoria' : 'plain',
+      // How user got here: 'scan' (camera) or 'scout' (manual picker)
+      mode: scanMode,
       // Plain-English game state explainer (deterministic, no LLM cost)
       explainer: {
         whats_happening: explainer.whats_happening,

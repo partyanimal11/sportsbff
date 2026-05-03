@@ -99,8 +99,24 @@ const TIER: Record<TeaSnippet['tier'], { label: string; bg: string; fg: string; 
   rumor: { label: 'Rumor', bg: '#F1EFE8', fg: '#5F5E5A', dot: '#5F5E5A' },
 };
 
+/* ─────────────────── scout mode types ─────────────────── */
+type ScoutGame = {
+  espn_id: string;
+  status: 'in_progress' | 'scheduled' | 'final' | 'postponed' | 'unknown';
+  status_label: string;
+  home: { team: string; name: string; score: number };
+  away: { team: string; name: string; score: number };
+  clock: string;
+  period: number;
+  period_label: string;
+  broadcasts: string[];
+  start_time: string | null;
+};
+type ScoutGamesResponse = { league: string; games: ScoutGame[]; count: number };
+
 /* ─────────────────── page ─────────────────── */
 export default function GameScanPage() {
+  const [scanMode, setScanMode] = useState<'scan' | 'scout'>('scan');
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [loadingMsg, setLoadingMsg] = useState('Reading the scoreboard…');
@@ -109,6 +125,12 @@ export default function GameScanPage() {
   // Preserve the original captured file so we can re-fetch with ?lens=euphoria
   // without forcing the user to scan again
   const [lastFile, setLastFile] = useState<File | null>(null);
+  // SCOUT mode — preserve the last picked matchup so the lens toggle can re-fetch
+  const [lastScoutMatchup, setLastScoutMatchup] = useState<{
+    league: string;
+    home_team: string;
+    away_team: string;
+  } | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
   async function handleFile(file: File, opts: { lens?: 'plain' | 'euphoria' } = {}) {
@@ -150,11 +172,64 @@ export default function GameScanPage() {
     setError(null);
     setPreviewUrl(null);
     setLastFile(null);
+    setLastScoutMatchup(null);
+  }
+
+  /**
+   * SCOUT-mode submit. User picked a game from the picker (or set a custom
+   * matchup). Hits /api/scan/game with JSON body — server skips vision.
+   */
+  async function submitScout(
+    league: string,
+    home_team: string,
+    away_team: string,
+    opts: { lens?: 'plain' | 'euphoria' } = {},
+  ) {
+    setError(null);
+    setLoading(true);
+    setLoadingMsg(opts.lens === 'euphoria' ? 'Through Euphoria…' : 'Loading the matchup…');
+    setLastScoutMatchup({ league, home_team, away_team });
+    if (!opts.lens) {
+      setPreviewUrl(null);
+      setResult(null);
+    }
+    const t1 = !opts.lens ? setTimeout(() => setLoadingMsg('Pulling rosters…'), 1500) : null;
+    const t2 = !opts.lens ? setTimeout(() => setLoadingMsg('Loading the tea…'), 3000) : null;
+    try {
+      const lensParam = opts.lens === 'euphoria' ? '?lens=euphoria' : '';
+      const res = await fetch('/api/scan/game' + lensParam, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ league, home_team, away_team }),
+      });
+      const data = await res.json();
+      if (data && data.error) {
+        setError(data.message || friendlyErrorMessage(data.error));
+      } else {
+        setResult(data as GameScanResponse);
+      }
+    } catch {
+      setError('Network error — check connection and try again.');
+    } finally {
+      if (t1) clearTimeout(t1);
+      if (t2) clearTimeout(t2);
+      setLoading(false);
+    }
   }
 
   function toggleLens(toLens: 'plain' | 'euphoria') {
-    if (!lastFile || loading) return;
-    handleFile(lastFile, { lens: toLens });
+    if (loading) return;
+    // Lens toggle works for both SCAN and SCOUT — pick the right re-fetch path
+    if (lastFile) {
+      handleFile(lastFile, { lens: toLens });
+    } else if (lastScoutMatchup) {
+      submitScout(
+        lastScoutMatchup.league,
+        lastScoutMatchup.home_team,
+        lastScoutMatchup.away_team,
+        { lens: toLens },
+      );
+    }
   }
 
   return (
@@ -162,12 +237,23 @@ export default function GameScanPage() {
       <Header />
 
       {!result && !loading && (
-        <ScanCamera
-          onCapture={handleFile}
-          onPickFromLibrary={() => fileRef.current?.click()}
-          error={error}
-          onRetry={() => setError(null)}
-        />
+        <>
+          <ModeToggle mode={scanMode} onChange={setScanMode} />
+          {scanMode === 'scan' ? (
+            <ScanCamera
+              onCapture={handleFile}
+              onPickFromLibrary={() => fileRef.current?.click()}
+              error={error}
+              onRetry={() => setError(null)}
+            />
+          ) : (
+            <ScoutPicker
+              onPick={submitScout}
+              error={error}
+              onRetry={() => setError(null)}
+            />
+          )}
+        </>
       )}
 
       {loading && <LoadingState imageUrl={previewUrl} message={loadingMsg} />}
@@ -219,6 +305,246 @@ function Header() {
         </Link>
       </div>
     </header>
+  );
+}
+
+/* ─────────────────── mode toggle (SCAN / SCOUT) ─────────────────── */
+function ModeToggle({
+  mode,
+  onChange,
+}: {
+  mode: 'scan' | 'scout';
+  onChange: (m: 'scan' | 'scout') => void;
+}) {
+  return (
+    <div className="px-4 sm:px-6 max-w-3xl mx-auto pt-6">
+      <div className="bg-cream-warm/60 border border-[var(--hairline)] rounded-full p-1 flex w-full max-w-xs mx-auto">
+        <button
+          onClick={() => onChange('scan')}
+          className={`flex-1 py-2 px-4 rounded-full text-[13px] font-semibold transition flex items-center justify-center gap-1.5 ${
+            mode === 'scan'
+              ? 'bg-tangerine text-white shadow-[0_2px_8px_-2px_rgba(255,107,61,0.5)]'
+              : 'text-ink-soft hover:text-ink'
+          }`}
+          aria-pressed={mode === 'scan'}
+        >
+          <span aria-hidden>📷</span> Scan
+        </button>
+        <button
+          onClick={() => onChange('scout')}
+          className={`flex-1 py-2 px-4 rounded-full text-[13px] font-semibold transition flex items-center justify-center gap-1.5 ${
+            mode === 'scout'
+              ? 'bg-green text-white shadow-[0_2px_8px_-2px_rgba(13,45,36,0.4)]'
+              : 'text-ink-soft hover:text-ink'
+          }`}
+          aria-pressed={mode === 'scout'}
+        >
+          <span aria-hidden>✦</span> Scout
+        </button>
+      </div>
+      <p className="mt-2 text-center text-[11px] text-ink-soft italic">
+        {mode === 'scan' ? 'Watching on TV — point your phone' : 'Pick any game — no TV needed'}
+      </p>
+    </div>
+  );
+}
+
+/* ─────────────────── scout picker — manual game lookup ─────────────────── */
+function ScoutPicker({
+  onPick,
+  error,
+  onRetry,
+}: {
+  onPick: (league: string, home: string, away: string) => void;
+  error: string | null;
+  onRetry: () => void;
+}) {
+  const [league, setLeague] = useState<'nba' | 'nfl' | 'wnba'>('nba');
+  const [games, setGames] = useState<ScoutGame[] | null>(null);
+  const [pickerLoading, setPickerLoading] = useState(false);
+  const [pickerError, setPickerError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    setPickerLoading(true);
+    setPickerError(null);
+    setGames(null);
+    fetch(`/api/games/today?league=${league}`)
+      .then((r) => r.json())
+      .then((d: ScoutGamesResponse) => {
+        if (cancelled) return;
+        setGames(d.games || []);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setPickerError("Couldn't load today's games — check your connection.");
+      })
+      .finally(() => {
+        if (!cancelled) setPickerLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [league]);
+
+  return (
+    <section className="px-4 sm:px-6 pt-4 pb-16 max-w-3xl mx-auto">
+      {/* Hero */}
+      <div className="text-center">
+        <h1 className="font-display text-[32px] sm:text-[44px] font-bold text-green leading-[0.95] tracking-tight">
+          Pick the game.
+          <br />
+          <span className="italic font-medium text-tangerine">We'll do the rest.</span>
+        </h1>
+        <p className="mt-3 text-[14px] sm:text-[15px] text-ink-soft leading-relaxed max-w-md mx-auto">
+          No TV needed. Tap a live game, scout one before tipoff, or look up a game that already ended.
+        </p>
+      </div>
+
+      {/* League chips */}
+      <div className="mt-6 flex justify-center gap-2">
+        {(['nba', 'nfl', 'wnba'] as const).map((l) => (
+          <button
+            key={l}
+            onClick={() => setLeague(l)}
+            className={`px-4 py-2 rounded-full text-[12px] font-bold uppercase tracking-wider transition ${
+              league === l
+                ? 'bg-green text-white'
+                : 'bg-white border border-[var(--hairline)] text-ink-soft hover:text-ink'
+            }`}
+          >
+            {l}
+          </button>
+        ))}
+      </div>
+
+      {/* Today's games */}
+      <div className="mt-6 max-w-md mx-auto">
+        <p className="text-[10px] font-bold tracking-[0.22em] uppercase text-tangerine mb-3 text-center">
+          Today · {league.toUpperCase()}
+        </p>
+
+        {pickerLoading && (
+          <div className="text-center py-8">
+            <div className="inline-block w-6 h-6 border-2 border-tangerine border-t-transparent rounded-full animate-spin" />
+            <div className="mt-2 text-[12px] text-ink-soft">Loading today's games…</div>
+          </div>
+        )}
+
+        {pickerError && (
+          <div className="rounded-2xl bg-burgundy/5 border border-burgundy/30 p-4 text-center">
+            <div className="text-[13px] text-ink leading-relaxed">{pickerError}</div>
+          </div>
+        )}
+
+        {games && games.length === 0 && !pickerLoading && (
+          <div className="rounded-2xl bg-cream-warm/60 border border-[var(--hairline)] p-5 text-center">
+            <div className="font-display font-bold text-[15px] text-green">No {league.toUpperCase()} games today</div>
+            <div className="mt-1 text-[12px] text-ink-soft italic">Try another league, or use a custom matchup below.</div>
+          </div>
+        )}
+
+        {games && games.length > 0 && (
+          <div className="space-y-2">
+            {games.map((g) => (
+              <ScoutGameTile key={g.espn_id} game={g} onTap={() => onPick(league, g.home.team, g.away.team)} />
+            ))}
+          </div>
+        )}
+      </div>
+
+      {error && (
+        <div className="mt-6 mx-auto max-w-md rounded-2xl bg-burgundy/5 border border-burgundy/30 p-4 text-center">
+          <div className="font-display font-bold text-[14px] text-burgundy">Couldn't load this matchup</div>
+          <div className="mt-1 text-[13px] text-ink leading-relaxed">{error}</div>
+          <button
+            onClick={onRetry}
+            className="mt-3 inline-flex items-center justify-center gap-1.5 bg-burgundy text-white font-semibold rounded-full px-5 py-2 text-[12.5px] hover:opacity-90 transition"
+          >
+            Try again →
+          </button>
+        </div>
+      )}
+    </section>
+  );
+}
+
+function ScoutGameTile({ game, onTap }: { game: ScoutGame; onTap: () => void }) {
+  const isLive = game.status === 'in_progress';
+  const isFinal = game.status === 'final';
+  const isScheduled = game.status === 'scheduled';
+  const startTime = game.start_time
+    ? new Date(game.start_time).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })
+    : null;
+  return (
+    <button
+      onClick={onTap}
+      className="w-full text-left bg-white border border-[var(--hairline)] rounded-2xl p-3.5 hover:bg-cream-warm/40 hover:border-tangerine/50 transition shadow-[0_2px_8px_-4px_rgba(13,45,36,0.06)]"
+    >
+      <div className="flex items-center gap-3">
+        {/* Status indicator */}
+        <div className="shrink-0 w-14 flex flex-col items-center">
+          {isLive && (
+            <>
+              <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-red-500 text-white text-[8px] font-bold tracking-widest uppercase">
+                <span className="w-1 h-1 rounded-full bg-white animate-pulse" />
+                LIVE
+              </span>
+              <span className="mt-1 text-[10px] font-mono tabular-nums text-ink-soft">{game.period_label || `Q${game.period}`}</span>
+              {game.clock && <span className="text-[10px] font-mono tabular-nums text-tangerine">{game.clock}</span>}
+            </>
+          )}
+          {isFinal && (
+            <>
+              <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-ink/10 text-ink text-[8px] font-bold tracking-widest uppercase">
+                FINAL
+              </span>
+            </>
+          )}
+          {isScheduled && (
+            <>
+              <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-tangerine/10 text-tangerine text-[8px] font-bold tracking-widest uppercase">
+                SOON
+              </span>
+              {startTime && <span className="mt-1 text-[10px] font-mono text-ink-soft">{startTime}</span>}
+            </>
+          )}
+        </div>
+
+        {/* Matchup */}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-baseline gap-2">
+            <span className="font-display font-extrabold text-[14px] tracking-wider text-green">
+              {game.away.team}
+            </span>
+            {(isLive || isFinal) && (
+              <span className="font-display font-bold text-[16px] tabular-nums text-ink">
+                {game.away.score}
+              </span>
+            )}
+            <span className="text-[11px] text-muted">@</span>
+            <span className="font-display font-extrabold text-[14px] tracking-wider text-green">
+              {game.home.team}
+            </span>
+            {(isLive || isFinal) && (
+              <span className="font-display font-bold text-[16px] tabular-nums text-ink">
+                {game.home.score}
+              </span>
+            )}
+          </div>
+          <div className="mt-0.5 text-[11px] text-ink-soft truncate">
+            {game.away.name} at {game.home.name}
+            {game.broadcasts.length > 0 && (
+              <span className="text-tangerine"> · on {game.broadcasts.slice(0, 2).join(' / ')}</span>
+            )}
+          </div>
+        </div>
+
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-ink-soft shrink-0" aria-hidden>
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </div>
+    </button>
   );
 }
 
