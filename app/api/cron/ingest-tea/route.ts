@@ -73,16 +73,24 @@ export async function GET(req: NextRequest) {
   }
 
   // ─── Classify ───
-  // Cap items processed per run to keep cost bounded. 80 items × 5 concurrent
-  // = ~16s of LLM time; well within budget. RSS feeds may surface dupes from
-  // prior runs — those get filtered out at append time by source URL.
-  const capped = feedItems.slice(0, 80);
+  // Cap items processed per run to bound cost. 200 items × $0.0003 = $0.06/day = $22/year.
+  //
+  // Allocate the cap fairly across tiers — gossip sources are lower-volume than
+  // ESPN's flood of feeds, so without per-tier slots they get drowned out. Take
+  // up to 100 from each tier, drop the rest. (If gossip has fewer than 100,
+  // backfill from news to use the full budget.)
+  const PER_TIER_CAP = 100;
+  const TOTAL_CAP = 200;
+  const gossipPool = feedItems.filter((i) => i.source.tier === 'gossip').slice(0, PER_TIER_CAP);
+  const newsPool = feedItems.filter((i) => i.source.tier === 'news').slice(0, PER_TIER_CAP);
+  const capped = [...gossipPool, ...newsPool].slice(0, TOTAL_CAP);
   const classifications = await classifyBatch(capped, { concurrency: 5 });
 
   // ─── Route into lanes ───
   const newsItems: LiveTeaItem[] = [];
   const gossipItems: LiveTeaItem[] = [];
   const pendingItems: PendingItem[] = [];
+  const rejectReasonCounts: Record<string, number> = {};
   let rejectedCount = 0;
 
   for (let i = 0; i < classifications.length; i++) {
@@ -98,6 +106,10 @@ export async function GET(req: NextRequest) {
       pendingItems.push(result.item);
     } else {
       rejectedCount++;
+      // Bucket rejection reasons by prefix for visibility — gives Aaron a
+      // sense of WHY items get cut without dumping every reason string.
+      const reasonBucket = result.reason.split(/[:_]/)[0] || 'unknown';
+      rejectReasonCounts[reasonBucket] = (rejectReasonCounts[reasonBucket] ?? 0) + 1;
     }
   }
 
@@ -121,12 +133,20 @@ export async function GET(req: NextRequest) {
     ok: true,
     dryRun,
     feedsProcessed: new Set(capped.map((c) => c.source.name)).size,
+    feedsAttempted: new Set(feedItems.map((c) => c.source.name)).size,
     itemsFetched: feedItems.length,
     itemsClassified: classifications.length,
+    poolBreakdown: {
+      gossipFetched: feedItems.filter((i) => i.source.tier === 'gossip').length,
+      newsFetched: feedItems.filter((i) => i.source.tier === 'news').length,
+      gossipClassified: capped.filter((i) => i.source.tier === 'gossip').length,
+      newsClassified: capped.filter((i) => i.source.tier === 'news').length,
+    },
     newsAdded,
     gossipAdded,
     pendingAdded,
     rejected: rejectedCount,
+    rejectReasons: rejectReasonCounts,
     elapsedMs: Date.now() - startedAt,
     timestamp: new Date().toISOString(),
   });

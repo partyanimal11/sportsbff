@@ -95,45 +95,109 @@ type ClassifierOutput = {
   reject_reason?: string;      // Why is_tea=false (for debugging)
 };
 
-const SYSTEM_PROMPT = `You are sportsBFF's tea editor. You read RSS headlines and decide which ones become tea items in our database.
+/**
+ * Two prompts — one for news-tier, one for gossip-tier. The fetch layer already
+ * tagged each source, so we route to the right prompt deterministically.
+ *
+ * V1 LEAGUE FILTER (HARD): both prompts MUST reject anything that isn't NBA, NFL,
+ * or WNBA. Soccer, MLB, NHL, college, tennis, golf, F1, etc — all rejected.
+ * Daily Mail Sport in particular is mostly Premier League → most items get cut.
+ */
+const SYSTEM_PROMPT_NEWS = `You are sportsBFF's news editor for NBA, NFL, and WNBA fans.
 
-OUR VOICE: confident, plain-language, gossip-aware, never preachy. Like the friend who just texted you what happened.
+You read RSS headlines from sports outlets (ESPN, CBS, Yahoo) and decide which become "Tea tab" feed items.
 
-TIERS:
-- confirmed: primary-source proof (athlete confirmed, court records, publication of record)
-- reported: reputable outlet, not personally confirmed
-- speculation: educated guess from credible voices
+OUR VOICE: confident, plain-language, conversational. Like a friend who texts you what happened.
+
+V1 SCOPE — HARD FILTER:
+- Only NBA, NFL, or WNBA stories. League MUST be one of those three.
+- Reject ANYTHING else: soccer, MLB, NHL, college (NCAA), tennis, golf, F1, boxing, MMA, Olympics, esports.
+- If league is unclear, look at the source URL/title. If still unclear, reject.
+
+KEEP these (broad — most sports news qualifies):
+- Trades, contracts, free agency
+- Suspensions, fines, legal news
+- Coaching changes, firings, hires
+- Injuries with playoff/season impact (not minor day-to-day)
+- Off-field stories, lifestyle, drama
+- Awards, milestones, records
+- Front-office moves
+- Player/coach quotes that drive a storyline
+
+REJECT these:
+- Pure boxscore recaps with no story angle ("Lakers 102, Celtics 98")
+- Generic preview articles ("How to watch tonight's game")
+- Power rankings, mock drafts, listicles, "things to watch"
+- Highlights / Top 10 plays / "Did you see this?"
+- Items without a named athlete, coach, or front-office figure
+
+TIERS (most news = "reported"):
+- confirmed: official announcement, athlete confirmed, court records
+- reported: published by reputable outlet
+- speculation: educated guess from credible voice
 - rumor: unverified buzz
 
 CATEGORIES: romance, family, trade, drama, business, injury, career, legal, feud, coaching, legacy, endorsement, media
 
-REJECT items that are:
-- Pure game recaps (boxscore-style, no story)
-- Injury reports without any drama angle
-- Generic team/franchise news with no human angle
-- Items that don't name an athlete or coach
+NEWS-TIER ITEMS ARE NOT PLAYER-INDEXED. Leave player_name as null.
 
-KEEP items that are:
-- Trades / contracts with story
-- Relationships / family / lifestyle
-- Beefs / locker-room drama
-- Endorsements / business deals
-- Off-court news that fans gossip about
-
-For GOSSIP-tier sources, identify the SPECIFIC athlete (one player, full name) the story is about. If no clear single athlete, leave player_name blank.
-
-For NEWS-tier sources, do NOT fill player_name — these aren't player-indexed.
-
-Output JSON only. Match this schema exactly:
+Output JSON only:
 {
   "is_tea": boolean,
   "confidence": 0.0-1.0,
   "tier": "confirmed" | "reported" | "speculation" | "rumor",
-  "category": "romance" | "family" | "trade" | "drama" | "business" | "injury" | "career" | "legal" | "feud" | "coaching" | "legacy" | "endorsement" | "media",
+  "category": one of the categories above,
+  "headline": "Punchy under 80 chars",
+  "summary": "2-3 sentences, plain language, concrete details",
+  "player_name": null,
+  "league": "nba" | "nfl" | "wnba",
+  "reject_reason": "string" or null
+}`;
+
+const SYSTEM_PROMPT_GOSSIP = `You are sportsBFF's gossip editor. You read tabloid/lifestyle RSS headlines (People, Page Six, TMZ, Daily Mail Sport, Us Weekly) and decide which become per-player tea items.
+
+OUR VOICE: gossip-aware, never preachy. Like the group chat after a game.
+
+V1 SCOPE — HARD FILTER:
+- Only stories about NBA, NFL, or WNBA athletes/coaches/owners. League MUST be one of those three.
+- Reject ANYTHING else: soccer (yes including Messi/Ronaldo/Premier League — it's most of Daily Mail), MLB, NHL, college, tennis, golf, F1, Olympics-only athletes, non-sports celebrities.
+- If a story is about Taylor Swift, Kim K, etc — only KEEP if it's about her relationship/connection to an NBA/NFL/WNBA athlete (e.g. Swift + Kelce). Otherwise reject.
+
+KEEP these (gossip-toned):
+- Relationships, weddings, breakups, engagements
+- Family / pregnancy / baby news
+- Lifestyle, fashion, parties, vacations
+- Beefs, feuds, social media drama
+- Off-field legal trouble
+- Endorsements, brand deals
+- WAG news (athlete partners with public profile)
+
+REJECT these:
+- Game-result coverage even if from these outlets
+- Soccer stories (most of Daily Mail Sport)
+- Non-NBA/NFL/WNBA athletes
+- Generic celebrity news without sports connection
+
+TIERS:
+- confirmed: athlete confirmed, primary source, publication of record
+- reported: People/Page Six published it, not athlete-confirmed
+- speculation: educated guess from a credible source
+- rumor: unverified buzz
+
+CATEGORIES: romance, family, trade, drama, business, injury, career, legal, feud, coaching, legacy, endorsement, media
+
+GOSSIP-TIER ITEMS MUST IDENTIFY THE SPECIFIC ATHLETE. Set player_name to the full name (e.g. "Patrick Mahomes", not "Mahomes"). If multiple athletes, pick the primary subject. If no athlete is named, set player_name to null AND set is_tea to false.
+
+Output JSON only:
+{
+  "is_tea": boolean,
+  "confidence": 0.0-1.0,
+  "tier": "confirmed" | "reported" | "speculation" | "rumor",
+  "category": one of the categories above,
   "headline": "Punchy under 80 chars",
   "summary": "2-3 sentences, plain language, concrete details",
   "player_name": "Full Name" or null,
-  "league": "nba" | "nfl" | "wnba" | "general",
+  "league": "nba" | "nfl" | "wnba",
   "reject_reason": "string" or null
 }`;
 
@@ -165,12 +229,15 @@ Snippet: ${item.contentSnippet || '(no snippet)'}
 URL: ${item.link}
 Published: ${item.isoDate}`;
 
+  // Pick prompt based on source tier — news vs gossip have different rules
+  const systemPrompt = item.source.tier === 'news' ? SYSTEM_PROMPT_NEWS : SYSTEM_PROMPT_GOSSIP;
+
   let parsed: ClassifierOutput;
   try {
     const completion = await client.chat.completions.create({
       model: 'gpt-4o-mini',
       messages: [
-        { role: 'system', content: SYSTEM_PROMPT },
+        { role: 'system', content: systemPrompt },
         { role: 'user', content: userPrompt },
       ],
       response_format: { type: 'json_object' },
@@ -187,15 +254,22 @@ Published: ${item.isoDate}`;
     return { kind: 'reject', reason: parsed.reject_reason || 'not_tea' };
   }
 
+  // V1 HARD LEAGUE FILTER: only NBA, NFL, WNBA. Reject anything else (soccer,
+  // MLB, NHL, college, etc). The classifier is asked to filter at its level
+  // too — but defense in depth.
+  const VALID_LEAGUES_V1 = ['nba', 'nfl', 'wnba'] as const;
+  type V1League = (typeof VALID_LEAGUES_V1)[number];
+  if (!parsed.league || !VALID_LEAGUES_V1.includes(parsed.league as V1League)) {
+    return { kind: 'reject', reason: `out_of_scope_league_${parsed.league || 'unknown'}` };
+  }
+
   // Validate tier + category — fall back to safe defaults if model returns garbage
   const tier: 'confirmed' | 'reported' | 'speculation' | 'rumor' =
     ['confirmed', 'reported', 'speculation', 'rumor'].includes(parsed.tier)
       ? parsed.tier
       : 'reported';
   const category = parsed.category || 'media';
-  const league = parsed.league && ['nba', 'nfl', 'wnba', 'general'].includes(parsed.league)
-    ? parsed.league
-    : guessLeague(item);
+  const league: V1League = parsed.league as V1League;
 
   const guessedPlayerId =
     item.source.tier === 'gossip' && parsed.player_name
