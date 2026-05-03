@@ -486,12 +486,12 @@ ONLY return Unknown when:
 
 If you can read the team name but not the specific player, return Unknown rather than guessing the team's most-famous star.
 
-For retired stars / broadcasters / coaches / owners, set `position` to their CURRENT role:
+For retired stars / broadcasters / coaches / owners, set the position field to their CURRENT role:
 - Retired playing → e.g. "NBA Retired / Inside the NBA Analyst" (Shaq)
 - Currently broadcasting → e.g. "FOX Lead Color Commentator" (Tom Brady)
 - Coach → e.g. "Lakers Head Coach" (JJ Redick)
 - Owner → e.g. "Cowboys Owner" (Jerry Jones)
-And set `team` to their current affiliation ("FOX", "ESPN", "Lakers", "Cowboys", etc.) NOT their old playing team.
+And set the team field to their current affiliation ("FOX", "ESPN", "Lakers", "Cowboys", etc.) NOT their old playing team.
 
 Unknown response shape (use sparingly):
 {"player_name":"Unknown","number":0,"position":"Unknown","team":"Unknown","jersey_color":"white","blurb":"I couldn't quite ID this one — try a clearer crop on the jersey or a different angle."}
