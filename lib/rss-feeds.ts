@@ -58,9 +58,10 @@ export const FEED_SOURCES: FeedSource[] = [
   },
   {
     name: 'ESPN WNBA',
-    url: 'https://www.espn.com/espn/rss/wnba/news',
+    url: 'https://www.espn.com/wnba/rss.xml',
     tier: 'news',
     enabled: true,
+    notes: 'Updated 2026-05-03 — old /espn/rss/wnba/news URL returns 404 now',
   },
   {
     name: 'CBS Sports NBA',
@@ -90,17 +91,18 @@ export const FEED_SOURCES: FeedSource[] = [
     notes: 'Premier athlete gossip — relationships, parties, beef',
   },
   {
-    name: 'TMZ Sports',
-    url: 'https://www.tmz.com/rss/sports/',
+    name: 'TMZ',
+    url: 'https://www.tmz.com/rss.xml',
     tier: 'gossip',
     enabled: true,
+    notes: 'TMZ main feed — sports-specific endpoint returns 404 as of 2026-05. Mixed content (~70% celebrity, ~30% athlete gossip) but classifier filters down to NBA/NFL/WNBA only.',
   },
   {
     name: 'People Sports',
     url: 'https://people.com/feeds/sports.rss',
     tier: 'gossip',
-    enabled: true,
-    notes: 'Wedding/baby announcements, lifestyle, WAGs',
+    enabled: false,
+    notes: 'DISABLED 2026-05 — People killed sports-specific RSS. No working replacement. Re-enable if they restore the feed or we add an HTML-scrape fallback.',
   },
   {
     name: 'Us Weekly',
@@ -108,6 +110,13 @@ export const FEED_SOURCES: FeedSource[] = [
     tier: 'gossip',
     enabled: true,
     notes: 'Filter for sports figures in classifier',
+  },
+  {
+    name: 'NY Post Sports',
+    url: 'https://nypost.com/sports/feed/',
+    tier: 'gossip',
+    enabled: true,
+    notes: 'Tabloid-leaning sports coverage — mix of news and athlete gossip. MLB-heavy in summer, will get filtered to NBA/NFL/WNBA only by classifier.',
   },
   {
     name: 'Daily Mail Sport',
