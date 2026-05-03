@@ -42,7 +42,10 @@ import type { LiveTeaItem, PendingItem } from '@/lib/tea-types';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
-export const maxDuration = 300; // 5 minutes — comfortably above worst case
+// Vercel Hobby caps cron at 60s, Pro at 300s. We target ~25s actual work at
+// concurrency 10, so 60 is plenty of headroom on either plan AND keeps the
+// failure mode explicit (timeout error vs silent hang).
+export const maxDuration = 60;
 
 export async function GET(req: NextRequest) {
   // ─── Auth ───
@@ -84,7 +87,10 @@ export async function GET(req: NextRequest) {
   const gossipPool = feedItems.filter((i) => i.source.tier === 'gossip').slice(0, PER_TIER_CAP);
   const newsPool = feedItems.filter((i) => i.source.tier === 'news').slice(0, PER_TIER_CAP);
   const capped = [...gossipPool, ...newsPool].slice(0, TOTAL_CAP);
-  const classifications = await classifyBatch(capped, { concurrency: 5 });
+  // Concurrency 10 finishes 200 items in ~25s (vs 50s at 5), staying safely
+  // under Vercel Hobby's 60s function ceiling. gpt-4o-mini handles this load
+  // fine on any OpenAI tier.
+  const classifications = await classifyBatch(capped, { concurrency: 10 });
 
   // ─── Route into lanes ───
   const newsItems: LiveTeaItem[] = [];
