@@ -3,6 +3,85 @@ import { hasOpenAIKey } from '@/lib/openai';
 import { pickFallbackTea } from '@/lib/tea-fallback';
 import { getCachedTodayFeed, type TeaCard as TeaFeedCard } from '@/lib/today-feed';
 import { loadCards } from '@/lib/today-storage';
+import { loadLiveNews, loadLiveGossip } from '@/lib/live-tea-blobs';
+import type { LiveTeaItem } from '@/lib/tea-types';
+import gossipDataForTea from '@/data/players-gossip.json';
+
+/** Convert a LiveTeaItem (from blob) into a TeaCard the Tea tab UI knows how to render. */
+function liveItemToTeaCard(item: LiveTeaItem): TeaFeedCard {
+  // Map our extended categories to TeaCard's narrow set (UI only renders these)
+  const categoryMap: Record<string, TeaFeedCard['category']> = {
+    romance: 'romance',
+    family: 'family',
+    legal: 'legal',
+    drama: 'beef',
+    feud: 'beef',
+    coaching: 'off_field',
+    business: 'off_field',
+    endorsement: 'off_field',
+    media: 'culture',
+    legacy: 'culture',
+    career: 'off_field',
+    trade: 'off_field',
+    injury: 'off_field',
+  };
+  const tierMap: Record<LiveTeaItem['tier'], TeaFeedCard['tier']> = {
+    confirmed: 'confirmed',
+    reported: 'reported',
+    speculation: 'speculation',
+    rumor: 'speculation', // Tea tab UI doesn't render rumor — degrade to speculation
+  };
+  // Look up player display info if this item is player-indexed.
+  // players-gossip.json is keyed by player_id at the top level — direct lookup.
+  type PlayerLite = { player_id: string; name: string; team: string };
+  const playersRecord = gossipDataForTea as unknown as Record<string, PlayerLite>;
+  const player = item.player_id ? playersRecord[item.player_id] ?? null : null;
+  return {
+    id: item.id,
+    tier: tierMap[item.tier] ?? 'reported',
+    category: categoryMap[item.category] ?? 'off_field',
+    league: item.league === 'general' ? 'nba' : item.league,
+    headline: item.headline.slice(0, 90),
+    preview: item.summary.slice(0, 140),
+    body: item.summary,
+    primaryPlayer: player
+      ? {
+          id: player.player_id,
+          name: player.name,
+          team: player.team.toUpperCase(),
+          initials: player.name
+            .split(/\s+/)
+            .map((w) => w[0])
+            .join('')
+            .slice(0, 2)
+            .toUpperCase(),
+        }
+      : null,
+    source: {
+      name: item.sources[0]?.name ?? 'unknown',
+      url: item.sources[0]?.url ?? '',
+      publishedAt: item.sources[0]?.date ?? item.ingested_at,
+    },
+    generatedAt: item.ingested_at,
+  };
+}
+
+/**
+ * Pull all live items (news + gossip) and convert into TeaCards.
+ * News items power "what's happening today" tab content.
+ * Gossip items power "drama" tab content (and also surface in scan/scout
+ * via the parallel /api/scan/game read path — same source of truth).
+ */
+async function loadLiveTeaCards(): Promise<TeaFeedCard[]> {
+  try {
+    const [news, gossip] = await Promise.all([loadLiveNews(), loadLiveGossip()]);
+    return [...news.items, ...gossip.items]
+      .sort((a, b) => Date.parse(b.ingested_at) - Date.parse(a.ingested_at))
+      .map(liveItemToTeaCard);
+  } catch {
+    return [];
+  }
+}
 
 // CARD READ STRATEGY (stale-while-revalidate):
 //   1. Try Vercel Blob first — always populated, always fast (~50ms cold, <10ms warm)
@@ -29,6 +108,25 @@ async function readCards(): Promise<TeaFeedCard[]> {
   } catch {
     return [];
   }
+}
+
+/**
+ * The full Tea-tab cards list:
+ *   1. Live items (auto-ingested from RSS by /api/cron/ingest-tea, fresh every day)
+ *   2. Existing build-today curated cards (8-12 ESPN-derived cards rebuilt at 7am ET)
+ *   Sorted newest-first, deduped by id.
+ */
+async function readAllTeaCards(): Promise<TeaFeedCard[]> {
+  const [curated, live] = await Promise.all([readCards(), loadLiveTeaCards()]);
+  const seen = new Set<string>();
+  const merged: TeaFeedCard[] = [];
+  for (const c of [...live, ...curated]) {
+    if (seen.has(c.id)) continue;
+    seen.add(c.id);
+    merged.push(c);
+  }
+  // Sort: newer generatedAt first
+  return merged.sort((a, b) => Date.parse(b.generatedAt) - Date.parse(a.generatedAt));
 }
 
 /**
@@ -185,8 +283,10 @@ export async function POST(req: NextRequest) {
   const today = isoDateUTC();
 
   // Pull the daily multi-card Tea feed in parallel with everything else.
-  // Cached for 24h, invalidated by /api/cron/build-today.
-  const cardsPromise = readCards().catch(() => [] as TeaFeedCard[]);
+  // Now includes live auto-ingested items from /api/cron/ingest-tea (RSS pipeline)
+  // merged with the existing build-today ESPN-derived cards. Both sources sit in
+  // Vercel Blob — request-time fetch is ~50ms cold, ~10ms warm.
+  const cardsPromise = readAllTeaCards().catch(() => [] as TeaFeedCard[]);
 
   // Cache check
   const key = cacheKey(lens, league, today);
@@ -283,7 +383,7 @@ export async function POST(req: NextRequest) {
  * effectively zero latency, never blocks on a cron rebuild.
  */
 export async function GET() {
-  const cards = await readCards().catch(() => [] as TeaFeedCard[]);
+  const cards = await readAllTeaCards().catch(() => [] as TeaFeedCard[]);
   return new Response(
     JSON.stringify({
       date: isoDateUTC(),

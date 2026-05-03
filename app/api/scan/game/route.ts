@@ -52,6 +52,7 @@ import gossipData from '@/data/players-gossip.json';
 import wagsData from '@/data/player-wags.json';
 import { getFaceEntry } from '@/lib/face-match';
 import { getTodaysGames, findGameByTeams, type League, type LiveGame } from '@/lib/live-games';
+import { loadLiveGossip } from '@/lib/live-tea-blobs';
 
 export const runtime = 'nodejs';
 // Vision call + roster lookup. Keep budget below Vercel ceiling.
@@ -130,6 +131,42 @@ function pickTopTea(items: GossipItem[], n: number): GossipItem[] {
   return [...items]
     .sort((a, b) => (TIER_RANK[b.tier] || 0) - (TIER_RANK[a.tier] || 0))
     .slice(0, n);
+}
+
+/**
+ * Build a per-player lookup of live-gossip items from the daily-cron blob.
+ * Returns a Map keyed by player_id, each value containing the items (as
+ * GossipItem) plus an inner Map of item_id → ingested_at timestamp (used for
+ * the "FRESH" badge on items added in the last 24h).
+ *
+ * Failure mode: returns empty Map if blob is unavailable. Curated DB still
+ * works without live items.
+ */
+async function buildLiveGossipMap(): Promise<Map<string, { items: GossipItem[]; ingestedAtById: Map<string, string> }>> {
+  const result = new Map<string, { items: GossipItem[]; ingestedAtById: Map<string, string> }>();
+  try {
+    const live = await loadLiveGossip();
+    for (const item of live.items) {
+      if (!item.player_id) continue;
+      let bucket = result.get(item.player_id);
+      if (!bucket) {
+        bucket = { items: [], ingestedAtById: new Map() };
+        result.set(item.player_id, bucket);
+      }
+      bucket.items.push({
+        id: item.id,
+        tier: item.tier,
+        category: item.category,
+        headline: item.headline,
+        summary: item.summary,
+        sources: item.sources,
+      });
+      bucket.ingestedAtById.set(item.id, item.ingested_at);
+    }
+  } catch {
+    // Blob unavailable — return empty map (curated still works)
+  }
+  return result;
 }
 
 /**
@@ -311,37 +348,64 @@ function lookupTeam(
 /**
  * Enrich a roster with face headshots + per-player tea snippets + partner.
  * Each player comes back with:
- *   - tea: up to 2 top-tier tea items from the gossip DB
+ *   - tea: up to 2 top-tier tea items, BLENDED from curated + live-gossip
+ *          (live-gossip = items auto-ingested by the daily cron, capped at 200)
  *   - partner: current WAG/SO with IG link if available (null if not in db)
  *   - hasTea / hasPartner booleans for client filter UI
+ *   - tea[i].fresh: true if the item was added in the last 24h (UI shows "FRESH" badge)
  *
  * The client can render drama-tagged + partner-aware player cards directly
  * without follow-up API calls.
+ *
+ * `liveGossipByPlayer` is the pre-loaded live-gossip blob, keyed by player_id.
+ * Loaded once per request in the route handler — passed in to keep this fn sync.
  */
-function enrichRoster(league: string, teamCode: string) {
+type LiveGossipMap = Map<string, { items: GossipItem[]; ingestedAtById: Map<string, string> }>;
+
+function enrichRoster(league: string, teamCode: string, liveGossipByPlayer: LiveGossipMap) {
   const key = `${league}/${teamCode}`;
   const players = ROSTERS[key] ?? [];
+  const ONE_DAY_MS = 24 * 60 * 60 * 1000;
   return players.map((p) => {
     const face = getFaceEntry(p.id);
     const gossip = GOSSIP[p.id];
     const wag = WAGS[p.id];
-    const teaItems = gossip ? pickTopTea(gossip.items, 2) : [];
+    // Blend: live items first (newest priority), then curated. pickTopTea
+    // re-sorts by tier rank. Dedup by id.
+    const live = liveGossipByPlayer.get(p.id);
+    const liveItems = live?.items ?? [];
+    const ingestedAtMap = live?.ingestedAtById ?? new Map<string, string>();
+    const seen = new Set<string>();
+    const merged: GossipItem[] = [];
+    for (const it of [...liveItems, ...(gossip?.items ?? [])]) {
+      if (seen.has(it.id)) continue;
+      seen.add(it.id);
+      merged.push(it);
+    }
+    const teaItems = pickTopTea(merged, 2);
     return {
       id: p.id,
       name: gossip?.name || nameFromSlug(p.id),
       jersey: p.jersey,
       pos: p.pos,
       headshot: face?.headshot ?? null,
-      tea: teaItems.map((it) => ({
-        tier: it.tier,
-        category: it.category,
-        headline: it.headline,
-        summary: it.summary.length > 200 ? it.summary.slice(0, 197) + '...' : it.summary,
-        // Truncate sources to first one for compactness; client can fetch full /api/player/[id] for more
-        source: it.sources[0]
-          ? { name: it.sources[0].name, url: it.sources[0].url, date: it.sources[0].date }
-          : null,
-      })),
+      tea: teaItems.map((it) => {
+        const ingestedAt = ingestedAtMap.get(it.id);
+        const fresh = ingestedAt
+          ? Date.now() - Date.parse(ingestedAt) < ONE_DAY_MS
+          : false;
+        return {
+          tier: it.tier,
+          category: it.category,
+          headline: it.headline,
+          summary: it.summary.length > 200 ? it.summary.slice(0, 197) + '...' : it.summary,
+          // Truncate sources to first one for compactness; client can fetch full /api/player/[id] for more
+          source: it.sources[0]
+            ? { name: it.sources[0].name, url: it.sources[0].url, date: it.sources[0].date }
+            : null,
+          fresh,
+        };
+      }),
       hasTea: teaItems.length > 0,
       partner: wag
         ? {
@@ -784,9 +848,16 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  // Pull rosters with per-player tea snippets
-  const homeRoster = enrichRoster(league, home.code);
-  const awayRoster = enrichRoster(league, away.code);
+  // Pull live-gossip blob ONCE for this request, build a per-player lookup.
+  // The cron writes new auto-ingested items here; we blend them with the
+  // curated gossip DB at render time so fresh items surface immediately.
+  // Note: Blob fetch ~50ms cold, ~10ms warm (Next.js caches at the request
+  // layer). Failure mode falls back to empty live items — curated keeps working.
+  const liveGossipByPlayer = await buildLiveGossipMap();
+
+  // Pull rosters with per-player tea snippets (curated + live, blended)
+  const homeRoster = enrichRoster(league, home.code, liveGossipByPlayer);
+  const awayRoster = enrichRoster(league, away.code, liveGossipByPlayer);
 
   // Decode current game state into plain English (use authoritative ESPN data when present)
   const explainer = explainGameState(

@@ -23,6 +23,8 @@ type TeaSnippet = {
   headline: string;
   summary: string;
   source: TeaSource | null;
+  /** Set by the server when item was added by the daily ingest cron in the last 24h. */
+  fresh?: boolean;
 };
 type Partner = {
   name: string | null;             // null for "private" entries (player has partner but partner stays out of public view)
@@ -1487,12 +1489,23 @@ function RosterSection({
                             className="bg-white rounded-2xl border border-[var(--hairline)] p-3.5 shadow-[0_2px_8px_-4px_rgba(13,45,36,0.06)]"
                           >
                             <div className="flex items-start justify-between gap-3 mb-1.5">
-                              <span
-                                className="shrink-0 inline-flex items-center px-2 py-0.5 rounded-full text-[9px] font-semibold uppercase tracking-wider"
-                                style={{ background: tier.bg, color: tier.fg }}
-                              >
-                                {tier.label}
-                              </span>
+                              <div className="flex items-center gap-1.5 flex-wrap">
+                                <span
+                                  className="shrink-0 inline-flex items-center px-2 py-0.5 rounded-full text-[9px] font-semibold uppercase tracking-wider"
+                                  style={{ background: tier.bg, color: tier.fg }}
+                                >
+                                  {tier.label}
+                                </span>
+                                {t.fresh && (
+                                  <span
+                                    className="shrink-0 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wider bg-tangerine text-white"
+                                    title="Added in the last 24 hours"
+                                  >
+                                    <span className="w-1 h-1 rounded-full bg-white animate-pulse" />
+                                    FRESH
+                                  </span>
+                                )}
+                              </div>
                               <span className="text-[10px] text-muted">{t.category}</span>
                             </div>
                             <h4 className="font-display font-bold text-[14px] text-green leading-snug">
