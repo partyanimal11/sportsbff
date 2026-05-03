@@ -101,20 +101,33 @@ type ClassifierOutput = {
  *
  * V1 LEAGUE FILTER (HARD): both prompts MUST reject anything that isn't NBA, NFL,
  * or WNBA. Soccer, MLB, NHL, college, tennis, golf, F1, etc — all rejected.
- * Daily Mail Sport in particular is mostly Premier League → most items get cut.
+ *
+ * NEVER-INVENT POLICY (HARD): the classifier ONLY makes structured classification
+ * decisions (tier, category, player_id, league, confidence). It does NOT generate
+ * a headline or summary. We use the RSS publisher's title + contentSnippet
+ * verbatim to prevent hallucinated content slipping into the database.
+ *
+ * Why this matters: prior version asked the LLM to "rewrite in sportsBFF voice"
+ * which led to the LLM extrapolating beyond what the article actually said
+ * (e.g. an ESPN headline "LeBron Talks Viral Comparisons to Bronny's Friend"
+ * was about NFL DE Will Anderson Jr — but the LLM, without article body access,
+ * inferred "Bronny's NBA teammate" from the headline alone, generating a
+ * factually-wrong summary). Brand promise is "Never invent. Always cite." so
+ * we eliminate the failure mode at the source.
  */
-const SYSTEM_PROMPT_NEWS = `You are sportsBFF's news editor for NBA, NFL, and WNBA fans.
+const SYSTEM_PROMPT_NEWS = `You are sportsBFF's news classifier for NBA, NFL, and WNBA fans.
 
-You read RSS headlines from sports outlets (ESPN, CBS, Yahoo) and decide which become "Tea tab" feed items.
-
-OUR VOICE: confident, plain-language, conversational. Like a friend who texts you what happened.
+You ONLY make structured classification decisions about RSS items. You do NOT write headlines, summaries, or any prose. The publisher's title + snippet will be used verbatim. Your job is purely to tag and filter.
 
 V1 SCOPE — HARD FILTER:
 - Only NBA, NFL, or WNBA stories. League MUST be one of those three.
 - Reject ANYTHING else: soccer, MLB, NHL, college (NCAA), tennis, golf, F1, boxing, MMA, Olympics, esports.
-- If league is unclear, look at the source URL/title. If still unclear, reject.
 
-KEEP these (broad — most sports news qualifies):
+CRITICAL — DO NOT INFER beyond the title and snippet:
+- If the title mentions a person whose league is ambiguous (e.g. "Will Anderson", "Bronny's friend"), determine league STRICTLY from the snippet content + source URL. If you can't determine confidently, set is_tea=false with reject_reason="ambiguous_subject".
+- Headlines like "LeBron talks Bronny's friend" without snippet context are ambiguous — the friend could be in any sport. Reject if unclear.
+
+KEEP these (broad):
 - Trades, contracts, free agency
 - Suspensions, fines, legal news
 - Coaching changes, firings, hires
@@ -122,14 +135,14 @@ KEEP these (broad — most sports news qualifies):
 - Off-field stories, lifestyle, drama
 - Awards, milestones, records
 - Front-office moves
-- Player/coach quotes that drive a storyline
 
 REJECT these:
-- Pure boxscore recaps with no story angle ("Lakers 102, Celtics 98")
+- Pure boxscore recaps ("Lakers 102, Celtics 98")
 - Generic preview articles ("How to watch tonight's game")
-- Power rankings, mock drafts, listicles, "things to watch"
-- Highlights / Top 10 plays / "Did you see this?"
+- Power rankings, mock drafts, listicles
+- Highlights / "Did you see this?"
 - Items without a named athlete, coach, or front-office figure
+- Anything where you can't confidently determine league=nba|nfl|wnba
 
 TIERS (most news = "reported"):
 - confirmed: official announcement, athlete confirmed, court records
@@ -139,31 +152,34 @@ TIERS (most news = "reported"):
 
 CATEGORIES: romance, family, trade, drama, business, injury, career, legal, feud, coaching, legacy, endorsement, media
 
-NEWS-TIER ITEMS ARE NOT PLAYER-INDEXED. Leave player_name as null.
+NEWS-TIER ITEMS ARE NOT PLAYER-INDEXED. Leave player_name null.
 
-Output JSON only:
+Output JSON only — DO NOT include headline or summary, those come from the RSS feed verbatim:
 {
   "is_tea": boolean,
   "confidence": 0.0-1.0,
   "tier": "confirmed" | "reported" | "speculation" | "rumor",
   "category": one of the categories above,
-  "headline": "Punchy under 80 chars",
-  "summary": "2-3 sentences, plain language, concrete details",
   "player_name": null,
   "league": "nba" | "nfl" | "wnba",
   "reject_reason": "string" or null
 }`;
 
-const SYSTEM_PROMPT_GOSSIP = `You are sportsBFF's gossip editor. You read tabloid/lifestyle RSS headlines (People, Page Six, TMZ, Daily Mail Sport, Us Weekly) and decide which become per-player tea items.
+const SYSTEM_PROMPT_GOSSIP = `You are sportsBFF's gossip classifier. You read tabloid/lifestyle RSS items (Page Six, TMZ, Us Weekly, NY Post Sports) and decide which become per-player tea items.
 
-OUR VOICE: gossip-aware, never preachy. Like the group chat after a game.
+You ONLY make structured classification decisions. You do NOT write headlines or summaries — the publisher's title + snippet will be used verbatim. Your job is purely to tag, filter, and identify the player.
 
 V1 SCOPE — HARD FILTER:
 - Only stories about NBA, NFL, or WNBA athletes/coaches/owners. League MUST be one of those three.
-- Reject ANYTHING else: soccer (yes including Messi/Ronaldo/Premier League — it's most of Daily Mail), MLB, NHL, college, tennis, golf, F1, Olympics-only athletes, non-sports celebrities.
-- If a story is about Taylor Swift, Kim K, etc — only KEEP if it's about her relationship/connection to an NBA/NFL/WNBA athlete (e.g. Swift + Kelce). Otherwise reject.
+- Reject ANYTHING else: soccer (Messi/Ronaldo/Premier League), MLB, NHL, college, tennis, golf, F1, Olympics-only athletes, non-sports celebrities.
+- If story is about Taylor Swift, Kim K, etc — only KEEP if it's about their relationship/connection to an NBA/NFL/WNBA athlete (Swift + Kelce). Otherwise reject.
 
-KEEP these (gossip-toned):
+CRITICAL — DO NOT INFER:
+- Use ONLY the title and snippet to identify the athlete and league.
+- If the title mentions an ambiguous name like "Will Anderson" (could be Texans NFL DE OR Knicks NBA OR something else), check the snippet for clarification. If snippet doesn't clarify, reject with reject_reason="ambiguous_subject".
+- Do NOT assume connections (e.g. "Bronny's friend" without context — the friend's identity must be in the snippet).
+
+KEEP (gossip-toned):
 - Relationships, weddings, breakups, engagements
 - Family / pregnancy / baby news
 - Lifestyle, fashion, parties, vacations
@@ -172,30 +188,28 @@ KEEP these (gossip-toned):
 - Endorsements, brand deals
 - WAG news (athlete partners with public profile)
 
-REJECT these:
+REJECT:
 - Game-result coverage even if from these outlets
-- Soccer stories (most of Daily Mail Sport)
 - Non-NBA/NFL/WNBA athletes
 - Generic celebrity news without sports connection
+- Items where the athlete's identity or league is unclear from title+snippet
 
 TIERS:
 - confirmed: athlete confirmed, primary source, publication of record
-- reported: People/Page Six published it, not athlete-confirmed
+- reported: published by reputable outlet, not athlete-confirmed
 - speculation: educated guess from a credible source
 - rumor: unverified buzz
 
 CATEGORIES: romance, family, trade, drama, business, injury, career, legal, feud, coaching, legacy, endorsement, media
 
-GOSSIP-TIER ITEMS MUST IDENTIFY THE SPECIFIC ATHLETE. Set player_name to the full name (e.g. "Patrick Mahomes", not "Mahomes"). If multiple athletes, pick the primary subject. If no athlete is named, set player_name to null AND set is_tea to false.
+GOSSIP ITEMS MUST IDENTIFY THE SPECIFIC ATHLETE — set player_name to the full name (e.g. "Patrick Mahomes", not "Mahomes"). If athlete identity is ambiguous, set player_name=null AND is_tea=false.
 
-Output JSON only:
+Output JSON only — DO NOT include headline or summary, those come from the RSS feed verbatim:
 {
   "is_tea": boolean,
   "confidence": 0.0-1.0,
   "tier": "confirmed" | "reported" | "speculation" | "rumor",
   "category": one of the categories above,
-  "headline": "Punchy under 80 chars",
-  "summary": "2-3 sentences, plain language, concrete details",
   "player_name": "Full Name" or null,
   "league": "nba" | "nfl" | "wnba",
   "reject_reason": "string" or null
@@ -281,12 +295,18 @@ Published: ${item.isoDate}`;
   const ingestedAt = new Date().toISOString();
   const sourceDate = item.isoDate.slice(0, 10);
 
+  // NEVER-INVENT POLICY: headline + summary come from the RSS publisher,
+  // verbatim. The LLM only classifies — it does NOT generate prose. This
+  // closes the hallucination vector where the LLM extrapolated facts beyond
+  // what the article actually said. If the snippet is empty (some feeds
+  // don't include it), fall back to the title rather than asking the LLM
+  // to fill the gap.
   const baseItem: LiveTeaItem = {
     id,
     tier,
     category,
-    headline: (parsed.headline || item.title).slice(0, 200),
-    summary: (parsed.summary || item.contentSnippet || item.title).slice(0, 600),
+    headline: item.title.slice(0, 200),
+    summary: (item.contentSnippet || item.title).slice(0, 600),
     sources: [
       {
         name: item.source.name,

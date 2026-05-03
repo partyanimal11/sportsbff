@@ -233,3 +233,36 @@ export async function rejectPending(itemId: string): Promise<boolean> {
   });
   return true;
 }
+
+/**
+ * Purge an item from a live blob — used when a published item turns out to
+ * be wrong (factually incorrect summary, mis-attributed player, hallucinated
+ * detail) and needs to be removed AFTER it already cleared the auto-publish
+ * gate. Returns true on success, false if not found in either blob.
+ *
+ * Searches both live-news and live-gossip — Aaron just provides the item id,
+ * we figure out where it lives.
+ */
+export async function purgeFromLive(itemId: string): Promise<{ removed: boolean; from: 'news' | 'gossip' | null }> {
+  const news = await loadLiveNews();
+  if (news.items.find((i) => i.id === itemId)) {
+    const remaining = news.items.filter((i) => i.id !== itemId);
+    await writeBlob(BLOB_PATH_NEWS, {
+      generated_at: new Date().toISOString(),
+      count: remaining.length,
+      items: remaining,
+    });
+    return { removed: true, from: 'news' };
+  }
+  const gossip = await loadLiveGossip();
+  if (gossip.items.find((i) => i.id === itemId)) {
+    const remaining = gossip.items.filter((i) => i.id !== itemId);
+    await writeBlob(BLOB_PATH_GOSSIP, {
+      generated_at: new Date().toISOString(),
+      count: remaining.length,
+      items: remaining,
+    });
+    return { removed: true, from: 'gossip' };
+  }
+  return { removed: false, from: null };
+}

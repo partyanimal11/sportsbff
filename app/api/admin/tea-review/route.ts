@@ -15,7 +15,14 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { loadPending, approvePending, rejectPending } from '@/lib/live-tea-blobs';
+import {
+  loadPending,
+  approvePending,
+  rejectPending,
+  purgeFromLive,
+  loadLiveNews,
+  loadLiveGossip,
+} from '@/lib/live-tea-blobs';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -33,6 +40,20 @@ export async function GET(req: NextRequest) {
   if (!checkAuth(req)) {
     return NextResponse.json({ ok: false, error: 'unauthorized' }, { status: 401 });
   }
+
+  // Optional ?view=live returns the live-news + live-gossip blobs so Aaron
+  // can find the id of an item that needs purging (e.g. a published item
+  // that turned out to be factually wrong).
+  const view = new URL(req.url).searchParams.get('view');
+  if (view === 'live') {
+    const [news, gossip] = await Promise.all([loadLiveNews(), loadLiveGossip()]);
+    return NextResponse.json({
+      ok: true,
+      news: { count: news.count, items: news.items },
+      gossip: { count: gossip.count, items: gossip.items },
+    });
+  }
+
   const pending = await loadPending();
   return NextResponse.json({
     ok: true,
@@ -44,7 +65,8 @@ export async function GET(req: NextRequest) {
 type ApproveNewsBody = { action: 'approve_news'; itemId: string };
 type ApproveGossipBody = { action: 'approve_gossip'; itemId: string; playerId: string };
 type RejectBody = { action: 'reject'; itemId: string };
-type ReviewBody = ApproveNewsBody | ApproveGossipBody | RejectBody;
+type PurgeBody = { action: 'purge_live'; itemId: string };
+type ReviewBody = ApproveNewsBody | ApproveGossipBody | RejectBody | PurgeBody;
 
 export async function POST(req: NextRequest) {
   if (!checkAuth(req)) {
@@ -63,6 +85,7 @@ export async function POST(req: NextRequest) {
   }
 
   let success = false;
+  let purgeFrom: 'news' | 'gossip' | null = null;
   switch (body.action) {
     case 'approve_news':
       success = await approvePending(body.itemId, 'news');
@@ -79,6 +102,12 @@ export async function POST(req: NextRequest) {
     case 'reject':
       success = await rejectPending(body.itemId);
       break;
+    case 'purge_live': {
+      const result = await purgeFromLive(body.itemId);
+      success = result.removed;
+      purgeFrom = result.from;
+      break;
+    }
     default:
       return NextResponse.json({ ok: false, error: 'unknown_action' }, { status: 400 });
   }
@@ -90,5 +119,5 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, ...(purgeFrom ? { purgedFrom: purgeFrom } : {}) });
 }
