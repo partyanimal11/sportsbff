@@ -31,7 +31,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { fetchAllFeeds } from '@/lib/rss-feeds';
+import { fetchAllFeeds, type RawFeedItem } from '@/lib/rss-feeds';
 import { classifyBatch } from '@/lib/tea-classifier';
 import {
   appendLiveNews,
@@ -65,7 +65,7 @@ export async function GET(req: NextRequest) {
   const startedAt = Date.now();
 
   // ─── Fetch all feeds ───
-  let feedItems;
+  let feedItems: RawFeedItem[];
   try {
     feedItems = await fetchAllFeeds({ maxAgeHours: 26 });
   } catch (err) {
@@ -76,21 +76,41 @@ export async function GET(req: NextRequest) {
   }
 
   // ─── Classify ───
-  // Cap items processed per run to bound cost. 200 items × $0.0003 = $0.06/day = $22/year.
+  // Cap items processed per run. ~$0.06/day = $22/year at 200 items.
   //
-  // Allocate the cap fairly across tiers — gossip sources are lower-volume than
-  // ESPN's flood of feeds, so without per-tier slots they get drowned out. Take
-  // up to 100 from each tier, drop the rest. (If gossip has fewer than 100,
-  // backfill from news to use the full budget.)
+  // Two-level fairness:
+  //   1. Per-tier cap (100 each) — keeps gossip from getting eclipsed by news
+  //   2. Per-source cap (20 each) — keeps any single feed from monopolizing its tier
+  //      (e.g. Daily Mail's 80+ Premier League items used to dominate the gossip
+  //      pool before being disabled; ESPN's 4 feeds can collectively flood the
+  //      news pool without this).
   const PER_TIER_CAP = 100;
+  const PER_SOURCE_CAP = 20;
   const TOTAL_CAP = 200;
-  const gossipPool = feedItems.filter((i) => i.source.tier === 'gossip').slice(0, PER_TIER_CAP);
-  const newsPool = feedItems.filter((i) => i.source.tier === 'news').slice(0, PER_TIER_CAP);
+
+  function capPerSource(items: RawFeedItem[], perSourceMax: number): RawFeedItem[] {
+    const counts = new Map<string, number>();
+    return items.filter((i) => {
+      const c = counts.get(i.source.name) ?? 0;
+      if (c >= perSourceMax) return false;
+      counts.set(i.source.name, c + 1);
+      return true;
+    });
+  }
+
+  const gossipPool = capPerSource(
+    feedItems.filter((i) => i.source.tier === 'gossip'),
+    PER_SOURCE_CAP,
+  ).slice(0, PER_TIER_CAP);
+  const newsPool = capPerSource(
+    feedItems.filter((i) => i.source.tier === 'news'),
+    PER_SOURCE_CAP,
+  ).slice(0, PER_TIER_CAP);
   const capped = [...gossipPool, ...newsPool].slice(0, TOTAL_CAP);
-  // Concurrency 10 finishes 200 items in ~25s (vs 50s at 5), staying safely
-  // under Vercel Hobby's 60s function ceiling. gpt-4o-mini handles this load
-  // fine on any OpenAI tier.
-  const classifications = await classifyBatch(capped, { concurrency: 10 });
+
+  // Concurrency 15 = 200 items in ~17s (vs 25s at 10), giving ~40s headroom
+  // below Vercel Hobby's 60s cron ceiling. gpt-4o-mini scales fine here.
+  const classifications = await classifyBatch(capped, { concurrency: 15 });
 
   // ─── Route into lanes ───
   const newsItems: LiveTeaItem[] = [];
@@ -148,6 +168,12 @@ export async function GET(req: NextRequest) {
       gossipClassified: capped.filter((i) => i.source.tier === 'gossip').length,
       newsClassified: capped.filter((i) => i.source.tier === 'news').length,
     },
+    // Per-source counts in the classified batch — confirms per-source caps are
+    // working and shows which feeds are pulling weight vs noise.
+    sourceBreakdown: capped.reduce((acc, item) => {
+      acc[item.source.name] = (acc[item.source.name] ?? 0) + 1;
+      return acc;
+    }, {} as Record<string, number>),
     newsAdded,
     gossipAdded,
     pendingAdded,

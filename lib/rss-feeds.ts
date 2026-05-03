@@ -113,8 +113,8 @@ export const FEED_SOURCES: FeedSource[] = [
     name: 'Daily Mail Sport',
     url: 'https://www.dailymail.co.uk/sport/index.rss',
     tier: 'gossip',
-    enabled: true,
-    notes: 'UK tabloid voice — heavy WAG / lifestyle angle',
+    enabled: false,
+    notes: 'DISABLED for v1 — feed is 80%+ Premier League content, fails our NBA/NFL/WNBA filter and drowns out US gossip sources. Re-enable in v1.1 if/when soccer is in scope.',
   },
 ];
 
