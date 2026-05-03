@@ -92,13 +92,29 @@ const GOSSIP: Record<string, GossipPlayer> = gossipData as Record<string, Gossip
 
 // WAG / partner tree — per-player current confirmed partner with IG link.
 // Surfaced inline when user taps a player row in the roster.
+//
+// Nullable partner fields support "private" entries (player publicly noted
+// as having a partner who keeps a low profile) and "single" entries where
+// no partner data is meaningful.
 type Wag = {
-  name: string;
-  relationship: 'wife' | 'husband' | 'fiancee' | 'fiance' | 'girlfriend' | 'boyfriend' | 'partner' | 'long-term partner' | 'single';
-  since?: string;
+  name: string | null;
+  relationship:
+    | 'wife'
+    | 'husband'
+    | 'fiancee'
+    | 'fiance'
+    | 'girlfriend'
+    | 'boyfriend'
+    | 'partner'
+    | 'long-term partner'
+    | 'single'
+    | 'private'
+    | 'ex-girlfriend'
+    | 'ex-wife';
+  since?: string | null;
   ig_handle?: string | null;
   ig_url?: string | null;
-  known_for?: string;
+  known_for?: string | null;
   tier: 'confirmed' | 'reported' | 'speculation' | 'rumor';
   source: { name: string; url: string; date: string };
 };

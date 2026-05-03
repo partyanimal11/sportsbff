@@ -25,8 +25,8 @@ type TeaSnippet = {
   source: TeaSource | null;
 };
 type Partner = {
-  name: string;
-  relationship: string;            // "wife" | "girlfriend" | "fiancee" | "single" | etc
+  name: string | null;             // null for "private" entries (player has partner but partner stays out of public view)
+  relationship: string;            // "wife" | "girlfriend" | "fiancee" | "single" | "private" | "ex-girlfriend" | etc
   since: string | null;
   ig_handle: string | null;
   ig_url: string | null;
@@ -815,12 +815,16 @@ function ScanCamera({
 function PartnerCard({ partner, playerName }: { partner: Partner; playerName: string }) {
   const tier = TIER[partner.tier];
   const isSingle = partner.relationship === 'single';
+  const isPrivate = partner.relationship === 'private';
+  // Avatar initials — falls back gracefully when partner name is null (e.g., "private" entries)
   const initials = partner.name
-    .split(/\s+/)
-    .map((s) => s[0])
-    .join('')
-    .slice(0, 2)
-    .toUpperCase();
+    ? partner.name
+        .split(/\s+/)
+        .map((s) => s[0])
+        .join('')
+        .slice(0, 2)
+        .toUpperCase()
+    : '◯';
   const relLabel: Record<string, string> = {
     wife: 'WIFE',
     husband: 'HUSBAND',
@@ -831,6 +835,9 @@ function PartnerCard({ partner, playerName }: { partner: Partner; playerName: st
     partner: 'PARTNER',
     'long-term partner': 'LONG-TERM PARTNER',
     single: 'CURRENTLY SINGLE',
+    private: 'KEEPS IT PRIVATE',
+    'ex-girlfriend': 'EX-GIRLFRIEND',
+    'ex-wife': 'EX-WIFE',
   };
   return (
     <div className="bg-white rounded-2xl border border-[var(--hairline)] p-3.5 shadow-[0_2px_8px_-4px_rgba(13,45,36,0.06)]">
@@ -855,7 +862,7 @@ function PartnerCard({ partner, playerName }: { partner: Partner; playerName: st
         </div>
         <div className="flex-1 min-w-0">
           <div className="font-display font-bold text-[15px] text-green leading-tight">
-            {partner.name}
+            {partner.name || (isPrivate ? 'Partner stays out of the spotlight' : '—')}
           </div>
           {partner.known_for && (
             <p className="mt-0.5 text-[12.5px] text-ink-soft leading-snug">{partner.known_for}</p>
