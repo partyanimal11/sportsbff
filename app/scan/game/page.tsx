@@ -64,6 +64,8 @@ type GameScanResponse = {
   live_game: LiveGameInfo;
   rosters: { home: Player[]; away: Player[] };
   blurb: string;
+  context: string;
+  lens: 'plain' | 'euphoria';
   explainer: { whats_happening: string; rules_explainer: string; close_game: boolean };
   matchup_tea: TeaCard[];
   stats: {
@@ -90,23 +92,30 @@ export default function GameScanPage() {
   const [loadingMsg, setLoadingMsg] = useState('Reading the scoreboard…');
   const [result, setResult] = useState<GameScanResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
+  // Preserve the original captured file so we can re-fetch with ?lens=euphoria
+  // without forcing the user to scan again
+  const [lastFile, setLastFile] = useState<File | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
-  async function handleFile(file: File) {
+  async function handleFile(file: File, opts: { lens?: 'plain' | 'euphoria' } = {}) {
     setError(null);
-    setResult(null);
     setLoading(true);
-    setLoadingMsg('Reading the scoreboard…');
-    setPreviewUrl(URL.createObjectURL(file));
+    setLoadingMsg(opts.lens === 'euphoria' ? 'Through Euphoria…' : 'Reading the scoreboard…');
+    setLastFile(file);
+    if (!opts.lens) {
+      setPreviewUrl(URL.createObjectURL(file));
+      setResult(null); // Fresh scan, clear old result
+    }
 
-    // Cycle loading messages while waiting
-    const t1 = setTimeout(() => setLoadingMsg('Pulling rosters…'), 3000);
-    const t2 = setTimeout(() => setLoadingMsg('Loading the tea…'), 6000);
+    // Cycle loading messages while waiting (skip on lens swap — fast enough)
+    const t1 = !opts.lens ? setTimeout(() => setLoadingMsg('Pulling rosters…'), 3000) : null;
+    const t2 = !opts.lens ? setTimeout(() => setLoadingMsg('Loading the tea…'), 6000) : null;
 
     try {
       const fd = new FormData();
       fd.append('image', file);
-      const res = await fetch('/api/scan/game', { method: 'POST', body: fd });
+      const lensParam = opts.lens === 'euphoria' ? '?lens=euphoria' : '';
+      const res = await fetch('/api/scan/game' + lensParam, { method: 'POST', body: fd });
       const data = await res.json();
       if (data && data.error) {
         setError(data.message || friendlyErrorMessage(data.error));
@@ -116,8 +125,8 @@ export default function GameScanPage() {
     } catch {
       setError('Network error — check connection and try again.');
     } finally {
-      clearTimeout(t1);
-      clearTimeout(t2);
+      if (t1) clearTimeout(t1);
+      if (t2) clearTimeout(t2);
       setLoading(false);
     }
   }
@@ -126,6 +135,12 @@ export default function GameScanPage() {
     setResult(null);
     setError(null);
     setPreviewUrl(null);
+    setLastFile(null);
+  }
+
+  function toggleLens(toLens: 'plain' | 'euphoria') {
+    if (!lastFile || loading) return;
+    handleFile(lastFile, { lens: toLens });
   }
 
   return (
@@ -143,7 +158,7 @@ export default function GameScanPage() {
 
       {loading && <LoadingState imageUrl={previewUrl} message={loadingMsg} />}
 
-      {result && <ResultView result={result} onScanAnother={reset} />}
+      {result && <ResultView result={result} onScanAnother={reset} onToggleLens={toggleLens} />}
 
       <input
         ref={fileRef}
@@ -304,6 +319,9 @@ function ScanCamera({
         </p>
       </div>
 
+      {/* "What's a scorebug?" example illustration */}
+      <ScorebugExample />
+
       {/* Camera viewfinder OR start-camera prompt */}
       <div className="mt-8 mx-auto max-w-md">
         {cameraState === 'idle' && (
@@ -449,6 +467,95 @@ function ScanCamera({
   );
 }
 
+/**
+ * Generic scorebug illustration. Pure SVG, no real team logos / colors / abbrevs.
+ * Helps non-sports-fans recognize what "the scorebug" is on a TV broadcast.
+ *
+ * Two abstract team color blocks (sage + warm orange — generic, brand-friendly),
+ * placeholder "HOM" / "AWY" abbrevs, fake scores, period chip. Pulse animation
+ * on the period chip mimics live-game energy.
+ */
+function ScorebugExample() {
+  return (
+    <div className="mt-8 mx-auto max-w-md">
+      <div className="text-center">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cream-warm border border-[var(--hairline)] text-[11px] text-ink-soft">
+          <span className="font-semibold text-ink">Not sure what to scan?</span>
+          Look for this in the corner of the TV
+        </div>
+      </div>
+
+      {/* The mockup */}
+      <div className="mt-4 mx-auto max-w-[320px] relative">
+        {/* Hand-drawn arrow loop */}
+        <svg
+          aria-hidden
+          width="100%"
+          height="56"
+          viewBox="0 0 320 56"
+          className="absolute -top-2 left-0 right-0 pointer-events-none opacity-70"
+        >
+          <path
+            d="M 30 12 Q 80 0, 140 18 Q 200 36, 250 14"
+            stroke="#FF6B3D"
+            strokeWidth="2"
+            strokeLinecap="round"
+            fill="none"
+            strokeDasharray="4 3"
+          />
+          <path
+            d="M 245 8 L 252 14 L 245 22"
+            stroke="#FF6B3D"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
+          />
+        </svg>
+        <div className="text-right pr-1 mb-2">
+          <span className="font-script text-tangerine text-[16px] rotate-[-2deg] inline-block">
+            this thing →
+          </span>
+        </div>
+
+        {/* The scorebug itself */}
+        <div
+          className="relative rounded-xl overflow-hidden shadow-[0_12px_32px_-10px_rgba(13,45,36,0.25)] ring-1 ring-black/5"
+          style={{ background: '#0D2D24' }}
+        >
+          <div className="flex items-stretch text-white text-sm">
+            {/* Away team */}
+            <div className="flex-1 px-3 py-3 flex items-center gap-3" style={{ background: '#0F6E56' }}>
+              <span className="inline-block w-6 h-6 rounded-full bg-white/20 border border-white/30" />
+              <span className="font-display font-extrabold tracking-wider text-[15px]">AWY</span>
+              <span className="ml-auto font-display font-bold text-[22px] tabular-nums">79</span>
+            </div>
+            {/* Home team */}
+            <div className="flex-1 px-3 py-3 flex items-center gap-3 border-l border-white/10" style={{ background: '#FF6B3D' }}>
+              <span className="inline-block w-6 h-6 rounded-full bg-white/25 border border-white/40" />
+              <span className="font-display font-extrabold tracking-wider text-[15px]">HOM</span>
+              <span className="ml-auto font-display font-bold text-[22px] tabular-nums">84</span>
+            </div>
+          </div>
+          {/* Period strip */}
+          <div className="px-3 py-1.5 flex items-center justify-between text-[10px] font-mono tracking-wider text-white/85" style={{ background: 'rgba(0,0,0,0.4)' }}>
+            <span className="inline-flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse" />
+              LIVE
+            </span>
+            <span>Q3 · 4:21</span>
+            <span className="opacity-60">SPORTSBFF</span>
+          </div>
+        </div>
+
+        <p className="mt-3 text-center text-[12px] text-ink-soft italic px-4">
+          Every NFL, NBA, and WNBA broadcast has one. Usually corner of the screen, with team abbreviations and the score.
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function Helper({ icon, label }: { icon: string; label: string }) {
   return (
     <div className="bg-white rounded-2xl border border-[var(--hairline)] p-3.5 shadow-[0_4px_16px_-10px_rgba(13,45,36,0.08)]">
@@ -499,10 +606,13 @@ function LoadingState({ imageUrl, message }: { imageUrl: string | null; message:
 function ResultView({
   result,
   onScanAnother,
+  onToggleLens,
 }: {
   result: GameScanResponse;
   onScanAnother: () => void;
+  onToggleLens: (lens: 'plain' | 'euphoria') => void;
 }) {
+  const isEuphoria = result.lens === 'euphoria';
   return (
     <section className="px-4 sm:px-6 pt-6 pb-16 max-w-3xl mx-auto space-y-6">
       {/* Matchup hero */}
@@ -513,13 +623,65 @@ function ResultView({
         liveGame={result.live_game}
       />
 
+      {/* Lens toggle — Euphoria voice on/off */}
+      <div className="flex items-center justify-center gap-2">
+        <button
+          onClick={() => onToggleLens('plain')}
+          className={`px-3.5 py-1.5 rounded-full text-[12px] font-semibold transition ${
+            !isEuphoria
+              ? 'bg-green text-white shadow-[0_4px_12px_-4px_rgba(13,45,36,0.3)]'
+              : 'bg-white border border-[var(--hairline)] text-ink-soft hover:text-ink'
+          }`}
+        >
+          sportsBFF voice
+        </button>
+        <button
+          onClick={() => onToggleLens('euphoria')}
+          className={`px-3.5 py-1.5 rounded-full text-[12px] font-semibold transition ${
+            isEuphoria
+              ? 'text-white shadow-[0_4px_12px_-4px_rgba(74,45,107,0.4)]'
+              : 'bg-white border border-[var(--hairline)] text-ink-soft hover:text-ink'
+          }`}
+          style={isEuphoria ? { background: 'linear-gradient(135deg, #DCD0F4 0%, #4A2D6B 200%)' } : undefined}
+        >
+          ✨ Through Euphoria
+        </button>
+      </div>
+
       {/* Blurb */}
       {result.blurb && (
-        <p className="text-center font-display italic text-[18px] sm:text-[20px] text-green leading-snug px-4">
-          <span className="text-tangerine text-2xl leading-none">"</span>
+        <p
+          className={`text-center font-display italic text-[18px] sm:text-[20px] leading-snug px-4 ${
+            isEuphoria ? 'text-lilac' : 'text-green'
+          }`}
+        >
+          <span className={`${isEuphoria ? 'text-lilac' : 'text-tangerine'} text-2xl leading-none`}>"</span>
           {result.blurb}
-          <span className="text-tangerine text-2xl leading-none">"</span>
+          <span className={`${isEuphoria ? 'text-lilac' : 'text-tangerine'} text-2xl leading-none`}>"</span>
         </p>
+      )}
+
+      {/* Game context narrative */}
+      {result.context && (
+        <div
+          className="rounded-3xl border p-5 sm:p-6"
+          style={
+            isEuphoria
+              ? { background: 'linear-gradient(180deg, #FBF6FF 0%, #F4ECFF 100%)', borderColor: '#DCD0F4' }
+              : { background: '#FCF8F2', borderColor: 'var(--hairline)' }
+          }
+        >
+          <div
+            className={`text-[10px] font-bold tracking-[0.22em] uppercase mb-2 ${
+              isEuphoria ? 'text-lilac' : 'text-tangerine'
+            }`}
+          >
+            {isEuphoria ? '✨ Through Euphoria' : 'The bigger story'}
+          </div>
+          <p className={`text-[14.5px] leading-relaxed ${isEuphoria ? 'text-ink italic' : 'text-ink'}`}>
+            {result.context}
+          </p>
+        </div>
       )}
 
       {/* What's happening + what this means */}
@@ -771,6 +933,19 @@ function RosterSection({
   players: Player[];
 }) {
   const [open, setOpen] = useState(false);
+  // Per-player expansion state — tracks which player rows have been tapped
+  // open. Multiple can be open at once.
+  const [expandedPlayers, setExpandedPlayers] = useState<Set<string>>(new Set());
+
+  function togglePlayer(id: string) {
+    setExpandedPlayers((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
+
   const withTea = players.filter((p) => p.hasTea).length;
 
   return (
@@ -805,44 +980,124 @@ function RosterSection({
       </button>
       {open && (
         <div className="border-t border-[var(--hairline)] divide-y divide-[var(--hairline)]">
-          {players.map((p) => (
-            <div key={p.id} className="px-5 py-3 flex items-center gap-3 hover:bg-cream-warm/20 transition">
-              {p.headshot ? (
-                <img
-                  src={p.headshot}
-                  alt=""
-                  className="w-10 h-10 rounded-full object-cover bg-cream-warm border border-[var(--hairline)] shrink-0"
-                />
-              ) : (
-                <div className="w-10 h-10 rounded-full bg-cream-warm border border-[var(--hairline)] flex items-center justify-center text-xs font-bold text-ink-soft shrink-0">
-                  {p.name
-                    .split(' ')
-                    .map((s) => s[0])
-                    .join('')
-                    .slice(0, 2)
-                    .toUpperCase()}
-                </div>
-              )}
-              <div className="flex-1 min-w-0">
-                <div className="font-display font-bold text-[14px] text-green truncate">{p.name}</div>
-                <div className="text-[11px] text-muted">
-                  {p.pos}
-                  {p.jersey && ` · #${p.jersey}`}
-                </div>
-                {p.tea[0] && (
-                  <div className="mt-1 flex items-start gap-1.5">
-                    <span
-                      className="shrink-0 inline-block w-1.5 h-1.5 rounded-full mt-1.5"
-                      style={{ background: TIER[p.tea[0].tier].dot }}
+          {players.map((p) => {
+            const isExpanded = expandedPlayers.has(p.id);
+            return (
+              <div key={p.id}>
+                <button
+                  onClick={() => togglePlayer(p.id)}
+                  className="w-full px-5 py-3 flex items-center gap-3 hover:bg-cream-warm/20 transition text-left"
+                >
+                  {p.headshot ? (
+                    <img
+                      src={p.headshot}
+                      alt=""
+                      className="w-10 h-10 rounded-full object-cover bg-cream-warm border border-[var(--hairline)] shrink-0"
                     />
-                    <span className="text-[12px] text-ink-soft leading-snug line-clamp-2">
-                      {p.tea[0].headline}
-                    </span>
+                  ) : (
+                    <div className="w-10 h-10 rounded-full bg-cream-warm border border-[var(--hairline)] flex items-center justify-center text-xs font-bold text-ink-soft shrink-0">
+                      {p.name
+                        .split(' ')
+                        .map((s) => s[0])
+                        .join('')
+                        .slice(0, 2)
+                        .toUpperCase()}
+                    </div>
+                  )}
+                  <div className="flex-1 min-w-0">
+                    <div className="font-display font-bold text-[14px] text-green truncate">{p.name}</div>
+                    <div className="text-[11px] text-muted">
+                      {p.pos}
+                      {p.jersey && ` · #${p.jersey}`}
+                    </div>
+                    {p.tea[0] && !isExpanded && (
+                      <div className="mt-1 flex items-start gap-1.5">
+                        <span
+                          className="shrink-0 inline-block w-1.5 h-1.5 rounded-full mt-1.5"
+                          style={{ background: TIER[p.tea[0].tier].dot }}
+                        />
+                        <span className="text-[12px] text-ink-soft leading-snug line-clamp-2">
+                          {p.tea[0].headline}
+                        </span>
+                      </div>
+                    )}
+                    {!p.hasTea && !isExpanded && (
+                      <div className="mt-1 text-[11px] text-muted italic">no tea yet</div>
+                    )}
+                  </div>
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`text-ink-soft shrink-0 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
+                    aria-hidden
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </button>
+                {/* Inline expanded view — full tea */}
+                {isExpanded && (
+                  <div className="px-5 pb-4 pt-1 bg-cream-warm/40 border-t border-[var(--hairline)]/50 space-y-3">
+                    {p.hasTea ? (
+                      p.tea.map((t, i) => {
+                        const tier = TIER[t.tier];
+                        return (
+                          <div
+                            key={i}
+                            className="bg-white rounded-2xl border border-[var(--hairline)] p-3.5 shadow-[0_2px_8px_-4px_rgba(13,45,36,0.06)]"
+                          >
+                            <div className="flex items-start justify-between gap-3 mb-1.5">
+                              <span
+                                className="shrink-0 inline-flex items-center px-2 py-0.5 rounded-full text-[9px] font-semibold uppercase tracking-wider"
+                                style={{ background: tier.bg, color: tier.fg }}
+                              >
+                                {tier.label}
+                              </span>
+                              <span className="text-[10px] text-muted">{t.category}</span>
+                            </div>
+                            <h4 className="font-display font-bold text-[14px] text-green leading-snug">
+                              {t.headline}
+                            </h4>
+                            <p className="mt-1 text-[12.5px] text-ink leading-relaxed">{t.summary}</p>
+                            {t.source && (
+                              <div className="mt-2 text-[10.5px] text-muted italic">
+                                via{' '}
+                                <a
+                                  href={t.source.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-tangerine hover:underline not-italic"
+                                  onClick={(e) => e.stopPropagation()}
+                                >
+                                  {t.source.name}
+                                </a>{' '}
+                                · {t.source.date}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })
+                    ) : (
+                      <div className="text-center py-3 text-[12px] text-muted italic">
+                        No tea on file for this one yet — we add new drama daily.
+                      </div>
+                    )}
+                    <Link
+                      href={`/player/${p.id}`}
+                      className="block text-center text-[11px] text-tangerine font-semibold hover:underline pt-1"
+                    >
+                      Open full profile →
+                    </Link>
                   </div>
                 )}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       )}
     </div>

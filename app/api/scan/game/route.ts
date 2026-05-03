@@ -433,7 +433,8 @@ Return JSON with this exact shape:
   "clock": "<remaining time as shown, e.g. '2:14'>",
   "period": <integer quarter or half number>,
   "period_label": "<exact label as shown, e.g. '4Q', 'Q3', '2nd', 'Half', 'OT'>",
-  "blurb": "<1 sentence sportsBFF voice describing the current state of the game — who's winning, the vibe, any notable score gap or storyline you can infer>"
+  "blurb": "<1 sentence sportsBFF voice describing the current state of the game — who's winning, the vibe, any notable score gap or storyline you can infer>",
+  "context": "<2-3 sentence narrative paragraph: history between these teams, who's having the better season, what's at stake right now, recent storylines worth knowing. Treat this like the smart-friend whisper at the bar: 'OK so what you're watching is...'>"
 }
 
 If you can't see a scoreboard at all (this is a regular photo, not a TV broadcast), return:
@@ -458,7 +459,32 @@ type VisionScore = {
   period: number;
   period_label: string;
   blurb: string;
+  context: string;
 };
+
+/**
+ * Through-Euphoria lens — rewrites the blurb + context in the cinematic
+ * HBO Euphoria narrator voice. Slow zooms. Tunnel fits as armor. Every
+ * locker room a Maddy/Cassie standoff. Gen-Z gossip-coded.
+ *
+ * Prepended to the system prompt when ?lens=euphoria is on the URL.
+ */
+const EUPHORIA_VOICE_OVERRIDE = `
+
+🎬 EUPHORIA LENS ACTIVE — rewrite the blurb + context paragraphs in this voice ONLY:
+- Slow zooms and lingering shots, like a Sam Levinson cold open
+- Tunnel fits described as armor, postgame outfits as runway
+- Locker rooms as Maddy-Cassie standoffs, every benching a Rue relapse
+- Crowd noise as Labrinth strings building
+- Confidence-collapse-redemption arcs, never just "they won"
+- Use phrases like "and that's when —", "in that moment", "a slow look across the court"
+- KEEP ALL FACTS THE SAME (scores, teams, names, periods). Only the voice changes.
+- Stay PG-13. No drugs, no eating disorders, no graphic content.
+
+Example transformation:
+  Plain: "Sixers up 4 with under 3 to go — Embiid + Maxey holding on tight."
+  Euphoria: "Sixers up 4. Three minutes left in regulation. The arena hum building like a chord that won't resolve. Embiid's eyes locked, Maxey's shoulders set — and that's when you realize this is the moment they've been rehearsing all season."
+`;
 
 export async function POST(req: NextRequest) {
   if (!hasOpenAIKey()) {
@@ -467,6 +493,11 @@ export async function POST(req: NextRequest) {
       { status: 200, headers: { 'Content-Type': 'application/json', ...CORS_HEADERS } },
     );
   }
+
+  // Parse query params — currently ?lens=euphoria for cinematic voice rewrite
+  const url = new URL(req.url);
+  const lens = (url.searchParams.get('lens') || '').toLowerCase();
+  const euphoriaOn = lens === 'euphoria';
 
   // Parse multipart image
   let imageBase64: string | null = null;
@@ -483,14 +514,16 @@ export async function POST(req: NextRequest) {
     });
   }
 
-  // Vision call to read scoreboard
+  // Vision call to read scoreboard. Inject Euphoria voice override if requested.
+  const systemPrompt = SYSTEM_PROMPT + (euphoriaOn ? EUPHORIA_VOICE_OVERRIDE : '');
+
   let parsed: VisionScore;
   try {
     const completion = await getOpenAI().chat.completions.create({
       model: MODELS.VISION,
       response_format: { type: 'json_object' },
       messages: [
-        { role: 'system', content: SYSTEM_PROMPT },
+        { role: 'system', content: systemPrompt },
         {
           role: 'user',
           content: [
@@ -499,8 +532,10 @@ export async function POST(req: NextRequest) {
           ],
         },
       ],
-      max_tokens: 400,
-      temperature: 0.1,
+      // Bump max tokens to fit the new context paragraph + Euphoria voice (verbose)
+      max_tokens: euphoriaOn ? 800 : 600,
+      // Slightly higher temp for Euphoria so the prose doesn't feel robotic
+      temperature: euphoriaOn ? 0.6 : 0.1,
       seed: 42,
     });
     const raw = completion.choices[0]?.message?.content ?? '{}';
@@ -668,8 +703,12 @@ export async function POST(req: NextRequest) {
           }
         : { verified: false },
       rosters: { home: homeRoster, away: awayRoster },
-      // What's happening, in 1-2 sentences (vision-generated)
+      // What's happening, in 1-2 sentences (vision-generated; Euphoria-flavored if lens=euphoria)
       blurb: parsed.blurb,
+      // 2-3 sentence narrative paragraph: rivalry context, season storylines, what's at stake
+      context: parsed.context || '',
+      // Active lens for the prose (default = sportsBFF voice, optional = euphoria)
+      lens: euphoriaOn ? 'euphoria' : 'plain',
       // Plain-English game state explainer (deterministic, no LLM cost)
       explainer: {
         whats_happening: explainer.whats_happening,
