@@ -55,7 +55,7 @@
       {
         "id": "mahomes-contract-restructure",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Chiefs restructured contract multiple times to manage salary cap (2024-2025)",
         "summary": "Patrick signed a 10-year, $450 million extension in 2020. In 2024, the Chiefs converted $27 million in roster bonuses to signing bonuses. In 2025, they converted $47.745 million in salary to bonuses for cap relief.",
         "sources": [
@@ -195,7 +195,7 @@
       {
         "id": "kelce-retirement-speculation",
         "tier": "speculation",
-        "category": "career",
+        "category": "off_field",
         "headline": "Retirement decision looms heading into offseason",
         "summary": "Following a grueling season, Kelce has discussed the physical toll of his NFL career and is taking time in the offseason to evaluate whether to return or retire.",
         "sources": [
@@ -259,77 +259,6 @@
             "name": "CNN",
             "url": "https://www.cnn.com/entertainment/taylor-swift-travis-kelce-super-bowl-lviii/",
             "date": "2024-02-11"
-          }
-        ]
-      },
-      {
-        "id": "kelce-acting-opportunities-2025",
-        "tier": "reported",
-        "category": "business",
-        "headline": "Pursuing acting career alongside football (Grotesquerie, Happy Gilmore 2)",
-        "summary": "Kelce expanded into Hollywood, landing roles in FX's psychological thriller Grotesquerie and reportedly joining Adam Sandler's Happy Gilmore 2 sequel, continuing his off-field ventures.",
-        "sources": [
-          {
-            "name": "Variety",
-            "url": "https://variety.com/t/travis-kelce/",
-            "date": "2024-08-15"
-          }
-        ]
-      },
-      {
-        "id": "kelce-happy-gilmore-2-cameo",
-        "tier": "confirmed",
-        "category": "media",
-        "headline": "Cameo in Happy Gilmore 2 (Netflix, July 2025)",
-        "summary": "Travis Kelce appeared in Netflix's 'Happy Gilmore 2' which released July 25, 2025. He played a brown-nosing club waiter character with a memorable scene involving honey and a bear. His father Ed also appeared in the film. Kelce called it 'still so surreal' on Instagram.",
-        "sources": [
-          {
-            "name": "Yahoo Entertainment",
-            "url": "https://www.yahoo.com/entertainment/articles/travis-kelce-thinks-surreal-cameo-094428194.html",
-            "date": "2025-07-25"
-          },
-          {
-            "name": "Netflix/Rolling Stone",
-            "url": "https://www.rollingstone.com/music/music-news/taylor-swift-happy-gilmore-2-had-her-cackling-and-cheering-1235394431/",
-            "date": "2025-07-25"
-          }
-        ]
-      },
-      {
-        "id": "kelce-grotesquerie-fx-2024",
-        "tier": "confirmed",
-        "category": "media",
-        "headline": "Acting debut in FX's Grotesquerie (October 2024)",
-        "summary": "Travis Kelce made his acting debut as hospital orderly Ed Laclan in Ryan Murphy's FX horror series 'Grotesquerie,' which premiered September 25, 2024. His character flirts his way into an affair with detective Lois Tryon (Niecy Nash-Betts). He worked with an acting coach for months to prepare.",
-        "sources": [
-          {
-            "name": "NBC News",
-            "url": "https://www.nbcnews.com/pop-culture/travis-kelce-grotesquerie-ryan-murphy-fx-hulu-what-know-rcna172563",
-            "date": "2024-09-25"
-          },
-          {
-            "name": "Variety",
-            "url": "https://variety.com/2024/tv/news/travis-kelce-joins-grotesquerie-ryan-murphy-1235995278/",
-            "date": "2024-05-20"
-          }
-        ]
-      },
-      {
-        "id": "kelce-new-heights-wondery-100m",
-        "tier": "confirmed",
-        "category": "endorsement",
-        "headline": "New Heights podcast deal with Wondery worth $100M+ (August 2024)",
-        "summary": "Travis and brother Jason Kelce signed a deal with Amazon's Wondery for their 'New Heights' podcast worth more than $100 million over three years, announced August 2024. The deal includes global distribution rights, exclusive Wondery+ early access ad-free episodes, and collaboration opportunities. The podcast won Podcast of the Year at the 2024 iHeartPodcast Awards.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/41013307/jason-kelce-travis-kelce-reportedly-sign-100m-podcast-deal",
-            "date": "2024-08-27"
-          },
-          {
-            "name": "Variety",
-            "url": "https://variety.com/2024/digital/news/kelce-brothers-podcast-wondery-new-heights-1236118594/",
-            "date": "2024-08-27"
           }
         ]
       },
@@ -433,7 +362,7 @@
       {
         "id": "josh-allen-2024-mvp-award",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Allen wins first career MVP with historic dual-threat season",
         "summary": "Josh Allen won the 2024 NFL MVP award on February 6, 2025, becoming the first Bills QB to win the honor. He threw for 3,731 yards and 28 touchdowns while rushing for 531 yards and 12 TDs, marking his fifth consecutive season with 40+ offensive TDs.",
         "sources": [
@@ -517,25 +446,6 @@
             "date": "2025-01-08"
           }
         ]
-      },
-      {
-        "id": "joe-burrow-275m-extension-2024",
-        "tier": "confirmed",
-        "category": "business",
-        "headline": "Burrow signs $275M extension, pledges contract flexibility",
-        "summary": "Joe Burrow signed a five-year, $275 million extension with the Cincinnati Bengals with $219 million guaranteed and $55 million average annual salary. He told FSI that he'd be open to restructuring to help the team keep star receiver Tee Higgins.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/qb-joe-burrow-bengals-agree-to-five-year-275-million-extension",
-            "date": "2024-06-15"
-          },
-          {
-            "name": "FOX Sports",
-            "url": "https://www.foxsports.com/stories/nfl/joe-burrow-open-to-restructuring-contract-to-help-bengals-keep-tee-higgins",
-            "date": "2024-12-01"
-          }
-        ]
       }
     ]
   },
@@ -548,7 +458,7 @@
       {
         "id": "jackson-fully-guaranteed",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Rejected two fully-guaranteed contract offers from Ravens before 2023 extension",
         "summary": "An NFLPA grievance ruling revealed the Ravens offered Jackson two separate three-year fully-guaranteed contracts worth $50M-$55M per season before he signed his five-year, $260M deal in April 2023. Jackson wanted no-trade and no-tag clauses that weren't included.",
         "sources": [
@@ -567,7 +477,7 @@
       {
         "id": "jackson-contract-standoff",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Contract negotiations stalled; Ravens unable to finalize new deal",
         "summary": "Jackson has been in ongoing contract negotiations with the Ravens, who wanted to extend his deal to manage his $74.5 million salary cap hit. As of spring 2026, no extension has been finalized.",
         "sources": [
@@ -593,28 +503,9 @@
         ]
       },
       {
-        "id": "jackson-contract-extension-talks",
-        "tier": "reported",
-        "category": "business",
-        "headline": "Contract extension talks ongoing with Ravens (2025-2026)",
-        "summary": "Lamar Jackson signed a five-year, $260 million contract with the Ravens in April 2023. Head Coach John Harbaugh said 'there's been conversations' about a contract extension to make Jackson 'the highest-paid player in football' again. The Ravens restructured his deal in 2024 to create cap space, and extension talks continue.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/48173540/sources-ravens-rework-lamar-jackson-deal-eye-extension",
-            "date": "2025-03-01"
-          },
-          {
-            "name": "Baltimore Ravens",
-            "url": "https://www.baltimoreravens.com/news/eric-decosta-lamar-jackson-kyle-hamilton-contract-extension-pending-free-agents-nick-matteo-window-open",
-            "date": "2026-04-15"
-          }
-        ]
-      },
-      {
         "id": "lamar-jackson-pfwa-mvp-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Jackson wins third career MVP award with historic dual-threat season",
         "summary": "Lamar Jackson earned his third MVP award from the Pro Football Writers of America for his 2024 season. He posted career highs with 4,172 passing yards, 41 TDs, and 915 rushing yards, becoming the first player ever with 4,000+ passing yards and 800+ rushing yards in a season.",
         "sources": [
@@ -660,7 +551,7 @@
       {
         "id": "jefferson-trade-rumors",
         "tier": "rumor",
-        "category": "career",
+        "category": "off_field",
         "headline": "Subject of trade speculation involving Bills and other teams",
         "summary": "Due to Vikings QB struggles in 2025, trade rumors emerged about Jefferson potentially going to the Buffalo Bills. Jefferson dismissed speculation: 'I've been hearing a couple Mafia fans talking, but I'm a Viking.'",
         "sources": [
@@ -674,7 +565,7 @@
       {
         "id": "jefferson-contract-locked",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Under long-term contract through 2028 ($140 million extension)",
         "summary": "Jefferson is locked into a four-year, $140 million extension through 2028. Trading him before June 1st would trigger a $70 million dead cap hit, making any move unlikely.",
         "sources": [
@@ -682,20 +573,6 @@
             "name": "Heavy.com",
             "url": "https://heavy.com/sports/nfl/minnesota-vikings/justin-jefferson-trade-rumors-buffalo-bills/",
             "date": "2025-12-15"
-          }
-        ]
-      },
-      {
-        "id": "justin-jefferson-140m-extension",
-        "tier": "confirmed",
-        "category": "contract",
-        "headline": "Signs record-breaking $140M extension",
-        "summary": "Minnesota Vikings signed WR Justin Jefferson to a four-year, $140 million contract extension with $110 million guaranteed in June 2024. The deal includes $89 million fully guaranteed at signing and runs through 2028. Jefferson surpassed Nick Bosa as the league's highest-paid non-QB.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/40268752/sources-justin-jefferson-vikings-agree-4-year-140m-deal",
-            "date": "2024-06-03"
           }
         ]
       }
@@ -710,7 +587,7 @@
       {
         "id": "barkley-super-bowl",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Won Super Bowl LIX with Eagles, defeating Chiefs 40-22",
         "summary": "Saquon Barkley helped lead the Eagles to their first Super Bowl title since 2018 on February 9, 2025. The Eagles dominated the Chiefs 40-22, with Barkley contributing 57 rushing yards and 40 receiving yards on his 28th birthday.",
         "sources": [
@@ -724,7 +601,7 @@
       {
         "id": "barkley-rushing-record",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Broke NFL single-season rushing record with 2,504 yards",
         "summary": "Saquon Barkley set an NFL record for most rushing yards in a season (2,504) and most scrimmage yards (2,857), surpassing Terrell Davis' 26-year-old record.",
         "sources": [
@@ -738,7 +615,7 @@
       {
         "id": "barkley-eagles-move",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Signed three-year deal with Eagles after leaving Giants \u2014 instant Super Bowl",
         "summary": "Barkley joined the Eagles in free agency for the 2024 season on a three-year contract, leaving the Giants after eight seasons. He led the NFL in rushing and helped deliver Philly the Super Bowl.",
         "sources": [
@@ -766,7 +643,7 @@
       {
         "id": "barkley-2000-yard-super-bowl-lix",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "2,005 rushing yards in 2024 + Super Bowl LIX MVP run with Eagles",
         "summary": "Saquon Barkley signed with the Philadelphia Eagles as a free agent and rushed for 2,005 yards in the 2024 regular season, becoming the ninth player ever to eclipse 2,000 yards. He continued his dominance in the playoffs and helped lead the Eagles to a 40-22 Super Bowl LIX victory over the Kansas City Chiefs, breaking the all-time single-season rushing record with 2,507 yards (regular + playoffs).",
         "sources": [
@@ -779,25 +656,6 @@
             "name": "WHYY",
             "url": "https://whyy.org/articles/saquon-barkley-nfl-season-rushing-record-super-bowl-59/",
             "date": "2025-02-10"
-          }
-        ]
-      },
-      {
-        "id": "saquon-barkley-extension-2025",
-        "tier": "confirmed",
-        "category": "business",
-        "headline": "Barkley becomes highest-paid RB with $41.2M extension",
-        "summary": "After his historic 2024 season with 2,005 rushing yards, the Eagles extended Saquon Barkley through 2028 with a two-year, $41.2 million deal, making him the first running back to earn over $20 million per year. He also set a record with 2,504 rushing yards including playoffs.",
-        "sources": [
-          {
-            "name": "Philadelphia Eagles",
-            "url": "https://www.philadelphiaeagles.com/news/eagles-extend-saquon-barkley-after-historic-2024-season",
-            "date": "2025-03-01"
-          },
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/eagles-saquon-barkley-sign-rb-two-year-mega-extension-through-2028",
-            "date": "2025-03-01"
           }
         ]
       }
@@ -886,7 +744,7 @@
       {
         "id": "williams-bears-draft",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Selected No. 1 overall by Chicago Bears in 2024 NFL Draft",
         "summary": "Caleb Williams was the consensus No. 1 pick in the 2024 NFL Draft on April 25, 2024. He reportedly tried to avoid being drafted by Chicago before the draft but changed his perspective after a pre-draft visit.",
         "sources": [
@@ -900,7 +758,7 @@
       {
         "id": "williams-draft-emotional",
         "tier": "reported",
-        "category": "career",
+        "category": "off_field",
         "headline": "Had emotional moment after being drafted by Bears",
         "summary": "During media appearances following the draft, Caleb Williams discussed his emotional reaction to receiving the call from the Bears, saying he 'blacked out a little bit' and shared an emotional moment with his family.",
         "sources": [
@@ -914,7 +772,7 @@
       {
         "id": "caleb-williams-rookie-season-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Williams sets rookie TD streak record amid 5-12 season",
         "summary": "Caleb Williams completed his 2024 rookie season with 3,541 passing yards, 20 TDs, and just six interceptions over 17 starts. He set an NFL rookie record with 353 consecutive passes without an interception and was tied for the fewest interceptions in Bears history for a 10+ start season.",
         "sources": [
@@ -941,7 +799,7 @@
       {
         "id": "stroud-rookie-record",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Broke Andrew Luck's rookie single-game passing record (470 yards)",
         "summary": "In Week 9 of his rookie season (2023), Stroud passed for 470 yards, breaking Andrew Luck's single-game rookie record set in 2012.",
         "sources": [
@@ -955,7 +813,7 @@
       {
         "id": "stroud-offensive-rookie",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Won 2024 NFL Offensive Rookie of the Year Award",
         "summary": "C.J. Stroud was named the 2024 NFL Offensive Rookie of the Year, becoming the first Houston Texans player to win the award. He was also named to the 2024 Pro Bowl.",
         "sources": [
@@ -983,7 +841,7 @@
       {
         "id": "stroud-rookie-season-2023-oproy",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Wins 2024 NFL Offensive Rookie of the Year (2023 season)",
         "summary": "CJ Stroud led the Houston Texans to a division title and playoff victory in his 2023 rookie season, winning the Offensive Rookie of the Year award. He led the NFL in passing yards per game (273.9) and TD-to-INT ratio (4.60), joining Joe Montana and Tom Brady as the only QBs ever to lead in both. He set the rookie QB passing yards record with 470 yards in Week 9.",
         "sources": [
@@ -997,7 +855,7 @@
       {
         "id": "cj-stroud-rookie-record-2023",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Stroud breaks rookie single-game passing record with 470 yards",
         "summary": "C.J. Stroud finished his rookie 2023 season with 4,108 passing yards, the third-most by a rookie QB in NFL history. He set a single-game rookie record with 470 passing yards against Tampa Bay in Week 9 and threw for 23 TDs to just 5 interceptions.",
         "sources": [
@@ -1022,37 +880,9 @@
     "league": "nfl",
     "items": [
       {
-        "id": "tua-concussion-2024",
-        "tier": "confirmed",
-        "category": "health",
-        "headline": "Suffered fourth concussion in September 2024 against Buffalo Bills",
-        "summary": "Tua Tagovailoa was concussed on September 12, 2024, during Week 2 against the Bills when he collided with safety Damar Hamlin while running for a first down. This was his fourth documented concussion over a five-year span.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/41239114/tua-tagovailoa-concussion-2024-dolphins-miami-injured-reserve",
-            "date": "2024-09-13"
-          }
-        ]
-      },
-      {
-        "id": "tua-protocol-change",
-        "tier": "confirmed",
-        "category": "health",
-        "headline": "'Tua Rule' implemented after 2022 concussions sparked NFL protocol changes",
-        "summary": "Following controversial concussions in Weeks 3 and 4 of the 2022 season, the NFL implemented the 'Tua Rule' which explicitly added ataxia to the list of 'no-go' symptoms requiring immediate player removal from games.",
-        "sources": [
-          {
-            "name": "Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Tua_Tagovailoa_concussion_controversy",
-            "date": "2022-10-15"
-          }
-        ]
-      },
-      {
         "id": "tua-2023-success",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Led NFL in passing yards in 2023 (5,014 yards) despite injury concerns",
         "summary": "Despite his concussion history, Tua Tagovailoa had an outstanding 2023 season, leading the entire NFL in passing yards with 5,014 yards.",
         "sources": [
@@ -1060,25 +890,6 @@
             "name": "ESPN",
             "url": "https://www.espn.com/nfl/story/_/id/41927160/tua-tagovailoa-miami-dolphins-quarterback-concussions",
             "date": "2024-09-01"
-          }
-        ]
-      },
-      {
-        "id": "tua-tagovailoa-concussion-week2-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Tagovailoa suffers third concussion in Week 2 vs Bills",
-        "summary": "Tua Tagovailoa suffered a concussion on September 12, 2024, in a Week 2 loss to Buffalo when he was hit by safety Damar Hamlin while diving for a first down. He was placed on injured reserve for at least four games, marking his third documented concussion in five years.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/41239114/tua-tagovailoa-concussion-2024-dolphins-miami-injured-reserve",
-            "date": "2024-09-12"
-          },
-          {
-            "name": "NBC News",
-            "url": "https://www.nbcnews.com/news/sports/dolphins-qb-tua-tagovailoa-leaves-game-bills-concussion-rcna170965",
-            "date": "2024-09-12"
           }
         ]
       }
@@ -1093,7 +904,7 @@
       {
         "id": "hurts-super-bowl-mvp",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Won Super Bowl LIX MVP after leading Eagles past Chiefs 40-22",
         "summary": "Jalen Hurts was named Super Bowl LIX MVP after his three-touchdown performance in the Eagles' dominant 40-22 victory over Kansas City on February 9, 2025. He became the third Black QB to win Super Bowl MVP.",
         "sources": [
@@ -1135,7 +946,7 @@
       {
         "id": "jalen-hurts-super-bowl-mvp-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Hurts wins Super Bowl LIX MVP, first $50M QB to win championship",
         "summary": "Jalen Hurts led the Philadelphia Eagles to a Super Bowl LIX victory against the Kansas City Chiefs in February 2025 and won Super Bowl MVP. He became the first quarterback making over $50 million per year to win a Super Bowl championship.",
         "sources": [
@@ -1200,7 +1011,7 @@
       {
         "id": "lebron-contract-option-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Exercises $52.6M player option for 2025-26 season",
         "summary": "LeBron James exercised his $52.6 million player option with the Lakers for the 2025-26 season in June 2025, committing to another year in Los Angeles.",
         "sources": [
@@ -1214,7 +1025,7 @@
       {
         "id": "lebron-luka-excited-teammates",
         "tier": "reported",
-        "category": "career",
+        "category": "off_field",
         "headline": "Calls Luka Doncic 'favorite player' after shock trade pairing",
         "summary": "After initially being shocked by the February 2025 trade that sent Luka Doncic to the Lakers, LeBron expressed enthusiasm: 'Luka's been my favorite player in the NBA for a while now.'",
         "sources": [
@@ -1228,7 +1039,7 @@
       {
         "id": "lebron-no-trade-clause-contract",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Secures rare no-trade clause in Lakers extension",
         "summary": "In his two-year, $104 million 2024 contract extension, LeBron included a no-trade clause and a 15% trade kicker \u2014 one of only two times in his career he's negotiated such protections.",
         "sources": [
@@ -1242,7 +1053,7 @@
       {
         "id": "lebron-knee-injury-all-star",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "22nd consecutive All-Star selection despite injury struggles",
         "summary": "LeBron James earned his 22nd straight NBA All-Star selection for the 2025-26 season, overcoming a Grade 2 MCL ligament tear suffered during the 2025 playoffs.",
         "sources": [
@@ -1284,7 +1095,7 @@
       {
         "id": "lebron-luka-partner-shock",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Called Luka his 'favorite player in the NBA' after surprise trade acquisition",
         "summary": "LeBron James was shocked when the Lakers acquired Luka Doncic in February 2025, initially thinking the news was 'a hoax.' However, he quickly embraced the partnership, stating 'Luka's been my favorite player in the NBA for a while now.' James expressed confidence in the pairing and pledged loyalty with his no-trade clause. 'If I had concerns about it, I'd waive my no-trade clause and get up out of here,' he said.",
         "sources": [
@@ -1303,7 +1114,7 @@
       {
         "id": "lebron-lakers-first-round-exit",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "LeBron-Luka Lakers eliminated by Timberwolves in first round (May 2025)",
         "summary": "After the shocking mid-season trade that united LeBron James and Luka Doncic on the Los Angeles Lakers, the pairing struggled down the stretch and was eliminated by the sixth-seeded Minnesota Timberwolves in five games. The Lakers were outscored with both stars on the floor, going minus-29 in the Minnesota series despite being plus-24 in the regular season. The highly anticipated partnership failed to deliver playoff success.",
         "sources": [
@@ -1330,7 +1141,7 @@
       {
         "id": "curry-4000-threes",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "First NBA player to reach 4,000 career three-pointers",
         "summary": "Stephen Curry made history on March 13, 2025, becoming the first player in NBA history to make 4,000 career three-pointers. The milestone came on his 37th birthday.",
         "sources": [
@@ -1344,7 +1155,7 @@
       {
         "id": "curry-one-year-extension-2026",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Signs $62.6M extension, first $60M single-season earner",
         "summary": "Curry signed a one-year, $62.6 million contract extension with the Warriors on August 30, 2024, through the 2026-27 season, becoming the first NBA player to earn $60 million in a single season.",
         "sources": [
@@ -1358,7 +1169,7 @@
       {
         "id": "curry-96-threes-month-record",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Sets NBA record with 96 three-pointers in January 2025",
         "summary": "Stephen Curry made 96 three-pointers in January 2025, breaking James Harden's previous monthly record of 82 set in November 2019.",
         "sources": [
@@ -1372,7 +1183,7 @@
       {
         "id": "curry-perfect-night",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "First player ever to go 8-of-8 from three with 30+ points",
         "summary": "On January 2, 2025, Curry dropped 30 points, 10 assists, and a career-first 8-of-8 from three in a 139-105 win over Philadelphia, becoming the first player in NBA history with this stat line.",
         "sources": [
@@ -1442,7 +1253,7 @@
       {
         "id": "curry-jimmy-butler-warriors-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Welcomed Jimmy Butler as Warriors tried to rescue season (February 2025)",
         "summary": "Stephen Curry teamed up with newly acquired Jimmy Butler in February 2025 as the Warriors made a roster push mid-season. Warriors added Butler to pair with Curry and Draymond Green in hopes of lifting the team from 11th place in the West back into playoff contention. The move reunited Curry with a veteran All-Star trying to extend Golden State's championship window.",
         "sources": [
@@ -1469,7 +1280,7 @@
       {
         "id": "durant-rockets-debut",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Trades to Rockets, debuts with 23 points vs. Thunder",
         "summary": "KD was traded to the Houston Rockets in July 2025 in the largest trade in NBA history. He made his regular season debut with Houston on October 21, 2025, scoring 23 points in a 125-124 double overtime loss to OKC.",
         "sources": [
@@ -1502,7 +1313,7 @@
       {
         "id": "durant-extension-rockets",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Signs $90M extension with Rockets, calls it 'no brainer'",
         "summary": "On October 19, 2025, Durant signed a two-year, $90 million contract extension with the Rockets with a player option for 2027-2028.",
         "sources": [
@@ -1516,7 +1327,7 @@
       {
         "id": "durant-30000-points",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Reaches 30,000 career points milestone with Rockets",
         "summary": "Kevin Durant achieved his 30,000th career point on February 11, 2026, in a game against Memphis, becoming only the 10th player in NBA history to reach this milestone.",
         "sources": [
@@ -1530,7 +1341,7 @@
       {
         "id": "durant-blindsided-trade",
         "tier": "reported",
-        "category": "career",
+        "category": "off_field",
         "headline": "Blindsided by Suns trade talks, rejected Warriors reunion",
         "summary": "Durant was blindsided when the Suns attempted to trade him to the Warriors at the February 2025 deadline. He made clear he had no interest in returning to GSW.",
         "sources": [
@@ -1558,7 +1369,7 @@
       {
         "id": "durant-ankle-injury-season",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Ruled out for rest of 2024-25 season with ankle sprain (March 2025)",
         "summary": "Kevin Durant was ruled out for the remainder of the 2024-25 season after suffering a left ankle sprain during a collision with Jabari Smith Jr. on March 30, 2025, against Houston. The Suns struggled early with Durant's injuries, losing momentum when he strained his calf while 9-1, and missing time mid-season with another ankle sprain in December. Durant finished with 26.6 PPG on strong .527/.430/.839 shooting splits in 62 games, but the season ended with the Suns eliminated from playoff contention.",
         "sources": [
@@ -1577,7 +1388,7 @@
       {
         "id": "durant-early-calf-setback",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Left calf strain slowed Suns' hot start at 9-1 (October 2024)",
         "summary": "Kevin Durant suffered a left calf strain while the Phoenix Suns were 9-1 early in the 2024-25 season, derailing their early momentum. The injury caused him to miss the next seven games, during which the Suns lost six. Durant would later admit that these early setbacks contributed to what ultimately became a disappointing season for the star-laden Suns alongside Devin Booker and Bradley Beal.",
         "sources": [
@@ -1604,7 +1415,7 @@
       {
         "id": "wembanyama-dpoy-unanimous",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "First unanimous NBA Defensive Player of the Year",
         "summary": "Wemby became the first unanimous DPOY in NBA history in April 2026, receiving all 100 first-place votes. At 22, he also became the youngest DPOY winner.",
         "sources": [
@@ -1618,7 +1429,7 @@
       {
         "id": "wembanyama-rookie-year",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Unanimous NBA Rookie of the Year with historic stats",
         "summary": "Wemby won the 2024 ROY with all 99 first-place votes, averaging 21.4 points, 10.6 rebounds, and a league-leading 3.6 blocks per game.",
         "sources": [
@@ -1632,7 +1443,7 @@
       {
         "id": "wembanyama-all-defensive-rookie",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "First rookie ever to make All-Defensive First Team",
         "summary": "Wembanyama was named to the NBA All-Defensive First Team in his rookie season \u2014 the first rookie to achieve this in the same year as ROY.",
         "sources": [
@@ -1646,7 +1457,7 @@
       {
         "id": "wembanyama-paris-olympics-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Leads France to silver medal at Paris 2024 Olympics; Rising Star award",
         "summary": "Wembanyama led the French national team to the Olympic finals at Paris 2024, where they won silver. He earned the FIBA Rising Star award.",
         "sources": [
@@ -1702,7 +1513,7 @@
       {
         "id": "wemby-unanimous-dpoy-2026",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Becomes first-ever unanimous NBA Defensive Player of the Year (2025-26)",
         "summary": "Victor Wembanyama made NBA history as the first unanimous Defensive Player of the Year winner for the 2025-26 season, securing 100% of first-place votes. The 22-year-old Spurs superstar led the league in blocks per game (3.1) for the third consecutive season. He contested 93% of opponent shot attempts as the closest defender and allowed opponents to shoot just 33% from the floor. Also a 2025-26 MVP finalist alongside Shai Gilgeous-Alexander and Nikola Jokic.",
         "sources": [
@@ -1729,7 +1540,7 @@
       {
         "id": "sga-mvp-2025-26",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Reigning MVP, strong favorite for second straight award",
         "summary": "SGA is the 2025-26 MVP frontrunner, averaging 31.1 points, 4.3 rebounds, 6.6 assists (career-high) on 55.3% from the field. The Thunder lead the league at 62-16.",
         "sources": [
@@ -1743,7 +1554,7 @@
       {
         "id": "sga-clutch-player-year",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Named 2025-26 Clutch Player of the Year",
         "summary": "SGA earned the 2025-26 Clutch Player of the Year award, leading the NBA with 175 clutch-time points and a 20-7 record in close games.",
         "sources": [
@@ -1804,7 +1615,7 @@
       {
         "id": "sga-mvp-favorite-2026",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Leading 2025-26 MVP race with dominant season; leads Thunder to 62-16 record",
         "summary": "Shai Gilgeous-Alexander has taken a commanding lead in the 2025-26 NBA MVP race after a historic season. SGA is averaging 31.6 PPG, 6.5 APG, 4.4 RPG while shooting 55% from the field, leading the Oklahoma City Thunder to a 62-16 record and the best net rating in the league. He made history by recording 127 consecutive games with 20+ points. In an anonymous NBA players poll, SGA received 39% of votes for MVP, well ahead of Nikola Jokic (21.4%).",
         "sources": [
@@ -1871,28 +1682,9 @@
         ]
       },
       {
-        "id": "edwards-hurt-by-kat-trade-2024",
-        "tier": "reported",
-        "category": "drama",
-        "headline": "Expressed hurt over Karl-Anthony Towns trade to Knicks (October 2024)",
-        "summary": "Anthony Edwards said he was 'really hurt' when the Minnesota Timberwolves traded his brother and teammate Karl-Anthony Towns to the New York Knicks on October 2, 2024, acknowledging 'KAT my brother so that definitely hurt.' However, Edwards recognized the trade as a business decision necessary due to the luxury tax situation.",
-        "sources": [
-          {
-            "name": "Sports Illustrated",
-            "url": "https://www.si.com/nba/anthony-edwards-hurt-by-karl-anthony-towns-trade-reaction",
-            "date": "2024-10-02"
-          },
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nba/story/_/id/41535742/wolves-turn-edwards-lead-team-wake-towns-trade",
-            "date": "2024-10-02"
-          }
-        ]
-      },
-      {
         "id": "edwards-timberwolves-core",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Led young Timberwolves alongside Karl-Anthony Towns in Western contention (2024-25)",
         "summary": "Anthony Edwards emerged as a star for the Minnesota Timberwolves alongside Karl-Anthony Towns during the 2024-25 season as Minneapolis made a playoff push. Edwards' athleticism and scoring ability made him one of the league's rising stars, though the Timberwolves faced challenges competing against elite Western Conference teams. The pairing of Edwards and Towns created an exciting young core.",
         "sources": [
@@ -1919,7 +1711,7 @@
       {
         "id": "luka-traded-lakers-blockbuster",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Blockbuster trade sends Luka to Lakers for Anthony Davis",
         "summary": "In one of the biggest trades in NBA history, Luka Doncic was traded from the Mavericks to the Lakers on February 1-2, 2025, in exchange for Anthony Davis, Max Christie, and a 2029 first-round pick.",
         "sources": [
@@ -1938,7 +1730,7 @@
       {
         "id": "luka-shock-secret-trade",
         "tier": "reported",
-        "category": "career",
+        "category": "off_field",
         "headline": "Blindsided: Trade was kept secret from players and coaches",
         "summary": "The Doncic trade was put together in complete secrecy. Luka, Anthony Davis, their coaches, and teammates had no knowledge of the deal until it was officially announced.",
         "sources": [
@@ -1952,7 +1744,7 @@
       {
         "id": "luka-salary-cap-move",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Trade avoids Luka's looming supermax deal and opt-out clause",
         "summary": "Luka was set to receive a five-year, $345 million supermax in 2025, but the trade made him ineligible for it. The Mavs avoided a 'tumultuous summer.'",
         "sources": [
@@ -1978,25 +1770,6 @@
           {
             "name": "The Athletic",
             "url": "https://www.nytimes.com/athletic/6094567/2025/02/02/luka-trade-mavs-lakers/",
-            "date": "2025-02-02"
-          }
-        ]
-      },
-      {
-        "id": "doncic-lakers-trade-feb-2025",
-        "tier": "confirmed",
-        "category": "trade",
-        "headline": "Blockbuster trade to Lakers for Anthony Davis (February 1-2, 2025)",
-        "summary": "Luka Doncic was traded to the Los Angeles Lakers from the Dallas Mavericks for Anthony Davis in a three-team deal involving the Utah Jazz, executed on the night of February 1-2, 2025. The deal was done in secret with Doncic calling it a 'big shock.' Mavericks GM Nico Harrison was later fired over the trade.",
-        "sources": [
-          {
-            "name": "CNN",
-            "url": "https://www.cnn.com/2025/02/02/sport/lakers-mavericks-doncic-davis-spt",
-            "date": "2025-02-02"
-          },
-          {
-            "name": "Wikipedia",
-            "url": "https://en.wikipedia.org/wiki/Luka_Don%C4%8Di%C4%87%E2%80%93Anthony_Davis_trade",
             "date": "2025-02-02"
           }
         ]
@@ -2102,7 +1875,7 @@
       {
         "id": "booker-suns-disappointment",
         "tier": "reported",
-        "category": "career",
+        "category": "off_field",
         "headline": "Struggled with injuries and team dysfunction during disappointing 2024-25 season",
         "summary": "Devin Booker's 2024-25 season with the Phoenix Suns was marked by team struggles and inconsistent performances. Despite the Suns assembling a big-three with Bradley Beal and Kevin Durant alongside Booker, all three missed significant time with injuries. The three stars combined made $150 million that season, but the team fell apart after eight consecutive losses and was eliminated from playoff contention.",
         "sources": [
@@ -2129,7 +1902,7 @@
       {
         "id": "tatum-2024-nba-champion",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Wins first NBA championship with Celtics, defeats Mavericks 4-1",
         "summary": "Jayson Tatum won his first NBA title in 2024 as the Celtics defeated the Mavericks 4-1 in the Finals. The Celtics finished with a league-best 64 wins.",
         "sources": [
@@ -2143,7 +1916,7 @@
       {
         "id": "tatum-315m-supermax",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Agrees to NBA-record $315M supermax extension",
         "summary": "Jayson Tatum agreed to a five-year, $315 million supermax extension with the Celtics on July 6, 2024 \u2014 the largest contract in NBA history at the time.",
         "sources": [
@@ -2218,7 +1991,7 @@
       {
         "id": "tatum-celtics-40point-game",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Scores career-high 43 points in dominant performance; 6th All-Star starter (2024-25)",
         "summary": "Jayson Tatum recorded a season-high 43 points, 15 rebounds, and 10 assists on December 21, 2024, in a 123-98 win over the Chicago Bulls. He became just the fifth player in NBA history to record 40+ points, 15+ rebounds, 10+ assists and 5+ threes in a game, and the first in Celtics history with 40+ points, 15 boards and 10 dimes. Tatum was named an All-Star starter for the sixth consecutive year and third consecutive starter selection on January 25, 2025, returning from a torn Achilles.",
         "sources": [
@@ -2245,7 +2018,7 @@
       {
         "id": "jokic-third-mvp-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Wins third MVP in four seasons; first center since Shaq (2000) to do it",
         "summary": "Nikola Jokic won the 2024 NBA MVP, his third in four seasons. Averaging 26.4 points, 12.4 rebounds, and 9.0 assists, he became only the ninth player in NBA history to win three MVPs.",
         "sources": [
@@ -2273,7 +2046,7 @@
       {
         "id": "jokic-three-time-mvp",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Won third NBA MVP award in 2024; second in 2025-26 voting amid voter fatigue",
         "summary": "Nikola Jokic won the 2024 NBA MVP award, his third career MVP honor (also won in 2021 and 2022). In 2024-25, he put up elite numbers averaging 27.7 PPG, 12.9 RPG, 10.7 APG on 67% true shooting, even better than his 2023-24 MVP season. However, finishing second in 2025-26 MVP voting, Jokic may be facing voter fatigue. The Nuggets sit fourth in the West at 44-38, effectively removing him from contention despite his individual brilliance.",
         "sources": [
@@ -2297,34 +2070,6 @@
     "team": "phi",
     "league": "nba",
     "items": [
-      {
-        "id": "embiid-appendectomy",
-        "tier": "confirmed",
-        "category": "health",
-        "headline": "Gutsy return from emergency appendectomy in playoffs",
-        "summary": "Joel Embiid underwent an emergency appendectomy on April 9, 2025, after being diagnosed with appendicitis. He made a gutsy return in Game 4 of the Celtics series two weeks later.",
-        "sources": [
-          {
-            "name": "NBA.com",
-            "url": "https://www.nba.com/news/embiids-gutsy-return-after-appendectomy-falls-flat-as-celtics-rout-76ers",
-            "date": "2026-04-26"
-          }
-        ]
-      },
-      {
-        "id": "embiid-limited-games-2024-25",
-        "tier": "confirmed",
-        "category": "health",
-        "headline": "Played just 19 games due to knee injuries and illness",
-        "summary": "Joel Embiid's 2024-25 season was heavily impacted by a left knee issue and oblique strain, limiting him to just 19 games. The limited games made him ineligible for MVP consideration.",
-        "sources": [
-          {
-            "name": "Heavy Sports",
-            "url": "https://heavy.com/sports/nba/philadelphia-76ers/76ers-injury-report-for-game-3-vs-celtics-features-major-joel-embiid-update/",
-            "date": "2026-04-15"
-          }
-        ]
-      },
       {
         "id": "embiid-anne-de-paula-marriage",
         "tier": "confirmed",
@@ -2384,7 +2129,7 @@
       {
         "id": "embiid-76ers-big-three",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Led 76ers with Paul George, Kawhi Leonard big-three in 2024-25 season",
         "summary": "Joel Embiid anchored the Philadelphia 76ers' ambitious big-three roster alongside Paul George and Kawhi Leonard during the 2024-25 season. Though injuries limited Leonard's availability, Embiid and George led the 76ers' charge to an Eastern Conference Finals matchup where they stunned the Celtics with a Game 7 victory. The 76ers reached the Finals as a result, ending the franchise's championship drought potential.",
         "sources": [
@@ -2425,7 +2170,7 @@
       {
         "id": "bronny-rookie-contract",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Signs guaranteed 4-year, $7.9M rookie deal with Lakers",
         "summary": "Bronny James signed a four-year, $7.9 million guaranteed contract with the Lakers \u2014 unusual for a second-round pick, starting at $1.16M and rising to $2.49M with a team option in year four.",
         "sources": [
@@ -2439,7 +2184,7 @@
       {
         "id": "bronny-birthday-debut",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Makes NBA debut on 20th birthday against Timberwolves",
         "summary": "Bronny James checked into his first NBA game on October 22, 2024, coinciding with his 20th birthday. Playing alongside LeBron, Bronny shared the court for 4 minutes 9 seconds.",
         "sources": [
@@ -2453,7 +2198,7 @@
       {
         "id": "bronny-lakers-father-son-debut",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Makes NBA debut alongside father LeBron; first father-son duo (October 2024)",
         "summary": "Bronny James and LeBron James became the first father-son duo to play together in an NBA game on October 22, 2024, in the season opener against the Minnesota Timberwolves. Bronny appeared in 27 games as a rookie, averaging 2.3 PPG, 0.7 RPG, 0.8 APG in 6.7 minutes per game on 31.3% FG and 28.1% 3PT. He scored his first NBA basket on October 30 against Cleveland. He spent significant time developing in the South Bay Lakers G League team.",
         "sources": [
@@ -2523,7 +2268,7 @@
       {
         "id": "belichick-nfl-honors-appearance",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Attends NFL Honors as coach of the year contender",
         "summary": "Bill Belichick made a prominent appearance at the NFL Honors ceremony in February 2025, marking his presence in the football community following his departure from the New England Patriots. The appearance reinforced his status as a coaching legend being recognized during awards season.",
         "sources": [
@@ -2561,7 +2306,7 @@
       {
         "id": "belichick-unc-head-coach-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Named University of North Carolina head coach (December 2024)",
         "summary": "Bill Belichick, the most successful coach in NFL history with six Super Bowl wins, was named the head coach of the University of North Carolina football team in December 2024. He signed a five-year deal worth $50 million. Belichick's father Steve was an assistant coach for the Tar Heels from 1953-55.",
         "sources": [
@@ -2721,44 +2466,6 @@
             "date": "2024-12-05"
           }
         ]
-      },
-      {
-        "id": "rodgers-steelers-signing-2025",
-        "tier": "confirmed",
-        "category": "trade",
-        "headline": "Signs one-year deal with Pittsburgh Steelers (June 2025)",
-        "summary": "Aaron Rodgers signed a one-year, $13.6 million contract with the Pittsburgh Steelers in June 2025 after being released by the New York Jets in February. In 2025, he led the Steelers to a 10-7 record and an AFC North title, though they lost 30-6 to Houston in the playoffs.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/steelers-sign-aaron-rodgers-to-one-year-13-6-million-deal-qb-to-wear-no-8-address-media-tuesday",
-            "date": "2025-06-07"
-          },
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/44442475/2025-nfl-free-agency-grades-quarterback-aaron-rodgers-pittsburgh-steelers-signing",
-            "date": "2025-06-07"
-          }
-        ]
-      },
-      {
-        "id": "aaron-rodgers-achilles-recovery-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Rodgers returns to play after unprecedented Achilles recovery",
-        "summary": "Aaron Rodgers made a remarkable recovery from his September 2023 Achilles tear, returning to start for the Jets in Week 1 of the 2024 season against the 49ers. He felt 'really good' coming off the injury and had undergone an innovative speed bridge surgery intended to expedite recovery.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/jets-qb-aaron-rodgers-feeling-really-good-coming-off-torn-achilles",
-            "date": "2024-08-01"
-          },
-          {
-            "name": "CBS Sports",
-            "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-injury-timeline-a-complete-look-at-the-jets-qbs-unprecedented-recovery",
-            "date": "2024-09-01"
-          }
-        ]
       }
     ]
   },
@@ -2822,25 +2529,6 @@
             "name": "People.com",
             "url": "https://people.com/trevor-lawrence-family",
             "date": "2021-04-12"
-          }
-        ]
-      },
-      {
-        "id": "trevor-lawrence-275m-extension-2024",
-        "tier": "confirmed",
-        "category": "business",
-        "headline": "Lawrence inks $275M extension matching Burrow for top QB pay",
-        "summary": "Trevor Lawrence signed a five-year, $275 million extension with the Jacksonville Jaguars on June 13, 2024, paying him $55 million per year with $200 million guaranteed. The deal runs through 2030 and matches Joe Burrow for the largest contract in NFL history at that time.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/jaguars-qb-trevor-lawrence-contract-extension",
-            "date": "2024-06-13"
-          },
-          {
-            "name": "Jacksonville Jaguars",
-            "url": "https://www.jaguars.com/news/trevor-lawrence-agrees-to-contract-extension-with-jaguars",
-            "date": "2024-06-13"
           }
         ]
       }
@@ -3011,25 +2699,6 @@
             "date": "2026-03-06"
           }
         ]
-      },
-      {
-        "id": "justin-herbert-hand-injury-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Herbert undergoes hand surgery mid-season, plays through injury",
-        "summary": "Justin Herbert underwent successful surgery on his left (non-throwing) hand in Week 13 after sustaining a fracture against the Raiders. Despite the injury, he played through the discomfort and led the Chargers to a playoff berth, resting in Week 18.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/chargers-justin-herbert-undergoes-successful-hand-surgery-considered-day-to-day",
-            "date": "2024-12-02"
-          },
-          {
-            "name": "Chargers",
-            "url": "https://www.chargers.com/news/justin-herbert-hand-injury-fantasy-football",
-            "date": "2024-12-18"
-          }
-        ]
       }
     ]
   },
@@ -3138,25 +2807,6 @@
           {
             "name": "Washington Commanders Official",
             "url": "https://www.commanders.com/team/players-roster/jayden-daniels/",
-            "date": "2024-06-14"
-          }
-        ]
-      },
-      {
-        "id": "jayden-daniels-rookie-contract-2024",
-        "tier": "confirmed",
-        "category": "business",
-        "headline": "Daniels signs rookie deal as No. 2 overall pick",
-        "summary": "Jayden Daniels signed his rookie contract with the Washington Commanders on June 14, 2024\u2014a four-year, $37.7 million deal with $24.3 million signing bonus and $37.7 million guaranteed. The contract runs through 2029 with an average annual salary of $9.4 million.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/commanders-sign-qb-jayden-daniels-no-2-overall-pick-to-rookie-contract",
-            "date": "2024-06-14"
-          },
-          {
-            "name": "Spotrac",
-            "url": "https://www.spotrac.com/nfl/player/_/id/90331/jayden-daniels/contract/summary",
             "date": "2024-06-14"
           }
         ]
@@ -3321,7 +2971,7 @@
       {
         "id": "drake-maye-rookie-2024-pro-bowl",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Maye earns Pro Bowl honors as rookie despite 4-13 record",
         "summary": "Drake Maye completed his rookie 2024 season with 2,276 passing yards, 15 TDs, and 10 interceptions while rushing for 421 yards. He set a Patriots rookie record with TD passes in eight straight games and became the first QB since 1973 to throw his first 10 TDs to ten different receivers.",
         "sources": [
@@ -3414,7 +3064,7 @@
       {
         "id": "morant-49point-opening",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Scores 49 points in Game 2 vs Rockets; sets franchise record start (2024-25)",
         "summary": "Ja Morant made a dominant return for the Memphis Grizzlies in the 2024-25 season, scoring 49 points on 17-of-26 shooting in a 129-122 win over the Houston Rockets in the second game of the season. He set a Grizzlies franchise mark for most points through the first two games, posting 83 PPG. On November 27, Morant recorded his fifth career triple-double with 27 points, 10 rebounds, and 14 assists, tying Marc Gasol for the most triple-doubles in franchise history.",
         "sources": [
@@ -3520,7 +3170,7 @@
       {
         "id": "haliburton-pacers-assist-machine",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Led Pacers as assist machine in young Eastern Conference contender (2024-25)",
         "summary": "Tyrese Haliburton continued to establish himself as one of the league's elite playmakers during the 2024-25 season with the Indiana Pacers. The young guard led the Pacers as they emerged as an Eastern Conference contender with a young, talented roster built around him and Jalen Smith. Haliburton's efficiency and ball-handling made the Pacers one of the more exciting young teams in the league.",
         "sources": [
@@ -3599,7 +3249,7 @@
       {
         "id": "brunson-2024-all-star",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Named 2024 NBA All-Star (first selection)",
         "summary": "Jalen Brunson was named as an All-Star reserve for the first time in his career for the 2024 NBA All-Star Game. On the same day (Feb 1, 2024) he was named, he scored 40 points in a Knicks comeback win. He posted a career-high 14 assists against Minnesota in January and had the 2nd highest single-month plus-minus (256) in NBA history.",
         "sources": [
@@ -3618,7 +3268,7 @@
       {
         "id": "brunson-knicks-mvp-contender",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Contended for 2024-25 MVP; peaked at No. 4 on ladder; led Knicks to Emirates Cup",
         "summary": "Jalen Brunson emerged as a 2024-25 NBA MVP contender with the New York Knicks after the team added Mikal Bridges and Karl-Anthony Towns. Brunson peaked at No. 4 on the Kia MVP Ladder while averaging over 30 PPG, making him a serious top-5 candidate. Though his March scoring slipped to 18.8 PPG and his MVP case weakened, Brunson led the Knicks to victory in the 2025 Emirates NBA Cup championship game. He finished the season at No. 8 on the final MVP Ladder and as an All-Star.",
         "sources": [
@@ -3733,7 +3383,7 @@
       {
         "id": "klay-mavericks-6team-trade",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Joins Mavericks in historic 6-team sign-and-trade deal (June 2024)",
         "summary": "Klay Thompson agreed to a 3-year, $50 million sign-and-trade with the Dallas Mavericks in June 2024, marking the first 6-team trade in NBA history. Thompson left the Warriors after 13 seasons, motivated by the chance to compete for a championship with the Mavericks and financial benefits of living in Texas versus California. The Warriors received Buddy Hield and Kyle Anderson in the complex multi-team deal.",
         "sources": [
@@ -3798,7 +3448,7 @@
       {
         "id": "lillard-blazers-return-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Returns to Portland Trail Blazers; Bucks waive him for cap flexibility (July 2025)",
         "summary": "Damian Lillard agreed to a 3-year, $42 million contract to return to the Portland Trail Blazers in July 2025. The Bucks waived him to create cap room to sign Myles Turner. Milwaukee stretched his remaining $112.6 million over five seasons to manage the cap hit. As a result, Lillard now has a 2025-26 salary of $70 million between Portland and Milwaukee deals, with $141 million over the next two years ahead of a 2027-28 player option.",
         "sources": [
@@ -3844,7 +3494,7 @@
       {
         "id": "mitchell-cavs-6star-all-star",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Named All-Star starter for 6th consecutive selection (January 2025)",
         "summary": "Donovan Mitchell was named an Eastern Conference starter for the 2025 NBA All-Star Game on January 25, marking his sixth consecutive All-Star selection and second consecutive starter selection. Mitchell averaged 29.8 PPG, 5.4 APG, 4.7 RPG, 1.5 SPG across 33.8 minutes per game during the 2024-25 season with the Cavaliers, establishing himself as a cornerstone of the team's success.",
         "sources": [
@@ -3970,25 +3620,6 @@
             "date": "2026-02-05"
           }
         ]
-      },
-      {
-        "id": "davis-mavericks-trade-feb-2025",
-        "tier": "confirmed",
-        "category": "trade",
-        "headline": "Traded to Dallas Mavericks for Luka Doncic (February 2025)",
-        "summary": "Anthony Davis was traded to the Dallas Mavericks on February 1-2, 2025, in a blockbuster three-team deal that sent Luka Doncic to the Lakers. Davis was surprised by the trade (thought it was a prank) as it was done without his knowledge. The trade was controversial due to Doncic's All-NBA status and the Mavericks' concerns about his conditioning.",
-        "sources": [
-          {
-            "name": "CNN",
-            "url": "https://www.cnn.com/2025/02/02/sport/lakers-mavericks-doncic-davis-spt",
-            "date": "2025-02-02"
-          },
-          {
-            "name": "Sports Illustrated",
-            "url": "https://www.si.com/nba/lakers/onsi/news/anthony-davis-finally-tells-his-side-of-the-lakers-luka-doncic-trade-story",
-            "date": "2025-02-03"
-          }
-        ]
       }
     ]
   },
@@ -4029,7 +3660,7 @@
       {
         "id": "butler-warriors-trade-feb-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Traded to Warriors in 5-team deal; signs $121M extension (February 2025)",
         "summary": "Jimmy Butler was traded from the Miami Heat to the Golden State Warriors in a 5-team deal in February 2025, ending months of speculation about his future. Butler had requested a trade after growing frustrated with Miami's unwillingness to provide the lucrative extension he sought. He subsequently signed a 2-year, $121 million extension with the Warriors, joining Steph Curry and Draymond Green at age 35.",
         "sources": [
@@ -4089,7 +3720,7 @@
       {
         "id": "kawhi-76ers-arrival",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Joined 76ers alongside Paul George in max contract free agency (July 2024)",
         "summary": "Kawhi Leonard signed a max contract with the Philadelphia 76ers in the summer of 2024, pairing with fellow free agent Paul George and star center Joel Embiid. The move was intended to give Philadelphia its best championship window since 2001, forming a Big Three to take on the Boston Celtics in the East. However, injuries limited Leonard's availability during the season.",
         "sources": [
@@ -4144,7 +3775,7 @@
       {
         "id": "trae-hawks-rebuild",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Led Hawks offense through rebuilding phase with young supporting cast (2024-25)",
         "summary": "Trae Young continued to anchor the Atlanta Hawks offense during the 2024-25 season as the team managed its salary cap and developed younger players. Young's playmaking remained elite, but the Hawks struggled to build a consistent winning formula around him. The season represented another year of transition for Atlanta.",
         "sources": [
@@ -4168,20 +3799,6 @@
     "team": "mia",
     "league": "nba",
     "items": [
-      {
-        "id": "herro-foot-procedure",
-        "tier": "confirmed",
-        "category": "health",
-        "headline": "Underwent minor foot procedure during playoffs",
-        "summary": "Tyler Herro underwent a minor foot procedure in April 2026, though the injury was not expected to impact training camp and he was expected to be ready with no restrictions.",
-        "sources": [
-          {
-            "name": "Hot Hot Hoops",
-            "url": "https://hothothoops.com/2026/04/04/miami-heat-unfortunate-injury-update-tyler-herro-wizards/",
-            "date": "2026-04-04"
-          }
-        ]
-      },
       {
         "id": "herro-katya-elise-family",
         "tier": "confirmed",
@@ -4235,7 +3852,7 @@
       {
         "id": "bam-dpoy-miss",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Loses All-Defensive selection for first time in decade; metrics dip (2024-25)",
         "summary": "Bam Adebayo missed out on All-Defensive honors for the first time in nearly a decade during the 2024-25 season, as his defensive metrics slipped. Despite anchoring the Heat's defense and ranking second in the league in defending isolations, his advanced numbers dropped. Among centers defending 500+ shots, he slipped to 26th in defensive field-goal percentage allowed at 47.4%, and finished outside the top 5 for DPOY voting for the first time since 2018-19. The Heat had a defensive rating of 114.0 with him on the floor.",
         "sources": [
@@ -4275,25 +3892,6 @@
             "name": "TMZ",
             "url": "https://www.tmz.com/2025/12/25/jordyn-woods-karl-towns-engaged/",
             "date": "2025-12-25"
-          }
-        ]
-      },
-      {
-        "id": "kat-knicks-trade-sept-2024",
-        "tier": "confirmed",
-        "category": "trade",
-        "headline": "Traded to New York Knicks from Minnesota Timberwolves (September 2024)",
-        "summary": "Karl-Anthony Towns was traded to the Knicks on September 27, 2024 (completed October 2), along with Donte DiVincenzo and draft picks from Minnesota for Julius Randle. The trade became necessary due to financial constraints from Anthony Edwards' max extension and Rudy Gobert's max deal making the salary situation unsustainable.",
-        "sources": [
-          {
-            "name": "NBA.com",
-            "url": "https://www.nba.com/knicks/news/new-york-knicks-acquire-karl-anthony-towns",
-            "date": "2024-09-27"
-          },
-          {
-            "name": "Washington Post",
-            "url": "https://www.washingtonpost.com/sports/2024/09/27/knicks-timberwolves-karl-athony-towns-julius-randle-trade/",
-            "date": "2024-09-27"
           }
         ]
       }
@@ -4398,42 +3996,9 @@
         ]
       },
       {
-        "id": "draymond-rudy-gobert-tension-2025",
-        "tier": "reported",
-        "category": "feud",
-        "headline": "Ongoing tension with Rudy Gobert centers on defensive chemistry conflicts",
-        "summary": "Draymond Green and Rudy Gobert's defensive styles clashed during their time playing together, creating friction that spilled into 2025 offseason discussions about team fit and communication.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nba/story/draymond-green-rudy-gobert-conflict/",
-            "date": "2025-01-20"
-          }
-        ]
-      },
-      {
-        "id": "green-gobert-chokehold-suspension-2023",
-        "tier": "confirmed",
-        "category": "drama",
-        "headline": "Five-game suspension for chokehold on Rudy Gobert (November 2023)",
-        "summary": "Draymond Green put Rudy Gobert in a chokehold during a melee between Warriors and Timberwolves on November 15, 2023, less than two minutes into the game. The NBA suspended Green for five games for 'escalating an on-court altercation and forcibly grabbing Gobert around the neck.' Green later said he had no regrets about the incident.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nba/story/_/id/38987498/draymond-green-says-regret-incident-rudy-gobert",
-            "date": "2023-11-16"
-          },
-          {
-            "name": "NBC Sports",
-            "url": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/draymond-green-breaks-silence-suspension/1675628/",
-            "date": "2023-11-27"
-          }
-        ]
-      },
-      {
         "id": "draymond-warriors-rebuild",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Anchored Warriors defense amid rebuild attempt with Jimmy Butler trade (2024-25)",
         "summary": "Draymond Green remained the defensive anchor for the Golden State Warriors throughout the 2024-25 season, as the team slumped to 11th place in the West before acquiring Jimmy Butler at the trade deadline. Green's leadership and all-around play were crucial as the Warriors attempted to resurrect their championship window. Despite his efforts, Golden State missed the playoffs.",
         "sources": [
@@ -4515,7 +4080,7 @@
       {
         "id": "barnes-second-all-star",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Makes 2nd All-Star selection (2025-26); signed $225M supermax extension (2024)",
         "summary": "Scottie Barnes was selected to the 2025-26 NBA All-Star Game for the second time in his career, cementing his status as an NBA star-caliber player. In July 2024, he signed a 5-year, $225 million supermax extension with the Raptors, making him the highest-paid player in franchise history. On December 3, 2024, he posted a career-high 35 points, 9 rebounds, 6 assists in a 122-111 win over Indiana. The Raptors are building around him as their franchise cornerstone.",
         "sources": [
@@ -4556,7 +4121,7 @@
       {
         "id": "holmgren-2024-roty-finalist",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Finished 2nd in 2024 NBA Rookie of the Year voting",
         "summary": "Chet Holmgren finished second in 2024 ROTY voting after his historic rookie season with Oklahoma City. He earned All-Rookie First Team honors, averaging 16.5 points, 7.9 rebounds, 2.4 assists, and 2.3 blocks per game. The Thunder made a 17-win improvement and secured the top Western Conference seed.",
         "sources": [
@@ -4575,7 +4140,7 @@
       {
         "id": "holmgren-thunder-defense-breakout",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Emerges as elite rim protector; first All-Star selection (2024-25)",
         "summary": "Chet Holmgren had a breakout 2024-25 season with the Oklahoma City Thunder, earning his first All-Star bid. The 23-year-old is in the 90th percentile in rim protection, help defense, and post defense. He contested 93% of opponent shot attempts and allowed opponents to shoot just 33% from the floor (minimum 40 shots), the lowest mark of the season. Averaging career-highs of 18.2 PPG and 8.2 RPG while shooting 57.3% from the field and 39.1% from three, Holmgren finished second in 2025-26 DPOY voting behind Victor Wembanyama.",
         "sources": [
@@ -4676,25 +4241,6 @@
             "date": "2025-07-28"
           }
         ]
-      },
-      {
-        "id": "brock-purdy-elbow-injury-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Purdy avoids UCL damage after elbow injury vs Lions",
-        "summary": "Brock Purdy suffered a right elbow contusion with nerve inflammation in the final minutes of Monday's loss to Detroit in late December 2024. His MRI revealed no UCL damage, avoiding a long-term injury. He missed the Week 18 game against Arizona.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/brock-purdy-avoided-serious-elbow-injury-in-loss-to-lions",
-            "date": "2024-12-30"
-          },
-          {
-            "name": "49ers",
-            "url": "https://www.49ers.com/news/kyle-shanahan-shares-brock-purdy-injury-update-and-week-18-status",
-            "date": "2024-12-30"
-          }
-        ]
       }
     ]
   },
@@ -4743,25 +4289,6 @@
             "name": "Hello Magazine",
             "url": "https://www.hellomagazine.com/healthandbeauty/mother-and-baby/841472/olivia-culpo-christian-mccaffreys-relationship-timeline-as-they-prepare-to-welcome-first-child/",
             "date": "2025-07-01"
-          }
-        ]
-      },
-      {
-        "id": "christian-mccaffrey-injury-plagued-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "McCaffrey limited to four games by Achilles and PCL injuries",
-        "summary": "Christian McCaffrey played in only four games during 2024 after dealing with Achilles tendinitis to start the season and a PCL injury sustained against Buffalo in December. He reported to offseason training with 'no restrictions' and aims to return fully healthy for 2025.",
-        "sources": [
-          {
-            "name": "CBS Sports",
-            "url": "https://www.cbssports.com/nfl/news/christian-mccaffrey-says-he-feels-great-at-49ers-minicamp-as-he-returns-from-injury-plagued-2024-season/",
-            "date": "2025-04-01"
-          },
-          {
-            "name": "SI",
-            "url": "https://www.si.com/nfl/christian-mccaffrey-gives-positive-health-update-after-2024-season-derailed-by-injury",
-            "date": "2025-03-01"
           }
         ]
       }
@@ -4893,20 +4420,6 @@
         "category": "off_field",
         "headline": "Requests trade, dealt to New York Jets for conditional pick",
         "summary": "In October 2024, Las Vegas Raiders All-Pro wide receiver Davante Adams informed the team he preferred to be traded. The Raiders traded him to the New York Jets in exchange for a conditional 2025 third-round pick (could have been a second if Adams made All-Pro or played in an AFC Championship). Adams restructured his contract with the Jets to reduce his $35.25 million salary cap hit. He reunites with former Packers teammate Aaron Rodgers in New York.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/raiders-trading-wr-davante-adams-to-jets-for-conditional-third-round-pick",
-            "date": "2024-10-15"
-          }
-        ]
-      },
-      {
-        "id": "davante-adams-jets-trade-2024",
-        "tier": "confirmed",
-        "category": "trade",
-        "headline": "Traded from Raiders to Jets for Aaron Rodgers reunion",
-        "summary": "Las Vegas Raiders traded three-time All-Pro WR Davante Adams to New York Jets for a conditional 2025 third-round pick on October 15, 2024. Adams reunited with former Packers teammate Aaron Rodgers and restructured his contract to reduce his salary cap number to $3.21M for remainder of season.",
         "sources": [
           {
             "name": "NFL.com",
@@ -5064,25 +4577,6 @@
             "date": "2024-01-07"
           }
         ]
-      },
-      {
-        "id": "nacua-2024-injury-recovery",
-        "tier": "reported",
-        "category": "injury",
-        "headline": "Grade 2 PCL knee sprain (2024 season)",
-        "summary": "Puka Nacua suffered a Grade 2 PCL sprain during the Rams' Week 1 game against Detroit in 2024 and missed five to seven weeks. He returned from injured reserve in Week 7 and recorded 106 receiving yards and a touchdown in his first game back against Minnesota, leading the Rams to a 30-20 victory.",
-        "sources": [
-          {
-            "name": "Pro Football Network",
-            "url": "https://www.profootballnetwork.com/how-long-puka-nacua-out-latest-injury-updates-2024/",
-            "date": "2024-09-09"
-          },
-          {
-            "name": "Deseret News",
-            "url": "https://www.deseret.com/sports/2024/10/24/how-puka-nacua-looked-return-to-the-field-los-angeles-rams-off-knee-injury/",
-            "date": "2024-10-24"
-          }
-        ]
       }
     ]
   },
@@ -5155,20 +4649,6 @@
             "date": "2020-06-01"
           }
         ]
-      },
-      {
-        "id": "ceedee-lamb-136m-extension",
-        "tier": "confirmed",
-        "category": "contract",
-        "headline": "$136M extension ends Cowboys holdout",
-        "summary": "Dallas Cowboys and WR CeeDee Lamb agreed to a four-year, $136 million extension on August 27, 2024, ending his contract dispute. Deal includes $38 million signing bonus (largest ever for a WR) with $100 million guaranteed. Lamb becomes second-highest-paid non-QB in NFL history.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/cowboys-wr-ceedee-lamb-agree-to-terms-on-four-year-136-million-extension",
-            "date": "2024-08-27"
-          }
-        ]
       }
     ]
   },
@@ -5217,44 +4697,6 @@
             "name": "Yahoo Sports",
             "url": "https://sports.yahoo.com/articles/dak-prescott-family-tree-meet-fiancee-sarah-jane-ramos-daughters-margaret-jane-rose-aurora-rayne-and-more-082001212.html",
             "date": "2026-03-10"
-          }
-        ]
-      },
-      {
-        "id": "dak-prescott-240m-extension-2024",
-        "tier": "confirmed",
-        "category": "business",
-        "headline": "Prescott signs historic $240M extension with Cowboys",
-        "summary": "On September 8, 2024, Dak Prescott agreed to a four-year, $240 million contract extension with the Dallas Cowboys, averaging $60 million per year\u2014the highest average in NFL history. The deal included $231 million guaranteed and an $80 million signing bonus.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/dak-prescott-agrees-to-landmark-240-million-contract-extension",
-            "date": "2024-09-08"
-          },
-          {
-            "name": "Dallas Cowboys",
-            "url": "https://www.dallascowboys.com/news/dak-prescott-240-million-extension",
-            "date": "2024-09-08"
-          }
-        ]
-      },
-      {
-        "id": "dak-prescott-hamstring-surgery-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Prescott undergoes season-ending hamstring surgery",
-        "summary": "In mid-November 2024, Dak Prescott opted for surgery to repair a partially torn hamstring (partial tendon avulsion) sustained on November 3 in a loss to Atlanta. He was placed on injured reserve, ending his 2024 season.",
-        "sources": [
-          {
-            "name": "NBC DFW",
-            "url": "https://www.nbcdfw.com/news/sports/blue-star/dak-prescott-injured-reserve-hamstring/3700374/",
-            "date": "2024-11-15"
-          },
-          {
-            "name": "Dallas Cowboys",
-            "url": "https://www.dallascowboys.com/news/dak-opts-to-undergo-season-ending-surgery-headed-to-injured-reserve",
-            "date": "2024-11-16"
           }
         ]
       }
@@ -5369,7 +4811,7 @@
       {
         "id": "malik-nabers-rookie-1204-yards",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Breaks Beckham record for rookie receptions",
         "summary": "New York Giants WR Malik Nabers (6th overall 2024 draft) finished rookie season with 1,204 receiving yards and 7 TDs on 109 receptions in 15 games. In Week 16 vs Bengals, broke Odell Beckham Jr.'s rookie reception record (91). Named PFWA All-Rookie and made Pro Bowl. Signed four-year rookie deal worth $29.9M fully guaranteed.",
         "sources": [
@@ -5433,7 +4875,7 @@
       {
         "id": "derrick-henry-2024-rushing-legacy",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Henry reaches 1,921 rushing yards as elite role player",
         "summary": "Derrick Henry rushed for 1,921 yards in his first season with Baltimore in 2024, falling just short of Eric Dickerson's single-season record of 2,105 yards. He became the first RB to have 1,500+ rushing yards and 15+ TDs in three different seasons and was named to his fifth Pro Bowl.",
         "sources": [
@@ -5493,7 +4935,7 @@
       {
         "id": "parsons-green-bay-trade",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Micah Parsons traded to Packers for Kenny Clark plus two first-rounders in August 2025",
         "summary": "After contract negotiations deteriorated with Dallas (with owner Jerry Jones claiming a handshake deal that Parsons' agent rejected), Parsons requested a trade one week before the 2025 season. Green Bay acquired him in exchange for DT Kenny Clark and first-round picks in 2026 and 2027.",
         "sources": [
@@ -5507,7 +4949,7 @@
       {
         "id": "parsons-packers-188m",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Parsons signed four-year, $188M contract with Packers post-trade",
         "summary": "Immediately after being traded to Green Bay, Parsons agreed to a four-year, $188 million extension, making him the highest-paid non-QB in NFL history and settling his long-running contract dispute with Dallas.",
         "sources": [
@@ -5557,7 +4999,7 @@
       {
         "id": "garrett-40m-record",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Browns locked up Myles Garrett on record $40M/year extension in March 2025",
         "summary": "The Cleveland Browns and Myles Garrett agreed to a four-year, $160 million extension with $123.5 million guaranteed and an average salary of $40 million per year. The deal includes $100 million in the first three years, completely resetting the market and making Garrett the highest-paid non-QB in the NFL.",
         "sources": [
@@ -5617,7 +5059,7 @@
       {
         "id": "gardner-jets-cornerback-2024",
         "tier": "reported",
-        "category": "career",
+        "category": "off_field",
         "headline": "Star cornerback in New York Jets' defense, ranked #38 in NFL Top 100",
         "summary": "Sauce Gardner finished the 2024 season with 49 combined tackles, 9 pass deflections, 1 interception, and 1 sack. He made a key game-winning interception with 44 seconds remaining against Jacksonville in Week 16. However, he suffered a hamstring injury in Week 13 and was placed on injured reserve in January 2025.",
         "sources": [
@@ -5631,7 +5073,7 @@
       {
         "id": "gardner-trade-colts",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Sauce Gardner traded to Colts for two first-round picks in November 2025",
         "summary": "The Jets traded two-time First-team All-Pro cornerback Sauce Gardner to Indianapolis in a blockbuster deal, sending their 2026 and 2027 first-rounders plus WR Adonai Mitchell. Gardner is only 24 and had 40 PDs and 181 tackles in three NFL seasons, becoming the first CB ever to earn All-Pro nods in consecutive seasons.",
         "sources": [
@@ -5681,7 +5123,7 @@
       {
         "id": "crosby-106m-deal",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Maxx Crosby locked in with Raiders on record $106.5M three-year extension",
         "summary": "The Raiders signed Myles Garrett rival Maxx Crosby to a three-year, $106.5 million extension with $91.5 million guaranteed on March 5, 2025, making him the highest-paid non-QB in the league. The deal comes with a $35.5 million annual average and ties Crosby to Vegas through 2029.",
         "sources": [
@@ -5749,20 +5191,6 @@
             "date": "2025-08-01"
           }
         ]
-      },
-      {
-        "id": "beal-hip-fracture-2026",
-        "tier": "confirmed",
-        "category": "health",
-        "headline": "Suffered fractured hip, season-ending surgery April 2026",
-        "summary": "Beal sustained a left hip fracture after six games with the Clippers in November 2025 and underwent season-ending surgery. Expected full recovery in 6-9 months.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nba/story/_/id/46944704/clippers-bradley-beal-needs-season-ending-hip-surgery-agent-says",
-            "date": "2025-11-15"
-          }
-        ]
       }
     ]
   },
@@ -5775,7 +5203,7 @@
       {
         "id": "siakam-all-star-2026",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Named 2026 NBA All-Star Reserve",
         "summary": "Siakam earned his fourth All-Star selection and second consecutive as an Eastern Conference reserve on February 1, 2026, despite Indiana's struggles.",
         "sources": [
@@ -5809,20 +5237,6 @@
     "league": "nba",
     "items": [
       {
-        "id": "sabonis-knee-surgery-2026",
-        "tier": "confirmed",
-        "category": "health",
-        "headline": "Season-ending knee surgery February 2026",
-        "summary": "Sabonis underwent surgery to repair a torn meniscus in his left knee on February 18, 2026, ending his season after just 19 games.",
-        "sources": [
-          {
-            "name": "NBA.com",
-            "url": "https://www.nba.com/news/kings-domantas-sabonis-returns-after-missing-27-games-because-of-knee-injury",
-            "date": "2026-02-18"
-          }
-        ]
-      },
-      {
         "id": "sabonis-married-shashana",
         "tier": "confirmed",
         "category": "romance",
@@ -5839,7 +5253,7 @@
       {
         "id": "sabonis-kings-big-three",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Anchored Kings' big-three with De'Aaron Fox and DeMar DeRozan (2024-25)",
         "summary": "Domantas Sabonis remained the anchor of the Sacramento Kings' roster during the 2024-25 season, as the team acquired DeMar DeRozan to join him and De'Aaron Fox. Sabonis' all-around play and consistency made him a stabilizing force for Sacramento, which aimed to return to playoff contention with its newly constructed trio.",
         "sources": [
@@ -5866,7 +5280,7 @@
       {
         "id": "sengun-all-star-2026",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Named 2026 NBA All-Star, Turkey's two-time All-Star",
         "summary": "Sengun was selected as a 2026 All-Star, his second consecutive selection and becoming Turkey's first two-time NBA All-Star at age 23.",
         "sources": [
@@ -5900,20 +5314,6 @@
     "league": "nba",
     "items": [
       {
-        "id": "reaves-oblique-injury-2026",
-        "tier": "confirmed",
-        "category": "health",
-        "headline": "Sidelined with Grade 2 left oblique strain",
-        "summary": "Reaves missed nearly four weeks with a Grade 2 left oblique strain sustained on April 2. He was optimistic about returning for Game 5 of the Lakers' playoff series vs. Houston.",
-        "sources": [
-          {
-            "name": "NBA.com",
-            "url": "https://www.nba.com/news/austin-reaves-potential-game-5-return",
-            "date": "2026-04-15"
-          }
-        ]
-      },
-      {
         "id": "reaves-engaged-jenna-barber",
         "tier": "confirmed",
         "category": "romance",
@@ -5938,7 +5338,7 @@
       {
         "id": "flagg-rookie-of-year-2026",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Won NBA Rookie of the Year 2025-26 with Mavericks",
         "summary": "Flagg won Rookie of the Year after his elite freshman season with Dallas. He became only the second player ever (after LeBron James) to be the youngest ROY winner, averaging 21 PPG, 6.7 RPG, 4.5 APG.",
         "sources": [
@@ -5966,7 +5366,7 @@
       {
         "id": "flagg-draft-mavs-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Selected No. 1 overall by Mavericks in 2025 NBA Draft (June 2025)",
         "summary": "Cooper Flagg, the 18-year-old Duke forward, was selected with the first overall pick by the Dallas Mavericks in the 2025 NBA Draft. Flagg was a consensus All-American who won multiple national player of the year honors, including the Wooden Award and Naismith Award. He averaged 19.4 PPG, 7.5 RPG, 4.2 APG while leading Duke to a 35-4 record and Final Four appearance. He became the 5th Duke player selected No. 1 overall in the lottery era.",
         "sources": [
@@ -6015,7 +5415,7 @@
       {
         "id": "castle-uconn-championship-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Won NCAA national championship as UConn freshman",
         "summary": "Castle helped lead UConn to the 2024 NCAA national championship in his freshman year before declaring for the NBA Draft on April 19, 2024.",
         "sources": [
@@ -6029,7 +5429,7 @@
       {
         "id": "castle-triple-double-february-2026",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Posted career-high 40 points with triple-double February 2026",
         "summary": "On February 7, 2026, Castle recorded a career-high 40 points with 12 rebounds and 12 assists, becoming only the second Spurs player after David Robinson to record a 40-point triple-double.",
         "sources": [
@@ -6077,23 +5477,9 @@
     "league": "nfl",
     "items": [
       {
-        "id": "wilkins-raiders-release-2026",
-        "tier": "confirmed",
-        "category": "health",
-        "headline": "Released by Raiders, rehabbing foot injury",
-        "summary": "Wilkins was released by the Las Vegas Raiders on July 24, 2025 after suffering a Jones fracture in Week 5 of the 2024 season. He is rehabbing his foot and intends to play in 2026.",
-        "sources": [
-          {
-            "name": "Pro Football Rumors",
-            "url": "https://www.profootballrumors.com/2026/03/christian-wilkins-planning-2026-return",
-            "date": "2026-03-01"
-          }
-        ]
-      },
-      {
         "id": "wilkins-bills-signing-2026",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Signed one-year, $6M deal with Buffalo Bills",
         "summary": "On March 13, 2026, Wilkins signed a one-year, $6 million contract with the Buffalo Bills.",
         "sources": [
@@ -6143,7 +5529,7 @@
       {
         "id": "cjgj-bills-signing-2026",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Signed one-year contract with Buffalo Bills March 2026",
         "summary": "On March 13, 2026, Gardner-Johnson signed a one-year contract with the Buffalo Bills.",
         "sources": [
@@ -7271,23 +6657,9 @@
         ]
       },
       {
-        "id": "brown-2024-finals-mvp-championship",
-        "tier": "confirmed",
-        "category": "legacy",
-        "headline": "Wins 2024 NBA Finals MVP leading Celtics to championship",
-        "summary": "Jaylen Brown was named the 2024 NBA Finals MVP as the Boston Celtics defeated the Dallas Mavericks. Brown averaged 20.8 points, 5.4 rebounds, and 5.0 assists, serving as the primary defender on Luka Doncic. The Celtics had a dominant 16-3 playoff run with a 64-win season.",
-        "sources": [
-          {
-            "name": "Sports Illustrated",
-            "url": "https://www.si.com/nba/jaylen-brown-reached-nba-mountaintop-2024",
-            "date": "2024-06-18"
-          }
-        ]
-      },
-      {
         "id": "brown-celtics-playoff-battle",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Led Celtics through turbulent playoff run after blown 3-1 lead vs 76ers",
         "summary": "Jaylen Brown was a key part of the Boston Celtics roster during the 2024-25 season, though the team faced disappointment in the playoffs. The Celtics became the first team in over half a decade to blow a 3-1 series lead when they lost Game 7 at home to the Philadelphia 76ers in the Eastern Conference Finals. Brown's strong regular season performance could not overcome the defensive shortcomings that plagued Boston's postseason.",
         "sources": [
@@ -7496,25 +6868,6 @@
             "date": "2024-09-05"
           }
         ]
-      },
-      {
-        "id": "harden-clippers-trade-2023",
-        "tier": "confirmed",
-        "category": "trade",
-        "headline": "Traded to Los Angeles Clippers from 76ers (October 2023)",
-        "summary": "James Harden was traded from the Philadelphia 76ers to the LA Clippers on October 30-31, 2023, after requesting a trade in June. The Clippers traded Marcus Morris, Nic Batum, Robert Covington, KJ Martin and multiple draft picks for Harden and P.J. Tucker. Harden had called 76ers president Daryl Morey 'a liar' during a promotional event.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nba/story/_/id/38784569/philadelphia-76ers-agree-trade-james-harden-la-clippers",
-            "date": "2023-10-31"
-          },
-          {
-            "name": "CNN",
-            "url": "https://www.cnn.com/2023/10/31/sport/james-harden-76ers-clippers-trade-spt-intl/index.html",
-            "date": "2023-10-31"
-          }
-        ]
       }
     ]
   },
@@ -7663,7 +7016,7 @@
       {
         "id": "pg-76ers-max-contract",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Signed 4-year, $212M max contract with 76ers; left Clippers (July 2024)",
         "summary": "Paul George left the Los Angeles Clippers and signed a 4-year, $212 million max contract with the Philadelphia 76ers on July 6, 2024. George declined his $48.8M player option with the Clippers, ending 5 years with the team. The 76ers formed a star trio with George, Joel Embiid, and Tyrese Maxey, giving Philadelphia its best shot at advancing past the Eastern Conference semifinals for the first time since 2001.",
         "sources": [
@@ -7704,7 +7057,7 @@
       {
         "id": "maxey-76ers-rising-star",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Emerged as third star for 76ers alongside Embiid and George (2024-25)",
         "summary": "Tyrese Maxey solidified his status as a rising NBA star during the 2024-25 season with the Philadelphia 76ers. Playing alongside All-Stars Joel Embiid and Paul George, Maxey's playmaking and efficient scoring made him a crucial part of the 76ers' Finals run. Maxey's development into a legitimate third star gave Philadelphia legitimate championship aspirations.",
         "sources": [
@@ -7931,7 +7284,7 @@
       {
         "id": "giannis-bucks-medical-shutdown",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Medical staff shut down Giannis late 2024-25 season despite his objections",
         "summary": "The Milwaukee Bucks' medical staff shut down Giannis Antetokounmpo for the remainder of the 2024-25 season late in the year, a decision that clashed with his own view that he was fit enough to continue playing. When asked if he had control over his situation, Giannis stated 'Zero. I don't have control.' The Bucks finished 32-50 and missed the playoffs for the first time in ten years.",
         "sources": [
@@ -7950,7 +7303,7 @@
       {
         "id": "giannis-knicks-trade-rumors",
         "tier": "reported",
-        "category": "career",
+        "category": "off_field",
         "headline": "Reportedly exploring Knicks move after falling out with Bucks front office",
         "summary": "Behind closed doors, Giannis Antetokounmpo reportedly communicated his desire to explore a future away from Milwaukee, with the New York Knicks standing as his primary destination. Friction between coach Doc Rivers and the locker room escalated throughout 2024-25, culminating in a March meeting where Rivers expressed frustration over insufficient backing. When asked if he had played his last game in a Bucks uniform, Giannis said 'I don't know. It's not up to me.'",
         "sources": [
@@ -8951,7 +8304,7 @@
       {
         "id": "banchero-first-all-star-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Named to first All-Star Game as reserve (February 2024)",
         "summary": "Paolo Banchero was selected to the 2024 NBA All-Star Game as an Eastern Conference reserve, marking his first All-Star appearance. The young Magic forward averaged strong numbers in his third season despite managing a torn oblique injury in early 2025.",
         "sources": [
@@ -8965,7 +8318,7 @@
       {
         "id": "banchero-50point-game",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Posts career-high 50 points vs Pacers; 34 points in return game (2024-25)",
         "summary": "Paolo Banchero had a dominant start to the 2024-25 season with the Orlando Magic. On October 28, 2024, he scored a career-high 50 points with 13 rebounds, 9 assists, and 2 blocks in a 119-115 win over the Indiana Pacers. Banchero suffered a torn oblique on October 30 and missed time before returning on January 10, 2025, with 34 points in a loss to Milwaukee. He made his All-Star selection again in 2025 as his defensive play and two-way game developed.",
         "sources": [
@@ -9716,7 +9069,7 @@
       {
         "id": "smith-pacers-young-core",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Developed as elite young big man alongside Tyrese Haliburton (2024-25)",
         "summary": "Jalen Smith emerged as an elite young big man for the Indiana Pacers during the 2024-25 season, complementing Tyrese Haliburton's playmaking in the backcourt. Smith's efficiency and defensive potential made him a key part of the Pacers' youth movement, establishing Indiana as an Eastern Conference team to watch heading forward.",
         "sources": [
@@ -9771,7 +9124,7 @@
       {
         "id": "cunningham-pistons-young-core",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Led Pistons young core in playoff push with Derrick Rose backcourt (2024-25)",
         "summary": "Cade Cunningham emerged as a leader for the Detroit Pistons during the 2024-25 season as the team made a surprising playoff run with their young roster. Cunningham paired with veteran Derrick Rose in the backcourt, providing both scoring and facilitating for the Pistons' exciting youth movement. The team's playoff appearance marked progress for Detroit's rebuild.",
         "sources": [
@@ -10714,7 +10067,7 @@
       {
         "id": "clark-olympic-snub-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Snubbed from 2024 Paris Olympics roster despite historic college season",
         "summary": "Caitlin Clark was notably absent from the 2024 U.S. Olympic women's basketball team roster, sparking significant debate given her record-breaking college performance and WNBA rookie season momentum.",
         "sources": [
@@ -10728,7 +10081,7 @@
       {
         "id": "clark-rookie-records-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Set WNBA rookie assists record (283) and rookie scoring average (18.1 PPG)",
         "summary": "In her 2024 WNBA rookie season, Clark broke the rookie assists record and averaged 18.1 points per game, establishing herself as an elite playmaker and scorer from night one.",
         "sources": [
@@ -10736,39 +10089,6 @@
             "name": "WNBA.com",
             "url": "https://www.wnba.com/stats/",
             "date": "2024-10-01"
-          }
-        ]
-      },
-      {
-        "id": "clark-time-100-athlete-2024",
-        "tier": "confirmed",
-        "category": "legacy",
-        "headline": "TIME Magazine 2024 Athlete of the Year",
-        "summary": "Caitlin Clark was named TIME Magazine's Athlete of the Year for 2024, recognizing her impact both on the court and off the field. The honor recognized the 'Caitlin Effect' and her historic WNBA rookie season where she set multiple records including 769 points and 337 assists.",
-        "sources": [
-          {
-            "name": "TIME",
-            "url": "https://time.com/7200904/athlete-of-the-year-2024-caitlin-clark/",
-            "date": "2024-12-10"
-          }
-        ]
-      },
-      {
-        "id": "clark-time-athlete-year-2024",
-        "tier": "confirmed",
-        "category": "awards",
-        "headline": "Named TIME Magazine's 2024 Athlete of the Year",
-        "summary": "Caitlin Clark became the first WNBA player to win TIME's Athlete of the Year award and just the second woman athlete (after Simone Biles in 2021). The award recognized her historic rookie season and impact on women's basketball, with WNBA viewership up 48% in 2024.",
-        "sources": [
-          {
-            "name": "TIME",
-            "url": "https://time.com/7200904/athlete-of-the-year-2024-caitlin-clark/",
-            "date": "2024-12-10"
-          },
-          {
-            "name": "CNN",
-            "url": "https://www.cnn.com/2024/12/10/sport/caitlin-clark-time-athlete-of-the-year-spt/index.html",
-            "date": "2024-12-10"
           }
         ]
       }
@@ -10867,7 +10187,7 @@
       {
         "id": "reese-2024-rebounding-records",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Sets WNBA single-season rebounding record with 446 boards (2024)",
         "summary": "Angel Reese grabbed 446 rebounds in her 2024 rookie season, the most by any player in a single WNBA season ever, averaging 13.1 per game. She also set single-season records with 172 offensive rebounds and 23 double-doubles, becoming the first player with 20+ rebounds in three consecutive games.",
         "sources": [
@@ -10880,25 +10200,6 @@
             "name": "ESPN",
             "url": "https://www.espn.com/wnba/story/_/id/41087171/sky-angel-reese-becomes-wnba-single-season-rebounding-leader",
             "date": "2024-09-02"
-          }
-        ]
-      },
-      {
-        "id": "reese-reebok-signature-shoe-2026",
-        "tier": "confirmed",
-        "category": "endorsement",
-        "headline": "Reebok unveils AR1 signature shoe, extending multiyear deal",
-        "summary": "Angel Reese signed a multiyear extension with Reebok and launched her debut signature shoe, the Reebok Angel Reese 1 (AR1), in September 2025. The deal includes expansion to kids' sizes. She became the 14th WNBA player with a signature sneaker.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/wnba/story/_/id/41984465/sky-angel-reese-reebok-extend-deal-signature-shoe-26",
-            "date": "2025-08-15"
-          },
-          {
-            "name": "SI",
-            "url": "https://www.si.com/fannation/sneakers/news/angel-reese-inks-new-multi-year-signature-sneaker-deal-with-reebok",
-            "date": "2025-08-15"
           }
         ]
       }
@@ -10979,25 +10280,6 @@
             "date": "2024-09-19"
           }
         ]
-      },
-      {
-        "id": "wilson-unanimous-mvp-2024",
-        "tier": "confirmed",
-        "category": "awards",
-        "headline": "Wins record fourth MVP award unanimously with historic scoring season",
-        "summary": "A'ja Wilson became the second player in WNBA history to win MVP unanimously (67 of 67 votes), tying Cynthia Cooper-Dyke's record. She averaged 26.9 PPG, breaking Diana Taurasi's single-season scoring record (25.3 PPG from 2006), and set records with 1,021 points and 451 rebounds in a season.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/wnba/story/_/id/46333110/aja-wilson-named-wnba-mvp-winning-record-fourth",
-            "date": "2024-09-22"
-          },
-          {
-            "name": "NBA.com",
-            "url": "https://pr.nba.com/aja-wilson-2024-wnba-mvp/",
-            "date": "2024-09-22"
-          }
-        ]
       }
     ]
   },
@@ -11067,25 +10349,6 @@
             "date": "2024-03-13"
           }
         ]
-      },
-      {
-        "id": "ionescu-all-wnba-second-team-2025",
-        "tier": "confirmed",
-        "category": "awards",
-        "headline": "Named to 2025 All-WNBA Second Team for fourth consecutive season",
-        "summary": "Sabrina Ionescu was selected to the 2025 All-WNBA Second Team for the fourth straight year, averaging 18.2 PPG, 5.7 APG, and 4.9 RPG. She remains a core pillar of the New York Liberty alongside Stewart and Jones.",
-        "sources": [
-          {
-            "name": "Liberty",
-            "url": "https://liberty.wnba.com/news/sabrina-ionescu-named-to-2025-all-wnba-second-team",
-            "date": "2025-09-20"
-          },
-          {
-            "name": "SI",
-            "url": "https://www.si.com/wnba/liberty/news/new-york-liberty-star-sabrina-ionescu-lands-all-wnba-team",
-            "date": "2025-09-20"
-          }
-        ]
       }
     ]
   },
@@ -11134,20 +10397,6 @@
             "name": "Players' Tribune",
             "url": "https://www.theplayerstribune.com/articles/breanna-stewart-me-too",
             "date": "2017-10-30"
-          }
-        ]
-      },
-      {
-        "id": "stewart-peloton-partnership-2024",
-        "tier": "confirmed",
-        "category": "endorsement",
-        "headline": "Becomes Peloton's first-ever brand ambassador",
-        "summary": "Breanna Stewart signed a partnership with Peloton to become the fitness company's inaugural brand ambassador in 2024, expanding her endorsement portfolio beyond existing deals with Puma, Therabody, and BODYARMOR.",
-        "sources": [
-          {
-            "name": "EssentiallySports",
-            "url": "https://www.essentiallysports.com/wnba-basketball-news-breanna-stewart-net-worth-in-twenty-twenty-five-liberty-stars-salary-contract-endorsements-and-career-earnings/",
-            "date": "2024-06-15"
           }
         ]
       }
@@ -11232,7 +10481,7 @@
       {
         "id": "bueckers-1-pick-wings-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Dallas Wings select Paige Bueckers with #1 pick in 2025 WNBA Draft",
         "summary": "Paige Bueckers was selected 1st overall by the Dallas Wings in the 2025 WNBA Draft after leading UConn to its first national championship in nine years. Wings GM Curt Miller said 'Very early on, it was Paige and Paige only.'",
         "sources": [
@@ -11245,20 +10494,6 @@
             "name": "NBC Dallas",
             "url": "https://www.nbcdfw.com/news/sports/wnba/dallas-wings-select-paige-bueckers-no-1-overall-pick-wnba-draft-2025/3813890/",
             "date": "2025-04-09"
-          }
-        ]
-      },
-      {
-        "id": "bueckers-2025-roty-rookie",
-        "tier": "confirmed",
-        "category": "awards",
-        "headline": "Named 2025 WNBA Rookie of the Year in stellar debut with Wings",
-        "summary": "Paige Bueckers had an exceptional rookie season with the Dallas Wings, earning 2025 WNBA Rookie of the Year honors. She made an immediate impact at the professional level, helping the Wings improve significantly.",
-        "sources": [
-          {
-            "name": "WNBA",
-            "url": "https://www.wnba.com",
-            "date": "2025-09-15"
           }
         ]
       }
@@ -11330,20 +10565,6 @@
             "date": "2024-09-30"
           }
         ]
-      },
-      {
-        "id": "collier-dpoy-2024",
-        "tier": "confirmed",
-        "category": "awards",
-        "headline": "Named 2024 WNBA Defensive Player of the Year",
-        "summary": "Napheesa Collier of the Minnesota Lynx was named the 2024 WNBA Defensive Player of the Year, recognizing her elite two-way play and defensive impact.",
-        "sources": [
-          {
-            "name": "WNBA",
-            "url": "https://www.wnba.com/news/2024-all-wnba-first-and-second-team",
-            "date": "2024-09-22"
-          }
-        ]
       }
     ]
   },
@@ -11408,25 +10629,6 @@
             "date": "2025-01-15"
           }
         ]
-      },
-      {
-        "id": "brink-acl-return-2025",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Returns from ACL tear after 13 months, hits 3-pointer on first shot attempt",
-        "summary": "Cameron Brink made her 2025 season debut after suffering a torn ACL in June 2024 that also included meniscal damage. She returned in style, draining a 3-pointer on her first shot attempt in 13 months, showcasing her readiness despite the lengthy recovery.",
-        "sources": [
-          {
-            "name": "SI",
-            "url": "https://www.si.com/onsi/womens-fastbreak/news/cameron-brink-opens-up-about-acl-injury-recovery-before-2025-wnba-season-01jq6zd65rjs",
-            "date": "2025-05-16"
-          },
-          {
-            "name": "SI",
-            "url": "https://www.si.com/wnba/sparks/news/sparks-cameron-brink-reveals-what-she-missed-most-amid-13-month-injury-recovery",
-            "date": "2025-06-02"
-          }
-        ]
       }
     ]
   },
@@ -11475,20 +10677,6 @@
             "name": "ESPN",
             "url": "https://www.espn.com/wnba/story/_/id/40009974/wnba-star-kelsey-plum-giants-darren-waller-file-divorce",
             "date": "2024-04-23"
-          }
-        ]
-      },
-      {
-        "id": "plum-100-made-threes-multiple-seasons",
-        "tier": "confirmed",
-        "category": "legacy",
-        "headline": "Fourth player in WNBA history with 100+ made 3-pointers in multiple seasons",
-        "summary": "Kelsey Plum became the fourth player ever to make 100+ three-pointers in multiple WNBA seasons, joining Diana Taurasi, Kelsey Mitchell, and Arike Ogunbowale. She made 103 three-pointers in 2024 and also achieved the milestone in 2022 with 113 made 3s. She repeated as a WNBA All-Star in 2024.",
-        "sources": [
-          {
-            "name": "Swish Appeal",
-            "url": "https://www.swishappeal.com/2024/6/3/24162561/wnba-hoopers-hierarchy-kelsey-plum-las-vegas-aces-washington-champion-scoring-points",
-            "date": "2024-06-03"
           }
         ]
       }
@@ -11591,20 +10779,6 @@
             "date": "2024-01-01"
           }
         ]
-      },
-      {
-        "id": "jones-2024-finals-mvp",
-        "tier": "confirmed",
-        "category": "awards",
-        "headline": "Wins 2024 WNBA Finals MVP leading Liberty to championship",
-        "summary": "Jonquel Jones earned 2024 WNBA Finals MVP honors as the New York Liberty won the championship, cementing her legacy as a five-time All-Star and four-time All-Defense selection.",
-        "sources": [
-          {
-            "name": "Liberty",
-            "url": "https://liberty.wnba.com/news/new-york-liberty-re-sign-breanna-stewart-jonquel-jones-and-sabrina-ionescu-to-multi-year-deals",
-            "date": "2024-10-16"
-          }
-        ]
       }
     ]
   },
@@ -11677,25 +10851,6 @@
             "date": "2024-06-10"
           }
         ]
-      },
-      {
-        "id": "young-million-deal-2026",
-        "tier": "confirmed",
-        "category": "contract",
-        "headline": "Signs historic $1.19M deal, becomes WNBA's first million-dollar athlete",
-        "summary": "Jackie Young agreed to a historic four-year deal with the Las Vegas Aces worth $1.19 million annually, making her the WNBA's first player to earn over $1 million per year. The deal reflects her value as a two-time WNBA champion and four-time All-Star.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/wnba/story/_/id/48442449/aces-agree-119-million-deal-jackie-young",
-            "date": "2026-04-10"
-          },
-          {
-            "name": "GMA News",
-            "url": "https://www.gmanetwork.com/news/sports/basketball/983376/1-million-athlete-jackie-young-aces-reportedly-agree-to-historic-deal/story/",
-            "date": "2026-04-10"
-          }
-        ]
       }
     ]
   },
@@ -11730,25 +10885,6 @@
             "name": "EssentiallySports",
             "url": "https://www.essentiallysports.com/wnba-basketball-news-meet-chelsea-grays-wife-tipesa-moorer-everything-you-need-to-know-about-aces-stars-wife/",
             "date": "2024-07-13"
-          }
-        ]
-      },
-      {
-        "id": "gray-comeback-2025",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Returns to play all 44 games in 2025 after foot injury woes",
-        "summary": "Chelsea Gray made a remarkable comeback in 2025, appearing in all 44 regular-season games for the Las Vegas Aces after missing significant time in 2024 due to a foot injury suffered in the 2023 Finals. She averaged 11.2 PPG and 5.4 APG.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/wnba/story/_/id/48451787/aces-bring-back-chelsea-gray-3-million-3-year-deal",
-            "date": "2026-04-11"
-          },
-          {
-            "name": "96.3 KKLZ",
-            "url": "https://963kklz.com/2025/05/20/chelsea-gray-makes-comeback-to-aces-after-two-year-recovery-from-foot-injury/",
-            "date": "2025-05-20"
           }
         ]
       }
@@ -11883,7 +11019,7 @@
       {
         "id": "mcbride-lynx-historic-shooting-2025",
         "tier": "confirmed",
-        "category": "achievement",
+        "category": "off_field",
         "headline": "Becomes first WNBA player to go 8-for-8 from three in any half",
         "summary": "Kayla McBride made WNBA history in 2025 when she went 8-for-8 from three-point range in a half against the Las Vegas Aces. The Lynx won the game 111-58, the largest road victory margin in WNBA history (53 points).",
         "sources": [
@@ -11952,7 +11088,7 @@
       {
         "id": "griner-atlanta-dream-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Signs with Atlanta Dream after 11 seasons with Phoenix Mercury",
         "summary": "Brittney Griner left the Phoenix Mercury in 2025 after 11 seasons to join the Atlanta Dream. Her first season with Atlanta saw reduced stats (9.8 PPG, 5.2 RPG in 25 starts), marking one of her lowest-production seasons in her professional tenure.",
         "sources": [
@@ -12017,44 +11153,6 @@
             "date": "2024-02-02"
           }
         ]
-      },
-      {
-        "id": "copper-all-wnba-second-team-2024",
-        "tier": "confirmed",
-        "category": "awards",
-        "headline": "Named to 2024 All-WNBA Second Team in first year with Phoenix",
-        "summary": "Kahleah Copper earned her first All-WNBA honor, making the Second Team in her ninth WNBA season and first with the Phoenix Mercury. She led the team in scoring with a career-high 21.7 PPG and was an All-Star for the fourth time.",
-        "sources": [
-          {
-            "name": "Phoenix Mercury",
-            "url": "https://mercury.wnba.com/news/kahleah-copper-named-to-all-wnba-second-team",
-            "date": "2024-10-16"
-          },
-          {
-            "name": "ArizonaSports",
-            "url": "https://arizonasports.com/wnba/phoenix-mercury/mercury-kahleah-copper-all-wnba/3561588/",
-            "date": "2024-10-16"
-          }
-        ]
-      },
-      {
-        "id": "copper-re-signs-mercury-2026",
-        "tier": "confirmed",
-        "category": "contract",
-        "headline": "Re-signs two-year deal with Phoenix Mercury",
-        "summary": "Kahleah Copper signed a two-year contract with the Phoenix Mercury in 2026 free agency, staying with the team after helping them reach the WNBA Finals. She averaged 15.6 PPG in regular season and 17.8 PPG in the playoffs.",
-        "sources": [
-          {
-            "name": "Clutch Points",
-            "url": "https://clutchpoints.com/wnba/phoenix-mercury/mercury-news-kahleah-copper-staying-with-phoenix-on-two-year-contract",
-            "date": "2026-04-13"
-          },
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/wnba/story/_/id/48469764/four-all-star-kahleah-copper-re-signs-mercury",
-            "date": "2026-04-13"
-          }
-        ]
       }
     ]
   },
@@ -12109,7 +11207,7 @@
       {
         "id": "thomas-traded-mercury-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Traded from Connecticut Sun to Phoenix Mercury after 11 seasons",
         "summary": "Alyssa Thomas was traded from the Connecticut Sun to the Phoenix Mercury on February 1, 2025, ending her 11-year tenure with the franchise. She holds Sun franchise records in multiple categories including points (4,607) and games played (367).",
         "sources": [
@@ -12210,25 +11308,6 @@
             "date": "2024-08-15"
           }
         ]
-      },
-      {
-        "id": "diggins-seattle-2024-maternity",
-        "tier": "reported",
-        "category": "personal",
-        "headline": "Traded to Seattle Storm; reveals Mercury tried to trade her while pregnant",
-        "summary": "Skylar Diggins revealed that the Phoenix Mercury wanted to trade her while she was 8 months pregnant. She alleged the team wouldn't let her use practice facilities during maternity leave. She was traded to Seattle in February 2024 and later signed with Chicago in 2026.",
-        "sources": [
-          {
-            "name": "SI",
-            "url": "https://www.si.com/onsi/womens-fastbreak/news/skylar-diggins-reveals-jarring-reason-phoenix-mercury-really-wanted-to-trade-her-01jvzh1nbd0s",
-            "date": "2025-02-15"
-          },
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/wnba/story/_/id/38130616/skylar-diggins-smith-says-use-mercury-facilities",
-            "date": "2023-04-12"
-          }
-        ]
       }
     ]
   },
@@ -12315,25 +11394,6 @@
             "date": "2024-08-12"
           }
         ]
-      },
-      {
-        "id": "howard-all-defense-2025",
-        "tier": "confirmed",
-        "category": "awards",
-        "headline": "Named to 2025 All-WNBA All-Defense Second Team",
-        "summary": "Rhyne Howard made WNBA history as the first Atlanta Dream player to earn an All-Defense honor since 2020. She was a 2025 All-Star selection (her third appearance) and set a Dream record with 100 threes in a season.",
-        "sources": [
-          {
-            "name": "Dream",
-            "url": "https://dream.wnba.com/news/rhyne-howard-named-to-2025-wnba-all-defense-second-team",
-            "date": "2025-09-20"
-          },
-          {
-            "name": "SI",
-            "url": "https://www.si.com/wnba/dream/news/rhyne-howard-makes-wnba-history-in-dream-sun-game",
-            "date": "2025-08-29"
-          }
-        ]
       }
     ]
   },
@@ -12368,39 +11428,6 @@
             "name": "ESPN",
             "url": "https://www.espn.com/wnba/story/_/id/40640041/allisha-gray-skills-3pt-contest-2024-all-star-weekend",
             "date": "2024-07-19"
-          }
-        ]
-      },
-      {
-        "id": "gray-2025-all-star-starter",
-        "tier": "confirmed",
-        "category": "awards",
-        "headline": "Named 2025 All-Star Game starter; first starting honor of career",
-        "summary": "Allisha Gray was named a starter for the 2025 AT&T WNBA All-Star Game, marking her first All-Star starting selection and third consecutive All-Star appearance. She became just the second Dream player to be named an All-Star three straight seasons.",
-        "sources": [
-          {
-            "name": "Dream",
-            "url": "https://dream.wnba.com/news/allisha-gray-named-2025-wnba-all-star-starter",
-            "date": "2025-06-20"
-          },
-          {
-            "name": "Peachtree Hoops",
-            "url": "https://www.peachtreehoops.com/2025/5/27/24437635/wnba-2025-atlanta-dream-players-analysis-rhyne-howard-allisha-gray",
-            "date": "2025-05-27"
-          }
-        ]
-      },
-      {
-        "id": "gray-all-wnba-first-team-2025",
-        "tier": "confirmed",
-        "category": "awards",
-        "headline": "Named to 2025 All-WNBA First Team after record-setting season",
-        "summary": "Allisha Gray earned All-WNBA First Team honors in 2025 after a record-setting season, cementing her place among the league's premier two-way guards. The Dream also signed her to a three-year max contract extension.",
-        "sources": [
-          {
-            "name": "Dream",
-            "url": "https://dream.wnba.com/news/allisha-gray-named-all-wnba-first-team",
-            "date": "2025-09-20"
           }
         ]
       }
@@ -12457,7 +11484,7 @@
       {
         "id": "boston-2023-roty-unanimous",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Named unanimous 2023 WNBA Rookie of the Year",
         "summary": "Aliyah Boston became the fifth player ever to win the WNBA Rookie of the Year award unanimously, receiving all 60 votes as the number-one pick in the 2023 draft. Boston averaged 14.5 points, 8.4 rebounds on a league-best 57.8% shooting and started the All-Star game as a rookie.",
         "sources": [
@@ -12470,20 +11497,6 @@
             "name": "CBS Sports",
             "url": "https://www.cbssports.com/wnba/news/2023-wnba-rookie-of-the-year-fevers-aliyah-boston-becomes-fifth-player-to-win-award-unanimously/",
             "date": "2023-06-15"
-          }
-        ]
-      },
-      {
-        "id": "boston-contract-extension-2025",
-        "tier": "confirmed",
-        "category": "contract",
-        "headline": "Signs four-year, $6.3M extension with Indiana Fever",
-        "summary": "Aliyah Boston signed a four-year, $6.3 million contract extension with the Indiana Fever, the richest total salary in WNBA history at the time. She averaged career highs of 15.0 PPG and 3.7 APG, earning All-WNBA Second Team honors in 2025.",
-        "sources": [
-          {
-            "name": "NBC Sports",
-            "url": "https://www.nbcsports.com/wnba/news/aliyah-boston-gets-extension-with-fever-under-wnbas-new-provision-for-exceptional-performance",
-            "date": "2025-06-15"
           }
         ]
       }
@@ -13100,7 +12113,7 @@
       {
         "id": "jrue-celtics-veteran-contributor",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Provided veteran depth and defense for Celtics playoff push (2024-25)",
         "summary": "Jrue Holiday contributed as a reliable veteran defender and secondary ball handler for the Boston Celtics during the 2024-25 season. Despite an overall solid regular season, Holiday's Celtics suffered the disappointing Game 7 loss to the 76ers in the Eastern Conference Finals, becoming the first team to blow a 3-1 series lead in over a decade.",
         "sources": [
@@ -13183,7 +12196,7 @@
       {
         "id": "derozan-kings-3team-trade",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Traded to Kings in 3-team deal; 3-year, $74M contract (July 2024)",
         "summary": "DeMar DeRozan was acquired by the Sacramento Kings in a 3-team sign-and-trade in July 2024 from the Chicago Bulls. DeRozan signed a 3-year, $74 million deal with Sacramento to pair with De'Aaron Fox and Domantas Sabonis. The Spurs acquired Harrison Barnes in the deal, which included an unprotected 2031 pick swap. DeRozan averaged 22.2 PPG during the 2024-25 season with the Kings.",
         "sources": [
@@ -13710,7 +12723,7 @@
       {
         "id": "christie-lakers-trade-piece",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Sent to Jazz as part of Luka-Davis blockbuster trade (February 2025)",
         "summary": "Max Christie was included in the blockbuster trade that sent Luka Doncic to the Lakers and Anthony Davis to the Mavericks in February 2025. Christie's contract made the deal work, and he was rerouted to the Utah Jazz. The move represented the Lakers' willingness to shed assets to acquire Doncic.",
         "sources": [
@@ -14854,20 +13867,6 @@
             "date": "2024-09-25"
           }
         ]
-      },
-      {
-        "id": "dalton-kincaid-knee-struggles-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Battles knee injuries in down 2024 season",
-        "summary": "Buffalo Bills TE Dalton Kincaid recorded 44 receptions for 448 yards and 2 TDs in 13 games during 2024. Played on torn PCL in one knee with aggravated other knee. Catch rate fell from 67.7% in first six games to 52.3% in final seven. Significant drop from 73 receptions in successful 2023 rookie season.",
-        "sources": [
-          {
-            "name": "SI.com",
-            "url": "https://www.si.com/nfl/bills/onsi/news/source-provides-insight-into-dalton-kincaid-2024-struggles",
-            "date": "2024-11-15"
-          }
-        ]
       }
     ]
   },
@@ -15403,25 +14402,6 @@
             "date": "2024-06-15"
           }
         ]
-      },
-      {
-        "id": "breece-hall-knee-injury-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Hall reveals 'pretty serious' knee injury plagued 2024 season",
-        "summary": "Breece Hall dealt with a serious MCL injury to his left knee (surgically repaired ACL from 2022) throughout the 2024 season, tweaking it in Week 11 vs Indianapolis. The injury significantly affected his availability and performance, as he also struggled with six fumbles and nine drops on the season.",
-        "sources": [
-          {
-            "name": "The Jet Press",
-            "url": "https://thejetpress.com/breece-hall-opens-up-about-the-serious-knee-injury-behind-his-2024-struggles-01jxjx7rqyw7",
-            "date": "2025-06-12"
-          },
-          {
-            "name": "Yahoo Sports",
-            "url": "https://sports.yahoo.com/article/jets-breece-hall-reveals-played-114529674.html",
-            "date": "2025-06-12"
-          }
-        ]
       }
     ]
   },
@@ -15616,7 +14596,7 @@
       {
         "id": "smith-fourth-pro-bowl",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Roquan Smith earned fourth consecutive Pro Bowl, first Raven to do so",
         "summary": "The Ravens linebacker became the first Raven to earn Pro Bowl honors in each of his first four seasons with the team. Smith posted a team-high 154 tackles in 2024, ranking 5th in the league, and earned his third consecutive first-team All-Pro selection.",
         "sources": [
@@ -15752,7 +14732,7 @@
       {
         "id": "hendrickson-sack-leader-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Trey Hendrickson led NFL with 17.5 sacks in 2024, beat Garrett by 3.5",
         "summary": "The Bengals pass rusher became the first Bengal to pace the NFL in sacks since the stat became official in 1982. Hendrickson posted 17.5 sacks, 46 tackles, 6 PDs, and 2 forced fumbles, earning first-team All-Pro. He had 4 sacks in Week 9 vs Raiders.",
         "sources": [
@@ -15766,7 +14746,7 @@
       {
         "id": "hendrickson-bengals-trade",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Bengals granted Trey Hendrickson permission to seek trade in March 2025",
         "summary": "Despite leading the league in sacks, Hendrickson requested trade consideration from Cincinnati. The Bengals confirmed they were still negotiating an extension with him and had made an offer.",
         "sources": [
@@ -15957,25 +14937,6 @@
             "date": "2024-01-01"
           }
         ]
-      },
-      {
-        "id": "nick-chubb-acl-return-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Chubb returns to action after long ACL/meniscus recovery",
-        "summary": "Nick Chubb suffered a torn ACL and meniscus in Week 2 of the 2023 season, requiring two surgeries. He returned to practice on October 2, 2024, and made his season debut on October 20, 2024, marking his return to game action over a year after the devastating injury.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/browns-rb-nick-chubb-to-return-to-practice-on-wed-after-injuring-knee-during-2023-season",
-            "date": "2024-10-02"
-          },
-          {
-            "name": "Pro Football Network",
-            "url": "https://www.profootballnetwork.com/nick-chubb-return-2024/",
-            "date": "2024-10-20"
-          }
-        ]
       }
     ]
   },
@@ -16009,20 +14970,6 @@
           {
             "name": "ESPN",
             "url": "https://www.espn.com/nfl/story/_/id/41245678/amari-cooper-bills-trade",
-            "date": "2024-10-15"
-          }
-        ]
-      },
-      {
-        "id": "amari-cooper-traded-bills",
-        "tier": "confirmed",
-        "category": "trade",
-        "headline": "Traded from Browns to Bills mid-season",
-        "summary": "Cleveland Browns traded WR Amari Cooper to Buffalo Bills on October 15, 2024 (after 6 games with 24 receptions, 250 yards, 2 TDs). In exchange, Bills sent 2025 third-round pick; Browns received 2025 third-rounder and 2026 seventh-rounder. Cooper finished 2024 with 44 receptions, 547 yards, 4 TDs combined.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.clevelandbrowns.com/news/browns-trade-amari-cooper-to-bills",
             "date": "2024-10-15"
           }
         ]
@@ -16129,7 +15076,7 @@
       {
         "id": "tj-watt-dpoy-finalist",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "T.J. Watt named 2024 Defensive Player of the Year finalist",
         "summary": "The Steelers superstar was named a finalist for the 2024 DPOY award after a big season. Watt posted 61 tackles, 11.5 sacks, 19 TFLs, 27 QB hits, 4 PDs, and a league-leading 6 forced fumbles. Though he didn't win, his performance kept him in elite conversation despite heavy double teams.",
         "sources": [
@@ -16201,7 +15148,7 @@
       {
         "id": "george-pickens-breakout-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Breaks out with 93 receptions, 1,429 yards",
         "summary": "Pittsburgh Steelers WR George Pickens had 93 receptions for 1,429 yards in 2024, leading the team. Traded to Dallas Cowboys after season for 2026 third-round pick (plus 2027 sixth-rounder) in exchange for 2026 third-rounder and 2027 fifth-rounder.",
         "sources": [
@@ -16319,25 +15266,6 @@
             "date": "2025-02-01"
           }
         ]
-      },
-      {
-        "id": "joe-mixon-trade-texans-2024",
-        "tier": "confirmed",
-        "category": "trade",
-        "headline": "Mixon traded to Texans, signs $27M extension",
-        "summary": "On March 12, 2024, Joe Mixon was traded to the Houston Texans from Cincinnati for a 2024 7th round pick. Two days later, the Texans extended him with a three-year, $27 million contract including $13 million guaranteed. He rushed for 1,016 yards and 11 TDs in his first season with Houston.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/cincinnati-bengals-trading-rb-joe-mixon-to-houston-texans",
-            "date": "2024-03-12"
-          },
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/39733529/texans-give-joe-mixon-3-year-27m-extension-sources-say",
-            "date": "2024-03-14"
-          }
-        ]
       }
     ]
   },
@@ -16378,7 +15306,7 @@
       {
         "id": "anderson-career-highs-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Will Anderson Jr. had career year in 2025: 12 sacks, 54 tackles, First-team All-Pro",
         "summary": "The Texans edge rusher posted career highs in tackles (54), QB hits (23), TFLs (20), and sacks (12.0) in 2025, plus 3 PDs, 3 forced fumbles, and 2 fumble recoveries. He finished 2nd in QB pressures (85) and was named First-team All-Pro and DPOY finalist.",
         "sources": [
@@ -16497,25 +15425,6 @@
             "name": "NBC Sports",
             "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/colts-dont-know-when-or-if-anthony-richardson-will-be-cleared-return-2025",
             "date": "2025-12-18"
-          }
-        ]
-      },
-      {
-        "id": "anthony-richardson-shoulder-injury-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Richardson battles shoulder soreness, benched midseason",
-        "summary": "Anthony Richardson dealt with ongoing shoulder soreness during 2024 OTAs and struggled with accuracy during the season (47.7% completion). He was benched at midseason for Joe Flacco but later reinstated, finishing the season sidelined by a back injury for the final two games.",
-        "sources": [
-          {
-            "name": "Indianapolis Colts",
-            "url": "https://www.colts.com/news/anthony-richardson-sore-shoulder-vet-minicamp-practice-injury-update-2024-season",
-            "date": "2024-06-12"
-          },
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/colts-qb-anthony-richardson-on-a-mission-in-comeback-from-shoulder-surgery",
-            "date": "2024-07-01"
           }
         ]
       }
@@ -16743,7 +15652,7 @@
       {
         "id": "brian-thomas-jr-rookie-1282-yards",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Jaguars rookie sets franchise records with 1,282 yards",
         "summary": "Jacksonville Jaguars WR Brian Thomas Jr. (23rd overall 2024 draft pick) registered 1,282 yards and 10 touchdowns on 87 receptions as a rookie. Ranked first among rookies and third overall in receiving yards; first among rookies and tied-sixth overall in receiving TDs. Named Pro Bowl finalist and NFL Offensive Rookie of the Month.",
         "sources": [
@@ -16869,25 +15778,6 @@
             "date": "2024-12-05"
           }
         ]
-      },
-      {
-        "id": "will-levis-shoulder-surgery-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Levis undergoes season-ending shoulder surgery",
-        "summary": "Will Levis dealt with an AC joint injury to his throwing shoulder throughout 2024 after initially injuring it on September 30 vs Miami. He returned to play but ultimately underwent season-ending surgery scheduled for July 2025, sidelining him for the entire 2025 season.",
-        "sources": [
-          {
-            "name": "Tennessee Titans",
-            "url": "https://www.tennesseetitans.com/news/titans-qb-will-levis-to-undergo-season-ending-surgery",
-            "date": "2024-11-01"
-          },
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/42271036/will-levis-return-titans-lineup-after-injury",
-            "date": "2024-10-15"
-          }
-        ]
       }
     ]
   },
@@ -16986,7 +15876,7 @@
       {
         "id": "simmons-11-sacks-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Jeffery Simmons had career-high 11 sacks for Titans in 2025",
         "summary": "In his seventh NFL season, the Pro Bowler posted career highs with 11.0 sacks, 60 QB pressures, 67 tackles, 17 TFLs, and 3 forced fumbles. He also set a new best of 21 QB hits. Simmons is a team captain and three-time Pro Bowler (2021, 2022, 2024).",
         "sources": [
@@ -17037,20 +15927,6 @@
           {
             "name": "NFL.com",
             "url": "https://www.nfl.com/news/broncos-wr-courtland-sutton-agree-to-terms-on-four-year-92-million-extension",
-            "date": "2025-07-28"
-          }
-        ]
-      },
-      {
-        "id": "courtland-sutton-92m-extension",
-        "tier": "confirmed",
-        "category": "contract",
-        "headline": "Signs $92M extension after Broncos playoff return",
-        "summary": "Denver Broncos WR Courtland Sutton finished 2024 with 81 receptions for 1,081 yards and 8 TDs, helping Broncos make first playoff appearance since 2015. Signed four-year, $92 million extension ($41M guaranteed) on July 28, 2025.",
-        "sources": [
-          {
-            "name": "Yahoo Sports",
-            "url": "https://sports.yahoo.com/nfl/breaking-news/article/broncos-reportedly-sign-standout-wide-receiver-courtland-sutton-4-year-92-million-extension-185215920.html",
             "date": "2025-07-28"
           }
         ]
@@ -17242,7 +16118,7 @@
       {
         "id": "jones-158m-extension",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Chris Jones signed five-year, $158.75M extension with Chiefs",
         "summary": "The defensive tackle agreed to a five-year, $158.75 million deal with $101 million in guarantees ($60M fully guaranteed at signing). The deal includes $30M signing bonus and includes salary restructuring in 2026 for cap relief.",
         "sources": [
@@ -17336,7 +16212,7 @@
       {
         "id": "james-2025-all-pro",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Derwin James earned second-team All-Pro with 3 INTs, 7 PDs in 2025",
         "summary": "The Chargers safety finished 2025 with 94 tackles (50 solo), 2.0 sacks, 3 INTs, 7 pass deflections, and 1 forced fumble across 16 games. He had one of his healthier seasons, earning second-team All-Pro honors despite being 28.",
         "sources": [
@@ -17492,7 +16368,7 @@
       {
         "id": "burns-giants-trade-150m",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Brian Burns traded to Giants in March 2024, signed five-year $150M extension",
         "summary": "After contract negotiations stalled with the Panthers, the Giants acquired the pass rusher and signed him to a five-year, $150 million deal with $87.5 million guaranteed. Carolina received a 2024 second-round pick and 2025 fifth-rounder. Burns was a two-time Pro Bowler seeking $30M/year.",
         "sources": [
@@ -17574,7 +16450,7 @@
       {
         "id": "aj-brown-super-bowl-lix",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Wins first Super Bowl with Eagles",
         "summary": "Philadelphia Eagles WR A.J. Brown caught three passes for 43 yards including a 12-yard TD in Super Bowl LIX against Kansas City Chiefs on February 9, 2025. Eagles won 40-22 for Brown's first championship after battling injuries throughout 2024 season including hamstring and knee injuries.",
         "sources": [
@@ -17978,7 +16854,7 @@
       {
         "id": "jared-goff-mvp-candidate-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Goff finishes as MVP finalist with 111.8 rating, franchise records",
         "summary": "Jared Goff had a historic 2024 season with 4,629 passing yards, 37 touchdowns, and only 12 interceptions for a passer rating of 111.8. He set Detroit franchise records in passer rating and completion percentage (72.4%) while earning Pro Bowl honors and MVP finalist consideration.",
         "sources": [
@@ -18153,25 +17029,6 @@
           {
             "name": "ESPN",
             "url": "https://www.espn.com/nfl/story/_/id/40543216/jordan-love-packers-extension",
-            "date": "2024-07-26"
-          }
-        ]
-      },
-      {
-        "id": "jordan-love-220m-extension-2024",
-        "tier": "confirmed",
-        "category": "business",
-        "headline": "Love signs historic $220M extension with Packers",
-        "summary": "In July 2024, Jordan Love signed a four-year, $220 million contract extension with the Green Bay Packers, including a $75 million signing bonus. The deal averaged $55 million per year, tying him with Joe Burrow for the highest average annual salary in the NFL at that time.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/packers-signing-qb-jordan-love-to-four-year-220-million-contract-extension",
-            "date": "2024-07-26"
-          },
-          {
-            "name": "Packers News",
-            "url": "https://www.packersnews.com/story/sports/nfl/packers/2024/07/26/packers-quarterback-jordan-love-reach-four-year-220-million-extension/72628783007/",
             "date": "2024-07-26"
           }
         ]
@@ -18351,20 +17208,6 @@
             "date": "2026"
           }
         ]
-      },
-      {
-        "id": "tj-hockenson-vikings-trade-extension",
-        "tier": "confirmed",
-        "category": "contract",
-        "headline": "Signed $63.5M extension after trade from Lions",
-        "summary": "Minnesota Vikings acquired TE T.J. Hockenson from Detroit Lions on November 1, 2022 for 2023 second-round pick and 2024 third-rounder (sending 2023 fourth and conditional 2024 fourth). Hockenson signed four-year, $63.5 million extension with Vikings ($66-68.5M total) on August 31, 2023.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/38298509/vikings-tj-hockenson-nfl-richest-tes-new-deal-sources-say",
-            "date": "2023-08-31"
-          }
-        ]
       }
     ]
   },
@@ -18505,25 +17348,6 @@
             "date": "2026-03-11"
           }
         ]
-      },
-      {
-        "id": "kirk-cousins-achilles-recovery-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Cousins clears Achilles recovery, debuts for Falcons",
-        "summary": "Kirk Cousins fully recovered from his 2023 Achilles tear and returned for the 2024 season with Atlanta. He was cleared for training camp and threw for 509 yards and four touchdowns in a comeback win against Tampa Bay, proving his recovery was complete.",
-        "sources": [
-          {
-            "name": "Bleacher Report",
-            "url": "https://bleacherreport.com/articles/10129497-nfl-training-camp-2024-falcons-kirk-cousins-cleared-to-return-from-achilles-injury",
-            "date": "2024-07-30"
-          },
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/falcons-qb-kirk-cousins-achilles-says-he-ll-be-ready-to-go-in-week-1-vs-steelers",
-            "date": "2024-09-01"
-          }
-        ]
       }
     ]
   },
@@ -18623,7 +17447,7 @@
       {
         "id": "kyle-pitts-career-high-game-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Posts career-best 11 catches vs Bucs in Week 15",
         "summary": "Atlanta Falcons TE Kyle Pitts had 47 receptions for 602 yards and 4 touchdowns in 2024 (15 starts). In Week 15 vs Tampa Bay, he recorded career-high 11 receptions for 166 yards and 3 touchdowns. Falcons picked up his fifth-year option on April 29, 2024.",
         "sources": [
@@ -18795,25 +17619,6 @@
             "date": "2026-02-26"
           }
         ]
-      },
-      {
-        "id": "derek-carr-trade-request-2025",
-        "tier": "reported",
-        "category": "trade",
-        "headline": "Carr seeks trade after disappointing season; Saints eye future QBs",
-        "summary": "Derek Carr sought a trade early in the 2025 offseason as the Saints remain 'tenuous at best' with the veteran QB. After restructuring his deal in March 2025, Carr will stay for 2025 but the team is actively scouting future QB replacements, with rumors linking him to potential trades.",
-        "sources": [
-          {
-            "name": "CBS Sports",
-            "url": "https://www.cbssports.com/nfl/news/saints-derek-carr-sought-a-trade-early-in-2025-offseason",
-            "date": "2025-03-01"
-          },
-          {
-            "name": "SI",
-            "url": "https://www.si.com/nfl/saints/onsi/saints-news/saints-derek-carr-gets-harsh-reality-check-with-dry-trade-market-pat3",
-            "date": "2025-02-20"
-          }
-        ]
       }
     ]
   },
@@ -18868,25 +17673,6 @@
             "date": "2026-04-15"
           }
         ]
-      },
-      {
-        "id": "alvin-kamara-extension-2024",
-        "tier": "confirmed",
-        "category": "business",
-        "headline": "Kamara extends with Saints, becomes all-time rushing leader",
-        "summary": "On October 24, 2024, Alvin Kamara signed a two-year contract extension with the New Orleans Saints, keeping him through 2026. In his 2024 season, he led the team with 950 rushing yards and became the franchise all-time rushing leader on November 10 vs Atlanta, though he fell 50 yards short of his first 1,000-yard season.",
-        "sources": [
-          {
-            "name": "New Orleans Saints",
-            "url": "https://www.neworleanssaints.com/news/alvin-kamara-running-back-new-orleans-saints-2024-nfl-season-player-recap",
-            "date": "2024-12-30"
-          },
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/players/alvin-kamara/",
-            "date": "2024-10-24"
-          }
-        ]
       }
     ]
   },
@@ -18939,20 +17725,6 @@
             "name": "ESPN",
             "url": "https://www.espn.com/nfl/story/_/id/47958580/agent-wr-mike-evans-plans-play-13th-nfl-season-2026",
             "date": "2026-01-28"
-          }
-        ]
-      },
-      {
-        "id": "mike-evans-11-1000-yard-seasons",
-        "tier": "confirmed",
-        "category": "legacy",
-        "headline": "Records 11th consecutive 1,000-yard season",
-        "summary": "Tampa Bay Buccaneers WR Mike Evans caught 74 passes for 1,004 yards and 11 touchdowns in 2024 despite missing three games. Extended record of 11 consecutive 1,000-yard seasons to start career, tied with Jerry Rice for most by a receiver. Signed two-year, $52 million extension in March 2024.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/players/mike-evans/",
-            "date": "2024-12-29"
           }
         ]
       }
@@ -19027,7 +17799,7 @@
       {
         "id": "baker-mayfield-2024-mvp-candidacy",
         "tier": "reported",
-        "category": "career",
+        "category": "off_field",
         "headline": "Mayfield emerges as MVP candidate with 4,500 yards and 41 TDs",
         "summary": "Baker Mayfield led the Tampa Bay Buccaneers to the NFC South title in 2024 with 4,500 passing yards and 41 touchdowns. He finished 11th in MVP voting despite starting the season 5-1 with 12 TDs and only 1 interception, sparking significant MVP conversations.",
         "sources": [
@@ -19150,25 +17922,6 @@
             "date": "2025-03-11"
           }
         ]
-      },
-      {
-        "id": "kyler-murray-foot-injury-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Foot injury sidelines Murray for rest of 2024 season",
-        "summary": "Kyler Murray suffered a foot injury in Week 5 vs Tennessee and was placed on IR in November 2024. Coach Jonathan Gannon confirmed the injury wasn't progressing and ruled out his return for the season. Given Murray's reliance on mobility, the injury proved particularly challenging for his recovery.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/47212974/arizona-cardinals-qb-kyler-murray-rest-season",
-            "date": "2024-12-01"
-          },
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/cardinals-placing-qb-kyler-murray-on-ir-with-foot-injury",
-            "date": "2024-11-05"
-          }
-        ]
       }
     ]
   },
@@ -19244,7 +17997,7 @@
       {
         "id": "matthew-stafford-2024-playoff-push",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Stafford leads Rams to playoff berth with 3,762 yards, 20 TDs",
         "summary": "Matthew Stafford finished the 2024 season with 3,762 passing yards, 20 touchdowns, and eight interceptions as he helped lead the Los Angeles Rams to a playoff berth. He dealt with minor preseason hamstring tightness but remained healthy throughout the season.",
         "sources": [
@@ -19321,7 +18074,7 @@
       {
         "id": "verse-droy-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Jared Verse named 2024 NFL Defensive Rookie of the Year",
         "summary": "As a rookie in 2024, the Rams' Verse posted 66 tackles, 11 TFLs, 4.5 sacks, 18 QB hits, 2 forced fumbles, and 2 fumble recoveries across 17 games to earn DROY. In 2025, he remained healthy and productive with 7.5 sacks despite a training camp knee scare.",
         "sources": [
@@ -19420,7 +18173,7 @@
       {
         "id": "bosa-fifth-pro-bowl",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Nick Bosa selected to 2025 Pro Bowl for fifth overall, fourth consecutive time",
         "summary": "The 49ers defensive end posted 52 tackles, 9.0 sacks, 1 INT, 1 forced fumble, 1 fumble recovery and 1 PD across 13 games in 2024. The former DROY and 2022 DPOY has maintained elite status with consistent Pro Bowl selections and remains a cornerstone of San Francisco's defense.",
         "sources": [
@@ -20313,7 +19066,7 @@
       {
         "id": "hull-rookie-3pt-record-2024",
         "tier": "confirmed",
-        "category": "achievement",
+        "category": "off_field",
         "headline": "Sets WNBA rookie record for three-pointers in a season",
         "summary": "Lexie Hull set the WNBA single-season rookie record for three-pointers made in 2024, demonstrating her elite shooting ability. After the Olympic break, she shot 14-for-20 from three-point range.",
         "sources": [
@@ -20583,25 +19336,6 @@
             "name": "ESPN",
             "url": "https://www.espn.com/wnba/story/_/id/41345678/rickea-jackson-sparks-rookie",
             "date": "2024-09-25"
-          }
-        ]
-      },
-      {
-        "id": "jackson-all-rookie-2024",
-        "tier": "confirmed",
-        "category": "awards",
-        "headline": "Named to 2024 WNBA All-Rookie Team as 4th overall pick",
-        "summary": "Rickea Jackson was selected 4th overall by the Los Angeles Sparks in 2024 and was named to the All-Rookie Team. She was the only rookie to average double figures (13.4 PPG) and shoot 45%+ from the field, starting 35 of 40 games.",
-        "sources": [
-          {
-            "name": "Silver Screen and Roll",
-            "url": "https://www.silverscreenandroll.com/2024/10/3/24250039/los-angeles-sparks-rickea-jackson-2024-wnba-all-rookie-team",
-            "date": "2024-10-03"
-          },
-          {
-            "name": "Clutch Points",
-            "url": "https://clutchpoints.com/wnba/los-angeles-sparks/grading-rickea-jacksons-2024-wnba-rookie-season-with-sparks",
-            "date": "2024-09-28"
           }
         ]
       }
@@ -21636,7 +20370,7 @@
       {
         "id": "redick-lakers-coach-hire",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Hired as Lakers head coach on 4-year deal; first NBA HC job (June 2024)",
         "summary": "JJ Redick was hired as the Los Angeles Lakers head coach on a 4-year contract on June 20, 2024, becoming the 27th head coach in franchise history. Redick, a 15-year NBA veteran and ESPN analyst, had never coached at the NBA level. He has a strong relationship with Lakers star LeBron James, with whom he co-hosts a basketball podcast. The hire came after UConn coach Dan Hurley turned down a 6-year, $70 million offer.",
         "sources": [
@@ -22040,7 +20774,7 @@
       {
         "id": "mccarthy-cowboys-parted-ways-jan-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Parted ways with Dallas Cowboys (January 13, 2025)",
         "summary": "Mike McCarthy and the Dallas Cowboys mutually parted ways after his five-year tenure ended with a 49-35 regular season record and 1-3 playoff record. McCarthy's contract expired January 14, 2025 and sides couldn't agree on an extension. The Cowboys finished 7-10 in his final season.",
         "sources": [
@@ -23357,7 +22091,7 @@
       {
         "id": "loyd-trade-aces-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Traded from Seattle Storm to Las Vegas Aces after trade request",
         "summary": "Jewell Loyd requested a trade from the Seattle Storm in December 2024 after a difficult season and allegations of bullying by coaching staff. She was traded to the Las Vegas Aces on February 1, 2025, in a three-team deal that also sent the Storm the No. 2 overall pick.",
         "sources": [
@@ -24858,7 +23592,7 @@
       {
         "id": "fitzpatrick-pro-bowl-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Minkah Fitzpatrick named to 2025 Pro Bowl despite feeling surprised",
         "summary": "The Steelers safety earned his fifth Pro Bowl selection for 2025 despite admitting he was surprised, saying his 2024 season 'hasn't been my splashiest year.' Fitzpatrick had just one INT but was the lone free safety named to AFC roster.",
         "sources": [
@@ -24872,7 +23606,7 @@
       {
         "id": "fitzpatrick-traded-dolphins-jets",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Minkah Fitzpatrick traded to Dolphins, then Jets within months in 2025",
         "summary": "On June 30, 2025, Fitzpatrick and a 2027 fifth-rounder were dealt to Miami for Jalen Ramsey, Jonnu Smith, and a 2027 seventh-round pick. However, the Dolphins then traded him to the Jets for a 2026 seventh-round pick, giving him multiple stops in one offseason.",
         "sources": [
@@ -24952,25 +23686,6 @@
             "name": "NFL.com",
             "url": "https://www.nfl.com/news/daniel-jones-giants-extension-160-million",
             "date": "2023-03-08"
-          }
-        ]
-      },
-      {
-        "id": "daniel-jones-release-2025",
-        "tier": "confirmed",
-        "category": "trade",
-        "headline": "Giants release Jones after benching; contract becomes liability",
-        "summary": "After being benched during the 2024 season, the New York Giants released Daniel Jones in early 2025, just 27 games into his four-year, $160 million contract signed in March 2023. The team benched him strategically to avoid a $23 million injury guarantee in his 2025 salary.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/giants-release-qb-daniel-jones-six-seasons-benched-grant-request",
-            "date": "2025-02-14"
-          },
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/42034445/new-york-giants-bench-qb-daniel-jones-faq",
-            "date": "2024-11-25"
           }
         ]
       }
@@ -25186,7 +23901,7 @@
       {
         "id": "rodman-olympics-2024-gold",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Wins Olympic gold medal with USWNT at Paris 2024",
         "summary": "Trinity Rodman helped the United States women's national team win the gold medal at the 2024 Paris Olympics. She scored a memorable extra-time goal in the quarterfinals against Japan (1-0) and was part of the championship roster. Despite being Dennis Rodman's daughter, she had little contact with her NBA legend father growing up.",
         "sources": [
@@ -26401,98 +25116,28 @@
     "name": "Geno Smith",
     "team": "sea",
     "league": "nfl",
-    "items": [
-      {
-        "id": "geno-smith-contract-extension-talks-2024",
-        "tier": "reported",
-        "category": "business",
-        "headline": "Smith seeks extension as other QBs reset market",
-        "summary": "In September 2024, Geno Smith's representatives approached the Seahawks about renegotiating his deal after seeing QBs like Trevor Lawrence and Jordan Love cash in with massive extensions. The Seahawks showed no urgency to extend Smith, leaving his future with Seattle uncertain.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/42841007/sam-darnold-vikings-talked-long-term-deal",
-            "date": "2024-09-15"
-          },
-          {
-            "name": "Seattle Times",
-            "url": "https://www.seattletimes.com/sports/seahawks/qb-geno-smith-confirms-his-reps-approached-seahawks-about-new-contract/",
-            "date": "2024-09-15"
-          }
-        ]
-      }
-    ]
+    "items": []
   },
   "sam-darnold": {
     "player_id": "sam-darnold",
     "name": "Sam Darnold",
     "team": "min",
     "league": "nfl",
-    "items": [
-      {
-        "id": "sam-darnold-free-agency-seahawks-2025",
-        "tier": "confirmed",
-        "category": "trade",
-        "headline": "Darnold leaves Vikings for Seahawks with $110.5M deal",
-        "summary": "Despite a strong 2024 season, Sam Darnold departed the Minnesota Vikings and signed with the Seattle Seahawks on a three-year, $110.5 million deal in March 2025. The Vikings' investment in J.J. McCarthy left no guaranteed starting role for Darnold.",
-        "sources": [
-          {
-            "name": "The Viking Age",
-            "url": "https://thevikingage.com/what-minnesota-vikings-offer-sam-darnold-seattle-seahawks",
-            "date": "2025-03-10"
-          },
-          {
-            "name": "Last Word on Sports",
-            "url": "https://lastwordonsports.com/nfl/2025/03/10/sam-darnold-signs-contract-seattle-seahawks/",
-            "date": "2025-03-10"
-          }
-        ]
-      }
-    ]
+    "items": []
   },
   "michael-pittman": {
     "player_id": "michael-pittman",
     "name": "Michael Pittman Jr",
     "team": "ind",
     "league": "nfl",
-    "items": [
-      {
-        "id": "michael-pittman-back-fracture-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Plays through back fracture in 2024 season",
-        "summary": "Indianapolis Colts WR Michael Pittman Jr. signed three-year, $71.5 million extension ($46M guaranteed) on March 11, 2024 after franchise tag. Caught 69 passes for 808 yards and 3 TDs in 16 games while managing back fracture, undergoing imaging scans every few weeks. Missed just one game despite injury issues.",
-        "sources": [
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/nfl/story/_/id/46376793/nfl-indianapolis-colts-michael-pittman-daniel-jones",
-            "date": "2024-12-01"
-          }
-        ]
-      }
-    ]
+    "items": []
   },
   "dk-metcalf": {
     "player_id": "dk-metcalf",
     "name": "D.K. Metcalf",
     "team": "sea",
     "league": "nfl",
-    "items": [
-      {
-        "id": "dk-metcalf-steelers-trade",
-        "tier": "confirmed",
-        "category": "trade",
-        "headline": "Traded to Steelers for second-round pick",
-        "summary": "Seattle Seahawks traded WR D.K. Metcalf to Pittsburgh Steelers on March 9, 2025 for 2025 second-round pick (No. 52) plus pick swaps in rounds 6-7. Metcalf agreed to five-year, $150 million contract extension with Steelers. Finished 2024 with 66 receptions for 992 yards and 5 TDs.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/seahawks-sending-wr-dk-metcalf-to-steelers-in-exchange-for-2025-second-round-pick",
-            "date": "2025-03-09"
-          }
-        ]
-      }
-    ]
+    "items": []
   },
   "rashod-bateman": {
     "player_id": "rashod-bateman",
@@ -26503,7 +25148,7 @@
       {
         "id": "rashod-bateman-career-best-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Career-best 45 catches, 756 yards, 9 TDs in 2024",
         "summary": "Baltimore Ravens WR Rashod Bateman posted career-best numbers in 2024 with 45 receptions for 756 yards and 9 touchdowns in 17 games. Signed three-year, $36.75 million extension two weeks after season. Emerged as solid No. 2 alongside Zay Flowers in Todd Monken's offense.",
         "sources": [
@@ -26525,7 +25170,7 @@
       {
         "id": "cade-otton-career-best-2024",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Career-high 59 catches as primary target in 2024",
         "summary": "Tampa Bay Buccaneers TE Cade Otton finished 2024 with career-high 59 receptions for 600 yards and 4 touchdowns in 14 games. Emerged as top target in entire pass-catching corps when Mike Evans and Chris Godwin were sidelined with injuries. Targeted 10+ times in each of final three games.",
         "sources": [
@@ -26543,44 +25188,14 @@
     "name": "Evan Engram",
     "team": "jax",
     "league": "nfl",
-    "items": [
-      {
-        "id": "evan-engram-torn-labrum-2024",
-        "tier": "confirmed",
-        "category": "injury",
-        "headline": "Torn labrum cuts 2024 season short",
-        "summary": "Jacksonville Jaguars TE Evan Engram played just 9 games in 2024 due to torn labrum, catching 47 passes for 365 yards and 1 TD. Suffered hamstring injury in Week 1 vs Miami, missed Weeks 2-5, returned in Week 6. Ruled out for season December 13, 2024 after torn labrum in Week 14 vs Tennessee. Released after season.",
-        "sources": [
-          {
-            "name": "NFL.com",
-            "url": "https://www.nfl.com/news/jaguars-to-release-te-evan-engram-after-three-seasons-in-jacksonville",
-            "date": "2024-12-13"
-          }
-        ]
-      }
-    ]
+    "items": []
   },
   "dalton-schultz": {
     "player_id": "dalton-schultz",
     "name": "Dalton Schultz",
     "team": "hou",
     "league": "nfl",
-    "items": [
-      {
-        "id": "dalton-schultz-36m-extension",
-        "tier": "confirmed",
-        "category": "contract",
-        "headline": "Signs $36M extension with Houston Texans",
-        "summary": "Houston Texans TE Dalton Schultz agreed to three-year, $36 million contract extension on March 8, 2024. Has fully guaranteed base salaries of $5M (2024) and $11M (2025). Ranked as top-10 NFL TE by executives, coaches, scouts entering 2024. Caught 53 passes for 532 yards and 2 TDs in regular season.",
-        "sources": [
-          {
-            "name": "Click2Houston",
-            "url": "https://www.click2houston.com/sports/2024/03/08/breaking-down-texans-tight-end-dalton-schultzs-three-year-36-million-deal/",
-            "date": "2024-03-08"
-          }
-        ]
-      }
-    ]
+    "items": []
   },
   "danielle-hunter": {
     "player_id": "danielle-hunter",
@@ -26590,7 +25205,7 @@
       {
         "id": "hunter-texans-double-digit-sacks",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Danielle Hunter joined Texans elite defense with 12 sacks, 46 tackles in 2024",
         "summary": "The five-time Pro Bowler signed a two-year, $49 million contract with Houston in March 2024. In his debut season with the Texans, Hunter started all 17 games, posting 12.0 sacks and 46 combined tackles (30 solo, 16 assisted), helping establish Houston as a top-2 defense.",
         "sources": [
@@ -26604,7 +25219,7 @@
       {
         "id": "hunter-texans-40m-extension",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Danielle Hunter re-signed with Texans on $40.1M one-year extension in 2026",
         "summary": "The Texans and Hunter agreed to a one-year, $40.1 million extension with a $30.7 million signing bonus in March 2026, keeping him under contract through 2027. His second year with Houston was elite as he finished with 15 sacks (3rd in NFL) and 15 TFLs (8th), earning second-team All-Pro honors.",
         "sources": [
@@ -26615,7 +25230,8 @@
           }
         ]
       }
-    ]
+    ],
+    "team": "hou"
   },
   "patrick-queen": {
     "player_id": "patrick-queen",
@@ -26625,7 +25241,7 @@
       {
         "id": "queen-steelers-missed-tackles",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Patrick Queen led NFL in missed tackles (32) for Steelers in 2025",
         "summary": "After signing a three-year, $41 million deal with Pittsburgh in 2024, Queen has been inconsistent. In 2025, he led the league in missed tackles with 32 (per PFF) but still logged 120 tackles (56 solo), a sack, 4 PDs, a forced fumble and recovery. Cowboys and Steelers engaged in trade talks in early 2026.",
         "sources": [
@@ -26636,7 +25252,8 @@
           }
         ]
       }
-    ]
+    ],
+    "team": "pit"
   },
   "rashan-gary": {
     "player_id": "rashan-gary",
@@ -26646,7 +25263,7 @@
       {
         "id": "gary-traded-cowboys",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Rashan Gary traded from Packers to Dallas Cowboys on March 9, 2026",
         "summary": "The Packers moved Gary to the Cowboys after a disappointing 2025 season where he had zero sacks or TFLs in the final 10 games. Despite leading the team in sacks (7.5) and QB hits (15) in 2024, Gary's production declined sharply, making him a candidate for trade or release.",
         "sources": [
@@ -26657,7 +25274,8 @@
           }
         ]
       }
-    ]
+    ],
+    "team": "dal"
   },
   "kenny-clark": {
     "player_id": "kenny-clark",
@@ -26667,7 +25285,7 @@
       {
         "id": "kenny-clark-cowboys-trade",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Kenny Clark traded to Dallas Cowboys with Micah Parsons in historic 2025 deal",
         "summary": "On August 28, 2025, the Packers traded three-time Pro Bowler Kenny Clark to the Cowboys along with two first-round picks (2026 & 2027) in exchange for Micah Parsons. Clark missed time with a foot injury in 2024 and had limited production. In seven years with Green Bay, Clark had 35 sacks and 417 tackles.",
         "sources": [
@@ -26678,7 +25296,8 @@
           }
         ]
       }
-    ]
+    ],
+    "team": "dal"
   },
   "trent-mcduffie": {
     "player_id": "trent-mcduffie",
@@ -26688,7 +25307,7 @@
       {
         "id": "mcduffie-knee-injury-trade",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Trent McDuffie dealt to Rams on four-year, $124M extension after knee injury",
         "summary": "In 2025, McDuffie hyperextended his knee in Week 14 vs Houston and was placed on season-ending IR. The Chiefs traded him to the Rams in the offseason, where he signed a four-year, $124 million extension ($100M guaranteed) at $31M/year\u2014the league's highest-paid CB.",
         "sources": [
@@ -26699,34 +25318,15 @@
           }
         ]
       }
-    ]
+    ],
+    "team": "lar"
   },
   "gs-valkyries": {
     "player_id": "gs-valkyries",
     "name": "Golden State Valkyries",
     "team": "gs",
     "league": "wnba",
-    "items": [
-      {
-        "id": "valkyries-inaugural-2025-historic",
-        "tier": "confirmed",
-        "category": "expansion",
-        "headline": "Historic inaugural season: first expansion team to make WNBA playoffs",
-        "summary": "The Golden State Valkyries, WNBA's 13th franchise, made history in 2025 as the first expansion team ever to reach the playoffs in their inaugural season. The team went 23-18, won the most games by any expansion team, and sold out all 11 home games, leading the WNBA in attendance.",
-        "sources": [
-          {
-            "name": "Valkyries",
-            "url": "https://valkyries.wnba.com/news/valkyries-clinch-postseason-berth-20250904",
-            "date": "2025-09-04"
-          },
-          {
-            "name": "ESPN",
-            "url": "https://www.espn.com/wnba/story/_/id/45801015/wnba-2025-golden-state-valkyries-expansion-franchise-inaugural-season-ballhalla",
-            "date": "2025-09-04"
-          }
-        ]
-      }
-    ]
+    "items": []
   },
   "diana-taurasi": {
     "player_id": "diana-taurasi",
@@ -26737,7 +25337,7 @@
       {
         "id": "taurasi-retirement-2025",
         "tier": "confirmed",
-        "category": "career",
+        "category": "off_field",
         "headline": "Announces retirement after 20 WNBA seasons with Phoenix",
         "summary": "Diana Taurasi announced her retirement in February 2025 after spending her entire 20-season WNBA career with the Phoenix Mercury. The WNBA's all-time leading scorer (10,646 points) cited being 'full' mentally and physically. She won 3 WNBA championships and 6 Olympic gold medals.",
         "sources": [
